@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef Name="FL_GeneEars" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<endogeneCategory>Ears</endogeneCategory>
+		<displayCategory>FL_foxian_cosmetic</displayCategory>
+		<displayOrderInCategory>70</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<randomChosen>true</randomChosen>
+		<exclusionTags>
+			<li>Ears</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef Name="FL_GeneTail" Abstract="True">
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<randomChosen>true</randomChosen>
+		<displayCategory>FL_foxian_cosmetic</displayCategory>
+		<displayOrderInCategory>71</displayOrderInCategory>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<exclusionTags>
+			<li>Tail</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="FL_GeneEars">
+		<defName>FL_FoxEar</defName>
+		<label>Fox ears</label>
+		<description>Carriers of this gene have fox-like ears.</description>
+		<iconPath>UI/Icons/Genes/FL_Gene_Fox_Ears_Icon</iconPath>
+
+		<renderNodeProperties>
+			<li>
+				<nodeClass>BetterGeneGraphicsFramework.PawnRenderNode_GeneHeadAttachment</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<parentTagDef>Head</parentTagDef>
+				<texPaths>
+					<li>Things/Pawns/Ears/FL_Fox_EarsA</li>
+					<li>Things/Pawns/Ears/FL_Fox_EarsB</li>
+					<li>Things/Pawns/Ears/FL_Fox_EarsC</li>
+					<li>Things/Pawns/Ears/FL_Fox_EarsD</li>
+				</texPaths>
+				<shaderTypeDef>CutoutComplex</shaderTypeDef>
+				<colorType>Hair</colorType>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<visibleFacing>
+					<li>East</li>
+					<li>West</li>
+					<li>South</li>
+					<li>North</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>71</layer>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<modExtensions>
+			<li MayRequire="telardo.BetterGeneGraphicsFramework" Class="BetterGeneGraphicsFramework.ShaderSupport">
+				<colorTwoType>Custom</colorTwoType>
+				<colorTwo>(245, 245, 245)</colorTwo>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="FL_GeneTail">
+		<defName>FL_FoxTail</defName>
+		<label>Fox tail</label>
+		<description>Carriers of this gene have a fox-like tail.</description>
+		<iconPath>UI/Icons/Genes/FL_Gene_Fox_Tail_Icon</iconPath>
+
+		<renderNodeProperties>
+			<li>
+				<nodeClass>BetterGeneGraphicsFramework.PawnRenderNode_GeneAttachment</nodeClass>
+				<workerClass>BetterGeneGraphicsFramework.PawnRenderNodeWorker_GeneBodyAttachment</workerClass>
+				<parentTagDef>Body</parentTagDef>
+				<texPaths>
+					<li>Things/Pawns/Tails/FL_Fox_TailA</li>
+					<li>Things/Pawns/Tails/FL_Fox_TailB</li>
+					<li>Things/Pawns/Tails/FL_Fox_TailC</li>
+				</texPaths>
+				<shaderTypeDef>CutoutComplex</shaderTypeDef>
+				<colorType>Hair</colorType>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<visibleFacing>
+					<li>East</li>
+					<li>West</li>
+					<li>South</li>
+					<li>North</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>1</layer>
+					</defaultData>
+					<dataSouth>
+						<layer>-2</layer>
+					</dataSouth>
+					<dataNorth>
+						<layer>90</layer>
+					</dataNorth>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<modExtensions>
+			<li MayRequire="telardo.BetterGeneGraphicsFramework" Class="BetterGeneGraphicsFramework.ShaderSupport">
+				<colorTwoType>Custom</colorTwoType>
+				<colorTwo>(245, 245, 245)</colorTwo>
+			</li>
+			<li MayRequire="telardo.BetterGeneGraphicsFramework" Class="BetterGeneGraphicsFramework.WithBodyTypeOffset">
+				<disableBodyTypeScaleForAdult>true</disableBodyTypeScaleForAdult>
+				<bodyTypeOffsetNorth>
+					<hulk>(0,0,-0.15)</hulk>
+					<baby>(0,0,0.08)</baby>
+					<child>(0,0,0.08)</child>
+					<femaleBB>(-0.01,0,0.04)</femaleBB>
+				</bodyTypeOffsetNorth>
+				<bodyTypeOffsetEast>
+					<male>(0.05,0,-0.02)</male>
+					<hulk>(-0.08,0,-0.15)</hulk>
+					<fat>(-0.16,0,0)</fat>
+					<baby>(0.03,0,0.08)</baby>
+					<child>(0.03,0,0.08)</child>
+					<femaleBB>(-0.03,0,-0.02)</femaleBB>
+				</bodyTypeOffsetEast>
+				<bodyTypeOffsetSouth>
+					<male>(-0.04,0,0.05)</male>
+					<hulk>(-0.14,0,-0.15)</hulk>
+					<fat>(-0.18,0,0)</fat>
+					<baby>(0,0,0.03)</baby>
+					<child>(0,0,0.03)</child>
+				</bodyTypeOffsetSouth>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="FL_GeneTail">
+		<defName>FL_NineFoxTail</defName>
+		<label>Nine Tailed Fox tail</label>
+		<description>Carriers of this gene have multiple fox-like tails the older they get.</description>
+		<iconPath>UI/Icons/Genes/FL_Gene_NineTailFox_Tail_Icon</iconPath>
+
+		<renderNodeProperties>
+			<li>
+				<nodeClass>BetterGeneGraphicsFramework.PawnRenderNode_GeneAttachment</nodeClass>
+				<workerClass>BetterGeneGraphicsFramework.PawnRenderNodeWorker_GeneBodyAttachment</workerClass>
+				<parentTagDef>Body</parentTagDef>
+				<shaderTypeDef>CutoutComplex</shaderTypeDef>
+				<colorType>Hair</colorType>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<visibleFacing>
+					<li>East</li>
+					<li>West</li>
+					<li>South</li>
+					<li>North</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>1</layer>
+					</defaultData>
+					<dataSouth>
+						<layer>-2</layer>
+					</dataSouth>
+					<dataNorth>
+						<layer>90</layer>
+					</dataNorth>
+					<dataEast>
+						<layer>71</layer>
+					</dataEast>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<modExtensions>
+			<li MayRequire="telardo.BetterGeneGraphicsFramework" Class="BetterGeneGraphicsFramework.GraphicsWithAge">
+				<ages>
+					<li>0</li>
+					<li>7</li>
+					<li>12</li>
+					<li>15</li>
+					<li>18</li>
+				</ages>
+				<graphicPaths>
+					<li>Things/Pawns/NineTailsFox/FL_Fox_NineTailOne</li>
+					<li>Things/Pawns/NineTailsFox/FL_Fox_NineTailThree</li>
+					<li>Things/Pawns/NineTailsFox/FL_Fox_NineTailFive</li>
+					<li>Things/Pawns/NineTailsFox/FL_Fox_NineTailSeven</li>
+					<li>Things/Pawns/NineTailsFox/FL_Fox_NineTailNine</li>
+				</graphicPaths>
+			</li>
+			<li MayRequire="telardo.BetterGeneGraphicsFramework" Class="BetterGeneGraphicsFramework.ShaderSupport">
+				<colorTwoType>Custom</colorTwoType>
+				<colorTwo>(245, 245, 245)</colorTwo>
+			</li>
+			<li MayRequire="telardo.BetterGeneGraphicsFramework" Class="BetterGeneGraphicsFramework.WithBodyTypeOffset">
+				<disableBodyTypeScaleForAdult>true</disableBodyTypeScaleForAdult>
+				<bodyTypeOffsetNorth>
+					<female>(0,0,-0.03)</female>
+					<hulk>(0,0,-0.1)</hulk>
+					<baby>(0,0,0.08)</baby>
+					<child>(0,0,0.10)</child>
+					<femaleBB>(0,0,-0.03)</femaleBB>
+				</bodyTypeOffsetNorth>
+				<bodyTypeOffsetEast>
+					<male>(-0.05,0,0)</male>
+					<female>(-0.07,0,0)</female>
+					<thin>(-0.07,0,0)</thin>
+					<hulk>(-0.15,0,-0.04)</hulk>
+					<fat>(-0.15,0,0.02)</fat>
+					<baby>(-0.03,0,0.04)</baby>
+					<child>(-0.02,0,0.10)</child>
+					<femaleBB>(-0.07,0,0)</femaleBB>
+				</bodyTypeOffsetEast>
+				<bodyTypeOffsetSouth>
+					<female>(0,0,-0.03)</female>
+					<hulk>(-0.02,0,-0.1)</hulk>
+					<fat>(-0.05,0,0)</fat>
+					<baby>(0,0,0.10)</baby>
+					<child>(0,0,0.10)</child>
+					<femaleBB>(0,0,-0.03)</femaleBB>
+				</bodyTypeOffsetSouth>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>

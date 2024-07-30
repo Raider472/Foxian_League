@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GeneCategoryDef>
+    <defName>FL_foxian_cosmetic</defName>
+    <label>Foxian Cosmetics</label>
+    <displayPriorityInXenotype>80</displayPriorityInXenotype>
+    <displayPriorityInGenepack>80</displayPriorityInGenepack>
+  </GeneCategoryDef>
+
+  <GeneCategoryDef>
+    <defName>FL_foxian_genes_set</defName>
+    <label>Foxian Genes</label>
+    <displayPriorityInXenotype>81</displayPriorityInXenotype>
+    <displayPriorityInGenepack>81</displayPriorityInGenepack>
+  </GeneCategoryDef>
+</Defs>

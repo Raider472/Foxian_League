@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Foxian League</name>
+    <author>Raider</author>
+    <packageId>foxian.league.raider</packageId>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>Ludeon.RimWorld.Biotech</packageId>
+            <displayName>Biotech</displayName>
+        </li>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+            <packageId>ReSplice.XOTR.Charmweavers</packageId>
+            <displayName>ReSplice: Charmweavers</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3131996691</steamWorkshopUrl>
+        </li>
+		<li>
+            <packageId>vanillaracesexpanded.highmate</packageId>
+            <displayName>Vanilla Races Expanded - Highmate</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2995385834</steamWorkshopUrl>
+        </li>
+		<li>
+            <packageId>RedMattis.BigSmall.Core</packageId>
+            <displayName>Big and Small - Genes &amp; More</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2920751126</steamWorkshopUrl>
+        </li>
+		<li>
+            <packageId>sarg.alphagenes</packageId>
+            <displayName>Alpha Genes</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2891845502</steamWorkshopUrl>
+        </li>
+		<li>
+            <packageId>telardo.BetterGeneGraphicsFramework</packageId>
+            <displayName>Better Gene Graphics Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2880940958</steamWorkshopUrl>
+        </li>
+		<li>
+            <packageId>RedMattis.BetterGeneInheritance</packageId>
+            <displayName>Better Gene Inheritance</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3046776238</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+		<li>brrainz.harmony</li>
+		<li>ReSplice.XOTR.Charmweavers</li>
+		<li>vanillaracesexpanded.highmate</li>
+		<li>RedMattis.BigSmall.Core</li>
+		<li>sarg.alphagenes</li>
+		<li>JintuziLamian.Gene.XenoCosmetic</li>
+		<li>vanillaracesexpanded.hussar</li>
+		<li>RedMattis.BetterGeneInheritance</li>
+		<li>vanillaracesexpanded.sanguophage</li>
+		<li>Rimsenal.Harana</li>
+    </loadAfter>
+    <description>A mod that add fox people genes and a few factions for them.</description>
+</ModMetaData>

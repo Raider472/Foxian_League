@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--Fertility-->
+    <GeneDef ParentName="FertilityBase">
+        <defName>FL_LowFertility</defName>
+        <label>low fertility</label>
+        <description>Carriers of this gene have a lower chance of becoming pregnant or impregnating others.</description>
+        <iconPath></iconPath>
+        <displayOrderInCategory>105</displayOrderInCategory>
+        <statFactors>
+            <Fertility>0.4</Fertility>
+        </statFactors>
+        <biostatMet>1</biostatMet>
+    </GeneDef>
+
+  <!--Libido-->
+    <GeneDef ParentName="LibidoBase">
+        <defName>FL_Lustful</defName>
+        <label>lustful</label>
+        <description>Carriers of this gene are more likely to engage in lovin' with their partner whatever of their genders.</description>
+        <iconPath></iconPath>
+        <customEffectDescriptions>
+			<li>Highly increase the chance of lovin'.</li>
+		</customEffectDescriptions>
+        <displayOrderInCategory>15</displayOrderInCategory>
+        <lovinMTBFactor>0.3</lovinMTBFactor>
+        <forcedTraits>
+            <li>
+                <def>Bisexual</def>
+            </li>
+        </forcedTraits>
+        <biostatMet>-1</biostatMet>
+        <biostatCpx>1</biostatCpx>
+    </GeneDef>
+
+  <!--Social-->
+    <GeneDef>
+        <defName>FL_Reserved</defName>
+        <label>reserved</label>
+        <description>Carriers of this gene keep their problems to themselves rather than to express them to someone else.</description>
+        <iconPath></iconPath>
+        <displayCategory>FL_foxian_genes_set</displayCategory>
+        <displayOrderInCategory>1</displayOrderInCategory>
+        <statOffsets>
+          <MentalBreakThreshold>0.1</MentalBreakThreshold>
+        </statOffsets>
+        <suppressedTraits>
+            <li>
+                <def>Nerves</def>
+                <degree>-1</degree>
+            </li>
+            <li>
+                <def>Nerves</def>
+                <degree>-2</degree>
+            </li>
+        </suppressedTraits>
+        <biostatMet>2</biostatMet>
+        <biostatCpx>1</biostatCpx>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>TestGene</defName>
+        <label>TestGenes</label>
+        <description>Test</description>
+        <iconPath></iconPath>
+        <modExtensions>
+            <li Class="Foxian_league.PsychicManipulation">
+                <skillName>Social</skillName>
+                <skillModifier>3</skillModifier>
+            </li>
+        </modExtensions>
+        <displayCategory>FL_foxian_genes_set</displayCategory>
+        <displayOrderInCategory>105</displayOrderInCategory>
+        <biostatMet>0</biostatMet>
+    </GeneDef>
+
+    <!--Psychic-->
+    <GeneDef ParentName="GenePsychicAbilityBase">
+        <defName>FL_MinorPsySensitive</defName>
+        <label>minor psy-sensitivity</label> 
+        <labelShortAdj>psy-enhanced</labelShortAdj>
+        <description>Carriers of this gene are more psychically-sensitive than the average person but they are not as much as a normal psy-sensitive individual.</description>
+        <iconPath></iconPath>
+        <displayOrderInCategory>15</displayOrderInCategory>
+        <statOffsets>
+            <PsychicSensitivity>0.1</PsychicSensitivity>
+            <MeditationFocusGain>0.1</MeditationFocusGain>
+        </statOffsets>
+        <biostatMet>-1</biostatMet>
+        <symbolPack>
+        <prefixSymbols>
+            <li><symbol>psy</symbol></li>
+            <li><symbol>senso</symbol></li>
+            <li><symbol>sensi</symbol></li>
+        </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!--Health-->
+    <GeneDef>
+        <defName>FL_SlowAging</defName>
+        <label>slow aging</label>
+        <description>Carriers of this gene age slower after reaching 18 years old.</description>
+        <iconPath></iconPath>
+        <displayCategory>FL_foxian_genes_set</displayCategory>
+        <biologicalAgeTickFactorFromAgeCurve>
+            <points>
+                <li>(13, 1)</li>
+                <li>(18.5, 0.75)</li>
+                <li>(20, 0.5)</li>
+            </points>
+        </biologicalAgeTickFactorFromAgeCurve>
+        <biostatMet>-1</biostatMet>
+        <biostatCpx>1</biostatCpx>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>FL_ToxicVulnerability</defName>
+        <label>toxic vulnerability</label>
+        <description>Carriers of this gene are vulnerable to toxic buildup and environmental toxins. Such as pollution, toxic fallout, tox gas, and direct attacks with venom or injected poison</description>
+        <iconPath></iconPath>
+        <displayCategory>ResistanceAndWeakness</displayCategory>
+        <displayOrderInCategory>10</displayOrderInCategory>
+        <statOffsets>
+			<ToxicEnvironmentResistance>-0.2</ToxicEnvironmentResistance>
+            <ToxicResistance>-0.1</ToxicResistance>
+		</statOffsets>
+        <biostatMet>1</biostatMet>
+        <biostatCpx>1</biostatCpx>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>FL_StrongToxicVulnerability</defName>
+        <label>strong toxic vulnerability</label>
+        <description>Carriers of this gene are very vulnerable to toxic buildup and environmental toxins. Such as pollution, toxic fallout, tox gas, and direct attacks with venom or injected poison</description>
+        <iconPath></iconPath>
+        <displayCategory>ResistanceAndWeakness</displayCategory>
+        <displayOrderInCategory>10</displayOrderInCategory>
+        <statOffsets>
+			<ToxicEnvironmentResistance>-0.5</ToxicEnvironmentResistance>
+            <ToxicResistance>-0.25</ToxicResistance>
+		</statOffsets>
+        <biostatMet>3</biostatMet>
+        <biostatCpx>1</biostatCpx>
+    </GeneDef>
+
+    <!--Misc-->
+    <GeneDef>
+        <defName>FL_Immaculate</defName>
+        <label>immaculate</label>
+        <description>Carriers of this gene produce less filth than the average person.</description>
+        <iconPath></iconPath>
+        <displayCategory>FL_foxian_genes_set</displayCategory>
+        <displayOrderInCategory>2</displayOrderInCategory>
+        <statFactors>
+          <FilthRate>0.7</FilthRate>
+        </statFactors>
+        <biostatMet>-1</biostatMet>
+        <biostatCpx>1</biostatCpx>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>FL_FastStudy</defName>
+        <label>fast study</label>
+        <description>Carriers of this gene have better memories and understand new ideas faster than the average person.</description>
+        <iconPath></iconPath>
+        <displayCategory>FL_foxian_genes_set</displayCategory>
+        <displayOrderInCategory>3</displayOrderInCategory>
+        <statOffsets>
+          <GlobalLearningFactor>0.15</GlobalLearningFactor>
+        </statOffsets>
+        <biostatMet>-1</biostatMet>
+        <biostatCpx>1</biostatCpx>
+    </GeneDef>
+
+	<GeneDef>
+		<defName>FL_Female</defName>
+		<label>female only</label>
+		<description>Carriers of this gene are always biologically female.</description>
+		<iconPath></iconPath>
+		<displayOrderInCategory>3</displayOrderInCategory>
+        <biostatMet>0</biostatMet>
+        <biostatCpx>0</biostatCpx>
+	</GeneDef>
+</Defs>

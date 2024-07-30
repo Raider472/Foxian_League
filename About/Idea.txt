@@ -1,0 +1,64 @@
+Foxian Genes
+    -Affection Addict(bar to fill, filled by social, loves and possibly gizmo to do the deeds)
+    V-lustful (high libido and bisexual)
+    V-very beautiful (base game)
+    V-reduced fertility
+    V-only female
+
+    -Gene similar to matrianic (80% chance of normal foxian, 20% chance of greater foxian then 80% male and 20% female greater foxian + only female)
+    -dominant genes
+    V-slow aging
+
+    V-strong stomach (base game)
+    V-toxic vulnerability
+
+    V-dead calm (base game)
+    -Conformist (('Conversion power +25%') + higher ideologu protection +25%)
+    V-reserved(higher threshold of mental breakdown +10%)
+    V-immaculate (clean 0.75%)
+
+    V-strong social (Probably have to remove it)
+    V-strong intellect
+    V-fast learning (25% global learning factor)
+
+    V-poor melee
+    V-poor mining
+
+    V-heat weakness
+
+    V-minor psy sensitivity (10% instead of 20%)
+    -Psychic manipulation (the more psy sensitivity, the more their social stats increase)
+
+Greater Foxian genes
+    -Scareless (base game)
+    -Fast wound healing (base game)
+    -strong stomach (base game)
+    -superclotting (base game)
+    -weaker immunity (-5% base game)
+    -Stronger toxic vulnerability
+
+    -Affection (bar to fill, filled by social, loves and possibly gizmo to do the deeds)
+    -lustful (high libido and bisexual)
+    -very atractive (base game)
+    -reduced fertility
+
+    -recessive genes
+    -slow aging
+
+    -dead calm (base game)
+    -Conformist (dutiful + higher ideologu protection +15%)
+    -reserved(higher threshold of mental breakdown +10%)
+    -immaculate (clean 0.75%)
+
+    -great melee
+    -great duelist (more dodge, faster melee and strong attack)
+    -agile runner (0.10 move speed)
+
+    -Awful shooting
+    -hate guns (gain a negative mood when wielding a gun)
+
+    -heat weakness
+
+    -super psy sensitive (base game)
+    -deep psychic bond (psychic drones effects X2)
+    -psy enhancement (the more psychic sensitivy over 100%, the stronger you become. Stats base increase)
