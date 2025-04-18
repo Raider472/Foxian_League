@@ -1,23 +1,25 @@
 Foxian Genes
-    -Affection Addict(bar to fill, filled by social, loves and possibly gizmo to do the deeds)
+    -Affection Addict(bar to fill, filled by social, loves and possibly gizmo to do the deeds) Can be combined with lustful
     V-lustful (high libido and bisexual)
     V-very beautiful (base game)
     V-reduced fertility
     V-only female
 
-    -Gene similar to matrianic (80% chance of normal foxian, 20% chance of greater foxian then 80% male and 20% female greater foxian + only female)
-    -dominant genes
+    -Genetic Purity (65% chance of normal foxian, 35% chance of greater foxian then 80% male and 20% female greater foxian + only female)
+        -2 behaviours:
+            -1 Pawn is Foxian and does the mentioned above
+            -2 Pawn is not Foxian
+                -baby will receive all active gene of the mother
     V-slow aging
 
-    V-strong stomach (base game)
+    -Weak Stomach
     V-toxic vulnerability
 
-    V-dead calm (base game)
+    -dead calm (base game)
+    -reserved(higher threshold of mental breakdown +10%) -- Combine it with dead calm
     -Conformist (('Conversion power +25%') + higher ideologu protection +25%)
-    V-reserved(higher threshold of mental breakdown +10%)
     V-immaculate (clean 0.75%)
 
-    V-strong social (Probably have to remove it)
     V-strong intellect
     V-fast learning (25% global learning factor)
 
@@ -27,7 +29,10 @@ Foxian Genes
     V-heat weakness
 
     V-minor psy sensitivity (10% instead of 20%)
+    -Psychic drone sensitivity
+        -Check this "RimWorld.PsychicPowerDriver_Drone.UsePower"
     -Psychic manipulation (the more psy sensitivity, the more their social stats increase)
+        -Patch social localization
 
 Greater Foxian genes
     -Scareless (base game)
@@ -46,8 +51,8 @@ Greater Foxian genes
     -slow aging
 
     -dead calm (base game)
+    -reserved(higher threshold of mental breakdown +10%) -- Combine it with dead calm
     -Conformist (dutiful + higher ideologu protection +15%)
-    -reserved(higher threshold of mental breakdown +10%)
     -immaculate (clean 0.75%)
 
     -great melee

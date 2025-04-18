@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "p/5D7I0WpbKZmcXcPtGVU5gM6lfzK0nEcdG83zMorUqygYlm8844Qx6oFe8QB3QzCPsCcCQnc+t84I3CrfXjvA==",
+  "dgSpecHash": "azLixFMYS4zSfEXFj1c7EYR/Yf+8QC2DcJe4fGhDeLWRINJ8bnbp5q4Jhw/hYajHXQARP27Gg2Jwhx4jDBzkYw==",
   "success": true,
   "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\Source\\Foxian_league\\Foxian_league.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Gabriel\\.nuget\\packages\\krafs.rimworld.ref\\1.5.4085\\krafs.rimworld.ref.1.5.4085.nupkg.sha512",
-    "C:\\Users\\Gabriel\\.nuget\\packages\\lib.harmony\\2.3.3\\lib.harmony.2.3.3.nupkg.sha512"
+    "C:\\Users\\Gabriel\\.nuget\\packages\\krafs.rimworld.ref\\1.5.4402\\krafs.rimworld.ref.1.5.4402.nupkg.sha512",
+    "C:\\Users\\Gabriel\\.nuget\\packages\\lib.harmony\\2.3.5\\lib.harmony.2.3.5.nupkg.sha512"
   ],
   "logs": []
 }

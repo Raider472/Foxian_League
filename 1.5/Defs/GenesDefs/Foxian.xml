@@ -10,7 +10,6 @@
     <inheritable>true</inheritable>
     <combatPowerFactor>1.0</combatPowerFactor>
     <genes>
-      <li>StrongStomach</li>
       <li>Aggression_DeadCalm</li>
       <li>Beauty_Beautiful</li>
       <li>FL_FoxEar</li>
@@ -19,7 +18,6 @@
       <li>FL_Lustful</li>
       <li>FL_Reserved</li>
       <li>FL_MinorPsySensitive</li>
-      <li>AptitudeStrong_Social</li>
       <li>AptitudeStrong_Intellectual</li>
       <li>AptitudePoor_Melee</li>
       <li>AptitudePoor_Mining</li>
@@ -29,6 +27,8 @@
       <li>FL_Female</li>
       <li>FL_SlowAging</li>
       <li>FL_ToxicVulnerability</li>
+      <li>FL_PsychicManipulation</li>
+      <li>FL_GeneticPurity</li>
     </genes>
   </XenotypeDef>
 

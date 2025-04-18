@@ -18,34 +18,9 @@
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 		</li>
 		<li>
-            <packageId>ReSplice.XOTR.Charmweavers</packageId>
-            <displayName>ReSplice: Charmweavers</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3131996691</steamWorkshopUrl>
-        </li>
-		<li>
-            <packageId>vanillaracesexpanded.highmate</packageId>
-            <displayName>Vanilla Races Expanded - Highmate</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2995385834</steamWorkshopUrl>
-        </li>
-		<li>
-            <packageId>RedMattis.BigSmall.Core</packageId>
-            <displayName>Big and Small - Genes &amp; More</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2920751126</steamWorkshopUrl>
-        </li>
-		<li>
-            <packageId>sarg.alphagenes</packageId>
-            <displayName>Alpha Genes</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2891845502</steamWorkshopUrl>
-        </li>
-		<li>
             <packageId>telardo.BetterGeneGraphicsFramework</packageId>
             <displayName>Better Gene Graphics Framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2880940958</steamWorkshopUrl>
-        </li>
-		<li>
-            <packageId>RedMattis.BetterGeneInheritance</packageId>
-            <displayName>Better Gene Inheritance</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3046776238</steamWorkshopUrl>
         </li>
     </modDependencies>
     <loadAfter>

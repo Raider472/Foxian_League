@@ -13,7 +13,7 @@ namespace Foxian_league {
     public static class PawnGenerator_GeneratePawnRelations_Patch {
         [HarmonyPrefix]
         public static bool DisableRelations(Pawn pawn) {
-            if (pawn.HasActiveGene(InternalDefOf.FL_Female)) {
+            if (Utils.HasActiveGene(pawn, InternalDefOf.FL_Female)) {
                 return false;
             }
             else return true;

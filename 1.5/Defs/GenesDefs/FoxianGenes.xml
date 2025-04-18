@@ -59,22 +59,6 @@
         <biostatCpx>1</biostatCpx>
     </GeneDef>
 
-    <GeneDef>
-        <defName>TestGene</defName>
-        <label>TestGenes</label>
-        <description>Test</description>
-        <iconPath></iconPath>
-        <modExtensions>
-            <li Class="Foxian_league.PsychicManipulation">
-                <skillName>Social</skillName>
-                <skillModifier>3</skillModifier>
-            </li>
-        </modExtensions>
-        <displayCategory>FL_foxian_genes_set</displayCategory>
-        <displayOrderInCategory>105</displayOrderInCategory>
-        <biostatMet>0</biostatMet>
-    </GeneDef>
-
     <!--Psychic-->
     <GeneDef ParentName="GenePsychicAbilityBase">
         <defName>FL_MinorPsySensitive</defName>
@@ -95,6 +79,27 @@
             <li><symbol>sensi</symbol></li>
         </prefixSymbols>
         </symbolPack>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>FL_PsychicManipulation</defName>
+        <label>psychic manipulation</label>
+        <description>#TODO</description>
+        <iconPath></iconPath>
+        <geneClass>Foxian_league.Gene_PsychicManipulation</geneClass>
+        <modExtensions>
+            <li Class="Foxian_league.PsychicManipulation">
+                <skillName>Social</skillName>
+                <skillModifier>3</skillModifier>
+            </li>
+        </modExtensions>
+        <customEffectDescriptions>
+            <li>Each 50% psychic sensitivity beyond 100% will add a bonus point to this pawn social aptitude</li>
+        </customEffectDescriptions>
+        <displayCategory>FL_foxian_genes_set</displayCategory>
+        <displayOrderInCategory>105</displayOrderInCategory>
+        <biostatMet>-1</biostatMet>
+        <biostatCpx>1</biostatCpx>
     </GeneDef>
 
     <!--Health-->
@@ -146,6 +151,17 @@
     </GeneDef>
 
     <!--Misc-->
+    <GeneDef>
+        <defName>FL_GeneticPurity</defName>
+        <label>genetic purity</label>
+        <description>Carriers of this gene will is very likely to birth an offspring with the same gender and the offspring will only inherit the endogene of his mother.</description>
+        <iconPath></iconPath>
+        <displayCategory>FL_foxian_genes_set</displayCategory>
+        <displayOrderInCategory>2</displayOrderInCategory>
+        <biostatMet>-1</biostatMet>
+        <biostatCpx>1</biostatCpx>
+    </GeneDef>
+
     <GeneDef>
         <defName>FL_Immaculate</defName>
         <label>immaculate</label>

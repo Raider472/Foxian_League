@@ -10,8 +10,10 @@
     <RootNamespace>Foxian_league</RootNamespace>
     <AssemblyName>Foxian_league</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <LangVersion>12.0</LangVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
@@ -41,22 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeneticPurity\Patch_PawnGenerator_GeneratePawn.cs" />
+    <Compile Include="GeneticPurity\Patch_PregnancyUtility_ApplyBirthOutcome.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="FemaleOnly\FixGender.cs" />
     <Compile Include="InternalDefsOf.cs" />
     <Compile Include="FemaleOnly\PawnGenerator_GeneratePawnRelations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PsychicManipulation\HarmonyAptitude.cs" />
     <Compile Include="PsychicManipulation\PsychicManipulation.cs" />
+    <Compile Include="PsychicManipulation\Gene_PshychicManipulation.cs" />
+    <Compile Include="Reserved\HarmonyPatchTest.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.5.4085</Version>
+      <Version>1.5.4402</Version>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
-      <Version>2.3.3</Version>
+      <Version>2.3.5</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
