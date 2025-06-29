@@ -9,21 +9,22 @@ using Verse;
 namespace Foxian_league {
     public class Gene_PsychicManipulation : Gene {
 
-        public int skillModifier = 0;
-        public float PsychicSensitivityRecent;
+        public int skillModifier;
+        public float psychicSensitivityRecent;
 
-        public Aptitude AptitudeSkill;
+        public float delimiter = 0.5f;
 
         public override void Tick() {
             base.Tick();
             float PsychichSensiPawn = pawn.psychicEntropy.PsychicSensitivity;
-            /*Log.Message($"Current saved Psychic Sensivity: {PsychicSensitivityRecent}");
-            Log.Message($"Current saved Skill MOdifier: {skillModifier}");
-            Log.Message($"Psychic Sensitivity owo: {PsychichSensiPawn}");*/
-            if (PsychicSensitivityRecent != PsychichSensiPawn) {
-                //Log.Message("Psychic Sens is not the same");
-                PsychicSensitivityRecent = PsychichSensiPawn;
-                CalculateSkillModifier(PsychicSensitivityRecent);
+            Log.Message($"PsychichSensiPawn {PsychichSensiPawn}, {pawn.Name}, {skillModifier}, {psychicSensitivityRecent}");
+            if (psychicSensitivityRecent != PsychichSensiPawn) {
+                Log.Message("Psychic has changed");
+                Log.Message($"skill before {skillModifier}");
+                Log.Message($"psychicSensitivityRecent before change {psychicSensitivityRecent}");
+                psychicSensitivityRecent = PsychichSensiPawn;
+                Log.Message($"psychicSensitivityRecent after change {psychicSensitivityRecent}");
+                CalculateSkillModifier(psychicSensitivityRecent);
             }
         }
 
@@ -33,25 +34,11 @@ namespace Foxian_league {
             }
             else {
                 currentPawnPsySensitivity -= 1f;
-                float skillModifierFloat = currentPawnPsySensitivity / 0.5f;
+                float skillModifierFloat = currentPawnPsySensitivity / delimiter;
                 decimal roundedSkillModifier= Math.Round((decimal)skillModifierFloat, 1);
                 skillModifier = (int)roundedSkillModifier;
-                CreateAptitude();
-                UpdateSkillLevelBonus();
+                Log.Message($"skill after {skillModifier}");
             }
-        }
-
-        private void CreateAptitude() {
-            SkillDef skillSocial = DefDatabase<SkillDef>.GetNamed("Social");
-            AptitudeSkill = new Aptitude(skillSocial, skillModifier);
-        }
-
-        private void UpdateSkillLevelBonus() {
-            if (!def.aptitudes.NullOrEmpty()) {
-                def.aptitudes.Clear();
-            }
-            List<Aptitude> aptitudesList = [AptitudeSkill];
-            def.aptitudes = aptitudesList;
         }
     }
 }

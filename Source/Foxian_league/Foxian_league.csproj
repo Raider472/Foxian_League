@@ -50,9 +50,10 @@
     <Compile Include="InternalDefsOf.cs" />
     <Compile Include="FemaleOnly\PawnGenerator_GeneratePawnRelations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PsychicManipulation\PsychicManipulation.cs" />
     <Compile Include="PsychicManipulation\Gene_PshychicManipulation.cs" />
-    <Compile Include="Reserved\HarmonyPatchTest.cs" />
+    <Compile Include="PsychicManipulation\Patch_SkillRecord_Aptitude.cs" />
+    <Compile Include="PsychicManipulation\Patch_SkillUI_GetSkillDescription.cs" />
+    <Compile Include="Reserved\Patch_MemoryThoughtHandler_TryGainMemory.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>

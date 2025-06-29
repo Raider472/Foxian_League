@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\Source\\Foxian_league\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D75B53B3-2C40-4E76-A547-165A3BD47FE4}|Foxian_league.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\foxian_league\\source\\foxian_league\\reserved\\harmonypatchtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D75B53B3-2C40-4E76-A547-165A3BD47FE4}|Foxian_league.csproj|solutionrelative:reserved\\harmonypatchtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D75B53B3-2C40-4E76-A547-165A3BD47FE4}|Foxian_league.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\foxian_league\\source\\foxian_league\\psychicmanipulation\\gene_pshychicmanipulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D75B53B3-2C40-4E76-A547-165A3BD47FE4}|Foxian_league.csproj|solutionrelative:psychicmanipulation\\gene_pshychicmanipulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D75B53B3-2C40-4E76-A547-165A3BD47FE4}|Foxian_league.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\Source\\Foxian_league\\geneticpurity\\patch_pawngenerator_generatepawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D75B53B3-2C40-4E76-A547-165A3BD47FE4}|Foxian_league.csproj|solutionrelative:geneticpurity\\patch_pawngenerator_generatepawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D75B53B3-2C40-4E76-A547-165A3BD47FE4}|Foxian_league.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\Source\\Foxian_league\\psychicmanipulation\\patch_skillrecord_aptitude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D75B53B3-2C40-4E76-A547-165A3BD47FE4}|Foxian_league.csproj|solutionrelative:psychicmanipulation\\patch_skillrecord_aptitude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D75B53B3-2C40-4E76-A547-165A3BD47FE4}|Foxian_league.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\foxian_league\\source\\foxian_league\\psychicmanipulation\\patch_skillui_getskilldescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D75B53B3-2C40-4E76-A547-165A3BD47FE4}|Foxian_league.csproj|solutionrelative:psychicmanipulation\\patch_skillui_getskilldescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Patch_PawnGenerator_GeneratePawn.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\Source\\Foxian_league\\GeneticPurity\\Patch_PawnGenerator_GeneratePawn.cs",
-              "RelativeDocumentMoniker": "GeneticPurity\\Patch_PawnGenerator_GeneratePawn.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\Source\\Foxian_league\\GeneticPurity\\Patch_PawnGenerator_GeneratePawn.cs",
-              "RelativeToolTip": "GeneticPurity\\Patch_PawnGenerator_GeneratePawn.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABlAAAA",
+              "DocumentIndex": 0,
+              "Title": "Gene_PshychicManipulation.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\Source\\Foxian_league\\PsychicManipulation\\Gene_PshychicManipulation.cs",
+              "RelativeDocumentMoniker": "PsychicManipulation\\Gene_PshychicManipulation.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\Source\\Foxian_league\\PsychicManipulation\\Gene_PshychicManipulation.cs",
+              "RelativeToolTip": "PsychicManipulation\\Gene_PshychicManipulation.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAABhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T12:55:39.582Z"
+              "WhenOpened": "2025-06-29T17:56:54.336Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HarmonyPatchTest.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\Source\\Foxian_league\\Reserved\\HarmonyPatchTest.cs",
-              "RelativeDocumentMoniker": "Reserved\\HarmonyPatchTest.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\Source\\Foxian_league\\Reserved\\HarmonyPatchTest.cs",
-              "RelativeToolTip": "Reserved\\HarmonyPatchTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAQAAAA",
+              "DocumentIndex": 1,
+              "Title": "Patch_SkillRecord_Aptitude.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\Source\\Foxian_league\\PsychicManipulation\\Patch_SkillRecord_Aptitude.cs",
+              "RelativeDocumentMoniker": "PsychicManipulation\\Patch_SkillRecord_Aptitude.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\Source\\Foxian_league\\PsychicManipulation\\Patch_SkillRecord_Aptitude.cs",
+              "RelativeToolTip": "PsychicManipulation\\Patch_SkillRecord_Aptitude.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T12:34:31.327Z",
+              "WhenOpened": "2025-06-19T17:41:45.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Patch_SkillUI_GetSkillDescription.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\Source\\Foxian_league\\PsychicManipulation\\Patch_SkillUI_GetSkillDescription.cs",
+              "RelativeDocumentMoniker": "PsychicManipulation\\Patch_SkillUI_GetSkillDescription.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\Source\\Foxian_league\\PsychicManipulation\\Patch_SkillUI_GetSkillDescription.cs",
+              "RelativeToolTip": "PsychicManipulation\\Patch_SkillUI_GetSkillDescription.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:51:27.634Z",
               "EditorCaption": ""
             }
           ]

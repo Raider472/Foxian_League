@@ -5,7 +5,7 @@ Foxian Genes
     V-reduced fertility
     V-only female
 
-    -Genetic Purity (65% chance of normal foxian, 35% chance of greater foxian then 80% male and 20% female greater foxian + only female)
+    Semi V-Genetic Purity (65% chance of normal foxian, 35% chance of greater foxian then 80% male and 20% female greater foxian + only female)
         -2 behaviours:
             -1 Pawn is Foxian and does the mentioned above
             -2 Pawn is not Foxian
@@ -15,15 +15,21 @@ Foxian Genes
     -Weak Stomach
     V-toxic vulnerability
 
-    -dead calm (base game)
-    -reserved(higher threshold of mental breakdown +10%) -- Combine it with dead calm
-    -Conformist (('Conversion power +25%') + higher ideologu protection +25%)
+    V-dead calm (base game)
+        -Calm (dead calm but less powerful)
+    V-reserved(higher threshold of mental breakdown +5%, longer removal of bad memories and 0.25 offset)
+    -Loyal Conversdion power + high ideo defense
+        - social opinion malus if a colonist is not loyal to the ideo or under a certain threshold
     V-immaculate (clean 0.75%)
+
+    -Dominant (greater ideo conversion and arrest chance and etc)
 
     V-strong intellect
     V-fast learning (25% global learning factor)
 
     V-poor melee
+     -Hate melee(malus mood upon having a melee weapon equiped)
+        -<workerClass>ThoughtWorker_IsCarryingRangedWeapon</workerClass>
     V-poor mining
 
     V-heat weakness
@@ -33,6 +39,13 @@ Foxian Genes
         -Check this "RimWorld.PsychicPowerDriver_Drone.UsePower"
     -Psychic manipulation (the more psy sensitivity, the more their social stats increase)
         -Patch social localization
+        -Make the skill modifier and psy sensi local to the genedef
+        -Two solution for fixing the gene
+            -One Check if the gene class is unique or is a copy for each pawn / after testing, the class seems to be unique for each pawn, maybe the genedef is not unique for each pawn ?
+            -Second test, check if the stat from the class are unique for each pawn --> RESULT --> the stats are unique for each pawn, so the gene class has multiple instances for each pawn
+            SkillRecord GetAptitude
+            - Do not use the apptitude in gene def, instead, change the code for apptitude
+            -SkillUI -> GetSkillDescription for localization
 
 Greater Foxian genes
     -Scareless (base game)

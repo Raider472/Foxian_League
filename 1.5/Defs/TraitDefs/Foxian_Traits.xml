@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+    <TraitDef>
+        <defName>FL_Reserved_Trait</defName>
+        <commonality>0.75</commonality>
+        <degreeDatas>
+            <li>
+            <label>reserved</label>
+            <description>{PAWN_nameDef} always keep {PAWN_possessive} problems to {PAWN_objective}selves, even if it's troubling {PAWN_objective}.\nNegative memories will last much longer and have more impact on {PAWN_nameDef}.</description>
+            <statOffsets>
+                <MentalBreakThreshold>0.05</MentalBreakThreshold>
+            </statOffsets>
+            </li>
+        </degreeDatas>
+        <conflictingTraits>
+            <li>Nerves</li>
+        </conflictingTraits>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>FL_Loyal_Trait</defName>
+        <commonality>0.5</commonality>
+        <degreeDatas>
+            <li>
+            <label>loyal</label>
+            <description>{PAWN_nameDef} is devoted to {PAWN_possessive} belief, {PAWN_pronoun} is harder to convert and {PAWN_pronoun} is more persusasive when converting other to his belief.</description>
+            <statFactors>
+                <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.75</CertaintyLossFactor>
+                <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">1.25</ConversionPower>
+            </statFactors>
+            </li>
+        </degreeDatas>
+        <conflictingTraits>
+            <li>Nerves</li>
+        </conflictingTraits>
+    </TraitDef>
+</Defs>

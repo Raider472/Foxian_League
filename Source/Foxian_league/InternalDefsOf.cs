@@ -19,6 +19,8 @@ namespace Foxian_league {
         public static GeneDef FL_GeneticPurity;
         public static GeneDef FL_Female;
 
+        public static TraitDef FL_Reserved_Trait;
+
         /*static InternalDefOf() {
             DefOfHelper.EnsureInitializedInCtor(typeof(InternalDefOf));
         }*/

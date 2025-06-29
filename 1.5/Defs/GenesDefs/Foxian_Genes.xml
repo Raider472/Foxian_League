@@ -38,13 +38,15 @@
     <GeneDef>
         <defName>FL_Reserved</defName>
         <label>reserved</label>
-        <description>Carriers of this gene keep their problems to themselves rather than to express them to someone else.</description>
+        <description>Carriers of this gene keep their problems to themselves rather than discussing their issues to someone else.</description>
         <iconPath></iconPath>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>1</displayOrderInCategory>
-        <statOffsets>
-          <MentalBreakThreshold>0.1</MentalBreakThreshold>
-        </statOffsets>
+        <forcedTraits>
+            <li>
+                <def>FL_Reserved_Trait</def>
+            </li>
+        </forcedTraits>
         <suppressedTraits>
             <li>
                 <def>Nerves</def>
@@ -59,6 +61,22 @@
         <biostatCpx>1</biostatCpx>
     </GeneDef>
 
+    <GeneDef>
+        <defName>FL_Loyal</defName>
+        <label>loyal</label>
+        <description>Carriers of this gene exhibit more loyalty to their belief than the average pawn.</description>
+        <iconPath></iconPath>
+        <displayCategory>FL_foxian_genes_set</displayCategory>
+        <displayOrderInCategory>1</displayOrderInCategory>
+        <forcedTraits>
+            <li>
+                <def>FL_Reserved_Trait</def>
+            </li>
+        </forcedTraits>
+        <biostatMet>-1</biostatMet>
+        <biostatCpx>1</biostatCpx>
+    </GeneDef>
+
     <!--Psychic-->
     <GeneDef ParentName="GenePsychicAbilityBase">
         <defName>FL_MinorPsySensitive</defName>
@@ -68,8 +86,9 @@
         <iconPath></iconPath>
         <displayOrderInCategory>15</displayOrderInCategory>
         <statOffsets>
-            <PsychicSensitivity>0.1</PsychicSensitivity>
-            <MeditationFocusGain>0.1</MeditationFocusGain>
+            <PsychicSensitivity>0.25</PsychicSensitivity>
+            <MeditationFocusGain>0.15</MeditationFocusGain>
+            <PsychicEntropyRecoveryRate>-0.20</PsychicEntropyRecoveryRate>
         </statOffsets>
         <biostatMet>-1</biostatMet>
         <symbolPack>
@@ -84,15 +103,9 @@
     <GeneDef>
         <defName>FL_PsychicManipulation</defName>
         <label>psychic manipulation</label>
-        <description>#TODO</description>
+        <description>Carriers of this gene can influence other pawns with their own psychic sensitivity, the higher their sensitivity is, the higher the influence become</description>
         <iconPath></iconPath>
         <geneClass>Foxian_league.Gene_PsychicManipulation</geneClass>
-        <modExtensions>
-            <li Class="Foxian_league.PsychicManipulation">
-                <skillName>Social</skillName>
-                <skillModifier>3</skillModifier>
-            </li>
-        </modExtensions>
         <customEffectDescriptions>
             <li>Each 50% psychic sensitivity beyond 100% will add a bonus point to this pawn social aptitude</li>
         </customEffectDescriptions>
