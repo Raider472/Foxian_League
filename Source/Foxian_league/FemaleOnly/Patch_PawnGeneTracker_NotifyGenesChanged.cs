@@ -8,10 +8,12 @@ using System.Threading.Tasks;
 using Verse;
 
 namespace Foxian_league {
+    //Patch to force female gender when the gene is applied to a pawn
+    //Code copied from "Male- and Female- Only Genes Continued"
     [HarmonyPatch(typeof(Pawn_GeneTracker), "Notify_GenesChanged")]
-    public static class FixGender {
+    public static class Patch_PawnGeneTracker_NotifyGenesChanged {
         [HarmonyPostfix]
-        public static void Postfix(ref Pawn ___pawn, GeneDef addedOrRemovedGene) {
+        public static void PostFix(ref Pawn ___pawn, GeneDef addedOrRemovedGene) {
             bool flag = false;
             if (addedOrRemovedGene == InternalDefOf.FL_Female && ___pawn.gender != Gender.Female) {
                 ___pawn.gender = Gender.Female;

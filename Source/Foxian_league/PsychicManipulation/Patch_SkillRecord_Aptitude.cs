@@ -11,7 +11,7 @@ using Verse;
 namespace Foxian_league {
     //Patch to add aptitude to the skill record if the pawn has the gene "Psychic manipulation"
     //Check if the gene is active, then check if skill modifier is superior to 0
-
+    //Then add it to the attributes field to the corresponding skill
     [HarmonyPatch(typeof(SkillRecord), "Aptitude", MethodType.Getter)]
     public static class Patch_SkillRecord_Aptitude {
         [HarmonyPostfix]

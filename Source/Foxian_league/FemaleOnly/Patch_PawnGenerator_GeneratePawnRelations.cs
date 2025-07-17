@@ -9,10 +9,12 @@ using UnityEngine;
 using RimWorld;
 
 namespace Foxian_league {
+    //I guess a patch to fix social relations when this gene is applied
+    //Code copied from "Male- and Female- Only Genes Continued"
     [HarmonyPatch(typeof(PawnGenerator), "GeneratePawnRelations")]
-    public static class PawnGenerator_GeneratePawnRelations_Patch {
+    public static class Patch_PawnGenerator_GeneratePawnRelations_Patch {
         [HarmonyPrefix]
-        public static bool DisableRelations(Pawn pawn) {
+        public static bool PreFix(Pawn pawn) {
             if (Utils.HasActiveGene(pawn, InternalDefOf.FL_Female)) {
                 return false;
             }

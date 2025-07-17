@@ -9,7 +9,7 @@ using UnityEngine;
 using Verse;
 
 namespace Foxian_league {
-
+    //Patch to make memories last much longer and have a bigger debuff for pawns with the "Reserved" gene
     [HarmonyPatch(typeof(MemoryThoughtHandler), "TryGainMemory", new Type[] { typeof(Thought_Memory), typeof(Pawn) })]
     public static class Patch_MemoryThoughtHandler_TryGainMemory {
         [HarmonyPostfix]

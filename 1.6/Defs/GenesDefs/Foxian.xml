@@ -10,8 +10,7 @@
     <inheritable>true</inheritable>
     <combatPowerFactor>1.0</combatPowerFactor>
     <genes>
-      <li>Aggression_DeadCalm</li>
-      <li>Beauty_Beautiful</li>
+      <li>Beauty_Pretty</li>
       <li>FL_FoxEar</li>
       <li>FL_FoxTail</li>
       <li>FL_LowFertility</li>
@@ -19,8 +18,9 @@
       <li>FL_Reserved</li>
       <li>FL_MinorPsySensitive</li>
       <li>AptitudeStrong_Intellectual</li>
-      <li>AptitudePoor_Melee</li>
+      <li>AptitudeTerrible_Melee</li>
       <li>AptitudePoor_Mining</li>
+      <li>MinTemp_SmallDecrease</li>
       <li>MaxTemp_SmallDecrease</li>
       <li>FL_Immaculate</li>
       <li>FL_FastStudy</li>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>FL_loyalistSocial</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>Foxian_league.ThoughtWorker_LoyalSocial</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>unworthy of our cause</label>
+        <baseOpinionOffset>-5</baseOpinionOffset>
+      </li>
+      <li>
+        <label>not a believer</label>
+        <baseOpinionOffset>-10</baseOpinionOffset>
+      </li>
+      <li>
+        <label>faithful believer</label>
+        <baseOpinionOffset>5</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

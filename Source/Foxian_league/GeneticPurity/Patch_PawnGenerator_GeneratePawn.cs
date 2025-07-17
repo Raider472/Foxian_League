@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using Verse;
 
 namespace Foxian_league {
+    //Patch to apply all the foxian traits to the child if the mother is a foxian (Behaviour A)
+    //Otherwise the gene will use behaviour B if the mother has the gene but is not foxian enough
     [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) })]
     public static class Patch_PawnGenerator_GeneratePawn {
 
@@ -21,14 +23,14 @@ namespace Foxian_league {
 
                 if (Utils.IsFoxian(mother) || Utils.IsPawnFoxianEnough(mother)) {
                     Log.Message("MOTHER IS FOXIAN");
-                    bool isBabyNormalFoxian = Rand.Chance(0.7f);
+                    bool isBabyNormalFoxian = Rand.Chance(0.65f);
                     request.FixedGender = Gender.Female;
                     request.ForcedEndogenes = babyCosmeticGenes;
                     //TODO CHANGE WASTER TO GREATER FOX
                     request.ForcedXenotype = isBabyNormalFoxian ? InternalDefOf.Foxian : InternalDefOf.Waster;
 
                     if(!isBabyNormalFoxian ) {
-                        request.FixedGender = Rand.Chance(0.8f) ? Gender.Male : Gender.Female;
+                        request.FixedGender = Rand.Chance(0.7f) ? Gender.Male : Gender.Female;
                         Log.Message($"Baby Gender is: {request.FixedGender}");
                     }
                 }

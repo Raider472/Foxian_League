@@ -36,17 +36,36 @@
 
   <!--Social-->
     <GeneDef>
-        <defName>FL_Reserved</defName>
-        <label>reserved</label>
-        <description>Carriers of this gene keep their problems to themselves rather than discussing their issues to someone else.</description>
+        <defName>FL_Composed</defName>
+        <label>composed mind</label>
+        <description>Carriers of this gene are strong willed and calm. They will never start social fights against they peers, they are less inclined to start negative interaction with them and their mental breakdowns are also always non violent.</description>
         <iconPath></iconPath>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>1</displayOrderInCategory>
-        <forcedTraits>
+        <socialFightChanceFactor>0</socialFightChanceFactor>
+        <aggroMentalBreakSelectionChanceFactor>0</aggroMentalBreakSelectionChanceFactor>
+        <customEffectDescriptions>
+            <li>less chance to trigegr a negative interaction with someone</li>
+        </customEffectDescriptions>
+        <suppressedTraits>
             <li>
-                <def>FL_Reserved_Trait</def>
+                <def>Abrasive</def>
             </li>
-        </forcedTraits>
+        </suppressedTraits>
+        <biostatMet>-2</biostatMet>
+        <biostatCpx>1</biostatCpx>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>FL_Emotionally_Brittle</defName>
+        <label>emotionally  brittle</label>
+        <description>Carriers of this gene are much more susceptible to break under pressure and they will spend much more time in mental breakdowns than the average person.</description>
+        <iconPath></iconPath>
+        <displayCategory>FL_foxian_genes_set</displayCategory>
+        <displayOrderInCategory>1</displayOrderInCategory>
+        <statOffsets>
+            <MentalBreakThreshold>0.05</MentalBreakThreshold>
+        </statOffsets>
         <suppressedTraits>
             <li>
                 <def>Nerves</def>
@@ -62,15 +81,31 @@
     </GeneDef>
 
     <GeneDef>
-        <defName>FL_Loyal</defName>
-        <label>loyal</label>
-        <description>Carriers of this gene exhibit more loyalty to their belief than the average pawn.</description>
+        <defName>FL_Reserved</defName>
+        <label>reserved</label>
+        <description>Carriers of this gene keep their problems to themselves rather than discussing their issues to someone else.</description>
         <iconPath></iconPath>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>1</displayOrderInCategory>
         <forcedTraits>
             <li>
                 <def>FL_Reserved_Trait</def>
+            </li>
+        </forcedTraits>
+        <biostatMet>1</biostatMet>
+        <biostatCpx>1</biostatCpx>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>FL_Loyal</defName>
+        <label>loyal</label>
+        <description>Carriers of this gene exhibit more loyalty to their belief than the average person.</description>
+        <iconPath></iconPath>
+        <displayCategory>FL_foxian_genes_set</displayCategory>
+        <displayOrderInCategory>1</displayOrderInCategory>
+        <forcedTraits>
+            <li>
+                <def>FL_Loyal_Trait</def>
             </li>
         </forcedTraits>
         <biostatMet>-1</biostatMet>
@@ -103,7 +138,7 @@
     <GeneDef>
         <defName>FL_PsychicManipulation</defName>
         <label>psychic manipulation</label>
-        <description>Carriers of this gene can influence other pawns with their own psychic sensitivity, the higher their sensitivity is, the higher the influence become</description>
+        <description>Carriers of this gene can influence other persons with their own psychic sensitivity, the higher their sensitivity is, the higher the influence become</description>
         <iconPath></iconPath>
         <geneClass>Foxian_league.Gene_PsychicManipulation</geneClass>
         <customEffectDescriptions>

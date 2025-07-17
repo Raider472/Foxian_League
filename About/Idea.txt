@@ -1,43 +1,45 @@
 Foxian Genes
-    -Affection Addict(bar to fill, filled by social, loves and possibly gizmo to do the deeds) Can be combined with lustful
     V-lustful (high libido and bisexual)
     V-very beautiful (base game)
     V-reduced fertility
     V-only female
 
-    Semi V-Genetic Purity (65% chance of normal foxian, 35% chance of greater foxian then 80% male and 20% female greater foxian + only female)
+    Semi V-Genetic Purity (65% chance of normal foxian, 35% chance of greater foxian then 70% male and 30% female greater foxian + only female)
         -2 behaviours:
             -1 Pawn is Foxian and does the mentioned above
             -2 Pawn is not Foxian
-                -baby will receive all active gene of the mother
+                -baby will receive all active gene of the mother depending if the gene is xeno or endo
     V-slow aging
 
-    -Weak Stomach
+    -Weak Stomach -> see after balancing
     V-toxic vulnerability
 
-    V-dead calm (base game)
-        -Calm (dead calm but less powerful)
+    V-composed mind
+        -NegativeInteractionUtility Harmony Patch
+    V-brittle mind
+        -Calm (dead calm but less powerful) <- calm dead but mental breakdown lasts much more longer
+            -MentalState is when the pawn is during the mental breakdown period -> This is the solution
+            -MentalStateHandler.TryStartMentalState is most likely the function that is in need of patching
+                -Increase the min and max revovery time by %50 -> No
     V-reserved(higher threshold of mental breakdown +5%, longer removal of bad memories and 0.25 offset)
-    -Loyal Conversdion power + high ideo defense
+    V-Loyal Conversdion power + high ideo defense
         - social opinion malus if a colonist is not loyal to the ideo or under a certain threshold
     V-immaculate (clean 0.75%)
 
-    -Dominant (greater ideo conversion and arrest chance and etc)
 
     V-strong intellect
     V-fast learning (25% global learning factor)
 
-    V-poor melee
-     -Hate melee(malus mood upon having a melee weapon equiped)
-        -<workerClass>ThoughtWorker_IsCarryingRangedWeapon</workerClass>
+    V-Terrible melee
     V-poor mining
 
     V-heat weakness
+    V-Cold resistance
 
     V-minor psy sensitivity (10% instead of 20%)
     -Psychic drone sensitivity
         -Check this "RimWorld.PsychicPowerDriver_Drone.UsePower"
-    -Psychic manipulation (the more psy sensitivity, the more their social stats increase)
+    V-Psychic manipulation (the more psy sensitivity, the more their social stats increase)
         -Patch social localization
         -Make the skill modifier and psy sensi local to the genedef
         -Two solution for fixing the gene

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>FL_loyalistState</defName>
+    <workerClass>Foxian_league.ThoughtWorker_LoyalMood</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>FL_Loyal_Trait</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>Loyalty in shambles</label>
+        <description>I am lost, everything I believed in was uterly wrong or meaningless ...</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+      <li>
+        <label>Faltering loyalty</label>
+        <description>Was I truly on the righteous path ?</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>Believer in doubt</label>
+        <description>Some part of the doctrine doesn't make sense to me</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>Faithful believer</label>
+        <description>I believe deeply in our cause and I will do whatever it takes to enforce it</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

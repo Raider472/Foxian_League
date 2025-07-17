@@ -10,8 +10,9 @@ using System.Threading.Tasks;
 using Verse;
 
 namespace Foxian_league {
-    //Class use for patching the UI when the player hover a skill inside the pawn - skill tabs
+    //Class use for patching the UI when the player hover a skill inside the skill tabs
     //This will show how much apptitudes the Psychic manipulation gene will give to the selected pawn
+    //Use a Transpiller because the Postfix patching will create an out of place string
     [HarmonyPatch(typeof(SkillUI), "GetSkillDescription")]
     public static class Patch_SkillUI_GetSkillDescription {
 

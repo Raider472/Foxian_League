@@ -8,9 +8,9 @@ using UnityEngine;
 using RimWorld;
 using UnityEngine.Analytics;
 
-namespace Foxian_league
-{
+namespace Foxian_league {
     public static class Utils {
+        //A bunch of utility methods to avoid code duplication
         public static bool HasActiveGene(Pawn pawn, GeneDef geneDef) {
             if (pawn.genes is null || geneDef is null) {
                 return false;
