@@ -1,0 +1,104 @@
+General
+Similar to ages, we use GraphicsWithAge modExtensions for conditional graphics resolving. Bear with me not changing its name! This allows you to have different textures for pawns with or without specific hediffs or body parts. Likewise, it doesn't affect other rendering logic besides telling the game to resolve textures at different paths.
+
+To use this feature, specify bodyPartExpressions in GeneDef. You can specify the texture using expressions, and if the pawn doesn't meet the expression criteria, the texture will be excluded.
+
+Expressions are whitespace sensitive!
+(!)BodyPartName means that the BodyPart must not be missing (or must be missing if the symbol ! is specified).
+(!)BodyPart -- HediffName means that a hediff with HediffName on BodyPart must be present (or not present with !).
+(!)Global -- HediffName is for hediff without a specified body part (drugs, diseases, etc.).
+Two or more conditions must be split using the symbol |: Left ear|Right Ear
+Comparisons for names are case-insensitive and use the def names of the hediffs or body parts.
+Let's look at some examples.
+
+Basic Case
+<GeneDef>
+    <!--other nodes are omitted-->
+    <modExtensions>
+        <li Class="BetterGeneGraphicsFramework.GraphicsWithAge">
+            <ages>
+                <li>0</li>
+            </ages>
+            <bodyPartExpressions>
+                <li>Left ear|Right ear</li>
+                <li>!Left ear|Right ear</li>
+                <li>Left ear|!Right ear</li>
+                <li>!Left ear|!Right ear</li>
+            </bodyPartExpressions>
+            <graphicPaths>
+                <li>Things/Ears/Adult/TwoEars</li>
+                <li>Things/Ears/Adult/RightEar</li>
+                <li>Things/Ears/Adult/LeftEar</li>
+                <li>Things/Ears/NoEars</li>
+            </graphicPaths>
+        </li>
+    </modExtensions>
+</GeneDef>
+In this example, there are four expressions and four corresponding textures. One texture is allowed only when the expression is evaluated to be true. When a pawn loses his/her ear(s), textures will be automatically changed. In this way, we have some logical links between genes and body parts.
+
+Use with ages
+<GeneDef>
+    <!--other nodes are omitted-->
+    <modExtensions>
+        <li Class="BetterGeneGraphicsFramework.GraphicsWithAge">
+            <ages>
+                <li>0</li>
+                <li>18</li>
+            </ages>
+            <bodyPartExpressions>
+                <li>Left ear|Right ear</li>
+                <li>!Left ear|Right ear</li>
+                <li>Left ear|!Right ear</li>
+                <li>!Left ear|!Right ear</li>
+            </bodyPartExpressions>
+            <graphicPaths>
+                <!--child-->
+                <li>Things/Ears/Child/TwoEars</li>
+                <li>Things/Ears/Child/RightEar</li>
+                <li>Things/Ears/Child/LeftEar</li>
+                <li>Things/Ears/NoEars</li>
+                <!--adult-->
+                <li>Things/Ears/Adult/TwoEars</li>
+                <li>Things/Ears/Adult/RightEar</li>
+                <li>Things/Ears/Adult/LeftEar</li>
+                <li>Things/Ears/NoEars</li>
+            </graphicPaths>
+        </li>
+    </modExtensions>
+</GeneDef>
+Body part expressions are the same as in the former case. But we have two age stages and eight textures. As we said in the Graphics With Ages section, the first four will be used for the first stage, then body part expressions are evaluated.
+
+More textures
+<GeneDef>
+    <!--other nodes are omitted-->
+    <modExtensions>
+        <li Class="BetterGeneGraphicsFramework.GraphicsWithAge">
+            <ages>
+                <li>0</li>
+                <li>18</li>
+            </ages>
+            <bodyPartExpressions>
+                <li>left eye -- BionicEye</li>
+                <li>Global -- Bloodloss</li>
+            </bodyPartExpressions>
+            <graphicPaths>
+                <!--child-->
+                <li>Things/Child/BionicEyeA</li>
+                <li>Things/Child/BloodlossA</li>
+                <li>Things/Child/BionicEyeB</li>
+                <li>Things/Child/BloodlossB</li>
+                <li>Things/Child/BionicEyeC</li>
+                <li>Things/Child/BloodlossC</li> 
+                <!--adult-->
+                <li>Things/Adult/BionicEyeA</li>
+                <li>Things/Adult/BloodlossA</li>
+                <li>Things/Adult/BionicEyeB</li>
+                <li>Things/Adult/BloodlossB</li>
+                <li>Things/Adult/BionicEyeC</li>
+                <li>Things/Adult/BloodlossC</li> 
+            </graphicPaths>
+        </li>
+    </modExtensions>
+</GeneDef>
+Want more textures? Fine. In this case, two age stages, two expressions, and 12 textures. The first 6 are for the first age stage. Texture paths will be used alternately for expressions. This first expression is true when the pawn has a bionic eye on his left eye. The latter asks if the pawn has a hediff with the def name Bloodlost.
+What if both expressions are true? Then all textures are allowed, and they are randomized based on the pawn's ID number.
