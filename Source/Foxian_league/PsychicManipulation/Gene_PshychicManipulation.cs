@@ -13,18 +13,13 @@ namespace Foxian_league {
         public int skillModifier;
         public float psychicSensitivityRecent;
 
-        public float delimiter = 0.5f;
+        public float delimiter = 0.25f;
 
         public override void TickInterval(int delta) {
             base.TickInterval(delta);
             float PsychichSensiPawn = pawn.psychicEntropy.PsychicSensitivity;
-            Log.Message($"PsychichSensiPawn {PsychichSensiPawn}, {pawn.Name}, {skillModifier}, {psychicSensitivityRecent}, Tick Interval version");
             if (psychicSensitivityRecent != PsychichSensiPawn) {
-                Log.Message("Psychic has changed");
-                Log.Message($"skill before {skillModifier}");
-                Log.Message($"psychicSensitivityRecent before change {psychicSensitivityRecent}");
                 psychicSensitivityRecent = PsychichSensiPawn;
-                Log.Message($"psychicSensitivityRecent after change {psychicSensitivityRecent}");
                 CalculateSkillModifier(psychicSensitivityRecent);
             }
         }
@@ -52,7 +47,6 @@ namespace Foxian_league {
                 float skillModifierFloat = currentPawnPsySensitivity / delimiter;
                 decimal roundedSkillModifier= Math.Round((decimal)skillModifierFloat, 1);
                 skillModifier = (int)roundedSkillModifier;
-                Log.Message($"skill after {skillModifier}");
             }
         }
     }

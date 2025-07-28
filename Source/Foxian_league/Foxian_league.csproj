@@ -43,16 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimalConnection\Patch_PawnUtility_GetManhunterOnTameFailChance.cs" />
+    <Compile Include="AnimalConnection\Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.cs" />
     <Compile Include="Composed\Patch_NegativeInteractionUtility_NegativeInteractionChanceFactor.cs" />
     <Compile Include="EmotionallyBrittle\Patch_MentalState_MentalStateTick.cs" />
+    <Compile Include="FL_DebugActions.cs" />
+    <Compile Include="GeneticPurity\ChoiceLetter_GreaterFoxianBorn.cs" />
     <Compile Include="GeneticPurity\Patch_PawnGenerator_GeneratePawn.cs" />
     <Compile Include="GeneticPurity\Patch_PregnancyUtility_ApplyBirthOutcome.cs" />
+    <Compile Include="GeneticPurity\Patch_PregnancyUtility_TryGetInheritedXenotype.cs" />
     <Compile Include="Loyal\ThoughtWorker_LoyalSocial.cs" />
     <Compile Include="Loyal\ThoughtWorker_LoyalMood.cs" />
     <Compile Include="Main.cs" />
-    <Compile Include="FemaleOnly\Patch_PawnGeneTracker_NotifyGenesChanged.cs" />
     <Compile Include="InternalDefsOf.cs" />
-    <Compile Include="FemaleOnly\Patch_PawnGenerator_GeneratePawnRelations.cs" />
+    <Compile Include="NaturalPsySensitive\Patch_MediationUtility_PsyfocusGainPerTick.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PsychicManipulation\Gene_PshychicManipulation.cs" />
     <Compile Include="PsychicManipulation\Patch_SkillRecord_Aptitude.cs" />

@@ -9,7 +9,7 @@
         <iconPath></iconPath>
         <displayOrderInCategory>105</displayOrderInCategory>
         <statFactors>
-            <Fertility>0.4</Fertility>
+            <Fertility>0.7</Fertility>
         </statFactors>
         <biostatMet>1</biostatMet>
     </GeneDef>
@@ -30,7 +30,7 @@
                 <def>Bisexual</def>
             </li>
         </forcedTraits>
-        <biostatMet>-1</biostatMet>
+        <biostatMet>0</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>
 
@@ -45,7 +45,7 @@
         <socialFightChanceFactor>0</socialFightChanceFactor>
         <aggroMentalBreakSelectionChanceFactor>0</aggroMentalBreakSelectionChanceFactor>
         <customEffectDescriptions>
-            <li>less chance to trigegr a negative interaction with someone</li>
+            <li>less chance to triger a negative interaction with someone</li>
         </customEffectDescriptions>
         <suppressedTraits>
             <li>
@@ -64,8 +64,11 @@
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>1</displayOrderInCategory>
         <statOffsets>
-            <MentalBreakThreshold>0.05</MentalBreakThreshold>
+            <MentalBreakThreshold>0.08</MentalBreakThreshold>
         </statOffsets>
+        <customEffectDescriptions>
+            <li>Mental breakdowns last much longer</li>
+        </customEffectDescriptions>
         <suppressedTraits>
             <li>
                 <def>Nerves</def>
@@ -76,7 +79,7 @@
                 <degree>-2</degree>
             </li>
         </suppressedTraits>
-        <biostatMet>2</biostatMet>
+        <biostatMet>3</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>
 
@@ -92,6 +95,9 @@
                 <def>FL_Reserved_Trait</def>
             </li>
         </forcedTraits>
+        <customEffectDescriptions>
+            <li>Negative memories are more impactful and last much longer</li>
+        </customEffectDescriptions>
         <biostatMet>1</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>
@@ -108,29 +114,47 @@
                 <def>FL_Loyal_Trait</def>
             </li>
         </forcedTraits>
+        <customEffectDescriptions>
+            <li>This pawn is much more persusasive when converting other and is harder to convert</li>
+            <li>Gain mood bonus or malus depending on the certainty level</li>
+        </customEffectDescriptions>
         <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>
 
     <!--Psychic-->
     <GeneDef ParentName="GenePsychicAbilityBase">
-        <defName>FL_MinorPsySensitive</defName>
-        <label>minor psy-sensitivity</label> 
-        <labelShortAdj>psy-enhanced</labelShortAdj>
-        <description>Carriers of this gene are more psychically-sensitive than the average person but they are not as much as a normal psy-sensitive individual.</description>
+        <defName>FL_NaturalPsySensitive</defName>
+        <label>natural psy-sensitivity</label> 
+        <labelShortAdj>natural psy</labelShortAdj>
+        <description>Carriers of this gene are more attuned to nature than other psy-sensitive persons.</description>
         <iconPath></iconPath>
         <displayOrderInCategory>15</displayOrderInCategory>
-        <statOffsets>
-            <PsychicSensitivity>0.25</PsychicSensitivity>
-            <MeditationFocusGain>0.15</MeditationFocusGain>
-            <PsychicEntropyRecoveryRate>-0.20</PsychicEntropyRecoveryRate>
-        </statOffsets>
-        <biostatMet>-1</biostatMet>
+        <forcedTraits>
+            <li>
+                <def>FL_NaturalPsySensitive_Trait</def>
+            </li>
+        </forcedTraits>
+        <suppressedTraits>
+            <li>
+                <def>PsychicSensitivity</def>
+                <degree>-2</degree>
+            </li>
+        </suppressedTraits>
+        <customEffectDescriptions>
+            <li>Psychic sensitivity +25%</li>
+            <li>Meditation psyfocus gain +15% / day</li>
+            <li>Neural heat recovery rate -0.25</li>
+            <li>Enable natural meditation type</li>
+            <li>Pawn will receive a -25% penalty to their psyfocus recovery when meditating near a non-natural spot</li>
+        </customEffectDescriptions>
+        <biostatMet>-2</biostatMet>
         <symbolPack>
         <prefixSymbols>
             <li><symbol>psy</symbol></li>
             <li><symbol>senso</symbol></li>
             <li><symbol>sensi</symbol></li>
+            <li><symbol>nature</symbol></li>
         </prefixSymbols>
         </symbolPack>
     </GeneDef>
@@ -142,7 +166,29 @@
         <iconPath></iconPath>
         <geneClass>Foxian_league.Gene_PsychicManipulation</geneClass>
         <customEffectDescriptions>
-            <li>Each 50% psychic sensitivity beyond 100% will add a bonus point to this pawn social aptitude</li>
+            <li>Each 25% psychic sensitivity beyond 100% will add a bonus point to this pawn social aptitude</li>
+        </customEffectDescriptions>
+        <displayCategory>FL_foxian_genes_set</displayCategory>
+        <displayOrderInCategory>105</displayOrderInCategory>
+        <biostatMet>-1</biostatMet>
+        <biostatCpx>1</biostatCpx>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>FL_AnimalConnection</defName>
+        <label>animal connection</label>
+        <description>Carriers of this gene have more ease communicating with wild and tamed animals</description>
+        <iconPath></iconPath>
+        <passionMod>
+            <skill>Animals</skill>
+            <modType>AddOneLevel</modType>
+        </passionMod>
+        <statFactors>
+            <TameAnimalChance>1.1</TameAnimalChance>
+            <TrainAnimalChance>1.25</TrainAnimalChance>
+        </statFactors>
+        <customEffectDescriptions>
+            <li>Reduce the chance for an animal to enter a manhunter state after a failed taming attempt if the carrier has more than 150% psychic sensitivity</li>
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>105</displayOrderInCategory>
@@ -176,23 +222,8 @@
         <displayCategory>ResistanceAndWeakness</displayCategory>
         <displayOrderInCategory>10</displayOrderInCategory>
         <statOffsets>
-			<ToxicEnvironmentResistance>-0.2</ToxicEnvironmentResistance>
-            <ToxicResistance>-0.1</ToxicResistance>
-		</statOffsets>
-        <biostatMet>1</biostatMet>
-        <biostatCpx>1</biostatCpx>
-    </GeneDef>
-
-    <GeneDef>
-        <defName>FL_StrongToxicVulnerability</defName>
-        <label>strong toxic vulnerability</label>
-        <description>Carriers of this gene are very vulnerable to toxic buildup and environmental toxins. Such as pollution, toxic fallout, tox gas, and direct attacks with venom or injected poison</description>
-        <iconPath></iconPath>
-        <displayCategory>ResistanceAndWeakness</displayCategory>
-        <displayOrderInCategory>10</displayOrderInCategory>
-        <statOffsets>
 			<ToxicEnvironmentResistance>-0.5</ToxicEnvironmentResistance>
-            <ToxicResistance>-0.25</ToxicResistance>
+            <ToxicResistance>-0.5</ToxicResistance>
 		</statOffsets>
         <biostatMet>3</biostatMet>
         <biostatCpx>1</biostatCpx>
@@ -204,9 +235,14 @@
         <label>genetic purity</label>
         <description>Carriers of this gene will is very likely to birth an offspring with the same gender and the offspring will only inherit the endogene of his mother.</description>
         <iconPath></iconPath>
+        <customEffectDescriptions>
+            <li>This gene will follow one of the two behaviours if the mother is a foxian or is considered foxian enough</li>
+            <li>Behaviour 1: the mother is foxian. She will either birth a female child with the foxian xenotype, or in some rare cases, she will birth a special child with the greater foxian xenotype. That special child can either be a male or female (it is more likely to be a male). Only the cosmetic genes such as hair color or skin color will be transmited to the child</li>
+            <li>Behaviour 2: the mother is not a foxian. She will birth a normal child and transmit all of her endogenes to it if this gene was active as an endogene, otherwise, she will transmit all of her xenogenes.</li>
+        </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>2</displayOrderInCategory>
-        <biostatMet>-1</biostatMet>
+        <biostatMet>-2</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>
 
@@ -224,26 +260,18 @@
         <biostatCpx>1</biostatCpx>
     </GeneDef>
 
-    <GeneDef>
-        <defName>FL_FastStudy</defName>
-        <label>fast study</label>
-        <description>Carriers of this gene have better memories and understand new ideas faster than the average person.</description>
-        <iconPath></iconPath>
-        <displayCategory>FL_foxian_genes_set</displayCategory>
-        <displayOrderInCategory>3</displayOrderInCategory>
-        <statOffsets>
-          <GlobalLearningFactor>0.15</GlobalLearningFactor>
-        </statOffsets>
-        <biostatMet>-1</biostatMet>
-        <biostatCpx>1</biostatCpx>
-    </GeneDef>
-
 	<GeneDef>
 		<defName>FL_Female</defName>
 		<label>female only</label>
 		<description>Carriers of this gene are always biologically female.</description>
 		<iconPath></iconPath>
+        <displayCategory>FL_foxian_genes_set</displayCategory>
 		<displayOrderInCategory>3</displayOrderInCategory>
+        <modExtensions>
+            <li Class="VEF.Genes.GeneExtension">
+                <forceFemale>true</forceFemale>
+            </li>
+        </modExtensions>
         <biostatMet>0</biostatMet>
         <biostatCpx>0</biostatCpx>
 	</GeneDef>

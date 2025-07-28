@@ -23,9 +23,19 @@ namespace Foxian_league {
         }
 
         [HarmonyPostfix]
-        public static void Postfix() {
-            if(mother != null) {
+        public static void Postfix(Thing __result) {
+            Log.Message($"result of thing {__result}");
+            if(Patch_PawnGenerator_GeneratePawn.isBabyGreaterFoxian) {
+                Pawn baby = __result as Pawn;
+                Patch_PawnGenerator_GeneratePawn.isBabyGreaterFoxian = false;
+                ChoiceLetter_GreaterFoxianBorn choiceLetter_baby = (ChoiceLetter_GreaterFoxianBorn)LetterMaker.MakeLetter("Greater Foxian Born", "GreaterFoxianBornLoc".Translate(mother), InternalDefOf.FL_GreaterFoxianBorn, baby);
+                choiceLetter_baby.Start();
+                Find.LetterStack.ReceiveLetter(choiceLetter_baby);
+                Log.Message($"current bobyfoxian bool: {Patch_PawnGenerator_GeneratePawn.isBabyGreaterFoxian}");
+            }
+            if (mother != null) {
                 mother = null;
+                Log.Message($"Mother has been set to null: {mother}");
             }
         }
     }

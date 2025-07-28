@@ -13,8 +13,8 @@
     <configurationListOrderPriority>30</configurationListOrderPriority>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
-        <Foxian>0.8</Foxian>
-		    <Greater_Foxian>0.2</Greater_Foxian>
+        <FL_Foxian>0.8</FL_Foxian>
+		    <FL_Greater_Foxian>0.2</FL_Greater_Foxian>
       </xenotypeChances>
     </xenotypeSet>
   </FactionDef>

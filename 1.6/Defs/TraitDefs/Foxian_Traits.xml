@@ -20,8 +20,25 @@
             <description>{PAWN_nameDef} is devoted to {PAWN_possessive} belief, {PAWN_pronoun} is harder to convert and {PAWN_pronoun} is more persusasive when converting other to {PAWN_possessive} belief. {PAWN_nameDef} mood will be impacted based on {PAWN_possessive} certainty, {PAWN_pronoun} will also judges other negatively or positively depending on their certainty or if they follow another ideology.</description>
             <statFactors>
                 <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.80</CertaintyLossFactor>
-                <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">1.25</ConversionPower>
+                <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">1.2</ConversionPower>
             </statFactors>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+    <TraitDef>
+        <defName>FL_NaturalPsySensitive_Trait</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+            <label>natural psy-sensitivity</label>
+            <description>{PAWN_nameDef} is more attuned to nature than the average psycaster. {PAWN_pronoun} has a higher psychic sensitivity and recover psyfocus quicker from meditation, however {PAWN_possessive} neural heat will dissipate at a slower rate than the average psycaster. Additionally, {PAWN_nameDef} will replenish 25% less psyfocus if {PAWN_pronoun} meditates near a non-natural spot.</description>
+            <statOffsets>
+                <PsychicSensitivity>0.25</PsychicSensitivity>
+                <MeditationFocusGain>0.15</MeditationFocusGain>
+                <PsychicEntropyRecoveryRate>-0.25</PsychicEntropyRecoveryRate>
+            </statOffsets>
+            <allowedMeditationFocusTypes><li>Natural</li></allowedMeditationFocusTypes>
             </li>
         </degreeDatas>
     </TraitDef>

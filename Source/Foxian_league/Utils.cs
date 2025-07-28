@@ -43,7 +43,7 @@ namespace Foxian_league {
         }
 
         public static bool IsFoxian(Pawn pawn) {
-            return pawn.genes.Xenotype == InternalDefOf.Foxian;
+            return pawn.genes.Xenotype == InternalDefOf.FL_Foxian;
         }
 
         public static bool IsPawnFoxianEnough(Pawn pawn) {

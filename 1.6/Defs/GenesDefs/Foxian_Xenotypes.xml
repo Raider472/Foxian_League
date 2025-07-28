@@ -2,7 +2,7 @@
 <Defs>
 
   <XenotypeDef>
-    <defName>Foxian</defName>
+    <defName>FL_Foxian</defName>
     <label>Foxian</label>
     <description>A detailed description of your Xenotype</description>
     <descriptionShort>A short description of your Xenotype</descriptionShort>
@@ -16,35 +16,53 @@
       <li>FL_LowFertility</li>
       <li>FL_Lustful</li>
       <li>FL_Reserved</li>
-      <li>FL_MinorPsySensitive</li>
-      <li>AptitudeStrong_Intellectual</li>
+      <li>FL_Loyal</li>
+      <li>FL_NaturalPsySensitive</li>
       <li>AptitudeTerrible_Melee</li>
       <li>AptitudePoor_Mining</li>
+      <li>MeleeDamage_Weak</li>
       <li>MinTemp_SmallDecrease</li>
       <li>MaxTemp_SmallDecrease</li>
       <li>FL_Immaculate</li>
-      <li>FL_FastStudy</li>
       <li>FL_Female</li>
       <li>FL_SlowAging</li>
       <li>FL_ToxicVulnerability</li>
       <li>FL_PsychicManipulation</li>
       <li>FL_GeneticPurity</li>
+      <li>FL_Composed</li>
+      <li>FL_Emotionally_Brittle</li>
+      <li>FL_AnimalConnection</li>
     </genes>
   </XenotypeDef>
 
   <XenotypeDef>
-    <defName>Greater_Foxian</defName>
+    <defName>FL_Greater_Foxian</defName>
     <label>Greater Foxian</label>
     <description>A detailed description of your Xenotype</description>
     <descriptionShort>A short description of your Xenotype</descriptionShort>
     <iconPath>UI/Icons/Xenotype/FL_GreaterFoxianXenotypeIcon</iconPath>
     <inheritable>true</inheritable>
-    <combatPowerFactor>1.5</combatPowerFactor>
+    <combatPowerFactor>1.35</combatPowerFactor>
     <genes>
-      <li>Aggression_DeadCalm</li>
       <li>Beauty_Beautiful</li>
       <li>FL_FoxEar</li>
       <li>FL_NineFoxTail</li>
+      <li>FL_LowFertility</li>
+      <li>FL_Lustful</li>
+      <li>FL_Reserved</li>
+      <li>FL_Loyal</li>
+      <li>FL_NaturalPsySensitive</li>
+      <li>AptitudeStrong_Melee</li>
+      <li>AptitudeTerrible_Shooting</li>
+      <li>MinTemp_SmallDecrease</li>
+      <li>MaxTemp_SmallDecrease</li>
+      <li>FL_SlowAging</li>
+      <li>FL_ToxicVulnerability</li>
+      <li>Immunity_Weak</li>
+      <li>FL_GeneticPurity</li>
+      <li>FL_Composed</li>
+      <li>FL_Emotionally_Brittle</li>
+      <li>FL_AnimalConnection</li>
     </genes>
   </XenotypeDef>
 </Defs>

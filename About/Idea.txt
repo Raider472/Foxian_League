@@ -4,11 +4,15 @@ Foxian Genes
     V-reduced fertility
     V-only female
 
-    Semi V-Genetic Purity (65% chance of normal foxian, 35% chance of greater foxian then 70% male and 30% female greater foxian + only female)
+    V-Genetic Purity (65% chance of normal foxian, 35% chance of greater foxian then 70% male and 30% female greater foxian + only female)
         -2 behaviours:
             -1 Pawn is Foxian and does the mentioned above
             -2 Pawn is not Foxian
                 -baby will receive all active gene of the mother depending if the gene is xeno or endo
+        V-Add notification when greater foxian has been borned
+        V-Fix Xenotype still displaying normal foxian for greater foxian (Displayed as foxian or hybrid, most likely need to use a transpiler to set the correct xenotype)
+            V-Try patching TryGetInheritedXenotype (And maybe is hybrid or something)
+            -Should Hybrid be allowed ?
     V-slow aging
 
     -Weak Stomach -> see after balancing
@@ -26,19 +30,18 @@ Foxian Genes
         - social opinion malus if a colonist is not loyal to the ideo or under a certain threshold
     V-immaculate (clean 0.75%)
 
-
-    V-strong intellect
-    V-fast learning (25% global learning factor)
-
     V-Terrible melee
     V-poor mining
 
     V-heat weakness
     V-Cold resistance
 
-    V-minor psy sensitivity (10% instead of 20%)
-    -Psychic drone sensitivity
-        -Check this "RimWorld.PsychicPowerDriver_Drone.UsePower"
+    V-Weak melee damage
+
+    V-Natural psy sensitivity
+        -If pawns medidate somewhere else than natural spot, he will recover less psyfocus
+        -Pawn_psychicEntropyTracker.GainPsyfocus_NewTemp
+        -MeditationUtility.PsyfocusGainPerTick
     V-Psychic manipulation (the more psy sensitivity, the more their social stats increase)
         -Patch social localization
         -Make the skill modifier and psy sensi local to the genedef
@@ -48,37 +51,37 @@ Foxian Genes
             SkillRecord GetAptitude
             - Do not use the apptitude in gene def, instead, change the code for apptitude
             -SkillUI -> GetSkillDescription for localization
+        -will add small bonus to trade price improvement and negatiation ability
+    V-Psychic Taming or Something
+        -basic bonuses + less chance for manhunter on failed attempt
+        -public static float GetManhunterOnTameFailChance(ThingDef def)
+        -Maybe check if it is possible to bug the whole thing by having multiple pawns taming animals ?
 
-Greater Foxian genes
-    -Scareless (base game)
-    -Fast wound healing (base game)
-    -strong stomach (base game)
-    -superclotting (base game)
-    -weaker immunity (-5% base game)
-    -Stronger toxic vulnerability
+Greater Foxian genes (Redesign this xenotype)
+    V-weak immunity
+    V-toxic vulnerability
 
-    -Affection (bar to fill, filled by social, loves and possibly gizmo to do the deeds)
-    -lustful (high libido and bisexual)
-    -very atractive (base game)
-    -reduced fertility
+    V-lustful (high libido and bisexual)
+    V-very atractive (base game)
+    V-reduced fertility
 
-    -recessive genes
-    -slow aging
+    V-Genetic Purity
+    V-Slow aging
 
-    -dead calm (base game)
-    -reserved(higher threshold of mental breakdown +10%) -- Combine it with dead calm
-    -Conformist (dutiful + higher ideologu protection +15%)
-    -immaculate (clean 0.75%)
+    V-composed mind
+    V-reserved
+    V-Loyal
 
-    -great melee
-    -great duelist (more dodge, faster melee and strong attack)
-    -agile runner (0.10 move speed)
+    V-great melee
+    -great duelist (more dodge, faster melee and strong attack) (Something related with psychic power ?)
+    -agile runner (0.10 move speed) (Maybe something related with psychic power ?)
+    -Add an ability maybe ?
 
-    -Awful shooting
-    -hate guns (gain a negative mood when wielding a gun)
+    V-Awful shooting
 
-    -heat weakness
+    V-heat weakness
 
-    -super psy sensitive (base game)
-    -deep psychic bond (psychic drones effects X2)
-    -psy enhancement (the more psychic sensitivy over 100%, the stronger you become. Stats base increase)
+    V-Natural psy sensitive
+    -Fast wound healing but scale with psychic sensitivity
+    -superclotting (Maybe include in the above)
+    -psy enhancement (the more psychic sensitivy over 100%, the stronger you become. Stats base increase, most likely this would be done with a hediff)

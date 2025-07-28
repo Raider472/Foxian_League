@@ -12,6 +12,7 @@ namespace Foxian_league {
     //Otherwise the gene will use behaviour B if the mother has the gene but is not foxian enough
     [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) })]
     public static class Patch_PawnGenerator_GeneratePawn {
+        public static bool isBabyGreaterFoxian = false;
 
         [HarmonyPrefix]
         public static void Prefix(ref PawnGenerationRequest request) {
@@ -23,16 +24,20 @@ namespace Foxian_league {
 
                 if (Utils.IsFoxian(mother) || Utils.IsPawnFoxianEnough(mother)) {
                     Log.Message("MOTHER IS FOXIAN");
-                    bool isBabyNormalFoxian = Rand.Chance(0.65f);
-                    request.FixedGender = Gender.Female;
+                    bool isBabyNormalFoxian = Rand.Chance(0.7f);
                     request.ForcedEndogenes = babyCosmeticGenes;
-                    //TODO CHANGE WASTER TO GREATER FOX
-                    request.ForcedXenotype = isBabyNormalFoxian ? InternalDefOf.Foxian : InternalDefOf.Waster;
+                    request.ForcedXenotype = isBabyNormalFoxian ? InternalDefOf.FL_Foxian : InternalDefOf.FL_Greater_Foxian;
+                    Log.Message($"forced custom xenotype: {request.ForcedCustomXenotype}");
 
-                    if(!isBabyNormalFoxian ) {
+                    if (!isBabyNormalFoxian ) {
+                        isBabyGreaterFoxian = true;
                         request.FixedGender = Rand.Chance(0.7f) ? Gender.Male : Gender.Female;
                         Log.Message($"Baby Gender is: {request.FixedGender}");
                     }
+                    else {
+                        request.FixedGender = Gender.Female;
+                    }
+                    Log.Message($"forced after op xenotype: {request.ForcedXenotype}");
                 }
                 else {
                     Log.Message("MOTHER IS NOT FOXIAN");
@@ -55,7 +60,7 @@ namespace Foxian_league {
                     }
                     Log.Message("GENERATION DONE");
                 }
-                Patch_PregnancyUtility_ApplyBirthOutcome.mother = null;
+                Log.Message($"Is baby greater foxian ? {isBabyGreaterFoxian}");
             }
         }
     }
