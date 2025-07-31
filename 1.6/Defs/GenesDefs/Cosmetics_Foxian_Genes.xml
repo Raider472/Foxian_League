@@ -110,6 +110,109 @@
 			</li>
 		</renderNodeProperties>
 		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<hediffsToBodyParts>
+					<li>
+						<hediff>FL_foxian_tail</hediff>
+						<bodyparts>
+							<li>Torso</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+			<li MayRequire="telardo.BetterGeneGraphicsFramework" Class="BetterGeneGraphicsFramework.ShaderSupport">
+				<colorTwoType>Custom</colorTwoType>
+				<colorTwo>(245, 245, 245)</colorTwo>
+			</li>
+			<li MayRequire="telardo.BetterGeneGraphicsFramework" Class="BetterGeneGraphicsFramework.WithBodyTypeOffset">
+				<disableBodyTypeScaleForAdult>true</disableBodyTypeScaleForAdult>
+				<bodyTypeOffsetNorth>
+					<hulk>(0,0,-0.15)</hulk>
+					<baby>(0,0,0.08)</baby>
+					<child>(0,0,0.08)</child>
+					<femaleBB>(-0.01,0,0.04)</femaleBB>
+				</bodyTypeOffsetNorth>
+				<bodyTypeOffsetEast>
+					<male>(0.05,0,-0.02)</male>
+					<hulk>(-0.08,0,-0.15)</hulk>
+					<fat>(-0.16,0,0)</fat>
+					<baby>(0.03,0,0.08)</baby>
+					<child>(0.03,0,0.08)</child>
+					<femaleBB>(-0.03,0,-0.02)</femaleBB>
+				</bodyTypeOffsetEast>
+				<bodyTypeOffsetSouth>
+					<male>(-0.04,0,0.05)</male>
+					<hulk>(-0.14,0,-0.15)</hulk>
+					<fat>(-0.18,0,0)</fat>
+					<baby>(0,0,0.03)</baby>
+					<child>(0,0,0.03)</child>
+				</bodyTypeOffsetSouth>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="FL_GeneTail">
+		<defName>test_FoxTail_changGraphic</defName>
+		<label>Fox tail</label>
+		<description>Amongus</description>
+		<iconPath>UI/Icons/Genes/FL_Gene_Fox_Tail_Icon</iconPath>
+
+		<renderNodeProperties>
+			<li>
+				<nodeClass>BetterGeneGraphicsFramework.PawnRenderNode_GeneAttachment</nodeClass>
+				<workerClass>BetterGeneGraphicsFramework.PawnRenderNodeWorker_GeneBodyAttachment</workerClass>
+				<parentTagDef>Body</parentTagDef>
+				<shaderTypeDef>CutoutComplex</shaderTypeDef>
+				<colorType>Hair</colorType>
+				<useRottenColor>true</useRottenColor>
+				<useSkinShader>false</useSkinShader>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<visibleFacing>
+					<li>East</li>
+					<li>West</li>
+					<li>South</li>
+					<li>North</li>
+				</visibleFacing>
+				<drawData>
+					<defaultData>
+						<layer>1</layer>
+					</defaultData>
+					<dataSouth>
+						<layer>-2</layer>
+					</dataSouth>
+					<dataNorth>
+						<layer>90</layer>
+					</dataNorth>
+					<dataEast>
+						<layer>71</layer>
+					</dataEast>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<hediffsToBodyParts>
+					<li>
+						<hediff>FL_foxian_tail</hediff>
+						<bodyparts>
+							<li>Torso</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+			<li Class="BetterGeneGraphicsFramework.GraphicsWithAge">
+				<ages>
+					<li>0</li>
+				</ages>
+				<bodyPartExpressions>
+					<li>Torso -- FL_foxian_tail</li>
+					<li>Torso -- !FL_foxian_tail</li>
+				</bodyPartExpressions>
+				<graphicPaths>
+					<li>Things/Pawns/Tails/FL_Fox_TailA</li>
+					<li>Things/Pawns/Tails/FL_Fox_TailB</li>
+				</graphicPaths>
+			</li>
 			<li MayRequire="telardo.BetterGeneGraphicsFramework" Class="BetterGeneGraphicsFramework.ShaderSupport">
 				<colorTwoType>Custom</colorTwoType>
 				<colorTwo>(245, 245, 245)</colorTwo>

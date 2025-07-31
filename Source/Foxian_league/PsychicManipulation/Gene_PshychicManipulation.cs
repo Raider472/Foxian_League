@@ -17,7 +17,7 @@ namespace Foxian_league {
 
         public override void TickInterval(int delta) {
             base.TickInterval(delta);
-            float PsychichSensiPawn = pawn.psychicEntropy.PsychicSensitivity;
+            float PsychichSensiPawn = pawn.GetStatValue(StatDefOf.PsychicSensitivity);
             if (psychicSensitivityRecent != PsychichSensiPawn) {
                 psychicSensitivityRecent = PsychichSensiPawn;
                 CalculateSkillModifier(psychicSensitivityRecent);

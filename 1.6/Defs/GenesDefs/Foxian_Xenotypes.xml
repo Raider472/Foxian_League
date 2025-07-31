@@ -56,13 +56,15 @@
       <li>AptitudeTerrible_Shooting</li>
       <li>MinTemp_SmallDecrease</li>
       <li>MaxTemp_SmallDecrease</li>
+      <li>FireWeakness</li>
       <li>FL_SlowAging</li>
       <li>FL_ToxicVulnerability</li>
       <li>Immunity_Weak</li>
       <li>FL_GeneticPurity</li>
       <li>FL_Composed</li>
       <li>FL_Emotionally_Brittle</li>
-      <li>FL_AnimalConnection</li>
+      <li>FL_PsychicChanneling</li>
+      <li>FL_PsychicProtection</li>
     </genes>
   </XenotypeDef>
 </Defs>

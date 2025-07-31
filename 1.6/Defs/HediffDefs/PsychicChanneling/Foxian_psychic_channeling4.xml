@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef>
+        <defName>FL_PsychichChanneling4</defName>
+        <label>Psychic channeling - 4</label>
+        <description>Psychic energy emanates from the weapon of this person.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <everCurableByItem>false</everCurableByItem>
+        <isBad>false</isBad>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+        <stages>
+            <li>
+            <statOffsets>
+                <MeleeDamageFactor>0.4</MeleeDamageFactor>
+                <MeleeCooldownFactor>-0.20</MeleeCooldownFactor>
+                <MeleeArmorPenetration>0.32</MeleeArmorPenetration>
+            </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

@@ -74,14 +74,38 @@ Greater Foxian genes (Redesign this xenotype)
 
     V-great melee
     -great duelist (more dodge, faster melee and strong attack) (Something related with psychic power ?)
-    -agile runner (0.10 move speed) (Maybe something related with psychic power ?)
-    -Add an ability maybe ?
+    -Add an ability maybe ? (Last stand - Become super resistant to any damage for 20 seconds, but once the ability is over, go into a coma, if pawn dies, create an explosion or something + disables most psychic power and drain psyfocus)
 
     V-Awful shooting
 
     V-heat weakness
+    V-Tinder Skin
 
     V-Natural psy sensitive
     -Fast wound healing but scale with psychic sensitivity
     -superclotting (Maybe include in the above)
     -psy enhancement (the more psychic sensitivy over 100%, the stronger you become. Stats base increase, most likely this would be done with a hediff)
+        -Psychic channeling 5 iterations
+            -affected stats: 
+                V-melee damage factor - Max stat : 150 
+                -melee armor penetration - Max stat : 40 Percentage
+                -melee cooldown - Max stat : 25 ???
+        -Psychic armor (Ability to switch between the two mode)
+            -affected stats
+            Mode 1 : Armor
+                -ArmorRating_Blunt - max stat : 0.20
+                -ArmorRating_Pierce - max stat : 0.20
+                -Pain shock threshold - max stat : 0.50
+                -IncomingDamageFactor - max stat : 0.75
+                -stagger time multiplier - max stat : -0.50
+                -Speed malus - max stat : -0.20
+            Mode2 : Dodge
+                -range dodge factor - max stat : 20
+                -melee dodge factor - max stat : 15
+                -InjuryHealingFactor - max stat : 1.20
+                -Pain shock threshold - max stat : 0.80
+                -IncomingDamageFactor - max stat : 0.90
+                -stagger time multiplier - max stat : -0.25 
+                -Speed bonus - max stat : 0.20
+        check CompProperties_MechRepairable and CompMechRepairable
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef>
+        <defName>FL_PsychichProtectionTank2</defName>
+        <label>Psychic protection - Tank mode 2</label>
+        <description>Psychic energy emanates from this person. That energy acts like a psychic shield and allows it to take more hit than the average person.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <everCurableByItem>false</everCurableByItem>
+        <isBad>false</isBad>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+        <stages>
+            <li>
+            <statOffsets>
+                <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+                <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+                <StaggerDurationFactor>-0.2</StaggerDurationFactor>
+                <MoveSpeed>-0.08</MoveSpeed>
+            </statOffsets>
+            <statFactors>
+                <PainShockThreshold>1.2</PainShockThreshold>
+                <IncomingDamageFactor>0.9</IncomingDamageFactor>
+            </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

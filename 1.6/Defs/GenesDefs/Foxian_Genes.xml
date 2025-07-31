@@ -45,7 +45,7 @@
         <socialFightChanceFactor>0</socialFightChanceFactor>
         <aggroMentalBreakSelectionChanceFactor>0</aggroMentalBreakSelectionChanceFactor>
         <customEffectDescriptions>
-            <li>less chance to triger a negative interaction with someone</li>
+            <li>less chance to trigger a negative interaction with someone</li>
         </customEffectDescriptions>
         <suppressedTraits>
             <li>
@@ -193,6 +193,50 @@
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>105</displayOrderInCategory>
         <biostatMet>-1</biostatMet>
+        <biostatCpx>1</biostatCpx>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>FL_PsychicChanneling</defName>
+        <label>psychic channeling</label>
+        <description>Carriers of this gene can channel their psychic sensitivity into their melee weapon or fists to gain the upper hand against their enemies in melee combat. The higher the psychic sensitivity of the carrier is, the stronger they are.</description>
+        <iconPath></iconPath>
+        <geneClass>Foxian_league.Gene_PsychicChanneling</geneClass>
+        <customEffectDescriptions>
+            <li>Grants a hediff that scale with the carrier psychic sensitivity</li>
+            <li>Maximum Melee Damage Factor +50%</li>
+            <li>Maximum Melee Cooldown -25%</li>
+            <li>Maximum Melee Armor Penetration +40%</li>
+            <li>Stage 1 (125% Psy-sensitivity)</li>
+            <li>Stage 2 (150% Psy-sensitivity)</li>
+            <li>Stage 3 (175% Psy-sensitivity)</li>
+            <li>Stage 4 (200% Psy-sensitivity)</li>
+            <li>Stage 5 (250% Psy-sensitivity)</li>
+        </customEffectDescriptions>
+        <displayCategory>FL_foxian_genes_set</displayCategory>
+        <displayOrderInCategory>105</displayOrderInCategory>
+        <biostatMet>-2</biostatMet>
+        <biostatCpx>1</biostatCpx>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>FL_PsychicProtection</defName>
+        <label>psychic protection</label>
+        <description>Carriers of this gene can channel their psychic sensitivity as armor or use it to predict multiple possibilities for a few seconds ahead, allowing them to anticipates and dodge melee hits or even bullets. The higher the psychic sensitivity of the carrier is, the more stronger or accurate their ability are.</description>
+        <iconPath></iconPath>
+        <customEffectDescriptions>
+            <li>Grants an ability to swicth between two mode, this ability grants an hediff that scale with the carrier psychic sensitivity</li>
+            <li>(Default mode) Tank mode:\nMaximum Armor Blunt Protection +20%\nMaximum Armor Sharp Protection +20%\nMaximum Stagger Time Multiplier -50%\nMaximum Move Speed Malus -0.20\nMaximum Pain Shock Threshold x150%\nMaximum Incoming Damage Multiplier x75%</li>
+            <li>(Alternative mode) Dodge mode:\nMaximum Ranged Dodge Chance +20%\nMaximum Melee Dodge Chance +15.0\nMaximum Injury Healing Factor +20%\nMaximum Stagger Time Multiplier -25%\nMaximum Move Speed Bonus 0.20\nMaximum Pain Shock Threshold x120%\nMaximum Incoming Damage Multiplier x90%</li>
+            <li>Stage 1 (125% Psy-sensitivity)</li>
+            <li>Stage 2 (150% Psy-sensitivity)</li>
+            <li>Stage 3 (175% Psy-sensitivity)</li>
+            <li>Stage 4 (200% Psy-sensitivity)</li>
+            <li>Stage 5 (250% Psy-sensitivity)</li>
+        </customEffectDescriptions>
+        <displayCategory>FL_foxian_genes_set</displayCategory>
+        <displayOrderInCategory>105</displayOrderInCategory>
+        <biostatMet>-4</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>
 

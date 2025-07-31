@@ -52,12 +52,14 @@
     <Compile Include="GeneticPurity\Patch_PawnGenerator_GeneratePawn.cs" />
     <Compile Include="GeneticPurity\Patch_PregnancyUtility_ApplyBirthOutcome.cs" />
     <Compile Include="GeneticPurity\Patch_PregnancyUtility_TryGetInheritedXenotype.cs" />
+    <Compile Include="HediffUtils.cs" />
     <Compile Include="Loyal\ThoughtWorker_LoyalSocial.cs" />
     <Compile Include="Loyal\ThoughtWorker_LoyalMood.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="InternalDefsOf.cs" />
     <Compile Include="NaturalPsySensitive\Patch_MediationUtility_PsyfocusGainPerTick.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PsychicChanneling\Gene_PsychicChanneling.cs" />
     <Compile Include="PsychicManipulation\Gene_PshychicManipulation.cs" />
     <Compile Include="PsychicManipulation\Patch_SkillRecord_Aptitude.cs" />
     <Compile Include="PsychicManipulation\Patch_SkillUI_GetSkillDescription.cs" />
