@@ -22,6 +22,7 @@ namespace Foxian_league {
         public static GeneDef FL_Composed;
         public static GeneDef FL_Emotionally_Brittle;
         public static GeneDef FL_AnimalConnection;
+        public static GeneDef FL_PsychicProtection;
 
         public static TraitDef FL_Reserved_Trait;
         public static TraitDef FL_Loyal_Trait;

@@ -224,6 +224,10 @@
         <label>psychic protection</label>
         <description>Carriers of this gene can channel their psychic sensitivity as armor or use it to predict multiple possibilities for a few seconds ahead, allowing them to anticipates and dodge melee hits or even bullets. The higher the psychic sensitivity of the carrier is, the more stronger or accurate their ability are.</description>
         <iconPath></iconPath>
+        <abilities>
+            <li>FL_PsychicProtectionSwitch</li>
+        </abilities>
+        <geneClass>Foxian_league.Gene_PsychicProtection</geneClass>
         <customEffectDescriptions>
             <li>Grants an ability to swicth between two mode, this ability grants an hediff that scale with the carrier psychic sensitivity</li>
             <li>(Default mode) Tank mode:\nMaximum Armor Blunt Protection +20%\nMaximum Armor Sharp Protection +20%\nMaximum Stagger Time Multiplier -50%\nMaximum Move Speed Malus -0.20\nMaximum Pain Shock Threshold x150%\nMaximum Incoming Damage Multiplier x75%</li>

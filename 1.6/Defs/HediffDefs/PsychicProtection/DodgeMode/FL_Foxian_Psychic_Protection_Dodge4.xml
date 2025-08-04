@@ -3,7 +3,7 @@
     <HediffDef>
         <defName>FL_PsychichProtectionDodge4</defName>
         <label>Psychic protection - Dodge mode 4</label>
-        <description>Psychic energy emanates from this person. That person can use this energy as way to deflect incoming bullets or some sore of prescience power.</description>
+        <description>Psychic energy emanates from this person. That person can use this energy as way to deflect incoming bullets or some sort of prescience power.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <everCurableByItem>false</everCurableByItem>
         <isBad>false</isBad>

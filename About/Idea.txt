@@ -73,7 +73,6 @@ Greater Foxian genes (Redesign this xenotype)
     V-Loyal
 
     V-great melee
-    -great duelist (more dodge, faster melee and strong attack) (Something related with psychic power ?)
     -Add an ability maybe ? (Last stand - Become super resistant to any damage for 20 seconds, but once the ability is over, go into a coma, if pawn dies, create an explosion or something + disables most psychic power and drain psyfocus)
 
     V-Awful shooting
@@ -90,7 +89,7 @@ Greater Foxian genes (Redesign this xenotype)
                 V-melee damage factor - Max stat : 150 
                 -melee armor penetration - Max stat : 40 Percentage
                 -melee cooldown - Max stat : 25 ???
-        -Psychic armor (Ability to switch between the two mode)
+        V-Psychic armor (Ability to switch between the two mode)
             -affected stats
             Mode 1 : Armor
                 -ArmorRating_Blunt - max stat : 0.20

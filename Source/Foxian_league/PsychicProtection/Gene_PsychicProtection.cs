@@ -1,19 +1,20 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
-using RimWorld;
 
 namespace Foxian_league {
-    //Gene class to dynamically change the stage of the hediff for a pawn with the gene
-    public class Gene_PsychicChanneling : Gene_PsychicStage {
+    public class Gene_PsychicProtection : Gene_PsychicStage {
+        public bool isAlternateMode = false;
 
-        private const string hediffName = "FL_PsychichChanneling";
+        private const string hediffName = "FL_PsychichProtectionTank";
+        private const string hediffNameAlternate = "FL_PsychichProtectionDodge";
 
         public override void TickInterval(int delta) {
-            //base.TickInterval(delta);
+            base.TickInterval(delta);
             float PsychichSensiPawn = MathF.Round(pawn.GetStatValue(StatDefOf.PsychicSensitivity), 2);
             if (psychicSensitivityRecent != PsychichSensiPawn) {
                 psychicSensitivityRecent = PsychichSensiPawn;
@@ -23,15 +24,22 @@ namespace Foxian_league {
 
                 if (currentChannelingStage != channelingStageRecent) {
                     Log.Message("current channel is not the same as recent one");
-                    HediffUtils.RemoveHediffStage(hediffName, channelingStageRecent, pawn);
-                    channelingStageRecent = currentChannelingStage;
-                    HediffUtils.SetHediffStage(hediffName, currentChannelingStage, pawn);
+                    if (isAlternateMode) {
+                        HediffUtils.RemoveHediffStage(hediffNameAlternate, channelingStageRecent, pawn);
+                        channelingStageRecent = currentChannelingStage;
+                        HediffUtils.SetHediffStage(hediffNameAlternate, currentChannelingStage, pawn);
+                    }
+                    else {
+                        HediffUtils.RemoveHediffStage(hediffName, channelingStageRecent, pawn);
+                        channelingStageRecent = currentChannelingStage;
+                        HediffUtils.SetHediffStage(hediffName, currentChannelingStage, pawn);
+                    }
                 }
             }
         }
+
         public override void PostAdd() {
             base.PostAdd();
-            Log.Message("Test gene has been added");
             float PsychichSensiPawn = MathF.Round(pawn.GetStatValue(StatDefOf.PsychicSensitivity), 2);
             psychicSensitivityRecent = PsychichSensiPawn;
             int currentChannelingStage = GetChannelingStage(PsychichSensiPawn);
@@ -41,7 +49,17 @@ namespace Foxian_league {
 
         public override void PostRemove() {
             base.PostRemove();
-            HediffUtils.RemoveHediffStage(hediffName, channelingStageRecent, pawn);
+            if(isAlternateMode) {
+                HediffUtils.RemoveHediffStage(hediffNameAlternate, channelingStageRecent, pawn);
+            }
+            else {
+                HediffUtils.RemoveHediffStage(hediffName, channelingStageRecent, pawn);
+            }
+        }
+
+        public override void ExposeData() {
+            base.ExposeData();
+            Scribe_Values.Look(ref isAlternateMode, "isAlternateMode", defaultValue: false);
         }
     }
 }
