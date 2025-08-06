@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Verse;
 
 namespace Foxian_league {
+    //Abstract class so I can avoid creating the same fields
     public abstract class Gene_PsychicStage : Gene {
         public float psychicSensitivityRecent;
         public int channelingStageRecent = 0;

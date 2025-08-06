@@ -18,7 +18,7 @@
     <GeneDef ParentName="LibidoBase">
         <defName>FL_Lustful</defName>
         <label>lustful</label>
-        <description>Carriers of this gene are more likely to engage in lovin' with their partner whatever of their genders.</description>
+        <description>Carriers of this gene are more likely to engage in lovin' with their partner, regardless of their genders.</description>
         <iconPath></iconPath>
         <customEffectDescriptions>
 			<li>Highly increase the chance of lovin'.</li>
@@ -38,7 +38,7 @@
     <GeneDef>
         <defName>FL_Composed</defName>
         <label>composed mind</label>
-        <description>Carriers of this gene are strong willed and calm. They will never start social fights against they peers, they are less inclined to start negative interaction with them and their mental breakdowns are also always non violent.</description>
+        <description>Carriers of this gene are strong-willed and calm. They will never start social fights against their peers, they are less inclined to start negative interactions with them, and their mental breakdowns are also always non-violent.</description>
         <iconPath></iconPath>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>1</displayOrderInCategory>
@@ -59,7 +59,7 @@
     <GeneDef>
         <defName>FL_Emotionally_Brittle</defName>
         <label>emotionally  brittle</label>
-        <description>Carriers of this gene are much more susceptible to break under pressure and they will spend much more time in mental breakdowns than the average person.</description>
+        <description>Carriers of this gene are much more susceptible to breaking under pressure, and they will spend much more time in mental breakdowns than the average person.</description>
         <iconPath></iconPath>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>1</displayOrderInCategory>
@@ -86,7 +86,7 @@
     <GeneDef>
         <defName>FL_Reserved</defName>
         <label>reserved</label>
-        <description>Carriers of this gene keep their problems to themselves rather than discussing their issues to someone else.</description>
+        <description>Carriers of this gene keep their problems to themselves rather than discussing their issues with someone else.</description>
         <iconPath></iconPath>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>1</displayOrderInCategory>
@@ -115,7 +115,7 @@
             </li>
         </forcedTraits>
         <customEffectDescriptions>
-            <li>This pawn is much more persusasive when converting other and is harder to convert</li>
+            <li>This pawn is much more persuasive when converting others and is harder to convert</li>
             <li>Gain mood bonus or malus depending on the certainty level</li>
         </customEffectDescriptions>
         <biostatMet>-1</biostatMet>
@@ -127,7 +127,7 @@
         <defName>FL_NaturalPsySensitive</defName>
         <label>natural psy-sensitivity</label> 
         <labelShortAdj>natural psy</labelShortAdj>
-        <description>Carriers of this gene are more attuned to nature than other psy-sensitive persons.</description>
+        <description>Carriers of this gene are more attuned to nature than other psychically sensitive persons.</description>
         <iconPath></iconPath>
         <displayOrderInCategory>15</displayOrderInCategory>
         <forcedTraits>
@@ -162,11 +162,11 @@
     <GeneDef>
         <defName>FL_PsychicManipulation</defName>
         <label>psychic manipulation</label>
-        <description>Carriers of this gene can influence other persons with their own psychic sensitivity, the higher their sensitivity is, the higher the influence become</description>
+        <description>Carriers of this gene can influence other persons with their psychic sensitivity, the higher their sensitivity is, the higher their influence becomes</description>
         <iconPath></iconPath>
         <geneClass>Foxian_league.Gene_PsychicManipulation</geneClass>
         <customEffectDescriptions>
-            <li>Each 25% psychic sensitivity beyond 100% will add a bonus point to this pawn social aptitude</li>
+            <li>Each 25% psychic sensitivity beyond 100% will add a bonus point to this person's social aptitude</li>
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>105</displayOrderInCategory>
@@ -177,7 +177,7 @@
     <GeneDef>
         <defName>FL_AnimalConnection</defName>
         <label>animal connection</label>
-        <description>Carriers of this gene have more ease communicating with wild and tamed animals</description>
+        <description>Carriers of this gene have an easier time communicating with wild and tamed animals.</description>
         <iconPath></iconPath>
         <passionMod>
             <skill>Animals</skill>
@@ -203,7 +203,7 @@
         <iconPath></iconPath>
         <geneClass>Foxian_league.Gene_PsychicChanneling</geneClass>
         <customEffectDescriptions>
-            <li>Grants a hediff that scale with the carrier psychic sensitivity</li>
+            <li>Grants a permanent effect that scale with the carrier psychic sensitivity</li>
             <li>Maximum Melee Damage Factor +50%</li>
             <li>Maximum Melee Cooldown -25%</li>
             <li>Maximum Melee Armor Penetration +40%</li>
@@ -219,17 +219,18 @@
         <biostatCpx>1</biostatCpx>
     </GeneDef>
 
+    <!--Ability-->
     <GeneDef>
         <defName>FL_PsychicProtection</defName>
         <label>psychic protection</label>
-        <description>Carriers of this gene can channel their psychic sensitivity as armor or use it to predict multiple possibilities for a few seconds ahead, allowing them to anticipates and dodge melee hits or even bullets. The higher the psychic sensitivity of the carrier is, the more stronger or accurate their ability are.</description>
+        <description>Carriers of this gene can channel their psychic sensitivity as armor or use it to predict multiple possibilities for a few seconds, allowing them to anticipate and dodge melee hits or even bullets. The higher the psychic sensitivity of the carrier is, the stronger or more accurate this effect is.</description>
         <iconPath></iconPath>
         <abilities>
             <li>FL_PsychicProtectionSwitch</li>
         </abilities>
         <geneClass>Foxian_league.Gene_PsychicProtection</geneClass>
         <customEffectDescriptions>
-            <li>Grants an ability to swicth between two mode, this ability grants an hediff that scale with the carrier psychic sensitivity</li>
+            <li>Grants an ability to switch between two modes, this gene grants a permanent effect that scales with the carrier's psychic sensitivity</li>
             <li>(Default mode) Tank mode:\nMaximum Armor Blunt Protection +20%\nMaximum Armor Sharp Protection +20%\nMaximum Stagger Time Multiplier -50%\nMaximum Move Speed Malus -0.20\nMaximum Pain Shock Threshold x150%\nMaximum Incoming Damage Multiplier x75%</li>
             <li>(Alternative mode) Dodge mode:\nMaximum Ranged Dodge Chance +20%\nMaximum Melee Dodge Chance +15.0\nMaximum Injury Healing Factor +20%\nMaximum Stagger Time Multiplier -25%\nMaximum Move Speed Bonus 0.20\nMaximum Pain Shock Threshold x120%\nMaximum Incoming Damage Multiplier x90%</li>
             <li>Stage 1 (125% Psy-sensitivity)</li>
@@ -244,11 +245,29 @@
         <biostatCpx>1</biostatCpx>
     </GeneDef>
 
+    <GeneDef>
+        <defName>FL_LastStand</defName>
+        <label>last stand</label>
+        <description>Carriers of this gene are able to gather and condense all of their psychic energy in an attempt to perform a last stand. They will become much harder to kill and will have a bonus in melee damage for 2 hours. Once this effect expires, the carrier will fall into a 2-day coma. If the carrier dies during the effect, he will create a small psychic explosion around him. Additionally, if the carrier has a psyfocus need, activating this ability will drain all of it.</description>
+        <iconPath></iconPath>
+        <abilities>
+            <li>FL_LastStand_Ability</li>
+        </abilities>
+        <customEffectDescriptions>
+            <li>Last stand (2 hours):\nPsychic sensitivity x0.10\nIncoming Damage Multiplier x50%\nMelee Damage Factor x150\nPain Shock Threshold x150%</li>
+            <li>Note: when this effect is active, the genes "Psychic channeling" and "Psychic protection" will be disabled.</li>
+        </customEffectDescriptions>
+        <displayCategory>FL_foxian_genes_set</displayCategory>
+        <displayOrderInCategory>105</displayOrderInCategory>
+        <biostatMet>-2</biostatMet>
+        <biostatCpx>1</biostatCpx>
+    </GeneDef>
+
     <!--Health-->
     <GeneDef>
         <defName>FL_SlowAging</defName>
         <label>slow aging</label>
-        <description>Carriers of this gene age slower after reaching 18 years old.</description>
+        <description>Carriers of this gene age more slowly after reaching 18 years old.</description>
         <iconPath></iconPath>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <biologicalAgeTickFactorFromAgeCurve>
@@ -281,16 +300,16 @@
     <GeneDef>
         <defName>FL_GeneticPurity</defName>
         <label>genetic purity</label>
-        <description>Carriers of this gene will is very likely to birth an offspring with the same gender and the offspring will only inherit the endogene of his mother.</description>
+        <description>Carriers of this gene are very likely to give birth to an offspring with the same gender, and the offspring will only inherit the endogenes of their mother.</description>
         <iconPath></iconPath>
         <customEffectDescriptions>
             <li>This gene will follow one of the two behaviours if the mother is a foxian or is considered foxian enough</li>
-            <li>Behaviour 1: the mother is foxian. She will either birth a female child with the foxian xenotype, or in some rare cases, she will birth a special child with the greater foxian xenotype. That special child can either be a male or female (it is more likely to be a male). Only the cosmetic genes such as hair color or skin color will be transmited to the child</li>
+            <li>Behaviour 1: the mother is foxian. She will either birth a female child with the foxian xenotype, or in some rare cases, she will birth a special child with the greater foxian xenotype. That special child can either be a male or a female (it is more likely to be a male). Only the cosmetic genes, such as hair color or skin color, will be transmitted to the child</li>
             <li>Behaviour 2: the mother is not a foxian. She will birth a normal child and transmit all of her endogenes to it if this gene was active as an endogene, otherwise, she will transmit all of her xenogenes.</li>
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>2</displayOrderInCategory>
-        <biostatMet>-2</biostatMet>
+        <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>
 

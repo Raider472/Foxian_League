@@ -73,7 +73,8 @@ Greater Foxian genes (Redesign this xenotype)
     V-Loyal
 
     V-great melee
-    -Add an ability maybe ? (Last stand - Become super resistant to any damage for 20 seconds, but once the ability is over, go into a coma, if pawn dies, create an explosion or something + disables most psychic power and drain psyfocus)
+    V-Add an ability maybe ? (Last stand - Become super resistant to any damage for 20 seconds, but once the ability is over, go into a coma, if pawn dies, create an explosion or something + disables most psychic power and drain psyfocus)
+        -Create compHediff to replace hediff with coma once it's removed
 
     V-Awful shooting
 
@@ -81,10 +82,9 @@ Greater Foxian genes (Redesign this xenotype)
     V-Tinder Skin
 
     V-Natural psy sensitive
-    -Fast wound healing but scale with psychic sensitivity
-    -superclotting (Maybe include in the above)
-    -psy enhancement (the more psychic sensitivy over 100%, the stronger you become. Stats base increase, most likely this would be done with a hediff)
-        -Psychic channeling 5 iterations
+    V-superclotting (Maybe include in the above)
+    V-psy enhancement (the more psychic sensitivy over 100%, the stronger you become. Stats base increase, most likely this would be done with a hediff)
+        V-Psychic channeling 5 iterations
             -affected stats: 
                 V-melee damage factor - Max stat : 150 
                 -melee armor penetration - Max stat : 40 Percentage

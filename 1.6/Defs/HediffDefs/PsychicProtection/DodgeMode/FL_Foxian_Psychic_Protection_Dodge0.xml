@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <HediffDef>
+    <HediffDef ParentName="PsychiProtectionDodgeAbs">
         <defName>FL_PsychichProtectionDodge0</defName>
         <label>Dormant Psychic protection - Dodge mode</label>
         <description>No Psychic energy emanates from this person.</description>
-        <hediffClass>HediffWithComps</hediffClass>
-        <everCurableByItem>false</everCurableByItem>
-        <isBad>false</isBad>
-        <scenarioCanAdd>false</scenarioCanAdd>
-        <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
         <stages>
         <li/>
         </stages>

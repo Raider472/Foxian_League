@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <HediffDef>
+    <HediffDef ParentName="PsychiProtectionTankAbs">
         <defName>FL_PsychichProtectionTank1</defName>
         <label>Psychic protection - Tank mode 1</label>
-        <description>Psychic energy emanates from this person. That energy acts like a psychic shield and allows it to take more hit than the average person.</description>
-        <hediffClass>HediffWithComps</hediffClass>
-        <everCurableByItem>false</everCurableByItem>
-        <isBad>false</isBad>
-        <scenarioCanAdd>false</scenarioCanAdd>
-        <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
         <stages>
             <li>
             <statOffsets>

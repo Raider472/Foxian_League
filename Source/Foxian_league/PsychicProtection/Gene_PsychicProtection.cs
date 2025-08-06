@@ -8,6 +8,7 @@ using Verse;
 
 namespace Foxian_league {
     public class Gene_PsychicProtection : Gene_PsychicStage {
+        //Gene class to calculate the stage of the hediff, check in the comp if alternative mode has been activated or not
         public bool isAlternateMode = false;
 
         private const string hediffName = "FL_PsychichProtectionTank";

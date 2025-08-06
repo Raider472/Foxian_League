@@ -54,6 +54,9 @@
     <Compile Include="GeneticPurity\Patch_PregnancyUtility_TryGetInheritedXenotype.cs" />
     <Compile Include="Gene_PsychicStage.cs" />
     <Compile Include="HediffUtils.cs" />
+    <Compile Include="LastStand\Comp_AddHediffLastStand.cs" />
+    <Compile Include="LastStand\HediffCompProperties_AddHediffAfterExpiration.cs" />
+    <Compile Include="LastStand\HediffComp_AddHediffAfterExpiration.cs" />
     <Compile Include="Loyal\ThoughtWorker_LoyalSocial.cs" />
     <Compile Include="Loyal\ThoughtWorker_LoyalMood.cs" />
     <Compile Include="Main.cs" />
@@ -64,7 +67,6 @@
     <Compile Include="PsychicManipulation\Gene_PshychicManipulation.cs" />
     <Compile Include="PsychicManipulation\Patch_SkillRecord_Aptitude.cs" />
     <Compile Include="PsychicManipulation\Patch_SkillUI_GetSkillDescription.cs" />
-    <Compile Include="PsychicProtection\Comand_ToggleAbility.cs" />
     <Compile Include="PsychicProtection\CompProperties_PsychicProtection.cs" />
     <Compile Include="PsychicProtection\Comp_PsychicProtection.cs" />
     <Compile Include="PsychicProtection\Gene_PsychicProtection.cs" />

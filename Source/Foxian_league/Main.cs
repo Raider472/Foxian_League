@@ -11,7 +11,6 @@ namespace Foxian_league {
     [StaticConstructorOnStartup]
     public class Main {
         static Main() {
-            Log.Message("Foxian League Constructor Test V11");
             Harmony harmony = new Harmony("rimworld.foxian.league.raider");
             harmony.PatchAll();
         }

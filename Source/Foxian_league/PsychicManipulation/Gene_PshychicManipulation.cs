@@ -24,20 +24,6 @@ namespace Foxian_league {
             }
         }
 
-        /*public override void Tick() {
-            base.Tick();
-            float PsychichSensiPawn = pawn.psychicEntropy.PsychicSensitivity;
-            Log.Message($"PsychichSensiPawn {PsychichSensiPawn}, {pawn.Name}, {skillModifier}, {psychicSensitivityRecent}");
-            if (psychicSensitivityRecent != PsychichSensiPawn) {
-                Log.Message("Psychic has changed");
-                Log.Message($"skill before {skillModifier}");
-                Log.Message($"psychicSensitivityRecent before change {psychicSensitivityRecent}");
-                psychicSensitivityRecent = PsychichSensiPawn;
-                Log.Message($"psychicSensitivityRecent after change {psychicSensitivityRecent}");
-                CalculateSkillModifier(psychicSensitivityRecent);
-            }
-        }*/
-
         private void CalculateSkillModifier(float currentPawnPsySensitivity) {
             if (currentPawnPsySensitivity <= 1) {
                 skillModifier = 0;

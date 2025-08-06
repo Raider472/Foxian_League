@@ -11,7 +11,7 @@
     <stages>
       <li>
         <label>Loyalty in shambles</label>
-        <description>I am lost, everything I believed in was uterly wrong or meaningless ...</description>
+        <description>I am lost, everything I believed in was utterly wrong or meaningless ...</description>
         <baseMoodEffect>-20</baseMoodEffect>
       </li>
       <li>
@@ -26,7 +26,7 @@
       </li>
       <li>
         <label>Faithful believer</label>
-        <description>I believe deeply in our cause and I will do whatever it takes to enforce it</description>
+        <description>I believe deeply in our cause and, I will do whatever it takes to enforce it</description>
         <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>

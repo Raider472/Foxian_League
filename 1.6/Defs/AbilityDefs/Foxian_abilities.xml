@@ -3,7 +3,7 @@
     <AbilityDef>
         <defName>FL_PsychicProtectionSwitch</defName>
         <label>psychic protection switch mode</label>
-        <description>Allows to switch between the tank or dodge mode for this pawn</description>
+        <description>Allows switching the effect between the tank and dodge mode for this person.</description>
         <jobDef>CastAbilityOnThing</jobDef>
         <targetRequired>False</targetRequired>
         <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
@@ -39,6 +39,49 @@
                 <alternatetHediff>FL_PsychichProtectionDodge0</alternatetHediff>
                 <hediffDef>FL_PsychichProtectionTank0</hediffDef>
                 <onlyBrain>False</onlyBrain>
+                <onlyApplyToSelf>True</onlyApplyToSelf>
+                <replaceExisting>true</replaceExisting>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef>
+        <defName>FL_LastStand_Ability</defName>
+        <label>last stand</label>
+        <description>Give this person a special effect that will grant him huge bonus stats in combat, such as reducing incoming damage by half, increasing the melee damage factor, and increasing the pain shock threshold. This effect will last for 2 hours, and once it expires, this person will fall into a coma for 2 days. If this person dies during the initial effect, a small but deadly explosion will be triggered around this person's body. Additionally, if this person has a psyfocus need, using this ability will drain all of it.</description>
+        <jobDef>CastAbilityOnThing</jobDef>
+        <targetRequired>False</targetRequired>
+        <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+        <iconPath>UI/Abilities/CombatCommand</iconPath>
+        <cooldownTicksRange>420000</cooldownTicksRange><!-- 7 days -->
+        <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <casterMustBeCapableOfViolence>True</casterMustBeCapableOfViolence>
+        <statBases>
+            <Ability_Duration>100</Ability_Duration> <!-- 2 hour -->
+            <Ability_EffectRadius>0</Ability_EffectRadius>
+        </statBases>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>0.5</warmupTime>
+            <range>-1</range>
+            <drawAimPie>False</drawAimPie>
+            <requireLineOfSight>False</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetHumans>false</canTargetHumans>
+                <canTargetMechs>false</canTargetMechs>
+                <canTargetSubhumans>false</canTargetSubhumans>
+                <canTargetEntities>false</canTargetEntities>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>Foxian_league.Comp_AddHediffLastStand</compClass>
+                <hediffDef>FL_LastStand_Hediff</hediffDef>
+                <onlyBrain>True</onlyBrain>
                 <onlyApplyToSelf>True</onlyApplyToSelf>
                 <replaceExisting>true</replaceExisting>
             </li>

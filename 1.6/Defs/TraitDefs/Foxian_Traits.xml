@@ -6,7 +6,7 @@
         <degreeDatas>
             <li>
             <label>reserved</label>
-            <description>{PAWN_nameDef} always keep {PAWN_possessive} problems to {PAWN_objective}selves, even if it's troubling {PAWN_objective}. Negative memories will last much longer and have more impact on {PAWN_nameDef}.</description>
+            <description>{PAWN_nameDef} always keeps {PAWN_possessive} problems to {PAWN_objective}selves, even if they're troubling {PAWN_objective}. Negative memories will last much longer and have more impact on {PAWN_nameDef}.</description>
             </li>
         </degreeDatas>
     </TraitDef>
@@ -17,7 +17,7 @@
         <degreeDatas>
             <li>
             <label>loyal</label>
-            <description>{PAWN_nameDef} is devoted to {PAWN_possessive} belief, {PAWN_pronoun} is harder to convert and {PAWN_pronoun} is more persusasive when converting other to {PAWN_possessive} belief. {PAWN_nameDef} mood will be impacted based on {PAWN_possessive} certainty, {PAWN_pronoun} will also judges other negatively or positively depending on their certainty or if they follow another ideology.</description>
+            <description>{PAWN_nameDef} is devoted to {PAWN_possessive} belief. {PAWN_pronoun} is harder to convert and, {PAWN_pronoun} is more persuasive when converting others to {PAWN_possessive} belief. {PAWN_nameDef}'s mood can be impacted based on {PAWN_possessive} certainty. {PAWN_pronoun} will also judge others negatively or positively, depending on their certainty or if they follow another ideology.</description>
             <statFactors>
                 <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.80</CertaintyLossFactor>
                 <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">1.2</ConversionPower>
@@ -32,7 +32,7 @@
         <degreeDatas>
             <li>
             <label>natural psy-sensitivity</label>
-            <description>{PAWN_nameDef} is more attuned to nature than the average psycaster. {PAWN_pronoun} has a higher psychic sensitivity and recover psyfocus quicker from meditation, however {PAWN_possessive} neural heat will dissipate at a slower rate than the average psycaster. Additionally, {PAWN_nameDef} will replenish 25% less psyfocus if {PAWN_pronoun} meditates near a non-natural spot.</description>
+            <description>{PAWN_nameDef} is more attuned to nature than the average psycaster. {PAWN_pronoun} has a higher psychic sensitivity and recovers psyfocus quickly from meditation. However, {PAWN_possessive} neural heat will dissipate at a slower rate than the average psycaster. Additionally, {PAWN_nameDef} will replenish 25% less psyfocus if {PAWN_pronoun} meditates near a non-natural spot.</description>
             <statOffsets>
                 <PsychicSensitivity>0.25</PsychicSensitivity>
                 <MeditationFocusGain>0.15</MeditationFocusGain>

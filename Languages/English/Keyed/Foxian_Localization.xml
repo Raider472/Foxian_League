@@ -2,11 +2,5 @@
 
 <LanguageData>
     <StatReport_SocialPsychicHigh>Psychic sensitivity +/= 200%</StatReport_SocialPsychicHigh>
-    <GreaterFoxianBornLoc>{0_nameDef} has borned a greater foxian</GreaterFoxianBornLoc>
-
-    <AbilitySwitchMode_isNotAlternate>Tank mode</AbilitySwitchMode_isNotAlternate>
-    <AbilitySwitchMode_isNotAlternateDesc>Change to dodge mode</AbilitySwitchMode_isNotAlternateDesc>
-    <AbilitySwitchMode_isAlternate>Dodge mode</AbilitySwitchMode_isAlternate>
-    <AbilitySwitchMode_isAlternateDesc>Change to tank mode</AbilitySwitchMode_isAlternateDesc>
-    
+    <GreaterFoxianBornLoc>{0_nameDef} has born a greater foxian</GreaterFoxianBornLoc>
 </LanguageData>
