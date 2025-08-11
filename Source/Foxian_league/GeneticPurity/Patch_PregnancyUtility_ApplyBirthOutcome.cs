@@ -17,6 +17,7 @@ namespace Foxian_league {
 
         [HarmonyPrefix]
         public static void Prefix(Pawn geneticMother) {
+            if (geneticMother == null) return; 
             if (Utils.HasActiveGene(geneticMother, InternalDefOf.FL_GeneticPurity)) {
                 mother = geneticMother;
             }
@@ -25,7 +26,11 @@ namespace Foxian_league {
         [HarmonyPostfix]
         public static void Postfix(Thing __result) {
             Log.Message($"result of thing {__result}");
-            if(Patch_PawnGenerator_GeneratePawn.isBabyGreaterFoxian) {
+            if (__result == null) {
+                if (mother != null) mother = null;
+                return;
+            }
+            if (Patch_PawnGenerator_GeneratePawn.isBabyGreaterFoxian) {
                 Pawn baby = __result as Pawn;
                 Patch_PawnGenerator_GeneratePawn.isBabyGreaterFoxian = false;
                 ChoiceLetter_GreaterFoxianBorn choiceLetter_baby = (ChoiceLetter_GreaterFoxianBorn)LetterMaker.MakeLetter("Greater Foxian Born", "GreaterFoxianBornLoc".Translate(mother), InternalDefOf.FL_GreaterFoxianBorn, baby);

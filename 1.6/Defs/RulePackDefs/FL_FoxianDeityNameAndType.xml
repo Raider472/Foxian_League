@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RulePackDef>
+        <defName>FoxianRaiderNamerDeity</defName>
+        <include>
+            <li>NamerDeityGlobal</li>
+            <li>GodContent_English</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_deityName->Empress</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>FoxianRaiderNamerDeityType</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_deityType->The blood Empress</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

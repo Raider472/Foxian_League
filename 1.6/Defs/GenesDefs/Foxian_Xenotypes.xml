@@ -55,6 +55,7 @@
       <li>AptitudeStrong_Melee</li>
       <li>AptitudeTerrible_Shooting</li>
       <li>AptitudePoor_Plants</li>
+      <li>AptitudePoor_Animals</li>
       <li>MinTemp_SmallDecrease</li>
       <li>MaxTemp_SmallDecrease</li>
       <li>FireWeakness</li>

@@ -14,7 +14,8 @@ namespace Foxian_league {
     public static class Patch_PawnUtility_GetManhunterOnTameFailChance {
         [HarmonyPostfix]
         public static void PostFix(Pawn pawn, ref float __result) {
-            if(pawn == Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.actualAnimal && Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.actualTamer.GetStatValue(StatDefOf.PsychicSensitivity) >= 1.5f ) {
+            if (pawn == null) return;
+            if (pawn == Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.actualAnimal && Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.actualTamer.GetStatValue(StatDefOf.PsychicSensitivity) >= 1.5f ) {
                 __result *= 0.75f;
                 Log.Message($"Change when pawn has gene: {__result} and pawn is: {pawn}");
             }

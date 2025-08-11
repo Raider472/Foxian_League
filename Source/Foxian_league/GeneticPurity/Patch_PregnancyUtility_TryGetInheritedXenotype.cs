@@ -15,12 +15,16 @@ namespace Foxian_league {
 
         [HarmonyPostfix]
         public static void PostFix(Pawn mother, ref XenotypeDef xenotype, ref bool __result) {
-            if(Utils.HasActiveGene(mother, InternalDefOf.FL_GeneticPurity) && (Utils.IsPawnFoxianEnough(mother) || Utils.IsFoxian(mother))) {
-                if(Patch_PawnGenerator_GeneratePawn.isBabyGreaterFoxian) {
+            if (mother == null || mother.genes == null) return;
+            if (Utils.HasActiveGene(mother, InternalDefOf.FL_GeneticPurity) && (Utils.IsPawnFoxianEnough(mother) || Utils.IsFoxian(mother) || Utils.IsGreaterFoxian(mother))) {
+                if (Patch_PawnGenerator_GeneratePawn.isBabyGreaterFoxian) {
                     xenotype = InternalDefOf.FL_Greater_Foxian;
                 }
+                else if (Utils.IsPawnFoxianEnough(mother)) {
+                    xenotype = InternalDefOf.FL_Foxian;
+                }
                 else {
-                    xenotype = mother.genes?.Xenotype;
+                    xenotype = mother.genes.Xenotype;
                 }
                 __result = true;
                 Log.Message($"Here is current xenotype after tryGetInheritedXenotype: {xenotype} + if is greater foxian: {Patch_PawnGenerator_GeneratePawn.isBabyGreaterFoxian}");

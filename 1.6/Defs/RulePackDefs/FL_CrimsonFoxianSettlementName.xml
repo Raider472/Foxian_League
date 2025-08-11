@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerSettlementFoxianRaider</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[ConceptBadass] [townfoxianraider]</li>
+        <li>r_name->[ConceptBadass] [geography] [townfoxianraider]</li>
+        <li>r_name->[ColorBadass] [townfoxianraider]</li>
+        <li>r_name->[ColorBadass] [geography] [townfoxianraider]</li>
+        <li>r_name->[ConceptAngsty] [townfoxianraider]</li>
+        <li>r_name->[ConceptAngsty] [geography] [townfoxianraider]</li>
+        <li>r_name->[Gore] [townfoxianraider]</li>
+        <li>r_name->[Gore] [geography] [townfoxianraider]</li>
+
+        <li>townfoxianraider->Amongus</li>
+        <li>townfoxianraider->Test</li>
+        <li>townfoxianraider->SuperAutismus</li>
+        <li>townfoxianraider->Zealots of darkness</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

@@ -17,6 +17,7 @@ namespace Foxian_league {
 
         [HarmonyPostfix]
         public static void PostFix(ref float __result, Pawn initiator) {
+            if (initiator == null) return;
             if (Utils.HasActiveGene(initiator, InternalDefOf.FL_Composed)) {
                 __result *= ComposedSelectionChanceFactor;
             }

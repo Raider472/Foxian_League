@@ -13,7 +13,7 @@ namespace Foxian_league {
 
         public override void CompPostPostRemoved() {
             base.CompPostPostRemoved();
-            if(parent.pawn.health.State != PawnHealthState.Dead) {
+            if (parent.pawn.health.State != PawnHealthState.Dead) {
                 parent.pawn.health.AddHediff(expirationProps.hediffToGive);
             }
         }

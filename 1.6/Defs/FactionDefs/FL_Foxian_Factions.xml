@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="OutlanderFactionBase">
+		<defName>Foxian_League</defName>
+		<label>Foxian league</label>
+		<description>Test</description>
+		<colorSpectrum>
+			<li>(1.0, 1.0, 0.0)</li>
+			<li>(1.0, 1.0, 0.0)</li>
+		</colorSpectrum>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>30</configurationListOrderPriority>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<FL_Foxian>0.8</FL_Foxian>
+				<FL_Greater_Foxian>0.2</FL_Greater_Foxian>
+			</xenotypeChances>
+		</xenotypeSet>
+	</FactionDef>
+
+	<FactionDef ParentName="PirateBandBase">
+		<defName>Foxian_BloodRain</defName>
+		<label>foxian raiders</label>
+		<fixedName>The blood Rain</fixedName>
+		<description>A group of bandits with Feminist and supremacist beliefs. They tend to raid other factions, taking prisoners as slaves and stealing supplies. They hold the beliefs that foxians like them are superiors to other races, but some of the slaves they take are used for reproduction, although due to their leader high standards they tend to die very quickly. Females births are celebrated, while male ones are ended immediatly, with the same end being met by females greater foxians. There are rumors about their leader being a female great foxian with 9 tails, but due to her ruthless demeanor, peoples that get too close to her dont come back to give any confirmation. Even inside the group, she is seen very rarely, leaving her quarters only during nights of full moon and rainy days with clear skies.</description>
+		<settlementNameMaker>NamerSettlementFoxianRaider</settlementNameMaker>
+		<fixedIdeo>true</fixedIdeo>
+		<pawnSingular>foxian</pawnSingular>
+		<pawnsPlural>foxians</pawnsPlural>
+		<leaderTitle>Ears of the empress</leaderTitle>
+		<ideoName>The amogus gamingus</ideoName>
+		<ideoDescription>They love amongus</ideoDescription>
+		<deityPresets>
+			<li>
+				<nameType>
+					<name>Empress</name>
+					<type>God of the Bitches</type>
+				</nameType>
+				<gender>Female</gender>
+				<iconPath>UI/Deities/DeityGeneric</iconPath>
+			</li>
+		</deityPresets>
+		<colorSpectrum Inherit="False">
+			<li>(0.45, 0.09, 0.16)</li>
+			<li>(0.55, 0.15, 0.25)</li>
+		</colorSpectrum>
+		<allowedCultures Inherit="False">
+			<li>FL_FoxianRaiderCulture</li>
+		</allowedCultures>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>30</configurationListOrderPriority>
+		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<FL_Foxian>1</FL_Foxian>
+			</xenotypeChances>
+		</xenotypeSet>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+    	</requiredMemes>
+		    <disallowedPrecepts>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_NoRules</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">OrganUse_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">OrganUse_HorribleNoSell</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">OrganUse_HorribleSellOK</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Prohibited</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Strict</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Moderate</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_AlwaysMans</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_Random</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_KeepNames</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_UsuallyWomans</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Execution_HorribleIfInnocent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Execution_DontCare</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Execution_RespectedIfGuilty</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+			</disallowedPrecepts>
+		<structureMemeWeights Inherit="False">
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">10</Structure_TheistEmbodied>
+		</structureMemeWeights>
+	</FactionDef>
+</Defs>

@@ -17,7 +17,8 @@ namespace Foxian_league {
 
         [HarmonyPrefix]
         public static void PreFix(Pawn tamer, Pawn_MindState __instance) {
-            if(Utils.HasActiveGene(tamer, InternalDefOf.FL_AnimalConnection)) {
+            if (tamer == null) return;
+            if (Utils.HasActiveGene(tamer, InternalDefOf.FL_AnimalConnection)) {
                 actualTamer = tamer;
                 actualAnimal = __instance.pawn;
                 Log.Message($"Actual Tamer: {actualTamer} and actual animal: {actualAnimal}");

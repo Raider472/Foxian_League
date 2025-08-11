@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RulePackDef>
+        <defName>FoxianRaiderNamerLeader</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_leaderTitle->The Ears of the Empress</li>
+                <li>r_leaderTitle->The Voice of the Empress</li>
+                <li>r_leaderTitle->The Empress Lackey</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

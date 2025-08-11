@@ -19,9 +19,7 @@ namespace Foxian_league {
             if (isGeneActive == true) { 
                 return true;
             }
-            else {
-                return false;
-            }
+            return false;
         }
 
         public static List<Gene> GetAllGenesFromMother(Pawn mother) {
@@ -33,6 +31,7 @@ namespace Foxian_league {
         }
 
         public static List<GeneDef> ClearNonCosmeticGeneBaby(List<GeneDef> babyGenes) {
+            if (babyGenes == null) return new List<GeneDef>();
             List<GeneDef> filteredGenes = new List<GeneDef>();
             for (int i = 0; i < babyGenes.Count; i++) {
                 if (babyGenes[i].endogeneCategory == EndogeneCategory.Melanin || babyGenes[i].endogeneCategory == EndogeneCategory.HairColor) {
@@ -46,11 +45,21 @@ namespace Foxian_league {
             return pawn.genes.Xenotype == InternalDefOf.FL_Foxian;
         }
 
+        public static bool IsGreaterFoxian(Pawn pawn) {
+            return pawn.genes.Xenotype == InternalDefOf.FL_Greater_Foxian;
+        }
+
         public static bool IsPawnFoxianEnough(Pawn pawn) {
-            //TODO ADD REST OF THE GENES
+            if(pawn == null) return false;
             Dictionary<string, bool> dictGeneList = new Dictionary<string, bool>() {
                 { "FL_FoxEar", false },
-                { "FL_FoxTail", false }
+                { "FL_FoxTail", false },
+                { "FL_NaturalPsySensitive", false },
+                { "FL_Reserved", false },
+                { "FL_Composed", false },
+                { "FL_Emotionally_Brittle", false },
+                { "FL_Loyal", false },
+                { "FireWeakness", false }
             };
 
             //List<Gene> geneList = [.. pawn.genes.Endogenes, .. pawn.genes.Xenogenes];
@@ -58,6 +67,10 @@ namespace Foxian_league {
 
             for (int i = 0; i < geneList.Count; i++) {
                 string nameGeneDef = geneList[i].def.defName;
+                if(nameGeneDef == "FL_NineFoxTail" && geneList[i].Active) {
+                    dictGeneList["FL_FoxTail"] = true;
+                    continue;
+                }
                 if (dictGeneList.ContainsKey(nameGeneDef) && geneList[i].Active) {
                     dictGeneList[nameGeneDef] = true;
                 }

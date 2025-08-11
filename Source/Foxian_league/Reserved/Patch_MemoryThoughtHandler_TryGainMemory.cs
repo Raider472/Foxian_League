@@ -14,6 +14,7 @@ namespace Foxian_league {
     public static class Patch_MemoryThoughtHandler_TryGainMemory {
         [HarmonyPostfix]
         public static void Postfix(ref Thought_Memory newThought, Pawn otherPawn, MemoryThoughtHandler __instance) {
+            if (newThought == null) return;
             if (__instance.pawn.story.traits.HasTrait(InternalDefOf.FL_Reserved_Trait) && newThought.CurStage.baseMoodEffect < 0) {
                 Log.Message($"Pawn has trait {__instance.pawn.story.traits.HasTrait(InternalDefOf.FL_Reserved_Trait)}");
                 int totalMoodEffect = (int)Math.Round(newThought.CurStage.baseMoodEffect * newThought.moodPowerFactor);

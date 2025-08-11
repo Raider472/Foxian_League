@@ -18,6 +18,7 @@ namespace Foxian_league {
 
         [HarmonyPostfix]
         public static void PostFix(ref float __result, Pawn pawn, Thing focus) {
+            if (pawn == null || focus == null) return;
             if (pawn.story.traits.HasTrait(InternalDefOf.FL_NaturalPsySensitive_Trait) && focus != null) {
                 CompMeditationFocus medidationComp = focus.TryGetComp<CompMeditationFocus>();
                 if (medidationComp != null && focus.HasComp<CompMeditationFocus>() && !medidationComp.Props.focusTypes.Contains(MeditationFocusDefOf.Natural)) {

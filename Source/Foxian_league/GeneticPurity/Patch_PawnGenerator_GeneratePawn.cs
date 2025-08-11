@@ -22,14 +22,14 @@ namespace Foxian_league {
                 List<GeneDef> babyCosmeticGenes = Utils.ClearNonCosmeticGeneBaby(babyInheritedGenes);
                 request.ForcedEndogenes.Clear();
 
-                if (Utils.IsFoxian(mother) || Utils.IsPawnFoxianEnough(mother)) {
+                if (Utils.IsFoxian(mother) || Utils.IsGreaterFoxian(mother) || Utils.IsPawnFoxianEnough(mother)) {
                     Log.Message("MOTHER IS FOXIAN");
                     bool isBabyNormalFoxian = Rand.Chance(0.7f);
                     request.ForcedEndogenes = babyCosmeticGenes;
                     request.ForcedXenotype = isBabyNormalFoxian ? InternalDefOf.FL_Foxian : InternalDefOf.FL_Greater_Foxian;
                     Log.Message($"forced custom xenotype: {request.ForcedCustomXenotype}");
 
-                    if (!isBabyNormalFoxian ) {
+                    if (!isBabyNormalFoxian) {
                         isBabyGreaterFoxian = true;
                         request.FixedGender = Rand.Chance(0.7f) ? Gender.Male : Gender.Female;
                         Log.Message($"Baby Gender is: {request.FixedGender}");
@@ -46,14 +46,14 @@ namespace Foxian_league {
 
                     if (mother.genes.HasEndogene(InternalDefOf.FL_GeneticPurity)) {
                         Log.Message("Mother has the Gene as Endogene");
-                        for (int i = 0; i < mother.genes.Endogenes.Count; i++) {
+                        for(int i = 0; i < mother.genes.Endogenes.Count; i++) {
                             request.AddForcedGene(mother.genes.Endogenes[i].def, false);
                             Log.Message($"{mother.genes.Endogenes[i].def}");
                         }
                     }
                     else {
                         Log.Message("Mother has the Gene as Xenogene");
-                        for (int i = 0; i < mother.genes.Xenogenes.Count; i++) {
+                        for(int i = 0; i < mother.genes.Xenogenes.Count; i++) {
                             request.AddForcedGene(mother.genes.Xenogenes[i].def, false);
                             Log.Message($"{mother.genes.Xenogenes[i].def}");
                         }
@@ -62,6 +62,7 @@ namespace Foxian_league {
                 }
                 Log.Message($"Is baby greater foxian ? {isBabyGreaterFoxian}");
             }
+            return;
         }
     }
 }

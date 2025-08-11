@@ -50,7 +50,7 @@ namespace Foxian_league {
 
         public override void PostRemove() {
             base.PostRemove();
-            if(isAlternateMode) {
+            if (isAlternateMode) {
                 HediffUtils.RemoveHediffStage(hediffNameAlternate, channelingStageRecent, pawn);
             }
             else {

@@ -216,7 +216,7 @@
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>105</displayOrderInCategory>
         <biostatMet>-2</biostatMet>
-        <biostatCpx>1</biostatCpx>
+        <biostatCpx>2</biostatCpx>
     </GeneDef>
 
     <!--Ability-->
@@ -242,7 +242,7 @@
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>105</displayOrderInCategory>
         <biostatMet>-4</biostatMet>
-        <biostatCpx>1</biostatCpx>
+        <biostatCpx>3</biostatCpx>
     </GeneDef>
 
     <GeneDef>
@@ -259,7 +259,7 @@
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>105</displayOrderInCategory>
-        <biostatMet>-2</biostatMet>
+        <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>
 
@@ -290,9 +290,9 @@
         <displayOrderInCategory>10</displayOrderInCategory>
         <statOffsets>
 			<ToxicEnvironmentResistance>-0.5</ToxicEnvironmentResistance>
-            <ToxicResistance>-0.5</ToxicResistance>
+            <ToxicResistance>-0.75</ToxicResistance>
 		</statOffsets>
-        <biostatMet>3</biostatMet>
+        <biostatMet>4</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>
 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RulePackDef>
+        <defName>FoxianRaiderIdeoNamer</defName>
+        <rulePack>
+            <rulesStrings>
+            <li>r_ideoName->AmongusCorporation</li>
+            
+            <li>r_ideoAdjective->amongusian</li>
+
+            <li>r_memberName->Amongusinite</li>
+
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

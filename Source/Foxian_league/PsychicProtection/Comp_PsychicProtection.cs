@@ -27,7 +27,7 @@ namespace Foxian_league {
                 HediffName = "FL_PsychichProtectionTank";
             }
             isAlternateMode = !isAlternateMode;
-            if(gene != null) {
+            if (gene != null) {
                 gene.isAlternateMode = isAlternateMode;
                 HediffUtils.RemoveHediffWithString(HediffName, parent.pawn);
                 gene.psychicSensitivityRecent = 0f;

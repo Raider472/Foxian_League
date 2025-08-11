@@ -19,14 +19,14 @@ namespace Foxian_league {
             if (!p.story.traits.HasTrait(InternalDefOf.FL_Loyal_Trait)) {
                 return false;
             }
-            if(p.ideo.Certainty < 0.50) {
+            if (p.ideo.Certainty < 0.50) {
                 return false;
             }
             if (ideoPawn != ideoOtherPawn) {
                 return ThoughtState.ActiveAtStage(1);
             }
             else if (ideoPawn == ideoOtherPawn) {
-                if(otherPawn.ideo.Certainty >= 0.80) {
+                if (otherPawn.ideo.Certainty >= 0.80) {
                     return ThoughtState.ActiveAtStage(2);
                 }
                 else if (otherPawn.ideo.Certainty < 0.50) {
