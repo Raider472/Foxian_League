@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef Name="FoxianBaseMeleeWeapon" Abstract="True" ParentName="BaseWeapon">
+        <techLevel>Medieval</techLevel>
+        <relicChance>0.75</relicChance>
+        <burnableByRecipe>true</burnableByRecipe>
+        <thingCategories>
+            <li>WeaponsMelee</li>
+        </thingCategories>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleePiercer</li>
+        </weaponClasses>
+        <smeltable>true</smeltable>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtWeaponMelee</nameMaker>
+                <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+                <minQualityForArtistic>Excellent</minQualityForArtistic>
+            </li>
+        </comps>
+        <recipeMaker>
+            <researchPrerequisite>Smithing</researchPrerequisite>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+            </recipeUsers>
+            <effectWorking>Smelt</effectWorking>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Silver</li>
+                    <li>Gold</li>
+                    <li>WoodLog</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
+        <inspectorTabs>
+            <li>ITab_Art</li>
+        </inspectorTabs>
+        <tradeTags>
+            <li>WeaponMelee</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef Name="FoxianRareMeleeWeapon" Abstract="True" ParentName="FoxianBaseMeleeWeapon">
+        <techLevel>Industrial</techLevel>
+        <relicChance>2</relicChance>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+        <smeltable>false</smeltable>
+        <recipeMaker Inherit="False">
+            <researchPrerequisite>Machining</researchPrerequisite>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Silver</li>
+                    <li>Gold</li>
+                    <li>WoodLog</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
+        <burnableByRecipe>false</burnableByRecipe>
+        <relicChance>3</relicChance>
+        <thingSetMakerTags>
+            <li>RewardStandardLowFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <ThingDef Name="FoxianLegendaryMeleeWeapon" Abstract="True" ParentName="FoxianRareMeleeWeapon">
+        <techLevel>Ultra</techLevel>
+        <relicChance>3</relicChance>
+        <recipeMaker Inherit="False">
+            <researchPrerequisite>Fabrication</researchPrerequisite>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Silver</li>
+                    <li>Gold</li>
+                    <li>WoodLog</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
+        <weaponTags>
+            <li>UltratechMelee</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>Ultratech</li>
+        </weaponClasses>
+    </ThingDef>
+
+    <ThingDef Name="FoxianLegendaryBladeLinkMeleeWeapon" Abstract="True" ParentName="FoxianLegendaryMeleeWeapon">
+        <relicChance>4</relicChance>
+        <tradeNeverStack>true</tradeNeverStack>
+        <statBases Inherit="False">
+            <MarketValue>3500</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_BladelinkWeapon">
+                <biocodeOnEquip>true</biocodeOnEquip>
+            </li>
+            <li Class="CompProperties_GeneratedName">
+                <nameMaker>NamerWeaponBladelink</nameMaker>
+            </li>
+        </comps>
+        <weaponTags>
+            <li>Bladelink</li>
+        </weaponTags>
+        <notifyMapRemoved>true</notifyMapRemoved>
+        <thingCategories>
+            <li>WeaponsMeleeBladelink</li>
+        </thingCategories>
+        <thingSetMakerTags>
+            <li>WeaponBladelink</li>
+        </thingSetMakerTags>
+    </ThingDef>
+</Defs>

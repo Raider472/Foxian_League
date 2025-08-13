@@ -120,7 +120,7 @@
 					<hulk>(0,0,-0.15)</hulk>
 					<baby>(0,0,0.08)</baby>
 					<child>(0,0,0.08)</child>
-					<femaleBB>(-0.01,0,0.04)</femaleBB>
+					<femaleBB MayRequire="ssulunge.BBBodySupport">(-0.01,0,0.04)</femaleBB>
 				</bodyTypeOffsetNorth>
 				<bodyTypeOffsetEast>
 					<male>(0.05,0,-0.02)</male>
@@ -128,7 +128,7 @@
 					<fat>(-0.16,0,0)</fat>
 					<baby>(0.03,0,0.08)</baby>
 					<child>(0.03,0,0.08)</child>
-					<femaleBB>(-0.03,0,-0.02)</femaleBB>
+					<femaleBB MayRequire="ssulunge.BBBodySupport">(-0.03,0,-0.02)</femaleBB>
 				</bodyTypeOffsetEast>
 				<bodyTypeOffsetSouth>
 					<male>(-0.04,0,0.05)</male>
@@ -207,7 +207,7 @@
 					<hulk>(0,0,-0.1)</hulk>
 					<baby>(0,0,0.08)</baby>
 					<child>(0,0,0.10)</child>
-					<femaleBB>(0,0,-0.03)</femaleBB>
+					<femaleBB MayRequire="ssulunge.BBBodySupport">(0,0,-0.03)</femaleBB>
 				</bodyTypeOffsetNorth>
 				<bodyTypeOffsetEast>
 					<male>(-0.05,0,0)</male>
@@ -217,7 +217,7 @@
 					<fat>(-0.15,0,0.02)</fat>
 					<baby>(-0.03,0,0.04)</baby>
 					<child>(-0.02,0,0.10)</child>
-					<femaleBB>(-0.07,0,0)</femaleBB>
+					<femaleBB MayRequire="ssulunge.BBBodySupport">(-0.07,0,0)</femaleBB>
 				</bodyTypeOffsetEast>
 				<bodyTypeOffsetSouth>
 					<female>(0,0,-0.03)</female>
@@ -225,7 +225,7 @@
 					<fat>(-0.05,0,0)</fat>
 					<baby>(0,0,0.10)</baby>
 					<child>(0,0,0.10)</child>
-					<femaleBB>(0,0,-0.03)</femaleBB>
+					<femaleBB MayRequire="ssulunge.BBBodySupport">(0,0,-0.03)</femaleBB>
 				</bodyTypeOffsetSouth>
 			</li>
 		</modExtensions>

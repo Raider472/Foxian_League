@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="FoxianBaseMeleeWeapon">
+        <defName>FL_Weapon_ParalysingDagger</defName>
+        <label>paralysing dagger</label>
+        <techLevel>Medieval</techLevel>
+        <relicChance>0.5</relicChance>
+        <description>A badly forged dagger coated in a potent poison that will make someone numb and number for each consecutive hits.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Knife</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>2</uiIconScale>
+        <weaponTags>
+            <li>FoxianRaiderNormalMelee</li>
+        </weaponTags>
+        <costStuffCount>30</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <statBases>
+            <WorkToMake>1400</WorkToMake>
+            <Mass>0.4</Mass>
+        </statBases>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <burnableByRecipe>false</burnableByRecipe>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>7</power>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+            <li>
+                <label>blade</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>11</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="FoxianLegendaryBladeLinkMeleeWeapon">
+        <defName>FL_Weapoon_CursedSword</defName>
+        <label>cursed sword</label>
+        <description>A cursed sword that drain the lifes of all those cut by it, even it's wearer is at risk of getting their life sucked.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Monosword</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <weaponTags>
+            <li>FoxianRaiderLegendaryMelee</li>
+        </weaponTags>
+        <costStuffCount>120</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                <li>Stab</li>
+                </capacities>
+                <power>21</power>
+                <cooldownTime>1.8</cooldownTime>
+                <armorPenetration>0.47</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                <li>Cut</li>
+                </capacities>
+                <power>27</power>
+                <cooldownTime>2.2</cooldownTime>
+                <armorPenetration>0.34</armorPenetration>
+            </li>
+        </tools>
+    </ThingDef>
+</Defs>
