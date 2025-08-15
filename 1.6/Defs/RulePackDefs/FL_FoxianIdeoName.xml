@@ -4,11 +4,11 @@
         <defName>FoxianRaiderIdeoNamer</defName>
         <rulePack>
             <rulesStrings>
-            <li>r_ideoName->AmongusCorporation</li>
+            <li>r_ideoName->Dakinesim</li>
             
-            <li>r_ideoAdjective->amongusian</li>
+            <li>r_ideoAdjective->Dakinesian</li>
 
-            <li>r_memberName->Amongusinite</li>
+            <li>r_memberName->Dakineist</li>
 
             </rulesStrings>
         </rulePack>

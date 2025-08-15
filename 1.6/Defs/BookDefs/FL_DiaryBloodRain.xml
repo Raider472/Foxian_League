@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BookBase">
+        <defName>FL_DiaryFoxianRaider</defName>
+        <label>a diary of a blood rain member</label>
+        <description>An old diary describing the life of a member of the blood rain.</description>
+        <graphicData>
+            <texPath>Things/Item/Book/Novel/Novel</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Item/Book/Novel/Novel</uiIconPath>
+        <statBases>
+            <MarketValue>100</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Book">
+                <nameMaker>FL_Namer_DiaryBloodRain</nameMaker>
+                <descriptionMaker>FL_Description_DiaryBloodRain</descriptionMaker>
+                <ageYearsRange>25~100</ageYearsRange>
+                <openGraphic>
+                    <texPath>Things/Item/Book/Novel/Novel_Open</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>0.7</drawSize>
+                </openGraphic>
+                <verticalGraphic>
+                    <texPath>Things/Item/Book/Novel/Novel_Vertical</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <addTopAltitudeBias>true</addTopAltitudeBias>
+                </verticalGraphic>
+                <doers>
+                    <li Class="BookOutcomeProperties_JoyFactorModifier" />
+                </doers>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

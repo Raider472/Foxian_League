@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BookBase">
+        <defName>FL_FoxianResearchNote</defName>
+        <label>research notes</label>
+        <description>A set of research notes made by a scientist to study the Foxians race.</description>
+        <graphicData>
+            <texPath>Things/Item/Book/Schematic/Schematic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Item/Book/Novel/Novel</uiIconPath>
+        <statBases>
+            <MarketValue>150</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Book">
+                <nameMaker>FL_Namer_ResearchFoxian</nameMaker>
+                <descriptionMaker>FL_Description_ResearchFoxian</descriptionMaker>
+                <ageYearsRange>25~400</ageYearsRange>
+                <openGraphic>
+                    <texPath>Things/Item/Book/Schematic/Schematic_Open</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>0.7</drawSize>
+                </openGraphic>
+                <verticalGraphic>
+                    <texPath>Things/Item/Book/Schematic/Schematic_Vertical</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <addTopAltitudeBias>true</addTopAltitudeBias>
+                </verticalGraphic>
+                <doers>
+                    <li Class="BookOutcomeProperties_JoyFactorModifier" />
+                    <li Class="BookOutcomeProperties_GiveQuest">
+                        <questChance>0.05</questChance>
+                    </li>
+                </doers>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

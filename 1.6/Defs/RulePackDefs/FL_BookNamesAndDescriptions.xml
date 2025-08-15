@@ -15,13 +15,177 @@
             <rulesStrings>
                 <li>desc->[volume]</li>
 
-                <li>volume->Part 1\nOn the darkest night, a star fell down. A village, curious, approached the place, but instead of a star, they found a majestic being. The creature, fatally wounded and bleeding, saw them approach, and begged a single request.\n\\Consume me.//\nThe village, that night, had a great feast.</li>
-                <li>volume->Part 2\nOn a night full of stars, a peculiar child was born.\nThe village recognized him as a a gift from the stars.\nAnd so, the first great foxian became their leader and in following years, although young, turned what was a small village in a beautiful kingdom.</li>
-                <li>volume->Part 3\nThe king was offered gifts from nearby lands.\nFood, treasures, women.\nWith 1000 wives, he had 10.000 childrens, that scattered across the lands.\nOf those, 7000 were females, and 3000 were males.</li>
-                <li>volume->Part 4\nThe day of the birth of the last child, the king heard a voice speak to him.\n\\1000 wives, not one more. 10.000 childrens, not one more.//\nHe thought of this as a divine message, and in the following years he followed the command.\nBut one day he received as a gift the most beautiful woman he had ever laid his eyes upon.\nThe command was broken soon after.</li>
-                <li>volume->Part 5\nThe king had married the woman.\nThe woman was now waiting for a child, but being the last in line for the throne wasnt enough.\nShe wanted to be the queen.\nAnd so, like every kingdom has his enemies, she contacted them and plotted against his own husband.\nSoon enough, the enemies had the castle gate opened to them.</li>
-                <li>volume->Part 6\nThe king was stabbed in his sleep 23 times.\nHe opened his eyes, seeing his last wife among the assassin.\nRage took over him, and screamed.\n"May your lineage be cursed for the rest of their life and beyond! May they be mistrated, beaten, used as slaves and may they know excruciating pain! May you become immortal, forced to watch in horror at what you caused, never being able to know the freedom of death and may the pain of existence never cease!"\nAnd so, he left the world immediatly after.</li>
-                <li>volume->Final Part\nThe queen never took the throne.\nImmediatly after, the murderers betrayed her, turning her into a slave.\nThe kingdom was over.\nBut the queen life wasnt.\nJust like the King said, the time for her stopped, her child forever stuck inside her.\nNo matter what her owners did to her, she would never die.\nAnd so after many centuries of tortures, she was locked in a jail with no windows, and a wall was built blocking her inside.\nAnd so, even now, she still lives, forgotten by everyone."</li>
+                <li>volume->Volume 1\nOn the darkest night, a star fell down. A village, curious, approached the place, but instead of a star, they found a majestic being. The creature, fatally wounded and bleeding, saw them approach and begged a single request.\n\\Consume me.//\nThe village, that night, had a great feast.</li>
+                <li>volume->Volume 2\nOn a night full of stars, a peculiar child was born.\nThe village recognized him as a gift from the stars.\nAnd so, the first greater foxian became their leader and, in following years, although young, turned what was a small village into a beautiful kingdom.</li>
+                <li>volume->Volume 3\nThe king was offered gifts from nearby lands.\nFood, treasures, women.\nWith 1000 wives, he had 10.000 children, that scattered across the lands.\nOf those, 7000 were females, and 3000 were males.</li>
+                <li>volume->Volume 4\nThe day of the birth of the last child, the king heard a voice speak to him.\n\\1000 wives, not one more. 10.000 children, not one more.//\nHe thought of this as a divine message, and in the following years he followed the command.\nBut one day he received as a gift the most beautiful woman he had ever laid his eyes upon.\nThe command was broken soon after.</li>
+                <li>volume->Volume 5\nThe king had married the woman.\nThe woman was now waiting for a child, but being the last in line for the throne wasn't enough.\nShe wanted to be the queen.\nAnd so, like every kingdom has his enemies, she contacted them and plotted against his own husband.\nSoon enough, the enemies had the castle gate opened to them.</li>
+                <li>volume->Volume 6\nThe king was stabbed in his sleep 23 times.\nHe opened his eyes, seeing his last wife among the assassins.\nRage took over him, and he screamed.\n"May your lineage be cursed for the rest of their life and beyond! May they be mistreated, beaten, and used as slaves, and may they know excruciating pain! May you become immortal, forced to watch in horror at what you caused, never being able to know the freedom of death, and may the pain of existence never cease!"\nAnd so, he left the world immediately after.</li>
+                <li>volume->Final Volume\nThe queen never took the throne.\nImmediately after, the murderers betrayed her, turning her into a slave.\nThe kingdom was over.\nBut the queen's life wasn't.\nJust like the king said, the time for her stopped, her child forever stuck inside her.\nNo matter what her owners did to her, she would never die.\nAnd so after many centuries of tortures, she was locked in a jail with no windows, and a wall was built blocking her inside.\nAnd so, even now, she still lives, forgotten by everyone."</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>FL_Namer_DiaryBloodRain</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>title->Diary Entries</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>FL_Description_DiaryBloodRain</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>desc->[entry]</li>
+
+                <li>entry->27/02/5474\nDear Diary, I saw her.\nOur beautiful Empress, strolling under the full moon.\nUs members of the blood rain don't ever see her, so this was quite a unique sight.\nTruth is... I think I fell in love with her.\nBut... why is she a greater foxian? Aren't we supposed to hate those beings?\nAh, this truly is a forbidden love.\nI wish I could talk to her privately and tell her I know about her secret and how much I love her.\nI hope her answer will be to grab me by my throat to choke me, slam me against the floor, break all my bones in the process, and tell me how much of a good girl I am before kissing me and crushing my skull.\nThe ideal way of dying wouldn't be in the battlefield, but by the hands of the person you love the most after all.</li>
+                <li>entry->02/11/5479\nIt's a series of self-insert fanfictions about a Foxian and the empress.\n...\nYou slowly close the diary.</li>
+                <li>entry->05/12/5479\nThe pages are stained in dry blood.\nThe content is unreadable.</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>FL_Namer_MysteriousNote</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>title->[prefixNote] [sufixNote]</li>
+
+                <li>prefixNote->Mysterious</li>
+                <li>prefixNote->Unsettling</li>
+                <li>prefixNote->Bloodied</li>
+                <li>prefixNote->Aged</li>
+
+                <li>sufixNote->Note</li>
+                <li>sufixNote->Piece of Paper</li>
+                <li>sufixNote->Parchment</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>FL_Description_MysteriousNote</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>desc->[content]</li>
+
+                <li>content->I once saw a man with no eyes.\nHis mouth was made of stitches.\nWhen he noticed me, he smiled and blinked at me.\nAnd then he was gone.</li>
+                <li>content->https://www.youtube.com/watch?v=dQw4w9WgXcQ</li>
+                <li>content->My shadow has grown eyes today.</li>
+                <li>content->I write to you to ask for help.\nMy daughter is acting incredibly strange.\nShe stays in a corner of her room, staring at the wall and talking by herself.\nI could make out only a few words of what she said, and it incredibly worries me.\nI don't feel safe around her, but what am I supposed to do? Tell the police?\nShe's 10 years old. They are just going to laugh at me.\nSo please, come live here for a while.\nBut by chance, do you know what a Forest of Meat is?</li>
+                <li>content->I put my ear against the floor.\nAnd I could hear it.\nThe heart of the planet.\nBeating.</li>
+                <li>content->No matter how you look at it, this page is completely empty.\nAnd yet, you can't help but feel like there is something written in it.\nPerhaps, the emptiness itself has a meaning.</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>FL_Namer_MiscellaneousNote</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>title->[prefixNote] [sufixNote]</li>
+
+                <li>prefixNote->Old</li>
+                <li>prefixNote->Aged</li>
+                <li>prefixNote->Torned</li>
+
+                <li>sufixNote->File</li>
+                <li>sufixNote->Note</li>
+                <li>sufixNote->Piece of Paper</li>
+                <li>sufixNote->Page</li>
+                <li>sufixNote->Parchment</li>
+                <li>sufixNote->Entry</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>FL_Description_MiscellaneousNote</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>desc->[content]</li>
+
+                <li>content->Guide on how to keep your temper when an underling pisses you off.\nStep 1: Act calm.\nStep 2: Absolutely shred them to pieces, while screaming about how much of a pathetic failure they are.\nStep 3: Turn toward your other underlings and laugh it off.\nStep 4: Say, "Off, I almost lost my temper back there."\nStep 5: Success!</li>
+                <li>content->Prophecy    (YOUR PROPHECY HAS BEEN DISCARDED)\nWhen time will break\nWhen the walls shall erode\nThe messiah will be born\nEmerging as an adult from the timeless womb\nLeaving a mark on the world\nWhether a male or a female\nThe foxian shall lead to the future\nOf ruin or salvation.</li>
+                <li>content->Why did the wolf have no emotions?\nWhy was the mage seeking knowledge?\nWhy did the witch lose her eye?\nWritten on a corpse with blood\nIn another time, another place\nAnother wonderful tale awaits.</li>
+                <li>content->Book of jokes so funny that makes you die of laughter\n"Why did the chicken try to cross the road?\nTo get to the other side!"\n...\nSomehow, a part of you felt like dying.</li>
+                <li>content->Annuary Of Blood Rain Slaves - First week of February\nClaire F 34 - Cooking\nRoza F 25 - Manual Labor\nJohny M 65 - Manual Labor\nBen M 10 - Manual Labor\nBobby M 32 - For reproduction\nClara F 15 - Manual Labor\nEstelle F 30 - For personal use of the Empress\nRichard M 27 - For personal use of the Empress</li>
+                <li>content->Annuary Of Blood Rain Slaves - Second week of February\nClaire F 34 - Cooking\nRoza F 25 - For personal use of the Empress\nJohny M 65 - Manual Labor\nBen M 10 -For personal use of the Empress\nBobby M 32 - For reproduction\nClara F 15 - Manual Labor\nEstelle F 30 - Deceased\nRichard M 27 - Deceased</li>
+                <li>content->Annuary Of Blood Rain Slaves - Third week of February\nClaire F 34 - For Personal use of the Empress\nRoza F 25 - Deceased\nJohny M 65 - For Personal use of the Empress\nBen M 10 - Deceased\nBobby M 32 - For Personal use of the Empress\nClara F 15 - For Personal use of the Empress\nEstelle F 30 - Deceased\nRichard M 27 - Deceased</li>
+                <li>content->Annuary Of Blood Rain Slaves - Fourth week of February\nClaire F 34 - Deceased\nRoza F 25 - Deceased\nJohny M 65 - Deceased\nBen M 10 - Deceased\nBobby M 32 - Deceased\nClara F 15 - Deceased\nEstelle F 30 - Deceased\nRichard M 27 - Deceased</li>
+                <li>content->Patient file for rehabilitation\nName: Suzune Luxembourg\nAge: 29\nGender: F\nBlood type: B\nMedical Treatment: Electroshock therapy, therapeutic drugs, brain implant surgery\nPatient Information: Patient is a Blood Rain member that has been retrieved during a raid on a settlement. In the process of resisting the capture, force had to be used, and as a result, the loss of two fingers on her left hand was registered. The Patient was still sympathetic to her own group and was inserted into the Great Shooting Star League rehabilitation program as a result.\nTreatment information: Brain implant surgery was performed to make it easier for her to join our cause. Electroshock therapy is suggested once a week until her complete recovery, while therapeutic drugs have to be taken once a day. In case of a decline of the treatment effects, hold off her meals until a slight recovery.</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>FL_Namer_DiaryCivilianFoxian</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>title->Diary Entries</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>FL_Description_DiaryCivilianFoxian</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>desc->[entry]</li>
+
+                <li>entry->09/08/5344\nDear diary, today our settlement was taken by the blood rain raiders.\nThe moment they took over, they started to mistreat every non-Foxian resident.\nWich includes everyone except me and my daughter.\nTheir treatment toward us has been much more favorable, to the point of even asking if I wanted to join them.\nAh, as if I would join those hypocrites.\nIt won't happen in a million years.</li>
+                <li>entry->12/08/5344\nThe way the other villagers have been looking at us has changed.\nThey stopped greeting and talking to us and have started to avoid us completely.\nI can tell their gazes are full of hatred, but I don't have any fault toward our current situation.\nHopefully, this will end soon.</li>
+                <li>entry->16/08/5344\nThe [factionName] is here! They have finally driven those bastards away!\nI know my daughter is too young to understand the situation, but we celebrated with sweets this evening.\nEverything is finally going back to normal. I'm so happy!</li>
+                <li>entry->18/08/5344\nThe neighbors keep looking at us like we are walking trash.\nEven the person that I've been a maid of honor for during their marriage is looking at me the same way.\nIs it my fault if those bastards killed her husband? Is it my fault if they took away her son?\nI wish people would stop acting like I'm to blame for all of this.</li>
+                <li>entry->11/09/5344\nI've been away just for 1 hour...\nWhy... I don't understand...\nWhen I got back, my house was completely empty...\nThey took everything away...\nAll they left was a single box, with a message on it.\n"You deserve this."\nAnd my daughter...\nMy poor daughter...\nOh...\nWhy is this happening...\nI wish that box had been empty...</li>
+                <li>entry->12/09/5344\nThey changed the door lock.\nThere is a new family inside my house.\n...\nI think I should just leave...</li>
+                <li>entry->25/09/5344\nI have been living on the streets now.\nThe younger kids are having fun spitting on my head from above.\nThe adults throw rocks at me.\nI would leave this settlement behind, but I don't have the resources for a journey outside this place.\nAll I can do is sleep beside a garbage can and hope for a change.</li>
+                <li>entry->08/11/5344\nThey are back.\nThe Blood Rain Raiders are back.\nThey did their whole bullshit again.\nThey took over, started to mistreat others again.\nAnd they asked me to join them again.\nAnd this time?\nI accepted.\nI suggested to take them away to a different base, since the [factionName] would just try to take the place back.\nThey agreed.\nAnd so, we burned the whole place down.\nFinally, after a long time, I felt some warmth.\nI felt like a part of me died today.\nWell, it's for the best.\nI guess I'll throw this diary away as well. I don't think I'll need it anymore.</li>
+
+
+                <li>factionName->Outlander union</li>
+                <li>factionName->Liberators</li>
+                <li>factionName->Rough Templars</li>
+                <li>factionName->Covenant</li>
+                <li>factionName->Confederation</li>
+                <li>factionName->Clerical Hierarchy</li>
+                <li>factionName->Clan</li>
+                <li>factionName->Pack</li>
+                <li>factionName->Syndicate</li>
+                <li>factionName->Zwei Association</li>
+                <li>factionName->W corp</li>
+                <li>factionName->Empire</li>
+                <li>factionName->Nation</li>
+                <li>factionName->Nexus</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>FL_Namer_ResearchFoxian</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>title->Research notes of a scientist on the foxian race</li>
+
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>FL_Description_ResearchFoxian</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>desc->[content]</li>
+
+                <li>content->Research notes of a scientist - Part 1\nFoxians.\nThey are a mystery without a doubt.\nEven to me, that I am one of them.\nTheir abilities includes psychic manipulation, a sensitivity to the nature, a connection with animals, genetic purities, slow aging and a vulnerability to toxins. And then we have a mutation, the so-called Greater Foxians, with psychic channeling, psychic protection, and the it's last stand ability.\nBut what I'm more curious about is their origin.\nFoxians are without a doubt more recent than humans.\nSo what I'm asking, I'm wondering is...\nFrom where do they come from?\nWhy do they have those abilities?\nI'll find out.</li>
+                <li>content->Research notes of a scientist - part 2\nWhen a Foxian and a human mate and reproduce, the result will always be a female Foxian.\nIn rare cases, a greater Foxian can spawn that can be either male or female.\nBecause of this, the mother's genes have a dominance over human ones.\nThey are much stronger.\nBut, isn't that weird? This is like the chicken and the egg.\nDue to old manuscripts, we know that foxians didn't exist in ancient times, there was simply no mentions of them.\nAnd then one day, they simply... were there.\nIs this gene a result of of human evolution?\nJust as fish walked on land, turned into monkeys and then monkeys into humans...\nAre Human evolving into foxians? But why specifically foxes?\nThe answer evades me.</li>
+                <li>content->Research notes of a scientist - part 3\nEvery myth has a small part of truth.\nSo, perhaps, I have overlooked that detail.\nLast time I mentioned that there was no mention of foxians in ancient times.\nBut, if I have to consider myths as partially true, then I should also consider the religious text of the foxians as such.\nAnd now I have to distinguish between the fiction and the non-fiction of the text.\nThe queen with the womb stuck in time, for example? Time stopping is simply not a capability for Foxians and greater Foxians. Thus it is fiction.\nThe 1000 wives and 10.000 children? Although Foxians are known for having a high breeding rate, such a high number simply isn't feasible due to their low fertility. Thus it's fiction.\nAnd then there is the being from the star. What if. What if that's the true part of the story?\nIf the act of feasting on the being is what caused the birth of the Foxians... Then...\nAre the Foxians, alien in origin?\nWas the act of feasting what caused the birth of their genes?</li>
+                <li>content->Research notes of a scientist - part 4\nEvery living being has an instinct of survival.\nSo two questions come to my mind.\nWhy did the being give up on their own life so easily, and what could have fatally wounded something like it?\nFor the second one, I don't think I will ever find an answer.\nBut for the first one, I have a hypothesis.\nThe request of feasting, was a way for it to survive.\nSomehow, in some way, the genes themselves are part of that alien being.\nIt still lives, inside all of us.\nThe thought terrifies me.</li>
+                <li>content->Research notes of a scientist - part 5\nGreater Foxians are much stronger than regular ones, but a very few number of them seem to have mental issues.\nThis can include hearing voices, egomania, narcissism, hallucinations, and god complex.\nMaybe.\nJust maybe.\nThose greater Foxians are much more susceptible from the presence of their own cells.\nBut, in particular, I'm curious about one specific shared hallucination.\nThe one of a forest of meat.\nMaybe, the memories of the ancestral fox survive in the genes.</li>
+                <li>content->Research notes of a scientist - part 6\nI made a mistake.\nI didn't consider that the foxian genes are all part of a unique being.\nThus, even if in different beings, even if not in greater foxians, they communicate, they share memories, knowledge, and thoughts.\nJust as humans have their own collective subconscious, we have our own.\nThe blood raiders are at my door, and I have no other explanation for how they found me.\nMy own ego as a scientist refuses to destroy my research. Thus, I will lock it in a small box and flush it down the toilet.\nThose notes are a Info hazard, if someone is reading them, then I'm sorry, but you have put a target on your head.\nSo, let me tell you about one last thing.\nI believe, that there is a rank higher than a greater foxian.\nAn ancestral Foxian, a being of the stars.\nA god.\nAnd that a small percentage of greater Foxians that hear those voices, is nothing more than a pupa for this creature.\nIt will emerge in one of them, gain back it's form and leave this wasteland.\nBut, what I'm truly worried about... is what kind of heart it will have.\nAnd so, with gun in hand, my last prayers go to a kind hearted Foxian and not to the empress.</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>

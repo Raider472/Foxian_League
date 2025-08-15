@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BookBase">
+        <defName>FL_MysteriousNotes</defName>
+        <label>a mysterious note</label>
+        <description>A note containing unsettling writting.</description>
+        <graphicData>
+            <texPath>Things/Item/Book/Textbook/Textbook</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Item/Book/Textbook/Textbook</uiIconPath>
+        <statBases>
+            <MarketValue>250</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Book">
+                <nameMaker>FL_Namer_MysteriousNote</nameMaker>
+                <descriptionMaker>FL_Description_MysteriousNote</descriptionMaker>
+                <ageYearsRange>500~1000</ageYearsRange>
+                <openGraphic>
+                    <texPath>Things/Item/Book/Textbook/Textbook_Open</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>0.7</drawSize>
+                </openGraphic>
+                <verticalGraphic>
+                    <texPath>Things/Item/Book/Textbook/Textbook_Vertical</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <addTopAltitudeBias>true</addTopAltitudeBias>
+                </verticalGraphic>
+                <doers>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly" Class="BookOutcomeProperties_GainAnomalyResearch">
+                        <tabs>
+                            <Anomaly />
+                        </tabs>
+                        <ignoreZeroBaseCost>false</ignoreZeroBaseCost>
+                        <usesHiddenProjects>true</usesHiddenProjects>
+                    </li>
+                    <li Class="BookOutcomeProperties_MentalBreak">
+                        <chancePerHourRange>0.01~0.04</chancePerHourRange>
+                    </li>
+                    <li Class="BookOutcomeProperties_GiveQuest">
+                        <questChance>0.1</questChance>
+                    </li>
+                </doers>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

@@ -5,18 +5,42 @@
     <rulePack>
       <rulesStrings>
         <li>r_name->[ConceptBadass] [townfoxianraider]</li>
-        <li>r_name->[ConceptBadass] [geography] [townfoxianraider]</li>
+        <li>r_name->[ConceptBadass] [TerrainFeature] [townfoxianraider]</li>
         <li>r_name->[ColorBadass] [townfoxianraider]</li>
-        <li>r_name->[ColorBadass] [geography] [townfoxianraider]</li>
+        <li>r_name->[ColorBadass] [TerrainFeature] [townfoxianraider]</li>
         <li>r_name->[ConceptAngsty] [townfoxianraider]</li>
-        <li>r_name->[ConceptAngsty] [geography] [townfoxianraider]</li>
+        <li>r_name->[ConceptAngsty] [TerrainFeature] [townfoxianraider]</li>
         <li>r_name->[Gore] [townfoxianraider]</li>
-        <li>r_name->[Gore] [geography] [townfoxianraider]</li>
+        <li>r_name->[suffix][prefix] [townfoxianraider]</li>
+        <li>r_name->[suffix][prefix]</li>
 
-        <li>townfoxianraider->Amongus</li>
-        <li>townfoxianraider->Test</li>
-        <li>townfoxianraider->SuperAutismus</li>
-        <li>townfoxianraider->Zealots of darkness</li>
+        <li>townfoxianraider->Daki</li>
+        <li>townfoxianraider->Dakineism</li>
+        <li>townfoxianraider->Empress</li>
+        <li>townfoxianraider->of the Beloved Empress</li>
+        <li>townfoxianraider->Ichor</li>
+        <li>townfoxianraider->Lifeblood</li>
+        <li>townfoxianraider->Dynasty</li>
+        <li>townfoxianraider->Origin</li>
+        <li>townfoxianraider->of Ruina</li>
+
+        <li>suffix->Rui</li>
+        <li>suffix->Bha</li>
+        <li>suffix->La</li>
+        <li>suffix->Iska</li>
+        <li>suffix->Rai</li>
+        <li>suffix->Obm</li>
+        <li>suffix->Arg</li>
+        <li>suffix->Rog</li>
+
+        <li>prefix->kal</li>
+        <li>prefix->us</li>
+        <li>prefix->ong</li>
+        <li>prefix->map</li>
+        <li>prefix->tina</li>
+        <li>prefix->sor</li>
+        <li>prefix->trov</li>
+        <li>prefix->fel</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>

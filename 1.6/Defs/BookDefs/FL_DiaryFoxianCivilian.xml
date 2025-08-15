@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BookBase">
+        <defName>FL_DiaryFoxianCivilian</defName>
+        <label>an old diary of a foxian civilian</label>
+        <description>An old diary describing the life of a foxian living outside the league.</description>
+        <graphicData>
+            <texPath>Things/Item/Book/Novel/Novel</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Item/Book/Novel/Novel</uiIconPath>
+        <statBases>
+            <MarketValue>100</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Book">
+                <nameMaker>FL_Namer_DiaryCivilianFoxian</nameMaker>
+                <descriptionMaker>FL_Description_DiaryCivilianFoxian</descriptionMaker>
+                <ageYearsRange>300~800</ageYearsRange>
+                <openGraphic>
+                    <texPath>Things/Item/Book/Novel/Novel_Open</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>0.7</drawSize>
+                </openGraphic>
+                <verticalGraphic>
+                    <texPath>Things/Item/Book/Novel/Novel_Vertical</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <addTopAltitudeBias>true</addTopAltitudeBias>
+                </verticalGraphic>
+                <doers>
+                    <li Class="BookOutcomeProperties_JoyFactorModifier" />
+                    <li Class="BookOutcomeProperties_GiveQuest">
+                        <questChance>0.05</questChance>
+                    </li>
+                </doers>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>
