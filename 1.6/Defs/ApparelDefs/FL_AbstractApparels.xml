@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef Name="FoxianClothing" Abstract="True" ParentName="ApparelMakeableBase">
+        <techLevel>Ultra</techLevel>
+        <smeltable>false</smeltable>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Tailor</effectWorking>
+            <soundWorking>Recipe_Tailor</soundWorking>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Plasteel</li>
+                    <li>Jade</li>
+                    <li>Uranium</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+                    <li MayRequire="Ludeon.RimWorld.Odyssey">Obsidian</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
+        <tradeTags>
+            <li>Clothing</li>
+            <li>PsychicApparel</li>
+        </tradeTags>
+        <apparel>
+            <tags>
+                <li>Psychic</li>
+                <li>FoxianLeagueApparel</li>
+            </tags>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+            <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef Name="FoxianArmor" Abstract="True" ParentName="FoxianClothing">
+        <recipeMaker Inherit="False">
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Plasteel</li>
+                    <li>Jade</li>
+                    <li>Uranium</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+                    <li MayRequire="Ludeon.RimWorld.Odyssey">Obsidian</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
+        <tradeTags Inherit="False">
+            <li>HiTechArmor</li>
+            <li>Armor</li>
+            <li>PsychicApparel</li>
+        </tradeTags>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <ThingDef Name="FoxianAmulet" Abstract="True" ParentName="HatMakeableBase">
+        <costStuffCount>65</costStuffCount>
+        <stuffCategories>
+            <li>Woody</li>
+            <li>Metallic</li>
+        </stuffCategories>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToMake>4000</WorkToMake>
+            <Mass>0.10</Mass>
+            <StuffEffectMultiplierArmor>0.0</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.00</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1</EquipDelay>
+        </statBases>
+        <apparel>
+            <tags>
+                <li>FoxianAmuletApparel</li>
+            </tags>
+            <bodyPartGroups>
+                <li>Neck</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <renderSkipFlags>
+                <li>None</li>
+            </renderSkipFlags>
+            <careIfDamaged>false</careIfDamaged>
+            <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+</Defs>

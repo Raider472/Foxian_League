@@ -13,3 +13,6 @@ Outfit (all these outfits would increase the psychic offsets, noble armor are th
 -Noble Outfit
 -Noble Armor
 -Amulets
+    -Jade
+    -Gold
+    -Silver
