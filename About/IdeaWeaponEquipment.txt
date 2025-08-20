@@ -1,7 +1,7 @@
 Weapons
 -League Based (They would also increase psy-sensitivity and be mostly used by nobles)
-    -A Katana (this weapon is weaker than a sword, would they be used by something lesser than a noble ?)
-    -Naginata for nobles (it could use weapon trait since it's a noble thing)
+    V -A Katana (this weapon is weaker than a sword, would they be used by something lesser than a noble ?)
+    V -Naginata for nobles (it could use weapon trait since it's a noble thing)
 
 -Blood Rain Based (Blood Rain weapons would be "makeshift" style because they are a raider faction)
     -A spiky/chainsaw weapon that does moderate average damage but increase bleeding rate ?
@@ -9,10 +9,13 @@ Weapons
     -A Cursed "noble" weapon, strong but the blade requires a malus to make it interesting/fair (maybe it can make the pawn grow weaker the longer they don't kill, because the blade drains the life force of the wearer if it does not kill anything. And unequiping that blade can trigger a violent mental breakdown or a coma)
 
 Outfit (all these outfits would increase the psychic offsets, noble armor are the best one but they are very costy, raiders won't get any appareal because they don't really care about psy-sensitivity, maybe except the empress)
--Offcier Armor
--Noble Outfit
--Noble Armor
--Amulets
-    -Jade
-    -Gold
-    -Silver
+V-Offcier Armor
+V-Noble Outfit
+V-Noble Armor
+V-Amulets
+    -Jade - Psychic
+    -Gold - Negotiation + Social Impact
+    -Silver - Trade Price Improvement
+
+<VPE_Eltex MayRequire="VanillaExpanded.VPsycastsE">5</VPE_Eltex>
+DevilstrandCloth

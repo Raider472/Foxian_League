@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="FoxianAmulet">
+        <defName>FL_PsychicAmulet</defName>
+        <label>psychic amulet</label>
+        <description>A jade amulet.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/SlaveCollar/SlaveCollar</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+        <costList>
+            <Jade>20</Jade>
+        </costList>
+        <equippedStatOffsets>
+            <PsychicSensitivityOffset>0.15</PsychicSensitivityOffset>
+            <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+            <MeditationFocusGain>0.1</MeditationFocusGain>
+        </equippedStatOffsets>
+    </ThingDef>
+
+    <ThingDef ParentName="FoxianAmulet">
+        <defName>FL_DiplomatAmulet</defName>
+        <label>diplomat amulet</label>
+        <description>A gold amulet.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/SlaveCollar/SlaveCollar</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+        <costList>
+            <Gold>20</Gold>
+        </costList>
+        <equippedStatOffsets>
+            <NegotiationAbility>0.1</NegotiationAbility>
+            <SocialImpact>0.1</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <tags>
+                <li>FoxianLeagueAmulet</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="FoxianAmulet">
+        <defName>FL_MerchantAmulet</defName>
+        <label>merchant amulet</label>
+        <description>A silver amulet.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/SlaveCollar/SlaveCollar</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+        <costList>
+            <Silver>20</Silver>
+        </costList>
+        <equippedStatOffsets>
+            <TradePriceImprovement>0.15</TradePriceImprovement>
+        </equippedStatOffsets>
+        <apparel>
+            <tags>
+                <li>FoxianLeagueAmulet</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+</Defs>

@@ -55,6 +55,13 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
+        <comps>
+            <li Class="Foxian_league.CompProperties_HediffOnHit">
+                <hediffOnHit>FL_Poisonous_Paralysis</hediffOnHit>
+                <minValue>0.03</minValue>
+                <maxValue>0.07</maxValue>
+            </li>
+        </comps>
     </ThingDef>
 
     <ThingDef ParentName="FoxianLegendaryMeleeWeapon">

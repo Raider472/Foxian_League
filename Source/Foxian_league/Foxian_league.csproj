@@ -72,6 +72,8 @@
     <Compile Include="PsychicProtection\Gene_PsychicProtection.cs" />
     <Compile Include="Reserved\Patch_MemoryThoughtHandler_TryGainMemory.cs" />
     <Compile Include="Utils.cs" />
+    <Compile Include="WeaponComps\CompProperties_HediffOnHit.cs" />
+    <Compile Include="WeaponComps\Comp_HediffOnHit.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">

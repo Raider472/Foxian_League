@@ -255,7 +255,7 @@
         </abilities>
         <customEffectDescriptions>
             <li>Last stand (2 hours):\nPsychic sensitivity x0.10\nIncoming Damage Multiplier x50%\nMelee Damage Factor x150\nPain Shock Threshold x150%</li>
-            <li>Note: when this effect is active, the genes "Psychic channeling" and "Psychic protection" will be disabled.</li>
+            <li>Note: when this effect is active, all genes related with psychic sensitivity scaling will be disabled.</li>
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>105</displayOrderInCategory>
