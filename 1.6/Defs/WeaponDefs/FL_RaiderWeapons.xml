@@ -65,9 +65,9 @@
     </ThingDef>
 
     <ThingDef ParentName="FoxianLegendaryMeleeWeapon">
-        <defName>FL_Weapoon_CursedSword</defName>
+        <defName>FL_Weapon_CursedSword</defName>
         <label>cursed sword</label>
-        <description>A cursed sword that drain the lifes of all those cut by it, even it's wearer is at risk of getting their life sucked.</description>
+        <description>A cursed sword that drain the lifes of all those killed by it, no one knows how it was fabricated or what materials is it composed of. This sword has an insatiable hunger and will even kill it's owner if it has not been nourished for a while. This blade is also known to make it hard for it's owner to separate from him.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/Monosword</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -76,19 +76,12 @@
         <weaponTags>
             <li>FoxianRaiderLegendaryMelee</li>
         </weaponTags>
-        <costStuffCount>120</costStuffCount>
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
         <statBases>
-            <WorkToMake>20000</WorkToMake>
             <Mass>2.5</Mass>
         </statBases>
-        <recipeMaker>
-            <skillRequirements>
-                <Crafting>10</Crafting>
-            </skillRequirements>
-        </recipeMaker>
         <tools>
             <li>
                 <label>handle</label>
@@ -104,7 +97,7 @@
                     <li>Stab</li>
                 </capacities>
                 <power>21</power>
-                <cooldownTime>1.8</cooldownTime>
+                <cooldownTime>2</cooldownTime>
                 <armorPenetration>0.47</armorPenetration>
             </li>
             <li>
@@ -117,5 +110,10 @@
                 <armorPenetration>0.34</armorPenetration>
             </li>
         </tools>
+        <comps>
+            <li Class="Foxian_league.ComProperties_AddHediffOnEquip">
+                <hediffOnEquip>FL_Insatiable_Hunger</hediffOnEquip>
+            </li>
+        </comps>
     </ThingDef>
 </Defs>

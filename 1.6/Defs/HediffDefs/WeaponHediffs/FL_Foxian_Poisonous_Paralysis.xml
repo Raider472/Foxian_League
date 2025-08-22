@@ -3,8 +3,10 @@
     <HediffDef>
         <defName>FL_Poisonous_Paralysis</defName>
         <label>poisonous paralysis</label>
-        <description>This person  has been in contact with a paralysing agent via a weapon or another external factor, The more sever this effect is, the more numb the person will become until they fall unconscious. This effect will be removed after a day, but it can disapear earlier.</description>
-        <hediffClass>HediffWithComps</hediffClass>
+        <description>This person has been injected with a paralysing agent via a weapon or another external factor, The more severe this effect is, the more numb the person will become until they fall unconscious. This effect is not lethal on healthy persons and will be most likely gone after a day.</description>
+        <hediffClass>Foxian_league.Hediff_ShowSeverity</hediffClass>
+        <defaultLabelColor>(0.87, 0.79, 0.23)</defaultLabelColor>
+        <initialSeverity>0.01</initialSeverity>
         <scenarioCanAdd>false</scenarioCanAdd>
         <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
         <preventsCrawling>true</preventsCrawling>
@@ -82,13 +84,11 @@
         <comps>
             <li Class="HediffCompProperties_ChanceToRemove">
                 <intervalTicks>2500</intervalTicks>
-                <chance>0.05</chance>
-            </li>
-            <li Class="HediffCompProperties_Disappears">
-                <disappearsAfterTicks>45000~60000</disappearsAfterTicks>
+                <chance>0.03</chance>
             </li>
             <li Class="HediffCompProperties_SeverityPerDay">
-                <severityPerDay>-0.4</severityPerDay>
+                <severityPerDay>-0.7</severityPerDay>
+                <showDaysToRecover>true</showDaysToRecover>
             </li>
             <li Class="HediffCompProperties_DisappearsOnDeath"/>
         </comps>

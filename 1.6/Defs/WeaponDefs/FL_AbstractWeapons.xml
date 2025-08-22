@@ -79,45 +79,46 @@
             </defaultIngredientFilter>
         </recipeMaker>
         <burnableByRecipe>false</burnableByRecipe>
-        <relicChance>3</relicChance>
-        <thingSetMakerTags>
-            <li>RewardStandardLowFreq</li>
-        </thingSetMakerTags>
     </ThingDef>
 
-    <ThingDef Name="FoxianLegendaryMeleeWeapon" Abstract="True" ParentName="FoxianRareMeleeWeapon">
+    <ThingDef Name="FoxianLegendaryMeleeWeapon" Abstract="True" ParentName="BaseWeapon">
         <techLevel>Ultra</techLevel>
         <relicChance>3</relicChance>
-        <recipeMaker Inherit="False">
-            <researchPrerequisite>Fabrication</researchPrerequisite>
-            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-            <workSkill>Crafting</workSkill>
-            <recipeUsers>
-                <li>FabricationBench</li>
-            </recipeUsers>
-            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-            <defaultIngredientFilter>
-                <categories>
-                    <li>Root</li>
-                </categories>
-                <disallowedThingDefs>
-                    <li>Silver</li>
-                    <li>Gold</li>
-                    <li>WoodLog</li>
-                </disallowedThingDefs>
-            </defaultIngredientFilter>
-        </recipeMaker>
+        <tradeNeverStack>true</tradeNeverStack>
+        <burnableByRecipe>false</burnableByRecipe>
+        <thingCategories>
+            <li>WeaponsMelee</li>
+        </thingCategories>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleePiercer</li>
+        </weaponClasses>
+        <smeltable>false</smeltable>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+        </comps>
+        <statBases Inherit="False">
+            <MarketValue>3000</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
         <weaponTags>
             <li>UltratechMelee</li>
         </weaponTags>
         <weaponClasses>
             <li>Ultratech</li>
         </weaponClasses>
+        <thingSetMakerTags>
+            <li>RewardStandardLowFreq</li>
+        </thingSetMakerTags>
+        <tradeTags>
+            <li>WeaponMelee</li>
+        </tradeTags>
     </ThingDef>
 
     <ThingDef Name="FoxianLegendaryBladeLinkMeleeWeapon" Abstract="True" ParentName="FoxianLegendaryMeleeWeapon">
         <relicChance>4</relicChance>
-        <tradeNeverStack>true</tradeNeverStack>
         <statBases Inherit="False">
             <MarketValue>3500</MarketValue>
             <Mass>2</Mass>

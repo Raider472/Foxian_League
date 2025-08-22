@@ -7,11 +7,8 @@ using Verse;
 
 namespace Foxian_league {
     public class Comp_HediffOnHit : ThingComp {
-
+        //Comp used to apply a hediff when a weapon hit something
         public CompProperties_HediffOnHit Props => (CompProperties_HediffOnHit)props;
-        public override string GetDescriptionPart() {
-            return "Test Amongus gamingus";
-        }
 
         public override void Notify_UsedWeapon(Pawn pawn) {
             if (pawn == null) return;
