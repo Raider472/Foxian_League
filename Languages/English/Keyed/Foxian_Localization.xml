@@ -3,4 +3,5 @@
 <LanguageData>
     <StatReport_SocialPsychicHigh>Psychic sensitivity +/= 200%</StatReport_SocialPsychicHigh>
     <GreaterFoxianBornLoc>{0_nameDef} has born a greater foxian</GreaterFoxianBornLoc>
+    <CursedSwordBerseker>{0_nameDef} has tried unequipping his weapon. But in doing so, he awoke the ire of the spirit inhabiting his sword, {0_nameDef}'s mind temporary broke as a result of the spirit's retaliation.</CursedSwordBerseker>
 </LanguageData>

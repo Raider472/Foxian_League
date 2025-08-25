@@ -30,6 +30,10 @@ namespace Foxian_league {
 
         public static LetterDef FL_GreaterFoxianBorn;
 
+        public static HediffDef FL_PsychicComaRandom;
+
+        public static ThoughtDef FL_CursedSwordRemoved;
+
         /*static InternalDefOf() {
             DefOfHelper.EnsureInitializedInCtor(typeof(InternalDefOf));
         }*/

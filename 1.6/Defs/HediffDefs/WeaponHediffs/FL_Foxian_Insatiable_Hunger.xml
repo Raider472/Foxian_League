@@ -7,6 +7,7 @@
         <hediffClass>Foxian_league.Hediff_ShowSeverity</hediffClass>
         <defaultLabelColor>(0.83, 0.19, 0.32)</defaultLabelColor>
         <initialSeverity>0.001</initialSeverity>
+        <minSeverity>0.001</minSeverity>
         <lethalSeverity>1</lethalSeverity>
         <maxSeverity>1</maxSeverity>
         <scenarioCanAdd>false</scenarioCanAdd>

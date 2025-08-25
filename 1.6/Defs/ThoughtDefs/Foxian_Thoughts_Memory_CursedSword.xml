@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThoughtDef>
+        <defName>FL_CursedSwordRemoved</defName>
+        <durationDays>3</durationDays>
+        <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+        <showBubble>true</showBubble>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+            <li>Bloodlust</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>disturbing sword</label>
+                <description>When I was down, I heard voices coming from my weapon trying to coerce me to continue fighting despite the immense pain I was experiencing. I still don't know if it was my imagination or real.</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+            <li>
+                <label>disturbing sword</label>
+                <description>When I tried to get rid of that sword, it talked to me and threatened me with words filled with malice and hatred. It said it would curse me for the rest of my life. Despite nothing happening after, I can't get myself to calm down over this disturbing experience.</description>
+                <baseMoodEffect>-25</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>
