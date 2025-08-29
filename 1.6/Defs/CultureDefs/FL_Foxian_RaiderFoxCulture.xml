@@ -22,6 +22,16 @@
         </thingStyleCategories>
         <styleItemTags>
             <li>
+                <tag>Bald</tag>
+                <baseWeight>0</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>Shaved</tag>
+                <baseWeight>0</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
                 <tag>NoBeard</tag>
                 <baseWeight>10</baseWeight>
                 <weightFactor>1</weightFactor>

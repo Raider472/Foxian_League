@@ -2,8 +2,8 @@
 <Defs>
     <ThingDef ParentName="FoxianClothing">
         <defName>FL_NobleFoxianApparel</defName>
-        <label>noble kimono</label>
-        <description>gdfjhbdfsh</description>
+        <label>noble foxian kimono</label>
+        <description>A very popular kimono coveted by the Foxian nobility, or anyone that can afford it. This outfit can also be found worn by curious nobles of the Empire.\n The reason for its popularity in the Foxian League is that their society considers high psychic sensitivity as a noble goal to strive for. The higher their psychic sensitivity is, the closer they are to nature.\n The kimono is embedded with eltex and was made with the best fabric possible to guarantee the highest enhancement of psychic sensitivity for its wearer. However, the outfit was not made to be used in combat in mind, at least not for the normal Foxians.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/RoyalRobe/RoyalRobe</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -14,6 +14,10 @@
             </skillRequirements>
         </recipeMaker>
         <costStuffCount>100</costStuffCount>
+        <costList>
+            <Hyperweave>75</Hyperweave>
+            <Plasteel>25</Plasteel>
+        </costList>
         <stuffCategories>
             <li>Fabric</li>
         </stuffCategories>
@@ -48,17 +52,18 @@
                 <li>Shell</li>
             </layers>
             <tags>
-                <li>Royal</li>
-                <li>RoyalTier6</li>
-                <li>RoyalRobe</li>
+                <li>NobleFoxianRobe</li>
+                <li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+                <li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+                <li MayRequire="Ludeon.RimWorld.Royalty">RoyalRobe</li>
             </tags>
         </apparel>
     </ThingDef>
 
     <ThingDef ParentName="FoxianArmor">
         <defName>FL_NobleFoxianArmor</defName>
-        <label>noble armor</label>
-        <description>gdfjhbdfsh</description>
+        <label>noble foxian armor</label>
+        <description>A noble armor layered in plasteel plates and embedded with eltex to protect its wearer against slashing weapons and bullets while at the same time enhancing the psychic sensitivity of its bearer.\n While this armor is customarily used by greater Foxian nobles, it is also rewarded as proof of bravery to a brave Foxian who has committed an honorary deed.\n While this armor is not as protective as ultratech armors, it is still better than any other industrial armors.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/CataphractArmor/CataphractArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -68,27 +73,32 @@
                 <Crafting>14</Crafting>
             </skillRequirements>
         </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>100</costStuffCount>
         <costList>
-            <ComponentSpacer>5</ComponentSpacer>
-            <Plasteel>200</Plasteel>
+            <ComponentSpacer>1</ComponentSpacer>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Plasteel>70</Plasteel>
         </costList>
         <uiIconScale>1.25</uiIconScale>
         <generateCommonality>2</generateCommonality>
         <statBases>
-            <WorkToMake>23000</WorkToMake>
+            <WorkToMake>24000</WorkToMake>
             <MaxHitPoints>400</MaxHitPoints>
             <Mass>13</Mass>
             <Flammability>0.4</Flammability>
-            <ArmorRating_Sharp>0.71</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.16</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.75</ArmorRating_Heat>
-            <Insulation_Cold>13</Insulation_Cold>
-            <Insulation_Heat>6</Insulation_Heat>
+            <ArmorRating_Sharp>0.67</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.21</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.43</ArmorRating_Heat>
+            <Insulation_Cold>3</Insulation_Cold>
+            <Insulation_Heat>4</Insulation_Heat>
             <EquipDelay>8</EquipDelay>
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-0.3</MoveSpeed>
-            <PsychicSensitivityOffset>0.50</PsychicSensitivityOffset>
+            <PsychicSensitivityOffset>0.5</PsychicSensitivityOffset>
             <PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
         </equippedStatOffsets>
@@ -114,8 +124,8 @@
 
     <ThingDef ParentName="FoxianArmor">
         <defName>FL_OfficerFoxianArmor</defName>
-        <label>officer armor</label>
-        <description>gdfjhbdfshddd</description>
+        <label>foxian officer coat</label>
+        <description>A coat embedded with eltex used by officers of the Foxian League army. This coat is more used as a status symbol than as a means of protection.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -125,9 +135,14 @@
                 <Crafting>8</Crafting>
             </skillRequirements>
         </recipeMaker>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <costStuffCount>70</costStuffCount>
         <costList>
-            <ComponentSpacer>2</ComponentSpacer>
-            <Plasteel>125</Plasteel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Steel>30</Steel>
+            <Plasteel>25</Plasteel>
         </costList>
         <uiIconScale>1.25</uiIconScale>
         <generateCommonality>2</generateCommonality>
@@ -136,18 +151,17 @@
             <MaxHitPoints>300</MaxHitPoints>
             <Mass>10</Mass>
             <Flammability>0.4</Flammability>
-            <ArmorRating_Sharp>0.63</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.11</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.6</ArmorRating_Heat>
-            <Insulation_Cold>8</Insulation_Cold>
-            <Insulation_Heat>2</Insulation_Heat>
-            <EquipDelay>6</EquipDelay>
+            <ArmorRating_Sharp>0.39</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.34</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.31</ArmorRating_Heat>
+            <Insulation_Cold>1</Insulation_Cold>
+            <Insulation_Heat>1</Insulation_Heat>
+            <EquipDelay>5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-0.2</MoveSpeed>
-            <PsychicSensitivityOffset>0.40</PsychicSensitivityOffset>
+            <PsychicSensitivityOffset>0.35</PsychicSensitivityOffset>
             <PsychicEntropyRecoveryRate>0.15</PsychicEntropyRecoveryRate>
-            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
         </equippedStatOffsets>
         <apparel>
             <bodyPartGroups>

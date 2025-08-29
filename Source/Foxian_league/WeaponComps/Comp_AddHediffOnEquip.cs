@@ -30,6 +30,11 @@ namespace Foxian_league {
                 return;
             }
             Hediff hediffToAdd = HediffMaker.MakeHediff(Props.hediffOnEquip, pawn, null);
+            if(!pawn.Faction.IsPlayer) {
+                Random rand = new Random();
+                float severity = (float)(rand.NextDouble() * (0.64 - 0.04) + 0.04);
+                hediffToAdd.Severity = severity;
+            }
             pawn.health.AddHediff(hediffToAdd);
         }
 

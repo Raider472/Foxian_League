@@ -47,6 +47,9 @@
 		<allowedCultures Inherit="False">
 			<li>FL_FoxianRaiderCulture</li>
 		</allowedCultures>
+		<fixedLeaderKinds>
+			<li>FL_Foxian_Raider_Children_Of_Blood</li>
+		</fixedLeaderKinds>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>30</configurationListOrderPriority>
 		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>

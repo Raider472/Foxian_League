@@ -4,17 +4,20 @@
         <defName>FL_Weapon_OfficerKatana</defName>
         <label>katana</label>
         <techLevel>Medieval</techLevel>
-        <relicChance>0.5</relicChance>
-        <description>A katana, ...</description>
+        <relicChance>1</relicChance>
+        <description>A curved single-edged sword embedded with eltex, this weapon is mostly used by Foxian officers from the league as a symbol of statue and to enhance their psychic sensitivity. Despite it's noble appearance, the weapon is weaker than a longsword, but still deadly.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/LongSword</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <uiIconScale>2</uiIconScale>
         <weaponTags>
-            <li>FoxianLeagueNormalMelee</li>
+            <li>FoxianLeagueOfficerlMelee</li>
         </weaponTags>
-        <costStuffCount>90</costStuffCount>
+        <costStuffCount>70</costStuffCount>
+        <costList>
+            <Plasteel>30</Plasteel>
+        </costList>
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
@@ -25,6 +28,7 @@
         <equippedStatOffsets>
             <PsychicSensitivityOffset>0.25</PsychicSensitivityOffset>
             <PsychicEntropyRecoveryRate>0.07</PsychicEntropyRecoveryRate>
+            <SocialImpact>0.1</SocialImpact>
         </equippedStatOffsets>
         <recipeMaker>
             <skillRequirements>
@@ -48,7 +52,7 @@
                     <li>Stab</li>
                 </capacities>
                 <power>20</power>
-                <cooldownTime>2.3</cooldownTime>
+                <cooldownTime>2.5</cooldownTime>
             </li>
             <li>
                 <label>edge</label>
@@ -56,24 +60,27 @@
                     <li>Cut</li>
                 </capacities>
                 <power>21</power>
-                <cooldownTime>2.3</cooldownTime>
+                <cooldownTime>2.5</cooldownTime>
             </li>
         </tools>
     </ThingDef>
 
     <ThingDef ParentName="FoxianRareMeleeWeapon">
-        <defName>FL_Weapoon_Naginata</defName>
-        <label>cursed sword</label>
-        <description>A Naginata.</description>
+        <defName>FL_Weapoon_Naginata_Craftable</defName>
+        <label>naginata</label>
+        <description>A polearm with a blade at it's tip and embedded with eltex, the Foxian nobles are fond of this weapon due to it's ability to enchance one own psy-sensitivity. this weapon can be used for stabbing or slashing opponent at a greater distance than a sword, it even has armour penetration.\nThis particular weapon was recently produced and thus, it has not yet been blessed with a spirit.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/Monosword</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <weaponTags>
-            <li>FoxianLeagueLegendaryMelee</li>
+            <li>FoxianLeagueNobleMelee</li>
         </weaponTags>
         <costStuffCount>120</costStuffCount>
+        <costList>
+            <Plasteel>50</Plasteel>
+        </costList>
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
@@ -82,12 +89,12 @@
             <Mass>3</Mass>
         </statBases>
         <equippedStatOffsets>
-            <PsychicSensitivityOffset>0.5</PsychicSensitivityOffset>
-            <PsychicEntropyRecoveryRate>0.15</PsychicEntropyRecoveryRate>
+            <PsychicSensitivityOffset>0.35</PsychicSensitivityOffset>
+            <PsychicEntropyRecoveryRate>0.10</PsychicEntropyRecoveryRate>
         </equippedStatOffsets>
         <recipeMaker>
             <skillRequirements>
-                <Crafting>13</Crafting>
+                <Crafting>8</Crafting>
             </skillRequirements>
         </recipeMaker>
         <tools>
@@ -105,8 +112,8 @@
                 <capacities>
                     <li>Stab</li>
                 </capacities>
-                <power>24</power>
-                <cooldownTime>2.5</cooldownTime>
+                <power>25</power>
+                <cooldownTime>2.4</cooldownTime>
                 <armorPenetration>0.49</armorPenetration>
             </li>
             <li>
@@ -114,9 +121,62 @@
                 <capacities>
                     <li>Cut</li>
                 </capacities>
-                <power>29</power>
-                <cooldownTime>2.7</cooldownTime>
+                <power>27</power>
+                <cooldownTime>2.4</cooldownTime>
                 <armorPenetration>0.41</armorPenetration>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="FoxianLegendaryBladeLinkMeleeWeapon">
+        <defName>FL_Weapoon_Naginata_BladeLink</defName>
+        <label>blessed naginata</label>
+        <description>A polearm with a blade at it's tip, embedded with eltex and blessed with a persona that can bond with only one person, the Foxian nobles are fond of this weapon due to it's ability to enchance one own psy-sensitivity. this weapon can be used for stabbing or slashing opponent at a greater distance than a sword, it even has armour penetration.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Monosword</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <weaponTags>
+            <li>FoxianLeagueNobleMeleeBladelink</li>
+        </weaponTags>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <statBases>
+            <Mass>3</Mass>
+        </statBases>
+        <equippedStatOffsets>
+            <PsychicSensitivityOffset>0.5</PsychicSensitivityOffset>
+            <PsychicEntropyRecoveryRate>0.15</PsychicEntropyRecoveryRate>
+        </equippedStatOffsets>
+        <tools>
+            <li>
+                <label>shaft</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>19</power>
+                <cooldownTime>2.1</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>26</power>
+                <cooldownTime>2.4</cooldownTime>
+                <armorPenetration>0.54</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>29</power>
+                <cooldownTime>2.4</cooldownTime>
+                <armorPenetration>0.47</armorPenetration>
             </li>
         </tools>
     </ThingDef>

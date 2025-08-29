@@ -4,6 +4,7 @@
         <techLevel>Spacer</techLevel>
         <smeltable>false</smeltable>
         <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
             <effectWorking>Tailor</effectWorking>
@@ -45,6 +46,7 @@
 
     <ThingDef Name="FoxianArmor" Abstract="True" ParentName="FoxianClothing">
         <recipeMaker Inherit="False">
+            <researchPrerequisite>Machining</researchPrerequisite>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
             <effectWorking>Smith</effectWorking>
@@ -85,7 +87,9 @@
     </ThingDef>
 
     <ThingDef Name="FoxianAmulet" Abstract="True" ParentName="HatMakeableBase">
+        <techLevel>Medieval</techLevel>
         <recipeMaker Inherit="False">
+            <researchPrerequisite>Smithing</researchPrerequisite>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
             <effectWorking>Smith</effectWorking>
@@ -110,7 +114,7 @@
                 </disallowedThingDefs>
             </defaultIngredientFilter>
         </recipeMaker>
-        <costStuffCount>45</costStuffCount>
+        <costStuffCount>90</costStuffCount>
         <stuffCategories>
             <li>Woody</li>
             <li>Metallic</li>

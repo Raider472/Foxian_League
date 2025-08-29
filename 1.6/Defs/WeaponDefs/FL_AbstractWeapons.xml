@@ -30,6 +30,7 @@
                 <li>ElectricSmithy</li>
                 <li>FueledSmithy</li>
             </recipeUsers>
+            <displayPriority>391</displayPriority>
             <effectWorking>Smelt</effectWorking>
             <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
             <defaultIngredientFilter>
@@ -55,16 +56,16 @@
         <techLevel>Industrial</techLevel>
         <relicChance>2</relicChance>
         <statBases>
-            <MarketValue>2000</MarketValue>
             <Mass>2</Mass>
         </statBases>
         <smeltable>false</smeltable>
         <recipeMaker Inherit="False">
-            <researchPrerequisite>Machining</researchPrerequisite>
+            <researchPrerequisite>Smithing</researchPrerequisite>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
             <recipeUsers>
-                <li>TableMachining</li>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
             </recipeUsers>
             <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
             <defaultIngredientFilter>
@@ -100,7 +101,7 @@
             </li>
         </comps>
         <statBases Inherit="False">
-            <MarketValue>3000</MarketValue>
+            <MarketValue>2000</MarketValue>
             <Mass>2</Mass>
         </statBases>
         <weaponTags>
@@ -117,12 +118,7 @@
         </tradeTags>
     </ThingDef>
 
-    <ThingDef Name="FoxianLegendaryBladeLinkMeleeWeapon" Abstract="True" ParentName="FoxianLegendaryMeleeWeapon">
-        <relicChance>4</relicChance>
-        <statBases Inherit="False">
-            <MarketValue>3500</MarketValue>
-            <Mass>2</Mass>
-        </statBases>
+    <ThingDef MayRequire="Ludeon.RimWorld.Royalty" Name="FoxianLegendaryBladeLinkMeleeWeapon" Abstract="True" ParentName="FoxianLegendaryMeleeWeapon">
         <comps>
             <li>
                 <compClass>CompQuality</compClass>

@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <PawnKindDef Name="RaiderFoxianBase_low_tier" Abstract="True">
+        <race>Human</race>
+        <defaultFactionDef>Foxian_BloodRain</defaultFactionDef>
+        <chemicalAddictionChance>0.15</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0.02</backstoryCryptosleepCommonality>
+        <invNutrition>2.55</invNutrition>
+        <biocodeWeaponChance>0</biocodeWeaponChance>
+        <initialWillRange>2~6</initialWillRange>
+        <initialResistanceRange>7~12</initialResistanceRange>
+        <maxGenerationAge>35</maxGenerationAge>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+    </PawnKindDef>
+
+    <PawnKindDef Name="RaiderFoxianBase_medium_tier" Abstract="True">
+        <race>Human</race>
+        <defaultFactionDef>Foxian_BloodRain</defaultFactionDef>
+        <chemicalAddictionChance>0.1</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0.02</backstoryCryptosleepCommonality>
+        <invNutrition>2.55</invNutrition>
+        <gearHealthRange>0.6~1.5</gearHealthRange>
+        <biocodeWeaponChance>0.05</biocodeWeaponChance>
+        <initialWillRange>4~7</initialWillRange>
+        <initialResistanceRange>8~14</initialResistanceRange>
+        <maxGenerationAge>40</maxGenerationAge>
+        <combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+        <combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+        <techHediffsChance>0.1</techHediffsChance>
+        <techHediffsTags>
+            <li>Poor</li>
+            <li>Simple</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+        </apparelTags>
+        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    </PawnKindDef>
+
+    <PawnKindDef Name="RaiderFoxianBase_high_tier" Abstract="True">
+        <race>Human</race>
+        <defaultFactionDef>Foxian_BloodRain</defaultFactionDef>
+        <chemicalAddictionChance>0.08</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0.02</backstoryCryptosleepCommonality>
+        <invNutrition>2.55</invNutrition>
+        <gearHealthRange>0.8~2.8</gearHealthRange>
+        <biocodeWeaponChance>0.15</biocodeWeaponChance>
+        <initialWillRange>6~10</initialWillRange>
+        <initialResistanceRange>9~17</initialResistanceRange>
+        <maxGenerationAge>40</maxGenerationAge>
+        <combatEnhancingDrugsChance>0.3</combatEnhancingDrugsChance>
+        <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+        <techHediffsChance>0.2</techHediffsChance>
+        <techHediffsMoney>200~1000</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>ImplantEmpireCommon</li>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+        </apparelTags>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    </PawnKindDef>
+
+    <PawnKindDef Name="RaiderFoxianBase_elite_tier" Abstract="True">
+        <race>Human</race>
+        <defaultFactionDef>Foxian_BloodRain</defaultFactionDef>
+        <chemicalAddictionChance>0.02</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <invNutrition>2.55</invNutrition>
+        <gearHealthRange>0.8~3.5</gearHealthRange>
+        <biocodeWeaponChance>0.3</biocodeWeaponChance>
+        <initialWillRange>9~15</initialWillRange>
+        <initialResistanceRange>14~25</initialResistanceRange>
+        <maxGenerationAge>40</maxGenerationAge>
+        <combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
+        <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+        <techHediffsChance>0.25</techHediffsChance>
+        <techHediffsMoney>400~1300</techHediffsMoney>
+        <techHediffsTags>
+            <li>ImplantEmpireCommon</li>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+            <li>SpacerMilitary</li>
+        </apparelTags>
+        <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    </PawnKindDef>
+
+    <!-- Low tier - Foxian Raider -->
+
+    <PawnKindDef ParentName="RaiderFoxianBase_low_tier">
+        <defName>FL_Foxian_Raider_Trash</defName>
+        <label>foxian cannon fodder</label>
+        <combatPower>40</combatPower>
+        <invNutrition>0</invNutrition>
+        <gearHealthRange>0.3~0.6</gearHealthRange>
+        <itemQuality>Poor</itemQuality>
+        <apparelMoney>100~300</apparelMoney>
+        <weaponMoney>100~280</weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeBasic</li>
+            <li>NeolithicMeleeBasic</li>
+        </weaponTags>
+        <techHediffsChance>0</techHediffsChance>
+        <inventoryOptions>
+            <skipChance>0.8</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>40</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>0~20</countRange>
+                </li>
+                <li>
+                    <choiceChance>50</choiceChance>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <countRange>0~1</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="RaiderFoxianBase_low_tier" Name="RaiderFoxian_Scavenger">
+        <defName>FL_Foxian_Raider_Scavenger_Gun</defName>
+        <label>foxian scavenger gunner</label>
+        <combatPower>50</combatPower>
+        <gearHealthRange>0.3~0.7</gearHealthRange>
+        <itemQuality>Poor</itemQuality>
+        <apparelMoney>150~400</apparelMoney>
+        <weaponMoney>150~350</weaponMoney>
+        <apparelAllowHeadgearChance>0.15</apparelAllowHeadgearChance>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+        </apparelTags>
+        <weaponTags>
+            <li>Gun</li>
+        </weaponTags>
+        <techHediffsChance>0</techHediffsChance>
+        <inventoryOptions>
+            <skipChance>0.54</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>40</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>5~30</countRange>
+                </li>
+                <li>
+                    <choiceChance>20</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>0~1</countRange>
+                </li>
+                <li>
+                    <choiceChance>40</choiceChance>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <countRange>0~1</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="RaiderFoxian_Scavenger">
+        <defName>FL_Foxian_Raider_Scavenger_Melee</defName>
+        <label>foxian scavenger skirmisher</label>
+        <apparelMoney>200~500</apparelMoney>
+        <weaponMoney>200~600</weaponMoney>
+        <weaponTags Inherit="false">
+            <li>NeolithicMeleeBasic</li>
+            <li>MedievalMeleeBasic</li>
+            <li>MedievalMeleeDecent</li>
+            <li>FoxianRaiderNormalMelee</li>
+        </weaponTags>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="RaiderFoxianBase_low_tier">
+        <defName>FL_Foxian_Raider_kidnapper</defName>
+        <label>foxian kidnapper</label>
+        <labelPlural>foxian kidnappers</labelPlural>
+        <combatPower>30</combatPower>
+        <gearHealthRange>0.3~0.8</gearHealthRange>
+        <itemQuality>Poor</itemQuality>
+        <apparelMoney>50~350</apparelMoney>
+        <weaponMoney>150~300</weaponMoney>
+        <apparelAllowHeadgearChance>0.15</apparelAllowHeadgearChance>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+        </apparelTags>
+        <weaponTags>
+            <li>FoxianRaiderKidnapper</li>
+        </weaponTags>
+        <techHediffsChance>0</techHediffsChance>
+        <inventoryOptions>
+            <skipChance>0.64</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>40</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>5~30</countRange>
+                </li>
+                <li>
+                    <choiceChance>20</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>0~1</countRange>
+                </li>
+                <li>
+                    <choiceChance>40</choiceChance>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <countRange>0~1</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+    <!-- Medium tier - Foxian Raider -->
+
+    <PawnKindDef ParentName="RaiderFoxianBase_medium_tier">
+        <defName>FL_Foxian_Raider_Pyromaniac</defName>
+        <label>foxian pyromaniac</label>
+        <combatPower>70</combatPower>
+        <gearHealthRange>0.3~0.8</gearHealthRange>
+        <apparelMoney>200~600</apparelMoney>
+        <weaponMoney>205~400</weaponMoney>
+        <apparelAllowHeadgearChance>0.15</apparelAllowHeadgearChance>
+        <apparelTags Inherit="false">
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+        </apparelTags>
+        <weaponTags>
+            <li>FoxianRaiderPyromaniac</li>
+        </weaponTags>
+        <techHediffsChance>0</techHediffsChance>
+        <forcedTraits>
+            <li>Pyromaniac</li>
+        </forcedTraits>
+        <inventoryOptions>
+            <skipChance>0.59</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>40</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>5~70</countRange>
+                </li>
+                <li>
+                    <choiceChance>15</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>0~1</countRange>
+                </li>
+                <li>
+                    <choiceChance>45</choiceChance>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <countRange>0~1</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>4~10</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="RaiderFoxianBase_medium_tier">
+        <defName>FL_Foxian_Raider_Despoiler</defName>
+        <label>foxian despoiler</label>
+        <combatPower>75</combatPower>
+        <apparelMoney>320~800</apparelMoney>
+        <weaponMoney>355~550</weaponMoney>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+        </weaponTags>
+        <techHediffsMoney>100~700</techHediffsMoney>
+        <inventoryOptions>
+            <skipChance>0.49</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>40</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>15~70</countRange>
+                </li>
+                <li>
+                    <choiceChance>40</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>0~1</countRange>
+                </li>
+                <li>
+                    <choiceChance>20</choiceChance>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <countRange>0~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="RaiderFoxianBase_medium_tier">
+        <defName>FL_Foxian_Raider_Looter</defName>
+        <label>foxian looter</label>
+        <labelPlural>foxian looters</labelPlural>
+        <combatPower>60</combatPower>
+        <apparelMoney>320~800</apparelMoney>
+        <weaponMoney>250~400</weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <canBeSapper>true</canBeSapper>
+        <techHediffsMoney>100~600</techHediffsMoney>
+        <inventoryOptions>
+            <skipChance>0.48</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>40</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>15~70</countRange>
+                </li>
+                <li>
+                    <choiceChance>40</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>1</countRange>
+                </li>
+                <li>
+                    <choiceChance>20</choiceChance>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>4~16</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="RaiderFoxianBase_medium_tier" Name="FoxianGrenadierBase" Abstract="True">
+        <apparelMoney>300~800</apparelMoney>
+        <weaponMoney>400~500</weaponMoney>
+        <canBeSapper>true</canBeSapper>
+        <techHediffsChance>0.05</techHediffsChance>
+        <techHediffsMoney>100~600</techHediffsMoney>
+        <inventoryOptions>
+            <skipChance>0.54</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>40</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>15~70</countRange>
+                </li>
+                <li>
+                    <choiceChance>40</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>1</countRange>
+                </li>
+                <li>
+                    <choiceChance>20</choiceChance>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <initialResistanceRange>10~16</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="FoxianGrenadierBase">
+        <defName>FL_Foxian_Raider_Grenadier</defName>
+        <label>foxian grenadier</label>
+        <labelPlural>foxian grenadiers</labelPlural>
+        <combatPower>70</combatPower>
+        <canBeSapper>true</canBeSapper>
+        <isGoodBreacher>true</isGoodBreacher>
+        <weaponTags>
+            <li>GrenadeDestructive</li>
+        </weaponTags>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="FoxianGrenadierBase">
+        <defName>FL_Foxian_Raider_Grenadier_EMP</defName>
+        <label>foxian EMP grenadier</label>
+        <labelPlural>foxian EMP grenadiers</labelPlural>
+        <combatPower>55</combatPower>
+        <weaponTags>
+            <li>GrenadeEMP</li>
+        </weaponTags>
+    </PawnKindDef>
+
+    <!-- High tier - Foxian Raider -->
+
+    <PawnKindDef ParentName="RaiderFoxianBase_high_tier">
+        <defName>FL_Foxian_Raider_Sniper</defName>
+        <label>foxian sniper</label>
+        <labelPlural>foxian snipers</labelPlural>
+        <combatPower>90</combatPower>
+        <apparelMoney>500~1000</apparelMoney>
+        <weaponMoney>530~600</weaponMoney>
+        <weaponTags>
+            <li>SniperRifle</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <techHediffsChance>0.25</techHediffsChance>
+        <techHediffsMoney>100~900</techHediffsMoney>
+        <inventoryOptions>
+            <skipChance>0.44</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>45</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>100~200</countRange>
+                </li>
+                <li>
+                    <choiceChance>30</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>1</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="RaiderFoxianBase_high_tier">
+        <defName>FL_Foxian_Raider_Elite_Sniper</defName>
+        <label>foxian elite sniper</label>
+        <labelPlural>foxian elite snipers</labelPlural>
+        <combatPower>120</combatPower>
+        <apparelMoney>1000~1500</apparelMoney>
+        <weaponMoney>530~700</weaponMoney>
+        <initialWillRange>7~12</initialWillRange>
+        <initialResistanceRange>12~18</initialResistanceRange>
+        <weaponTags>
+            <li>SniperRifle</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <techHediffsChance>0.3</techHediffsChance>
+        <techHediffsMoney>100~900</techHediffsMoney>
+        <inventoryOptions>
+            <skipChance>0.39</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>45</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>100~200</countRange>
+                </li>
+                <li>
+                    <choiceChance>30</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>1</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>4~14</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="RaiderFoxianBase_high_tier">
+        <defName>FL_Foxian_Raider_Breacher</defName>
+        <label>foxian breacher</label>
+        <labelPlural>foxian breachers</labelPlural>
+        <combatPower>80</combatPower>
+        <apparelMoney>800~1300</apparelMoney>
+        <weaponMoney>400~900</weaponMoney>
+        <canBeSapper>true</canBeSapper>
+        <isGoodBreacher>true</isGoodBreacher>
+        <weaponTags>
+            <li>NeolithicMeleeDestructive</li>
+        </weaponTags>
+        <inventoryOptions>
+            <skipChance>0.4</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>45</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>100~200</countRange>
+                </li>
+                <li>
+                    <choiceChance>30</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>4~12</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="RaiderFoxianBase_high_tier">
+        <defName>FL_Foxian_Trooper</defName>
+        <label>foxian trooper</label>
+        <labelPlural>foxian troopers</labelPlural>
+        <combatPower>100</combatPower>
+        <apparelMoney>200~900</apparelMoney>
+        <weaponMoney>800~1300</weaponMoney>
+        <gearHealthRange>0.7~3.2</gearHealthRange>
+        <apparelTags>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+            <li>AssaultRifle</li>
+        </weaponTags>
+        <inventoryOptions>
+            <skipChance>0.4</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>45</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>100~200</countRange>
+                </li>
+                <li>
+                    <choiceChance>30</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>1~3</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="RaiderFoxianBase_high_tier">
+        <defName>FL_Foxian_Heavy_Trooper</defName>
+        <label>foxian heavy trooper</label>
+        <labelPlural>foxian heavy troopers</labelPlural>
+        <combatPower>120</combatPower>
+        <apparelTags>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <apparelMoney>200~300</apparelMoney>
+        <weaponMoney>1200~1200</weaponMoney>
+        <weaponTags>
+            <li>GunHeavy</li>
+            <li>GunSingleUse</li>
+            <li>Flamethrower</li>
+        </weaponTags>
+        <inventoryOptions>
+            <skipChance>0.4</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>45</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>100~200</countRange>
+                </li>
+                <li>
+                    <choiceChance>30</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>1~3</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+    <!-- Elite tier - Foxian Raider -->
+
+    <PawnKindDef ParentName="RaiderFoxianBase_elite_tier">
+        <defName>FL_Foxian_Raider_Soldier</defName>
+        <label>soldier of the empress</label>
+        <labelPlural>soldiers of the empress</labelPlural>
+        <combatPower>160</combatPower>
+        <apparelMoney>2000~3500</apparelMoney>
+        <weaponMoney>1000~1500</weaponMoney>
+        <weaponTags>
+            <li>SniperRifle</li>
+            <li>AssaultRifle</li>
+            <li>SpacerGun</li>
+            <li>GunHeavy</li>
+            <li>AssaultRifle</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+            <li>Nudist</li>
+        </disallowedTraits>
+        <techHediffsChance>0.15</techHediffsChance>
+        <techHediffsMoney>400~1000</techHediffsMoney>
+        <biocodeWeaponChance>0.5</biocodeWeaponChance>
+        <forcedTraits>
+            <li>Psychopath</li>
+        </forcedTraits>
+        <inventoryOptions>
+            <skipChance>0.3</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>45</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>100~500</countRange>
+                </li>
+                <li>
+                    <choiceChance>30</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>6~18</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="RaiderFoxianBase_elite_tier">
+        <defName>FL_Foxian_Raider_Shredder</defName>
+        <label>shredder of the empress</label>
+        <labelPlural>shredders of the empress</labelPlural>
+        <combatPower>180</combatPower>
+        <apparelMoney>1250~2000</apparelMoney>
+        <weaponMoney>2000~2500</weaponMoney>
+        <weaponTags>
+            <li>FoxianRaiderLegendaryMelee</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Nudist</li>
+        </disallowedTraits>
+        <apparelRequired>
+            <li>Apparel_ShieldBelt</li>
+        </apparelRequired>
+        <techHediffsChance>0.15</techHediffsChance>
+        <techHediffsMoney>400~1000</techHediffsMoney>
+        <biocodeWeaponChance>0.5</biocodeWeaponChance>
+        <forcedTraits>
+            <li>Psychopath</li>
+        </forcedTraits>
+        <inventoryOptions>
+            <skipChance>0.3</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>45</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>100~2500</countRange>
+                </li>
+                <li>
+                    <choiceChance>30</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>7~16</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <!-- Leader tier - Foxian Raider -->
+
+    <PawnKindDef ParentName="RaiderFoxianBase_elite_tier">
+        <defName>FL_Foxian_Raider_Children_Of_Blood</defName>
+        <label>children of blood</label>
+        <combatPower>210</combatPower>
+        <apparelMoney>2000~2800</apparelMoney>
+        <weaponMoney>2000~2800</weaponMoney>
+        <weaponTags>
+            <li>FoxianRaiderLegendaryMelee</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Nudist</li>
+        </disallowedTraits>
+        <apparelRequired>
+            <li>Apparel_ShieldBelt</li>
+        </apparelRequired>
+        <techHediffsChance>0.5</techHediffsChance>
+        <techHediffsMoney>1000~2000</techHediffsMoney>
+        <biocodeWeaponChance>1</biocodeWeaponChance>
+        <forcedTraits>
+            <li>Psychopath</li>
+        </forcedTraits>
+        <inventoryOptions>
+            <skipChance>0.3</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>45</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>100~2500</countRange>
+                </li>
+                <li>
+                    <choiceChance>30</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>10~20</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+</Defs>

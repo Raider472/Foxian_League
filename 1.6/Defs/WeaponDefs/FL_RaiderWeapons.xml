@@ -5,7 +5,7 @@
         <label>paralysing dagger</label>
         <techLevel>Medieval</techLevel>
         <relicChance>0.5</relicChance>
-        <description>A badly forged dagger coated in a potent poison that will make someone numb and number for each consecutive hits.</description>
+        <description>A badly forged dagger coated in a potent poison that will make someone numb and number for each consecutive hit. This weapon was created for the sole purpose of incapacitating someone.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/Knife</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -13,6 +13,7 @@
         <uiIconScale>2</uiIconScale>
         <weaponTags>
             <li>FoxianRaiderNormalMelee</li>
+            <li>FoxianRaiderKidnapper</li>
         </weaponTags>
         <costStuffCount>30</costStuffCount>
         <stuffCategories>
@@ -22,11 +23,6 @@
             <WorkToMake>1400</WorkToMake>
             <Mass>0.4</Mass>
         </statBases>
-        <recipeMaker>
-            <skillRequirements>
-                <Crafting>6</Crafting>
-            </skillRequirements>
-        </recipeMaker>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <burnableByRecipe>false</burnableByRecipe>
         <tools>
@@ -35,7 +31,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>7</power>
+                <power>6</power>
                 <cooldownTime>1.5</cooldownTime>
             </li>
             <li>
@@ -43,7 +39,7 @@
                 <capacities>
                     <li>Cut</li>
                 </capacities>
-                <power>10</power>
+                <power>8</power>
                 <cooldownTime>1.5</cooldownTime>
             </li>
             <li>
@@ -51,7 +47,7 @@
                 <capacities>
                     <li>Stab</li>
                 </capacities>
-                <power>11</power>
+                <power>9</power>
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
@@ -64,10 +60,73 @@
         </comps>
     </ThingDef>
 
+    <ThingDef ParentName="FoxianBaseMeleeWeapon">
+        <defName>FL_Weapon_FlamingTorch</defName>
+        <label>flaming torch</label>
+        <techLevel>Medieval</techLevel>
+        <relicChance>0.8</relicChance>
+        <description>A makeshift two-handed heavy weapon made to set the enemies on fire. The torch is hard to handle and slow to hit due to its odd design. This weapon was created by the Blood Rain to fight off Foxians from the League. It is well known to foxians that their tails are easily flammable and can spread to the whole body as a consequence.\n This weapon is effective against unprotected foxians, but outside of that. Its cumbersome design makes it impractical against anything else that is not a Foxian.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Club</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.1</uiIconScale>
+        <weaponTags>
+            <li>FoxianRaiderNormalMelee</li>
+            <li>FoxianRaiderPyromaniac</li>
+        </weaponTags>
+        <costStuffCount>45</costStuffCount>
+        <costList>
+            <Steel>30</Steel>
+            <Chemfuel>40</Chemfuel>
+        </costList>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <statBases>
+            <WorkToMake>1300</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <burnableByRecipe>false</burnableByRecipe>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2.6</cooldownTime>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Flame</def>
+                        <amount>8</amount>
+                        <chance>0.75</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.6</cooldownTime>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Flame</def>
+                        <amount>8</amount>
+                        <chance>0.75</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+        </tools>
+    </ThingDef>
+
     <ThingDef ParentName="FoxianLegendaryMeleeWeapon">
         <defName>FL_Weapon_CursedSword</defName>
         <label>cursed sword</label>
-        <description>A cursed sword that drain the lifes of all those killed by it, no one knows how it was fabricated or what materials is it composed of. This sword has an insatiable hunger and will even kill it's owner if it has not been nourished for a while. This blade is also known to make it hard for it's owner to separate from him.</description>
+        <description>A cursed sword that drains the lives of all those killed by it. No one knows how it was fabricated or what materials it is composed of. This sword has an insatiable hunger and will even kill its owner if it has not been nourished for a while. This blade is also known to make it hard for its owner to separate from him.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/Monosword</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -76,9 +135,6 @@
         <weaponTags>
             <li>FoxianRaiderLegendaryMelee</li>
         </weaponTags>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
         <statBases>
             <Mass>2.5</Mass>
         </statBases>
@@ -88,7 +144,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>10</power>
+                <power>11</power>
                 <cooldownTime>1.5</cooldownTime>
             </li>
             <li>
@@ -98,16 +154,16 @@
                 </capacities>
                 <power>21</power>
                 <cooldownTime>2</cooldownTime>
-                <armorPenetration>0.47</armorPenetration>
+                <armorPenetration>0.49</armorPenetration>
             </li>
             <li>
                 <label>edge</label>
                 <capacities>
                     <li>Cut</li>
                 </capacities>
-                <power>27</power>
+                <power>23</power>
                 <cooldownTime>2.2</cooldownTime>
-                <armorPenetration>0.34</armorPenetration>
+                <armorPenetration>0.40</armorPenetration>
             </li>
         </tools>
         <comps>
@@ -115,5 +171,50 @@
                 <hediffOnEquip>FL_Insatiable_Hunger</hediffOnEquip>
             </li>
         </comps>
+    </ThingDef>
+
+    <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="FoxianLegendaryBladeLinkMeleeWeapon">
+        <defName>FL_Weapon_CleansedSword</defName>
+        <label>cleansed sword</label>
+        <description>A once cursed sword that has been cleansed. The mad spirit inside it has been calmed and has been converted into a persona that can bond with a single person, once bonded, it will refuse to be wielded by anyone else.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/Monosword</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <weaponTags>
+            <li>FoxianLegendaryMelee</li>
+        </weaponTags>
+        <statBases>
+            <Mass>2.5</Mass>
+        </statBases>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>1.7</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>27</power>
+                <cooldownTime>2.2</cooldownTime>
+                <armorPenetration>0.54</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>30</power>
+                <cooldownTime>2.2</cooldownTime>
+                <armorPenetration>0.49</armorPenetration>
+            </li>
+        </tools>
     </ThingDef>
 </Defs>

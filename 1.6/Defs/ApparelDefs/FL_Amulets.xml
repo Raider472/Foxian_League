@@ -3,7 +3,7 @@
     <ThingDef ParentName="FoxianAmulet">
         <defName>FL_PsychicAmulet</defName>
         <label>psychic amulet</label>
-        <description>A jade amulet.</description>
+        <description>A jade amulet that is frequently worn by high psychic individuals in the Foxian League. Those wearing it claim it allows them greater focus and connection to the natural connection while meditating. Thus making it a perfect choice for anyone who wants to become closer to nature itself.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/SlaveCollar/SlaveCollar</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -22,14 +22,14 @@
     <ThingDef ParentName="FoxianAmulet">
         <defName>FL_DiplomatAmulet</defName>
         <label>diplomat amulet</label>
-        <description>A gold amulet.</description>
+        <description>A golden amulet that is commonly seen with diplomats from the Foxian League. Such a refined amulet made by expert craftsmanship allows them to be more impactful during diplomatic negotiations.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/SlaveCollar/SlaveCollar</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>0.8</drawSize>
         </graphicData>
         <costList>
-            <Gold>20</Gold>
+            <Gold>2</Gold>
         </costList>
         <equippedStatOffsets>
             <NegotiationAbility>0.1</NegotiationAbility>
@@ -45,7 +45,7 @@
     <ThingDef ParentName="FoxianAmulet">
         <defName>FL_MerchantAmulet</defName>
         <label>merchant amulet</label>
-        <description>A silver amulet.</description>
+        <description>A silver amulet that is almost omnipresent amongst Foxian merchants. It acts like a lucky charm for them. Its significance comes from a historical event in the League where a Foxian settlement managed to avoid impending ruin after making a transactional deal against all odds with the Blood Rain.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/SlaveCollar/SlaveCollar</texPath>
             <graphicClass>Graphic_Single</graphicClass>
