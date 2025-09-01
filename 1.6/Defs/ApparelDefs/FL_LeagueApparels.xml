@@ -159,9 +159,9 @@
             <EquipDelay>5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <MoveSpeed>-0.2</MoveSpeed>
             <PsychicSensitivityOffset>0.35</PsychicSensitivityOffset>
             <PsychicEntropyRecoveryRate>0.15</PsychicEntropyRecoveryRate>
+            <SocialImpact>0.1</SocialImpact>
         </equippedStatOffsets>
         <apparel>
             <bodyPartGroups>

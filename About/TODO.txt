@@ -1,0 +1,18 @@
+Basic stuff
+Kill the parent of the foxianh factions + strategy for foxian raider
+Description for ideology of the blood rain
+Pawnkind for league + league faction
+Base Scenario with 2 foxian and 1 greater foxian 
+
+Commission someone to do arts of the outfits and weapons
+
+OPTIONAL
+Window for confirmation if the player wants to un/equip the cursed sword
+
+Compatibility patch
+MayRequire all the dlc stuff
+Patch Royalty DLC (Empire is hostile with foxian league and something with quests ?)
+Vanilla Psycast expanded patch (all the gear and weapon will use eltex instead of plasteel)
+Check if I play with other interesting mods and if patches are needed
+
+Mod options

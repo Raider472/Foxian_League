@@ -344,7 +344,7 @@
         <skills>
             <li>
                 <skill>Melee</skill>
-                <range>4~16</range>
+                <range>4~12</range>
             </li>
         </skills>
     </PawnKindDef>
@@ -587,7 +587,6 @@
             <li>AssaultRifle</li>
             <li>SpacerGun</li>
             <li>GunHeavy</li>
-            <li>AssaultRifle</li>
         </weaponTags>
         <disallowedTraits>
             <li>Brawler</li>

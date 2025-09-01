@@ -17,6 +17,12 @@
             <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
             <MeditationFocusGain>0.1</MeditationFocusGain>
         </equippedStatOffsets>
+        <apparel>
+            <tags>
+                <li>FoxianAmulet</li>
+                <li>FoxianLeagueAmulet</li>
+            </tags>
+        </apparel>
     </ThingDef>
 
     <ThingDef ParentName="FoxianAmulet">
