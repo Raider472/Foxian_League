@@ -1,33 +1,222 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<FactionDef ParentName="OutlanderFactionBase">
+	<FactionDef ParentName="FactionBase">
 		<defName>Foxian_League</defName>
-		<label>Foxian league</label>
-		<description>Test</description>
+		<label>Foxian federation</label>
+		<fixedName>The Foxian League</fixedName>
+		<description>A confederation of independent Foxian settlements united as a faction. They value the cooperation and protection of every member in the group above all else to strive in this harsh world. The governing body of the league is made up of a representative from each settlement and a great counselor elected by the majority of the representatives. The role of the great counselor is to tackle problems that the league is facing and propose solutions that will be voted on by the representatives. Each settlement is free to follow its own internal policies as long as it does not impinge on the values of the league. If it doesn't, the great counselor has the right to impose sanctions on the accountable settlement until they get back in line. Otherwise, the great counselor can use force to bring back order if he deems it necessary.\nThe current missions of the league are maintaining good diplomatic relations with the other non-hostile factions and using their merchants to buy advanced weaponry from their more advanced neighbors to protect its independence.</description>
+		<pawnSingular>foxian</pawnSingular>
+		<pawnsPlural>foxians</pawnsPlural>
+		<listOrderPriority>30</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>great counselor</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+		<techLevel>Spacer</techLevel>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures>
+			<li>FL_FoxianLeagueCulture</li>
+		</allowedCultures>
+		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+		<fixedLeaderKinds>
+			<li>FL_Foxian_League_counselor</li>
+		</fixedLeaderKinds>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+    	</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+		</disallowedMemes>
+		<structureMemeWeights>
+			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">2</Structure_Animist>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+		</structureMemeWeights>
 		<colorSpectrum>
 			<li>(1.0, 1.0, 0.0)</li>
 			<li>(1.0, 1.0, 0.0)</li>
 		</colorSpectrum>
+		<fixedIdeo>true</fixedIdeo>
+      	<ideoName>Naturalism</ideoName>
+		<ideoDescription>They love amongus</ideoDescription>
+		<deityPresets>
+			<li>
+				<nameType>
+					<name>SpiritSomething</name>
+					<type>The spirit of Nature</type>
+				</nameType>
+				<gender>None</gender>
+				<iconPath>UI/Deities/DeityGeneric</iconPath>
+			</li>
+		</deityPresets>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>30</configurationListOrderPriority>
-		<xenotypeSet Inherit="False">
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<xenotypeSet>
 			<xenotypeChances>
-				<FL_Foxian>0.8</FL_Foxian>
-				<FL_Greater_Foxian>0.2</FL_Greater_Foxian>
+				<FL_Foxian>0.75</FL_Foxian>
+				<FL_Greater_Foxian>0.20</FL_Greater_Foxian>
+				<Baseliner>0.05</Baseliner>
 			</xenotypeChances>
 		</xenotypeSet>
+		<backstoryFilters>
+			<li>
+				<categories>
+				<li>Outlander</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+				<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+			<li>Caravan_Outlander_PirateMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
+		<raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, standard mix -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<FL_Foxian_Villager>2</FL_Foxian_Villager>
+					<FL_Foxian_Town_Guard>10</FL_Foxian_Town_Guard>
+					<FL_Foxian_League_Grenadier>2.5</FL_Foxian_League_Grenadier>
+					<FL_Foxian_League_Grenadier_EMP>0.25</FL_Foxian_League_Grenadier_EMP>
+					<FL_Foxian_Melee_Infantry>6</FL_Foxian_Melee_Infantry>
+					<FL_Foxian_League_Soldier>10</FL_Foxian_League_Soldier>
+					<FL_Foxian_League_Sniper>5</FL_Foxian_League_Sniper>
+					<FL_Foxian_Elite_Soldier>10</FL_Foxian_Elite_Soldier>
+					<FL_Foxian_Elite_Melee_Infantry>10</FL_Foxian_Elite_Melee_Infantry>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<FL_Foxian_Villager>20</FL_Foxian_Villager>
+					<FL_Foxian_Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</FL_Foxian_Villager_Child>
+					<FL_Foxian_Town_Guard>10</FL_Foxian_Town_Guard>
+					<FL_Foxian_Politician>10</FL_Foxian_Politician>
+					<FL_Foxian_Noble>2</FL_Foxian_Noble>
+					<FL_Foxian_Diplomat>4</FL_Foxian_Diplomat>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<FL_Foxian_Trader>1</FL_Foxian_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<FL_Foxian_Diplomat>2</FL_Foxian_Diplomat>
+					<FL_Foxian_Noble>2</FL_Foxian_Noble>
+					<FL_Foxian_Villager>3</FL_Foxian_Villager>
+					<FL_Foxian_Town_Guard>10</FL_Foxian_Town_Guard>
+					<FL_Foxian_League_Grenadier>1.5</FL_Foxian_League_Grenadier>
+					<FL_Foxian_Melee_Infantry>10</FL_Foxian_Melee_Infantry>
+					<FL_Foxian_League_Soldier>10</FL_Foxian_League_Soldier>
+					<FL_Foxian_League_Sniper>8</FL_Foxian_League_Sniper>
+					<FL_Foxian_Elite_Soldier>10</FL_Foxian_Elite_Soldier>
+					<FL_Foxian_Elite_Melee_Infantry>8</FL_Foxian_Elite_Melee_Infantry>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<FL_Foxian_Villager>10</FL_Foxian_Villager>
+					<FL_Foxian_Diplomat>4</FL_Foxian_Diplomat>
+					<FL_Foxian_Villager_Child>2</FL_Foxian_Villager_Child>
+					<FL_Foxian_Noble>4</FL_Foxian_Noble>
+					<FL_Foxian_Politician>8</FL_Foxian_Politician>
+					<FL_Foxian_Town_Guard>10</FL_Foxian_Town_Guard>
+					<FL_Foxian_League_Grenadier>1.5</FL_Foxian_League_Grenadier>
+					<FL_Foxian_League_Grenadier_EMP>0.25</FL_Foxian_League_Grenadier_EMP>
+					<FL_Foxian_Melee_Infantry>7</FL_Foxian_Melee_Infantry>
+					<FL_Foxian_League_Soldier>10</FL_Foxian_League_Soldier>
+					<FL_Foxian_League_Sniper>8</FL_Foxian_League_Sniper>
+					<FL_Foxian_Elite_Soldier>10</FL_Foxian_Elite_Soldier>
+					<FL_Foxian_Elite_Melee_Infantry>10</FL_Foxian_Elite_Melee_Infantry>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Miner>1</Miner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Hunter>1</Hunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Logger>1</Logger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Farmer>1</Farmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
 	</FactionDef>
 
-	<FactionDef ParentName="PirateBandBase">
+	<FactionDef ParentName="FactionBase">
 		<defName>Foxian_BloodRain</defName>
 		<label>foxian raiders</label>
-		<fixedName>The blood Rain</fixedName>
+		<fixedName>The Blood Rain</fixedName>
 		<description>A group of bandits with Feminist and supremacist beliefs. They tend to raid other factions, taking prisoners as slaves and stealing supplies. They hold the beliefs that foxians like them are superiors to other races, but some of the slaves they take are used for reproduction, although due to their leader high standards they tend to die very quickly. Females births are celebrated, while male ones are ended immediatly, with the same end being met by females greater foxians. There are rumors about their leader being a female greater foxian with 9 tails, but due to her ruthless demeanor, peoples that get too close to her dont come back to give any confirmation. Even inside the group, she is seen very rarely, leaving her quarters only during nights of full moon and rainy days with clear skies.</description>
 		<settlementNameMaker>NamerSettlementFoxianRaider</settlementNameMaker>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
 		<fixedIdeo>true</fixedIdeo>
 		<pawnSingular>foxian</pawnSingular>
 		<pawnsPlural>foxians</pawnsPlural>
+		<listOrderPriority>15</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+    	<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<leaderTitle>Children of blood</leaderTitle>
+		<factionIconPath>World/WorldObjects/Expanding/PirateOutpost</factionIconPath>
 		<ideoName>Dakinesim</ideoName>
 		<ideoDescription>They love amongus</ideoDescription>
 		<deityPresets>
@@ -40,60 +229,197 @@
 				<iconPath>UI/Deities/DeityGeneric</iconPath>
 			</li>
 		</deityPresets>
-		<colorSpectrum Inherit="False">
+		<colorSpectrum>
 			<li>(0.45, 0.09, 0.16)</li>
 			<li>(0.55, 0.15, 0.25)</li>
 		</colorSpectrum>
-		<allowedCultures Inherit="False">
+		<permanentEnemy>true</permanentEnemy>
+		<techLevel>Industrial</techLevel>
+		<allowedCultures>
 			<li>FL_FoxianRaiderCulture</li>
 		</allowedCultures>
+		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
 		<fixedLeaderKinds>
 			<li>FL_Foxian_Raider_Children_Of_Blood</li>
 		</fixedLeaderKinds>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>30</configurationListOrderPriority>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
-		<xenotypeSet Inherit="False">
+		<raidLootMaker>PirateRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<xenotypeSet>
 			<xenotypeChances>
 				<FL_Foxian>1</FL_Foxian>
 			</xenotypeChances>
 		</xenotypeSet>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Pirate</li>
+				</categories>
+			</li>
+		</backstoryFilters>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
     	</requiredMemes>
-		    <disallowedPrecepts>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_NoRules</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinOrChestDisapproved</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">OrganUse_Abhorrent</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">OrganUse_HorribleNoSell</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">OrganUse_HorribleSellOK</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Prohibited</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Horrible</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Strict</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Moderate</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_AlwaysMans</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_Random</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_KeepNames</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_UsuallyWomans</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Execution_HorribleIfInnocent</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Execution_DontCare</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Execution_RespectedIfGuilty</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
-			</disallowedPrecepts>
-		<structureMemeWeights Inherit="False">
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_NoRules</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">OrganUse_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">OrganUse_HorribleNoSell</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">OrganUse_HorribleSellOK</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Strict</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Moderate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_AlwaysMans</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_Random</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_KeepNames</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_UsuallyWomans</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_HorribleIfInnocent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_DontCare</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_RespectedIfGuilty</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+		</disallowedPrecepts>
+		<structureMemeWeights>
 			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">10</Structure_TheistEmbodied>
 		</structureMemeWeights>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, ranged and melee -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<FL_Foxian_Raider_Trash>7</FL_Foxian_Raider_Trash>
+					<FL_Foxian_Raider_Scavenger_Melee>6</FL_Foxian_Raider_Scavenger_Melee>
+					<FL_Foxian_Raider_Scavenger_Gun>10</FL_Foxian_Raider_Scavenger_Gun>
+					<FL_Foxian_Raider_kidnapper>2.5</FL_Foxian_Raider_kidnapper>
+					<FL_Foxian_Raider_Pyromaniac>4.5</FL_Foxian_Raider_Pyromaniac>
+					<FL_Foxian_Raider_Despoiler>10</FL_Foxian_Raider_Despoiler>
+					<FL_Foxian_Raider_Looter>6</FL_Foxian_Raider_Looter>
+					<FL_Foxian_Raider_Grenadier_EMP>0.25</FL_Foxian_Raider_Grenadier_EMP>
+					<FL_Foxian_Raider_Grenadier>2</FL_Foxian_Raider_Grenadier>
+					<FL_Raider_Foxian_Trooper>10</FL_Raider_Foxian_Trooper>
+					<FL_Foxian_Heavy_Trooper>6</FL_Foxian_Heavy_Trooper>
+					<FL_Foxian_Raider_Breacher>3</FL_Foxian_Raider_Breacher>
+					<FL_Foxian_Raider_Sniper>7</FL_Foxian_Raider_Sniper>
+					<FL_Foxian_Raider_Elite_Sniper>3.5</FL_Foxian_Raider_Elite_Sniper>
+					<FL_Foxian_Raider_Soldier>10</FL_Foxian_Raider_Soldier>
+					<FL_Foxian_Raider_Shredder>7</FL_Foxian_Raider_Shredder>
+					<FL_Foxian_Raider_Children_Of_Blood>5</FL_Foxian_Raider_Children_Of_Blood>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>25</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<FL_Foxian_Raider_Trash>10</FL_Foxian_Raider_Trash>
+					<FL_Foxian_Raider_Scavenger_Melee>8</FL_Foxian_Raider_Scavenger_Melee>
+					<FL_Foxian_Raider_kidnapper>5</FL_Foxian_Raider_kidnapper>
+					<FL_Foxian_Raider_Pyromaniac>8</FL_Foxian_Raider_Pyromaniac>
+					<FL_Foxian_Raider_Looter>10</FL_Foxian_Raider_Looter>
+					<FL_Foxian_Raider_Breacher>5</FL_Foxian_Raider_Breacher>
+					<FL_Foxian_Raider_Shredder>10</FL_Foxian_Raider_Shredder>
+					<FL_Foxian_Raider_Children_Of_Blood>5</FL_Foxian_Raider_Children_Of_Blood>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>35</commonality>
+				<options>
+					<FL_Foxian_Raider_Scavenger_Gun>10</FL_Foxian_Raider_Scavenger_Gun>
+					<FL_Foxian_Raider_Despoiler>10</FL_Foxian_Raider_Despoiler>
+					<FL_Foxian_Raider_Grenadier_EMP>0.25</FL_Foxian_Raider_Grenadier_EMP>
+					<FL_Foxian_Raider_Grenadier>2</FL_Foxian_Raider_Grenadier>
+					<FL_Raider_Foxian_Trooper>10</FL_Raider_Foxian_Trooper>
+					<FL_Foxian_Heavy_Trooper>5</FL_Foxian_Heavy_Trooper>
+					<FL_Foxian_Raider_Sniper>7</FL_Foxian_Raider_Sniper>
+					<FL_Foxian_Raider_Elite_Sniper>4</FL_Foxian_Raider_Elite_Sniper>
+					<FL_Foxian_Raider_Soldier>10</FL_Foxian_Raider_Soldier>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, explosives with ranged mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>15</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<FL_Foxian_Raider_Grenadier_EMP>0.5</FL_Foxian_Raider_Grenadier_EMP>
+					<FL_Foxian_Raider_Grenadier>10</FL_Foxian_Raider_Grenadier>
+					<FL_Raider_Foxian_Trooper>1</FL_Raider_Foxian_Trooper>
+					<FL_Foxian_Heavy_Trooper>10</FL_Foxian_Heavy_Trooper>
+					<FL_Foxian_Raider_Soldier>1</FL_Foxian_Raider_Soldier>
+					<PirateBoss>1</PirateBoss>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, snipers only -->
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<FL_Foxian_Raider_Sniper>10</FL_Foxian_Raider_Sniper>
+					<FL_Foxian_Raider_Elite_Sniper>5</FL_Foxian_Raider_Elite_Sniper>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, Foxian wave of trash (obviously rare) -->
+				<kindDef>Combat</kindDef>
+				<commonality>2</commonality>
+				<maxTotalPoints>1600</maxTotalPoints>
+				<options>
+					<FL_Foxian_Raider_Trash>10</FL_Foxian_Raider_Trash>
+				</options>
+			</li>
+			<li>
+				<!-- Base defense, mainly ranged with melee mix-ins -->
+				<kindDef>Settlement</kindDef>
+				<options>
+					<FL_Foxian_Raider_Trash>3</FL_Foxian_Raider_Trash>
+					<FL_Foxian_Raider_Scavenger_Melee>5</FL_Foxian_Raider_Scavenger_Melee>
+					<FL_Foxian_Raider_Scavenger_Gun>10</FL_Foxian_Raider_Scavenger_Gun>
+					<FL_Foxian_Raider_Despoiler>10</FL_Foxian_Raider_Despoiler>
+					<FL_Foxian_Raider_Pyromaniac>3</FL_Foxian_Raider_Pyromaniac>
+					<FL_Foxian_Raider_Grenadier>2</FL_Foxian_Raider_Grenadier>
+					<FL_Foxian_Raider_Looter>5</FL_Foxian_Raider_Looter>
+					<FL_Foxian_Raider_Sniper>10</FL_Foxian_Raider_Sniper>
+					<FL_Foxian_Raider_Elite_Sniper>5</FL_Foxian_Raider_Elite_Sniper>
+					<FL_Raider_Foxian_Trooper>10</FL_Raider_Foxian_Trooper>
+					<FL_Foxian_Raider_Soldier>10</FL_Foxian_Raider_Soldier>
+					<FL_Foxian_Raider_Shredder>10</FL_Foxian_Raider_Shredder>
+				</options>
+			</li>
+		</pawnGroupMakers>
 	</FactionDef>
 </Defs>

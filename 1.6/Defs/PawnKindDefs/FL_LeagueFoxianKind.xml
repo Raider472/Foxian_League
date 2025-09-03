@@ -89,7 +89,7 @@
     </PawnKindDef>
 
     <!-- Civilian foxians -->
-    <PawnKindDef ParentName="LeagueFoxianBase_civilian">
+    <PawnKindDef ParentName="LeagueFoxianBase_civilian" Name="FoxianVillagerBase">
         <defName>FL_Foxian_Villager</defName>
         <label>foxian villager</label>
         <combatPower>45</combatPower>
@@ -110,6 +110,14 @@
             <li>ImplantEmpireCommon</li>
         </techHediffsTags>
         <initialResistanceRange>10~17</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="FoxianVillagerBase">
+        <defName>FL_Foxian_Villager_Child</defName>
+        <isFighter>false</isFighter>
+        <weaponTags/>
+        <weaponMoney>0</weaponMoney>
+        <pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
     </PawnKindDef>
 
     <PawnKindDef ParentName="LeagueFoxianBase_civilian">
@@ -141,8 +149,9 @@
         <initialResistanceRange>12~20</initialResistanceRange>
         <xenotypeSet>
             <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.05</Baseliner>
                 <FL_Greater_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.05</FL_Greater_Foxian>
-                <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.95</FL_Foxian>
+                <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.9</FL_Foxian>
             </xenotypeChances>
         </xenotypeSet>
     </PawnKindDef>
@@ -175,16 +184,17 @@
         <initialResistanceRange>12~20</initialResistanceRange>
         <xenotypeSet>
             <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.05</Baseliner>
                 <FL_Greater_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.05</FL_Greater_Foxian>
-                <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.95</FL_Foxian>
+                <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.9</FL_Foxian>
             </xenotypeChances>
         </xenotypeSet>
     </PawnKindDef>
 
     <PawnKindDef ParentName="LeagueFoxianBase_civilian">
-        <defName>FL_Foxian_Mayor</defName>
-        <label>foxian local mayor</label>
-        <labelPlural>foxian councilmen</labelPlural>
+        <defName>FL_Foxian_Politician</defName>
+        <label>foxian local politician</label>
+        <labelPlural>foxian politicians</labelPlural>
         <combatPower>40</combatPower>
         <minGenerationAge>26</minGenerationAge>
         <gearHealthRange>1~1</gearHealthRange>
@@ -277,7 +287,7 @@
 
     <PawnKindDef ParentName="LeagueFoxianBase_combat">
         <defName>FL_Foxian_League_Soldier</defName>
-        <label>foxian solider</label>
+        <label>foxian soldier</label>
         <labelPlural>foxian soliders</labelPlural>
         <combatPower>80</combatPower>
         <gearHealthRange>0.7~3.2</gearHealthRange>
@@ -375,8 +385,9 @@
         <initialResistanceRange>14~21</initialResistanceRange>
         <xenotypeSet>
             <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.05</Baseliner>
                 <FL_Greater_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.15</FL_Greater_Foxian>
-                <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.85</FL_Foxian>
+                <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.8</FL_Foxian>
             </xenotypeChances>
         </xenotypeSet>
     </PawnKindDef>
@@ -480,7 +491,8 @@
         <initialResistanceRange>18~27</initialResistanceRange>
         <xenotypeSet>
             <xenotypeChances>
-                <FL_Greater_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.85</FL_Greater_Foxian>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.05</Baseliner>
+                <FL_Greater_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.8</FL_Greater_Foxian>
                 <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.15</FL_Foxian>
             </xenotypeChances>
         </xenotypeSet>
@@ -528,6 +540,8 @@
     <PawnKindDef ParentName="LeagueFoxianBase_combat">
         <defName>FL_Foxian_League_counselor</defName>
         <label>the great counselor</label>
+        <factionLeader>true</factionLeader>
+        <minGenerationAge>28</minGenerationAge>
         <combatPower>210</combatPower>
         <apparelMoney>2000~2800</apparelMoney>
         <weaponMoney>2000~2800</weaponMoney>
@@ -556,5 +570,7 @@
                 <range>10~20</range>
             </li>
         </skills>
+        <initialWillRange>30~45</initialWillRange>
+        <initialResistanceRange>30~45</initialResistanceRange>
     </PawnKindDef>
 </Defs>

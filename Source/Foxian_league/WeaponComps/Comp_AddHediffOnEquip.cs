@@ -24,6 +24,7 @@ namespace Foxian_league {
 
         public override void Notify_Equipped(Pawn pawn) {
             if (pawn == null || Props.hediffOnEquip == null) return;
+            Log.Message($"Pawn: {pawn} will receive the effect");
             base.Notify_Equipped(pawn);
             if (pawn.health.hediffSet.TryGetHediff(Props.hediffOnEquip, out Hediff hediff)) {
                 Log.Message("This pawn already has the hediff");

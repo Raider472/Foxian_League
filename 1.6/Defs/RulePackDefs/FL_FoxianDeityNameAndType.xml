@@ -21,4 +21,26 @@
             </rulesStrings>
         </rulePack>
     </RulePackDef>
+
+    <RulePackDef>
+        <defName>FoxianLeagueNamerDeity</defName>
+        <include>
+            <li>NamerDeityGlobal</li>
+            <li>GodContent_English</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_deityName->SpiritSomething</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>FoxianLeagueNamerDeityType</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_deityType->The Spirit of Nature</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
 </Defs>

@@ -13,4 +13,18 @@
             </rulesStrings>
         </rulePack>
     </RulePackDef>
+
+    <RulePackDef>
+        <defName>FoxianLeagueIdeoNamer</defName>
+        <rulePack>
+            <rulesStrings>
+            <li>r_ideoName->Naturalism</li>
+            
+            <li>r_ideoAdjective->Naturalisian</li>
+
+            <li>r_memberName->Naturalist</li>
+
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
 </Defs>

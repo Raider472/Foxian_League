@@ -141,8 +141,8 @@
         <combatPower>50</combatPower>
         <gearHealthRange>0.3~0.7</gearHealthRange>
         <itemQuality>Poor</itemQuality>
-        <apparelMoney>150~400</apparelMoney>
-        <weaponMoney>150~350</weaponMoney>
+        <apparelMoney>250~500</apparelMoney>
+        <weaponMoney>200~300</weaponMoney>
         <apparelAllowHeadgearChance>0.15</apparelAllowHeadgearChance>
         <apparelTags>
             <li>IndustrialBasic</li>
@@ -177,8 +177,8 @@
     <PawnKindDef ParentName="RaiderFoxian_Scavenger">
         <defName>FL_Foxian_Raider_Scavenger_Melee</defName>
         <label>foxian scavenger skirmisher</label>
-        <apparelMoney>200~500</apparelMoney>
-        <weaponMoney>200~600</weaponMoney>
+        <apparelMoney>300~800</apparelMoney>
+        <weaponMoney>200~400</weaponMoney>
         <weaponTags Inherit="false">
             <li>NeolithicMeleeBasic</li>
             <li>MedievalMeleeBasic</li>
@@ -234,7 +234,7 @@
         <label>foxian pyromaniac</label>
         <combatPower>70</combatPower>
         <gearHealthRange>0.3~0.8</gearHealthRange>
-        <apparelMoney>200~600</apparelMoney>
+        <apparelMoney>300~800</apparelMoney>
         <weaponMoney>205~400</weaponMoney>
         <apparelAllowHeadgearChance>0.15</apparelAllowHeadgearChance>
         <apparelTags Inherit="false">
@@ -280,7 +280,7 @@
         <defName>FL_Foxian_Raider_Despoiler</defName>
         <label>foxian despoiler</label>
         <combatPower>75</combatPower>
-        <apparelMoney>320~800</apparelMoney>
+        <apparelMoney>320~1200</apparelMoney>
         <weaponMoney>355~550</weaponMoney>
         <weaponTags>
             <li>IndustrialGunAdvanced</li>
@@ -313,8 +313,8 @@
         <label>foxian looter</label>
         <labelPlural>foxian looters</labelPlural>
         <combatPower>60</combatPower>
-        <apparelMoney>320~800</apparelMoney>
-        <weaponMoney>250~400</weaponMoney>
+        <apparelMoney>320~1000</apparelMoney>
+        <weaponMoney>350~800</weaponMoney>
         <weaponTags>
             <li>MedievalMeleeDecent</li>
             <li>MedievalMeleeAdvanced</li>
@@ -407,7 +407,7 @@
         <label>foxian sniper</label>
         <labelPlural>foxian snipers</labelPlural>
         <combatPower>90</combatPower>
-        <apparelMoney>500~1000</apparelMoney>
+        <apparelMoney>400~1200</apparelMoney>
         <weaponMoney>530~600</weaponMoney>
         <weaponTags>
             <li>SniperRifle</li>
@@ -439,7 +439,7 @@
         <label>foxian elite sniper</label>
         <labelPlural>foxian elite snipers</labelPlural>
         <combatPower>120</combatPower>
-        <apparelMoney>1000~1500</apparelMoney>
+        <apparelMoney>600~1500</apparelMoney>
         <weaponMoney>530~700</weaponMoney>
         <initialWillRange>7~12</initialWillRange>
         <initialResistanceRange>12~18</initialResistanceRange>
@@ -479,7 +479,7 @@
         <label>foxian breacher</label>
         <labelPlural>foxian breachers</labelPlural>
         <combatPower>80</combatPower>
-        <apparelMoney>800~1300</apparelMoney>
+        <apparelMoney>700~1200</apparelMoney>
         <weaponMoney>400~900</weaponMoney>
         <canBeSapper>true</canBeSapper>
         <isGoodBreacher>true</isGoodBreacher>
@@ -510,11 +510,11 @@
     </PawnKindDef>
 
     <PawnKindDef ParentName="RaiderFoxianBase_high_tier">
-        <defName>FL_Foxian_Trooper</defName>
+        <defName>FL_Raider_Foxian_Trooper</defName>
         <label>foxian trooper</label>
         <labelPlural>foxian troopers</labelPlural>
-        <combatPower>100</combatPower>
-        <apparelMoney>200~900</apparelMoney>
+        <combatPower>110</combatPower>
+        <apparelMoney>800~1500</apparelMoney>
         <weaponMoney>800~1300</weaponMoney>
         <gearHealthRange>0.7~3.2</gearHealthRange>
         <apparelTags>
@@ -671,6 +671,8 @@
     <PawnKindDef ParentName="RaiderFoxianBase_elite_tier">
         <defName>FL_Foxian_Raider_Children_Of_Blood</defName>
         <label>children of blood</label>
+        <factionLeader>true</factionLeader>
+        <minGenerationAge>22</minGenerationAge>
         <combatPower>210</combatPower>
         <apparelMoney>2000~2800</apparelMoney>
         <weaponMoney>2000~2800</weaponMoney>

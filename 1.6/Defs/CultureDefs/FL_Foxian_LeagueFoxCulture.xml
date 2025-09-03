@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <CultureDef>
-        <defName>FL_FoxianRaiderCulture</defName>
-        <label>marauder foxian</label>
-        <description>A loosely structured marauder group looting and executing anything that isn't remotely foxian.</description>
-        <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">FoxianRaiderIdeoNamer</ideoNameMaker>
-        <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">FoxianRaiderNamerDeity</deityNameMaker>
-        <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">FoxianRaiderNamerDeityType</deityTypeMaker>
-        <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">FoxianRaiderNamerLeader</leaderTitleMaker>
-        <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalKriminul</festivalNameMaker>
+        <defName>FL_FoxianLeagueCulture</defName>
+        <label>foxian federation</label>
+        <description>A federation of independent Foxian settlements that have united together in order to survive the harshness of the rimworld.</description>
+        <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">FoxianLeagueIdeoNamer</ideoNameMaker>
+        <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">FoxianLeagueNamerDeity</deityNameMaker>
+        <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">FoxianLeagueNamerDeityType</deityTypeMaker>
+        <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">FoxianLeagueNamerLeader</leaderTitleMaker>
+        <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalRustican</festivalNameMaker>
         <allowedPlaceTags>
             <li>OriginSpacer</li>
         </allowedPlaceTags>
         <iconPath>World/WorldObjects/Expanding/PirateOutpost</iconPath>
-        <iconColor>(0.3, 0.3, 0.3)</iconColor>
+        <iconColor>(0.7, 0.7, 0.7)</iconColor>
         <thingStyleCategories>
             <li MayRequire="Ludeon.RimWorld.Ideology">
-                <category>Morbid</category>
+                <category>Animalist</category>
+                <priority>2</priority>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <category>Techist</category>
                 <priority>2</priority>
             </li>
         </thingStyleCategories>
