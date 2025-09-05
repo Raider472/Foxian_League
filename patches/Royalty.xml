@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <!--Empire not hostile to foxian league-->
+  <!--Empire not hostile to foxian league and foxian player colony-->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Royalty</li>
@@ -9,6 +9,7 @@
             <xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
             <value>
                 <li>Foxian_League</li>
+                <li>FoxianPlayerColony</li>
             </value>
         </match>
     </Operation>

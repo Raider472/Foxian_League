@@ -14,20 +14,24 @@ namespace Foxian_league {
 
         public override void TickInterval(int delta) {
             //base.TickInterval(delta);
-            float PsychichSensiPawn = MathF.Round(pawn.GetStatValue(StatDefOf.PsychicSensitivity), 2);
-            if (psychicSensitivityRecent != PsychichSensiPawn) {
-                psychicSensitivityRecent = PsychichSensiPawn;
-                int currentChannelingStage = GetChannelingStage(PsychichSensiPawn);
-                Log.Message($"recent psychic sens: {psychicSensitivityRecent} and recent ChannState: {channelingStageRecent}");
-                Log.Message($"current psychic sens: {PsychichSensiPawn} and current ChannState: {currentChannelingStage}");
-
-                if (currentChannelingStage != channelingStageRecent) {
-                    Log.Message("current channel is not the same as recent one");
-                    HediffUtils.RemoveHediffStage(hediffName, channelingStageRecent, pawn);
-                    channelingStageRecent = currentChannelingStage;
-                    HediffUtils.SetHediffStage(hediffName, currentChannelingStage, pawn);
-                }
+            if (tickInterval < 150) {
+                tickInterval++;
+                Log.Message($"{tickInterval}");
+                return;
             }
+            tickInterval = 0;
+            float PsychichSensiPawn = MathF.Round(pawn.GetStatValue(StatDefOf.PsychicSensitivity), 2);
+            if (psychicSensitivityRecent == PsychichSensiPawn) return;
+            psychicSensitivityRecent = PsychichSensiPawn;
+            int currentChannelingStage = GetChannelingStage(PsychichSensiPawn);
+            Log.Message($"recent psychic sens: {psychicSensitivityRecent} and recent ChannState: {channelingStageRecent}");
+            Log.Message($"current psychic sens: {PsychichSensiPawn} and current ChannState: {currentChannelingStage}");
+
+            if (currentChannelingStage == channelingStageRecent) return;
+            Log.Message("current channel is not the same as recent one");
+            HediffUtils.RemoveHediffStage(hediffName, channelingStageRecent, pawn);
+            channelingStageRecent = currentChannelingStage;
+            HediffUtils.SetHediffStage(hediffName, currentChannelingStage, pawn);
         }
         public override void PostAdd() {
             base.PostAdd();

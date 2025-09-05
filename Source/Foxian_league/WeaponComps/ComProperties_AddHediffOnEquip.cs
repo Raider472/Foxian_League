@@ -8,6 +8,7 @@ using Verse;
 namespace Foxian_league {
     public class ComProperties_AddHediffOnEquip : CompProperties {
         public HediffDef hediffOnEquip;
+        public HediffDef hediffOnEquipAlt;
 
         public ComProperties_AddHediffOnEquip() {
             compClass = typeof(Comp_AddHediffOnEquip);

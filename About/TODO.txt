@@ -1,8 +1,5 @@
 Basic stuff
 Description for ideology of the blood rain and league
-Base Scenario with 2 foxian and 1 greater foxian
-Maybe change the weapon of the children of blood leader ? It might have the unintended consequence of killing her 
-    -Add a special hediff for Raider Foxian faction leader AND MAKE SURE THE STELLAR DOESN'T GET THIS WEAPON !!!!!
 
 Commission someone to do arts of the outfits and weapons
 
@@ -16,3 +13,10 @@ Vanilla Psycast expanded patch (all the gear and weapon will use eltex instead o
 Check if I play with other interesting mods and if patches are needed
 
 Mod options
+Config to change the birthing xenotype
+config to change the threshold for the psychic manipulation
+
+Dubs Analyzer - Check if each method is implemented without causing lags
+-Natural psy sensitive -> ok 0.004 to 0.012 ms
+-Check if psychic sensitivty changes if the mod is deactivated or not (around 13-14% usage in stats)
+-Change the code for the ticking genes, now it will take 2.5 seconds to update (This improved performaces a little bit)

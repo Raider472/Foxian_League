@@ -112,4 +112,36 @@
             <li Class="HediffCompProperties_DisappearsOnDeath"/>
         </comps>
     </HediffDef>
+
+    <HediffDef>
+        <defName>FL_Insatiable_Hunger_Leader_Alt</defName>
+        <label>insatiable hunger - merged minds</label>
+        <defaultLabelColor>(0.83, 0.19, 0.32)</defaultLabelColor>
+        <description>This person has temporarily merged their consciousness with the cursed weapon they are wielding. They act as one and thus do not suffer from the negative effects of the blade. This effect will be removed once this person is unconscious or has unequipped the weapon.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <everCurableByItem>false</everCurableByItem>
+        <isBad>false</isBad>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                </capMods>
+                <statFactors>
+                    <InjuryHealingFactor>1.5</InjuryHealingFactor>
+                    <MeleeDamageFactor>1.5</MeleeDamageFactor>
+                </statFactors>
+                <statOffsets>
+                    <ImmunityGainSpeed>0.5</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+    </HediffDef>
 </Defs>

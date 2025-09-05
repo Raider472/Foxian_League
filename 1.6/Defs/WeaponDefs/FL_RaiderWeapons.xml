@@ -132,7 +132,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <equippedAngleOffset>-65</equippedAngleOffset>
-        <weaponTags>
+        <weaponTags Inherit="False">
             <li>FoxianRaiderLegendaryMelee</li>
         </weaponTags>
         <statBases>
@@ -169,6 +169,7 @@
         <comps>
             <li Class="Foxian_league.ComProperties_AddHediffOnEquip">
                 <hediffOnEquip>FL_Insatiable_Hunger</hediffOnEquip>
+                <hediffOnEquipAlt>FL_Insatiable_Hunger_Leader_Alt</hediffOnEquipAlt>
             </li>
         </comps>
     </ThingDef>

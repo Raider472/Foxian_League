@@ -674,8 +674,8 @@
         <factionLeader>true</factionLeader>
         <minGenerationAge>22</minGenerationAge>
         <combatPower>210</combatPower>
-        <apparelMoney>2000~2800</apparelMoney>
-        <weaponMoney>2000~2800</weaponMoney>
+        <apparelMoney>4000~4800</apparelMoney>
+        <weaponMoney>3000~4800</weaponMoney>
         <weaponTags>
             <li>FoxianRaiderLegendaryMelee</li>
         </weaponTags>
@@ -686,8 +686,9 @@
             <li>Apparel_ShieldBelt</li>
         </apparelRequired>
         <techHediffsChance>0.5</techHediffsChance>
-        <techHediffsMoney>1000~2000</techHediffsMoney>
+        <techHediffsMoney>3000~4000</techHediffsMoney>
         <biocodeWeaponChance>1</biocodeWeaponChance>
+        <itemQuality>Excellent</itemQuality>
         <forcedTraits>
             <li>Psychopath</li>
         </forcedTraits>

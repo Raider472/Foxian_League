@@ -543,8 +543,9 @@
         <factionLeader>true</factionLeader>
         <minGenerationAge>28</minGenerationAge>
         <combatPower>210</combatPower>
-        <apparelMoney>2000~2800</apparelMoney>
+        <apparelMoney>4000~4800</apparelMoney>
         <weaponMoney>2000~2800</weaponMoney>
+        <itemQuality>Excellent</itemQuality>
         <apparelTags>
             <li>IndustrialMilitaryAdvanced</li>
             <li>SpacerMilitary</li>
@@ -557,7 +558,7 @@
             <li>FL_NobleFoxianArmor</li>
         </apparelRequired>
         <techHediffsChance>0.35</techHediffsChance>
-        <techHediffsMoney>1000~2000</techHediffsMoney>
+        <techHediffsMoney>3000~4000</techHediffsMoney>
         <biocodeWeaponChance>1</biocodeWeaponChance>
         <xenotypeSet>
             <xenotypeChances>

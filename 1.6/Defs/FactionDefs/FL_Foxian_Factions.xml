@@ -5,6 +5,9 @@
 		<label>Foxian federation</label>
 		<fixedName>The Foxian League</fixedName>
 		<description>A confederation of independent Foxian settlements united as a faction. They value the cooperation and protection of every member in the group above all else to strive in this harsh world. The governing body of the league is made up of a representative from each settlement and a great counselor elected by the majority of the representatives. The role of the great counselor is to tackle problems that the league is facing and propose solutions that will be voted on by the representatives. Each settlement is free to follow its own internal policies as long as it does not impinge on the values of the league. If it doesn't, the great counselor has the right to impose sanctions on the accountable settlement until they get back in line. Otherwise, the great counselor can use force to bring back order if he deems it necessary.\nThe current missions of the league are maintaining good diplomatic relations with the other non-hostile factions and using their merchants to buy advanced weaponry from their more advanced neighbors to protect its independence.</description>
+		<fixedLeaderKinds>
+			<li>FL_Foxian_League_counselor</li>
+		</fixedLeaderKinds>		
 		<pawnSingular>foxian</pawnSingular>
 		<pawnsPlural>foxians</pawnsPlural>
 		<listOrderPriority>30</listOrderPriority>
@@ -19,10 +22,6 @@
 		<allowedCultures>
 			<li>FL_FoxianLeagueCulture</li>
 		</allowedCultures>
-		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-		<fixedLeaderKinds>
-			<li>FL_Foxian_League_counselor</li>
-		</fixedLeaderKinds>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
     	</requiredMemes>
@@ -206,6 +205,9 @@
 		<label>foxian raiders</label>
 		<fixedName>The Blood Rain</fixedName>
 		<description>A group of bandits with Feminist and supremacist beliefs. They tend to raid other factions, taking prisoners as slaves and stealing supplies. They hold the beliefs that foxians like them are superiors to other races, but some of the slaves they take are used for reproduction, although due to their leader high standards they tend to die very quickly. Females births are celebrated, while male ones are ended immediatly, with the same end being met by females greater foxians. There are rumors about their leader being a female greater foxian with 9 tails, but due to her ruthless demeanor, peoples that get too close to her dont come back to give any confirmation. Even inside the group, she is seen very rarely, leaving her quarters only during nights of full moon and rainy days with clear skies.</description>
+		<fixedLeaderKinds>
+			<li>FL_Foxian_Raider_Children_Of_Blood</li>
+		</fixedLeaderKinds>		
 		<settlementNameMaker>NamerSettlementFoxianRaider</settlementNameMaker>
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
@@ -238,10 +240,6 @@
 		<allowedCultures>
 			<li>FL_FoxianRaiderCulture</li>
 		</allowedCultures>
-		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
-		<fixedLeaderKinds>
-			<li>FL_Foxian_Raider_Children_Of_Blood</li>
-		</fixedLeaderKinds>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>30</configurationListOrderPriority>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
@@ -381,7 +379,7 @@
 					<FL_Raider_Foxian_Trooper>1</FL_Raider_Foxian_Trooper>
 					<FL_Foxian_Heavy_Trooper>10</FL_Foxian_Heavy_Trooper>
 					<FL_Foxian_Raider_Soldier>1</FL_Foxian_Raider_Soldier>
-					<PirateBoss>1</PirateBoss>
+					<FL_Foxian_Raider_Children_Of_Blood>1</FL_Foxian_Raider_Children_Of_Blood>
 				</options>
 			</li>
 			<li>

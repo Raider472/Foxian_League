@@ -36,6 +36,11 @@ namespace Foxian_league {
                 float severity = (float)(rand.NextDouble() * (0.64 - 0.04) + 0.04);
                 hediffToAdd.Severity = severity;
             }
+            Log.Message($"who is pawn: {pawn}, is pawn faction leader ? {PawnUtility.IsFactionLeader(pawn)}, is props alt there? {Props.hediffOnEquipAlt}");
+            if(pawn.Faction.leader == null && !pawn.Faction.IsPlayer && Props.hediffOnEquipAlt != null) {
+                Log.Message($"pawn is a non player faction leader: {pawn}");
+                hediffToAdd = HediffMaker.MakeHediff(Props.hediffOnEquipAlt, pawn, null);
+            }
             pawn.health.AddHediff(hediffToAdd);
         }
 
@@ -64,6 +69,9 @@ namespace Foxian_league {
             }
             if (pawn.health.hediffSet.TryGetHediff(Props.hediffOnEquip, out Hediff hediffRef)) {
                 pawn.health.RemoveHediff(hediffRef);
+            }
+            else if(pawn.health.hediffSet.TryGetHediff(Props.hediffOnEquipAlt, out Hediff hediffRefAlt)) {
+                pawn.health.RemoveHediff(hediffRefAlt);
             }
         }
 

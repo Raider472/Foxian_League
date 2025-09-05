@@ -23,13 +23,13 @@
         <styleItemTags>
             <li>
                 <tag>Bald</tag>
-                <baseWeight>0.001</baseWeight>
-                <weightFactor>0.001</weightFactor>
+                <baseWeight>0.1</baseWeight>
+                <weightFactor>0.1</weightFactor>
             </li>
             <li>
                 <tag>Shaved</tag>
-                <baseWeight>0.001</baseWeight>
-                <weightFactor>0.001</weightFactor>
+                <baseWeight>0.1</baseWeight>
+                <weightFactor>0.1</weightFactor>
             </li>
             <li>
                 <tag>NoBeard</tag>

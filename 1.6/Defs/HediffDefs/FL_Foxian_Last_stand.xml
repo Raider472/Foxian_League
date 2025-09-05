@@ -11,14 +11,14 @@
         <scenarioCanAdd>false</scenarioCanAdd>
         <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
         <stages>
-        <li>
-            <statFactors>
-                <PsychicSensitivity>0.1</PsychicSensitivity>
-                <IncomingDamageFactor>0.5</IncomingDamageFactor>
-                <MeleeDamageFactor>1.5</MeleeDamageFactor>
-                <PainShockThreshold>1.5</PainShockThreshold>
-            </statFactors>
-        </li>
+            <li>
+                <statFactors>
+                    <PsychicSensitivity>0.1</PsychicSensitivity>
+                    <IncomingDamageFactor>0.5</IncomingDamageFactor>
+                    <MeleeDamageFactor>1.5</MeleeDamageFactor>
+                    <PainShockThreshold>1.5</PainShockThreshold>
+                </statFactors>
+            </li>
         </stages>
         <comps>
             <li Class="HediffCompProperties_Disappears">
