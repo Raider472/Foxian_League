@@ -177,7 +177,7 @@
     <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="FoxianLegendaryBladeLinkMeleeWeapon">
         <defName>FL_Weapon_CleansedSword</defName>
         <label>cleansed sword</label>
-        <description>A once cursed sword that has been cleansed. The mad spirit inside it has been calmed and has been converted into a persona that can bond with a single person, once bonded, it will refuse to be wielded by anyone else.</description>
+        <description>A once cursed sword that has been cleansed. The mad spirit inside it has been calmed and has been converted into a persona that can bond with a single person. Once bonded, it will refuse to be wielded by anyone else.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/Monosword</texPath>
             <graphicClass>Graphic_Single</graphicClass>

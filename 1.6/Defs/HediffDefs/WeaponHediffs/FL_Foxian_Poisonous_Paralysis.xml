@@ -3,7 +3,7 @@
     <HediffDef>
         <defName>FL_Poisonous_Paralysis</defName>
         <label>poisonous paralysis</label>
-        <description>This person has been injected with a paralysing agent via a weapon or another external factor, The more severe this effect is, the more numb the person will become until they fall unconscious. This effect is not lethal on healthy persons and will be most likely gone after a day.</description>
+        <description>This person has been injected with a paralyzing agent via a weapon or another external factor. The more severe this effect is, the more numb the person will become until they fall unconscious. This effect is not lethal on healthy persons and will most likely be gone after a day.</description>
         <hediffClass>Foxian_league.Hediff_ShowSeverity</hediffClass>
         <defaultLabelColor>(0.87, 0.79, 0.23)</defaultLabelColor>
         <initialSeverity>0.01</initialSeverity>

@@ -3,7 +3,7 @@
     <HediffDef>
         <defName>FL_Insatiable_Hunger</defName>
         <label>insatiable hunger</label>
-        <description>This person has been in contact with a cursed blade that feeds on the life force of other living beings. This blade will graciously strenghten it's owner if they feed him by killing others. However, if the wielder of the blade does not nourish it for a while, they will suffer dire consequenses such as their life force being drained, this could result in the death of the wielder.</description>
+        <description>This person has been in contact with a cursed blade that feeds on the life force of other living beings. This blade will graciously strengthen its owner if they feed it by killing others. However, if the wielder of the blade does not nourish it for a while, they will suffer dire consequences such as their life force being drained. This could result in the death of the wielder.</description>
         <hediffClass>Foxian_league.Hediff_ShowSeverity</hediffClass>
         <defaultLabelColor>(0.83, 0.19, 0.32)</defaultLabelColor>
         <initialSeverity>0.001</initialSeverity>

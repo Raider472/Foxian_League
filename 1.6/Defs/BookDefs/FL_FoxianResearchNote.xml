@@ -3,7 +3,7 @@
     <ThingDef ParentName="BookBase">
         <defName>FL_FoxianResearchNote</defName>
         <label>research notes</label>
-        <description>A set of research notes made by a scientist to study the Foxians race.</description>
+        <description>A set of research notes made by a scientist to study the Foxian race.</description>
         <graphicData>
             <texPath>Things/Item/Book/Schematic/Schematic</texPath>
             <graphicClass>Graphic_Single</graphicClass>

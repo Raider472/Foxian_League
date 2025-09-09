@@ -2,14 +2,14 @@
 <Defs>
   <GeneCategoryDef>
     <defName>FL_foxian_cosmetic</defName>
-    <label>Foxian Cosmetics</label>
+    <label>foxian cosmetics</label>
     <displayPriorityInXenotype>80</displayPriorityInXenotype>
     <displayPriorityInGenepack>80</displayPriorityInGenepack>
   </GeneCategoryDef>
 
   <GeneCategoryDef>
     <defName>FL_foxian_genes_set</defName>
-    <label>Foxian Genes</label>
+    <label>foxian genes</label>
     <displayPriorityInXenotype>81</displayPriorityInXenotype>
     <displayPriorityInGenepack>81</displayPriorityInGenepack>
   </GeneCategoryDef>

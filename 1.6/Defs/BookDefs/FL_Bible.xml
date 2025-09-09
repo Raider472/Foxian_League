@@ -3,7 +3,7 @@
     <ThingDef ParentName="BookBase">
         <defName>FL_ReligiousTome</defName>
         <label>old bible</label>
-        <description>An old bible with shreded pages recounting a peculiar tale.</description>
+        <description>An old bible with shredded pages recounting a peculiar tale.</description>
         <graphicData>
             <texPath>Things/Item/Book/Novel/Novel</texPath>
             <graphicClass>Graphic_Single</graphicClass>

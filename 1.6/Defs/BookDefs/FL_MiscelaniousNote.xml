@@ -3,7 +3,7 @@
     <ThingDef ParentName="BookBase">
         <defName>FL_MiscellaneousNote</defName>
         <label>a note</label>
-        <description>a random note with things scribble in it.</description>
+        <description>a random note with things scribbled in it.</description>
         <graphicData>
             <texPath>Things/Item/Book/Schematic/Schematic</texPath>
             <graphicClass>Graphic_Single</graphicClass>

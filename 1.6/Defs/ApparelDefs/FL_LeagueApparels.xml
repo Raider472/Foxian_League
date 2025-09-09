@@ -3,7 +3,7 @@
     <ThingDef ParentName="FoxianClothing">
         <defName>FL_NobleFoxianApparel</defName>
         <label>noble foxian kimono</label>
-        <description>A very popular kimono coveted by the Foxian nobility, or anyone that can afford it. This outfit can also be found worn by curious nobles of the Empire.\n The reason for its popularity in the Foxian League is that their society considers high psychic sensitivity as a noble goal to strive for. The higher their psychic sensitivity is, the closer they are to nature.\n The kimono is embedded with eltex and was made with the best fabric possible to guarantee the highest enhancement of psychic sensitivity for its wearer. However, the outfit was not made to be used in combat in mind, at least not for the normal Foxians.</description>
+        <description>A very popular kimono coveted by the Foxian nobility, or anyone that can afford it. This outfit can also be found worn by curious nobles of the Empire.\n The reason for its popularity in the Foxian League is that their society considers high psychic sensitivity as a noble goal to strive for. The higher their psychic sensitivity is, the closer they think they are to nature.\n The kimono is embedded with eltex and was made with the best fabric possible to guarantee the highest enhancement of psychic sensitivity for its wearer. However, the outfit was not made to be used in combat in mind, at least not for the normal Foxians.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/RoyalRobe/RoyalRobe</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -63,7 +63,7 @@
     <ThingDef ParentName="FoxianArmor">
         <defName>FL_NobleFoxianArmor</defName>
         <label>noble foxian armor</label>
-        <description>A noble armor layered in plasteel plates and embedded with eltex to protect its wearer against slashing weapons and bullets while at the same time enhancing the psychic sensitivity of its bearer.\n While this armor is customarily used by greater Foxian nobles, it is also rewarded as proof of bravery to a brave Foxian who has committed an honorary deed.\n While this armor is not as protective as ultratech armors, it is still better than any other industrial armors.</description>
+        <description>A noble armor layered in plasteel plates and embedded with eltex to protect its wearer against slashing weapons and bullets while at the same time enhancing the psychic sensitivity of its bearer.\n While this armor is customarily used by greater Foxian nobles, it is also rewarded as proof of bravery to a brave Foxian who has committed an honorary deed.\n This armor is not as protective as ultratech armors, but it is still better than any other industrial armors.</description>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/CataphractArmor/CataphractArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>

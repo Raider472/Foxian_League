@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <LetterDef ParentName="PositiveEvent">
-    <defName>FL_GreaterFoxianBorn</defName>
-    <letterClass>Foxian_league.ChoiceLetter_GreaterFoxianBorn</letterClass>
-  </LetterDef>
-
+    <LetterDef ParentName="PositiveEvent">
+        <defName>FL_GreaterFoxianBorn</defName>
+        <letterClass>Foxian_league.ChoiceLetter_GreaterFoxianBorn</letterClass>
+    </LetterDef>
 </Defs>

@@ -53,11 +53,11 @@ namespace Foxian_league {
             }
             else {
                 Log.Message("He did this on his own");
-                if (Rand.Chance(0.42f)) {
+                if (Rand.Chance(0.49f)) {
                     pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, "CursedSwordBerseker".Translate(pawn), true);
                 }
                 else {
-                    if (Rand.Chance(0.45f)) {
+                    if (Rand.Chance(0.37f)) {
                         pawn.needs.mood.thoughts.memories.TryGainMemoryFast(InternalDefOf.FL_CursedSwordRemoved, 1);
                     }
                     else {

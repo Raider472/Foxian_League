@@ -144,7 +144,7 @@
 	<GeneDef ParentName="FL_GeneTail">
 		<defName>FL_NineFoxTail</defName>
 		<label>Nine Tailed Fox tail</label>
-		<description>Carriers of this gene have multiple fox-like tails as they get older.</description>
+		<description>Carriers of this gene have multiple fox-like tails. More tails grow the older they get.</description>
 		<iconPath>UI/Icons/Genes/FL_Gene_NineTailFox_Tail_Icon</iconPath>
 
 		<renderNodeProperties>

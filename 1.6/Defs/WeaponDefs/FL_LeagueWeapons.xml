@@ -5,7 +5,7 @@
         <label>katana</label>
         <techLevel>Medieval</techLevel>
         <relicChance>1</relicChance>
-        <description>A curved single-edged sword embedded with eltex, this weapon is mostly used by Foxian officers from the league as a symbol of statue and to enhance their psychic sensitivity. Despite it's noble appearance, the weapon is weaker than a longsword, but still deadly.</description>
+        <description>A curved single-edged sword embedded with eltex, this weapon is mostly used by Foxian officers from the league as a symbol of status and to enhance their psychic sensitivity. Despite its noble appearance, the weapon is weaker than a longsword but still deadly.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/LongSword</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -68,7 +68,7 @@
     <ThingDef ParentName="FoxianRareMeleeWeapon">
         <defName>FL_Weapoon_Naginata_Craftable</defName>
         <label>naginata</label>
-        <description>A polearm with a blade at it's tip and embedded with eltex, the Foxian nobles are fond of this weapon due to it's ability to enchance one own psy-sensitivity. this weapon can be used for stabbing or slashing opponent at a greater distance than a sword, it even has armour penetration.\nThis particular weapon was recently produced and thus, it has not yet been blessed with a spirit.</description>
+        <description>A polearm with a blade at its tip and embedded with eltex, the Foxian nobles are fond of this weapon due to its ability to enhance one's own psy-sensitivity. This weapon can be used for stabbing or slashing an opponent at a greater distance than a sword. It even has armor penetration.\nThis particular weapon was recently produced, and thus, it has not yet been blessed with a spirit.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/Monosword</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -131,7 +131,7 @@
     <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="FoxianLegendaryBladeLinkMeleeWeapon">
         <defName>FL_Weapoon_Naginata_BladeLink</defName>
         <label>blessed naginata</label>
-        <description>A polearm with a blade at it's tip, embedded with eltex and blessed with a persona that can bond with only one person, the Foxian nobles are fond of this weapon due to it's ability to enchance one own psy-sensitivity. this weapon can be used for stabbing or slashing opponent at a greater distance than a sword, it even has armour penetration.</description>
+        <description>A polearm with a blade at its tip, embedded with eltex and blessed with a persona that can bond with only one person, the Foxian nobles are fond of this weapon due to its ability to enhance one's own psy-sensitivity. This weapon can be used for stabbing or slashing an opponent at a greater distance than a sword. It even has armor penetration.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/Monosword</texPath>
             <graphicClass>Graphic_Single</graphicClass>

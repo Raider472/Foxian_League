@@ -2,8 +2,8 @@
 <Defs>
     <ThingDef ParentName="BookBase">
         <defName>FL_DiaryFoxianCivilian</defName>
-        <label>an old diary of a foxian civilian</label>
-        <description>An old diary describing the life of a foxian living outside the league.</description>
+            <label>an old diary of a foxian civilian</label>
+            <description>An old diary describing the life of a Foxian living outside the league.</description>
         <graphicData>
             <texPath>Things/Item/Book/Novel/Novel</texPath>
             <graphicClass>Graphic_Single</graphicClass>

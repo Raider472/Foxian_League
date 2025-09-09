@@ -30,7 +30,7 @@
         </include>
         <rulePack>
             <rulesStrings>
-                <li>r_deityName->SpiritSomething</li>
+                <li>r_deityName->Vulpas</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
@@ -39,7 +39,7 @@
         <defName>FoxianLeagueNamerDeityType</defName>
         <rulePack>
             <rulesStrings>
-                <li>r_deityType->The Spirit of Nature</li>
+                <li>r_deityType->The father of all foxians</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
