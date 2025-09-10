@@ -49,7 +49,6 @@
     <Compile Include="AnimalConnection\Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.cs" />
     <Compile Include="Composed\Patch_NegativeInteractionUtility_NegativeInteractionChanceFactor.cs" />
     <Compile Include="EmotionallyBrittle\Patch_MentalState_MentalStateTick.cs" />
-    <Compile Include="FL_DebugActions.cs" />
     <Compile Include="GeneticPurity\ChoiceLetter_GreaterFoxianBorn.cs" />
     <Compile Include="GeneticPurity\Patch_PawnGenerator_GeneratePawn.cs" />
     <Compile Include="GeneticPurity\Patch_PregnancyUtility_ApplyBirthOutcome.cs" />

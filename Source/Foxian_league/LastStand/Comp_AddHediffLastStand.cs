@@ -17,6 +17,5 @@ namespace Foxian_league {
                 parent.pawn.psychicEntropy.OffsetPsyfocusDirectly(-1f);
             }
         }
-
     }
 }
