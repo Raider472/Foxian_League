@@ -4,4 +4,9 @@
     <StatReport_SocialPsychicHigh>Psychic sensitivity +/= 200%</StatReport_SocialPsychicHigh>
     <GreaterFoxianBornLoc>{0_nameDef} has born a greater foxian</GreaterFoxianBornLoc>
     <CursedSwordBerseker>{0_nameDef} has tried unequipping his weapon. But in doing so, he awoke the ire of the spirit inhabiting his sword, and {0_nameDef}'s mind temporarily broke as a result of the spirit's retaliation.</CursedSwordBerseker>
+    <FoxianModName>Foxian Race</FoxianModName>
+    <FoxianModSettingsWarning>Changing any values might require a restart or reloading a save !</FoxianModSettingsWarning>
+    <HoverForInfo>(Hover for more informations)</HoverForInfo>
+    <PsychicManipulationSettings>Psychic Manipulation Threshold</PsychicManipulationSettings>
+    <PsychicManipulationSettingsDesc>This number means you gain a bonus social skill point for every x% psychic sensitivity beyond 100%. Each pawn has a basic value of 100% psychic sensitivity (unless they have traits or genes that change the default value).\nBy default, the value of the threshold is 25%, so a pawn with 150% psychic sensitivity will gain 2 bonus social skills points.</PsychicManipulationSettingsDesc>
 </LanguageData>

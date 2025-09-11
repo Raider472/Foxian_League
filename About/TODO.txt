@@ -3,6 +3,9 @@ Description for ideology of the blood rain and league
 
 Commission someone to do arts of the outfits and weapons
 
+Make a cap for psychic manipulation, 20 should be the max aptitude
+Credit for inspiration
+
 OPTIONAL
 Window for confirmation if the player wants to un/equip the cursed sword
 
@@ -22,7 +25,7 @@ config to change the threshold for the psychic manipulation
 -Config to set the chance of male or female for xenotype B
 -Config to activate no foxian pawn necessary for first behaviour
 -Config to change each stage for psychic stage ?
--Config for psychic manipulation to change the threshold
+V-Config for psychic manipulation to change the threshold
 -Config for psychic manipulation to change the affected skill ?
 
 Dubs Analyzer - Check if each method is implemented without causing lags

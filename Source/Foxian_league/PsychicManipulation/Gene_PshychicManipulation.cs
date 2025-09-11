@@ -14,7 +14,7 @@ namespace Foxian_league {
         public float psychicSensitivityRecent;
         public int tickInterval = 0;
 
-        public float delimiter = 0.25f;
+        public float delimiter = Foxian_Settings.psychicManipulationFactor;
 
         public override void TickInterval(int delta) {
             base.TickInterval(delta);
