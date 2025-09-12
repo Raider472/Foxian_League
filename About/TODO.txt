@@ -17,16 +17,14 @@ Chnage the loyal gene to something else if player does not have the ideology dlc
 Check if I play with other interesting mods and if patches are needed
 
 Mod options
-Config to change the birthing xenotype
-config to change the threshold for the psychic manipulation
--Configs for threshold of animal connection ?
+V-Configs for threshold of animal connection ?
 -Config choose xenotype A and B for genetic purity
 -Config to change chance of getting B instead of A
 -Config to set the chance of male or female for xenotype B
 -Config to activate no foxian pawn necessary for first behaviour
 -Config to change each stage for psychic stage ?
-V-Config for psychic manipulation to change the threshold
--Config for psychic manipulation to change the affected skill ?
+V-Config for psychic manipulation to change the threshold (Change the way it access to the data ? It could mean no reloading would be necessary)
+V-Config for psychic manipulation to change the affected skill ?
 
 Dubs Analyzer - Check if each method is implemented without causing lags
 -Natural psy sensitive -> ok 0.004 to 0.012 ms

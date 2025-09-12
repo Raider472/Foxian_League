@@ -9,4 +9,21 @@
     <HoverForInfo>(Hover for more informations)</HoverForInfo>
     <PsychicManipulationSettings>Psychic Manipulation Threshold</PsychicManipulationSettings>
     <PsychicManipulationSettingsDesc>This number means you gain a bonus social skill point for every x% psychic sensitivity beyond 100%. Each pawn has a basic value of 100% psychic sensitivity (unless they have traits or genes that change the default value).\nBy default, the value of the threshold is 25%, so a pawn with 150% psychic sensitivity will gain 2 bonus social skills points.</PsychicManipulationSettingsDesc>
+    <PsychicManipulationSettingSkillsDropDown>Psychic manipulation affects this skill: </PsychicManipulationSettingSkillsDropDown>
+    <PsychicManipulationSettingSkillsDropDownDesc>The skill shown in the button will be the one to receive the bonus skill points for the gene.</PsychicManipulationSettingSkillsDropDownDesc>
+    <PsychicManipConstruction>Construction</PsychicManipConstruction>
+    <PsychicManipPlants>Plants</PsychicManipPlants>
+    <PsychicManipIntellectual>Intellectual</PsychicManipIntellectual>
+    <PsychicManipMining>Mining</PsychicManipMining>
+    <PsychicManipShooting>Shooting</PsychicManipShooting>
+    <PsychicManipMelee>Melee</PsychicManipMelee>
+    <PsychicManipSocial>Social</PsychicManipSocial>
+    <PsychicManipAnimals>Animals</PsychicManipAnimals>
+    <PsychicManipCooking>Cooking</PsychicManipCooking>
+    <PsychicManipMedicine>Medicine</PsychicManipMedicine>
+    <PsychicManipArtistic>Artistic</PsychicManipArtistic>
+    <PsychicManipCrafting>Crafting</PsychicManipCrafting>
+    <AnimalConnectionSettings>Animal Connection Trigger Threshold</AnimalConnectionSettings>
+    <AnimalConnectionSettingsDesc>This threshold represents how much psychic sensitivity a pawn needs to trigger the effect of "Animal Connection". By default, the value is set to 150%. Setting that value to 0% will deactivate the trigger.</AnimalConnectionSettingsDesc>
+    <ResetButton>Default Values</ResetButton>
 </LanguageData>

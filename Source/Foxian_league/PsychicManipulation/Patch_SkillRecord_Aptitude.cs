@@ -16,7 +16,7 @@ namespace Foxian_league {
     public static class Patch_SkillRecord_Aptitude {
         [HarmonyPostfix]
         public static void Postfix(ref int __result, SkillRecord __instance) {
-            if (Utils.HasActiveGene(__instance.Pawn, InternalDefOf.FL_PsychicManipulation) && __instance.def == DefDatabase<SkillDef>.GetNamed("Social")) {
+            if (Utils.HasActiveGene(__instance.Pawn, InternalDefOf.FL_PsychicManipulation) && __instance.def == DefDatabase<SkillDef>.GetNamed(string.Concat(Foxian_Settings.skillEnum))) {
                 Gene_PsychicManipulation psychicManip = __instance.Pawn.genes.GetGene(InternalDefOf.FL_PsychicManipulation) as Gene_PsychicManipulation;
                 if (psychicManip != null && psychicManip.skillModifier != 0) {
                     __result += psychicManip.skillModifier;

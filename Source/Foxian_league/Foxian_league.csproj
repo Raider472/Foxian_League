@@ -63,6 +63,7 @@
     <Compile Include="Loyal\ThoughtWorker_LoyalMood.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="InternalDefsOf.cs" />
+    <Compile Include="ModSettings\EnumSkills.cs" />
     <Compile Include="ModSettings\Foxian_ModSettings.cs" />
     <Compile Include="ModSettings\Foxian_Settings.cs" />
     <Compile Include="NaturalPsySensitive\Patch_MediationUtility_PsyfocusGainPerTick.cs" />

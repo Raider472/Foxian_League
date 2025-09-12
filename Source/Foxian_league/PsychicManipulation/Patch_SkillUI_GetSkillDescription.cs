@@ -28,7 +28,7 @@ namespace Foxian_league {
 
         //This method is used so I don't have to program something in assembly
         private static void InjectStringSb(StringBuilder sb) {
-            if (Utils.HasActiveGene(SkillRecord.Pawn, InternalDefOf.FL_PsychicManipulation) && SkillRecord.def == DefDatabase<SkillDef>.GetNamed("Social")) {
+            if (Utils.HasActiveGene(SkillRecord.Pawn, InternalDefOf.FL_PsychicManipulation) && SkillRecord.def == DefDatabase<SkillDef>.GetNamed(string.Concat(Foxian_Settings.skillEnum))) {
                 Gene_PsychicManipulation psychicManip = SkillRecord.Pawn.genes.GetGene(InternalDefOf.FL_PsychicManipulation) as Gene_PsychicManipulation;
                 string s = string.Format("  - {0}: {1}", "GeneLabelWithDesc".Translate(psychicManip.def.Named("GENE")).CapitalizeFirst(), psychicManip.skillModifier.ToStringWithSign());
                 sb.AppendLine(s);

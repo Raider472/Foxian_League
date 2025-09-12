@@ -20,7 +20,7 @@ namespace Foxian_league {
             base.TickInterval(delta);
             if (tickInterval < 150) {
                 tickInterval++;
-                Log.Message($"{tickInterval}");
+                //Log.Message($"{tickInterval}");
                 return;
             }
             tickInterval = 0;
