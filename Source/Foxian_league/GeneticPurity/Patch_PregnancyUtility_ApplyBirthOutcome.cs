@@ -33,7 +33,7 @@ namespace Foxian_league {
             if (Patch_PawnGenerator_GeneratePawn.isBabyGreaterFoxian) {
                 Pawn baby = __result as Pawn;
                 Patch_PawnGenerator_GeneratePawn.isBabyGreaterFoxian = false;
-                ChoiceLetter_GreaterFoxianBorn choiceLetter_baby = (ChoiceLetter_GreaterFoxianBorn)LetterMaker.MakeLetter("Greater Foxian Born", "GreaterFoxianBornLoc".Translate(mother), InternalDefOf.FL_GreaterFoxianBorn, baby);
+                ChoiceLetter_GreaterFoxianBorn choiceLetter_baby = (ChoiceLetter_GreaterFoxianBorn)LetterMaker.MakeLetter("GreaterFoxianBornTitle".Translate(baby.genes.Xenotype.label), "GreaterFoxianBornLoc".Translate(mother, baby.genes.Xenotype.label), InternalDefOf.FL_GreaterFoxianBorn, baby);
                 choiceLetter_baby.Start();
                 Find.LetterStack.ReceiveLetter(choiceLetter_baby);
                 Log.Message($"current bobyfoxian bool: {Patch_PawnGenerator_GeneratePawn.isBabyGreaterFoxian}");

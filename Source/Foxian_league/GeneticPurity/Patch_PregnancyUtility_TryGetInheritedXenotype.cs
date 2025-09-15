@@ -18,10 +18,10 @@ namespace Foxian_league {
             if (mother == null || mother.genes == null) return;
             if (Utils.HasActiveGene(mother, InternalDefOf.FL_GeneticPurity) && (Utils.IsPawnFoxianEnough(mother) || Utils.IsFoxian(mother) || Utils.IsGreaterFoxian(mother))) {
                 if (Patch_PawnGenerator_GeneratePawn.isBabyGreaterFoxian) {
-                    xenotype = InternalDefOf.FL_Greater_Foxian;
+                    xenotype = DefDatabase<XenotypeDef>.GetNamed(Foxian_Settings.xenotypeB);
                 }
-                else if (Utils.IsPawnFoxianEnough(mother)) {
-                    xenotype = InternalDefOf.FL_Foxian;
+                else if (Utils.IsPawnFoxianEnough(mother) || Foxian_Settings.isPawnFoxianTrigger) {
+                    xenotype = DefDatabase<XenotypeDef>.GetNamed(Foxian_Settings.xenotypeA);
                 }
                 else {
                     xenotype = mother.genes.Xenotype;

@@ -2,10 +2,15 @@
 
 <LanguageData>
     <StatReport_SocialPsychicHigh>Psychic sensitivity +/= 200%</StatReport_SocialPsychicHigh>
-    <GreaterFoxianBornLoc>{0_nameDef} has born a greater foxian</GreaterFoxianBornLoc>
+    <GreaterFoxianBornTitle>{0} born</GreaterFoxianBornTitle>
+    <GreaterFoxianBornLoc>{0_nameDef} has born a {1}</GreaterFoxianBornLoc>
+    <GeneticPurityErrorLabel>Genetic Purity Error !</GeneticPurityErrorLabel>
+    <GeneticPurityErrorDesc>There has been an error when trying to initialize the genetic purity gene. The error is most likely due to a xenotype being removed and still being present in the config file. Please open the mod settings for the Foxian race to reset the values set on xenotype A or B. In the meantime, the erroneous values have been set to only Foxians or greater Foxians until the config for the mod has been opened and the error resolved.</GeneticPurityErrorDesc>
     <CursedSwordBerseker>{0_nameDef} has tried unequipping his weapon. But in doing so, he awoke the ire of the spirit inhabiting his sword, and {0_nameDef}'s mind temporarily broke as a result of the spirit's retaliation.</CursedSwordBerseker>
     <FoxianModName>Foxian Race</FoxianModName>
     <FoxianModSettingsWarning>Changing any values might require a restart or reloading a save !</FoxianModSettingsWarning>
+    <FoxianInformation>You can get more information on each setting by hovering your mouse on the label.</FoxianInformation>
+    <FoxianInformationDesc>Yes, even this one...</FoxianInformationDesc>
     <HoverForInfo>(Hover for more informations)</HoverForInfo>
     <PsychicManipulationSettings>Psychic Manipulation Threshold</PsychicManipulationSettings>
     <PsychicManipulationSettingsDesc>This number means you gain a bonus social skill point for every x% psychic sensitivity beyond 100%. Each pawn has a basic value of 100% psychic sensitivity (unless they have traits or genes that change the default value).\nBy default, the value of the threshold is 25%, so a pawn with 150% psychic sensitivity will gain 2 bonus social skills points.</PsychicManipulationSettingsDesc>
@@ -25,5 +30,11 @@
     <PsychicManipCrafting>Crafting</PsychicManipCrafting>
     <AnimalConnectionSettings>Animal Connection Trigger Threshold</AnimalConnectionSettings>
     <AnimalConnectionSettingsDesc>This threshold represents how much psychic sensitivity a pawn needs to trigger the effect of "Animal Connection". By default, the value is set to 150%. Setting that value to 0% will deactivate the trigger.</AnimalConnectionSettingsDesc>
+    <GeneticPurityFoxianTrigger>Should a person be a Foxian to trigger the genetic purity gene ?</GeneticPurityFoxianTrigger>
+    <GeneticPurityFoxianTriggerDesc>By default, only a Foxian or a person considered "Foxian enough" can birth an offspring with xenotype A or B. Otherwise, they will transmit all their genes to the offspring. By deactivating this condition, everyone with this gene would be able to birth Xenotype A or B, whetever they are Foxian or not.</GeneticPurityFoxianTriggerDesc>
+    <GeneticPuritySettingXenotypeA>Choose xenotype A: </GeneticPuritySettingXenotypeA>
+    <GeneticPuritySettingXenotypeADesc>The xenotype shown in the button will be the one used for creating an offspring with xenotype A. By default, xenotype A is set to the Foxian xenotype.</GeneticPuritySettingXenotypeADesc>
+    <GeneticPuritySettingXenotypeB>Choose xenotype B: </GeneticPuritySettingXenotypeB>
+    <GeneticPuritySettingXenotypeBDesc>The xenotype shown in the button will be the one used for creating an offspring with xenotype B. By default, xenotype B is set to the Greater Foxian xenotype.</GeneticPuritySettingXenotypeBDesc>
     <ResetButton>Default Values</ResetButton>
 </LanguageData>

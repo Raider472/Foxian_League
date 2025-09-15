@@ -14,19 +14,48 @@ namespace Foxian_league {
     public static class Patch_PawnGenerator_GeneratePawn {
         public static bool isBabyGreaterFoxian = false;
 
+        private static XenotypeDef GetXenotypeAFromSettings(string defName) {
+            XenotypeDef xenotype;
+            xenotype = DefDatabase<XenotypeDef>.GetNamedSilentFail(defName);
+            if (xenotype == null) {
+                Foxian_Settings.xenotypeA = InternalDefOf.FL_Foxian.defName;
+                CreateLetterError();
+                return InternalDefOf.FL_Foxian;
+            }
+            else return xenotype;
+        }
+
+        private static XenotypeDef GetXenotypeBFromSettings(string defName) {
+            XenotypeDef xenotype;
+            xenotype = DefDatabase<XenotypeDef>.GetNamedSilentFail(defName);
+            if (xenotype == null) {
+                Foxian_Settings.xenotypeB = InternalDefOf.FL_Greater_Foxian.defName;
+                CreateLetterError();
+                return InternalDefOf.FL_Greater_Foxian;
+            }
+            else return xenotype;
+        }
+
+        private static void CreateLetterError() {
+            Letter letterError = LetterMaker.MakeLetter("GeneticPurityErrorLabel".Translate(), "GeneticPurityErrorDesc".Translate(), LetterDefOf.Bossgroup, Patch_PregnancyUtility_ApplyBirthOutcome.mother);
+            Find.LetterStack.ReceiveLetter(letterError);
+        }
+
         [HarmonyPrefix]
         public static void Prefix(ref PawnGenerationRequest request) {
             Pawn mother = Patch_PregnancyUtility_ApplyBirthOutcome.mother;
+            XenotypeDef xenotypeA = GetXenotypeAFromSettings(Foxian_Settings.xenotypeA);
+            XenotypeDef xenotypeB = GetXenotypeBFromSettings(Foxian_Settings.xenotypeB);
             if (mother != null) {
                 List<GeneDef> babyInheritedGenes = request.ForcedEndogenes;
                 List<GeneDef> babyCosmeticGenes = Utils.ClearNonCosmeticGeneBaby(babyInheritedGenes);
                 request.ForcedEndogenes.Clear();
 
-                if (Utils.IsFoxian(mother) || Utils.IsGreaterFoxian(mother) || Utils.IsPawnFoxianEnough(mother)) {
+                if (Utils.IsFoxian(mother) || Utils.IsGreaterFoxian(mother) || Utils.IsPawnFoxianEnough(mother) || !Foxian_Settings.isPawnFoxianTrigger) {
                     Log.Message("MOTHER IS FOXIAN");
                     bool isBabyNormalFoxian = Rand.Chance(0.7f);
                     request.ForcedEndogenes = babyCosmeticGenes;
-                    request.ForcedXenotype = isBabyNormalFoxian ? InternalDefOf.FL_Foxian : InternalDefOf.FL_Greater_Foxian;
+                    request.ForcedXenotype = isBabyNormalFoxian ? xenotypeA : xenotypeB;
                     Log.Message($"forced custom xenotype: {request.ForcedCustomXenotype}");
 
                     if (!isBabyNormalFoxian) {

@@ -24,8 +24,8 @@
     <initialResistanceRange>13~21</initialResistanceRange>
     <xenotypeSet>
         <xenotypeChances>
-            <RevianXenotype>0.85</RevianXenotype>
-            <RevianXenotype>0.15</RevianXenotype>
+            <FL_Foxian>0.85</FL_Foxian>
+            <FL_Greater_Foxian>0.15</FL_Greater_Foxian>
         </xenotypeChances>
     </xenotypeSet>
 </PawnKindDef>

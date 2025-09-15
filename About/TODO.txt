@@ -23,8 +23,11 @@ V-Configs for threshold of animal connection ?
 -Config to set the chance of male or female for xenotype B
 -Config to activate no foxian pawn necessary for first behaviour
 -Config to change each stage for psychic stage ?
-V-Config for psychic manipulation to change the threshold (Change the way it access to the data ? It could mean no reloading would be necessary)
+-Config for psychic manipulation to change the threshold (Change the way it access to the data ? It could mean no reloading would be necessary)
 V-Config for psychic manipulation to change the affected skill ?
+
+var result = new List<GeneDef>();
+var allXenotypes = DefDatabase<XenotypeDef>.AllDefsListForReading;
 
 Dubs Analyzer - Check if each method is implemented without causing lags
 -Natural psy sensitive -> ok 0.004 to 0.012 ms
