@@ -21,7 +21,7 @@ namespace Foxian_league {
         public static string xenotypeA;
         public static string xenotypeB;
         public static float xenotypeAChance;
-        public static float xenotypeAMaleChance;
+        public static float xenotypeMaleChance;
 
         public Foxian_Settings() {
             SetDefaultValue(); 
@@ -35,7 +35,7 @@ namespace Foxian_league {
             xenotypeA = "FL_Foxian";
             xenotypeB = "FL_Greater_Foxian";
             xenotypeAChance = 0.7f;
-            xenotypeAMaleChance = 0.7f;
+            xenotypeMaleChance = 0.7f;
         }
 
         public override void ExposeData() {
@@ -47,7 +47,7 @@ namespace Foxian_league {
             Scribe_Values.Look(ref xenotypeA, "xenotypeA", "FL_Foxian");
             Scribe_Values.Look(ref xenotypeB, "xenotypeB", "FL_Greater_Foxian");
             Scribe_Values.Look(ref xenotypeAChance, "FLGeneticPurityXenotypeAChance", 0.7f);
-            Scribe_Values.Look(ref xenotypeAMaleChance, "FLGeneticPurityXenotypeAMaleChance", 0.7f);
+            Scribe_Values.Look(ref xenotypeMaleChance, "FLGeneticPurityXenotypeAMaleChance", 0.7f);
         }
 
         internal static void WindowContents(Rect inRect) {
@@ -103,7 +103,13 @@ namespace Foxian_league {
                 }
                 Find.WindowStack.Add(new FloatMenu(dropdownList));
             }
-            listing_Standard.Gap(20f);
+            listing_Standard.Gap(10f);
+            listing_Standard.Label(string.Concat("GeneticPurityXenotypeAChanceSlider".Translate() + ": ", (xenotypeAChance * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "GeneticPurityXenotypeAChanceSliderDesc".Translate());
+            xenotypeAChance = (float)Math.Round(listing_Standard.Slider(xenotypeAChance, 0f, 1f), 2);
+            listing_Standard.Gap(5f);
+            listing_Standard.Label(string.Concat("GeneticPurityXenotypeMaleChanceSlider".Translate() + ": ", (xenotypeMaleChance * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "GeneticPurityXenotypeMaleChanceSliderDesc".Translate());
+            xenotypeMaleChance = (float)Math.Round(listing_Standard.Slider(xenotypeMaleChance, 0f, 1f), 2);
+            listing_Standard.Gap(30f);
             if (listing_Standard.ButtonText("ResetButton".Translate())) {
                 SetDefaultValue();
             }

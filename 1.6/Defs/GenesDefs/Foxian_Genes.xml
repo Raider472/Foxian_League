@@ -184,7 +184,7 @@
             <modType>AddOneLevel</modType>
         </passionMod>
         <statFactors>
-            <TameAnimalChance>1.1</TameAnimalChance>
+            <TameAnimalChance>1.25</TameAnimalChance>
             <TrainAnimalChance>1.25</TrainAnimalChance>
         </statFactors>
         <customEffectDescriptions>
@@ -275,6 +275,8 @@
                 <li>(13, 1)</li>
                 <li>(18.5, 0.75)</li>
                 <li>(20, 0.5)</li>
+                <li>(25, 0.3)</li>
+                <li>(30, 0.2)</li>
             </points>
         </biologicalAgeTickFactorFromAgeCurve>
         <biostatMet>-1</biostatMet>

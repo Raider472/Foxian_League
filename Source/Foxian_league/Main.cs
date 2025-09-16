@@ -13,6 +13,8 @@ namespace Foxian_league {
         static Main() {
             Harmony harmony = new Harmony("rimworld.foxian.league.raider");
             harmony.PatchAll();
+            if (DefDatabase<XenotypeDef>.GetNamedSilentFail(Foxian_Settings.xenotypeA) == null) Foxian_Settings.xenotypeA = InternalDefOf.FL_Foxian.defName;
+            if (DefDatabase<XenotypeDef>.GetNamedSilentFail(Foxian_Settings.xenotypeB) == null) Foxian_Settings.xenotypeB = InternalDefOf.FL_Greater_Foxian.defName;
         }
     }
 }

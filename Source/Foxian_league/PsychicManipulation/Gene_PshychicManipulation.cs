@@ -38,7 +38,7 @@ namespace Foxian_league {
                 currentPawnPsySensitivity -= 1f;
                 float skillModifierFloat = currentPawnPsySensitivity / delimiter;
                 decimal roundedSkillModifier= Math.Round((decimal)skillModifierFloat, 1);
-                skillModifier = (int)roundedSkillModifier;
+                skillModifier = Math.Clamp((int)roundedSkillModifier, 0, 20);
             }
         }
     }

@@ -1,9 +1,7 @@
 Basic stuff
-Description for ideology of the blood rain and league
 
 Commission someone to do arts of the outfits and weapons
 
-Make a cap for psychic manipulation, 20 should be the max aptitude
 Credit for inspiration
 
 OPTIONAL
@@ -15,19 +13,6 @@ Patch Royalty DLC (Empire is hostile with foxian league and something with quest
 Vanilla Psycast expanded patch (all the gear and weapon will use eltex instead of plasteel)
 Chnage the loyal gene to something else if player does not have the ideology dlc
 Check if I play with other interesting mods and if patches are needed
-
-Mod options
-V-Configs for threshold of animal connection ?
--Config choose xenotype A and B for genetic purity
--Config to change chance of getting B instead of A
--Config to set the chance of male or female for xenotype B
--Config to activate no foxian pawn necessary for first behaviour
--Config to change each stage for psychic stage ?
--Config for psychic manipulation to change the threshold (Change the way it access to the data ? It could mean no reloading would be necessary)
-V-Config for psychic manipulation to change the affected skill ?
-
-var result = new List<GeneDef>();
-var allXenotypes = DefDatabase<XenotypeDef>.AllDefsListForReading;
 
 Dubs Analyzer - Check if each method is implemented without causing lags
 -Natural psy sensitive -> ok 0.004 to 0.012 ms
