@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!--Foxian Hobos and Pilgrims-->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/FactionDef[defName="Beggars"]/xenotypeSet/xenotypeChances</xpath>
+            <value>
+                <FL_Foxian>0.04</FL_Foxian>
+                <FL_Greater_Foxian>0.01</FL_Greater_Foxian>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/FactionDef[defName="Pilgrims"]/xenotypeSet/xenotypeChances</xpath>
+            <value>
+                <FL_Foxian>0.04</FL_Foxian>
+                <FL_Greater_Foxian>0.01</FL_Greater_Foxian>
+            </value>
+        </match>
+    </Operation>
+
+    <!--If the dlc is not active, replace the loyal gene with something else-->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <nomatch Class="PatchOperationReplace">
+            <xpath>/Defs/XenotypeDef[defName="FL_Foxian"]/genes/li[text()="FL_Loyal"]</xpath>
+            <value>
+                <li>Mood_Optimist</li>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <nomatch Class="PatchOperationReplace">
+            <xpath>/Defs/XenotypeDef[defName="FL_Greater_Foxian"]/genes/li[text()="FL_Loyal"]</xpath>
+            <value>
+                <li>Mood_Optimist</li>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <!--Set commonality of the Loyal trait to 0-->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <nomatch Class="PatchOperationReplace">
+            <xpath>/Defs/TraitDef[defName="FL_Loyal_Trait"]/commonality</xpath>
+            <value>
+                <commonality>0</commonality>
+            </value>
+        </nomatch>
+    </Operation>
+</Patch>

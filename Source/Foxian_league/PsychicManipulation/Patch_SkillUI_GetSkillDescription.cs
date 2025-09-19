@@ -38,6 +38,7 @@ namespace Foxian_league {
 
 
         [HarmonyTranspiler]
+        [HarmonyDebug]
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions) {
             CodeMatcher codeMatcher = new CodeMatcher(instructions);
             //MethodInfo method = AccessTools.Method(typeof(StringBuilder), "AppendLine", new Type[] { typeof(string) });
@@ -48,7 +49,8 @@ namespace Foxian_league {
                     CodeMatch.Calls(biotechCondition)
                 )
                 .ThrowIfInvalid("Could not find specific line")
-                .InsertAndAdvance(
+                .Advance()
+                .Insert(
                     new CodeInstruction(OpCodes.Ldloc_0),
                     new CodeInstruction(OpCodes.Call, injectStringSb)
                 );

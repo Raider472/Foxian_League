@@ -52,6 +52,9 @@
                 <def>Abrasive</def>
             </li>
         </suppressedTraits>
+        <exclusionTags>
+            <li>Aggression</li>
+        </exclusionTags>
         <biostatMet>-2</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>
@@ -102,7 +105,7 @@
         <biostatCpx>1</biostatCpx>
     </GeneDef>
 
-    <GeneDef>
+    <GeneDef MayRequire="Ludeon.RimWorld.Ideology">
         <defName>FL_Loyal</defName>
         <label>loyal</label>
         <description>Carriers of this gene exhibit more loyalty to their belief than the average person.</description>
@@ -149,6 +152,7 @@
             <li>Pawn will receive a -25% penalty to their psyfocus recovery when meditating near a non-natural spot</li>
         </customEffectDescriptions>
         <biostatMet>-2</biostatMet>
+        <biostatCpx>1</biostatCpx>
         <symbolPack>
         <prefixSymbols>
             <li><symbol>psy</symbol></li>
@@ -279,6 +283,9 @@
                 <li>(30, 0.2)</li>
             </points>
         </biologicalAgeTickFactorFromAgeCurve>
+        <exclusionTags>
+            <li>FLAging</li>
+        </exclusionTags>
         <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>
@@ -294,6 +301,9 @@
 			<ToxicEnvironmentResistance>-0.5</ToxicEnvironmentResistance>
             <ToxicResistance>-0.75</ToxicResistance>
 		</statOffsets>
+        <exclusionTags>
+            <li>ToxicEnvironmentResistance</li>
+        </exclusionTags>
         <biostatMet>4</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>

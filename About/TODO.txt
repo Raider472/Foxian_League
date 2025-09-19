@@ -2,16 +2,18 @@ Basic stuff
 
 Commission someone to do arts of the outfits and weapons
 
+FloatMenuOptionProvider_Equip -> GetSingleOptionFor + Transpiler patch
+
 Credit for inspiration
 
 OPTIONAL
-Window for confirmation if the player wants to un/equip the cursed sword
+Window for confirmation if the player wants to un/equip the cursed sword + Transpiler
 
 Compatibility patch
 MayRequire all the dlc stuff
-Patch Royalty DLC (Empire is hostile with foxian league and something with quests ?)
+Check other faction mods to see what kind of patch they use
+Tags genes to avoid contradictory use
 Vanilla Psycast expanded patch (all the gear and weapon will use eltex instead of plasteel)
-Chnage the loyal gene to something else if player does not have the ideology dlc
 Check if I play with other interesting mods and if patches are needed
 
 Dubs Analyzer - Check if each method is implemented without causing lags

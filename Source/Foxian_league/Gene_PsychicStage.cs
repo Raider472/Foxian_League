@@ -11,8 +11,6 @@ namespace Foxian_league {
         public float psychicSensitivityRecent;
         public int channelingStageRecent = 0;
 
-        public int tickInterval = 0;
-
         private const float channelingStage1 = 1.25f;
         private const float channelingStage2 = 1.5f;
         private const float channelingStage3 = 1.75f;

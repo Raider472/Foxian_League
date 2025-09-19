@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <RulePackDef>
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
         <defName>FoxianRaiderIdeoNamer</defName>
         <rulePack>
             <rulesStrings>
@@ -14,7 +14,7 @@
         </rulePack>
     </RulePackDef>
 
-    <RulePackDef>
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
         <defName>FoxianLeagueIdeoNamer</defName>
         <rulePack>
             <rulesStrings>

@@ -16,12 +16,10 @@ namespace Foxian_league {
 
         public override void TickInterval(int delta) {
             base.TickInterval(delta);
-            if (tickInterval < 150) {
-                tickInterval++;
+            if (!pawn.IsHashIntervalTick(150)) {
                 //Log.Message($"{tickInterval}");
                 return;
             }
-            tickInterval = 0;
             float PsychichSensiPawn = MathF.Round(pawn.GetStatValue(StatDefOf.PsychicSensitivity), 2);
             if (psychicSensitivityRecent == PsychichSensiPawn) return;
             psychicSensitivityRecent = PsychichSensiPawn;

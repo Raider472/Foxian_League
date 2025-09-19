@@ -12,18 +12,14 @@ namespace Foxian_league {
 
         public int skillModifier;
         public float psychicSensitivityRecent;
-        public int tickInterval = 0;
 
         public float delimiter = Foxian_Settings.psychicManipulationFactor;
 
         public override void TickInterval(int delta) {
             base.TickInterval(delta);
-            if (tickInterval < 150) {
-                tickInterval++;
-                //Log.Message($"{tickInterval}");
+            if (!pawn.IsHashIntervalTick(200)) {
                 return;
             }
-            tickInterval = 0;
             float PsychichSensiPawn = pawn.GetStatValue(StatDefOf.PsychicSensitivity);
             if (PsychichSensiPawn == psychicSensitivityRecent) return;
             psychicSensitivityRecent = PsychichSensiPawn;

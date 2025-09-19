@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <RulePackDef>
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
         <defName>FoxianRaiderNamerDeity</defName>
         <include>
             <li>NamerDeityGlobal</li>
@@ -13,7 +13,7 @@
         </rulePack>
     </RulePackDef>
 
-    <RulePackDef>
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
         <defName>FoxianRaiderNamerDeityType</defName>
         <rulePack>
             <rulesStrings>
@@ -22,7 +22,7 @@
         </rulePack>
     </RulePackDef>
 
-    <RulePackDef>
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
         <defName>FoxianLeagueNamerDeity</defName>
         <include>
             <li>NamerDeityGlobal</li>
@@ -35,7 +35,7 @@
         </rulePack>
     </RulePackDef>
 
-    <RulePackDef>
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
         <defName>FoxianLeagueNamerDeityType</defName>
         <rulePack>
             <rulesStrings>
