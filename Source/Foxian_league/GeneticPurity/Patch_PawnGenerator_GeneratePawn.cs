@@ -20,8 +20,8 @@ namespace Foxian_league {
 
             XenotypeDef xenotypeA = DefDatabase<XenotypeDef>.GetNamedSilentFail(Foxian_Settings.xenotypeA);
             XenotypeDef xenotypeB = DefDatabase<XenotypeDef>.GetNamedSilentFail(Foxian_Settings.xenotypeB);
-            if (xenotypeA == null) xenotypeA = InternalDefOf.FL_Foxian;
-            if (xenotypeB == null) xenotypeB = InternalDefOf.FL_Greater_Foxian;
+            xenotypeA ??= InternalDefOf.FL_Foxian;
+            xenotypeB ??= InternalDefOf.FL_Greater_Foxian;
 
             if (mother != null) {
                 List<GeneDef> babyInheritedGenes = request.ForcedEndogenes;

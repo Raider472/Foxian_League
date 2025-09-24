@@ -3,9 +3,9 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/GeneDef[defName="Ageless"]</xpath>
         <value>
-        <exclusionTags>
-            <li>FLAging</li>
-        </exclusionTags>
+            <exclusionTags>
+                <li>FL_Aging</li>
+            </exclusionTags>
         </value>
     </Operation>
 </Patch>

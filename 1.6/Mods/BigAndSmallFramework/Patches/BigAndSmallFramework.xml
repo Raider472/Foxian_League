@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!--Add exclusion tag if big and small is active-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GeneDef[defName="FL_Female"]/exclusionTags</xpath>
+        <value>
+            <li>ForcedSex</li>
+        </value>
+    </Operation>
+</Patch>

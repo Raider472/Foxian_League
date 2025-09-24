@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Replace the plasteel cost on weapons and appareals with eltex ore from VPE -->
+<Patch>
+    <!-- Appareal -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="FL_NobleFoxianApparel"]/costList/Plasteel</xpath>
+        <value>
+            <VPE_Eltex>12</VPE_Eltex>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="FL_NobleFoxianApparel"]/costList/Hyperweave</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="FL_NobleFoxianArmor"]/costList/Plasteel</xpath>
+        <value>
+            <VPE_Eltex>8</VPE_Eltex>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="FL_OfficerFoxianArmor"]/costList/Plasteel</xpath>
+        <value>
+            <VPE_Eltex>4</VPE_Eltex>
+        </value>
+    </Operation>
+
+    <!-- Weapon -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="FL_Weapon_OfficerKatana"]/costList/Plasteel</xpath>
+        <value>
+            <VPE_Eltex>4</VPE_Eltex>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="FL_Weapoon_Naginata_Craftable"]/costList/Plasteel</xpath>
+        <value>
+            <VPE_Eltex>5</VPE_Eltex>
+        </value>
+    </Operation>
+</Patch>

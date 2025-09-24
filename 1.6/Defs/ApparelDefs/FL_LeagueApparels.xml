@@ -15,8 +15,8 @@
         </recipeMaker>
         <costStuffCount>100</costStuffCount>
         <costList>
-            <Hyperweave>75</Hyperweave>
-            <Plasteel>25</Plasteel>
+            <Hyperweave>105</Hyperweave>
+            <Plasteel>55</Plasteel>
         </costList>
         <stuffCategories>
             <li>Fabric</li>
@@ -76,11 +76,11 @@
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
-        <costStuffCount>100</costStuffCount>
+        <costStuffCount>120</costStuffCount>
         <costList>
             <ComponentSpacer>1</ComponentSpacer>
             <ComponentIndustrial>2</ComponentIndustrial>
-            <Plasteel>70</Plasteel>
+            <Plasteel>120</Plasteel>
         </costList>
         <uiIconScale>1.25</uiIconScale>
         <generateCommonality>2</generateCommonality>
@@ -142,7 +142,7 @@
         <costList>
             <ComponentIndustrial>2</ComponentIndustrial>
             <Steel>30</Steel>
-            <Plasteel>25</Plasteel>
+            <Plasteel>35</Plasteel>
         </costList>
         <uiIconScale>1.25</uiIconScale>
         <generateCommonality>2</generateCommonality>

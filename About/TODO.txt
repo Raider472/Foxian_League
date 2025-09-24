@@ -1,20 +1,15 @@
 Basic stuff
 
-Commission someone to do arts of the outfits and weapons
-
-FloatMenuOptionProvider_Equip -> GetSingleOptionFor + Transpiler patch
+!!! Add new lore made by Blue !!!
+FIX THIS GODAMN ERROR WITH TRYWEIGHT
 
 Credit for inspiration
 
-OPTIONAL
-Window for confirmation if the player wants to un/equip the cursed sword + Transpiler
-
 Compatibility patch
-MayRequire all the dlc stuff
-Check other faction mods to see what kind of patch they use
-Tags genes to avoid contradictory use
-Vanilla Psycast expanded patch (all the gear and weapon will use eltex instead of plasteel)
 Check if I play with other interesting mods and if patches are needed
+
+-Important !!!
+Last mod checked = Autotester
 
 Dubs Analyzer - Check if each method is implemented without causing lags
 -Natural psy sensitive -> ok 0.004 to 0.012 ms

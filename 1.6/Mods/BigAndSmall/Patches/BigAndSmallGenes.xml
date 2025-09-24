@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!--Add exclusion tag if big and small is active-->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="BS_PsychicWarrior"]/exclusionTags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="BS_PsychicWarrior"]/exclusionTags</xpath>
+            <value>
+                <li>FL_PsychicProtection</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="BS_PsychicWarrior"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>FL_PsychicProtection</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="BS_Bisexual"]/exclusionTags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="BS_Bisexual"]/exclusionTags</xpath>
+            <value>
+                <li>FL_Lustful</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="BS_Bisexual"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>FL_Lustful</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="BS_Abrasive"]/exclusionTags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="BS_Abrasive"]/exclusionTags</xpath>
+            <value>
+                <li>FL_ComposedExclusion</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="BS_Abrasive"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>FL_ComposedExclusion</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GeneDef[defName="FL_SlowAging"]/exclusionTags</xpath>
+        <value>
+            <li>BS_AgingRate</li>
+        </value>
+    </Operation>
+</Patch>

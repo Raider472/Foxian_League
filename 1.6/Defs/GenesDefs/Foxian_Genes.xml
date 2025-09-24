@@ -30,6 +30,9 @@
                 <def>Bisexual</def>
             </li>
         </forcedTraits>
+        <exclusionTags>
+            <li>FL_Lustful</li>
+        </exclusionTags>        
         <biostatMet>0</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>
@@ -53,8 +56,9 @@
             </li>
         </suppressedTraits>
         <exclusionTags>
+            <li>FL_ComposedExclusion</li>
             <li>Aggression</li>
-        </exclusionTags>
+        </exclusionTags>  
         <biostatMet>-2</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>
@@ -245,6 +249,9 @@
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>105</displayOrderInCategory>
+        <exclusionTags>
+            <li>FL_PsychicProtection</li>
+        </exclusionTags>
         <biostatMet>-4</biostatMet>
         <biostatCpx>3</biostatCpx>
     </GeneDef>
@@ -284,7 +291,8 @@
             </points>
         </biologicalAgeTickFactorFromAgeCurve>
         <exclusionTags>
-            <li>FLAging</li>
+            <li>FL_Aging</li>
+            <li>Aging</li>
         </exclusionTags>
         <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
@@ -302,6 +310,7 @@
             <ToxicResistance>-0.75</ToxicResistance>
 		</statOffsets>
         <exclusionTags>
+            <li>ToxResistance</li>
             <li>ToxicEnvironmentResistance</li>
         </exclusionTags>
         <biostatMet>4</biostatMet>
@@ -321,6 +330,9 @@
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>2</displayOrderInCategory>
+        <exclusionTags>
+            <li>FL_GeneticPurityExclusion</li>
+        </exclusionTags>
         <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>
@@ -335,6 +347,9 @@
         <statFactors>
           <FilthRate>0.7</FilthRate>
         </statFactors>
+        <exclusionTags>
+            <li>Filfth</li>
+        </exclusionTags>
         <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>
@@ -351,6 +366,9 @@
                 <forceFemale>true</forceFemale>
             </li>
         </modExtensions>
+        <exclusionTags>
+            <li>Gender</li>
+        </exclusionTags>  
         <biostatMet>0</biostatMet>
         <biostatCpx>0</biostatCpx>
 	</GeneDef>

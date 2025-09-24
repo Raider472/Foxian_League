@@ -228,7 +228,7 @@
         <gearHealthRange>1~1</gearHealthRange>
         <itemQuality>Good</itemQuality>
         <biocodeWeaponChance>0.5</biocodeWeaponChance>
-        <weaponMoney>800~900</weaponMoney>
+        <weaponMoney>1155~1255</weaponMoney>
         <apparelMoney>1800~2200</apparelMoney>
         <weaponTags>
             <li>FoxianLeagueNobleMelee</li>
@@ -510,7 +510,7 @@
         <combatPower>100</combatPower>
         <gearHealthRange>1~2</gearHealthRange>
         <combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
-        <weaponMoney>550~600</weaponMoney>
+        <weaponMoney>735~785</weaponMoney>
         <apparelMoney>1000~1400</apparelMoney>
         <weaponTags>
             <li>FoxianLeagueOfficerlMelee</li>

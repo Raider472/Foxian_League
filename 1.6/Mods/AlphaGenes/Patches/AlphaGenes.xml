@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!--Add exclusion tag if alpha genes is active-->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="AG_AsexualFission"]/exclusionTags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="AG_AsexualFission"]/exclusionTags</xpath>
+            <value>
+                <li>FL_GeneticPurityExclusion</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="AG_AsexualFission"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>FL_GeneticPurityExclusion</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="AG_EggLaying"]/exclusionTags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="AG_EggLaying"]/exclusionTags</xpath>
+            <value>
+                <li>FL_GeneticPurityExclusion</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="AG_EggLaying"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>FL_GeneticPurityExclusion</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="AG_ParasiticStinger"]/exclusionTags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="AG_ParasiticStinger"]/exclusionTags</xpath>
+            <value>
+                <li>FL_GeneticPurityExclusion</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="AG_ParasiticStinger"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>FL_GeneticPurityExclusion</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="AG_ParasiticStingerEndogenes"]/exclusionTags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="AG_ParasiticStingerEndogenes"]/exclusionTags</xpath>
+            <value>
+                <li>FL_GeneticPurityExclusion</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="AG_ParasiticStingerEndogenes"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>FL_GeneticPurityExclusion</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GeneDef[defName="FL_Female"]/exclusionTags</xpath>
+        <value>
+            <li>AG_Gender</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GeneDef[defName="FL_Immaculate"]/exclusionTags</xpath>
+        <value>
+            <li>AG_Filth</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GeneDef[defName="FL_SlowAging"]/exclusionTags</xpath>
+        <value>
+            <li>AG_Aging</li>
+        </value>
+    </Operation>
+</Patch>
