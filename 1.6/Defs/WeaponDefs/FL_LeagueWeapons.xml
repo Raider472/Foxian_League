@@ -7,10 +7,12 @@
         <relicChance>1</relicChance>
         <description>A curved single-edged sword embedded with eltex, this weapon is mostly used by Foxian officers from the league as a symbol of status and to enhance their psychic sensitivity. Despite its noble appearance, the weapon is weaker than a longsword but still deadly.</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponMelee/LongSword</texPath>
+            <texPath>Things/Weapons/Katana</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.95</drawSize>
         </graphicData>
-        <uiIconScale>2</uiIconScale>
+        <equippedAngleOffset>-25</equippedAngleOffset>
         <weaponTags>
             <li>FoxianLeagueOfficerlMelee</li>
         </weaponTags>
@@ -35,7 +37,6 @@
                 <Crafting>7</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <equippedAngleOffset>-65</equippedAngleOffset>
         <burnableByRecipe>false</burnableByRecipe>
         <tools>
             <li>
@@ -70,10 +71,12 @@
         <label>naginata</label>
         <description>A polearm with a blade at its tip and embedded with eltex, the Foxian nobles are fond of this weapon due to its ability to enhance one's own psy-sensitivity. This weapon can be used for stabbing or slashing an opponent at a greater distance than a sword. It even has armor penetration.\nThis particular weapon was recently produced, and thus, it has not yet been blessed with a spirit.</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponMelee/Monosword</texPath>
+            <texPath>Things/Weapons/Naginata</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
-        <equippedAngleOffset>-65</equippedAngleOffset>
+        <uiIconScale>1.1</uiIconScale>
+        <equippedAngleOffset>-45</equippedAngleOffset>
         <weaponTags>
             <li>FoxianLeagueNobleMelee</li>
         </weaponTags>
@@ -133,10 +136,12 @@
         <label>blessed naginata</label>
         <description>A polearm with a blade at its tip, embedded with eltex and blessed with a persona that can bond with only one person, the Foxian nobles are fond of this weapon due to its ability to enhance one's own psy-sensitivity. This weapon can be used for stabbing or slashing an opponent at a greater distance than a sword. It even has armor penetration.</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponMelee/Monosword</texPath>
+            <texPath>Things/Weapons/Naginata_Blessed</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
-        <equippedAngleOffset>-65</equippedAngleOffset>
+        <uiIconScale>1.1</uiIconScale>
+        <equippedAngleOffset>-45</equippedAngleOffset>
         <weaponTags>
             <li>FoxianLeagueNobleMeleeBladelink</li>
         </weaponTags>

@@ -105,6 +105,9 @@
         <customEffectDescriptions>
             <li>Negative memories are more impactful and last much longer</li>
         </customEffectDescriptions>
+        <exclusionTags>
+            <li>FL_ReservedExclusion</li>
+        </exclusionTags>  
         <biostatMet>1</biostatMet>
         <biostatCpx>1</biostatCpx>
     </GeneDef>
@@ -293,6 +296,8 @@
         <exclusionTags>
             <li>FL_Aging</li>
             <li>Aging</li>
+            <li>BS_AgingRate</li>
+            <li>AG_Aging</li>
         </exclusionTags>
         <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
@@ -332,6 +337,9 @@
         <displayOrderInCategory>2</displayOrderInCategory>
         <exclusionTags>
             <li>FL_GeneticPurityExclusion</li>
+            <li>VRE_Dominance</li>
+            <li>Egglaying</li>
+            <li>AG_Egglaying</li>
         </exclusionTags>
         <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
@@ -349,6 +357,7 @@
         </statFactors>
         <exclusionTags>
             <li>Filfth</li>
+            <li>AG_Filth</li>
         </exclusionTags>
         <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
@@ -368,6 +377,8 @@
         </modExtensions>
         <exclusionTags>
             <li>Gender</li>
+            <li>ForcedSex</li>
+            <li>AG_Gender</li>
         </exclusionTags>  
         <biostatMet>0</biostatMet>
         <biostatCpx>0</biostatCpx>

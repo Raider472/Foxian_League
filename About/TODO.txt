@@ -1,7 +1,16 @@
 Basic stuff
 
 !!! Add new lore made by Blue !!!
-FIX THIS GODAMN ERROR WITH TRYWEIGHT
+CustomXenotype in the config file for genetic purity
+
+baby and children shouldn't have access to abilities yet (at least 13 years old)
+Reposistion weapons when wielded 
+-Cursed sword
+-Cleansed sword
+-Repotisioned Heavy torch a little higher and further out
+-Para Model in game too big ?
+-Reposition Katana south and north
+-Reposition it
 
 Credit for inspiration
 
@@ -9,7 +18,7 @@ Compatibility patch
 Check if I play with other interesting mods and if patches are needed
 
 -Important !!!
-Last mod checked = Autotester
+Last mod checked = Just put it over here
 
 Dubs Analyzer - Check if each method is implemented without causing lags
 -Natural psy sensitive -> ok 0.004 to 0.012 ms

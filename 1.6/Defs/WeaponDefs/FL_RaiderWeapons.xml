@@ -7,10 +7,12 @@
         <relicChance>0.5</relicChance>
         <description>A badly forged dagger coated in a potent poison that will make someone numb and number for each consecutive hit. This weapon was created for the sole purpose of incapacitating someone.</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponMelee/Knife</texPath>
+            <texPath>Things/Weapons/Poison_Dagger</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.9</drawSize>
         </graphicData>
-        <uiIconScale>2</uiIconScale>
+        <uiIconScale>1.2</uiIconScale>
         <weaponTags>
             <li>FoxianRaiderNormalMelee</li>
             <li>FoxianRaiderKidnapper</li>
@@ -67,10 +69,10 @@
         <relicChance>0.8</relicChance>
         <description>A makeshift two-handed heavy weapon made to set the enemies on fire. The torch is hard to handle and slow to hit due to its odd design. This weapon was created by the Blood Rain to fight off Foxians from the League. It is well known to foxians that their tails are easily flammable and can spread to the whole body as a consequence.\n This weapon is effective against unprotected foxians, but outside of that. Its cumbersome design makes it impractical against anything else that is not a Foxian.</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponMelee/Club</texPath>
+            <texPath>Things/Weapons/Heavy_Torch</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
-        <uiIconScale>1.1</uiIconScale>
         <weaponTags>
             <li>FoxianRaiderNormalMelee</li>
             <li>FoxianRaiderPyromaniac</li>
@@ -87,7 +89,7 @@
             <WorkToMake>1300</WorkToMake>
             <Mass>2</Mass>
         </statBases>
-        <equippedAngleOffset>-65</equippedAngleOffset>
+        <equippedAngleOffset>-25</equippedAngleOffset>
         <burnableByRecipe>false</burnableByRecipe>
         <tools>
             <li>
@@ -128,10 +130,13 @@
         <label>cursed sword</label>
         <description>A cursed sword that drains the lives of all those killed by it. No one knows how it was fabricated or what materials it is composed of. This sword has an insatiable hunger and will even kill its owner if it has not been nourished for a while. This blade is also known to make it hard for its owner to separate from him.</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponMelee/Monosword</texPath>
+            <texPath>Things/Weapons/Cursed_Katana</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.2</drawSize>
         </graphicData>
-        <equippedAngleOffset>-65</equippedAngleOffset>
+        <uiIconScale>0.9</uiIconScale>
+        <equippedAngleOffset>-25</equippedAngleOffset>
         <weaponTags Inherit="False">
             <li>FoxianRaiderLegendaryMelee</li>
         </weaponTags>
@@ -179,10 +184,13 @@
         <label>cleansed sword</label>
         <description>A once cursed sword that has been cleansed. The mad spirit inside it has been calmed and has been converted into a persona that can bond with a single person. Once bonded, it will refuse to be wielded by anyone else.</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponMelee/Monosword</texPath>
+            <texPath>Things/Weapons/Blessed_Katana</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.2</drawSize>
         </graphicData>
-        <equippedAngleOffset>-65</equippedAngleOffset>
+        <uiIconScale>0.9</uiIconScale>
+        <equippedAngleOffset>-25</equippedAngleOffset>
         <weaponTags>
             <li>FoxianLegendaryMelee</li>
         </weaponTags>

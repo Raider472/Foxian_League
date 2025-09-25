@@ -54,11 +54,4 @@
             </value>
         </nomatch>
     </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/GeneDef[defName="FL_SlowAging"]/exclusionTags</xpath>
-        <value>
-            <li>BS_AgingRate</li>
-        </value>
-    </Operation>
 </Patch>

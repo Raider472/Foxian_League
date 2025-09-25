@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<!--Add exclusion tag if HRE Highmate is active-->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="VRE_Distressed"]/exclusionTags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="VRE_Distressed"]/exclusionTags</xpath>
+            <value>
+                <li>FL_ReservedExclusion</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="VRE_Distressed"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>FL_ReservedExclusion</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+    </Operation>
+</Patch>
