@@ -67,6 +67,7 @@
     <Compile Include="ModSettings\Foxian_ModSettings.cs" />
     <Compile Include="ModSettings\Foxian_Settings.cs" />
     <Compile Include="NaturalPsySensitive\Patch_MediationUtility_PsyfocusGainPerTick.cs" />
+    <Compile Include="PatchMods\BGI_ApplyBirthOutcome.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PsychicChanneling\Gene_PsychicChanneling.cs" />
     <Compile Include="PsychicManipulation\Gene_PshychicManipulation.cs" />

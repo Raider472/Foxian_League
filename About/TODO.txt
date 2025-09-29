@@ -1,9 +1,7 @@
 Basic stuff
 
-!!! Add new lore made by Blue !!!
-CustomXenotype in the config file for genetic purity
+patch RJW ??????
 
-baby and children shouldn't have access to abilities yet (at least 13 years old)
 Reposistion weapons when wielded 
 -Cursed sword
 -Cleansed sword
@@ -18,9 +16,10 @@ Compatibility patch
 Check if I play with other interesting mods and if patches are needed
 
 -Important !!!
-Last mod checked = Just put it over here
+Last mod checked = Vanilla psycast expanded
 
 Dubs Analyzer - Check if each method is implemented without causing lags
+-Optimize composed mind gene
 -Natural psy sensitive -> ok 0.004 to 0.012 ms
 -Check if psychic sensitivty changes if the mod is deactivated or not (around 13-14% usage in stats)
 -Change the code for the ticking genes, now it will take 2.5 seconds to update (This improved performaces a little bit)

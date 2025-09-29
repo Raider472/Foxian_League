@@ -22,13 +22,8 @@
         </thingStyleCategories>
         <styleItemTags>
             <li>
-                <tag>Bald</tag>
-                <baseWeight>0.01</baseWeight>
-                <weightFactor>0.1</weightFactor>
-            </li>
-            <li>
                 <tag>Shaved</tag>
-                <baseWeight>0.01</baseWeight>
+                <baseWeight>0.1</baseWeight>
                 <weightFactor>0.1</weightFactor>
             </li>
             <li>
@@ -43,7 +38,7 @@
             </li>
             <li>
                 <tag>Rural</tag>
-                <baseWeight>2</baseWeight>
+                <baseWeight>1</baseWeight>
                 <weightFactor>1</weightFactor>
             </li>
             <li>

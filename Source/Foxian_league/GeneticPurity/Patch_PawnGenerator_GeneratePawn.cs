@@ -16,6 +16,7 @@ namespace Foxian_league {
 
         [HarmonyPrefix]
         public static void Prefix(ref PawnGenerationRequest request) {
+            if (Patch_PregnancyUtility_ApplyBirthOutcome.mother == null) return;
             Pawn mother = Patch_PregnancyUtility_ApplyBirthOutcome.mother;
 
             XenotypeDef xenotypeA = DefDatabase<XenotypeDef>.GetNamedSilentFail(Foxian_Settings.xenotypeA);
@@ -23,51 +24,49 @@ namespace Foxian_league {
             xenotypeA ??= InternalDefOf.FL_Foxian;
             xenotypeB ??= InternalDefOf.FL_Greater_Foxian;
 
-            if (mother != null) {
-                List<GeneDef> babyInheritedGenes = request.ForcedEndogenes;
-                List<GeneDef> babyCosmeticGenes = Utils.ClearNonCosmeticGeneBaby(babyInheritedGenes);
-                request.ForcedEndogenes.Clear();
+            List<GeneDef> babyInheritedGenes = request.ForcedEndogenes;
+            List<GeneDef> babyCosmeticGenes = Utils.ClearNonCosmeticGeneBaby(babyInheritedGenes);
+            request.ForcedEndogenes.Clear();
 
-                if (Utils.IsFoxian(mother) || Utils.IsGreaterFoxian(mother) || Utils.IsPawnFoxianEnough(mother) || !Foxian_Settings.isPawnFoxianTrigger) {
-                    Log.Message("MOTHER IS FOXIAN");
-                    bool isBabyNormalFoxian = Rand.Chance(Foxian_Settings.xenotypeAChance);
-                    request.ForcedEndogenes = babyCosmeticGenes;
-                    request.ForcedXenotype = isBabyNormalFoxian ? xenotypeA : xenotypeB;
-                    Log.Message($"forced custom xenotype: {request.ForcedCustomXenotype}");
+            if (Utils.IsFoxian(mother) || Utils.IsGreaterFoxian(mother) || Utils.IsPawnFoxianEnough(mother) || !Foxian_Settings.isPawnFoxianTrigger) {
+                Log.Message("MOTHER IS FOXIAN");
+                bool isBabyNormalFoxian = Rand.Chance(Foxian_Settings.xenotypeAChance);
+                request.ForcedEndogenes = babyCosmeticGenes;
+                request.ForcedXenotype = isBabyNormalFoxian ? xenotypeA : xenotypeB;
+                Log.Message($"forced custom xenotype: {request.ForcedCustomXenotype}");
 
-                    if (!isBabyNormalFoxian) {
-                        isBabyGreaterFoxian = true;
-                        request.FixedGender = Rand.Chance(Foxian_Settings.xenotypeMaleChance) ? Gender.Male : Gender.Female;
-                        Log.Message($"Baby Gender is: {request.FixedGender}");
-                    }
-                    else {
-                        request.FixedGender = Gender.Female;
-                    }
-                    Log.Message($"forced after op xenotype: {request.ForcedXenotype}");
+                if (!isBabyNormalFoxian) {
+                    isBabyGreaterFoxian = true;
+                    request.FixedGender = Rand.Chance(Foxian_Settings.xenotypeMaleChance) ? Gender.Male : Gender.Female;
+                    Log.Message($"Baby Gender is: {request.FixedGender}");
                 }
                 else {
-                    Log.Message("MOTHER IS NOT FOXIAN");
-                    request.ForcedEndogenes = babyCosmeticGenes;
-                    request.FixedGender = Rand.Chance(0.8f) ? Gender.Female : Gender.Male;
-
-                    if (mother.genes.HasEndogene(InternalDefOf.FL_GeneticPurity)) {
-                        Log.Message("Mother has the Gene as Endogene");
-                        for(int i = 0; i < mother.genes.Endogenes.Count; i++) {
-                            request.AddForcedGene(mother.genes.Endogenes[i].def, false);
-                            Log.Message($"{mother.genes.Endogenes[i].def}");
-                        }
-                    }
-                    else {
-                        Log.Message("Mother has the Gene as Xenogene");
-                        for(int i = 0; i < mother.genes.Xenogenes.Count; i++) {
-                            request.AddForcedGene(mother.genes.Xenogenes[i].def, false);
-                            Log.Message($"{mother.genes.Xenogenes[i].def}");
-                        }
-                    }
-                    Log.Message("GENERATION DONE");
+                    request.FixedGender = Gender.Female;
                 }
-                Log.Message($"Is baby greater foxian ? {isBabyGreaterFoxian}");
+                Log.Message($"forced after op xenotype: {request.ForcedXenotype}");
             }
+            else {
+                Log.Message("MOTHER IS NOT FOXIAN");
+                request.ForcedEndogenes = babyCosmeticGenes;
+                request.FixedGender = Rand.Chance(0.8f) ? Gender.Female : Gender.Male;
+
+                if (mother.genes.HasEndogene(InternalDefOf.FL_GeneticPurity)) {
+                    Log.Message("Mother has the Gene as Endogene");
+                    for (int i = 0; i < mother.genes.Endogenes.Count; i++) {
+                        request.AddForcedGene(mother.genes.Endogenes[i].def, false);
+                        Log.Message($"{mother.genes.Endogenes[i].def}");
+                    }
+                }
+                else {
+                    Log.Message("Mother has the Gene as Xenogene");
+                    for (int i = 0; i < mother.genes.Xenogenes.Count; i++) {
+                        request.AddForcedGene(mother.genes.Xenogenes[i].def, false);
+                        Log.Message($"{mother.genes.Xenogenes[i].def}");
+                    }
+                }
+                Log.Message("GENERATION DONE");
+            }
+            Log.Message($"Is baby greater foxian ? {isBabyGreaterFoxian}");
             return;
         }
     }

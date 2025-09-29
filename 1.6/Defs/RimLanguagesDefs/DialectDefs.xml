@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <FactionLanguages.DialectDef MayRequire="DimonSever000.FactionLanguages">
+        <defName>FL_FoxianDialect</defName>
+        <label>Foxian</label>
+        <description>A unique language only found in this rimworld, mostly Foxians from the federation and the blood rain use this dialect. It has multiple roots from the different Asian languages of old Earth. Symbols are used instead of letters when writing, and different words have different meanings based on their pronunciation. This language is a complex one to learn, even for people with knowledge of the old languages.</description>
+        <nameMaker>FL_FoxianDialect_NameMaker</nameMaker>
+        <learningDifficulty>1.75</learningDifficulty>
+    </FactionLanguages.DialectDef>
+</Defs>

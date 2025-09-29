@@ -8,5 +8,6 @@
         <li IfModActive="VanillaExpanded.VPsycastsE">1.6/Mods/VPE</li>
         <li IfModActive="vanillaracesexpanded.highmate">1.6/Mods/VREHighmate</li>
         <li IfModActive="vanillaracesexpanded.hussar">1.6/Mods/VREHussar</li>
+        <li IfModActive="DimonSever000.FactionLanguages">1.6/Mods/RimLanguages</li>
     </v1.6>
 </loadFolders>

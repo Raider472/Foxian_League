@@ -212,6 +212,7 @@
         <label>psychic channeling</label>
         <description>Carriers of this gene can channel their psychic sensitivity into their melee weapon or fists to gain the upper hand against their enemies in melee combat. The higher the psychic sensitivity of the carrier is, the stronger they are.</description>
         <iconPath></iconPath>
+        <minAgeActive>3</minAgeActive>
         <geneClass>Foxian_league.Gene_PsychicChanneling</geneClass>
         <customEffectDescriptions>
             <li>Grants a permanent effect that scales with the carrier's psychic sensitivity</li>
@@ -236,6 +237,7 @@
         <label>psychic protection</label>
         <description>Carriers of this gene can channel their psychic sensitivity as armor or use it to predict multiple possibilities for a few seconds, allowing them to anticipate and dodge melee hits or even bullets. The higher the psychic sensitivity of the carrier is, the stronger or more accurate this effect is.</description>
         <iconPath></iconPath>
+        <minAgeActive>3</minAgeActive>
         <abilities>
             <li>FL_PsychicProtectionSwitch</li>
         </abilities>
@@ -264,6 +266,7 @@
         <label>last stand</label>
         <description>Carriers of this gene are able to gather and condense all of their psychic energy in an attempt to perform a last stand. They will become much harder to kill and will have a bonus in melee damage for 2 hours. Once this effect expires, the carrier will fall into a 2-day coma. If the carrier dies during the effect, he will create a small psychic explosion around him. Additionally, if the carrier has a psyfocus need, activating this ability will drain all of it.</description>
         <iconPath></iconPath>
+        <minAgeActive>3</minAgeActive>
         <abilities>
             <li>FL_LastStand_Ability</li>
         </abilities>
@@ -340,6 +343,8 @@
             <li>VRE_Dominance</li>
             <li>Egglaying</li>
             <li>AG_Egglaying</li>
+            <li>Inheritance</li>
+            <li>BGI_InheritancePriority</li>
         </exclusionTags>
         <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
