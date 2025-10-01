@@ -2,14 +2,6 @@ Basic stuff
 
 patch RJW ??????
 
-Reposistion weapons when wielded 
--Cursed sword
--Cleansed sword
--Repotisioned Heavy torch a little higher and further out
--Para Model in game too big ?
--Reposition Katana south and north
--Reposition it
-
 Credit for inspiration
 
 Compatibility patch

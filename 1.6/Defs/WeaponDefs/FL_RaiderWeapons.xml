@@ -72,7 +72,9 @@
             <texPath>Things/Weapons/Heavy_Torch</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.3</drawSize>
         </graphicData>
+        <uiIconScale>0.8</uiIconScale>
         <weaponTags>
             <li>FoxianRaiderNormalMelee</li>
             <li>FoxianRaiderPyromaniac</li>
@@ -123,6 +125,18 @@
                 </extraMeleeDamages>
             </li>
         </tools>
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.3, 0, 0.1)</drawOffset>
+                    </north>
+                    <south>
+                        <drawOffset>(0.3, 0, 0.1)</drawOffset>
+                    </south>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="FoxianLegendaryMeleeWeapon">
@@ -177,6 +191,24 @@
                 <hediffOnEquipAlt>FL_Insatiable_Hunger_Leader_Alt</hediffOnEquipAlt>
             </li>
         </comps>
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.2, 0, 0.05)</drawOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.1, 0, 0.03)</drawOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(0.2, 0, 0.05)</drawOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.1, 0, 0.03)</drawOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="FoxianLegendaryBladeLinkMeleeWeapon">
@@ -225,5 +257,23 @@
                 <armorPenetration>0.49</armorPenetration>
             </li>
         </tools>
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.2, 0, 0.05)</drawOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.1, 0, 0.03)</drawOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(0.2, 0, 0.05)</drawOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.1, 0, 0.03)</drawOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
     </ThingDef>
 </Defs>

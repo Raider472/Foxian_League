@@ -12,6 +12,7 @@
             <shaderType>CutoutComplex</shaderType>
             <drawSize>0.95</drawSize>
         </graphicData>
+        <uiIconScale>1.1</uiIconScale>
         <equippedAngleOffset>-25</equippedAngleOffset>
         <weaponTags>
             <li>FoxianLeagueOfficerlMelee</li>
@@ -64,6 +65,18 @@
                 <cooldownTime>2.5</cooldownTime>
             </li>
         </tools>
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.12, 0, 0.04)</drawOffset>
+                    </north>
+                    <south>
+                        <drawOffset>(0.12, 0, 0.04)</drawOffset>
+                    </south>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="FoxianRareMeleeWeapon">
@@ -74,8 +87,8 @@
             <texPath>Things/Weapons/Naginata</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.1</drawSize>
         </graphicData>
-        <uiIconScale>1.1</uiIconScale>
         <equippedAngleOffset>-45</equippedAngleOffset>
         <weaponTags>
             <li>FoxianLeagueNobleMelee</li>
@@ -129,6 +142,24 @@
                 <armorPenetration>0.41</armorPenetration>
             </li>
         </tools>
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.19, 0, 0.15)</drawOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.03, 0, 0.1)</drawOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(0.19, 0, 0.15)</drawOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.03, 0, 0.1)</drawOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="FoxianLegendaryBladeLinkMeleeWeapon">
@@ -139,8 +170,8 @@
             <texPath>Things/Weapons/Naginata_Blessed</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.1</drawSize>
         </graphicData>
-        <uiIconScale>1.1</uiIconScale>
         <equippedAngleOffset>-45</equippedAngleOffset>
         <weaponTags>
             <li>FoxianLeagueNobleMeleeBladelink</li>
@@ -181,5 +212,23 @@
                 <armorPenetration>0.47</armorPenetration>
             </li>
         </tools>
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.19, 0, 0.15)</drawOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.03, 0, 0.1)</drawOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(0.19, 0, 0.15)</drawOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.03, 0, 0.1)</drawOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
     </ThingDef>
 </Defs>
