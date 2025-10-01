@@ -4,11 +4,7 @@ patch RJW ??????
 
 Credit for inspiration
 
-Compatibility patch
-Check if I play with other interesting mods and if patches are needed
-
 -Important !!!
-Last mod checked = Vanilla psycast expanded
 
 Dubs Analyzer - Check if each method is implemented without causing lags
 -Optimize composed mind gene
