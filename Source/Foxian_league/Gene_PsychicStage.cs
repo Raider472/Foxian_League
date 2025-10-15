@@ -29,5 +29,11 @@ namespace Foxian_league {
                 _ => 0,
             };
         }
+
+        public override void ExposeData() {
+            base.ExposeData();
+            Scribe_Values.Look(ref channelingStageRecent, "channelingStageRecent", defaultValue: 0);
+            Scribe_Values.Look(ref psychicSensitivityRecent, "psychicSensitivityRecent", defaultValue: 0);
+        }
     }
 }

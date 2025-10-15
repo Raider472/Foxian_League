@@ -22,6 +22,7 @@ namespace Foxian_league {
         public static string xenotypeB;
         public static float xenotypeAChance;
         public static float xenotypeMaleChance;
+        public static float xenotypeFemaleChanceAlt;
 
         public Foxian_Settings() {
             SetDefaultValue(); 
@@ -36,6 +37,7 @@ namespace Foxian_league {
             xenotypeB = "FL_Greater_Foxian";
             xenotypeAChance = 0.7f;
             xenotypeMaleChance = 0.7f;
+            xenotypeFemaleChanceAlt = 0.8f;
         }
 
         public override void ExposeData() {
@@ -48,6 +50,7 @@ namespace Foxian_league {
             Scribe_Values.Look(ref xenotypeB, "xenotypeB", "FL_Greater_Foxian");
             Scribe_Values.Look(ref xenotypeAChance, "FLGeneticPurityXenotypeAChance", 0.7f);
             Scribe_Values.Look(ref xenotypeMaleChance, "FLGeneticPurityXenotypeAMaleChance", 0.7f);
+            Scribe_Values.Look(ref xenotypeFemaleChanceAlt, "FLGeneticPurityXenotypeFemaleChanceAlt", 0.8f);
         }
 
         internal static void WindowContents(Rect inRect) {
@@ -109,6 +112,9 @@ namespace Foxian_league {
             listing_Standard.Gap(5f);
             listing_Standard.Label(string.Concat("GeneticPurityXenotypeMaleChanceSlider".Translate() + ": ", (xenotypeMaleChance * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "GeneticPurityXenotypeMaleChanceSliderDesc".Translate());
             xenotypeMaleChance = (float)Math.Round(listing_Standard.Slider(xenotypeMaleChance, 0f, 1f), 2);
+            listing_Standard.Gap(5f);
+            listing_Standard.Label(string.Concat("GeneticPurityXenotypeFemaleChanceSliderAlt".Translate() + ": ", (xenotypeFemaleChanceAlt * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "GeneticPurityXenotypeFemaleChanceSliderAltDesc".Translate());
+            xenotypeFemaleChanceAlt = (float)Math.Round(listing_Standard.Slider(xenotypeFemaleChanceAlt, 0f, 1f), 2);
             listing_Standard.Gap(30f);
             if (listing_Standard.ButtonText("ResetButton".Translate())) {
                 SetDefaultValue();

@@ -16,12 +16,12 @@ namespace Foxian_league {
         [HarmonyPostfix]
         public static void PostFix(Pawn mother, ref XenotypeDef xenotype, ref bool __result) {
             if (mother == null || mother.genes == null) return;
-            if (Utils.HasActiveGene(mother, InternalDefOf.FL_GeneticPurity) && (Utils.IsPawnFoxianEnough(mother) || Utils.IsFoxian(mother) || Utils.IsGreaterFoxian(mother))) {
+            if (Utils.HasActiveGene(mother, InternalDefOf.FL_GeneticPurity) && (Utils.IsPawnFoxianEnough(mother) || Utils.IsFoxian(mother) || Utils.IsGreaterFoxian(mother) || !!Foxian_Settings.isPawnFoxianTrigger)) {
                 if (Patch_PawnGenerator_GeneratePawn.isBabyGreaterFoxian) {
                     xenotype = DefDatabase<XenotypeDef>.GetNamed(Foxian_Settings.xenotypeB);
                     xenotype ??= InternalDefOf.FL_Greater_Foxian;
                 }
-                else if (Utils.IsPawnFoxianEnough(mother) || Foxian_Settings.isPawnFoxianTrigger) {
+                else if (Utils.IsPawnFoxianEnough(mother) || !Foxian_Settings.isPawnFoxianTrigger) {
                     xenotype = DefDatabase<XenotypeDef>.GetNamed(Foxian_Settings.xenotypeA);
                     xenotype ??= InternalDefOf.FL_Foxian;
                 }
@@ -31,6 +31,7 @@ namespace Foxian_league {
                 __result = true;
                 Log.Message($"Here is current xenotype after tryGetInheritedXenotype: {xenotype} + if is greater foxian: {Patch_PawnGenerator_GeneratePawn.isBabyGreaterFoxian}");
             }
+            return;
         }
     }
 }

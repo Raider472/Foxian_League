@@ -16,10 +16,11 @@ namespace Foxian_league {
         public static void PostFix(Pawn pawn, ref float __result) {
             if (pawn == null) return;
             if (__result == 0) return;
-            if (pawn == Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.actualAnimal && Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.actualTamer.GetStatValue(StatDefOf.PsychicSensitivity) >= Foxian_Settings.animalConnectionFactorTrigger ) {
+            if (pawn == Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.actualAnimal && Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.actualTamer.GetStatValue(StatDefOf.PsychicSensitivity) >= Foxian_Settings.animalConnectionFactorTrigger) {
                 __result *= 0.75f;
                 Log.Message($"Change when pawn has gene: {__result} and pawn is: {pawn}");
             }
+            return;
         }
     }
 }

@@ -18,8 +18,11 @@ namespace Foxian_league {
         [HarmonyPostfix]
         public static void PostFix(MentalState __instance, int delta, ref int ___age) {
             if (Utils.HasActiveGene(__instance.pawn, InternalDefOf.FL_Emotionally_Brittle) && __instance.pawn.IsHashIntervalTick(30, delta)) {
+                Log.Message($"age before tick: {___age}");
                 ___age -= 10;
+                Log.Message($"age after tick: {___age}");
             }
+            return;
         }
     }
 }

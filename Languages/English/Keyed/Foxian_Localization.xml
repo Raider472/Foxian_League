@@ -38,5 +38,7 @@
     <GeneticPurityXenotypeAChanceSliderDesc>By default, the offspring has a 70% chance to be born as xenotype A. If the value is set to 0%, the offspring will always be born as xenotype B. If set at 100%, the offspring will always be born as xenotype A.</GeneticPurityXenotypeAChanceSliderDesc>
     <GeneticPurityXenotypeMaleChanceSlider>Chance for an offspring to be a male (xenotype B)</GeneticPurityXenotypeMaleChanceSlider>
     <GeneticPurityXenotypeMaleChanceSliderDesc>By default, when the offspring is born with xenotype B, it has a 70% chance to be born as a male. If this value is set at 0%, the offspring will always be a female. If set at 100%, the offspring will always be a male when born with xenotype B.</GeneticPurityXenotypeMaleChanceSliderDesc>
+    <GeneticPurityXenotypeFemaleChanceSliderAlt>Chance for an offspring to be a female (when mother is not a Foxian)</GeneticPurityXenotypeFemaleChanceSliderAlt>
+    <GeneticPurityXenotypeFemaleChanceSliderAltDesc>By default, when the mother is not a Foxian, the offspring has a 80% chance to be born as a female. If this value is set at 0%, the offspring will always be a male. If set at 100%, the offspring will always be a female.\nPlease, note that this modifier will not do anything if the "Should a person be a Foxian to trigger the first behaviour of genetic purity gene ?" option has been disabled.</GeneticPurityXenotypeFemaleChanceSliderAltDesc>
     <ResetButton>Default Values</ResetButton>
 </LanguageData>

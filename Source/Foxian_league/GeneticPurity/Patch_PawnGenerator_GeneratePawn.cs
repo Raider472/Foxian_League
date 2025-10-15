@@ -27,11 +27,11 @@ namespace Foxian_league {
             List<GeneDef> babyInheritedGenes = request.ForcedEndogenes;
             List<GeneDef> babyCosmeticGenes = Utils.ClearNonCosmeticGeneBaby(babyInheritedGenes);
             request.ForcedEndogenes.Clear();
+            request.ForcedEndogenes = babyCosmeticGenes;
 
             if (Utils.IsFoxian(mother) || Utils.IsGreaterFoxian(mother) || Utils.IsPawnFoxianEnough(mother) || !Foxian_Settings.isPawnFoxianTrigger) {
                 Log.Message("MOTHER IS FOXIAN");
                 bool isBabyNormalFoxian = Rand.Chance(Foxian_Settings.xenotypeAChance);
-                request.ForcedEndogenes = babyCosmeticGenes;
                 request.ForcedXenotype = isBabyNormalFoxian ? xenotypeA : xenotypeB;
                 Log.Message($"forced custom xenotype: {request.ForcedCustomXenotype}");
 
@@ -47,8 +47,7 @@ namespace Foxian_league {
             }
             else {
                 Log.Message("MOTHER IS NOT FOXIAN");
-                request.ForcedEndogenes = babyCosmeticGenes;
-                request.FixedGender = Rand.Chance(0.8f) ? Gender.Female : Gender.Male;
+                request.FixedGender = Rand.Chance(Foxian_Settings.xenotypeFemaleChanceAlt) ? Gender.Female : Gender.Male;
 
                 if (mother.genes.HasEndogene(InternalDefOf.FL_GeneticPurity)) {
                     Log.Message("Mother has the Gene as Endogene");

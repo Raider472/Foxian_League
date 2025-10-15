@@ -8,7 +8,7 @@ using Verse;
 
 namespace Foxian_league {
     public class Comp_AddHediffOnEquip : ThingComp {
-        //Comp to make the "Insatiable hunger" work
+        //Comp to add and hediff when equipped and to make the "Insatiable hunger" work
         public ComProperties_AddHediffOnEquip Props => (ComProperties_AddHediffOnEquip)props;
 
         public Dictionary<string, float> severityDict = new Dictionary<string, float>() {

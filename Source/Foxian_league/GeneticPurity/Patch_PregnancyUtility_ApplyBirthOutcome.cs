@@ -21,6 +21,7 @@ namespace Foxian_league {
             if (Utils.HasActiveGene(geneticMother, InternalDefOf.FL_GeneticPurity)) {
                 mother = geneticMother;
             }
+            return;
         }
 
         [HarmonyPostfix]
@@ -42,6 +43,7 @@ namespace Foxian_league {
                 mother = null;
                 Log.Message($"Mother has been set to null: {mother}");
             }
+            return;
         }
     }
 }

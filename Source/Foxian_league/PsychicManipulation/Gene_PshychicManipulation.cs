@@ -37,5 +37,11 @@ namespace Foxian_league {
                 skillModifier = Math.Clamp((int)roundedSkillModifier, 0, 20);
             }
         }
+
+        public override void ExposeData() {
+            base.ExposeData();
+            Scribe_Values.Look(ref skillModifier, "skillModifier", defaultValue: 0);
+            Scribe_Values.Look(ref psychicSensitivityRecent, "psychicSensitivityRecent", defaultValue: 0);
+        }
     }
 }

@@ -7,6 +7,7 @@ using Verse;
 
 namespace Foxian_league {
     public class ComProperties_AddHediffOnEquip : CompProperties {
+        //Comp to add an hediff on equip, alt hediff is for leaders so they don't die when having this sword
         public HediffDef hediffOnEquip;
         public HediffDef hediffOnEquipAlt;
 

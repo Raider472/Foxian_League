@@ -15,21 +15,21 @@ namespace Foxian_league {
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest) {
             Gene_PsychicProtection gene = getPsychicProtectionGene();
-            string HediffName = "";
+            string hediffName;
             if (isAlternateMode) {
                 Log.Message($"Ability was alternate and pawn is {parent.pawn}");
                 ProtectionProps.hediffDef = ProtectionProps.defaultHediff;
-                HediffName = "FL_PsychichProtectionDodge";
+                hediffName = "FL_PsychichProtectionDodge";
             }
             else {
                 Log.Message($"Ability was normal and pawn is {parent.pawn}");
                 ProtectionProps.hediffDef = ProtectionProps.alternatetHediff;
-                HediffName = "FL_PsychichProtectionTank";
+                hediffName = "FL_PsychichProtectionTank";
             }
             isAlternateMode = !isAlternateMode;
             if (gene != null) {
                 gene.isAlternateMode = isAlternateMode;
-                HediffUtils.RemoveHediffWithString(HediffName, parent.pawn);
+                HediffUtils.RemoveHediffWithString(hediffName, parent.pawn);
                 gene.psychicSensitivityRecent = 0f;
                 gene.channelingStageRecent = 0;
             }

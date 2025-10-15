@@ -16,6 +16,9 @@ namespace Foxian_league {
             if (!p.RaceProps.Humanlike) {
                 return false;
             }
+            if (!otherPawn.RaceProps.Humanlike || otherPawn.Dead) {
+                return false;
+            }
             if (!p.story.traits.HasTrait(InternalDefOf.FL_Loyal_Trait)) {
                 return false;
             }

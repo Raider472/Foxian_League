@@ -23,12 +23,14 @@ namespace Foxian_league {
                 actualAnimal = __instance.pawn;
                 Log.Message($"Actual Tamer: {actualTamer} and actual animal: {actualAnimal}");
             }
+            return;
         }
 
         [HarmonyPostfix]
         public static void PostFix() {
-            actualAnimal = null;
-            actualTamer = null;
+            if (actualAnimal != null) actualAnimal = null;
+            if (actualTamer != null) actualTamer = null;
+            return;
         }
     }
 }

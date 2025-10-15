@@ -1,8 +1,17 @@
 Basic stuff
 
-patch RJW ??????
+maybe option to allow girl only ? + chance for gender on non-foxian
+    -Most mods use the PawnGenerator.GeneratePawn method
+    -I'm patching the pregnUtility applybirthoutcome to save the mother and make a letter when a foxian is born
+Check if genetic purity can be changed/refractor (removing mother field and etc.)
 
 Credit for inspiration
+
+-UI
+Inspiration: Vanilla expanded, Det genes, Faun
+window with pawn what they look ingame + list of all genes and short description + meta and complexity 
+
+Description of gene + cost meta and complexity
 
 -Important !!!
 

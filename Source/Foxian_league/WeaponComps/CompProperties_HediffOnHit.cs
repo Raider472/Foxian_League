@@ -7,6 +7,7 @@ using Verse;
 
 namespace Foxian_league {
     public class CompProperties_HediffOnHit : CompProperties {
+        //Comp prop for adding an hediff on hit
         public HediffDef hediffOnHit;
         public float minValue;
         public float maxValue;

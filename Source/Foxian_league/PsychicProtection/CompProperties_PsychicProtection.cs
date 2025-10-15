@@ -9,11 +9,12 @@ using Verse;
 
 namespace Foxian_league {
     public class CompProperties_PsychicProtection : CompProperties_AbilityGiveHediff {
+        //Comp prop that stocks the hediff used for the psychic protection comp (it is also an extension of an existing comp)
         public HediffDef defaultHediff;
         public HediffDef alternatetHediff;
 
-        public string defaultNameHediff = "FL_PsychichProtectionTank";
-        public string AlternateNameHediff = "FL_PsychichProtectionDodge";
+        public string defaultNameHediff = "FL_PsychichProtectionTank0";
+        public string AlternateNameHediff = "FL_PsychichProtectionDodge0";
 
         public CompProperties_PsychicProtection() {
             compClass = typeof(Comp_PsychicProtection);

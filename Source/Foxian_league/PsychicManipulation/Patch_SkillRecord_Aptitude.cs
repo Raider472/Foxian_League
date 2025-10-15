@@ -22,6 +22,7 @@ namespace Foxian_league {
                     __result += psychicManip.skillModifier;
                 }
             }
+            return;
         }
 
     }

@@ -7,7 +7,7 @@ using RimWorld;
 using Verse;
 
 namespace Foxian_league {
-    //Class to create a letter notification when a greater foxian was borned
+    //Class to create a letter notification when a greater foxian was borne
     public class ChoiceLetter_GreaterFoxianBorn : ChoiceLetter {
         private Pawn pawn;
 
