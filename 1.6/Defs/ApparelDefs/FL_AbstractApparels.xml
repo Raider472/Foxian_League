@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef Name="FoxianClothing" Abstract="True" ParentName="ApparelMakeableBase">
-        <techLevel>Spacer</techLevel>
+        <techLevel>Industrial</techLevel>
         <smeltable>false</smeltable>
         <recipeMaker>
             <researchPrerequisite>ComplexClothing</researchPrerequisite>
@@ -45,6 +45,7 @@
     </ThingDef>
 
     <ThingDef Name="FoxianArmor" Abstract="True" ParentName="FoxianClothing">
+        <techLevel>Spacer</techLevel>
         <recipeMaker Inherit="False">
             <researchPrerequisite>Machining</researchPrerequisite>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -86,7 +87,90 @@
         </thingSetMakerTags>
     </ThingDef>
 
-    <ThingDef Name="FoxianAmulet" Abstract="True" ParentName="HatMakeableBase">
+    <ThingDef Name="FoxianHead" Abstract="True" ParentName="HatMakeableBase">
+        <techLevel>Industrial</techLevel>
+        <smeltable>false</smeltable>
+        <tradeTags>
+            <li>PsychicApparel</li>
+        </tradeTags>
+        <recipeMaker Inherit="False">
+            <researchPrerequisite>Machining</researchPrerequisite>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Plasteel</li>
+                    <li>Jade</li>
+                    <li>Uranium</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+                    <li MayRequire="Ludeon.RimWorld.Odyssey">Obsidian</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
+        <apparel>
+            <tags>
+                <li>Psychic</li>
+                <li>FoxianLeagueApparel</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef Name="FoxianHelmet" Abstract="True" ParentName="ArmorHelmetMakeableBase">
+        <techLevel>Spacer</techLevel>
+        <smeltable>false</smeltable>
+        <tradeTags>
+            <li>HiTechArmor</li>
+            <li>Armor</li>
+            <li>PsychicApparel</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+        <recipeMaker Inherit="False">
+            <researchPrerequisite>Machining</researchPrerequisite>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Plasteel</li>
+                    <li>Jade</li>
+                    <li>Uranium</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+                    <li MayRequire="Ludeon.RimWorld.Odyssey">Obsidian</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
+        <apparel>
+            <tags>
+                <li>Psychic</li>
+                <li>FoxianLeagueApparel</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef Name="FoxianAmulet" Abstract="True" ParentName="ApparelMakeableBase">
         <techLevel>Medieval</techLevel>
         <recipeMaker Inherit="False">
             <researchPrerequisite>Smithing</researchPrerequisite>
@@ -128,6 +212,9 @@
             <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>1</EquipDelay>
         </statBases>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
         <apparel>
             <tags>
                 <li>FoxianAmuletApparel</li>
@@ -136,15 +223,11 @@
                 <li>Neck</li>
             </bodyPartGroups>
             <layers>
-                <li>Overhead</li>
+                <li>Middle</li>
             </layers>
-            <renderSkipFlags>
-                <li>None</li>
-            </renderSkipFlags>
             <careIfDamaged>false</careIfDamaged>
             <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
             <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
         </apparel>
-        <colorGenerator Class="ColorGenerator_StandardApparel" />
     </ThingDef>
 </Defs>

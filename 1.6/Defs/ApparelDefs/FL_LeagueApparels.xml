@@ -65,12 +65,13 @@
         <label>noble foxian armor</label>
         <description>A noble armor layered in plasteel plates and embedded with eltex to protect its wearer against slashing weapons and bullets while at the same time enhancing the psychic sensitivity of its bearer.\n While this armor is customarily used by greater Foxian nobles, it is also rewarded as proof of bravery to a brave Foxian who has committed an honorary deed.\n This armor is not as protective as ultratech armors, but it is still better than any other industrial armors.</description>
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/CataphractArmor/CataphractArmor</texPath>
+            <texPath>Things/Pawns/Apparels/NobleArmor/NobleArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <recipeMaker>
             <skillRequirements>
-                <Crafting>14</Crafting>
+                <Crafting>12</Crafting>
             </skillRequirements>
         </recipeMaker>
         <stuffCategories>
@@ -110,7 +111,8 @@
                 <li>Arms</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CataphractArmor/CataphractArmor</wornGraphicPath>
+            <wornGraphicPath>Things/Pawns/Apparels/NobleArmor/NobleArmor</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Middle</li>
                 <li>Shell</li>
@@ -122,13 +124,73 @@
         </apparel>
     </ThingDef>
 
+    <ThingDef ParentName="FoxianHelmet">
+        <defName>FL_NobleFoxianHelmet</defName>
+        <label>noble foxian helmet</label>
+        <description>NobleHelmet.</description>
+        <graphicData>
+            <texPath>Things/Pawns/Apparels/NobleArmorHelmet/NobleHelm</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <uiIconScale>1</uiIconScale>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>40</Plasteel>
+        </costList>
+        <statBases>
+            <WorkToMake>6000</WorkToMake>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>4</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>0.67</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.4</ArmorRating_Heat>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <PsychicSensitivityOffset>0.2</PsychicSensitivityOffset>
+            <PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.15</VacuumResistance>
+        </equippedStatOffsets>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawns/Apparels/NobleArmorHelmet/NobleHelm</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+                <li>Spacefarer</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+  
+
     <ThingDef ParentName="FoxianArmor">
         <defName>FL_OfficerFoxianArmor</defName>
         <label>foxian officer coat</label>
         <description>A coat embedded with eltex used by officers of the Foxian League army. This coat is more used as a status symbol than as a means of protection.</description>
+        <techLevel>Industrial</techLevel>
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+            <texPath>Things/Pawns/Apparels/OfficerArmor/OfficerArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <recipeMaker>
             <skillRequirements>
@@ -147,16 +209,16 @@
         <uiIconScale>1.25</uiIconScale>
         <generateCommonality>2</generateCommonality>
         <statBases>
-            <WorkToMake>10000</WorkToMake>
+            <WorkToMake>8000</WorkToMake>
             <MaxHitPoints>300</MaxHitPoints>
-            <Mass>10</Mass>
-            <Flammability>0.4</Flammability>
+            <Mass>4.5</Mass>
+            <Flammability>0.8</Flammability>
             <ArmorRating_Sharp>0.39</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.34</ArmorRating_Blunt>
             <ArmorRating_Heat>0.31</ArmorRating_Heat>
             <Insulation_Cold>1</Insulation_Cold>
             <Insulation_Heat>1</Insulation_Heat>
-            <EquipDelay>5</EquipDelay>
+            <EquipDelay>4.5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
             <PsychicSensitivityOffset>0.35</PsychicSensitivityOffset>
@@ -171,7 +233,8 @@
                 <li>Arms</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
+            <wornGraphicPath>Things/Pawns/Apparels/OfficerArmor/OfficerArmor</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Middle</li>
                 <li>Shell</li>
@@ -182,4 +245,58 @@
             </defaultOutfitTags>
         </apparel>
     </ThingDef>
+
+    <ThingDef ParentName="FoxianHead">
+        <defName>FL_OfficerFoxianCap</defName>
+        <label>officer foxian cap</label>
+        <description>officerHelmet.</description>
+        <graphicData>
+            <texPath>Things/Pawns/Apparels/OfficerArmor/OfficerCap</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <uiIconScale>1</uiIconScale>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <costStuffCount>20</costStuffCount>
+        <costList>
+            <Plasteel>15</Plasteel>
+        </costList>
+        <statBases>
+            <WorkToMake>1000</WorkToMake>
+            <MaxHitPoints>125</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.6</Flammability>
+            <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <PsychicSensitivityOffset>0.1</PsychicSensitivityOffset>
+            <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
+            <SocialImpact>0.05</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawns/Apparels/OfficerArmor/OfficerCap</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+                <li>Spacefarer</li>
+            </defaultOutfitTags>
+        </apparel>
+  </ThingDef>
 </Defs>

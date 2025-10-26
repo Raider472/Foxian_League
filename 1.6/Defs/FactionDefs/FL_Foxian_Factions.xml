@@ -16,7 +16,7 @@
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>great counselor</leaderTitle>
-		<factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+		<factionIconPath>UI/Icons/Faction/FL_Foxian_League</factionIconPath>
 		<techLevel>Spacer</techLevel>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<allowedCultures>
@@ -36,10 +36,6 @@
 			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
 			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
 		</structureMemeWeights>
-		<colorSpectrum>
-			<li>(1.0, 1.0, 0.0)</li>
-			<li>(1.0, 1.0, 0.0)</li>
-		</colorSpectrum>
 		<fixedIdeo>true</fixedIdeo>
       	<ideoName>Naturalism</ideoName>
 		<ideoDescription>When the old kingdom collapsed, when the sky was ablaze, when all was naught and hope was bleak. He came in and divulged himself to his children. He sheltered as many of his sons and daughters as he could from the incoming onslaught. When the chaos was over, he left and proffered us words full of wisdom to rebuild what was once lost to us.\n\n  - Vulpas, The father of all foxians</ideoDescription>
@@ -226,7 +222,7 @@
 		<settlementGenerationWeight>1</settlementGenerationWeight>
     	<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<leaderTitle>Children of blood</leaderTitle>
-		<factionIconPath>World/WorldObjects/Expanding/PirateOutpost</factionIconPath>
+		<factionIconPath>UI/Icons/Faction/FL_Blood_Rain</factionIconPath>
 		<ideoName>Dakinesim</ideoName>
 		<ideoDescription>Dakini, who is also known as "The Empress," is the leader and symbol of the blood rain cult. Every member adheres to her creed, and she was described as the representation of the wrath of all the Foxians who have been wronged by the league or any other factions present on the Rim. It is reasonable to assume that this faction serves as an echo chamber for the most extreme Foxians devoid of any reason to live.\nDespite many of the adherents who never saw their leader even once. They have not let doubts seep into their conviction and still stand strong to perform their duty. Those who managed to see the empress refused to give any concrete description other than "she is beautiful."\nI've also heard a most peculiar rumor while working on my research. It seems there is a debate amongst the followers to know if the empress is a Foxian or a greater Foxian. While the answer is still unknown due to the secrecy of their leader, most of the Dakineists agreed they would still trust the empress even if she was a greater Foxian, despite their aversion for that species. I am uncertain if I should note that as hypocrisy or a desperation for a purpose.\n\n  - Sociology thesis on the Blood Rain by a Foxian</ideoDescription>
 		<deityPresets>
@@ -239,10 +235,6 @@
 				<iconPath>UI/Deities/DeityGeneric</iconPath>
 			</li>
 		</deityPresets>
-		<colorSpectrum>
-			<li>(0.45, 0.09, 0.16)</li>
-			<li>(0.55, 0.15, 0.25)</li>
-		</colorSpectrum>
 		<permanentEnemy>true</permanentEnemy>
 		<techLevel>Industrial</techLevel>
 		<allowedCultures>

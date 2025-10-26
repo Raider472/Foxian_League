@@ -5,9 +5,9 @@
         <label>psychic amulet</label>
         <description>A jade amulet that is frequently worn by high psychic individuals in the Foxian League. Those wearing it claim it allows them greater focus and connection to the natural world while meditating. This amulet is the perfect choice for anyone who wants to become closer to nature.</description>
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/SlaveCollar/SlaveCollar</texPath>
+            <texPath>Things/Pawns/Apparels/AmuletJade/Amulet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.8</drawSize>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <costList>
             <Jade>20</Jade>
@@ -22,6 +22,8 @@
                 <li>FoxianAmulet</li>
                 <li>FoxianLeagueAmulet</li>
             </tags>
+            <wornGraphicPath>Things/Pawns/Apparels/AmuletJade/Amulet</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
     </ThingDef>
 
@@ -30,9 +32,9 @@
         <label>diplomat amulet</label>
         <description>A golden amulet that is commonly seen with diplomats from the Foxian League. Such a refined amulet allows them to be more impactful during diplomatic negotiations.</description>
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/SlaveCollar/SlaveCollar</texPath>
+            <texPath>Things/Pawns/Apparels/AmuletGold/Amulet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.8</drawSize>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <costList>
             <Gold>2</Gold>
@@ -45,6 +47,8 @@
             <tags>
                 <li>FoxianLeagueAmulet</li>
             </tags>
+            <wornGraphicPath>Things/Pawns/Apparels/AmuletGold/Amulet</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
     </ThingDef>
 
@@ -53,9 +57,9 @@
         <label>merchant amulet</label>
         <description>A silver amulet that is omnipresent amongst Foxian merchants. It acts like a lucky charm for them. Its significance comes from a historical event in the League where a Foxian settlement managed to avoid impending ruin after making a transactional deal against all odds with the Blood Rain.</description>
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/SlaveCollar/SlaveCollar</texPath>
+            <texPath>Things/Pawns/Apparels/AmuletSilver/Amulet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.8</drawSize>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <costList>
             <Silver>20</Silver>
@@ -67,6 +71,8 @@
             <tags>
                 <li>FoxianLeagueAmulet</li>
             </tags>
+            <wornGraphicPath>Things/Pawns/Apparels/AmuletSilver/Amulet</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
     </ThingDef>
 </Defs>

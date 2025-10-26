@@ -4,6 +4,9 @@ maybe option to allow girl only ? + chance for gender on non-foxian
     -Most mods use the PawnGenerator.GeneratePawn method
     -I'm patching the pregnUtility applybirthoutcome to save the mother and make a letter when a foxian is born
 Check if genetic purity can be changed/refractor (removing mother field and etc.)
+TODO helmet def and balance stats
+
+640x360 preview workshop png
 
 Credit for inspiration
 

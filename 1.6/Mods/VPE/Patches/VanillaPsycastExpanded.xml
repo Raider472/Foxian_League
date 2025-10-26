@@ -21,9 +21,23 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="FL_NobleFoxianHelmet"]/costList/Plasteel</xpath>
+        <value>
+            <VPE_Eltex>2</VPE_Eltex>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="FL_OfficerFoxianArmor"]/costList/Plasteel</xpath>
         <value>
             <VPE_Eltex>4</VPE_Eltex>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="FL_OfficerFoxianCap"]/costList/Plasteel</xpath>
+        <value>
+            <VPE_Eltex>1</VPE_Eltex>
         </value>
     </Operation>
 

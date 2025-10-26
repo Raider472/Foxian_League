@@ -42,7 +42,7 @@
         <defName>FL_Composed</defName>
         <label>composed mind</label>
         <description>Carriers of this gene are strong-willed and calm. They will never start social fights against their peers, they are less inclined to start negative interactions with them, and their mental breakdowns are also always non-violent.</description>
-        <iconPath></iconPath>
+        <iconPath>UI/Icons/Genes/FL_Composed</iconPath>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>1</displayOrderInCategory>
         <socialFightChanceFactor>0</socialFightChanceFactor>
@@ -67,7 +67,7 @@
         <defName>FL_Emotionally_Brittle</defName>
         <label>emotionally brittle</label>
         <description>Carriers of this gene are much more susceptible to breaking under pressure, and they will spend much more time in mental breakdowns than the average person.</description>
-        <iconPath></iconPath>
+        <iconPath>UI/Icons/Genes/FL_Emotionally_Brittle</iconPath>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>1</displayOrderInCategory>
         <statOffsets>
@@ -94,7 +94,7 @@
         <defName>FL_Reserved</defName>
         <label>reserved</label>
         <description>Carriers of this gene keep their problems to themselves rather than discussing their issues with someone else.</description>
-        <iconPath></iconPath>
+        <iconPath>UI/Icons/Genes/FL_Reserved</iconPath>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>1</displayOrderInCategory>
         <forcedTraits>
@@ -116,7 +116,7 @@
         <defName>FL_Loyal</defName>
         <label>loyal</label>
         <description>Carriers of this gene exhibit more loyalty to their belief than the average person.</description>
-        <iconPath></iconPath>
+        <iconPath>UI/Icons/Genes/FL_Foxian_Loyalty</iconPath>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>1</displayOrderInCategory>
         <forcedTraits>
@@ -138,7 +138,7 @@
         <label>natural psy-sensitivity</label> 
         <labelShortAdj>natural psy</labelShortAdj>
         <description>Carriers of this gene are more attuned to nature than other psychically sensitive persons.</description>
-        <iconPath></iconPath>
+        <iconPath>UI/Icons/Genes/FL_Natural_Sensitivity</iconPath>
         <displayOrderInCategory>15</displayOrderInCategory>
         <forcedTraits>
             <li>
@@ -174,7 +174,7 @@
         <defName>FL_PsychicManipulation</defName>
         <label>psychic manipulation</label>
         <description>Carriers of this gene can influence other persons with their psychic sensitivity. The higher their sensitivity is, the higher their influence becomes</description>
-        <iconPath></iconPath>
+        <iconPath>UI/Icons/Genes/FL_Psy_Manipulation</iconPath>
         <geneClass>Foxian_league.Gene_PsychicManipulation</geneClass>
         <customEffectDescriptions>
             <li>Each 25% psychic sensitivity beyond 100% will add a bonus point to this person's social aptitude</li>
@@ -189,7 +189,7 @@
         <defName>FL_AnimalConnection</defName>
         <label>animal connection</label>
         <description>Carriers of this gene have an easier time communicating with wild and tamed animals.</description>
-        <iconPath></iconPath>
+        <iconPath>UI/Icons/Genes/FL_Animal_Connection</iconPath>
         <passionMod>
             <skill>Animals</skill>
             <modType>AddOneLevel</modType>
@@ -211,7 +211,7 @@
         <defName>FL_PsychicChanneling</defName>
         <label>psychic channeling</label>
         <description>Carriers of this gene can channel their psychic sensitivity into their melee weapon or fists to gain the upper hand against their enemies in melee combat. The higher the psychic sensitivity of the carrier is, the stronger they are.</description>
-        <iconPath></iconPath>
+        <iconPath>UI/Icons/Genes/FL_Psy_Channeling</iconPath>
         <minAgeActive>3</minAgeActive>
         <geneClass>Foxian_league.Gene_PsychicChanneling</geneClass>
         <customEffectDescriptions>
@@ -236,7 +236,7 @@
         <defName>FL_PsychicProtection</defName>
         <label>psychic protection</label>
         <description>Carriers of this gene can channel their psychic sensitivity as armor or use it to predict multiple possibilities for a few seconds, allowing them to anticipate and dodge melee hits or even bullets. The higher the psychic sensitivity of the carrier is, the stronger or more accurate this effect is.</description>
-        <iconPath></iconPath>
+        <iconPath>UI/Icons/Genes/FL_Psychic_Protection</iconPath>
         <minAgeActive>3</minAgeActive>
         <abilities>
             <li>FL_PsychicProtectionSwitch</li>
@@ -265,7 +265,7 @@
         <defName>FL_LastStand</defName>
         <label>last stand</label>
         <description>Carriers of this gene are able to gather and condense all of their psychic energy in an attempt to perform a last stand. They will become much harder to kill and will have a bonus in melee damage for 2 hours. Once this effect expires, the carrier will fall into a 2-day coma. If the carrier dies during the effect, he will create a small psychic explosion around him. Additionally, if the carrier has a psyfocus need, activating this ability will drain all of it.</description>
-        <iconPath></iconPath>
+        <iconPath>UI/Icons/Genes/FL_Last_Stand</iconPath>
         <minAgeActive>3</minAgeActive>
         <abilities>
             <li>FL_LastStand_Ability</li>
@@ -310,7 +310,7 @@
         <defName>FL_ToxicVulnerability</defName>
         <label>toxic vulnerability</label>
         <description>Carriers of this gene are vulnerable to toxic buildup and environmental toxins. Such as pollution, toxic fallout, tox gas, and direct attacks with venom or injected poison</description>
-        <iconPath></iconPath>
+        <iconPath>UI/Icons/Genes/FL_Toxic_Weakness</iconPath>
         <displayCategory>ResistanceAndWeakness</displayCategory>
         <displayOrderInCategory>10</displayOrderInCategory>
         <statOffsets>
@@ -330,7 +330,7 @@
         <defName>FL_GeneticPurity</defName>
         <label>genetic purity</label>
         <description>Carriers of this gene will birth a foxian if they are a foxian themselves. Otherwise, they are very likely to give birth to a female offspring with all endogenes or xenogenes inherited.</description>
-        <iconPath></iconPath>
+        <iconPath>UI/Icons/Genes/FL_Genetic_Purity</iconPath>
         <customEffectDescriptions>
             <li>This gene will follow one of the two behaviors if the mother is a Foxian or is considered foxian enough</li>
             <li>Behaviour 1: The mother is foxian. She will either birth a female child with the foxian xenotype, or in some rare cases, she will birth a special child with the greater foxian xenotype. That special child can either be a male or a female (it is more likely to be a male). Only the cosmetic genes, such as hair color or skin color, will be transmitted to the child</li>
@@ -354,7 +354,7 @@
         <defName>FL_Immaculate</defName>
         <label>immaculate</label>
         <description>Carriers of this gene produce less filth than the average person.</description>
-        <iconPath></iconPath>
+        <iconPath>UI/Icons/Genes/FL_Immaculate</iconPath>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>2</displayOrderInCategory>
         <statFactors>

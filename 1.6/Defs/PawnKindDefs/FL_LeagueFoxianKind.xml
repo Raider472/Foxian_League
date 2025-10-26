@@ -478,6 +478,7 @@
         <apparelRequired>
             <li>Apparel_ShieldBelt</li>
             <li>FL_NobleFoxianArmor</li>
+            <li>FL_NobleFoxianHelmet</li>
         </apparelRequired>
         <apparelMoney>1500~2200</apparelMoney>
         <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
@@ -518,6 +519,7 @@
         <apparelRequired>
             <li>Apparel_ShieldBelt</li>
             <li>FL_OfficerFoxianArmor</li>
+            <li>FL_OfficerFoxianCap</li>
         </apparelRequired>
         <techHediffsMoney>500~1000</techHediffsMoney>
         <initialWillRange>10~18</initialWillRange>

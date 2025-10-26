@@ -7,7 +7,7 @@
         <jobDef>CastAbilityOnThing</jobDef>
         <targetRequired>False</targetRequired>
         <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
-        <iconPath>UI/Gizmos/AutoRepair</iconPath>
+        <iconPath>UI/Icons/Ability/FL_Ability_Psy_Switch</iconPath>
         <stunTargetWhileCasting>True</stunTargetWhileCasting>
         <showWhenDrafted>False</showWhenDrafted>
         <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
@@ -52,7 +52,7 @@
         <jobDef>CastAbilityOnThing</jobDef>
         <targetRequired>False</targetRequired>
         <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
-        <iconPath>UI/Abilities/CombatCommand</iconPath>
+        <iconPath>UI/Icons/Ability/FL_Ability_Last_Stand</iconPath>
         <cooldownTicksRange>420000</cooldownTicksRange><!-- 7 days -->
         <stunTargetWhileCasting>True</stunTargetWhileCasting>
         <casterMustBeCapableOfViolence>True</casterMustBeCapableOfViolence>
