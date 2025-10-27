@@ -3,6 +3,7 @@
     <name>Foxian League</name>
     <author>Raider</author>
     <packageId>foxian.league.raider</packageId>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/Icons/Xenotype/FL_FoxianXenotypeIcon</modIconPath>
     <supportedVersions>
 		<li>1.6</li>
     </supportedVersions>

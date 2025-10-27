@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,7 @@ namespace Foxian_league {
                 Hediff hediffToChange;
                 Random rand = new Random();
                 float randomValue = (float)(rand.NextDouble() * (Props.maxValue - Props.minValue) + Props.minValue);
+                if (latestTarget.Pawn.kindDef == PawnKindDefOf.Thrumbo || latestTarget.Pawn.kindDef == PawnKindDefOf.AlphaThrumbo) randomValue /= 10f;
                 if (latestTarget.Pawn.health.hediffSet.TryGetHediff(Props.hediffOnHit, out hediffToChange)) {
                     hediffToChange.Severity += randomValue;
                     if (hediffToChange.Severity > 1f) {

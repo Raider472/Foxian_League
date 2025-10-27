@@ -25,7 +25,7 @@
                 </capMods>
             </li>
             <li>
-                <minSeverity>0.30</minSeverity>
+                <minSeverity>0.2</minSeverity>
                 <label>minor</label>
                 <capMods>
                     <li>
@@ -39,7 +39,7 @@
                 </capMods>
             </li>
             <li>
-                <minSeverity>0.45</minSeverity>
+                <minSeverity>0.4</minSeverity>
                 <label>moderate</label>
                 <capMods>
                     <li>
@@ -53,7 +53,7 @@
                 </capMods>
             </li>
             <li>
-                <minSeverity>0.7</minSeverity>
+                <minSeverity>0.6</minSeverity>
                 <label>major</label>
                 <capMods>
                     <li>
@@ -67,7 +67,7 @@
                 </capMods>
             </li>
             <li>
-                <minSeverity>0.8</minSeverity>
+                <minSeverity>0.75</minSeverity>
                 <label>extreme</label>
                 <capMods>
                     <li>

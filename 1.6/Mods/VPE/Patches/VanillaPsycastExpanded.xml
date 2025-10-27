@@ -45,7 +45,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="FL_Weapon_OfficerKatana"]/costList/Plasteel</xpath>
         <value>
-            <VPE_Eltex>4</VPE_Eltex>
+            <VPE_Eltex>2</VPE_Eltex>
         </value>
     </Operation>
 

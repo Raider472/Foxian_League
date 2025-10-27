@@ -17,7 +17,7 @@
         <weaponTags>
             <li>FoxianLeagueOfficerlMelee</li>
         </weaponTags>
-        <costStuffCount>70</costStuffCount>
+        <costStuffCount>55</costStuffCount>
         <costList>
             <Plasteel>35</Plasteel>
         </costList>
@@ -25,11 +25,11 @@
             <li>Metallic</li>
         </stuffCategories>
         <statBases>
-            <WorkToMake>1600</WorkToMake>
+            <WorkToMake>16000</WorkToMake>
             <Mass>1.5</Mass>
         </statBases>
         <equippedStatOffsets>
-            <PsychicSensitivityOffset>0.25</PsychicSensitivityOffset>
+            <PsychicSensitivityOffset>0.23</PsychicSensitivityOffset>
             <PsychicEntropyRecoveryRate>0.07</PsychicEntropyRecoveryRate>
             <SocialImpact>0.1</SocialImpact>
         </equippedStatOffsets>
@@ -45,8 +45,8 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>8</power>
-                <cooldownTime>1.5</cooldownTime>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
             </li>
             <li>
                 <label>point</label>
@@ -54,7 +54,7 @@
                     <li>Stab</li>
                 </capacities>
                 <power>20</power>
-                <cooldownTime>2.5</cooldownTime>
+                <cooldownTime>2.4</cooldownTime>
             </li>
             <li>
                 <label>edge</label>
@@ -62,7 +62,7 @@
                     <li>Cut</li>
                 </capacities>
                 <power>21</power>
-                <cooldownTime>2.5</cooldownTime>
+                <cooldownTime>2.4</cooldownTime>
             </li>
         </tools>
         <modExtensions>
@@ -105,7 +105,7 @@
             <Mass>3</Mass>
         </statBases>
         <equippedStatOffsets>
-            <PsychicSensitivityOffset>0.35</PsychicSensitivityOffset>
+            <PsychicSensitivityOffset>0.4</PsychicSensitivityOffset>
             <PsychicEntropyRecoveryRate>0.10</PsychicEntropyRecoveryRate>
         </equippedStatOffsets>
         <recipeMaker>
@@ -128,8 +128,8 @@
                 <capacities>
                     <li>Stab</li>
                 </capacities>
-                <power>25</power>
-                <cooldownTime>2.4</cooldownTime>
+                <power>27</power>
+                <cooldownTime>2.1</cooldownTime>
                 <armorPenetration>0.49</armorPenetration>
             </li>
             <li>
@@ -138,8 +138,8 @@
                     <li>Cut</li>
                 </capacities>
                 <power>27</power>
-                <cooldownTime>2.4</cooldownTime>
-                <armorPenetration>0.41</armorPenetration>
+                <cooldownTime>2.1</cooldownTime>
+                <armorPenetration>0.49</armorPenetration>
             </li>
         </tools>
         <modExtensions>
@@ -198,8 +198,8 @@
                 <capacities>
                     <li>Stab</li>
                 </capacities>
-                <power>26</power>
-                <cooldownTime>2.4</cooldownTime>
+                <power>29</power>
+                <cooldownTime>2.1</cooldownTime>
                 <armorPenetration>0.54</armorPenetration>
             </li>
             <li>
@@ -208,8 +208,8 @@
                     <li>Cut</li>
                 </capacities>
                 <power>29</power>
-                <cooldownTime>2.4</cooldownTime>
-                <armorPenetration>0.47</armorPenetration>
+                <cooldownTime>2.1</cooldownTime>
+                <armorPenetration>0.54</armorPenetration>
             </li>
         </tools>
         <modExtensions>
