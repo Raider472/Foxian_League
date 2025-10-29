@@ -13,19 +13,19 @@
                 <Crafting>8</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <costStuffCount>100</costStuffCount>
+        <costStuffCount>70</costStuffCount>
         <costList>
-            <Hyperweave>105</Hyperweave>
+            <Hyperweave>75</Hyperweave>
             <Plasteel>55</Plasteel>
         </costList>
         <stuffCategories>
             <li>Fabric</li>
         </stuffCategories>
         <statBases>
-            <MaxHitPoints>180</MaxHitPoints>
+            <MaxHitPoints>260</MaxHitPoints>
             <WorkToMake>28000</WorkToMake>
             <Mass>0.7</Mass>
-            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>0.80</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>2</EquipDelay>
@@ -77,29 +77,28 @@
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
-        <costStuffCount>120</costStuffCount>
+        <costStuffCount>80</costStuffCount>
         <costList>
             <ComponentSpacer>1</ComponentSpacer>
             <ComponentIndustrial>2</ComponentIndustrial>
             <Plasteel>120</Plasteel>
         </costList>
-        <uiIconScale>1.25</uiIconScale>
         <generateCommonality>2</generateCommonality>
         <statBases>
-            <WorkToMake>24000</WorkToMake>
-            <MaxHitPoints>400</MaxHitPoints>
+            <WorkToMake>50000</WorkToMake>
+            <MaxHitPoints>300</MaxHitPoints>
             <Mass>13</Mass>
             <Flammability>0.4</Flammability>
-            <ArmorRating_Sharp>0.67</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.21</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.43</ArmorRating_Heat>
-            <Insulation_Cold>3</Insulation_Cold>
-            <Insulation_Heat>4</Insulation_Heat>
-            <EquipDelay>8</EquipDelay>
+            <ArmorRating_Sharp>0.81</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.37</ArmorRating_Heat>
+            <Insulation_Cold>60</Insulation_Cold>
+            <Insulation_Heat>7</Insulation_Heat>
+            <EquipDelay>9</EquipDelay>
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-0.3</MoveSpeed>
-            <PsychicSensitivityOffset>0.5</PsychicSensitivityOffset>
+            <PsychicSensitivityOffset>0.45</PsychicSensitivityOffset>
             <PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
         </equippedStatOffsets>
@@ -121,13 +120,16 @@
                 <li>Soldier</li>
                 <li>Spacefarer</li>
             </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <soundWear>Wear_PowerArmor</soundWear>
+            <soundRemove>Remove_PowerArmor</soundRemove>
         </apparel>
     </ThingDef>
 
     <ThingDef ParentName="FoxianHelmet">
         <defName>FL_NobleFoxianHelmet</defName>
         <label>noble foxian helmet</label>
-        <description>NobleHelmet.</description>
+        <description>A noble helmet layered in plasteel plates and embedded with eltex to protect its wearer against slashing weapons and bullets while at the same time enhancing the psychic sensitivity of its bearer.\n While this armor is customarily used by greater Foxian nobles, it is also rewarded as proof of bravery to a brave Foxian who has committed an honorary deed.\n This helmet is not as protective as ultratech helmets, but it is still better than any other industrial armors.</description>
         <graphicData>
             <texPath>Things/Pawns/Apparels/NobleArmorHelmet/NobleHelm</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -138,29 +140,28 @@
                 <Crafting>12</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <uiIconScale>1</uiIconScale>
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
-        <costStuffCount>40</costStuffCount>
+        <costStuffCount>30</costStuffCount>
         <costList>
             <ComponentSpacer>1</ComponentSpacer>
             <Plasteel>40</Plasteel>
         </costList>
         <statBases>
-            <WorkToMake>6000</WorkToMake>
-            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>18000</WorkToMake>
+            <MaxHitPoints>150</MaxHitPoints>
             <Mass>4</Mass>
             <Flammability>0.4</Flammability>
-            <ArmorRating_Sharp>0.67</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.4</ArmorRating_Heat>
-            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+            <ArmorRating_Sharp>0.81</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.37</ArmorRating_Heat>
+            <Insulation_Cold>3</Insulation_Cold>
+            <Insulation_Heat>1</Insulation_Heat>
             <EquipDelay>3.5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <PsychicSensitivityOffset>0.2</PsychicSensitivityOffset>
+            <PsychicSensitivityOffset>0.15</PsychicSensitivityOffset>
             <PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
             <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.15</VacuumResistance>
         </equippedStatOffsets>
@@ -178,10 +179,10 @@
                 <li>Soldier</li>
                 <li>Spacefarer</li>
             </defaultOutfitTags>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
         </apparel>
     </ThingDef>
   
-
     <ThingDef ParentName="FoxianArmor">
         <defName>FL_OfficerFoxianArmor</defName>
         <label>foxian officer coat</label>
@@ -202,26 +203,25 @@
         </stuffCategories>
         <costStuffCount>70</costStuffCount>
         <costList>
-            <ComponentIndustrial>2</ComponentIndustrial>
-            <Steel>30</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+            <Steel>50</Steel>
             <Plasteel>35</Plasteel>
         </costList>
-        <uiIconScale>1.25</uiIconScale>
         <generateCommonality>2</generateCommonality>
         <statBases>
-            <WorkToMake>8000</WorkToMake>
+            <WorkToMake>11000</WorkToMake>
             <MaxHitPoints>300</MaxHitPoints>
-            <Mass>4.5</Mass>
+            <Mass>5.5</Mass>
             <Flammability>0.8</Flammability>
             <ArmorRating_Sharp>0.39</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.34</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.31</ArmorRating_Heat>
-            <Insulation_Cold>1</Insulation_Cold>
-            <Insulation_Heat>1</Insulation_Heat>
-            <EquipDelay>4.5</EquipDelay>
+            <ArmorRating_Blunt>0.11</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.14</ArmorRating_Heat>
+            <Insulation_Cold>12</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>4</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <PsychicSensitivityOffset>0.35</PsychicSensitivityOffset>
+            <PsychicSensitivityOffset>0.3</PsychicSensitivityOffset>
             <PsychicEntropyRecoveryRate>0.15</PsychicEntropyRecoveryRate>
             <SocialImpact>0.1</SocialImpact>
         </equippedStatOffsets>
@@ -249,7 +249,7 @@
     <ThingDef ParentName="FoxianHead">
         <defName>FL_OfficerFoxianCap</defName>
         <label>officer foxian cap</label>
-        <description>officerHelmet.</description>
+        <description>A cap embedded with eltex used by officers of the Foxian League army. This cap is more used as a status symbol than as a means of protection and is commonly used along with the uniform.</description>
         <graphicData>
             <texPath>Things/Pawns/Apparels/OfficerArmor/OfficerCap</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -260,7 +260,6 @@
                 <Crafting>8</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <uiIconScale>1</uiIconScale>
         <stuffCategories>
             <li>Fabric</li>
         </stuffCategories>
@@ -269,7 +268,7 @@
             <Plasteel>15</Plasteel>
         </costList>
         <statBases>
-            <WorkToMake>1000</WorkToMake>
+            <WorkToMake>1250</WorkToMake>
             <MaxHitPoints>125</MaxHitPoints>
             <Mass>1</Mass>
             <Flammability>0.6</Flammability>

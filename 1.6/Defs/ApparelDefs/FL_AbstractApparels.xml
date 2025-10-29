@@ -55,7 +55,7 @@
             <recipeUsers>
                 <li>TableMachining</li>
             </recipeUsers>
-            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
             <defaultIngredientFilter>
                 <categories>
                     <li>Root</li>
@@ -102,7 +102,7 @@
             <recipeUsers>
                 <li>TableMachining</li>
             </recipeUsers>
-            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
             <defaultIngredientFilter>
                 <categories>
                     <li>Root</li>
@@ -146,7 +146,7 @@
             <recipeUsers>
                 <li>TableMachining</li>
             </recipeUsers>
-            <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
             <defaultIngredientFilter>
                 <categories>
                     <li>Root</li>
@@ -170,7 +170,7 @@
         </apparel>
     </ThingDef>
 
-    <ThingDef Name="FoxianAmulet" Abstract="True" ParentName="ApparelMakeableBase">
+    <ThingDef Name="FoxianAmulet" Abstract="True" ParentName="HatMakeableBase">
         <techLevel>Medieval</techLevel>
         <recipeMaker Inherit="False">
             <researchPrerequisite>Smithing</researchPrerequisite>
@@ -223,8 +223,13 @@
                 <li>Neck</li>
             </bodyPartGroups>
             <layers>
-                <li>Middle</li>
+                <li>Overhead</li>
             </layers>
+            <drawData>
+                <defaultData>
+                    <layer>48</layer>
+                </defaultData>
+            </drawData>
             <careIfDamaged>false</careIfDamaged>
             <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
             <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
