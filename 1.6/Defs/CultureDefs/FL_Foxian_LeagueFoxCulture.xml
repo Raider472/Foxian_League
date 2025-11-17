@@ -12,8 +12,7 @@
         <allowedPlaceTags>
             <li>OriginSpacer</li>
         </allowedPlaceTags>
-        <iconPath>World/WorldObjects/Expanding/PirateOutpost</iconPath>
-        <iconColor>(0.7, 0.7, 0.7)</iconColor>
+        <iconPath>UI/Icons/Culture/FL_Foxian_Culture</iconPath>
         <thingStyleCategories>
             <li MayRequire="Ludeon.RimWorld.Ideology">
                 <category>Animalist</category>

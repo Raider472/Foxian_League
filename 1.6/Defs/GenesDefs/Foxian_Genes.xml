@@ -6,7 +6,7 @@
         <defName>FL_LowFertility</defName>
         <label>low fertility</label>
         <description>Carriers of this gene have a lower chance of becoming pregnant or impregnating others.</description>
-        <iconPath></iconPath>
+        <iconPath>UI/Icons/Genes/FL_Low_Fertility</iconPath>
         <displayOrderInCategory>105</displayOrderInCategory>
         <statFactors>
             <Fertility>0.7</Fertility>
@@ -19,7 +19,7 @@
         <defName>FL_Lustful</defName>
         <label>lustful</label>
         <description>Carriers of this gene are more likely to engage in lovin' with their partner, regardless of their genders.</description>
-        <iconPath></iconPath>
+        <iconPath>UI/Icons/Genes/FL_Lustful</iconPath>
         <customEffectDescriptions>
 			<li>Highly increase the chance of lovin'.</li>
 		</customEffectDescriptions>
@@ -285,7 +285,7 @@
         <defName>FL_SlowAging</defName>
         <label>slow aging</label>
         <description>Carriers of this gene age more slowly after reaching 18 years old.</description>
-        <iconPath></iconPath>
+        <iconPath>UI/Icons/Genes/FL_Slow_Aging</iconPath>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <biologicalAgeTickFactorFromAgeCurve>
             <points>
@@ -372,7 +372,7 @@
 		<defName>FL_Female</defName>
 		<label>female only</label>
 		<description>Carriers of this gene are always biologically female.</description>
-		<iconPath></iconPath>
+		<iconPath>UI/Icons/Genes/FL_Female_Only</iconPath>
         <displayCategory>FL_foxian_genes_set</displayCategory>
 		<displayOrderInCategory>3</displayOrderInCategory>
         <modExtensions>

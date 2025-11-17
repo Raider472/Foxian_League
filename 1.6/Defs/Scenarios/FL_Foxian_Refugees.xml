@@ -5,7 +5,7 @@
         <label>Foxian Refugees</label>
         <description>One night, your settlement was abruptly destroyed by an unknown force. That settlement was home to about fifty people. You and your two companions are the only ones who made it out alive.\nYour group managed to pack a few supplies and wandered the rimworld for a few quadrums, trying to lose your assailants and settle on a peaceful land before your supplies run out completely.</description>
         <scenario>
-            <summary>Two foxians and one greater foxian attempt to create a new settlement and survive the harsh rimworld after losing everything.</summary>
+            <summary>Three foxians Refugees attempt to create a new settlement after losing everything.</summary>
             <playerFaction>
                 <factionDef>FoxianPlayerColony</factionDef>
             </playerFaction>

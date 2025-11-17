@@ -33,18 +33,21 @@
 		<iconPath>UI/Icons/Genes/FL_Gene_Fox_Ears_Icon</iconPath>
 		<renderNodeProperties>
 			<li>
-				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<nodeClass>BetterGeneGraphicsFramework.PawnRenderNode_GeneHeadAttachment</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<texPath>Things/Pawns/Ears/FL_Foxian_Ears</texPath>
+				<parentTagDef>Head</parentTagDef>
+				<texPaths>
+					<li>Things/Pawns/Ears/FoxianEars</li>
+					<li>Things/Pawns/Ears/FoxianLongEars</li>
+				</texPaths>
 				<shaderTypeDef>CutoutComplex</shaderTypeDef>
 				<colorType>Hair</colorType>
-				<useSkinShader>false</useSkinShader>
-				<parentTagDef>Head</parentTagDef>
 				<useRottenColor>true</useRottenColor>
+				<useSkinShader>false</useSkinShader>
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<drawData>
 					<defaultData>
-					<layer>70</layer>
+						<layer>71</layer>
 					</defaultData>
 				</drawData>
 			</li>
@@ -56,18 +59,17 @@
 		<label>Fox tail</label>
 		<description>Carriers of this gene have a fox-like tail.</description>
 		<iconPath>UI/Icons/Genes/FL_Gene_Fox_Tail_Icon</iconPath>
+
 		<renderNodeProperties>
 			<li>
-				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<nodeClass>BetterGeneGraphicsFramework.PawnRenderNode_GeneAttachment</nodeClass>
+				<workerClass>BetterGeneGraphicsFramework.PawnRenderNodeWorker_GeneBodyAttachment</workerClass>
 				<parentTagDef>Body</parentTagDef>
-				<texPath>Things/Pawns/Tails/Female/FoxianOneTail_Female</texPath>
-				<bodyTypeGraphicPaths>
-					<Male>Things/Pawns/Tails/Male/FoxianNineTails_Male</Male>
-					<Female>Things/Pawns/Tails/Female/FoxianNineTails_Female</Female>
-					<Thin>Things/Pawns/Tails/Thin/FoxianNineTails_Thin</Thin>
-					<Hulk>Things/Pawns/Tails/Hulk/FoxianFiveTails_Hulk</Hulk>
-					<Fat>Things/Pawns/Tails/Fat/FoxianFiveTails_Fat</Fat>
-				</bodyTypeGraphicPaths>
+				<texPaths>
+					<li>Things/Pawns/Tails/OneTail/FoxianOneTail</li>
+					<li>Things/Pawns/Tails/OneTail/FoxianArchTail</li>
+					<li>Things/Pawns/Tails/OneTail/FoxianFluffyTail</li>
+				</texPaths>
 				<shaderTypeDef>CutoutComplex</shaderTypeDef>
 				<colorType>Hair</colorType>
 				<useRottenColor>true</useRottenColor>
@@ -81,20 +83,48 @@
 				</visibleFacing>
 				<drawData>
 					<defaultData>
-						<layer>1</layer>
+						<layer>-2</layer>
 					</defaultData>
 					<dataSouth>
-						<layer>-2</layer>
+						<offset>(0, 0, -0.1)</offset>
 					</dataSouth>
 					<dataNorth>
 						<layer>90</layer>
+						<offset>(0, 0, -0.2)</offset>
 					</dataNorth>
 					<dataEast>
-						<layer>70</layer>
+						<offset>(-0.25, 0, -0.15)</offset>
 					</dataEast>
+					<dataWest>
+						<offset>(0.25, 0, -0.15)</offset>
+					</dataWest>
 				</drawData>
 			</li>
 		</renderNodeProperties>
+		<modExtensions>
+			<li MayRequire="telardo.BetterGeneGraphicsFramework" Class="BetterGeneGraphicsFramework.WithBodyTypeOffset">
+				<disableBodyTypeScaleForAdult>true</disableBodyTypeScaleForAdult>
+				<bodyTypeOffsetNorth>
+					<thin>(0.01,0,0)</thin>
+					<hulk>(0,0,-0.13)</hulk>
+					<child>(0,0,0.12)</child>
+				</bodyTypeOffsetNorth>
+				<bodyTypeOffsetEast>
+					<male>(0.06,0,0.02)</male>
+					<thin>(-0.02,0,0.04)</thin>
+					<hulk>(-0.17,0,-0.11)</hulk>
+					<fat>(-0.15,0,0.01)</fat>
+					<child>(0.1,0,0.13)</child>
+				</bodyTypeOffsetEast>
+				<bodyTypeOffsetSouth>
+					<male>(0,0,0.06)</male>
+					<thin>(-0.06,0,0.04)</thin>
+					<hulk>(0.02,0,-0.05)</hulk>
+					<fat>(0.05,0,0.03)</fat>
+					<child>(-0.03,0,0.11)</child>
+				</bodyTypeOffsetSouth>
+			</li>
+		</modExtensions>
 	</GeneDef>
 
 	<GeneDef ParentName="FL_GeneTail">
@@ -121,17 +151,22 @@
 				</visibleFacing>
 				<drawData>
 					<defaultData>
-						<layer>1</layer>
+						<layer>-1</layer>
 					</defaultData>
 					<dataSouth>
 						<layer>-2</layer>
+						<offset>(0, 0, -0.1)</offset>
 					</dataSouth>
 					<dataNorth>
 						<layer>90</layer>
+						<offset>(0, 0, -0.18)</offset>
 					</dataNorth>
 					<dataEast>
-						<layer>71</layer>
+						<offset>(-0.5, 0, -0.1)</offset>
 					</dataEast>
+					<dataWest>
+						<offset>(0.5, 0, -0.1)</offset>
+					</dataWest>
 				</drawData>
 			</li>
 		</renderNodeProperties>
@@ -140,52 +175,46 @@
 				<ages>
 					<li>0</li>
 					<li>15</li>
-					<li>20</li>
-					<li>30</li>
-					<li>35</li>
+					<li>18</li>
+					<li>21</li>
+					<li>28</li>
 				</ages>
 				<graphicPaths>
-					<li>Things/Pawns/Tails/Female/FoxianOneTail_Female</li>
-					<li>Things/Pawns/Tails/Female/FoxianThreeTails_Female</li>
-					<li>Things/Pawns/Tails/Female/FoxianFiveTails_Female</li>
-					<li>Things/Pawns/Tails/Female/FoxianSevenTails_Female</li>
-					<li>Things/Pawns/Tails/Female/FoxianNineTails_Female</li>
+					<li>Things/Pawns/Tails/MultipleTails/FoxianOneTail</li>
+					<li>Things/Pawns/Tails/MultipleTails/FoxianThreeTails</li>
+					<li>Things/Pawns/Tails/MultipleTails/FoxianFiveTails</li>
+					<li>Things/Pawns/Tails/MultipleTails/FoxianSevenTails</li>
+					<li>Things/Pawns/Tails/MultipleTails/FoxianNineTails</li>
 				</graphicPaths>
-				<bodyTypeGraphicPaths>
-					<Female>Things/Pawns/Tails/Female/FoxianOneTail_Female</Female>
-					<Female>Things/Pawns/Tails/Female/FoxianThreeTails_Female</Female>
-					<Female>Things/Pawns/Tails/Female/FoxianFiveTails_Female</Female>
-					<Female>Things/Pawns/Tails/Female/FoxianSevenTails_Female</Female>
-					<Female>Things/Pawns/Tails/Female/FoxianNineTails_Female</Female>
-
-					<Male>Things/Pawns/Tails/Male/FoxianOneTail_Male</Male>
-					<Male>Things/Pawns/Tails/Male/FoxianThreeTails_Male</Male>
-					<Male>Things/Pawns/Tails/Male/FoxianFiveTails_Male</Male>
-					<Male>Things/Pawns/Tails/Male/FoxianSevenTails_Male</Male>
-					<Male>Things/Pawns/Tails/Male/FoxianNineTails_Male</Male>
-
-					<Thin>Things/Pawns/Tails/Thin/FoxianOneTail_Thin</Thin>
-					<Thin>Things/Pawns/Tails/Thin/FoxianThreeTails_Thin</Thin>
-					<Thin>Things/Pawns/Tails/Thin/FoxianFiveTails_Thin</Thin>
-					<Thin>Things/Pawns/Tails/Thin/FoxianSevenTails_Thin</Thin>
-					<Thin>Things/Pawns/Tails/Thin/FoxianNineTails_Thin</Thin>
-
-					<Hulk>Things/Pawns/Tails/Hulk/FoxianOneTail_Hulk</Hulk>
-					<Hulk>Things/Pawns/Tails/Hulk/FoxianThreeTails_Hulk</Hulk>
-					<Hulk>Things/Pawns/Tails/Hulk/FoxianFiveTails_Hulk</Hulk>
-					<Hulk>Things/Pawns/Tails/Hulk/FoxianSevenTails_Hulk</Hulk>
-					<Hulk>Things/Pawns/Tails/Hulk/FoxianNineTails_Hulk</Hulk>
-
-					<Fat>Things/Pawns/Tails/Fat/FoxianOneTail_Fat</Fat>
-					<Fat>Things/Pawns/Tails/Fat/FoxianThreeTails_Fat</Fat>
-					<Fat>Things/Pawns/Tails/Fat/FoxianFiveTails_Fat</Fat>
-					<Fat>Things/Pawns/Tails/Fat/FoxianSevenTails_Fat</Fat>
-					<Fat>Things/Pawns/Tails/Fat/FoxianNineTails_Fat</Fat>
-				</bodyTypeGraphicPaths>
 			</li>
 			<li MayRequire="telardo.BetterGeneGraphicsFramework" Class="BetterGeneGraphicsFramework.ShaderSupport">
 				<colorTwoType>Custom</colorTwoType>
 				<colorTwo>(245, 245, 245)</colorTwo>
+			</li>
+			<li MayRequire="telardo.BetterGeneGraphicsFramework" Class="BetterGeneGraphicsFramework.WithBodyTypeOffset">
+				<disableBodyTypeScaleForAdult>true</disableBodyTypeScaleForAdult>
+				<bodyTypeOffsetNorth>
+					<female>(0,0,0)</female>
+					<hulk>(0,0,0)</hulk>
+					<child>(0,0,0.03)</child>
+					<femaleBB MayRequire="ssulunge.BBBodySupport">(0,0,0)</femaleBB>
+				</bodyTypeOffsetNorth>
+				<bodyTypeOffsetEast>
+					<male>(0,0,0)</male>
+					<female>(0,0,0)</female>
+					<thin>(0,0,0)</thin>
+					<hulk>(0,0,0)</hulk>
+					<fat>(0,0,0)</fat>
+					<child>(0.02,0,0.08)</child>
+					<femaleBB MayRequire="ssulunge.BBBodySupport">(0,0,0)</femaleBB>
+				</bodyTypeOffsetEast>
+				<bodyTypeOffsetSouth>
+					<female>(0,0,0)</female>
+					<hulk>(0,0,0)</hulk>
+					<fat>(0,0,0)</fat>
+					<child>(-0.03,0,0.06)</child>
+					<femaleBB MayRequire="ssulunge.BBBodySupport">(0,0,0)</femaleBB>
+				</bodyTypeOffsetSouth>
 			</li>
 		</modExtensions>
 	</GeneDef>

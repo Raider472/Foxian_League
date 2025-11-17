@@ -17,7 +17,7 @@
             </li>
             <li>
                 <label>disturbing sword</label>
-                <description>When I tried to get rid of that sword, it talked to me and threatened me with words filled with malice and hatred. It said it would curse me for the rest of my life. Despite nothing happening after, I can't get myself to calm down over this disturbing experience.</description>
+                <description>When I tried to get rid of that sword, it talked to me and threatened me with words filled with malice and hatred. It said it would curse me for the rest of my life or kill the people I know and love. Despite nothing happening after, I can't bring myself to calm down over this disturbing experience.</description>
                 <baseMoodEffect>-25</baseMoodEffect>
             </li>
         </stages>

@@ -3,7 +3,7 @@
     <factionDef ParentName="PlayerFactionBase">
         <defName>FoxianPlayerColony</defName>
         <label>Foxian Refugees</label>
-        <description>A group of Foxian refugees who managed to survive after the destruction of their settlement.</description>
+        <description>A group of Foxian refugees who managed to survive the harsh world of the rim after the destruction of their settlement.</description>
         <isPlayer>true</isPlayer>
         <basicMemberKind>FL_Foxian_Colonist</basicMemberKind>
         <pawnSingular>foxian</pawnSingular>

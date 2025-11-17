@@ -23,7 +23,7 @@
                 </capMods>
                 <statFactors>
                     <InjuryHealingFactor>1.5</InjuryHealingFactor>
-                    <MeleeDamageFactor>1.25</MeleeDamageFactor>
+                    <MeleeDamageFactor>1.2</MeleeDamageFactor>
                 </statFactors>
                 <statOffsets>
                     <ImmunityGainSpeed>0.5</ImmunityGainSpeed>
