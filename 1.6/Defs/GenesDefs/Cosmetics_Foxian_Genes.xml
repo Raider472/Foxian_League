@@ -82,6 +82,7 @@
 					<li>North</li>
 				</visibleFacing>
 				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
 					<defaultData>
 						<layer>-2</layer>
 					</defaultData>
@@ -107,21 +108,21 @@
 				<bodyTypeOffsetNorth>
 					<thin>(0.01,0,0)</thin>
 					<hulk>(0,0,-0.13)</hulk>
-					<child>(0,0,0.12)</child>
+					<child>(0.01,0,0.03)</child>
 				</bodyTypeOffsetNorth>
 				<bodyTypeOffsetEast>
 					<male>(0.06,0,0.02)</male>
 					<thin>(-0.02,0,0.04)</thin>
 					<hulk>(-0.17,0,-0.11)</hulk>
 					<fat>(-0.15,0,0.01)</fat>
-					<child>(0.1,0,0.13)</child>
+					<child>(0.02,0,0.04)</child>
 				</bodyTypeOffsetEast>
 				<bodyTypeOffsetSouth>
 					<male>(0,0,0.06)</male>
 					<thin>(-0.06,0,0.04)</thin>
 					<hulk>(0.02,0,-0.05)</hulk>
 					<fat>(0.05,0,0.03)</fat>
-					<child>(-0.03,0,0.11)</child>
+					<child>(-0.03,0,0.08)</child>
 				</bodyTypeOffsetSouth>
 			</li>
 		</modExtensions>
@@ -150,6 +151,7 @@
 					<li>North</li>
 				</visibleFacing>
 				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
 					<defaultData>
 						<layer>-1</layer>
 					</defaultData>
@@ -194,29 +196,22 @@
 			<li MayRequire="telardo.BetterGeneGraphicsFramework" Class="BetterGeneGraphicsFramework.WithBodyTypeOffset">
 				<disableBodyTypeScaleForAdult>true</disableBodyTypeScaleForAdult>
 				<bodyTypeOffsetNorth>
-					<female>(0,0,0)</female>
-					<hulk>(0,0,0)</hulk>
-					<child>(0,0,0.03)</child>
+					<hulk>(0,0,-0.04)</hulk>
+					<child>(0.02,0,0.03)</child>
 					<femaleBB MayRequire="ssulunge.BBBodySupport">(0,0,0)</femaleBB>
 				</bodyTypeOffsetNorth>
 				<bodyTypeOffsetEast>
-					<male>(0,0,0)</male>
-					<female>(0,0,0)</female>
-					<thin>(0,0,0)</thin>
-					<hulk>(0,0,0)</hulk>
-					<fat>(0,0,0)</fat>
-					<child>(0.02,0,0.08)</child>
+					<hulk>(0,0,-0.06)</hulk>
+					<child>(0.01,0,0.07)</child>
 					<femaleBB MayRequire="ssulunge.BBBodySupport">(0,0,0)</femaleBB>
 				</bodyTypeOffsetEast>
 				<bodyTypeOffsetSouth>
-					<female>(0,0,0)</female>
-					<hulk>(0,0,0)</hulk>
+					<hulk>(0,0,-0.06)</hulk>
 					<fat>(0,0,0)</fat>
-					<child>(-0.03,0,0.06)</child>
+					<child>(-0.04,0,0.07)</child>
 					<femaleBB MayRequire="ssulunge.BBBodySupport">(0,0,0)</femaleBB>
 				</bodyTypeOffsetSouth>
 			</li>
 		</modExtensions>
 	</GeneDef>
-
 </Defs>
