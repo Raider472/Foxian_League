@@ -5,8 +5,6 @@ maybe option to allow girl only ? + chance for gender on non-foxian
     -I'm patching the pregnUtility applybirthoutcome to save the mother and make a letter when a foxian is born
 Check if genetic purity can be changed/refractor (removing mother field and etc.)
 
-Balance hediff dodge and armor
-
 Credit for inspiration
 
 -UI

@@ -5,11 +5,11 @@
         <label>Psychic channeling - 4</label>
         <stages>
             <li>
-            <statOffsets>
-                <MeleeDamageFactor>0.4</MeleeDamageFactor>
-                <MeleeCooldownFactor>-0.20</MeleeCooldownFactor>
-                <MeleeArmorPenetration>0.32</MeleeArmorPenetration>
-            </statOffsets>
+                <statOffsets>
+                    <MeleeDamageFactor>0.4</MeleeDamageFactor>
+                    <MeleeCooldownFactor>-0.20</MeleeCooldownFactor>
+                    <MeleeHitChance>6</MeleeHitChance>
+                </statOffsets>
             </li>
         </stages>
     </HediffDef>

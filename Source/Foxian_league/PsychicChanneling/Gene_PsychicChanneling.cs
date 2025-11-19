@@ -31,6 +31,18 @@ namespace Foxian_league {
             channelingStageRecent = currentChannelingStage;
             HediffUtils.SetHediffStage(hediffName, currentChannelingStage, pawn);
         }
+
+        public override int GetChannelingStage(float currentPawnPsySensitivity) {
+            return currentPawnPsySensitivity switch {
+                >= channelingStage1 and < channelingStage2 => 1,
+                >= channelingStage2 and < channelingStage3 => 2,
+                >= channelingStage3 and < channelingStage4 => 3,
+                >= channelingStage4 and < channelingStage5 => 4,
+                >= channelingStage5 => 5,
+                _ => 0,
+            };
+        }
+
         public override void PostAdd() {
             base.PostAdd();
             Log.Message("Test gene has been added");

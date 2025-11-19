@@ -8,7 +8,7 @@
             <statOffsets>
                 <MeleeDamageFactor>0.2</MeleeDamageFactor>
                 <MeleeCooldownFactor>-0.1</MeleeCooldownFactor>
-                <MeleeArmorPenetration>0.16</MeleeArmorPenetration>
+                <MeleeHitChance>3</MeleeHitChance>
             </statOffsets>
             </li>
         </stages>

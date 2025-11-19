@@ -41,6 +41,17 @@ namespace Foxian_league {
             }
         }
 
+        public override int GetChannelingStage(float currentPawnPsySensitivity) {
+            return currentPawnPsySensitivity switch {
+                >= channelingStage1 and < channelingStage2 => 1,
+                >= channelingStage2 and < channelingStage3 => 2,
+                >= channelingStage3 and < channelingStage4 => 3,
+                >= channelingStage4 and < channelingStage5 => 4,
+                >= channelingStage5 and < channelingStage6 => 5,
+                >= channelingStage6 => 6,
+                _ => 0,
+            };
+        }
         public override void PostAdd() {
             base.PostAdd();
             float PsychichSensiPawn = MathF.Round(pawn.GetStatValue(StatDefOf.PsychicSensitivity), 2);

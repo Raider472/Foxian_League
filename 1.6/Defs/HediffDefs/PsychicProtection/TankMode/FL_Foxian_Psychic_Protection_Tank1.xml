@@ -6,14 +6,14 @@
         <stages>
             <li>
             <statOffsets>
-                <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
-                <ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+                <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+                <ArmorRating_Sharp>0.07</ArmorRating_Sharp>
                 <StaggerDurationFactor>-0.1</StaggerDurationFactor>
                 <MoveSpeed>-0.04</MoveSpeed>
             </statOffsets>
             <statFactors>
                 <PainShockThreshold>1.1</PainShockThreshold>
-                <IncomingDamageFactor>0.95</IncomingDamageFactor>
+                <IncomingDamageFactor>0.96</IncomingDamageFactor>
             </statFactors>
             </li>
         </stages>

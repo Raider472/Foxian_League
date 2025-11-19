@@ -6,11 +6,10 @@
         <stages>
             <li>
             <statOffsets>
-                <MeleeDodgeChance>15</MeleeDodgeChance>
-                <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.2</VEF_RangedDodgeChance>
-                <InjuryHealingFactor>0.2</InjuryHealingFactor>
+                <MeleeDodgeChance>10</MeleeDodgeChance>
+                <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.4</VEF_RangedDodgeChance>
                 <StaggerDurationFactor>-0.25</StaggerDurationFactor>
-                <MoveSpeed>0.2</MoveSpeed>
+                <MoveSpeed>0.25</MoveSpeed>
             </statOffsets>
             <statFactors>
                 <PainShockThreshold>1.2</PainShockThreshold>
