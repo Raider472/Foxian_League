@@ -7,7 +7,7 @@
     <WindowEquipCursedBladeDesc>This sword is cursed with a malevolent spirit.\n\nIt feeds from the life force of any living beings killed by it and grants rewards to its user depending on how fed it is. However, if the wielder fails to nourish it for a long period of time, the sword will start draining the life force of the wielder until he meets his own demise.\n\nBesides, the sword will not part ways with its wearer easily and might try to fight back if unequipped. The worst possible situation in this case would be the wielder experiencing a berserk mental break.\n\nAre you sure you want to equip this sword ?</WindowEquipCursedBladeDesc>
     <FoxianModName>Foxian Race</FoxianModName>
     <FoxianModSettingsWarning>Changing any values might require a restart or reloading a save !</FoxianModSettingsWarning>
-    <FoxianInformation>You can get more information on each setting by hovering your mouse on the label.</FoxianInformation>
+    <FoxianInformation>You can get more information on each setting by hovering your mouse on the labels.</FoxianInformation>
     <FoxianInformationDesc>Yes, even this one...</FoxianInformationDesc>
     <HoverForInfo>(Hover for more informations)</HoverForInfo>
     <PsychicManipulationSettings>Psychic Manipulation Threshold</PsychicManipulationSettings>

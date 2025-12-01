@@ -28,7 +28,7 @@
 
 	<GeneDef ParentName="FL_GeneEars">
 		<defName>FL_FoxEar</defName>
-		<label>Fox ears</label>
+		<label>Foxian ears</label>
 		<description>Carriers of this gene have fox-like ears.</description>
 		<iconPath>UI/Icons/Genes/FL_Gene_Fox_Ears_Icon</iconPath>
 		<renderNodeProperties>
@@ -56,7 +56,7 @@
 
 	<GeneDef ParentName="FL_GeneTail">
 		<defName>FL_FoxTail</defName>
-		<label>Fox tail</label>
+		<label>Foxian tail</label>
 		<description>Carriers of this gene have a fox-like tail.</description>
 		<iconPath>UI/Icons/Genes/FL_Gene_Fox_Tail_Icon</iconPath>
 
@@ -130,7 +130,7 @@
 
 	<GeneDef ParentName="FL_GeneTail">
 		<defName>FL_NineFoxTail</defName>
-		<label>Nine Tailed Fox tail</label>
+		<label>Nine-tailed foxian tail</label>
 		<description>Carriers of this gene have multiple fox-like tails. More tails grow the older they get.</description>
 		<iconPath>UI/Icons/Genes/FL_Gene_NineTailFox_Tail_Icon</iconPath>
 

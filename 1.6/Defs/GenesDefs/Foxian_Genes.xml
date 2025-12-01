@@ -126,7 +126,8 @@
         </forcedTraits>
         <customEffectDescriptions>
             <li>This pawn is much more persuasive when converting others and is harder to convert</li>
-            <li>Gain mood bonus or malus depending on the certainty level</li>
+            <li>Gain a mood bonus or malus depending on the certainty level</li>
+            <li>Gain positive or negative relations with other pawns depending on their followed ideology or their certainty</li>
         </customEffectDescriptions>
         <biostatMet>-1</biostatMet>
         <biostatCpx>1</biostatCpx>
@@ -173,11 +174,11 @@
     <GeneDef>
         <defName>FL_PsychicManipulation</defName>
         <label>psychic manipulation</label>
-        <description>Carriers of this gene can influence other persons with their psychic sensitivity. The higher their sensitivity is, the higher their influence becomes</description>
+        <description>Carriers of this gene can influence other persons with their psychic sensitivity. The higher their sensitivity is, the higher their influence becomes.</description>
         <iconPath>UI/Icons/Genes/FL_Psy_Manipulation</iconPath>
         <geneClass>Foxian_league.Gene_PsychicManipulation</geneClass>
         <customEffectDescriptions>
-            <li>Each 25% psychic sensitivity beyond 100% will add a bonus point to this person's social aptitude</li>
+            <li>Each 25% psychic sensitivity beyond 100% will add a bonus aptitude point to this pawn's social aptitude</li>
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>105</displayOrderInCategory>
@@ -216,14 +217,10 @@
         <geneClass>Foxian_league.Gene_PsychicChanneling</geneClass>
         <customEffectDescriptions>
             <li>Grants a permanent effect that scales with the carrier's psychic sensitivity</li>
+            <li>5 different stages (125%, 150%, 175%, 200%, 250%)</li>
             <li>Maximum Melee Damage Factor +50%</li>
             <li>Maximum Melee Cooldown -25%</li>
             <li>Maximum Melee Hit Chance +7.5</li>
-            <li>Stage 1 (125% Psy-sensitivity)</li>
-            <li>Stage 2 (150% Psy-sensitivity)</li>
-            <li>Stage 3 (175% Psy-sensitivity)</li>
-            <li>Stage 4 (200% Psy-sensitivity)</li>
-            <li>Stage 5 (250% Psy-sensitivity)</li>
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>105</displayOrderInCategory>
@@ -244,14 +241,9 @@
         <geneClass>Foxian_league.Gene_PsychicProtection</geneClass>
         <customEffectDescriptions>
             <li>Grants an ability to switch between two modes. This gene grants a permanent effect that scales with the carrier's psychic sensitivity</li>
-            <li>(Default mode) Tank mode:\nMaximum Armor Blunt Protection +50%\nMaximum Armor Sharp Protection +40%\nMaximum Stagger Time Multiplier -50%\nMaximum Move Speed Malus -0.22\nMaximum Pain Shock Threshold x150%\nMaximum Incoming Damage Multiplier x75%</li>
+            <li>6 different stages (125%, 150%, 175%, 200%, 250%, 300%)</li>
+            <li>(Default mode) Tank mode:\nMaximum Armor Blunt Protection +50%\nMaximum Armor Sharp Protection +40%\nMaximum Stagger Time Multiplier -50%\nMaximum Move Speed -0.22\nMaximum Pain Shock Threshold x150%\nMaximum Incoming Damage Multiplier x75%</li>
             <li>(Alternative mode) Dodge mode:\nMaximum Ranged Dodge Chance +55%\nMaximum Melee Dodge Chance +20.0\nMaximum Stagger Time Multiplier -25%\nMaximum Move Speed Bonus 0.30\nMaximum Pain Shock Threshold x125%\nMaximum Incoming Damage Multiplier x85%</li>
-            <li>Stage 1 (125% Psy-sensitivity)</li>
-            <li>Stage 2 (150% Psy-sensitivity)</li>
-            <li>Stage 3 (175% Psy-sensitivity)</li>
-            <li>Stage 4 (200% Psy-sensitivity)</li>
-            <li>Stage 5 (250% Psy-sensitivity)</li>
-            <li>Stage 6 (300% Psy-sensitivity)</li>
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>105</displayOrderInCategory>
@@ -272,7 +264,7 @@
             <li>FL_LastStand_Ability</li>
         </abilities>
         <customEffectDescriptions>
-            <li>Last stand (2 hours):\nPsychic sensitivity -500\nIncoming Damage Multiplier x50%\nMelee Damage Factor x150\nPain Shock Threshold x150%</li>
+            <li>Last stand (2 hours):\nPsychic sensitivity -500%\nIncoming Damage Multiplier x50%\nMelee Damage Factor x150%\nPain Shock Threshold x150%</li>
             <li>Note: when this effect is active, all genes related to psychic sensitivity scaling will be disabled.</li>
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
@@ -310,7 +302,7 @@
     <GeneDef>
         <defName>FL_ToxicVulnerability</defName>
         <label>toxic vulnerability</label>
-        <description>Carriers of this gene are vulnerable to toxic buildup and environmental toxins. Such as pollution, toxic fallout, tox gas, and direct attacks with venom or injected poison</description>
+        <description>Carriers of this gene are vulnerable to toxic buildup and environmental toxins. Such as pollution, toxic fallout, tox gas, and direct attacks with venom or injected poison.</description>
         <iconPath>UI/Icons/Genes/FL_Toxic_Weakness</iconPath>
         <displayCategory>ResistanceAndWeakness</displayCategory>
         <displayOrderInCategory>10</displayOrderInCategory>
@@ -333,9 +325,9 @@
         <description>Carriers of this gene will birth a foxian if they are a foxian themselves. Otherwise, they are very likely to give birth to a female offspring with all endogenes or xenogenes inherited.</description>
         <iconPath>UI/Icons/Genes/FL_Genetic_Purity</iconPath>
         <customEffectDescriptions>
-            <li>This gene will follow one of the two behaviors if the mother is a Foxian or is considered foxian enough</li>
-            <li>Behaviour 1: The mother is foxian (or foxian enough). She will either birth a female child with the foxian xenotype, or in some rare cases, she will birth a special child with the greater foxian xenotype. That special child can either be a male or a female (it is more likely to be a male). Only the cosmetic genes, such as hair color or skin color, will be transmitted to the child</li>
-            <li>Behaviour 2: The mother is not a foxian. She will birth a normal child and transmit all of her endogenes to the offspring if this gene was active as an endogene. Otherwise, she will transmit all of her xenogenes.</li>
+            <li>This gene will follow one of the two behaviors below if the mother is considered a Foxian (or foxian enough) or not</li>
+            <li>Behavior 1: The mother is a Foxian (or foxian enough). She will either birth a female child with the foxian xenotype, or, in some rare cases, she will birth a special child with the greater foxian xenotype. That special child can either be a male or a female (it is more likely to be a male). Only the cosmetic genes, such as hair color or skin color, will be transmitted to the child</li>
+            <li>Behavior 2: The mother is not a Foxian. She will birth a normal child and transmit all of her endogenes to the offspring if this gene was active as an endogene. Otherwise, she will transmit all of her xenogenes.</li>
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>2</displayOrderInCategory>

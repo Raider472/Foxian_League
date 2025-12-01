@@ -58,7 +58,6 @@ namespace Foxian_league {
                 { "FL_Reserved", false },
                 { "FL_Composed", false },
                 { "FL_Emotionally_Brittle", false },
-                { "FL_Loyal", false },
                 { "FireWeakness", false }
             };
 
