@@ -3,7 +3,7 @@
     <ThingDef ParentName="FoxianClothing">
         <defName>FL_NobleFoxianApparel</defName>
         <label>noble foxian kimono</label>
-        <description>A very popular kimono coveted by the Foxian nobility, or anyone that can afford it. This outfit can also be found worn by curious nobles of the Empire.\n The reason for its popularity in the Foxian League is that their society considers high psychic sensitivity as a noble goal to strive for. The higher their psychic sensitivity is, the closer they think they are to nature.\n The kimono is embedded with eltex and was made with the best fabric possible to guarantee the highest enhancement of psychic sensitivity for its wearer. However, the outfit was not made to be used in combat in mind, at least not for the normal Foxians.</description>
+        <description>A very popular kimono coveted by the Foxian nobility, or anyone that can afford it. This outfit can also be found worn by curious nobles of the Empire.\n The reason for its popularity in the Foxian League is that their society considers high psychic sensitivity as a noble goal to strive for. Greater psychic sensitivity leads them to believe they are more in tune with nature.\n The kimono is embedded with eltex and was made with the best fabric possible to guarantee the highest enhancement of psychic sensitivity for its wearer. However, the outfit was not made to be used in combat in mind, at least not for the normal Foxians.</description>
         <graphicData>
             <texPath>Things/Pawns/Apparels/Kimono/Kimono</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -55,6 +55,7 @@
                 <li>NobleFoxianRobe</li>
                 <li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
                 <li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+                <li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier5</li>
                 <li MayRequire="Ludeon.RimWorld.Royalty">RoyalRobe</li>
             </tags>
         </apparel>
@@ -195,7 +196,7 @@
         </graphicData>
         <recipeMaker>
             <skillRequirements>
-                <Crafting>8</Crafting>
+                <Crafting>6</Crafting>
             </skillRequirements>
         </recipeMaker>
         <stuffCategories>
@@ -210,7 +211,7 @@
         <generateCommonality>2</generateCommonality>
         <statBases>
             <WorkToMake>11000</WorkToMake>
-            <MaxHitPoints>300</MaxHitPoints>
+            <MaxHitPoints>200</MaxHitPoints>
             <Mass>5.5</Mass>
             <Flammability>0.8</Flammability>
             <ArmorRating_Sharp>0.39</ArmorRating_Sharp>
@@ -248,7 +249,7 @@
 
     <ThingDef ParentName="FoxianHead">
         <defName>FL_OfficerFoxianCap</defName>
-        <label>officer foxian cap</label>
+        <label>foxian officer cap</label>
         <description>A cap embedded with eltex used by officers of the Foxian League army. This cap is more used as a status symbol than as a means of protection and is commonly used along with the uniform.</description>
         <graphicData>
             <texPath>Things/Pawns/Apparels/OfficerArmor/OfficerCap</texPath>
@@ -257,7 +258,7 @@
         </graphicData>
         <recipeMaker>
             <skillRequirements>
-                <Crafting>8</Crafting>
+                <Crafting>6</Crafting>
             </skillRequirements>
         </recipeMaker>
         <stuffCategories>

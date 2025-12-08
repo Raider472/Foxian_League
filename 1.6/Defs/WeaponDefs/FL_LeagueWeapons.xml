@@ -33,11 +33,6 @@
             <PsychicEntropyRecoveryRate>0.07</PsychicEntropyRecoveryRate>
             <SocialImpact>0.1</SocialImpact>
         </equippedStatOffsets>
-        <recipeMaker>
-            <skillRequirements>
-                <Crafting>7</Crafting>
-            </skillRequirements>
-        </recipeMaker>
         <burnableByRecipe>false</burnableByRecipe>
         <tools>
             <li>

@@ -5,7 +5,7 @@
         <label>paralysing dagger</label>
         <techLevel>Medieval</techLevel>
         <relicChance>0.5</relicChance>
-        <description>A badly forged dagger coated in a potent poison that will make someone numb and number for each consecutive hit. This weapon was created for the sole purpose of incapacitating someone.</description>
+        <description>A poorly forged dagger coated in a potent poison that will make someone numb and number for each consecutive hit. This weapon was created for the sole purpose of incapacitating someone.</description>
         <graphicData>
             <texPath>Things/Weapons/Poison_Dagger</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -229,6 +229,9 @@
         <statBases>
             <Mass>2.5</Mass>
         </statBases>
+        <equippedStatOffsets>
+            <PsychicSensitivityOffset>0.17</PsychicSensitivityOffset>
+        </equippedStatOffsets>
         <tools>
             <li>
                 <label>handle</label>
