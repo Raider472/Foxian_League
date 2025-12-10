@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 using Verse;
 
 namespace Foxian_league {
-    public class CompProperties_HediffOnHit : CompProperties {
+    public class CompProperties_PoisonousDagger : CompProperties {
         //Comp prop for adding an hediff on hit
         public HediffDef hediffOnHit;
         public float minValue;
         public float maxValue;
 
-        public CompProperties_HediffOnHit() {
-            compClass = typeof(Comp_HediffOnHit);
+        public CompProperties_PoisonousDagger() {
+            compClass = typeof(Comp_PoisonousDagger);
         }
     }
 }

@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Verse;
 
 namespace Foxian_league {
-    public class Comp_HediffOnHit : ThingComp {
+    public class Comp_PoisonousDagger : ThingComp {
         //Comp used to apply a hediff when a weapon hit something
-        public CompProperties_HediffOnHit Props => (CompProperties_HediffOnHit)props;
+        public CompProperties_PoisonousDagger Props => (CompProperties_PoisonousDagger)props;
 
         public override void Notify_UsedWeapon(Pawn pawn) {
             if (pawn == null) return;
@@ -17,8 +17,8 @@ namespace Foxian_league {
             LocalTargetInfo latestTarget = pawn.LastAttackedTarget;
             if (latestTarget != null && latestTarget.Pawn != null && !latestTarget.Pawn.IsShambler && !latestTarget.Pawn.RaceProps.IsMechanoid && !latestTarget.Pawn.Dead) {
                 Hediff hediffToChange;
-                Random rand = new Random();
-                float randomValue = (float)(rand.NextDouble() * (Props.maxValue - Props.minValue) + Props.minValue);
+                float randomValue = (Rand.Value * (Props.maxValue - Props.minValue) + Props.minValue);
+                Log.Message($"Here is Verse number {randomValue}");
                 if (latestTarget.Pawn.kindDef == PawnKindDefOf.Thrumbo || latestTarget.Pawn.kindDef == PawnKindDefOf.AlphaThrumbo) randomValue /= 10f;
                 if (latestTarget.Pawn.health.hediffSet.TryGetHediff(Props.hediffOnHit, out hediffToChange)) {
                     hediffToChange.Severity += randomValue;

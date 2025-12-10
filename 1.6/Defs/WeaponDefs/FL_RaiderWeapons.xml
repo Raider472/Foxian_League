@@ -54,7 +54,7 @@
             </li>
         </tools>
         <comps>
-            <li Class="Foxian_league.CompProperties_HediffOnHit">
+            <li Class="Foxian_league.CompProperties_PoisonousDagger">
                 <hediffOnHit>FL_Poisonous_Paralysis</hediffOnHit>
                 <minValue>0.04</minValue>
                 <maxValue>0.08</maxValue>
@@ -186,7 +186,7 @@
             </li>
         </tools>
         <comps>
-            <li Class="Foxian_league.ComProperties_AddHediffOnEquip">
+            <li Class="Foxian_league.ComProperties_CursedSwordBehaviour">
                 <hediffOnEquip>FL_Insatiable_Hunger</hediffOnEquip>
                 <hediffOnEquipAlt>FL_Insatiable_Hunger_Leader_Alt</hediffOnEquipAlt>
             </li>

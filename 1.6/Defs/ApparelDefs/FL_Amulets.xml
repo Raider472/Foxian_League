@@ -3,7 +3,7 @@
     <ThingDef ParentName="FoxianAmulet">
         <defName>FL_PsychicAmulet</defName>
         <label>psychic amulet</label>
-        <description>A jade amulet that is frequently worn by high psychic individuals in the Foxian League. Those wearing it claim it allows them greater focus and connection to the natural world while meditating. This amulet is the perfect choice for anyone who wants to become closer to nature.</description>
+        <description>A jade amulet that is frequently worn by high psychic individuals in the Foxian League. Those wearing it claim it allows them greater focus and connection to the natural world while meditating. This amulet is the perfect choice for anyone seeking to enhance their psychical capabilities.</description>
         <graphicData>
             <texPath>Things/Pawns/Apparels/AmuletJade/AmuletJade</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -30,7 +30,7 @@
     <ThingDef ParentName="FoxianAmulet">
         <defName>FL_DiplomatAmulet</defName>
         <label>diplomat amulet</label>
-        <description>A golden amulet that is commonly seen with diplomats from the Foxian League. Such a refined amulet allows them to be more impactful during diplomatic negotiations.</description>
+        <description>A golden amulet that is commonly seen with diplomats from the Foxian League. Such a refined amulet allows them to be more impactful during diplomatic missions.</description>
         <graphicData>
             <texPath>Things/Pawns/Apparels/AmuletGold/AmuletGold</texPath>
             <graphicClass>Graphic_Single</graphicClass>

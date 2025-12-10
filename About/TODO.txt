@@ -1,5 +1,8 @@
 Basic stuff
 
+IMPORTANT Replace Rand to Verse.Rand
+Use of randoms and gizmos might make the mod not compatible for multiplayer
+
 maybe option to allow girl only ? + chance for gender on non-foxian
     -Most mods use the PawnGenerator.GeneratePawn method
     -I'm patching the pregnUtility applybirthoutcome to save the mother and make a letter when a foxian is born

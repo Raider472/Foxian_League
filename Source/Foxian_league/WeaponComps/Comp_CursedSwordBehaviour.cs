@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Verse;
 
 namespace Foxian_league {
-    public class Comp_AddHediffOnEquip : ThingComp {
+    public class Comp_CursedSwordBehaviour : ThingComp {
         //Comp to add and hediff when equipped and to make the "Insatiable hunger" work
-        public ComProperties_AddHediffOnEquip Props => (ComProperties_AddHediffOnEquip)props;
+        public ComProperties_CursedSwordBehaviour Props => (ComProperties_CursedSwordBehaviour)props;
 
         public Dictionary<string, float> severityDict = new Dictionary<string, float>() {
             { "minShambler", 0.03f },
@@ -32,8 +32,7 @@ namespace Foxian_league {
             }
             Hediff hediffToAdd = HediffMaker.MakeHediff(Props.hediffOnEquip, pawn, null);
             if(!pawn.Faction.IsPlayer) {
-                Random rand = new Random();
-                float severity = (float)(rand.NextDouble() * (0.64 - 0.04) + 0.04);
+                float severity = (Rand.Value * (0.64f - 0.04f) + 0.04f);
                 hediffToAdd.Severity = severity;
             }
             Log.Message($"who is pawn: {pawn}, is pawn faction leader ? {PawnUtility.IsFactionLeader(pawn)}, is props alt there? {Props.hediffOnEquipAlt}");
@@ -77,10 +76,10 @@ namespace Foxian_league {
 
         public override void Notify_KilledPawn(Pawn pawn) {
             //Pawn is the pawn who killed
-            if (pawn == null) return;
+            if (pawn.GetType() != typeof(Pawn)) return;
             base.Notify_KilledPawn(pawn);
             LocalTargetInfo latestTarget = pawn.LastAttackedTarget;
-            Log.Message($"The killed Pawn is: {latestTarget}");
+            Log.Message($"The killed Pawn is: {latestTarget}, and here is the type {pawn.GetType()}");
             float severityToApply = CalculateSeverity(latestTarget);
             Log.Message($"Severity that will be added: {severityToApply}");
             if(pawn.health.hediffSet.TryGetHediff(Props.hediffOnEquip, out Hediff hediffRef)) {
@@ -98,8 +97,7 @@ namespace Foxian_league {
 
             float minimum = severityDict.GetValueOrDefault("min" + pawnCategory, 0f);
             float maximum = severityDict.GetValueOrDefault("max" + pawnCategory, 0f);
-            Random rand = new Random();
-            return (float)(rand.NextDouble() * (maximum - minimum) + minimum);
+            return (Rand.Value * (maximum - minimum) + minimum);
         }
 
         private string GetPawnCategory(Pawn pawn) {
