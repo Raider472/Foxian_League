@@ -229,6 +229,9 @@
                 <defaultData>
                     <layer>48</layer>
                 </defaultData>
+                <dataNorth>
+                    <layer>68</layer>
+                </dataNorth>
             </drawData>
             <careIfDamaged>false</careIfDamaged>
             <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>

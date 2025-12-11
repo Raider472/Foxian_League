@@ -1,6 +1,5 @@
 Basic stuff
 
-IMPORTANT Replace Rand to Verse.Rand
 Use of gizmos might make the mod not compatible for multiplayer
 
 maybe option to allow girl only ? + chance for gender on non-foxian
