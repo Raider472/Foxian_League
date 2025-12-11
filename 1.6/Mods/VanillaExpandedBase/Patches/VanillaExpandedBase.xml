@@ -1,0 +1,39 @@
+<Patch>
+    <!--Adds layouts of Vanilla expanded base to the foxian factions-->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/FactionDef[defName="Foxian_League"]</xpath>
+        <value>
+            <li Class="KCSG.CustomGenOption">
+                <chooseFromSettlements>
+                    <li>VBGE_OutlanderProduction</li>
+                    <li>VBGE_OutlanderMining</li>
+                    <li>VBGE_OutlanderSlavery</li>
+                    <li>VBGE_OutlanderLogging</li>
+                    <li>VBGE_OutlanderDefence</li>
+                    <li>VBGE_OutlanderFields</li>
+                </chooseFromSettlements>
+                <preventBridgeable>true</preventBridgeable>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/FactionDef[defName="Foxian_BloodRain"]</xpath>
+        <value>
+            <li Class="KCSG.CustomGenOption">
+                <chooseFromSettlements>
+                    <li>VBGE_PirateSlavery</li>
+                    <li>VBGE_PiratesDefence</li>
+                </chooseFromSettlements>
+                <preventBridgeable>true</preventBridgeable>
+                <symbolResolvers>
+                    <li>kcsg_randomfilth</li>
+                </symbolResolvers>
+                <filthTypes>
+                    <li>Filth_Dirt</li>
+                    <li>Filth_Trash</li>
+                    <li>Filth_RubbleBuilding</li>
+                </filthTypes>
+            </li>
+        </value>
+    </Operation>
+</Patch>
