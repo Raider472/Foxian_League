@@ -21,10 +21,10 @@
         <description>Carriers of this gene are more likely to engage in lovin' with their partner, regardless of their genders.</description>
         <iconPath>UI/Icons/Genes/FL_Lustful</iconPath>
         <customEffectDescriptions>
-			<li>Highly increase the chance of lovin'.</li>
+			<li>Slightly increase the chance of lovin'.</li>
 		</customEffectDescriptions>
         <displayOrderInCategory>15</displayOrderInCategory>
-        <lovinMTBFactor>0.3</lovinMTBFactor>
+        <lovinMTBFactor>0.7</lovinMTBFactor>
         <forcedTraits>
             <li>
                 <def>Bisexual</def>
@@ -250,7 +250,7 @@
         <exclusionTags>
             <li>FL_PsychicProtection</li>
         </exclusionTags>
-        <biostatMet>-4</biostatMet>
+        <biostatMet>-3</biostatMet>
         <biostatCpx>3</biostatCpx>
     </GeneDef>
 
@@ -265,6 +265,7 @@
         </abilities>
         <customEffectDescriptions>
             <li>Last stand (2 hours):\nPsychic sensitivity -500%\nIncoming Damage Multiplier x50%\nMelee Damage Factor x150%\nPain Shock Threshold x150%</li>
+            <li>While this effect is active, bleeding wounds close very quickly.</li>
             <li>Note: when this effect is active, all genes related to psychic sensitivity scaling will be disabled.</li>
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>

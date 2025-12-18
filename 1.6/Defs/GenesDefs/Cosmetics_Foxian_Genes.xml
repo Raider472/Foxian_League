@@ -47,11 +47,8 @@
 				<rotDrawMode>Fresh, Rotting</rotDrawMode>
 				<drawData>
 					<defaultData>
-						<layer>70</layer>
-					</defaultData>
-					<dataSouth>
 						<layer>72</layer>
-					</dataSouth>
+					</defaultData>
 				</drawData>
 			</li>
 		</renderNodeProperties>

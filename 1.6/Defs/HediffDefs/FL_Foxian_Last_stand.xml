@@ -5,7 +5,7 @@
         <label>Last stand</label>
         <defaultLabelColor>(0.2, 1, 0.35)</defaultLabelColor>
         <description>This person is condensing all of his psychic power in an attempt for a last stand. It will be much harder to kill it, and an explosion will occur if it is killed in that state. Once this effect expires, this person will enter a coma for a few days.</description>
-        <hediffClass>HediffWithComps</hediffClass>
+        <hediffClass>Foxian_league.Hediff_Clotting</hediffClass>
         <everCurableByItem>false</everCurableByItem>
         <isBad>false</isBad>
         <scenarioCanAdd>false</scenarioCanAdd>

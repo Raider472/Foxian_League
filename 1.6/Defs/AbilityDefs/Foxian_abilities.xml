@@ -48,7 +48,7 @@
     <AbilityDef>
         <defName>FL_LastStand_Ability</defName>
         <label>last stand</label>
-        <description>Give this person a special effect that will grant him huge bonus stats in combat, such as reducing incoming damage by half, increasing the melee damage factor, and increasing the pain shock threshold. This effect will last for 2 hours, and once it expires, this person will fall into a coma for 2 days. If this person dies during the initial effect, a small but deadly explosion will be triggered around this person's body. Additionally, if this person has a psyfocus need, using this ability will drain all of it.</description>
+        <description>Give this person a special effect that will grant him huge bonus stats in combat, such as reducing incoming damage by half, increasing the melee damage factor, and increasing the pain shock threshold. While this effect is active, bleeding wounds close very quickly. This effect will last for 2 hours, and once it expires, this person will fall into a coma for 2 days. If this person dies during the initial effect, a small but deadly explosion will be triggered around this person's body. Additionally, if this person has a psyfocus need, using this ability will drain all of it.</description>
         <jobDef>CastAbilityOnThing</jobDef>
         <targetRequired>False</targetRequired>
         <canUseAoeToGetTargets>False</canUseAoeToGetTargets>

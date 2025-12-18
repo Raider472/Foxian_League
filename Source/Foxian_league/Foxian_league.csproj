@@ -54,6 +54,7 @@
     <Compile Include="GeneticPurity\Patch_PregnancyUtility_ApplyBirthOutcome.cs" />
     <Compile Include="GeneticPurity\Patch_PregnancyUtility_TryGetInheritedXenotype.cs" />
     <Compile Include="Gene_PsychicStage.cs" />
+    <Compile Include="HediffComps\Hediff_clotting.cs" />
     <Compile Include="HediffComps\Hediff_ShowSeverity.cs" />
     <Compile Include="HediffUtils.cs" />
     <Compile Include="LastStand\Comp_AddHediffLastStand.cs" />
