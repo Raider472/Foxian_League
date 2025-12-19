@@ -16,11 +16,9 @@ namespace Foxian_league {
         public static void Postfix(ref Thought_Memory newThought, Pawn otherPawn, MemoryThoughtHandler __instance) {
             if (newThought == null || !__instance.pawn.story.traits.HasTrait(InternalDefOf.FL_Reserved_Trait)) return;
             if (newThought.CurStage.baseMoodEffect < 0) {
-                Log.Message($"Pawn has trait {__instance.pawn.story.traits.HasTrait(InternalDefOf.FL_Reserved_Trait)}");
                 int totalMoodEffect = (int)Math.Round(newThought.CurStage.baseMoodEffect * newThought.moodPowerFactor);
                 int offsetMood = (int)Math.Round(totalMoodEffect * 0.25);
 
-                Log.Message(offsetMood);
                 newThought.moodOffset = offsetMood;
                 newThought.durationTicksOverride = Mathf.RoundToInt(newThought.DurationTicks * 1.5f);
                 // moodpowerfactor seems to be a total percentage

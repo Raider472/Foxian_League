@@ -19,9 +19,7 @@ namespace Foxian_league {
         public static void PostFix(ref float __result, Pawn initiator) {
             if (initiator == null) return;
             if (Utils.HasActiveGene(initiator, InternalDefOf.FL_Composed)) {
-                Log.Message($"Here is result of negativity interaction before: {__result}");
                 __result *= ComposedSelectionChanceFactor;
-                Log.Message($"Here is result of negativity interaction after: {__result}");
             }
             return;
         }

@@ -18,7 +18,6 @@ namespace Foxian_league {
             if (__result == 0) return;
             if (pawn == Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.actualAnimal && Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.actualTamer.GetStatValue(StatDefOf.PsychicSensitivity) >= Foxian_Settings.animalConnectionFactorTrigger) {
                 __result *= 0.75f;
-                Log.Message($"Change when pawn has gene: {__result} and pawn is: {pawn}");
             }
             return;
         }

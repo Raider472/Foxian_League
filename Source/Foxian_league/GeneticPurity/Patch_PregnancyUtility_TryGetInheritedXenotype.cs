@@ -29,7 +29,6 @@ namespace Foxian_league {
                     xenotype = mother.genes.Xenotype;
                 }
                 __result = true;
-                Log.Message($"Here is current xenotype after tryGetInheritedXenotype: {xenotype} + if is greater foxian: {Patch_PawnGenerator_GeneratePawn.isBabyGreaterFoxian}");
             }
             return;
         }

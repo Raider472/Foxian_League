@@ -16,7 +16,6 @@ namespace Foxian_league {
         public static void Postfix(ref FloatMenuOption __result, Thing clickedThing, FloatMenuContext context) {
             if (clickedThing == null || !clickedThing.HasComp<CompEquippable>() || !clickedThing.HasComp<Comp_CursedSwordBehaviour>()) return;
             if(clickedThing.def.IsWeapon && IsThingEquippable(clickedThing, context)) {
-                Log.Message("Harmony Patch FloatMenu Test");
                 __result = FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption("Equip".Translate(clickedThing.LabelShort), delegate {
                     Find.WindowStack.Add(new Dialog_MessageBox("WindowEquipCursedBladeDesc".Translate(), "Yes".Translate(), delegate {
                         Equip(clickedThing, context);

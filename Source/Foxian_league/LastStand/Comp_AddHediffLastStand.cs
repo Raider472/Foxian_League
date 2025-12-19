@@ -13,7 +13,6 @@ namespace Foxian_league {
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest) {
             base.Apply(target, dest);
             if (parent.pawn.psychicEntropy.NeedsPsyfocus) {
-                Log.Message("Amogus Last Stand");
                 parent.pawn.psychicEntropy.OffsetPsyfocusDirectly(-1f);
             }
         }

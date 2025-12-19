@@ -17,18 +17,14 @@ namespace Foxian_league {
         public override void TickInterval(int delta) {
             base.TickInterval(delta);
             if (!pawn.IsHashIntervalTick(150)) {
-                //Log.Message($"{tickInterval}");
                 return;
             }
             float PsychichSensiPawn = MathF.Round(pawn.GetStatValue(StatDefOf.PsychicSensitivity), 2);
             if (psychicSensitivityRecent == PsychichSensiPawn) return;
             psychicSensitivityRecent = PsychichSensiPawn;
             int currentChannelingStage = GetChannelingStage(PsychichSensiPawn);
-            Log.Message($"recent psychic sens: {psychicSensitivityRecent} and recent ChannState: {channelingStageRecent}");
-            Log.Message($"current psychic sens: {PsychichSensiPawn} and current ChannState: {currentChannelingStage}");
 
             if (currentChannelingStage == channelingStageRecent) return;
-            Log.Message("current channel is not the same as recent one");
             if (isAlternateMode) {
                 HediffUtils.RemoveHediffStage(hediffNameAlternate, channelingStageRecent, pawn);
                 channelingStageRecent = currentChannelingStage;

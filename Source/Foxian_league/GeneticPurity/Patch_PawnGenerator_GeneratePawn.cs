@@ -30,42 +30,31 @@ namespace Foxian_league {
             request.ForcedEndogenes = babyCosmeticGenes;
 
             if (Utils.IsFoxian(mother) || Utils.IsGreaterFoxian(mother) || Utils.IsPawnFoxianEnough(mother) || !Foxian_Settings.isPawnFoxianTrigger) {
-                Log.Message("MOTHER IS FOXIAN");
                 bool isBabyNormalFoxian = Rand.Chance(Foxian_Settings.xenotypeAChance);
                 request.ForcedXenotype = isBabyNormalFoxian ? xenotypeA : xenotypeB;
-                Log.Message($"forced custom xenotype: {request.ForcedCustomXenotype}");
 
                 if (!isBabyNormalFoxian) {
                     isBabyGreaterFoxian = true;
                     request.FixedGender = Rand.Chance(Foxian_Settings.xenotypeMaleChance) ? Gender.Male : Gender.Female;
-                    Log.Message($"Baby Gender is: {request.FixedGender}");
                 }
                 else {
                     request.FixedGender = Gender.Female;
                 }
-                Log.Message($"forced after op xenotype: {request.ForcedXenotype}");
             }
             else {
-                Log.Message("MOTHER IS NOT FOXIAN");
                 request.FixedGender = Rand.Chance(Foxian_Settings.xenotypeFemaleChanceAlt) ? Gender.Female : Gender.Male;
 
                 if (mother.genes.HasEndogene(InternalDefOf.FL_GeneticPurity)) {
-                    Log.Message("Mother has the Gene as Endogene");
                     for (int i = 0; i < mother.genes.Endogenes.Count; i++) {
                         request.AddForcedGene(mother.genes.Endogenes[i].def, false);
-                        Log.Message($"{mother.genes.Endogenes[i].def}");
                     }
                 }
                 else {
-                    Log.Message("Mother has the Gene as Xenogene");
                     for (int i = 0; i < mother.genes.Xenogenes.Count; i++) {
                         request.AddForcedGene(mother.genes.Xenogenes[i].def, false);
-                        Log.Message($"{mother.genes.Xenogenes[i].def}");
                     }
                 }
-                Log.Message("GENERATION DONE");
             }
-            Log.Message($"Is baby greater foxian ? {isBabyGreaterFoxian}");
             return;
         }
     }

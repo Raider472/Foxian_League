@@ -24,10 +24,8 @@ namespace Foxian_league {
 
         public override void Notify_Equipped(Pawn pawn) {
             if (pawn == null || Props.hediffOnEquip == null) return;
-            Log.Message($"Pawn: {pawn} will receive the effect");
             base.Notify_Equipped(pawn);
             if (pawn.health.hediffSet.TryGetHediff(Props.hediffOnEquip, out Hediff hediff)) {
-                Log.Message("This pawn already has the hediff");
                 return;
             }
             Hediff hediffToAdd = HediffMaker.MakeHediff(Props.hediffOnEquip, pawn, null);
@@ -35,9 +33,7 @@ namespace Foxian_league {
                 float severity = (Rand.Value * (0.64f - 0.04f) + 0.04f);
                 hediffToAdd.Severity = severity;
             }
-            Log.Message($"who is pawn: {pawn}, is pawn faction leader ? {PawnUtility.IsFactionLeader(pawn)}, is props alt there? {Props.hediffOnEquipAlt}");
             if(pawn.Faction.leader == null && !pawn.Faction.IsPlayer && Props.hediffOnEquipAlt != null) {
-                Log.Message($"pawn is a non player faction leader: {pawn}");
                 hediffToAdd = HediffMaker.MakeHediff(Props.hediffOnEquipAlt, pawn, null);
             }
             pawn.health.AddHediff(hediffToAdd);
@@ -47,11 +43,9 @@ namespace Foxian_league {
             if (pawn == null || pawn.Dead) return;
             base.Notify_Unequipped(pawn);
             if (pawn.health.InPainShock) {
-                Log.Message("Help this pawn plssssssss");
                 pawn.needs.mood.thoughts.memories.TryGainMemoryFast(InternalDefOf.FL_CursedSwordRemoved, 0);
             }
             else {
-                Log.Message("He did this on his own");
                 if (Rand.Chance(0.49f)) {
                     pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, "CursedSwordBerseker".Translate(pawn), true);
                 }
@@ -60,7 +54,6 @@ namespace Foxian_league {
                         pawn.needs.mood.thoughts.memories.TryGainMemoryFast(InternalDefOf.FL_CursedSwordRemoved, 1);
                     }
                     else {
-                        Log.Message("Comma time");
                         Hediff comaHediff = HediffMaker.MakeHediff(InternalDefOf.FL_PsychicComaRandom, pawn, null);
                         pawn.health.AddHediff(comaHediff);
                     }
@@ -79,9 +72,7 @@ namespace Foxian_league {
             if (pawn.GetType() != typeof(Pawn)) return;
             base.Notify_KilledPawn(pawn);
             LocalTargetInfo latestTarget = pawn.LastAttackedTarget;
-            Log.Message($"The killed Pawn is: {latestTarget}, and here is the type {pawn.GetType()}");
             float severityToApply = CalculateSeverity(latestTarget);
-            Log.Message($"Severity that will be added: {severityToApply}");
             if(pawn.health.hediffSet.TryGetHediff(Props.hediffOnEquip, out Hediff hediffRef)) {
                 hediffRef.Severity -= severityToApply;
             }
@@ -92,7 +83,6 @@ namespace Foxian_league {
             if (latestTarget == null) return 0f;
 
             string pawnCategory = GetPawnCategory(latestTarget.Pawn);
-            Log.Message($"Catgeory is: {pawnCategory}");
             if (pawnCategory == null) return 0f;
 
             float minimum = severityDict.GetValueOrDefault("min" + pawnCategory, 0f);

@@ -24,7 +24,6 @@ namespace Foxian_league {
         [HarmonyPrefix]
         public static bool Prefix(Pawn geneticMother) {
             if (geneticMother == null || !Utils.HasActiveGene(geneticMother, InternalDefOf.FL_GeneticPurity)) return true;
-            Log.Message("Genetic mother had the genes - BGI Edition");
             return false;
         }
     }

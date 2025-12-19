@@ -17,12 +17,10 @@ namespace Foxian_league {
             Gene_PsychicProtection gene = getPsychicProtectionGene();
             string hediffName;
             if (isAlternateMode) {
-                Log.Message($"Ability was alternate and pawn is {parent.pawn}");
                 ProtectionProps.hediffDef = ProtectionProps.defaultHediff;
                 hediffName = "FL_PsychichProtectionDodge";
             }
             else {
-                Log.Message($"Ability was normal and pawn is {parent.pawn}");
                 ProtectionProps.hediffDef = ProtectionProps.alternatetHediff;
                 hediffName = "FL_PsychichProtectionTank";
             }
@@ -33,7 +31,6 @@ namespace Foxian_league {
                 gene.psychicSensitivityRecent = 0f;
                 gene.channelingStageRecent = 0;
             }
-            Log.Message($"Here is the gene: {gene}, {gene.isAlternateMode}, {isAlternateMode}");
             base.Apply(target, dest);
         }
 
