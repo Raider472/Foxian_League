@@ -327,8 +327,8 @@
         <iconPath>UI/Icons/Genes/FL_Genetic_Purity</iconPath>
         <customEffectDescriptions>
             <li>This gene will follow one of the two behaviors below if the mother is considered a Foxian (or foxian enough) or not</li>
-            <li>Behavior 1: The mother is a Foxian (or foxian enough). She will either birth a female child with the foxian xenotype, or, in some rare cases, she will birth a special child with the greater foxian xenotype. That special child can either be a male or a female (it is more likely to be a male). Only the cosmetic genes, such as hair color or skin color, will be transmitted to the child</li>
-            <li>Behavior 2: The mother is not a Foxian. She will birth a normal child and transmit all of her endogenes to the offspring if this gene was active as an endogene. Otherwise, she will transmit all of her xenogenes.</li>
+            <li>Case 1: The mother is a Foxian (or foxian enough). She will either birth a female child with the foxian xenotype, or, in some rare cases, she will birth a special child with the greater foxian xenotype. That special child can either be a male or a female (it is more likely to be a male). Only the cosmetic genes, such as hair color or skin color, will be transmitted to the child</li>
+            <li>Case 2: The mother is not a Foxian. She will birth a normal child and transmit all of her endogenes to the offspring if this gene was active as an endogene. Otherwise, she will transmit all of her xenogenes.</li>
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>2</displayOrderInCategory>
