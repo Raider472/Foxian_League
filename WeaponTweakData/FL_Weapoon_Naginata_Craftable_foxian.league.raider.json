@@ -1,0 +1,20 @@
+{
+  "TextureModID": "foxian.league.raider",
+  "ItemDefName": "FL_Weapoon_Naginata_Craftable",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.331360936,
+  "OffY": 0.0435233153,
+  "Rotation": 40.0,
+  "ScaleX": 1.1,
+  "ScaleY": 1.1,
+  "BladeStart": 0.469428,
+  "BladeEnd": 1.009862,
+  "MeleeWeaponType": 6,
+  "TrailTint": {
+    "r": 0.3575,
+    "g": 0.8160168,
+    "b": 0.9166667,
+    "a": 0.62
+  }
+}

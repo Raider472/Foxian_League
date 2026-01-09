@@ -1,0 +1,20 @@
+{
+  "TextureModID": "foxian.league.raider",
+  "ItemDefName": "FL_Weapon_CursedSword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.579881668,
+  "OffY": 0.0552268252,
+  "Rotation": 40.0,
+  "ScaleX": 1.2,
+  "ScaleY": 1.2,
+  "BladeStart": 0.142011836,
+  "BladeEnd": 1.37672579,
+  "MeleeWeaponType": 6,
+  "TrailTint": {
+    "r": 0.7833333,
+    "g": 0.174944416,
+    "b": 0.296622366,
+    "a": 0.5933333
+  }
+}
