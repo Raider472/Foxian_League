@@ -1,0 +1,14 @@
+{
+  "TextureModID": "foxian.league.raider",
+  "ItemDefName": "FL_Weapon_OfficerKatana",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.391709834,
+  "OffY": -0.00621761661,
+  "Rotation": 45.0,
+  "ScaleX": 0.95,
+  "ScaleY": 0.95,
+  "BladeStart": 0.126424864,
+  "BladeEnd": 0.9637306,
+  "MeleeWeaponType": 6
+}
