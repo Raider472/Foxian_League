@@ -5,32 +5,28 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="FL_NobleFoxianApparel"]/costList/Plasteel</xpath>
         <value>
-            <VPE_Eltex>12</VPE_Eltex>
+            <VPE_Eltex>5</VPE_Eltex>
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/ThingDef[defName="FL_NobleFoxianApparel"]/costList/Hyperweave</xpath>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="FL_NobleFoxianArmor"]/costList/Plasteel</xpath>
-        <value>
-            <VPE_Eltex>8</VPE_Eltex>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="FL_NobleFoxianHelmet"]/costList/Plasteel</xpath>
-        <value>
-            <VPE_Eltex>2</VPE_Eltex>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="FL_OfficerFoxianArmor"]/costList/Plasteel</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="FL_NobleFoxianArmor"]/costList</xpath>
         <value>
             <VPE_Eltex>4</VPE_Eltex>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="FL_NobleFoxianHelmet"]/costList</xpath>
+        <value>
+            <VPE_Eltex>1</VPE_Eltex>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="FL_OfficerFoxianArmor"]/costList</xpath>
+        <value>
+            <VPE_Eltex>1</VPE_Eltex>
         </value>
     </Operation>
 
@@ -42,17 +38,17 @@
     </Operation>
 
     <!-- Weapon -->
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="FL_Weapon_OfficerKatana"]/costList/Plasteel</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="FL_Weapon_OfficerKatana"]/costList</xpath>
         <value>
             <VPE_Eltex>2</VPE_Eltex>
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="FL_Weapoon_Naginata_Craftable"]/costList/Plasteel</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="FL_Weapoon_Naginata_Craftable"]/costList</xpath>
         <value>
-            <VPE_Eltex>5</VPE_Eltex>
+            <VPE_Eltex>4</VPE_Eltex>
         </value>
     </Operation>
 </Patch>

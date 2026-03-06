@@ -18,4 +18,13 @@
             </value>
         </nomatch>
     </Operation>
+
+    <Operation Class="PatchOperationAdd"> 
+        <xpath>Defs/TraitDef[defName="FL_Reserved_Trait"]</xpath>
+        <value>
+            <conflictingTraits>
+                <li>VRE_Distressed</li>
+            </conflictingTraits>
+        </value>
+    </Operation>
 </Patch>
