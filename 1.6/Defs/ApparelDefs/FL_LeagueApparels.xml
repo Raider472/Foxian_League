@@ -13,10 +13,10 @@
                 <Crafting>8</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <costStuffCount>70</costStuffCount>
+        <costStuffCount>75</costStuffCount>
         <costList>
-            <Hyperweave>75</Hyperweave>
-            <Plasteel>55</Plasteel>
+            <Hyperweave>50</Hyperweave>
+            <Plasteel>25</Plasteel>
         </costList>
         <stuffCategories>
             <li>Fabric</li>
@@ -72,7 +72,7 @@
         </graphicData>
         <recipeMaker>
             <skillRequirements>
-                <Crafting>12</Crafting>
+                <Crafting>10</Crafting>
             </skillRequirements>
         </recipeMaker>
         <stuffCategories>
@@ -82,7 +82,7 @@
         <costList>
             <ComponentSpacer>1</ComponentSpacer>
             <ComponentIndustrial>2</ComponentIndustrial>
-            <Plasteel>120</Plasteel>
+            <Plasteel>90</Plasteel>
         </costList>
         <generateCommonality>2</generateCommonality>
         <statBases>
@@ -138,7 +138,7 @@
         </graphicData>
         <recipeMaker>
             <skillRequirements>
-                <Crafting>12</Crafting>
+                <Crafting>10</Crafting>
             </skillRequirements>
         </recipeMaker>
         <stuffCategories>
@@ -147,7 +147,7 @@
         <costStuffCount>30</costStuffCount>
         <costList>
             <ComponentSpacer>1</ComponentSpacer>
-            <Plasteel>40</Plasteel>
+            <Plasteel>30</Plasteel>
         </costList>
         <statBases>
             <WorkToMake>18000</WorkToMake>
@@ -206,7 +206,7 @@
         <costList>
             <ComponentIndustrial>1</ComponentIndustrial>
             <Steel>50</Steel>
-            <Plasteel>35</Plasteel>
+            <Plasteel>20</Plasteel>
         </costList>
         <generateCommonality>2</generateCommonality>
         <statBases>
