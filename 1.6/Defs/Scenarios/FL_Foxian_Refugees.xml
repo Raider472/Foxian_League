@@ -39,7 +39,7 @@
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>Silver</thingDef>
-                <count>400</count>
+                <count>500</count>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
@@ -68,14 +68,19 @@
                 <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
                     <thingDef>MeleeWeapon_LongSword</thingDef>
+                    <quality>Good</quality>
                     <stuff>Steel</stuff>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                    <thingDef>Gun_Autopistol</thingDef>
                 </li>
 
                 <!-- Scatter some things near player start -->
                 <li Class="ScenPart_ScatterThingsNearPlayerStart">
                     <def>ScatterThingsNearPlayerStart</def>
                     <thingDef>Steel</thingDef>
-                    <count>300</count>
+                    <count>400</count>
                 </li>
                 <li Class="ScenPart_ScatterThingsNearPlayerStart">
                     <def>ScatterThingsNearPlayerStart</def>
@@ -88,7 +93,7 @@
                     <affectStartingGoodwill>True</affectStartingGoodwill>
                     <startingGoodwillRange>25~75</startingGoodwillRange>
                     <affectNaturalGoodwill>True</affectNaturalGoodwill>
-                    <naturalGoodwillRange>0~50</naturalGoodwillRange>
+                    <naturalGoodwillRange>25~75</naturalGoodwillRange>
                     <def>VFEC_ForcedFactionGoodwill</def>
                 </li>
                 <!-- Game start dialog -->
