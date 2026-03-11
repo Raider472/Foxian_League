@@ -92,16 +92,17 @@
             <Flammability>0.4</Flammability>
             <ArmorRating_Sharp>0.81</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.37</ArmorRating_Heat>
+            <ArmorRating_Heat>0.80</ArmorRating_Heat>
             <Insulation_Cold>60</Insulation_Cold>
-            <Insulation_Heat>7</Insulation_Heat>
+            <Insulation_Heat>60</Insulation_Heat>
             <EquipDelay>9</EquipDelay>
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-0.3</MoveSpeed>
+            <Flammability>-0.25</Flammability>
             <PsychicSensitivityOffset>0.45</PsychicSensitivityOffset>
             <PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
-            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.25</VacuumResistance>
         </equippedStatOffsets>
         <apparel>
             <bodyPartGroups>
@@ -156,15 +157,15 @@
             <Flammability>0.4</Flammability>
             <ArmorRating_Sharp>0.81</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.37</ArmorRating_Heat>
+            <ArmorRating_Heat>0.80</ArmorRating_Heat>
             <Insulation_Cold>3</Insulation_Cold>
-            <Insulation_Heat>1</Insulation_Heat>
+            <Insulation_Heat>3</Insulation_Heat>
             <EquipDelay>3.5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <PsychicSensitivityOffset>0.15</PsychicSensitivityOffset>
+            <PsychicSensitivityOffset>0.2</PsychicSensitivityOffset>
             <PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
-            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.15</VacuumResistance>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.42</VacuumResistance>
         </equippedStatOffsets>
         <apparel>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -213,17 +214,17 @@
             <WorkToMake>11000</WorkToMake>
             <MaxHitPoints>200</MaxHitPoints>
             <Mass>5.5</Mass>
-            <Flammability>0.8</Flammability>
+            <Flammability>0.6</Flammability>
             <ArmorRating_Sharp>0.39</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.11</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.14</ArmorRating_Heat>
+            <ArmorRating_Heat>0.5</ArmorRating_Heat>
             <Insulation_Cold>12</Insulation_Cold>
-            <Insulation_Heat>2</Insulation_Heat>
+            <Insulation_Heat>8</Insulation_Heat>
             <EquipDelay>4</EquipDelay>
         </statBases>
         <equippedStatOffsets>
             <PsychicSensitivityOffset>0.3</PsychicSensitivityOffset>
-            <PsychicEntropyRecoveryRate>0.15</PsychicEntropyRecoveryRate>
+            <PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
             <SocialImpact>0.1</SocialImpact>
         </equippedStatOffsets>
         <apparel>

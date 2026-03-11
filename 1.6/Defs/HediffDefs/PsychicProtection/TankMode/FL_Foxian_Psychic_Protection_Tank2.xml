@@ -8,8 +8,10 @@
             <statOffsets>
                 <ArmorRating_Blunt>0.16</ArmorRating_Blunt>
                 <ArmorRating_Sharp>0.14</ArmorRating_Sharp>
+                <ArmorRating_Heat>0.2</ArmorRating_Heat>
                 <StaggerDurationFactor>-0.2</StaggerDurationFactor>
                 <MoveSpeed>-0.08</MoveSpeed>
+                <Flammability>-0.16</Flammability>
             </statOffsets>
             <statFactors>
                 <PainShockThreshold>1.2</PainShockThreshold>
