@@ -242,7 +242,7 @@
         <customEffectDescriptions>
             <li>Grants an ability to switch between two modes. This gene grants a permanent effect that scales with the carrier's psychic sensitivity</li>
             <li>6 different stages (125%, 150%, 175%, 200%, 250%, 300%)</li>
-            <li>(Default mode) Tank mode:\nMaximum Armor Blunt Protection +50%\nMaximum Armor Sharp Protection +40%\nMaximum Stagger Time Multiplier -50%\nMaximum Move Speed -0.22\nMaximum Pain Shock Threshold x150%\nMaximum Incoming Damage Multiplier x75%</li>
+            <li>(Default mode) Tank mode:\nMaximum Armor Blunt Protection +50%\nMaximum Armor Sharp Protection +40%\nMaximum Armor Heat Protection +70%\nMaximum Stagger Time Multiplier -50%\nMaximum Move Speed -0.22\nMaximum Flammability -50%\nMaximum Pain Shock Threshold x150%\nMaximum Incoming Damage Multiplier x75%</li>
             <li>(Alternative mode) Dodge mode:\nMaximum Ranged Dodge Chance +55%\nMaximum Melee Dodge Chance +20.0\nMaximum Stagger Time Multiplier -25%\nMaximum Move Speed Bonus 0.30\nMaximum Pain Shock Threshold x125%\nMaximum Incoming Damage Multiplier x85%</li>
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
