@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>FL_Vulpano</defName>
+        <label>vulpano</label>
+        <devNote>FLbeegFoxNineTail</devNote>
+        <description>A large fox-like herbivore similar to a buffalo. Vulpanos are quite docile but when enraged they are deadly, tamed Vulpanos can be trained and used as pack animals.</description>
+        <statBases>
+            <MoveSpeed>4.8</MoveSpeed>
+            <MarketValue>800</MarketValue>
+            <ComfyTemperatureMin>-45</ComfyTemperatureMin>
+            <ComfyTemperatureMax>40</ComfyTemperatureMax>
+            <CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+            <FilthRate>2.5</FilthRate>
+            <Wildness>0.6</Wildness>
+        </statBases>
+        <uiIconScale>1.35</uiIconScale>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <body>QuadrupedAnimalWithPawsAndTail</body>
+            <baseBodySize>2.4</baseBodySize>
+            <baseHealthScale>2</baseHealthScale>
+            <baseHungerRate>0.75</baseHungerRate>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <leatherDef>Leather_Fox</leatherDef>
+            <nameOnTameChance>1</nameOnTameChance>
+            <trainability>Advanced</trainability>
+            <gestationPeriodDays>10</gestationPeriodDays>
+            <packAnimal>true</packAnimal>
+            <lifeExpectancy>35</lifeExpectancy>
+            <manhunterOnDamageChance>0.4</manhunterOnDamageChance>
+            <specialTrainables>
+                <li MayRequire="Ludeon.RimWorld.Odyssey">Dig</li>
+            </specialTrainables>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.2</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.433</minAge>
+                    <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+                    <soundDeath>Pawn_Muffalo_Death</soundDeath>
+                    <soundCall>Pawn_Muffalo_Call</soundCall>
+                    <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+            <soundEating>Herbivore_Eat</soundEating>
+            <headPosPerRotation>
+                <li>(0.0, 0, 0.05)</li>
+                <li>(0.285, 0, 0.02)</li>
+                <li>(0.0, 0, -0.12)</li>
+                <li>(-0.285, 0, 0.02)</li>
+            </headPosPerRotation>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+                <chanceFactor>0.45</chanceFactor>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>14</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>right claw</label>
+                <labelNoLocation>claw</labelNoLocation>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+                <chanceFactor>0.45</chanceFactor>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>14</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.9</chanceFactor>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>14</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <PawnKindDef Name="Muffalo" ParentName="AnimalKindBase">
+        <defName>FL_Vulpano</defName>
+        <label>vulpano</label>
+        <labelPlural>vulpanos</labelPlural>
+        <race>FL_Vulpano</race>
+        <combatPower>180</combatPower>
+        <ecoSystemWeight>1.1</ecoSystemWeight>
+        <wildGroupSize>1~6</wildGroupSize>
+        <lifeStages>
+            <li>
+            <label>vulpano calf</label>
+            <labelPlural>vulpano calves</labelPlural>
+            <bodyGraphicData>
+                <texPath>Things/Pawns/Animal/Vulpano/FL_Vulpano</texPath>
+                <drawSize>1.5</drawSize>
+                <shadowData>
+                <volume>(0.4, 0.3, 0.3)</volume>
+                <offset>(0,0,-0.2)</offset>
+                </shadowData>
+            </bodyGraphicData>
+            <dessicatedBodyGraphicData>
+                <texPath>Things/Pawns/Animal/Vulpano/FL_Dessicated_Vulpano_east</texPath>
+                <drawSize>1.5</drawSize>
+            </dessicatedBodyGraphicData>
+            </li>
+            <li>
+            <bodyGraphicData>
+                <texPath>Things/Pawns/Animal/Vulpano/FL_Vulpano</texPath>
+                <drawSize>2.25</drawSize>
+                <shadowData>
+                <volume>(0.6, 0.45, 0.45)</volume>
+                <offset>(0,0,-0.25)</offset>
+                </shadowData>
+            </bodyGraphicData>
+            <dessicatedBodyGraphicData>
+                <texPath>Things/Pawns/Animal/Vulpano/FL_Dessicated_Vulpano_east</texPath>
+                <drawSize>2.25</drawSize>
+            </dessicatedBodyGraphicData>
+            </li>
+            <li>
+            <bodyGraphicData>
+                <texPath>Things/Pawns/Animal/Vulpano/FL_Vulpano</texPath>
+                <drawSize>3</drawSize>
+                <shadowData>
+                <volume>(0.8, 0.6, 0.6)</volume>
+                <offset>(0,0,-0.3)</offset>
+                </shadowData>
+            </bodyGraphicData>
+            <dessicatedBodyGraphicData>
+                <texPath>Things/Pawns/Animal/Vulpano/FL_Dessicated_Vulpano_east</texPath>
+                <drawSize>3</drawSize>
+            </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>
