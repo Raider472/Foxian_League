@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<!--Add Vulpanos as universal allowed pack animal-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="TemperateForest"]/allowedPackAnimals</xpath>
+        <value>
+            <li>FL_Vulpano</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="TemperateSwamp"]/allowedPackAnimals</xpath>
+        <value>
+            <li>FL_Vulpano</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="BorealForest"]/allowedPackAnimals</xpath>
+        <value>
+            <li>FL_Vulpano</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="Tundra"]/allowedPackAnimals</xpath>
+        <value>
+            <li>FL_Vulpano</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="ColdBog"]/allowedPackAnimals</xpath>
+        <value>
+            <li>FL_Vulpano</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="IceSheet"]/allowedPackAnimals</xpath>
+        <value>
+            <li>FL_Vulpano</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="SeaIce"]/allowedPackAnimals</xpath>
+        <value>
+            <li>FL_Vulpano</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="TropicalRainforest"]/allowedPackAnimals</xpath>
+        <value>
+            <li>FL_Vulpano</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="TropicalSwamp"]/allowedPackAnimals</xpath>
+        <value>
+            <li>FL_Vulpano</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="AridShrubland"]/allowedPackAnimals</xpath>
+        <value>
+            <li>FL_Vulpano</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="Desert"]/allowedPackAnimals</xpath>
+        <value>
+            <li>FL_Vulpano</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="ExtremeDesert"]/allowedPackAnimals</xpath>
+        <value>
+            <li>FL_Vulpano</li>
+        </value>
+    </Operation>
+
+    <!--Add modded animals to the list of spawnable wild animals-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="BorealForest"]/wildAnimals</xpath>
+        <value>
+            <FL_Vulpano>0.07</FL_Vulpano>
+            <FL_Vulyakko>0.04</FL_Vulyakko>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="Tundra"]/wildAnimals</xpath>
+        <value>
+            <FL_Vulpano>0.03</FL_Vulpano>
+            <FL_Vulyakko>0.03</FL_Vulyakko>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="ColdBog"]/wildAnimals</xpath>
+        <value>
+            <FL_Vulpano>0.03</FL_Vulpano>
+            <FL_Vulyakko>0.04</FL_Vulyakko>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="TemperateForest"]/wildAnimals</xpath>
+        <value>
+            <FL_Vulpano>0.1</FL_Vulpano>
+            <FL_Vulyakko>0.03</FL_Vulyakko>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="TemperateSwamp"]/wildAnimals</xpath>
+        <value>
+            <FL_Vulpano>0.06</FL_Vulpano>
+            <FL_Vulyakko>0.08</FL_Vulyakko>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="TropicalRainforest"]/wildAnimals</xpath>
+        <value>
+            <FL_Vulpano>0.04</FL_Vulpano>
+            <FL_Vulyakko>0.03</FL_Vulyakko>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="TropicalSwamp"]/wildAnimals</xpath>
+        <value>
+            <FL_Vulpano>0.02</FL_Vulpano>
+            <FL_Vulyakko>0.04</FL_Vulyakko>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BiomeDef[defName="AridShrubland"]/wildAnimals</xpath>
+        <value>
+            <FL_Vulpano>0.06</FL_Vulpano>
+            <FL_Vulyakko>0.04</FL_Vulyakko>
+        </value>
+    </Operation>
+
+<!--For Oddysey Biomes-->
+    <!--Vulpanos universal pack animals-->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Odyssey</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/BiomeDef[defName="GlacialPlain"]/allowedPackAnimals</xpath>
+            <value>
+                <li>FL_Vulpano</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Odyssey</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/BiomeDef[defName="Glowforest"]/allowedPackAnimals</xpath>
+            <value>
+                <li>FL_Vulpano</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Odyssey</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/BiomeDef[defName="Grasslands"]/allowedPackAnimals</xpath>
+            <value>
+                <li>FL_Vulpano</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Odyssey</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/BiomeDef[defName="LavaField"]/allowedPackAnimals</xpath>
+            <value>
+                <li>FL_Vulpano</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Odyssey</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/BiomeDef[defName="Scarlands"]/allowedPackAnimals</xpath>
+            <value>
+                <li>FL_Vulpano</li>
+            </value>
+        </match>
+    </Operation>
+    <!--normalize wild animals spawn-->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Odyssey</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/BiomeDef[defName="Glowforest"]/wildAnimals</xpath>
+            <value>
+                <FL_Vulpano>0.011</FL_Vulpano>
+                <FL_Vulyakko>0.09</FL_Vulyakko>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Odyssey</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/BiomeDef[defName="Grasslands"]/wildAnimals</xpath>
+            <value>
+                <FL_Vulpano>0.09</FL_Vulpano>
+                <FL_Vulyakko>0.06</FL_Vulyakko>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Odyssey</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/BiomeDef[defName="Scarlands"]/wildAnimals</xpath>
+            <value>
+                <FL_Vulyakko>0.15</FL_Vulyakko>
+            </value>
+        </match>
+    </Operation>
+</Patch>

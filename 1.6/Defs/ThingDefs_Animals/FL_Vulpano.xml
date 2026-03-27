@@ -4,11 +4,11 @@
         <defName>FL_Vulpano</defName>
         <label>vulpano</label>
         <devNote>FLbeegFoxNineTail</devNote>
-        <description>A large fox-like herbivore similar to a buffalo. Vulpanos are quite docile but when enraged they are deadly, tamed Vulpanos can be trained and used as pack animals.</description>
+        <description>A large fox-like herbivore similar to a buffalo. Vulpanos are quite docile but when enraged they can be deadly, tamed Vulpanos can be trained and used as pack animals.\nThe Foxian League rely heavily on these hardy beasts, using them almost exclusively as pack animals for trade caravans and long-distance transport. Encountering one of those outside of Foxian settlements or in the wild is a rare sight.</description>
         <statBases>
             <MoveSpeed>4.8</MoveSpeed>
             <MarketValue>800</MarketValue>
-            <ComfyTemperatureMin>-45</ComfyTemperatureMin>
+            <ComfyTemperatureMin>-50</ComfyTemperatureMin>
             <ComfyTemperatureMax>40</ComfyTemperatureMax>
             <CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
             <FilthRate>2.5</FilthRate>
@@ -80,7 +80,7 @@
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>14</amount>
+                            <amount>11</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
@@ -99,7 +99,7 @@
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>14</amount>
+                            <amount>11</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
@@ -135,14 +135,14 @@
         </tools>
     </ThingDef>
 
-    <PawnKindDef Name="Muffalo" ParentName="AnimalKindBase">
+    <PawnKindDef ParentName="AnimalKindBase">
         <defName>FL_Vulpano</defName>
         <label>vulpano</label>
         <labelPlural>vulpanos</labelPlural>
         <race>FL_Vulpano</race>
         <combatPower>180</combatPower>
-        <ecoSystemWeight>1.1</ecoSystemWeight>
-        <wildGroupSize>1~6</wildGroupSize>
+        <ecoSystemWeight>1</ecoSystemWeight>
+        <wildGroupSize>1~4</wildGroupSize>
         <lifeStages>
             <li>
             <label>vulpano calf</label>

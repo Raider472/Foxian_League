@@ -1,0 +1,4 @@
+It's a combination of 3 separate things
+<packAnimal> on the animal itself, the animal being listed on all BiomeDefs as an allowed animal, and the FactionDef setting that as an allowed pack animal
+If any of those aren't set, then that animal won't be used for said NPC faction
+And in vanilla, only muffalo are a universal pack animal allowed in any biome

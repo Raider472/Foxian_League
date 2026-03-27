@@ -137,9 +137,10 @@
 					<FL_Foxian_Trader>1</FL_Foxian_Trader>
 				</traders>
 				<carriers>
-					<Muffalo>6</Muffalo>
-					<Dromedary>5</Dromedary>
-					<Alpaca>2</Alpaca>
+					<FL_Vulpano>8</FL_Vulpano>
+					<Muffalo>2</Muffalo>
+					<Dromedary>1</Dromedary>
+					<Alpaca>1</Alpaca>
 					<Elephant>1</Elephant>
 				</carriers>
 				<guards>
@@ -171,6 +172,7 @@
 					<FL_Foxian_League_Sniper>8</FL_Foxian_League_Sniper>
 					<FL_Foxian_Elite_Soldier>10</FL_Foxian_Elite_Soldier>
 					<FL_Foxian_Elite_Melee_Infantry>10</FL_Foxian_Elite_Melee_Infantry>
+					<FL_Vulpano>0.5</FL_Vulpano>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
@@ -338,6 +340,35 @@
 					<FL_Foxian_Raider_Soldier>10</FL_Foxian_Raider_Soldier>
 					<FL_Foxian_Raider_Shredder>7</FL_Foxian_Raider_Shredder>
 					<FL_Foxian_Raider_Children_Of_Blood>5</FL_Foxian_Raider_Children_Of_Blood>
+					<FL_Vulyakko>3.5</FL_Vulyakko>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, Emphasis on animals -->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<FL_Foxian_Raider_Trash>5</FL_Foxian_Raider_Trash>
+					<FL_Foxian_Raider_Scavenger_Melee>5</FL_Foxian_Raider_Scavenger_Melee>
+					<FL_Foxian_Raider_Scavenger_Gun>7</FL_Foxian_Raider_Scavenger_Gun>
+					<FL_Foxian_Raider_kidnapper>2.5</FL_Foxian_Raider_kidnapper>
+					<FL_Foxian_Raider_Pyromaniac>4.5</FL_Foxian_Raider_Pyromaniac>
+					<FL_Foxian_Raider_Despoiler>7</FL_Foxian_Raider_Despoiler>
+					<FL_Foxian_Raider_Looter>5</FL_Foxian_Raider_Looter>
+					<FL_Foxian_Raider_Grenadier_EMP>0.25</FL_Foxian_Raider_Grenadier_EMP>
+					<FL_Foxian_Raider_Grenadier>2</FL_Foxian_Raider_Grenadier>
+					<FL_Raider_Foxian_Trooper>7.5</FL_Raider_Foxian_Trooper>
+					<FL_Foxian_Heavy_Trooper>5</FL_Foxian_Heavy_Trooper>
+					<FL_Foxian_Raider_Breacher>3</FL_Foxian_Raider_Breacher>
+					<FL_Foxian_Raider_Sniper>4</FL_Foxian_Raider_Sniper>
+					<FL_Foxian_Raider_Elite_Sniper>1.5</FL_Foxian_Raider_Elite_Sniper>
+					<FL_Foxian_Raider_Soldier>7</FL_Foxian_Raider_Soldier>
+					<FL_Foxian_Raider_Shredder>5</FL_Foxian_Raider_Shredder>
+					<FL_Foxian_Raider_Children_Of_Blood>3</FL_Foxian_Raider_Children_Of_Blood>
+					<FL_Vulyakko>9</FL_Vulyakko>
 				</options>
 			</li>
 			<li>
@@ -356,6 +387,7 @@
 					<FL_Foxian_Raider_Breacher>5</FL_Foxian_Raider_Breacher>
 					<FL_Foxian_Raider_Shredder>10</FL_Foxian_Raider_Shredder>
 					<FL_Foxian_Raider_Children_Of_Blood>5</FL_Foxian_Raider_Children_Of_Blood>
+					<FL_Vulyakko>6.5</FL_Vulyakko>
 				</options>
 			</li>
 			<li>
@@ -372,6 +404,7 @@
 					<FL_Foxian_Raider_Sniper>7</FL_Foxian_Raider_Sniper>
 					<FL_Foxian_Raider_Elite_Sniper>4</FL_Foxian_Raider_Elite_Sniper>
 					<FL_Foxian_Raider_Soldier>10</FL_Foxian_Raider_Soldier>
+					<FL_Vulyakko>2</FL_Vulyakko>
 				</options>
 			</li>
 			<li>
@@ -406,6 +439,7 @@
 				<maxTotalPoints>1600</maxTotalPoints>
 				<options>
 					<FL_Foxian_Raider_Trash>10</FL_Foxian_Raider_Trash>
+					<FL_Vulyakko>4</FL_Vulyakko>
 				</options>
 			</li>
 			<li>
@@ -424,6 +458,7 @@
 					<FL_Raider_Foxian_Trooper>10</FL_Raider_Foxian_Trooper>
 					<FL_Foxian_Raider_Soldier>10</FL_Foxian_Raider_Soldier>
 					<FL_Foxian_Raider_Shredder>10</FL_Foxian_Raider_Shredder>
+					<FL_Vulyakko>1</FL_Vulyakko>
 				</options>
 			</li>
 		</pawnGroupMakers>

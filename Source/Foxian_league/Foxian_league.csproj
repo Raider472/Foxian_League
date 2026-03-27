@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimalComps\CompProperties_vulyakkoResilience.cs" />
+    <Compile Include="AnimalComps\Comp_vulyakkoResilience.cs" />
     <Compile Include="AnimalConnection\Patch_PawnUtility_GetManhunterOnTameFailChance.cs" />
     <Compile Include="AnimalConnection\Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.cs" />
     <Compile Include="Composed\Patch_NegativeInteractionUtility_NegativeInteractionChanceFactor.cs" />
