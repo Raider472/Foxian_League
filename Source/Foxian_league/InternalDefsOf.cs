@@ -34,6 +34,8 @@ namespace Foxian_league {
 
         public static ThoughtDef FL_CursedSwordRemoved;
 
+        public static ThingDef FL_Plant_TreeNatura;
+
         /*static InternalDefOf() {
             DefOfHelper.EnsureInitializedInCtor(typeof(InternalDefOf));
         }*/

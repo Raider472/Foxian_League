@@ -24,6 +24,5 @@ namespace Foxian_league {
             }
             return;
         }
-
     }
 }

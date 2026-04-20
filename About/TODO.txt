@@ -8,3 +8,16 @@ maybe option to allow girl only ? + chance for gender on non-foxian
 Check if genetic purity can be changed/refractor (removing mother field and etc.)
 
 Animals
+Psychic tree:
+- JobDriver_Meditate.MakeNewToils and put the main comp function in a harmony patch there / pawn is a field in jobdriver
+- JobDriver_Meditate.MeditationTick
+
+Should only works when the pawn is foxian and the tree is mature
+Works like an anima tree except it choses randomly one pawn and give the buff
+
+Psychic skill tree
+-A skill to spawn a Natura seed (90 Psyfocus or something like that) 
+
+Misc
+-Reduce frequency of modded books or make them more interesting to read
+-Work on removing VEF as dependency (I don't know if it's possible)

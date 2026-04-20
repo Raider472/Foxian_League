@@ -23,6 +23,7 @@ namespace Foxian_league {
         public static float xenotypeAChance;
         public static float xenotypeMaleChance;
         public static float xenotypeFemaleChanceAlt;
+        public static float maxProgressMultiplier;
 
         public Foxian_Settings() {
             SetDefaultValue(); 
@@ -38,6 +39,7 @@ namespace Foxian_league {
             xenotypeAChance = 0.7f;
             xenotypeMaleChance = 0.7f;
             xenotypeFemaleChanceAlt = 0.8f;
+            maxProgressMultiplier = 1f;
         }
 
         public override void ExposeData() {
@@ -51,6 +53,7 @@ namespace Foxian_league {
             Scribe_Values.Look(ref xenotypeAChance, "FLGeneticPurityXenotypeAChance", 0.7f);
             Scribe_Values.Look(ref xenotypeMaleChance, "FLGeneticPurityXenotypeAMaleChance", 0.7f);
             Scribe_Values.Look(ref xenotypeFemaleChanceAlt, "FLGeneticPurityXenotypeFemaleChanceAlt", 0.8f);
+            Scribe_Values.Look(ref maxProgressMultiplier, "FLmaxProgressMultiplier", 1f);
         }
 
         internal static void WindowContents(Rect inRect) {
@@ -78,10 +81,10 @@ namespace Foxian_league {
             }
             listing_Standard.Label(string.Concat("PsychicManipulationSettings".Translate() + ": ", (psychicManipulationFactor * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "PsychicManipulationSettingsDesc".Translate());
             psychicManipulationFactor = (float)Math.Round(listing_Standard.Slider(psychicManipulationFactor, 0.01f, 1f), 2);
-            listing_Standard.Gap(30f);
+            listing_Standard.Gap(20f);
             listing_Standard.Label(string.Concat("AnimalConnectionSettings".Translate() + ": ", (animalConnectionFactorTrigger * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "AnimalConnectionSettingsDesc".Translate());
             animalConnectionFactorTrigger = (float)Math.Round(listing_Standard.Slider(animalConnectionFactorTrigger, 0f, 2f), 2);
-            listing_Standard.Gap(30f);
+            listing_Standard.Gap(20f);
             listing_Standard.CheckboxLabeled("GeneticPurityFoxianTrigger".Translate(), ref isPawnFoxianTrigger, tooltip: "GeneticPurityFoxianTriggerDesc".Translate());
             if (listing_Standard.ButtonTextLabeled("GeneticPuritySettingXenotypeA".Translate(), DefDatabase<XenotypeDef>.GetNamed(xenotypeA).label, tooltip: "GeneticPuritySettingXenotypeADesc".Translate())) {
                 List<FloatMenuOption> dropdownList = new List<FloatMenuOption>();
@@ -115,7 +118,10 @@ namespace Foxian_league {
             listing_Standard.Gap(5f);
             listing_Standard.Label(string.Concat("GeneticPurityXenotypeFemaleChanceSliderAlt".Translate() + ": ", (xenotypeFemaleChanceAlt * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "GeneticPurityXenotypeFemaleChanceSliderAltDesc".Translate());
             xenotypeFemaleChanceAlt = (float)Math.Round(listing_Standard.Slider(xenotypeFemaleChanceAlt, 0f, 1f), 2);
-            listing_Standard.Gap(30f);
+            listing_Standard.Gap(10f);
+            listing_Standard.Label(string.Concat("maxProgressTreeMultiplierSlider".Translate() + ": ", (maxProgressMultiplier * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "maxProgressTreeMultiplierSliderDesc".Translate());
+            maxProgressMultiplier = (float)Math.Round(listing_Standard.Slider(maxProgressMultiplier, 0.1f, 2f), 2);
+            listing_Standard.Gap(10f);
             if (listing_Standard.ButtonText("ResetButton".Translate())) {
                 SetDefaultValue();
             }
