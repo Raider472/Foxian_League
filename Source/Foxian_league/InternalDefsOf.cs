@@ -29,12 +29,17 @@ namespace Foxian_league {
         public static TraitDef FL_NaturalPsySensitive_Trait;
 
         public static LetterDef FL_GreaterFoxianBorn;
+        public static LetterDef FL_BlessingReceived;
 
         public static HediffDef FL_PsychicComaRandom;
+        public static HediffDef FL_Tree_Connection;
 
         public static ThoughtDef FL_CursedSwordRemoved;
 
+        [MayRequireRoyalty]
         public static ThingDef FL_Plant_TreeNatura;
+        [MayRequireRoyalty]
+        public static ThingDef FL_Plant_PodNatura;
 
         /*static InternalDefOf() {
             DefOfHelper.EnsureInitializedInCtor(typeof(InternalDefOf));

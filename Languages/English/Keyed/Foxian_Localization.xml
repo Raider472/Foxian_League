@@ -47,4 +47,6 @@
     <ProgressUntilNextBlessing>Progress until the next blessing: {0}</ProgressUntilNextBlessing>
     <TotalMeditationTree>Total ammount of meditation today: {0}h</TotalMeditationTree>
     <ProgressMultiplierLoc>(Progress: {0})</ProgressMultiplierLoc>
+    <BlessingReceivedTitle>{0_nameDef} received a blessing</BlessingReceivedTitle>
+    <BlessingReceivedTitleLoc>{0_nameDef} prayers has finally been answered, {0_pronoun} received a blessing from nature itself !</BlessingReceivedTitleLoc>
 </LanguageData>

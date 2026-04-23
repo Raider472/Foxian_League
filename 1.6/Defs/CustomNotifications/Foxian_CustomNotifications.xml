@@ -4,4 +4,9 @@
         <defName>FL_GreaterFoxianBorn</defName>
         <letterClass>Foxian_league.ChoiceLetter_GreaterFoxianBorn</letterClass>
     </LetterDef>
+
+    <LetterDef ParentName="PositiveEvent">
+        <defName>FL_BlessingReceived</defName>
+        <letterClass>Foxian_league.ChoiceLetter_BlessingReceived</letterClass>
+    </LetterDef>
 </Defs>

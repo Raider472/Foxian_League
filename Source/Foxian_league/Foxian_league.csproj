@@ -59,6 +59,7 @@
     <Compile Include="HediffComps\Hediff_clotting.cs" />
     <Compile Include="HediffComps\Hediff_ShowSeverity.cs" />
     <Compile Include="HediffUtils.cs" />
+    <Compile Include="IncidentWorker\IncidentWorker_NaturaPodSpawn.cs" />
     <Compile Include="LastStand\Comp_AddHediffLastStand.cs" />
     <Compile Include="LastStand\HediffCompProperties_AddHediffAfterExpiration.cs" />
     <Compile Include="LastStand\HediffComp_AddHediffAfterExpiration.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="ModSettings\Foxian_Settings.cs" />
     <Compile Include="NaturalPsySensitive\Patch_MediationUtility_PsyfocusGainPerTick.cs" />
     <Compile Include="PatchMods\BGI_ApplyBirthOutcome.cs" />
+    <Compile Include="PlantComps\ChoiceLetter_BlessingReceived.cs" />
     <Compile Include="PlantComps\CompProperties_NaturaPsychic.cs" />
     <Compile Include="PlantComps\Comp_NaturaPsychic.cs" />
     <Compile Include="PlantComps\Patch_JobDriverMeditate_MeditationTick.cs" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="TreeBase">
+    <ThingDef ParentName="TreeBase" MayRequire="Ludeon.RimWorld.Royalty">
         <defName>FL_Plant_TreeNatura</defName>
         <label>shizenzhufu tree</label>
         <description>shizenzhufu tree something and blessings.</description>
@@ -62,7 +62,7 @@
         </comps>
     </ThingDef>
 
-    <ThingDef ParentName="StumpChoppedBase">
+    <ThingDef ParentName="StumpChoppedBase" MayRequire="Ludeon.RimWorld.Royalty">
         <defName>FL_ChoppedStump_Natura</defName>
         <label>chopped Natura stump</label>
         <description>A stump left behind after a Natura tree has been felled. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
@@ -72,7 +72,7 @@
     </graphicData>
     </ThingDef>
 
-    <ThingDef ParentName="StumpSmashedBase">
+    <ThingDef ParentName="StumpSmashedBase" MayRequire="Ludeon.RimWorld.Royalty">
         <defName>FL_SmashedStump_Natura</defName>
         <label>smashed Natura stump</label>
         <description>The remnants of a Natura tree destroyed by damage. It's ugly. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
@@ -82,7 +82,7 @@
         </graphicData>
     </ThingDef>
 
-    <ThingDef ParentName="ResourceBase">
+    <ThingDef ParentName="ResourceBase" MayRequire="Ludeon.RimWorld.Royalty">
         <defName>FL_NaturaSeed</defName>
         <label>natura seed</label>
         <description>The seed of a natura tree. It can be planted to create a new natura tree {}.</description>
@@ -94,7 +94,7 @@
             <MaxHitPoints>50</MaxHitPoints>
             <Mass>0.3</Mass>
             <Beauty>0</Beauty>
-            <MarketValue>1000</MarketValue>
+            <MarketValue>800</MarketValue>
         </statBases>
         <graphicData>
             <texPath>Things/Items/FL_NaturaSeeds</texPath>
@@ -109,5 +109,43 @@
             <plantDefToSpawn>FL_Plant_TreeNatura</plantDefToSpawn>
             </li>
         </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="PlantBaseNonEdible" MayRequire="Ludeon.RimWorld.Royalty">
+        <defName>FL_Plant_PodNatura</defName>
+        <label>Natura pod</label>
+        <description>A small pod that protects a single Natura seed. This seed can be harvested and used to plant a Natura tree.</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/GauranlenPod</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <descriptionHyperlinks>
+            <ThingDef>FL_Plant_TreeNatura</ThingDef>
+            <ThingDef>FL_NaturaSeed</ThingDef>
+        </descriptionHyperlinks>
+        <selectable>true</selectable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <pathCost>14</pathCost>
+        <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+        <plant>
+            <fertilitySensitivity>0.15</fertilitySensitivity>
+            <growDays>3</growDays>
+            <harvestYield>1</harvestYield>
+            <harvestTag>Standard</harvestTag>
+            <harvestAfterGrowth>0</harvestAfterGrowth>
+            <harvestedThingDef>FL_NaturaSeed</harvestedThingDef>
+            <harvestFailable>false</harvestFailable>
+            <harvestYieldAffectedByDifficulty>false</harvestYieldAffectedByDifficulty>
+            <visualSizeRange>0.6~1.1</visualSizeRange>
+            <topWindExposure>0.1</topWindExposure>
+            <wildClusterWeight>0</wildClusterWeight>
+            <purpose>Misc</purpose>
+            <allowAutoCut>false</allowAutoCut>
+            <dieFromToxicFallout>False</dieFromToxicFallout>
+            <warnIfMarkedForCut>true</warnIfMarkedForCut>
+        </plant>
     </ThingDef>
 </Defs>

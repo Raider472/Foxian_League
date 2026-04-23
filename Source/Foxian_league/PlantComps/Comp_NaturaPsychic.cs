@@ -9,7 +9,7 @@ using Verse;
 
 namespace Foxian_league{
     public class Comp_NaturaPsychic : ThingComp {
-        //Comp for the Natura tree to work
+        //Comp for the psychic tree and all the methods for it's functioning
         public CompProperties_NaturaPsychic Props => (CompProperties_NaturaPsychic)props;
         public float progressUntilNextBlessing;
         private float maxProgress = 480000f;
@@ -19,7 +19,7 @@ namespace Foxian_league{
             new Pair<int, float>(22500, 1f),
             new Pair<int, float>(35000, 0.5f),
             new Pair<int, float>(50000, 0.25f),
-            new Pair<int, float>(60000, 0.15f)
+            new Pair<int, float>(61000, 0.15f)
         };
 
         private float progressMultiplier {
@@ -35,7 +35,6 @@ namespace Foxian_league{
 
         public override void CompTickLong() {
             if(GenLocalDate.DayTick(parent.Map) < 2000) {
-                Log.Message("TreeComp is active and it's day time OWO");
                 meditationTickToday = 0;
             }
         }
@@ -45,37 +44,132 @@ namespace Foxian_league{
 
         }
 
-        public void addProgress() {
+        public void addProgress(float externalProgress = 0f) {
+            if(externalProgress != 0f) progressUntilNextBlessing += externalProgress;
             progressUntilNextBlessing += (3f * progressMultiplier);
             meditationTickToday ++;
-            Log.Message($"Meditation tick ++ {meditationTickToday}, progress mult with malus: {3f*progressMultiplier}, maxprogress is {maxProgress * Foxian_Settings.maxProgressMultiplier}");
+            //Log.Message($"Meditation tick ++ {meditationTickToday}, progress mult with malus: {3f*progressMultiplier}, maxprogress is {maxProgress * Foxian_Settings.maxProgressMultiplier}");
             tryTriggerBlessing();
 
         }
 
         private void tryTriggerBlessing() {
             if (progressUntilNextBlessing >= maxProgress * Foxian_Settings.maxProgressMultiplier) {
-                checkPawnNearTree();
                 progressUntilNextBlessing = 0f;
+                List<Pawn> validPawns = getPawnNearTree();
+                if (validPawns.Count == 0) {
+                    Log.Message("No pawns near the tree to receive a blessing.");
+                    return;
+                }
+                List<Pawn> filteredPawns = filterPawns(validPawns);
+                if(filteredPawns.Count == 0) {
+                    Log.Message("No valid pawns found after filtering, blessing can't be applied.");
+                    return;
+                }
+                Pawn chosenPawn = selectRandomPawn(filteredPawns);
+                addHeddif(chosenPawn);
             }
         }
 
-        public void checkPawnNear (Pawn pawn) {
-            if(pawn == null) return;
-            MeditationSpotAndFocus spot = MeditationUtility.FindMeditationSpot(pawn);
-            Log.Message($"Pawn is: {pawn} and spot is: {spot.focus} ({spot.focus.Cell}) and {spot.spot} ({spot.spot.Cell}), here is parent spot as comp: {parent.Position}");
-        }
-
-        public void checkPawnNearTree() {
+        public List<Pawn> getPawnNearTree() {
             float FocusObjectSearchRadius = MeditationUtility.FocusObjectSearchRadius;
             List<Pawn> validPawn = new List<Pawn>();
             foreach (Thing item in GenRadial.RadialDistinctThingsAround(parent.Position, parent.Map, FocusObjectSearchRadius, useCenter: false)) {
-                if (item is Pawn pawn && Utils.HasActiveGene(pawn, InternalDefOf.FL_NaturalPsySensitive)) {
+                if (item is Pawn pawn && pawn.RaceProps.Humanlike && Utils.HasActiveGene(pawn, InternalDefOf.FL_NaturalPsySensitive)) {
                     validPawn.Add(pawn);
                     Log.Message($"Found pawn {pawn} near the tree");
                 }
             }
             Log.Message($"Total valid pawns found near the tree: {validPawn.Count} and {validPawn}");
+            return validPawn;
+        }
+
+        public List<Pawn> filterPawns(List<Pawn> pawns) {
+            List<Pawn> pawnsWithouthMaxedHediff = removeMaxedOutPawns(pawns);
+            if(pawnsWithouthMaxedHediff.Count == 0) return pawnsWithouthMaxedHediff;
+
+            else if(Rand.Chance(0.45f) && anyPawnsFreeOfHediff(pawnsWithouthMaxedHediff)) {
+                //Focus pawns that does not have the hediff
+                Log.Message("Focus pawns that does not have the hediff");
+                List<Pawn> pawnsWithoutHediff = new List<Pawn>();
+                foreach(Pawn pawn in pawnsWithouthMaxedHediff) {
+                    if(pawn == null) continue;
+                    if(!pawn.health.hediffSet.HasHediff(InternalDefOf.FL_Tree_Connection)) {
+                        pawnsWithoutHediff.Add(pawn);
+                        Log.Message($"Pawn {pawn} does not have the hediff, adding to the list of potential candidates");
+                    }
+                }
+                return pawnsWithoutHediff;
+            }
+            return pawnsWithouthMaxedHediff;
+        }
+
+        private List<Pawn> removeMaxedOutPawns(List<Pawn> pawns) {
+            List<Pawn> pawnsWithoutMaxedHediff = new List<Pawn>();
+            Hediff hediffToCheck;
+            foreach(Pawn pawn in pawns) {
+                if(pawn.health.hediffSet.TryGetHediff(InternalDefOf.FL_Tree_Connection, out hediffToCheck) && hediffToCheck.Severity >= 1f) {
+                    continue;
+                }
+                pawnsWithoutMaxedHediff.Add(pawn);
+            }
+            return pawnsWithoutMaxedHediff;
+        }
+
+        private bool anyPawnsFreeOfHediff(List<Pawn> pawns) {
+            foreach(Pawn pawn in pawns) {
+                if(!pawn.health.hediffSet.HasHediff(InternalDefOf.FL_Tree_Connection)) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public Pawn selectRandomPawn(List<Pawn> pawns) {
+            int totalPawns = pawns.Count;
+            if(totalPawns == 1) {
+                Log.Message("Only one pawn found, selecting that one by default");
+                return pawns[0];
+            }
+            Log.Message($"Rand value is {Rand.Value}");
+            float randArray = (Rand.Value * ((totalPawns) - 1f) + 1f);
+            Log.Message($"Rand array value is {randArray}");
+            decimal roundedRandArray = Math.Round((decimal)randArray);
+            Log.Message($"Rounded rand array value is {roundedRandArray}");
+            int selectArray = Math.Clamp((int)roundedRandArray, 0, totalPawns) - 1;
+            Log.Message($"Selected array index is {selectArray}");
+            return pawns[selectArray];
+        }
+
+        public void addHeddif(Pawn pawn) {
+            Hediff hediffToIncrease;
+            if(pawn.health.hediffSet.TryGetHediff(InternalDefOf.FL_Tree_Connection, out hediffToIncrease)) {
+                if(!(hediffToIncrease.Severity >= 1f)) {
+                    hediffToIncrease.Severity += 0.1f;
+                    Log.Message($"{pawn} already has tree connection");
+                }
+            }
+            else {
+                Hediff treeConnection = HediffMaker.MakeHediff(InternalDefOf.FL_Tree_Connection, pawn);
+                treeConnection.Severity = 0.1f;
+                pawn.health.AddHediff(treeConnection);
+                Log.Message($"Added tree connection to {pawn}");
+            }
+            ChoiceLetter_BlessingReceived choiceLetter_blessing = (ChoiceLetter_BlessingReceived)LetterMaker.MakeLetter("BlessingReceivedTitle".Translate(pawn), "BlessingReceivedTitleLoc".Translate(pawn), InternalDefOf.FL_BlessingReceived, pawn);
+            choiceLetter_blessing.Start();
+            Find.LetterStack.ReceiveLetter(choiceLetter_blessing);
+        }
+
+        public override IEnumerable<Gizmo> CompGetGizmosExtra() {
+            if(Prefs.DevMode) {
+                Command_Action command_Action = new Command_Action();
+                command_Action.defaultLabel = "DEV: Add 100% progress";
+                command_Action.action = delegate
+                {
+                    addProgress(maxProgress * Foxian_Settings.maxProgressMultiplier);
+                };
+                yield return command_Action;
+            }
         }
 
         public override void PostExposeData() {
