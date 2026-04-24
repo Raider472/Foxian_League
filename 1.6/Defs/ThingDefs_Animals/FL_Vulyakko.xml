@@ -4,7 +4,7 @@
         <defName>FL_Vulyakko</defName>
         <label>vulyakko</label>
         <devNote>FLTigerFoxNineTail</devNote>
-        <description>A fox-like tiger hybrid that is half living and half rotting. Vulyakkos are an offspring of one of the sacred beasts who sided with the blood rain when the first foxian civilization collapsed. Vulyakkos are used as hunting beasts by raiders from the blood rain. Due to their rotting condition, Vulyakkos can't naturally reproduce and can survive days without eating.</description>
+        <description>A fox-like tiger hybrid that is half living and half rotting. Vulyakkos are an offspring of one of the sacred beasts who sided with the Blood Rain when the first foxian civilization collapsed. Vulyakkos are used as hunting beasts by raiders from the Blood Rain. Due to their rotting condition, Vulyakkos can't naturally reproduce and can survive days without eating.</description>
         <statBases>
             <MoveSpeed>5</MoveSpeed>
             <MarketValue>600</MarketValue>

@@ -31,7 +31,7 @@ namespace Foxian_league {
 
         private bool anyColonistsHasNaturalPsySensitivity(List<Pawn> colonists) {
             foreach(Pawn pawn in colonists) {
-                if(Utils.HasActiveGene(pawn, InternalDefOf.FL_NaturalPsySensitive)) return true;
+                if(MeditationFocusTypeAvailabilityCache.PawnCanUse(pawn, MeditationFocusDefOf.Natural)) return true;
             }
             return false;
         }

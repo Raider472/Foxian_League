@@ -2,8 +2,8 @@
 <Defs>
     <ThingDef ParentName="TreeBase" MayRequire="Ludeon.RimWorld.Royalty">
         <defName>FL_Plant_TreeNatura</defName>
-        <label>shizenzhufu tree</label>
-        <description>shizenzhufu tree something and blessings.</description>
+        <label>Natura tree</label>
+        <description>An unknown tree that is only found on this rimworld, it's commonly seen in the perimeter of settlements belonging to the Foxian League. Foxians and naturalist psycasters believe that they can receive blessings from this tree if they stay near it during their meditation session. They only grow from seeds extracted from Natura flowers or planted by psycasters with knowledge on how to convert a seed into a Natura seed.</description>
         <graphicData>
             <texPath>Things/Plants/Natura</texPath>
             <graphicClass>Graphic_Random</graphicClass>
@@ -85,7 +85,7 @@
     <ThingDef ParentName="ResourceBase" MayRequire="Ludeon.RimWorld.Royalty">
         <defName>FL_NaturaSeed</defName>
         <label>natura seed</label>
-        <description>The seed of a natura tree. It can be planted to create a new natura tree {}.</description>
+        <description>The seed of a natura tree. It can be planted to create a new natura tree.</description>
         <descriptionHyperlinks>
             <ThingDef>FL_Plant_TreeNatura</ThingDef>
         </descriptionHyperlinks>
@@ -113,8 +113,8 @@
 
     <ThingDef ParentName="PlantBaseNonEdible" MayRequire="Ludeon.RimWorld.Royalty">
         <defName>FL_Plant_PodNatura</defName>
-        <label>Natura pod</label>
-        <description>A small pod that protects a single Natura seed. This seed can be harvested and used to plant a Natura tree.</description>
+        <label>Natura flower</label>
+        <description>A small flower that protects a single Natura seed. This seed can be harvested and used to plant a Natura tree.</description>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
         </statBases>

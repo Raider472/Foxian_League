@@ -2,7 +2,7 @@
 <Defs> 
     <IncidentDef MayRequire="Ludeon.RimWorld.Royalty">
     <defName>FL_NaturaPodSpawn</defName>
-    <label>Natura pod sprout</label>
+    <label>Natura flower sprout</label>
     <category>Misc</category>
     <targetTags>
         <li>Map_PlayerHome</li>
@@ -10,8 +10,8 @@
     <workerClass>Foxian_league.IncidentWorker_NaturaPodSpawn</workerClass>
     <baseChance>0.7</baseChance>
     <minRefireDays>20</minRefireDays>
-    <letterLabel>Natura pod sprout</letterLabel>
-    <letterText>A Natura pod has sprouted nearby!\n\nHarvest it to collect a Natura seed. This special seed can be used to plant a sublime Natura tree.\n\nAny colonists with the natural psy-sensitivity gene can meditate near the tree and might be blessed by it. Being blessed by a Natura tree will permanently enhance the psychic sensititvity of the favoured colonist.</letterText>
+    <letterLabel>Natura flower sprout</letterLabel>
+    <letterText>A Natura flower has sprouted nearby!\n\nHarvest it to collect a Natura seed. This special seed can be used to plant a sublime Natura tree.\n\nAny colonists with the natural meditation focus type can meditate near the tree and might be blessed by it. Being blessed by a Natura tree will permanently enhance the psychic sensitivity of the favored colonist.</letterText>
     <letterDef>PositiveEvent</letterDef>
     <disallowedBiomes>
         <li>SeaIce</li>

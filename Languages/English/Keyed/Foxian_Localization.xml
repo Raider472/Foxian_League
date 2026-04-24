@@ -41,12 +41,12 @@
     <GeneticPurityXenotypeMaleChanceSliderDesc>By default, when the offspring is born with xenotype B, it has a 70% chance to be born as a male. If this value is set at 0%, the offspring will always be a female. If set at 100%, the offspring will always be a male when born with xenotype B.</GeneticPurityXenotypeMaleChanceSliderDesc>
     <GeneticPurityXenotypeFemaleChanceSliderAlt>Chance for an offspring to be a female (when mother is not a Foxian)</GeneticPurityXenotypeFemaleChanceSliderAlt>
     <GeneticPurityXenotypeFemaleChanceSliderAltDesc>By default, when the mother is not a Foxian, the offspring has a 80% chance to be born as a female. If this value is set at 0%, the offspring will always be a male. If set at 100%, the offspring will always be a female.\nPlease, note that this modifier will not do anything if the "Should a person be a Foxian to trigger the first behaviour of genetic purity gene ?" option has been disabled.</GeneticPurityXenotypeFemaleChanceSliderAltDesc>
-    <maxProgressTreeMultiplierSlider>Multiplier for the ammount of meditation to trigger a blessing</maxProgressTreeMultiplierSlider>
-    <maxProgressTreeMultiplierSliderDesc>Changes how long you need to meditate to trigger a blessing, lower values shortens the time needed for a blessing to trigger, while higher one makes it longer.</maxProgressTreeMultiplierSliderDesc>
+    <maxProgressTreeMultiplierSlider>Multiplier for the amount of meditation to trigger a blessing</maxProgressTreeMultiplierSlider>
+    <maxProgressTreeMultiplierSliderDesc>Changes how long you need to meditate to trigger a blessing. Lower values shorten the time needed, while higher ones make it longer.</maxProgressTreeMultiplierSliderDesc>
     <ResetButton>Default Values</ResetButton>
     <ProgressUntilNextBlessing>Progress until the next blessing: {0}</ProgressUntilNextBlessing>
-    <TotalMeditationTree>Total ammount of meditation today: {0}h</TotalMeditationTree>
+    <TotalMeditationTree>Total amount of meditation today: {0}h</TotalMeditationTree>
     <ProgressMultiplierLoc>(Progress: {0})</ProgressMultiplierLoc>
     <BlessingReceivedTitle>{0_nameDef} received a blessing</BlessingReceivedTitle>
-    <BlessingReceivedTitleLoc>{0_nameDef} prayers has finally been answered, {0_pronoun} received a blessing from nature itself !</BlessingReceivedTitleLoc>
+    <BlessingReceivedTitleLoc>{0_nameDef}'s prayers have finally been answered. {0_pronoun} received a blessing from the Natura tree itself!\nAs a result, {0_nameDef}'s psychic sensitivity has been permanently increased.</BlessingReceivedTitleLoc>
 </LanguageData>

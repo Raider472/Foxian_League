@@ -4,7 +4,7 @@
         <defName>FL_Vulpano</defName>
         <label>vulpano</label>
         <devNote>FLbeegFoxNineTail</devNote>
-        <description>A large fox-like herbivore similar to a buffalo. Vulpanos are quite docile but when enraged they can be deadly, tamed Vulpanos can be trained and used as pack animals.\nThe Foxian League rely heavily on these hardy beasts, using them almost exclusively as pack animals for trade caravans and long-distance transport. Encountering one of those outside of Foxian settlements or in the wild is a rare sight.</description>
+        <description>A large fox-like herbivore similar to a buffalo. Vulpanos are quite docile, but when enraged they can be deadly. Tamed Vulpanos can be trained and used as pack animals.\nThe Foxian League relies heavily on these hardy beasts, using them almost exclusively as pack animals for trade caravans and long-distance transport. Encountering one of those outside of Foxian settlements or in the wild is a rare sight.</description>
         <statBases>
             <MoveSpeed>4.8</MoveSpeed>
             <MarketValue>800</MarketValue>

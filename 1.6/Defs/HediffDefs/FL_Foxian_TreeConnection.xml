@@ -3,7 +3,7 @@
     <HediffDef>
         <defName>FL_Tree_Connection</defName>
         <label>natural connection</label>
-        <description>TestTree</description>
+        <description>This person has been blessed by a Natura tree and had its psychic sensitivity permanently enhanced.</description>
         <defaultLabelColor>(0.41, 0.91, 0.72)</defaultLabelColor>
         <everCurableByItem>false</everCurableByItem>
         <isBad>false</isBad>
@@ -53,28 +53,28 @@
             </li>
             <li>
                 <minSeverity>0.7</minSeverity>
-                <label>major</label>
+                <label>great</label>
                 <statOffsets>
                     <PsychicSensitivity>0.7</PsychicSensitivity>
                 </statOffsets>
             </li>
             <li>
                 <minSeverity>0.8</minSeverity>
-                <label>major</label>
+                <label>great</label>
                 <statOffsets>
                     <PsychicSensitivity>0.8</PsychicSensitivity>
                 </statOffsets>
             </li>
             <li>
                 <minSeverity>0.9</minSeverity>
-                <label>extreme</label>
+                <label>intense</label>
                 <statOffsets>
                     <PsychicSensitivity>0.9</PsychicSensitivity>
                 </statOffsets>
             </li>
             <li>
                 <minSeverity>1</minSeverity>
-                <label>extreme</label>
+                <label>intense</label>
                 <statOffsets>
                     <PsychicSensitivity>1</PsychicSensitivity>
                 </statOffsets>

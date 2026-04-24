@@ -12,12 +12,12 @@ namespace Foxian_league{
         //Comp for the psychic tree and all the methods for it's functioning
         public CompProperties_NaturaPsychic Props => (CompProperties_NaturaPsychic)props;
         public float progressUntilNextBlessing;
-        private float maxProgress = 480000f;
+        private float maxProgress = 450000f;
         public int meditationTickToday = 0;
 
         private static readonly List<Pair<int, float>> TicksToProgressMultipliers = new List<Pair<int, float>> {
-            new Pair<int, float>(22500, 1f),
-            new Pair<int, float>(35000, 0.5f),
+            new Pair<int, float>(25000, 1f),
+            new Pair<int, float>(36000, 0.5f),
             new Pair<int, float>(50000, 0.25f),
             new Pair<int, float>(61000, 0.15f)
         };
@@ -48,7 +48,6 @@ namespace Foxian_league{
             if(externalProgress != 0f) progressUntilNextBlessing += externalProgress;
             progressUntilNextBlessing += (3f * progressMultiplier);
             meditationTickToday ++;
-            //Log.Message($"Meditation tick ++ {meditationTickToday}, progress mult with malus: {3f*progressMultiplier}, maxprogress is {maxProgress * Foxian_Settings.maxProgressMultiplier}");
             tryTriggerBlessing();
 
         }
@@ -57,15 +56,11 @@ namespace Foxian_league{
             if (progressUntilNextBlessing >= maxProgress * Foxian_Settings.maxProgressMultiplier) {
                 progressUntilNextBlessing = 0f;
                 List<Pawn> validPawns = getPawnNearTree();
-                if (validPawns.Count == 0) {
-                    Log.Message("No pawns near the tree to receive a blessing.");
-                    return;
-                }
+                if (validPawns.Count == 0) return;
+
                 List<Pawn> filteredPawns = filterPawns(validPawns);
-                if(filteredPawns.Count == 0) {
-                    Log.Message("No valid pawns found after filtering, blessing can't be applied.");
-                    return;
-                }
+                if(filteredPawns.Count == 0) return;
+
                 Pawn chosenPawn = selectRandomPawn(filteredPawns);
                 addHeddif(chosenPawn);
             }
@@ -75,12 +70,10 @@ namespace Foxian_league{
             float FocusObjectSearchRadius = MeditationUtility.FocusObjectSearchRadius;
             List<Pawn> validPawn = new List<Pawn>();
             foreach (Thing item in GenRadial.RadialDistinctThingsAround(parent.Position, parent.Map, FocusObjectSearchRadius, useCenter: false)) {
-                if (item is Pawn pawn && pawn.RaceProps.Humanlike && Utils.HasActiveGene(pawn, InternalDefOf.FL_NaturalPsySensitive)) {
+                if (item is Pawn pawn && pawn.RaceProps.Humanlike && MeditationFocusTypeAvailabilityCache.PawnCanUse(pawn, MeditationFocusDefOf.Natural)) {
                     validPawn.Add(pawn);
-                    Log.Message($"Found pawn {pawn} near the tree");
                 }
             }
-            Log.Message($"Total valid pawns found near the tree: {validPawn.Count} and {validPawn}");
             return validPawn;
         }
 
@@ -90,13 +83,11 @@ namespace Foxian_league{
 
             else if(Rand.Chance(0.45f) && anyPawnsFreeOfHediff(pawnsWithouthMaxedHediff)) {
                 //Focus pawns that does not have the hediff
-                Log.Message("Focus pawns that does not have the hediff");
                 List<Pawn> pawnsWithoutHediff = new List<Pawn>();
                 foreach(Pawn pawn in pawnsWithouthMaxedHediff) {
                     if(pawn == null) continue;
                     if(!pawn.health.hediffSet.HasHediff(InternalDefOf.FL_Tree_Connection)) {
                         pawnsWithoutHediff.Add(pawn);
-                        Log.Message($"Pawn {pawn} does not have the hediff, adding to the list of potential candidates");
                     }
                 }
                 return pawnsWithoutHediff;
@@ -127,17 +118,11 @@ namespace Foxian_league{
 
         public Pawn selectRandomPawn(List<Pawn> pawns) {
             int totalPawns = pawns.Count;
-            if(totalPawns == 1) {
-                Log.Message("Only one pawn found, selecting that one by default");
-                return pawns[0];
-            }
-            Log.Message($"Rand value is {Rand.Value}");
+            if(totalPawns == 1) return pawns[0];
+
             float randArray = (Rand.Value * ((totalPawns) - 1f) + 1f);
-            Log.Message($"Rand array value is {randArray}");
             decimal roundedRandArray = Math.Round((decimal)randArray);
-            Log.Message($"Rounded rand array value is {roundedRandArray}");
             int selectArray = Math.Clamp((int)roundedRandArray, 0, totalPawns) - 1;
-            Log.Message($"Selected array index is {selectArray}");
             return pawns[selectArray];
         }
 
@@ -146,14 +131,12 @@ namespace Foxian_league{
             if(pawn.health.hediffSet.TryGetHediff(InternalDefOf.FL_Tree_Connection, out hediffToIncrease)) {
                 if(!(hediffToIncrease.Severity >= 1f)) {
                     hediffToIncrease.Severity += 0.1f;
-                    Log.Message($"{pawn} already has tree connection");
                 }
             }
             else {
                 Hediff treeConnection = HediffMaker.MakeHediff(InternalDefOf.FL_Tree_Connection, pawn);
                 treeConnection.Severity = 0.1f;
                 pawn.health.AddHediff(treeConnection);
-                Log.Message($"Added tree connection to {pawn}");
             }
             ChoiceLetter_BlessingReceived choiceLetter_blessing = (ChoiceLetter_BlessingReceived)LetterMaker.MakeLetter("BlessingReceivedTitle".Translate(pawn), "BlessingReceivedTitleLoc".Translate(pawn), InternalDefOf.FL_BlessingReceived, pawn);
             choiceLetter_blessing.Start();
