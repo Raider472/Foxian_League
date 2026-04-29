@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\foxian_league\\1.6\\mods\\vpe\\source\\foxianpsycast\\abilities\\fl_ability_plantnaturatree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|solutionrelative:abilities\\fl_ability_plantnaturatree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FL_Ability_PlantNaturaTree.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Abilities\\FL_Ability_PlantNaturaTree.cs",
+              "RelativeDocumentMoniker": "Abilities\\FL_Ability_PlantNaturaTree.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Abilities\\FL_Ability_PlantNaturaTree.cs",
+              "RelativeToolTip": "Abilities\\FL_Ability_PlantNaturaTree.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAgwBMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T17:10:34.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Main.cs",
+              "RelativeToolTip": "Main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T11:55:16.886Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

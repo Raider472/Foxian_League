@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>FL_VPE_NaturaBloom</defName>
+        <label>natura bloom</label>
+        <description>Desc.</description>
+        <iconPath>UI/Psycast/Ability/FL_PlantNaturaTree</iconPath>
+        <abilityClass>FoxianPsycast.FL_Ability_PlantNaturaTree</abilityClass>
+        <castFleck>PsycastAreaEffect</castFleck>
+        <targetMode>Location</targetMode>
+        <castTime>600</castTime>
+        <requireLineOfSight>false</requireLineOfSight>
+        <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+        <castSound>VPE_Speedboost_Cast</castSound>
+        <range>999999</range>
+        <cooldownTime>2700000</cooldownTime>
+        <showUndrafted>true</showUndrafted>
+        <chance>0</chance>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>FL_VPE_Naturastodis</path>
+                <level>1</level>
+                <order>1</order>
+                <psyfocusCost>0.85</psyfocusCost>
+                <entropyGain>20</entropyGain>
+                <psychic>true</psychic>
+            </li>
+            <li Class="VEF.Abilities.AbilityExtension_Spawn">
+                <thing>FL_Plant_TreeNatura</thing>
+            </li>
+        </modExtensions>
+    </VEF.Abilities.AbilityDef>
+</Defs>

@@ -47,6 +47,10 @@
     <ProgressUntilNextBlessing>Progress until the next blessing: {0}</ProgressUntilNextBlessing>
     <TotalMeditationTree>Total amount of meditation today: {0}h</TotalMeditationTree>
     <ProgressMultiplierLoc>(Progress: {0})</ProgressMultiplierLoc>
+    <NotProgressMultiplierLoc>No progress until the tree reaches full maturity</NotProgressMultiplierLoc>
     <BlessingReceivedTitle>{0_nameDef} received a blessing</BlessingReceivedTitle>
     <BlessingReceivedTitleLoc>{0_nameDef}'s prayers have finally been answered. {0_pronoun} received a blessing from the Natura tree itself!\nAs a result, {0_nameDef}'s psychic sensitivity has been permanently increased.</BlessingReceivedTitleLoc>
+    <MessageMinFertilityRequired>Required minimum fertility: {0}.</MessageMinFertilityRequired>
+    <InvalidLocationPlant>Invalid location</InvalidLocationPlant>
+    <CannotPlantInsideOtherPlant>Cannot be planted inside {0}.</CannotPlantInsideOtherPlant>
 </LanguageData>

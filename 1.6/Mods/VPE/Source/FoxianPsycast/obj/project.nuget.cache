@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "90CsU2z1nfU=",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\FoxianPsycast.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gabriel\\.nuget\\packages\\krafs.rimworld.ref\\1.6.4633\\krafs.rimworld.ref.1.6.4633.nupkg.sha512"
+  ],
+  "logs": []
+}

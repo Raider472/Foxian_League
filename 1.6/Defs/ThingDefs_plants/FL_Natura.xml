@@ -28,17 +28,15 @@
             <sowMinSkill>0</sowMinSkill>
             <sowTags Inherit="False"/>
             <lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
-            <fertilityMin>0.08</fertilityMin>
-            <fertilitySensitivity>0</fertilitySensitivity>
+            <fertilityMin>0.8</fertilityMin>
+            <fertilitySensitivity>0.35</fertilitySensitivity>
             <wildClusterWeight>0</wildClusterWeight>
             <sowWork>400</sowWork>
             <harvestYield>30</harvestYield>
             <treeCategory>Super</treeCategory>
             <dieIfNoSunlight>false</dieIfNoSunlight>
-            <growMinGlow>0</growMinGlow>
             <sowResearchPrerequisites Inherit="False" />
             <dieFromToxicFallout>False</dieFromToxicFallout>
-            <showGrowthInInspectPane>false</showGrowthInInspectPane>
             <minSpacingBetweenSamePlant>5</minSpacingBetweenSamePlant>
             <warnIfMarkedForCut>true</warnIfMarkedForCut>
             <harvestWork>1000</harvestWork>

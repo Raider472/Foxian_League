@@ -40,7 +40,15 @@ namespace Foxian_league{
         }
 
         public override string CompInspectStringExtra() {
-            return string.Concat("ProgressUntilNextBlessing".Translate((progressUntilNextBlessing/(maxProgress * Foxian_Settings.maxProgressMultiplier)).ToStringPercent()) + "\n" + "TotalMeditationTree".Translate((meditationTickToday/2500).ToString()) + " " + "ProgressMultiplierLoc".Translate(progressMultiplier.ToStringPercent()));
+
+            IntVec3 c = parent.Position;
+            Plant plant = c.GetPlant(parent.Map);
+            if(plant.LifeStage == PlantLifeStage.Mature) {
+                return string.Concat("ProgressUntilNextBlessing".Translate((progressUntilNextBlessing / (maxProgress * Foxian_Settings.maxProgressMultiplier)).ToStringPercent()) + "\n" + "TotalMeditationTree".Translate((meditationTickToday / 2500).ToString()) + " " + "ProgressMultiplierLoc".Translate(progressMultiplier.ToStringPercent()));
+            }
+            else {
+                return "NotProgressMultiplierLoc".Translate();
+            }
 
         }
 

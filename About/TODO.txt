@@ -12,6 +12,7 @@ Animals
 Psychic skill tree
 -A skill to spawn a Natura seed (90 Psyfocus or something like that)
 -Skill to buff animals in a circle radius, make them faster, maybe clotting and stronger for a limited duration
+-random Animal attack targeted Raider ?
 
 Misc
 -Reduce frequency of modded books or make them more interesting to read

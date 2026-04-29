@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <VanillaPsycastsExpanded.PsycasterPathDef>
+        <defName>FL_VPE_Naturastodis</defName>
+        <label>Naturastodis</label>
+        <description>Desc.</description>
+        <background>UI/Psycast/Background/FL_FoxianPath</background>
+        <tab>Psycasts</tab>
+        <tooltip>tooltipTest.</tooltip>
+        <requiredGene>FL_NaturalPsySensitive</requiredGene>
+        <lockedReason>NaturalSensitivityOnly</lockedReason>
+        <ignoreLockRestrictionsForNeurotrainers>False</ignoreLockRestrictionsForNeurotrainers>
+        <ensureLockRequirement>True</ensureLockRequirement>
+    </VanillaPsycastsExpanded.PsycasterPathDef>
+</Defs>
