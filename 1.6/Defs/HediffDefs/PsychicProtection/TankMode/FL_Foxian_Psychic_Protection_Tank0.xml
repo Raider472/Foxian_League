@@ -5,7 +5,7 @@
         <label>Dormant Psychic protection - Tank mode</label>
         <description>No Psychic energy emanates from this person.</description>
         <stages>
-        <li/>
+            <li/>
         </stages>
     </HediffDef>
 </Defs>

@@ -13,6 +13,22 @@ Psychic skill tree
 -A skill to spawn a Natura seed (90 Psyfocus or something like that)
 -Skill to buff animals in a circle radius, make them faster, maybe clotting and stronger for a limited duration
 -random Animal attack targeted Raider ?
+-T1 debuff to reduge accuracy of an ennemy (plus damage projectile ?)
+-Next melee hit will deal x400 damages - one time
+-Turn a pawn into a tree
+-Consume a pawn to receive psyfocus ?
+-Heal --Already exists
+-AOE Stop bleeding
+-AOE Heal
+-Permanently or temporarly increase psychic sensitivity
+-Turning a Mufallo into a Vulpano
+-Creating a turret
+
+TODO
+Sounds and fleck designs for psychic power
+Placement and order of the psychic powers
+description for the natura tree and all the defs inside the VPE folders
+Finetune mine (Color of explosion and how much poison it apply)
 
 Misc
 -Reduce frequency of modded books or make them more interesting to read

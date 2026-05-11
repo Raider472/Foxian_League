@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef ParentName="PsycastHediffBase">
+        <defName>FL_AnimalOverclock</defName>
+        <label>animal overclock</label>
+        <description>drugs.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeDamageFactor>0.2</MeleeDamageFactor>
+                    <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.15</VEF_RangedDodgeChance>
+                    <StaggerDurationFactor>-0.15</StaggerDurationFactor>
+                </statOffsets>
+                <statFactors>
+                    <MoveSpeed>1.25</MoveSpeed>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

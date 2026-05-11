@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <DamageDef>
+        <defName>FL_NeedleBomb</defName>
+        <label>needle</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <additionalHediffs>
+            <li>
+                <hediff>FL_Poisonous_Paralysis</hediff>
+                <severityPerDamageDealt>0.008</severityPerDamageDealt>
+                <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+                <inverseStatScaling>true</inverseStatScaling>
+                <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+            </li>
+        </additionalHediffs>
+        <externalViolence>true</externalViolence>
+        <isExplosive>true</isExplosive>
+        <deathMessage>{0} has died in a needle explosion.</deathMessage>
+        <hediff>Stab</hediff>
+        <hediffSolid>Crack</hediffSolid>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <impactSoundType>Bullet</impactSoundType>
+        <armorCategory>Sharp</armorCategory>
+        <minDamageToFragment>15</minDamageToFragment>
+        <defaultDamage>16</defaultDamage>
+        <defaultStoppingPower>0.25</defaultStoppingPower>
+        <defaultArmorPenetration>0.4</defaultArmorPenetration>
+        <corpseDamageFactor>0.5</corpseDamageFactor>
+        <ignoreShields>true</ignoreShields>
+        <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+        <explosionSnowMeltAmount>0</explosionSnowMeltAmount>
+        <explosionCellFleck>FL_NeedleBlast</explosionCellFleck>
+        <soundExplosion>Explosion_Bomb</soundExplosion>
+        <combatLogRules>Damage_Bomb</combatLogRules>
+    </DamageDef>
+</Defs>

@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abilities\FL_Ability_PlantNaturaTree.cs" />
+    <Compile Include="Abilities\FL_ability_PlantWoodMine.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

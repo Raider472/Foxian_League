@@ -8,7 +8,7 @@
         <tab>Psycasts</tab>
         <tooltip>tooltipTest.</tooltip>
         <requiredGene>FL_NaturalPsySensitive</requiredGene>
-        <lockedReason>NaturalSensitivityOnly</lockedReason>
+        <lockedReason>NaturalPsyOnly</lockedReason>
         <ignoreLockRestrictionsForNeurotrainers>False</ignoreLockRestrictionsForNeurotrainers>
         <ensureLockRequirement>True</ensureLockRequirement>
     </VanillaPsycastsExpanded.PsycasterPathDef>

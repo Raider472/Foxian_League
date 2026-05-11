@@ -5,16 +5,16 @@
         <label>Psychic protection - Dodge mode 4</label>
         <stages>
             <li>
-            <statOffsets>
-                <MeleeDodgeChance>8</MeleeDodgeChance>
-                <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.32</VEF_RangedDodgeChance>
-                <StaggerDurationFactor>-0.2</StaggerDurationFactor>
-                <MoveSpeed>0.2</MoveSpeed>
-            </statOffsets>
-            <statFactors>
-                <PainShockThreshold>1.16</PainShockThreshold>
-                <IncomingDamageFactor>0.92</IncomingDamageFactor>
-            </statFactors>
+                <statOffsets>
+                    <MeleeDodgeChance>8</MeleeDodgeChance>
+                    <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.32</VEF_RangedDodgeChance>
+                    <StaggerDurationFactor>-0.2</StaggerDurationFactor>
+                    <MoveSpeed>0.2</MoveSpeed>
+                </statOffsets>
+                <statFactors>
+                    <PainShockThreshold>1.16</PainShockThreshold>
+                    <IncomingDamageFactor>0.92</IncomingDamageFactor>
+                </statFactors>
             </li>
         </stages>
     </HediffDef>
