@@ -32,7 +32,6 @@
         },
         "frameworks": {
           "net472": {
-            "framework": "net472",
             "projectReferences": {}
           }
         },
@@ -44,27 +43,12 @@
       },
       "frameworks": {
         "net472": {
-          "framework": "net472",
           "dependencies": {
             "Krafs.Rimworld.Ref": {
               "target": "Package",
               "version": "[1.6.4633, )"
             }
           }
-        }
-      },
-      "runtimes": {
-        "win": {
-          "#import": []
-        },
-        "win-arm64": {
-          "#import": []
-        },
-        "win-x64": {
-          "#import": []
-        },
-        "win-x86": {
-          "#import": []
         }
       }
     }

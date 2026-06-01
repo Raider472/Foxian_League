@@ -51,7 +51,7 @@
             <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
                 <path>FL_VPE_Naturastodis</path>
                 <level>2</level>
-                <order>2</order>
+                <order>3</order>
                 <psyfocusCost>0.25</psyfocusCost>
                 <entropyGain>30</entropyGain>
                 <prerequisites>
@@ -71,12 +71,11 @@
         <description>Drugs the animals to overclock them. time scale with psysens</description>
         <iconPath>UI/Psycast/Ability/FL_AnimalOverclock</iconPath>
         <abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
-        <targetMode>Location</targetMode>
+        <targetMode>Self</targetMode>
         <castTime>15</castTime>
         <durationTime>2000</durationTime>
         <castSound>VPE_ShieldAnimals_Cast</castSound>
-        <range>9.9</range>
-        <radius>8</radius>
+        <radius>10</radius>
         <hasAoE>true</hasAoE>
         <cooldownTime>25000</cooldownTime>
         <durationTimeStatFactors>
@@ -104,6 +103,42 @@
             </li>
             <li Class="VEF.Abilities.AbilityExtension_Hediff">
                 <hediff>FL_AnimalOverclock</hediff>
+            </li>
+        </modExtensions>
+    </VEF.Abilities.AbilityDef>
+
+    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>FL_VPE_NatureHealing</defName>
+        <label>nature's healing</label>
+        <description>Nature heals you</description>
+        <iconPath>UI/Psycast/Ability/FL_NatureHealing</iconPath>
+        <abilityClass>FoxianPsycast.FL_Nature_Healing</abilityClass>
+        <targetMode>Self</targetMode>
+        <castTime>60</castTime>
+        <castSound>VPE_ShieldAnimals_Cast</castSound>
+        <radius>6</radius>
+        <hasAoE>true</hasAoE>
+        <cooldownTime>10000</cooldownTime>
+        <targetingParametersForAoE>
+            <canTargetSelf>True</canTargetSelf>
+            <canTargetPawns>true</canTargetPawns>
+            <canTargetAnimals>true</canTargetAnimals>
+            <canTargetHumans>true</canTargetHumans>
+            <canTargetMechs>false</canTargetMechs>
+            <canTargetBuildings>false</canTargetBuildings>
+            <mustBeSameFaction>true</mustBeSameFaction>
+            <ignoreRangeAndSight>true</ignoreRangeAndSight>
+        </targetingParametersForAoE>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>FL_VPE_Naturastodis</path>
+                <level>3</level>
+                <order>3</order>
+                <psyfocusCost>0.3</psyfocusCost>
+                <entropyGain>48</entropyGain>
+                <prerequisites>
+                    <li>FL_VPE_NaturaBloom</li>
+                </prerequisites>
             </li>
         </modExtensions>
     </VEF.Abilities.AbilityDef>

@@ -4,6 +4,7 @@
         <defName>FL_AnimalOverclock</defName>
         <label>animal overclock</label>
         <description>drugs.</description>
+        <hediffClass>Foxian_league.Hediff_Clotting</hediffClass>
         <stages>
             <li>
                 <statOffsets>

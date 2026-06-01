@@ -10,21 +10,24 @@ Check if genetic purity can be changed/refractor (removing mother field and etc.
 Animals
 
 Psychic skill tree
--A skill to spawn a Natura seed (90 Psyfocus or something like that)
--Skill to buff animals in a circle radius, make them faster, maybe clotting and stronger for a limited duration
+-A skill to spawn a Natura seed (90 Psyfocus or something like that) (Done)
+-Skill to buff animals in a circle radius, make them faster, maybe clotting and stronger for a limited duration (Semi-Done)
 -random Animal attack targeted Raider ?
 -T1 debuff to reduge accuracy of an ennemy (plus damage projectile ?)
 -Next melee hit will deal x400 damages - one time
--Turn a pawn into a tree
+-Turn a pawn into a tree (could be easier if the tree is unique)
 -Consume a pawn to receive psyfocus ?
 -Heal --Already exists
 -AOE Stop bleeding
--AOE Heal
+-AOE Heal (done)
 -Permanently or temporarly increase psychic sensitivity
--Turning a Mufallo into a Vulpano
 -Creating a turret
 
 TODO
+Give clotting to animal overclock (works)
+Patch for for medieval tags ???
+Mod option for tails age
+Save Ref of the Natura Tree for loading saves (check)
 Sounds and fleck designs for psychic power
 Placement and order of the psychic powers
 description for the natura tree and all the defs inside the VPE folders
