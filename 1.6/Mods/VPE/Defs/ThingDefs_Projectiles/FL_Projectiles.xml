@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BaseBullet">
+        <defName>FL_VPE_WoodLance_Projectile</defName>
+        <label>wood lance</label>
+        <description>A wood lance launched by the Naturastodis.</description>
+        <thingClass>FoxianPsycast.FL_Ability_ProjectileWithHediff</thingClass>
+        <tickerType>Normal</tickerType>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <drawOffscreen>true</drawOffscreen>
+        <graphicData>
+            <texPath>Things/Projectiles/FL_WoodLance_Projectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Transparent</shaderType>
+        </graphicData>
+        <projectile>
+            <damageDef>Cut</damageDef>
+            <damageAmountBase>9</damageAmountBase>
+            <speed>90</speed>
+        </projectile>
+        <comps>
+            <li Class="VanillaPsycastsExpanded.CompProperties_FleckEmitter">
+                <fleck>FL_VPE_NatureTrail</fleck>
+                <emissionInterval>1</emissionInterval>
+                <scale>1.5</scale>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="FoxianPsycast.AbilityExtension_ProjectileWithHediff">
+                <hediffOnHit>FL_Venom_Wood_Lance</hediffOnHit>
+                <severityRange>0.05~0.09</severityRange>
+            </li>
+        </modExtensions>
+    </ThingDef>
+</Defs>

@@ -4,7 +4,7 @@
     <HediffDef>
         <defName>FL_RottenResilience</defName>
         <label>Rotten resilience</label>
-        <description>This creature exhibits unholy resistance due to its rotten body. When hit by an attack, it might reduce a percentage of the total damage.</description>
+        <description>This creature exhibits unholy resistance as a consequence of its rotten body. When hit by an attack, there is a possibility that the damage received will be reduced by a percentage.</description>
         <defaultLabelColor>(0.51, 0.74, 0.13)</defaultLabelColor>
         <hediffClass>HediffWithComps</hediffClass>
         <everCurableByItem>false</everCurableByItem>

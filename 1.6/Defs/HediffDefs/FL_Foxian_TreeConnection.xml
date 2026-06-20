@@ -3,7 +3,7 @@
     <HediffDef>
         <defName>FL_Tree_Connection</defName>
         <label>natural connection</label>
-        <description>This person has been blessed by a Natura tree and had its psychic sensitivity permanently enhanced.</description>
+        <description>This devotee has received the blessing of a Natura tree for its devotion. The blessings permanently increase the psychic sensitivity of the chosen individual. The bonus will get bigger as more blessings are earned.</description>
         <defaultLabelColor>(0.41, 0.91, 0.72)</defaultLabelColor>
         <everCurableByItem>false</everCurableByItem>
         <isBad>false</isBad>
@@ -11,70 +11,70 @@
         <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
         <stages>
             <li>
-                <label>minor</label>
+                <label>novice</label>
                 <statOffsets>
                     <PsychicSensitivity>0.1</PsychicSensitivity>
                 </statOffsets>
             </li>
             <li>
                 <minSeverity>0.2</minSeverity>
-                <label>minor</label>
+                <label>acolyte</label>
                 <statOffsets>
                     <PsychicSensitivity>0.2</PsychicSensitivity>
                 </statOffsets>
             </li>
             <li>
                 <minSeverity>0.3</minSeverity>
-                <label>mild</label>
+                <label>devotee</label>
                 <statOffsets>
                     <PsychicSensitivity>0.3</PsychicSensitivity>
                 </statOffsets>
             </li>
             <li>
                 <minSeverity>0.4</minSeverity>
-                <label>mild</label>
+                <label>disciple</label>
                 <statOffsets>
                     <PsychicSensitivity>0.4</PsychicSensitivity>
                 </statOffsets>
             </li>
             <li>
                 <minSeverity>0.5</minSeverity>
-                <label>moderate</label>
+                <label>adept</label>
                 <statOffsets>
                     <PsychicSensitivity>0.5</PsychicSensitivity>
                 </statOffsets>
             </li>
             <li>
                 <minSeverity>0.6</minSeverity>
-                <label>moderate</label>
+                <label>venerated</label>
                 <statOffsets>
                     <PsychicSensitivity>0.6</PsychicSensitivity>
                 </statOffsets>
             </li>
             <li>
                 <minSeverity>0.7</minSeverity>
-                <label>great</label>
+                <label>enlighten</label>
                 <statOffsets>
                     <PsychicSensitivity>0.7</PsychicSensitivity>
                 </statOffsets>
             </li>
             <li>
                 <minSeverity>0.8</minSeverity>
-                <label>great</label>
+                <label>exalted</label>
                 <statOffsets>
                     <PsychicSensitivity>0.8</PsychicSensitivity>
                 </statOffsets>
             </li>
             <li>
                 <minSeverity>0.9</minSeverity>
-                <label>intense</label>
+                <label>revered</label>
                 <statOffsets>
                     <PsychicSensitivity>0.9</PsychicSensitivity>
                 </statOffsets>
             </li>
             <li>
                 <minSeverity>1</minSeverity>
-                <label>intense</label>
+                <label>chosen</label>
                 <statOffsets>
                     <PsychicSensitivity>1</PsychicSensitivity>
                 </statOffsets>

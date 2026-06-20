@@ -9,6 +9,17 @@
         </graphicData>
         <altitudeLayer>MoteOverhead</altitudeLayer>
         <solidTime>0</solidTime>
-        <fadeOutTime>0.2</fadeOutTime>
+        <fadeOutTime>0.15</fadeOutTime>
+    </FleckDef>
+    
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>FL_VPE_NatureTrail</defName>
+        <graphicData>
+            <texPath>Things/Motes/FL_NatureTrail</texPath>
+            <shaderType>MoteGlow</shaderType>
+        </graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <solidTime>0.1</solidTime>
+        <fadeOutTime>0.1</fadeOutTime>
     </FleckDef>
 </Defs>

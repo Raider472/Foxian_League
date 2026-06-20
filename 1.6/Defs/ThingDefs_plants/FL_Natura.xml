@@ -3,7 +3,7 @@
     <ThingDef ParentName="TreeBase" MayRequire="Ludeon.RimWorld.Royalty">
         <defName>FL_Plant_TreeNatura</defName>
         <label>Natura tree</label>
-        <description>An unknown tree that is only found on this rimworld, it's commonly seen in the perimeter of settlements belonging to the Foxian League. Foxians and naturalist psycasters believe that they can receive blessings from this tree if they stay near it during their meditation session. They only grow from seeds extracted from Natura flowers or planted by psycasters with knowledge on how to convert a seed into a Natura seed.</description>
+        <description>An unknown tree that is exclusively found on this rimworld, it's typically seen inside settlements belonging to the Foxian League. Nevertheless, some outlanders have claimed to have witnessed some of these trees outside the sphere of influence of the Foxian League. Foxians and naturalist psycasters believe that they can receive blessings when meditating next to it. They only grow from seeds extracted from Natura flowers or planted by a psycaster with the hidden coveted knowledge.</description>
         <graphicData>
             <texPath>Things/Plants/Natura</texPath>
             <graphicClass>Graphic_Random</graphicClass>

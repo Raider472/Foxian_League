@@ -11,7 +11,7 @@
     <baseChance>0.7</baseChance>
     <minRefireDays>20</minRefireDays>
     <letterLabel>Natura flower sprout</letterLabel>
-    <letterText>A Natura flower has sprouted nearby!\n\nHarvest it to collect a Natura seed. This special seed can be used to plant a sublime Natura tree.\n\nAny colonists with the natural meditation focus type can meditate near the tree and might be blessed by it. Being blessed by a Natura tree will permanently enhance the psychic sensitivity of the favored colonist.</letterText>
+    <letterText>A Natura flower has sprouted nearby!\n\nHarvest it to collect a Natura seed. This special seed can be used to plant a sublime Natura tree.\n\nAny colonists with the natural meditation focus type can meditate near the tree and might receive its blessing by dedicating their meditating time near it. Being blessed by a Natura tree will permanently enhance the psychic sensitivity of the favored colonist.</letterText>
     <letterDef>PositiveEvent</letterDef>
     <disallowedBiomes>
         <li>SeaIce</li>

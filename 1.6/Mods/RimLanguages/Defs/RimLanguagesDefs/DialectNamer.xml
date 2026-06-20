@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <RulePackDef MayRequire="DimonSever000.FactionLanguages">
+    <RulePackDef>
         <defName>FL_FoxianDialect_NameMaker</defName>
         <rulePack>
             <rulesStrings>

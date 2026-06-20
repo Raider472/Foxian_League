@@ -336,6 +336,7 @@
       },
       "frameworks": {
         "net472": {
+          "framework": "net472",
           "projectReferences": {}
         }
       },
@@ -347,6 +348,7 @@
     },
     "frameworks": {
       "net472": {
+        "framework": "net472",
         "dependencies": {
           "Krafs.Rimworld.Ref": {
             "target": "Package",

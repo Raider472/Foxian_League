@@ -45,8 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\FL_Ability_NatureBlessing.cs" />
     <Compile Include="Abilities\FL_Ability_PlantNaturaTree.cs" />
     <Compile Include="Abilities\FL_ability_PlantWoodMine.cs" />
+    <Compile Include="ModExtension\AbilityExtension_ProjectileWithHediff.cs" />
+    <Compile Include="Projectiles\FL_Ability_ProjectileWithHediff.cs" />
     <Compile Include="Abilities\FL_Nature_Healing.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

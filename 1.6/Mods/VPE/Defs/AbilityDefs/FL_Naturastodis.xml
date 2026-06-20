@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>FL_VPE_WoodLance</defName>
+        <label>wood lance</label>
+        <description>Sends a wood lance to an enemy. The wood is infused with toxins to destabilize the target, the more they receive, the greater the effects are.</description>
+        <iconPath>UI/Psycast/Ability/FL_WoodLance</iconPath>
+        <abilityClass>VEF.Abilities.Ability_ShootProjectile</abilityClass>
+        <castTime>15</castTime>
+        <range>24.9</range>
+        <cooldownTime>300</cooldownTime>
+        <castSound>VPE_IceSpike_Cast</castSound>
+        <targetingParameters>
+            <canTargetPawns>true</canTargetPawns>
+            <canTargetBuildings>true</canTargetBuildings>
+        </targetingParameters>
+        <power>9</power>
+        <targetMode>Pawn</targetMode>
+        <powerStatFactors>
+            <PsychicSensitivity>1</PsychicSensitivity>
+        </powerStatFactors>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>FL_VPE_Naturastodis</path>
+                <level>1</level>
+                <order>2</order>
+                <psyfocusCost>0.09</psyfocusCost>
+                <entropyGain>14</entropyGain>
+            </li>
+            <li Class="VEF.Abilities.AbilityExtension_Projectile">
+                <projectile>FL_VPE_WoodLance_Projectile</projectile>
+                <accuracyStatFactors>
+                    <PsychicSensitivity>1</PsychicSensitivity>
+                </accuracyStatFactors>
+            </li>
+        </modExtensions>
+    </VEF.Abilities.AbilityDef>
+
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>FL_VPE_NaturaBloom</defName>
         <label>natura bloom</label>
@@ -44,7 +81,7 @@
         <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
         <castSound>VPE_Speedboost_Cast</castSound>
         <range>999999</range>
-        <cooldownTime>420000</cooldownTime>
+        <cooldownTime>300000</cooldownTime>
         <showUndrafted>true</showUndrafted>
         <chance>0</chance>
         <modExtensions>
@@ -66,8 +103,8 @@
     </VEF.Abilities.AbilityDef>
 
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-        <defName>FL_VPE_AnimalOverclock</defName>
-        <label>animal overclock</label>
+        <defName>FL_VPE_NatureFinest</defName>
+        <label>nature's finest</label>
         <description>Drugs the animals to overclock them. time scale with psysens</description>
         <iconPath>UI/Psycast/Ability/FL_AnimalOverclock</iconPath>
         <abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
@@ -78,6 +115,7 @@
         <radius>10</radius>
         <hasAoE>true</hasAoE>
         <cooldownTime>25000</cooldownTime>
+        <chance>0</chance>
         <durationTimeStatFactors>
             <PsychicSensitivity>1.5</PsychicSensitivity>
         </durationTimeStatFactors>
@@ -119,6 +157,7 @@
         <radius>6</radius>
         <hasAoE>true</hasAoE>
         <cooldownTime>10000</cooldownTime>
+        <chance>0</chance>
         <targetingParametersForAoE>
             <canTargetSelf>True</canTargetSelf>
             <canTargetPawns>true</canTargetPawns>
@@ -139,6 +178,39 @@
                 <prerequisites>
                     <li>FL_VPE_NaturaBloom</li>
                 </prerequisites>
+            </li>
+        </modExtensions>
+    </VEF.Abilities.AbilityDef>
+
+    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>FL_VPE_NatureBlessing</defName>
+        <label>nature's blessing</label>
+        <description>Comune with the god and offer a sacrifice to grant temperoray power based on the value of the sacrifice.</description>
+        <iconPath>UI/Psycast/Ability/FL_NatureCurse</iconPath>
+        <abilityClass>FoxianPsycast.FL_Ability_NatureBlessing</abilityClass>
+        <targetMode>Pawn</targetMode>
+        <castFleck>PsycastAreaEffect</castFleck>
+        <castTime>300</castTime>
+        <requireLineOfSight>false</requireLineOfSight>
+        <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+        <castSound>VPE_Speedboost_Cast</castSound>
+        <range>999999</range>
+        <cooldownTime>600000</cooldownTime>
+        <showUndrafted>true</showUndrafted>
+        <chance>0</chance>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>FL_VPE_Naturastodis</path>
+                <level>4</level>
+                <order>1</order>
+                <psyfocusCost>0.25</psyfocusCost>
+                <entropyGain>60</entropyGain>
+                <prerequisites>
+                    <li>FL_VPE_NatureHealing</li>
+                </prerequisites>
+            </li>
+            <li Class="VEF.Abilities.AbilityExtension_Spawn">
+                <thing>FL_Plant_BlessingTree</thing>
             </li>
         </modExtensions>
     </VEF.Abilities.AbilityDef>

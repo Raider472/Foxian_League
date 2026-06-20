@@ -10,13 +10,15 @@ namespace FoxianPsycast {
     public class FL_Nature_Healing : VEF.Abilities.Ability {
         public override void Cast(params GlobalTargetInfo[] targets) {
             base.Cast(targets);
+            float psychicSensitivityMin = getPsychicSensitivityMin();
+            Log.Message($"Psychic Sensitivity Min: {psychicSensitivityMin}");
             if(targets.Length == 0 || targets == null) return;
             for(int i = 0; i < targets.Length; i++) {
                 Log.Message($"{targets[i].Pawn}");
                 List<Hediff_Injury> injuriesList = targets[i].Pawn.health.hediffSet.hediffs.OfType<Hediff_Injury>().ToList();
                 Log.Message($"Injuries found: {injuriesList.Count}");
                 if(injuriesList.Any()) {
-                    HealInjuries(injuriesList);
+                    HealInjuries(injuriesList, psychicSensitivityMin);
                 }
                 else {
                     Log.Message("No injuries to heal");
@@ -25,7 +27,7 @@ namespace FoxianPsycast {
             }
         }
 
-        private void HealInjuries(List<Hediff_Injury> injuries) {
+        private void HealInjuries(List<Hediff_Injury> injuries, float psychicSensitivityMin) {
             foreach(Hediff_Injury injury in injuries) {
                 if (injury.IsPermanent()) continue;
                 float skipHeal = Rand.Value;
@@ -34,10 +36,14 @@ namespace FoxianPsycast {
                     continue;
                 }
                 Log.Message($"{injury.Label} and severity {injury.Severity}");
-                float randomHealValue = (Rand.Value * (injury.Severity - (injury.Severity * 0.01f)) + (injury.Severity * 0.01f));
+                float randomHealValue = (Rand.Value * (injury.Severity - psychicSensitivityMin) + psychicSensitivityMin);
                 injury.Heal(randomHealValue);
                 Log.Message($"Healed {randomHealValue} point of {injury.Label}, new severity: {injury.Severity}");
             }
+        }
+
+        private float getPsychicSensitivityMin() {
+            return pawn.psychicEntropy.PsychicSensitivity * 0.1f;
         }
     }
 }

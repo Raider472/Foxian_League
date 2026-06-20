@@ -53,4 +53,7 @@
     <MessageMinFertilityRequired>Required minimum fertility: {0}.</MessageMinFertilityRequired>
     <InvalidLocationPlant>Invalid location</InvalidLocationPlant>
     <CannotPlantInsideOtherPlant>Cannot be planted inside {0}.</CannotPlantInsideOtherPlant>
+    <AbilityTargetMustBeHumanlike>Target must be humanlike.</AbilityTargetMustBeHumanlike>
+    <AbilityTargetMustBeAlive>Target must be alive.</AbilityTargetMustBeAlive>
+    <AbilityTargetMustBeDowned>Target must be downed.</AbilityTargetMustBeDowned>
 </LanguageData>

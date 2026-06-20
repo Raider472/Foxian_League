@@ -57,7 +57,7 @@
             <li Class="Foxian_league.CompProperties_PoisonousDagger">
                 <hediffOnHit>FL_Poisonous_Paralysis</hediffOnHit>
                 <minValue>0.06</minValue>
-                <maxValue>0.015</maxValue>
+                <maxValue>0.13</maxValue>
             </li>
         </comps>
     </ThingDef>

@@ -3,17 +3,17 @@
     <HediffDef ParentName="PsycastHediffBase">
         <defName>FL_AnimalOverclock</defName>
         <label>animal overclock</label>
-        <description>drugs.</description>
+        <description>This animal has been temporarily psychically altered by a psycaster. Their instincts, speed, and strength have been enhanced. Their bleeding wounds will also close instantaneously.</description>
         <hediffClass>Foxian_league.Hediff_Clotting</hediffClass>
         <stages>
             <li>
                 <statOffsets>
-                    <MeleeDamageFactor>0.2</MeleeDamageFactor>
-                    <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.15</VEF_RangedDodgeChance>
-                    <StaggerDurationFactor>-0.15</StaggerDurationFactor>
+                    <MeleeDamageFactor>0.25</MeleeDamageFactor>
+                    <VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.2</VEF_RangedDodgeChance>
+                    <StaggerDurationFactor>-0.2</StaggerDurationFactor>
                 </statOffsets>
                 <statFactors>
-                    <MoveSpeed>1.25</MoveSpeed>
+                    <MoveSpeed>1.5</MoveSpeed>
                 </statFactors>
             </li>
         </stages>
