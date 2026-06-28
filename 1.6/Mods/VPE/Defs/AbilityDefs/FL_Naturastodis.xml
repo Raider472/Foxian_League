@@ -210,7 +210,7 @@
                 </prerequisites>
             </li>
             <li Class="VEF.Abilities.AbilityExtension_Spawn">
-                <thing>FL_Plant_BlessingTree</thing>
+                <thing>FL_Plant_SacrificialTree</thing>
             </li>
         </modExtensions>
     </VEF.Abilities.AbilityDef>

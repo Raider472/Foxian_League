@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RitualOutcomeEffectDef>
+        <defName>FL_SacrificialTree_RitualOutcome</defName>
+        <workerClass>FoxianPsycast.RitualOutcomeEffectWorker_SacrificialTree</workerClass>
+        <warnOnLowQuality>false</warnOnLowQuality>
+        <givesDevelopmentPoints>false</givesDevelopmentPoints>
+        <comps>
+            <li Class="RitualOutcomeComp_ParticipantCount">
+                <label>participant count</label>
+                <curve>
+                    <points>
+                    <li>(1, 0.05)</li>
+                    <li>(2, 0.1)</li>
+                    <li>(4, 0.2)</li>
+                    <li>(6, 0.3)</li>
+                    <li>(8, 0.4)</li>
+                    </points>
+                </curve>
+            </li>
+            <li Class="RitualOutcomeComp_PawnStatScaled">
+                <label>{PAWN_labelShort}'s psychic sensitivity</label>
+                <labelAbstract>organizer's psychic sensitivity</labelAbstract>
+                <roleId>organizer</roleId>
+                <statDef>PsychicSensitivity</statDef>
+                <curve>
+                    <points>
+                    <li>(1, 0)</li>
+                    <li>(1.5, 0.1)</li>
+                    <li>(1.75, 0.2)</li>
+                    <li>(2, 0.3)</li>
+                    <li>(2.25, 0.4)</li>
+                    <li>(2.5, 0.5)</li>
+                    <li>(3, 0.6)</li>
+                    </points>
+                </curve>
+            </li>
+        </comps>
+    </RitualOutcomeEffectDef>
+</Defs>

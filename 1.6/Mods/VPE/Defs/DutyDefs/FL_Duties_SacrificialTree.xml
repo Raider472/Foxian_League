@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <DutyDef>
+        <defName>FL_RitualWithSacrificialTreeSpectator</defName>
+        <hook>MediumPriority</hook>
+        <socialModeMax>Off</socialModeMax>
+        <thinkNode Class="ThinkNode_Priority">
+            <subNodes>
+                <li Class="JobGiver_SpectateInCircleDuty"/>
+            </subNodes>
+        </thinkNode>
+    </DutyDef>
+
+    <DutyDef>
+        <defName>FL_RitualWithSacrificialTreeRitualist</defName>
+        <hook>MediumPriority</hook>
+        <socialModeMax>Off</socialModeMax>
+        <thinkNode Class="ThinkNode_Priority">
+            <subNodes>
+                <li Class="FoxianPsycast.JobGiver_SacrificialTreeRitual"/>
+            </subNodes>
+        </thinkNode>
+    </DutyDef>
+</Defs>

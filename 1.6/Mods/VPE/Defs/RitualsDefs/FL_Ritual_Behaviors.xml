@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RitualBehaviorDef>
+        <defName>FL_SacrificalTree_SacrificeRitual</defName>
+        <durationTicks>10000</durationTicks>
+        <workerClass>FoxianPsycast.RitualBehaviorWorker_SacrificialTree</workerClass>
+        <roles>
+            <li Class="FoxianPsycast.RitualRoleSacrificialOrganizer">
+                <label>ritualist</label>
+                <id>organizer</id>
+                <required>true</required>
+                <maxCount>1</maxCount>
+                <defaultForSelectedColonist>true</defaultForSelectedColonist>
+                <noCandidatesGizmoDesc>Need a colonist with the natural meditation.</noCandidatesGizmoDesc>
+                <allowChild>false</allowChild>
+                <customChildDisallowMessage>Only adults can start the sacrificial tree ritual.</customChildDisallowMessage>
+            </li>
+        </roles>
+        <spectatorFilter Class="RitualSpectatorFilter_NatureFocus">
+            <description>Must have natural focus type.</description>
+        </spectatorFilter>
+        <spectatorsLabel>Participants</spectatorsLabel>
+        <spectatorGerund>participate</spectatorGerund>
+        <stages>
+            <li Class="FoxianPsycast.RitualStage_SacrificialTree">
+                <defaultDuty>FL_RitualWithSacrificialTreeSpectator</defaultDuty>
+                <endTriggers>
+                    <li Class="StageEndTrigger_DurationPercentage">
+                        <percentage>1</percentage>
+                    </li>
+                </endTriggers>
+                <spectateDistanceOverride>3~4</spectateDistanceOverride>
+                <roleBehaviors>
+                    <li>
+                        <roleId>organizer</roleId>
+                        <dutyDef>FL_RitualWithSacrificialTreeRitualist</dutyDef>
+                    </li>
+                </roleBehaviors>
+            </li>
+        </stages>
+    </RitualBehaviorDef>
+</Defs>

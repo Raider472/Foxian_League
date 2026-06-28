@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef ParentName="TreeBase">
-        <defName>FL_Plant_BlessingTree</defName>
-        <label>Jubokko</label>
+        <defName>FL_Plant_SacrificialTree</defName>
+        <label>sacrificial tree</label>
         <description>Desc.</description>
         <graphicData>
             <texPath>Things/Plants/Natura</texPath>
@@ -37,8 +37,8 @@
             <dieFromToxicFallout>False</dieFromToxicFallout>
             <minSpacingBetweenSamePlant>0</minSpacingBetweenSamePlant>
             <warnIfMarkedForCut>true</warnIfMarkedForCut>
-            <choppedThingDef>FL_ChoppedStump_BlessingTree</choppedThingDef>
-            <smashedThingDef>FL_SmashedStump_BlessingTree</smashedThingDef>
+            <choppedThingDef>FL_ChoppedStump_SacrificialTree</choppedThingDef>
+            <smashedThingDef>FL_SmashedStump_SacrificialTree</smashedThingDef>
             <immatureGraphicPath>Things/Plants/Natura</immatureGraphicPath>
             <snowOverlayGraphicPath>Things/Plants/Natura_Snowy</snowOverlayGraphicPath>
             <immatureSnowOverlayGraphicPath>Things/Plants/Natura_Snowy</immatureSnowOverlayGraphicPath>
@@ -54,7 +54,7 @@
     </ThingDef>
 
     <ThingDef ParentName="StumpChoppedBase">
-        <defName>FL_ChoppedStump_BlessingTree</defName>
+        <defName>FL_ChoppedStump_SacrificialTree</defName>
         <label>chopped HumanoidTreeSomething stump</label>
         <description>A stump left behind after a HumanoidTreeSomething tree has been felled. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
         <graphicData>
@@ -64,7 +64,7 @@
     </ThingDef>
 
     <ThingDef ParentName="StumpSmashedBase">
-        <defName>FL_SmashedStump_BlessingTree</defName>
+        <defName>FL_SmashedStump_SacrificialTree</defName>
         <label>smashed HumanoidTreeSomething stump</label>
         <description>The remnants of a HumanoidTreeSomething tree destroyed by damage. It's ugly. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
         <graphicData>

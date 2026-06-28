@@ -3,7 +3,7 @@
     <HediffDef>
         <defName>FL_Venom_Wood_Lance</defName>
         <label>nature's venom</label>
-        <description>This pawn has been hit by a wooden lance coated with a psychical poison.</description>
+        <description>This pawn has been hit by a wooden lance coated with a psychical poison. The poison is not lethal and will most likely be gone after a few hours, but it will hinder the victim's movement and manipulation during this time. The higher the severity is, the higher the effect will be.</description>
         <hediffClass>Foxian_league.Hediff_ShowSeverity</hediffClass>
         <defaultLabelColor>(0.87, 0.79, 0.23)</defaultLabelColor>
         <initialSeverity>0.01</initialSeverity>
@@ -143,7 +143,7 @@
                 <chance>0.03</chance>
             </li>
             <li Class="HediffCompProperties_SeverityPerDay">
-                <severityPerDay>-0.7</severityPerDay>
+                <severityPerDay>-0.9</severityPerDay>
                 <showDaysToRecover>true</showDaysToRecover>
             </li>
             <li Class="HediffCompProperties_DisappearsOnDeath"/>

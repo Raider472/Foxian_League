@@ -44,6 +44,7 @@
     <maxProgressTreeMultiplierSlider>Multiplier for the amount of meditation to trigger a blessing</maxProgressTreeMultiplierSlider>
     <maxProgressTreeMultiplierSliderDesc>Changes how long you need to meditate to trigger a blessing. Lower values shorten the time needed, while higher ones make it longer.</maxProgressTreeMultiplierSliderDesc>
     <ResetButton>Default Values</ResetButton>
+    
     <ProgressUntilNextBlessing>Progress until the next blessing: {0}</ProgressUntilNextBlessing>
     <TotalMeditationTree>Total amount of meditation today: {0}h</TotalMeditationTree>
     <ProgressMultiplierLoc>(Progress: {0})</ProgressMultiplierLoc>
@@ -56,4 +57,12 @@
     <AbilityTargetMustBeHumanlike>Target must be humanlike.</AbilityTargetMustBeHumanlike>
     <AbilityTargetMustBeAlive>Target must be alive.</AbilityTargetMustBeAlive>
     <AbilityTargetMustBeDowned>Target must be downed.</AbilityTargetMustBeDowned>
+
+    <RitualTargetSacrificialTreeInfo>a sacrificial tree</RitualTargetSacrificialTreeInfo>
+    <RitualTargetSacrificialTreeNotMature>The tree must be mature.</RitualTargetSacrificialTreeNotMature>
+    <LetterLabelSacrificialRitualCompleted>Sacrificial ritual completed</LetterLabelSacrificialRitualCompleted>
+    <LetterTextSacrificialRitualCompleted>{0_labelShort} has completed the sacrifial ritual.\n\n{0_pronoun} now has received a blessing or curse from the gods.</LetterTextSacrificialRitualCompleted>
+    <SacrificialRitualExplanationBase>The sacrificial tree ceremony is more powerful with more participants and with a high psy-sensitive ritualist. The more people participate, the less time the ceremony takes, and the higher the chance of receiving a benediction instead of a curse.\n\nWith our current configuration, we will have {0} to receive a positive reward.</SacrificialRitualExplanationBase>
+    <RitualTargetSacrificialTreeMustBeCapableOfNature>Must be a colonist with the natural meditation focus type</RitualTargetSacrificialTreeMustBeCapableOfNature>
+    <PawnCannotReceiveSacrificialBlessings>This person cannot receives more blessings for the time being.</PawnCannotReceiveSacrificialBlessings>
 </LanguageData>

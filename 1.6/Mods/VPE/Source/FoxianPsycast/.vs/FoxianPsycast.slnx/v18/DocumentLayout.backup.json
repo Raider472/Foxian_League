@@ -3,7 +3,43 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\foxian_league\\1.6\\mods\\vpe\\source\\foxianpsycast\\abilities\\fl_ability_natureblessing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\rituals\\ritualbehaviorworker_sacrificialtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|solutionrelative:rituals\\ritualbehaviorworker_sacrificialtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\internaldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|solutionrelative:internaldefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\rituals\\ritualposition_sacrificialtreespot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|solutionrelative:rituals\\ritualposition_sacrificialtreespot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\rituals\\ritualstage_sacrificialtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|solutionrelative:rituals\\ritualstage_sacrificialtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\foxian_league\\1.6\\mods\\vpe\\source\\foxianpsycast\\rituals\\ritualrolesacrificialorganizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|solutionrelative:rituals\\ritualrolesacrificialorganizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\rituals\\ritualoutcomeeffectworker_sacrificialtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|solutionrelative:rituals\\ritualoutcomeeffectworker_sacrificialtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\rituals\\ritualobligationtargetworker_sacrificialtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|solutionrelative:rituals\\ritualobligationtargetworker_sacrificialtree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\jobs\\jobgiver_sacrificialtreeritual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|solutionrelative:jobs\\jobgiver_sacrificialtreeritual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\jobs\\jobdriver_sacrificialtreeritual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|solutionrelative:jobs\\jobdriver_sacrificialtreeritual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\abilities\\fl_ability_natureblessing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FAECB52-B713-4868-A2C5-8C39534004F3}|FoxianPsycast.csproj|solutionrelative:abilities\\fl_ability_natureblessing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -18,11 +54,124 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RitualBehaviorWorker_SacrificialTree.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Rituals\\RitualBehaviorWorker_SacrificialTree.cs",
+              "RelativeDocumentMoniker": "Rituals\\RitualBehaviorWorker_SacrificialTree.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Rituals\\RitualBehaviorWorker_SacrificialTree.cs",
+              "RelativeToolTip": "Rituals\\RitualBehaviorWorker_SacrificialTree.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T15:46:54.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "InternalDefOf.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\InternalDefOf.cs",
+              "RelativeDocumentMoniker": "InternalDefOf.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\InternalDefOf.cs",
+              "RelativeToolTip": "InternalDefOf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T15:45:56.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RitualPosition_SacrificialTreeSpot.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Rituals\\RitualPosition_SacrificialTreeSpot.cs",
+              "RelativeDocumentMoniker": "Rituals\\RitualPosition_SacrificialTreeSpot.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Rituals\\RitualPosition_SacrificialTreeSpot.cs",
+              "RelativeToolTip": "Rituals\\RitualPosition_SacrificialTreeSpot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T15:33:53.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RitualStage_SacrificialTree.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Rituals\\RitualStage_SacrificialTree.cs",
+              "RelativeDocumentMoniker": "Rituals\\RitualStage_SacrificialTree.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Rituals\\RitualStage_SacrificialTree.cs",
+              "RelativeToolTip": "Rituals\\RitualStage_SacrificialTree.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T19:23:03.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RitualRoleSacrificialOrganizer.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Rituals\\RitualRoleSacrificialOrganizer.cs",
+              "RelativeDocumentMoniker": "Rituals\\RitualRoleSacrificialOrganizer.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Rituals\\RitualRoleSacrificialOrganizer.cs",
+              "RelativeToolTip": "Rituals\\RitualRoleSacrificialOrganizer.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCoAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-27T19:05:40.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RitualOutcomeEffectWorker_SacrificialTree.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Rituals\\RitualOutcomeEffectWorker_SacrificialTree.cs",
+              "RelativeDocumentMoniker": "Rituals\\RitualOutcomeEffectWorker_SacrificialTree.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Rituals\\RitualOutcomeEffectWorker_SacrificialTree.cs",
+              "RelativeToolTip": "Rituals\\RitualOutcomeEffectWorker_SacrificialTree.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-23T11:25:01.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RitualObligationTargetWorker_SacrificialTree.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Rituals\\RitualObligationTargetWorker_SacrificialTree.cs",
+              "RelativeDocumentMoniker": "Rituals\\RitualObligationTargetWorker_SacrificialTree.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Rituals\\RitualObligationTargetWorker_SacrificialTree.cs",
+              "RelativeToolTip": "Rituals\\RitualObligationTargetWorker_SacrificialTree.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T14:21:21.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JobGiver_SacrificialTreeRitual.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Jobs\\JobGiver_SacrificialTreeRitual.cs",
+              "RelativeDocumentMoniker": "Jobs\\JobGiver_SacrificialTreeRitual.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Jobs\\JobGiver_SacrificialTreeRitual.cs",
+              "RelativeToolTip": "Jobs\\JobGiver_SacrificialTreeRitual.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T14:41:05.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "JobDriver_SacrificialTreeRitual.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Jobs\\JobDriver_SacrificialTreeRitual.cs",
+              "RelativeDocumentMoniker": "Jobs\\JobDriver_SacrificialTreeRitual.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Jobs\\JobDriver_SacrificialTreeRitual.cs",
+              "RelativeToolTip": "Jobs\\JobDriver_SacrificialTreeRitual.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwCkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-28T14:52:33.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "FL_Ability_PlantNaturaTree.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Abilities\\FL_Ability_PlantNaturaTree.cs",
               "RelativeDocumentMoniker": "Abilities\\FL_Ability_PlantNaturaTree.cs",
@@ -30,21 +179,19 @@
               "RelativeToolTip": "Abilities\\FL_Ability_PlantNaturaTree.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAgwFUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-04T11:28:07.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-04T11:28:07.852Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "FL_Ability_NatureBlessing.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Abilities\\FL_Ability_NatureBlessing.cs",
               "RelativeDocumentMoniker": "Abilities\\FL_Ability_NatureBlessing.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Foxian_League\\1.6\\Mods\\VPE\\Source\\FoxianPsycast\\Abilities\\FL_Ability_NatureBlessing.cs",
               "RelativeToolTip": "Abilities\\FL_Ability_NatureBlessing.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwDQAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADQAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-04T11:27:34.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-04T11:27:34.93Z"
             }
           ]
         }
