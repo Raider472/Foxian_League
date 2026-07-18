@@ -52,8 +52,15 @@ namespace FoxianPsycast {
             return false;
         }
 
-        //TODO Change this later when the list of blessings are available
         private bool CanPawnReceivesSacrificialBlessings(Pawn p) {
+            List<HediffDef> HediffsRitual = new List<HediffDef>();
+            HediffsRitual.AddRange(RewardSacrificialRitual.GoodHediffs);
+            HediffsRitual.AddRange(RewardSacrificialRitual.BadHediffs);
+            foreach(HediffDef hediff in HediffsRitual) {
+                if(p.health.hediffSet.HasHediff(hediff)) {
+                    return false;
+                }
+            }
             return true;
         }
 }

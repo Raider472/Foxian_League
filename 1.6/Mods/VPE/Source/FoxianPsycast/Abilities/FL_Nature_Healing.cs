@@ -8,6 +8,7 @@ using Verse;
 
 namespace FoxianPsycast {
     public class FL_Nature_Healing : VEF.Abilities.Ability {
+        private float chanceOfSkip = 0f;
         public override void Cast(params GlobalTargetInfo[] targets) {
             base.Cast(targets);
             float psychicSensitivityMin = getPsychicSensitivityMin();
@@ -30,9 +31,12 @@ namespace FoxianPsycast {
         private void HealInjuries(List<Hediff_Injury> injuries, float psychicSensitivityMin) {
             foreach(Hediff_Injury injury in injuries) {
                 if (injury.IsPermanent()) continue;
-                float skipHeal = Rand.Value;
-                if(skipHeal < 0.2f) {
+                if(chanceOfSkip == 0f) chanceOfSkip = Rand.Value;
+                else chanceOfSkip += 0.15f;
+                Log.Message($"Chance of skip: {chanceOfSkip}");
+                if(chanceOfSkip > 0.65f) {
                     Log.Message($"Skipping healing for {injury.Label} with severity {injury.Severity}");
+                    chanceOfSkip = 0f;
                     continue;
                 }
                 Log.Message($"{injury.Label} and severity {injury.Severity}");
@@ -44,6 +48,11 @@ namespace FoxianPsycast {
 
         private float getPsychicSensitivityMin() {
             return pawn.psychicEntropy.PsychicSensitivity * 0.1f;
+        }
+
+        public override void ExposeData() {
+            base.ExposeData();
+            Scribe_Values.Look(ref chanceOfSkip, "chanceOfSkip", 0f);
         }
     }
 }

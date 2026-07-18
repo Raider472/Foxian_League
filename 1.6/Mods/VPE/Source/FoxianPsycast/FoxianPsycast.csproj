@@ -56,10 +56,11 @@
     <Compile Include="Abilities\FL_Nature_Healing.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SacrificialTreeMisc\EnumRewardType.cs" />
+    <Compile Include="SacrificialTreeMisc\RewardSacrificialRitual.cs" />
     <Compile Include="Rituals\RitualBehaviorWorker_SacrificialTree.cs" />
     <Compile Include="Rituals\RitualObligationTargetWorker_SacrificialTree.cs" />
     <Compile Include="Rituals\RitualOutcomeEffectWorker_SacrificialTree.cs" />
-    <Compile Include="Rituals\RitualPosition_SacrificialTreeSpot.cs" />
     <Compile Include="Rituals\RitualRoleSacrificialOrganizer.cs" />
     <Compile Include="Rituals\RitualStage_SacrificialTree.cs" />
   </ItemGroup>

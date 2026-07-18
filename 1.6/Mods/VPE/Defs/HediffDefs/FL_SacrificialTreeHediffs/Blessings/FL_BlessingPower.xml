@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef ParentName="BlessingAbs">
+        <defName>FL_BlessingPower</defName>
+        <label>Blessing of Power</label>
+        <description>This person has been blessed by one of the foxian sacred beasts representing the aspect of duty and bravery. This person will receive divine strength to act upon the will of the beast to physically protect its allies or to end as many threats as possible.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeDodgeChance>15</MeleeDodgeChance>
+                    <MeleeCooldownFactor>0.25</MeleeCooldownFactor>
+                </statOffsets>
+                <statFactors>
+                    <MeleeArmorPenetration>1.5</MeleeArmorPenetration>
+                    <IncomingDamageFactor>0.85</IncomingDamageFactor>
+                    <MeleeDamageFactor>1.25</MeleeDamageFactor>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

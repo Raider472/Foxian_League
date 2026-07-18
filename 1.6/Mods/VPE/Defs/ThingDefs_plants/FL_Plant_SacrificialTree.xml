@@ -3,7 +3,7 @@
     <ThingDef ParentName="TreeBase">
         <defName>FL_Plant_SacrificialTree</defName>
         <label>sacrificial tree</label>
-        <description>Desc.</description>
+        <description>An artificial morbid tree with a humanoid silhouette visible on its bark. Its name comes from its association with the sacrificial ritual that Naturastodis psycasters perform in hopes of receiving blessings from their gods. It is unknown why this tree has this specific humanoid form from most people, except for the Naturastodis psycasters keeping this information secret. But it's heavily believed amongst non-psycaster foxians that a human body was used in the making of this tree.</description>
         <graphicData>
             <texPath>Things/Plants/Natura</texPath>
             <graphicClass>Graphic_Random</graphicClass>

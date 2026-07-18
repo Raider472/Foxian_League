@@ -60,9 +60,17 @@
 
     <RitualTargetSacrificialTreeInfo>a sacrificial tree</RitualTargetSacrificialTreeInfo>
     <RitualTargetSacrificialTreeNotMature>The tree must be mature.</RitualTargetSacrificialTreeNotMature>
-    <LetterLabelSacrificialRitualCompleted>Sacrificial ritual completed</LetterLabelSacrificialRitualCompleted>
-    <LetterTextSacrificialRitualCompleted>{0_labelShort} has completed the sacrifial ritual.\n\n{0_pronoun} now has received a blessing or curse from the gods.</LetterTextSacrificialRitualCompleted>
-    <SacrificialRitualExplanationBase>The sacrificial tree ceremony is more powerful with more participants and with a high psy-sensitive ritualist. The more people participate, the less time the ceremony takes, and the higher the chance of receiving a benediction instead of a curse.\n\nWith our current configuration, we will have {0} to receive a positive reward.</SacrificialRitualExplanationBase>
+    <LetterLabelSacrificialRitualSatisfyingCompleted>Satisfying Sacrificial ritual successfully completed</LetterLabelSacrificialRitualSatisfyingCompleted>
+    <LetterTextSacrificialRitualSatisfyingCompleted>{0_labelShort} has successfuly completed the sacrifial ritual and managed to satisfy the bloodlust of the gods.\n\n{0_pronoun} received a rare artifact from the gods.</LetterTextSacrificialRitualSatisfyingCompleted>
+    <LetterLabelSacrificialRitualSuccessCompleted>Sacrificial ritual completed</LetterLabelSacrificialRitualSuccessCompleted>
+    <LetterTextSacrificialRitualSuccessCompleted>{0_labelShort} has successfuly completed the sacrifial ritual.\n\n{0_pronoun} received a blessing from the gods as a reward of her faithfulness.</LetterTextSacrificialRitualSuccessCompleted>
+    <LetterLabelSacrificialRitualOffensiveCompleted>Offensive Sacrificial ritual completed</LetterLabelSacrificialRitualOffensiveCompleted>
+    <LetterTextSacrificialRitualOffensiveCompleted>{0_labelShort} has fumbled the sacrifial ritual and offended the gods.\n\n{0_pronoun} received a curse from the gods for {0_possessive} mistake.</LetterTextSacrificialRitualOffensiveCompleted>
+    <SacrificialRitualExplanationBase>The sacrificial tree ceremony is more powerful with more participants and with a high psy-sensitive ritualist. The more people participate, the less time the ceremony takes, and the higher the chance of receiving a benediction instead of a curse.\n\nWith our current configuration, we will have {0} to receive a positive reward and {1} for an excelent outcome.</SacrificialRitualExplanationBase>
     <RitualTargetSacrificialTreeMustBeCapableOfNature>Must be a colonist with the natural meditation focus type</RitualTargetSacrificialTreeMustBeCapableOfNature>
-    <PawnCannotReceiveSacrificialBlessings>This person cannot receives more blessings for the time being.</PawnCannotReceiveSacrificialBlessings>
+    <PawnCannotReceiveSacrificialBlessings>This pawn cannot receives anymore blessings for the time being.</PawnCannotReceiveSacrificialBlessings>
+    <SacrificialRitualReceiveBlessing>{0_labelShort} has received the following benediction: {1_label}</SacrificialRitualReceiveBlessing>
+    <SacrificialRitualReceiveCurse>{0_labelShort} has received the following malediction: {1_label}</SacrificialRitualReceiveCurse>
+    <SacrificialRitualCauseIncident>{0_labelShort} has caused the following event: {1_label}</SacrificialRitualCauseIncident>
+    <SacrificialRitualReceiveRareItem>{0_labelShort} has been favored with the following item: {1_label}</SacrificialRitualReceiveRareItem>
 </LanguageData>

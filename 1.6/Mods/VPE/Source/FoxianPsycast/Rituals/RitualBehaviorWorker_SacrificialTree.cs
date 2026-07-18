@@ -20,7 +20,9 @@ namespace FoxianPsycast {
         public override string GetExplanation(Precept_Ritual ritual, RitualRoleAssignments assignments, float quality) {
             int count = assignments.SpectatorsForReading.Count;
             float num = RitualOutcomeEffectWorker_SacrificialTree.PercentageFromQuality.Evaluate(quality);
-            TaggedString taggedString = "SacrificialRitualExplanationBase".Translate((num + 0.4f).ToStringPercent());
+            float num2 = num - 0.5f;
+            if (num2 < 0) num2 = 0f;
+            TaggedString taggedString = "SacrificialRitualExplanationBase".Translate((num).ToStringPercent(), (num2).ToStringPercent());
             return taggedString;
         }
 

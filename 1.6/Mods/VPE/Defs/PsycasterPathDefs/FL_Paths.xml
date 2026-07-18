@@ -3,10 +3,10 @@
     <VanillaPsycastsExpanded.PsycasterPathDef>
         <defName>FL_VPE_Naturastodis</defName>
         <label>Naturastodis</label>
-        <description>Desc.</description>
+        <description>Naturastodis is a path only available to pawns with the natural meditation. They are capable of harnessing the power of nature to hinder their enemies or to enhance your pawns or animals.</description>
         <background>UI/Psycast/Background/FL_FoxianPath</background>
         <tab>Psycasts</tab>
-        <tooltip>tooltipTest.</tooltip>
+        <tooltip>Naturastodis psycasters are mostly foxians or non-foxians living among them. Capable of exploiting nature itself for their own goal. They are generally seen as support psycasters, as they are capable of helping their allies by healing them, strengthening tamed animals, or by granting them blessings from sacrifice rituals. Additionally, they can also weaken their enemies with a variety of offensive psycasts, such as launching wood lances or placing artificial wood mines.</tooltip>
         <requiredGene>FL_NaturalPsySensitive</requiredGene>
         <lockedReason>NaturalPsyOnly</lockedReason>
         <ignoreLockRestrictionsForNeurotrainers>False</ignoreLockRestrictionsForNeurotrainers>

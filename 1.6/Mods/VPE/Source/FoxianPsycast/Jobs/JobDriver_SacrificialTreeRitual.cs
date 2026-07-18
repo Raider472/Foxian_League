@@ -9,6 +9,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 using Verse.Sound;
+using static RimWorld.FleshTypeDef;
 using Vector3 = UnityEngine.Vector3;
 
 namespace FoxianPsycast {
@@ -37,7 +38,7 @@ namespace FoxianPsycast {
                     Vector3 vector = pawn.TrueCenter();
                     vector += (SacrificialTreeThing.TrueCenter() - vector) * Rand.Value;
                     FleckMaker.Static(vector, pawn.Map, FleckDefOf.PsycastAreaEffect, 0.5f);
-                    SoundDefOf.PsycastPsychicPulse.PlayOneShot(SoundInfo.InMap(new TargetInfo(SacrificialTreeThing)));
+                    SoundDefOf.PsycastPsychicEffect.PlayOneShot(SoundInfo.InMap(new TargetInfo(SacrificialTreeThing)));
                 }
             };
             toil.handlingFacing = false;

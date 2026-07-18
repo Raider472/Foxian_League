@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef ParentName="BlessingAbs">
+        <defName>FL_DummyHediffWarior</defName>
+        <label>Dummy Hediff</label>
+        <description>You shouldn't be able to see/get this.</description>
+    </HediffDef>
+</Defs>

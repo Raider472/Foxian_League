@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef Abstract="True" Name="BlessingAbs">
+        <defaultLabelColor>(0.32, 0.87, 0.58)</defaultLabelColor>
+        <hediffClass>HediffWithComps</hediffClass>
+        <everCurableByItem>false</everCurableByItem>
+        <isBad>false</isBad>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+        <comps>
+              <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+    </HediffDef>
+
+    <HediffDef Abstract="True" ParentName="BlessingAbs" Name="CurseAbs">
+        <defaultLabelColor>(0.80, 0.39, 0.38)</defaultLabelColor>
+    </HediffDef>
+</Defs>

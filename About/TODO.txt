@@ -7,38 +7,41 @@ maybe option to allow girl only ? + chance for gender on non-foxian
     -I'm patching the pregnUtility applybirthoutcome to save the mother and make a letter when a foxian is born
 Check if genetic purity can be changed/refractor (removing mother field and etc.)
 
-Animals
+-Animals
 Fox cat
 
+-Items
+Priest hood/robe
+
+-Pawns
+Special force
+Priest
+
+-Hediff
+Psychic curse
+    Drains psychic sensitivity and other related psychic thing
+
+
 Psychic skill tree
--A skill to spawn a Natura seed (90 Psyfocus or something like that) (Done)
--Skill to buff animals in a circle radius, make them faster, maybe clotting and stronger for a limited duration (Semi-Done)
 -random Animal attack targeted Raider ?
 -Spikefield
--Shoot Wood Spike and debuff target (done)
 -Next melee hit will deal x400 damages - one time
--Turn a pawn into a tree (could be easier if the tree is unique), temporarly increase psychic sensitivity and scale with pawn's value (1000 silver = 100 psychic sensi)
-    -First possibility, Replenish psyfocus and wealth of the pawn will affect it
-    -Second possibility, adds an hediff (not really a fan of it) (dynamic random hediff, check statOffsetEffectMultiplier or multiplyStatChangesBySeverity or a mix of multiply by sev with custom hediff class that calculate severity with psychic sensi and mod extension) 
-    -Third possibility, grant skill exp
-    -Fourth posibility, tree grants a wish (item, good event, possibly a bad one)
--Consume a pawn to receive psyfocus ?
--AOE Heal (done)
+
 -Permanently or temporarly increase psychic sensitivity
 -Creating a turret
 
 TODO
+
 Wood Trap must check if an explosive is within range
 Blood Rain Implant that turns them into crazed killer machine, minus int
 Fox tiger should inflict a hediff upon hitting a target
 Replace psychic  proc and manip with the dynamic hediff
+Replace psychic blessing from special tree to dynamic hediff ?
 Add Blue new story
 Last stand should have visual effect
-Give clotting to animal overclock (works)
 Patch for for medieval tags ???
 Mod option for tails age
 Mod option to remove the Bi trait
-Save Ref of the Natura Tree for loading saves (check)
 Sounds and fleck designs for psychic power
 Placement and order of the psychic powers
 description for the natura tree and all the defs inside the VPE folders

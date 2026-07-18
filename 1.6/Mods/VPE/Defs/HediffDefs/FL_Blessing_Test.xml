@@ -18,6 +18,7 @@
                 <label>inactive</label>
             </li>
             <li>
+                <!--All those values are the max when 100%-->
                 <minSeverity>0.01</minSeverity>
                 <multiplyStatChangesBySeverity>true</multiplyStatChangesBySeverity>
                 <statOffsets>

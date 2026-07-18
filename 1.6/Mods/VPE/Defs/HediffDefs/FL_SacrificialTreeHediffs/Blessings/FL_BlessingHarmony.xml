@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef ParentName="BlessingAbs">
+        <defName>FL_BlessingHarmony</defName>
+        <label>blessing of harmony</label>
+        <description>This person has been blessed by the sacred beast Vulpas. Granting him a fragment of his power for a limited time.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PsychicSensitivity>1.5</PsychicSensitivity>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

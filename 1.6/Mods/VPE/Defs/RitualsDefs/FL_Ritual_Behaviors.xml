@@ -34,6 +34,11 @@
                     <li>
                         <roleId>organizer</roleId>
                         <dutyDef>FL_RitualWithSacrificialTreeRitualist</dutyDef>
+                        <customPositions>
+                            <li Class="RitualPosition_PreferredAdjacentCellCardinal">
+                                <faceThing>true</faceThing>
+                            </li>
+                        </customPositions>
                     </li>
                 </roleBehaviors>
             </li>

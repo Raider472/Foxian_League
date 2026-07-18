@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef ParentName="CurseAbs">
+        <defName>FL_CurseDrain</defName>
+        <label>curses of drain</label>
+        <description>This person has been cursed by an entity seeking to drain its psychic sensitivity. For a limited time, this individual will have its physical capacity reduced.</description>
+        <makesSickThought>true</makesSickThought>
+        <stages>
+            <li>
+                <statFactors>
+                    <PsychicSensitivity>0.25</PsychicSensitivity>
+                    <PsychicEntropyRecoveryRate>0.75</PsychicEntropyRecoveryRate>
+                    <PsychicEntropyMax>0.5</PsychicEntropyMax>
+                    <MeditationFocusGain>0.6</MeditationFocusGain>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>
