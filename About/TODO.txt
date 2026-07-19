@@ -17,15 +17,12 @@ Priest hood/robe
 Special force
 Priest
 
--Hediff
-Psychic curse
-    Drains psychic sensitivity and other related psychic thing
-
 
 Psychic skill tree
--random Animal attack targeted Raider ?
+-Bar skin or something similar: give a pawn a resistance hediff but slows them down, should use dynamic hediff and severity scale with caster psy-sensitivity
+-Treant, create a treant, should act as an animal and expires after a time, time is scaled with psy-sensitivity of psycaster
+-Spore infection, select an area and permeate with spore gas, any pawn inside the gas will receives debuff and scale with how long they've been inside the gas. Kind of like Rot stink
 -Spikefield
--Next melee hit will deal x400 damages - one time
 
 -Permanently or temporarly increase psychic sensitivity
 -Creating a turret

@@ -103,6 +103,35 @@
     </VEF.Abilities.AbilityDef>
 
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>FL_VPE_ExplosionNeedle</defName>
+        <label>thorn explosion</label>
+        <description>Condenses and targets psychic entropy into the soils and manipulates the nearby wood matter within to trigger an explosion of needles. Those needles are infused with psychic toxins that will weaken any hit enemies from the explosion.</description>
+        <iconPath>UI/Psycast/Ability/FL_ExplosionNeedle</iconPath>
+        <abilityClass>FoxianPsycast.FL_Ability_ThornExplosion</abilityClass>
+        <castTime>120</castTime>
+        <range>22.9</range>
+        <radius>8.9</radius>
+        <cooldownTime>600</cooldownTime>
+        <castSound>VPE_Flameball_Cast</castSound>
+        <targetMode>Location</targetMode>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>FL_VPE_Naturastodis</path>
+                <level>3</level>
+                <order>2</order>
+                <psyfocusCost>0.17</psyfocusCost>
+                <entropyGain>38</entropyGain>
+            </li>
+            <li Class="VEF.Abilities.AbilityExtension_Explosion">
+                <explosionRadius>8.9</explosionRadius>
+                <explosionDamageDef>FL_NeedleBomb</explosionDamageDef>
+                <casterImmune>false</casterImmune>
+                <onCaster>false</onCaster>
+            </li>
+        </modExtensions>
+    </VEF.Abilities.AbilityDef>
+
+    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>FL_VPE_NatureFinest</defName>
         <label>nature's finest</label>
         <description>Psychically enhance the tamed animals around the psycasters. The affected animals will become more agile, improve their melee proficiency, and all bleeding wounds will almost instantly seal themselves for the duration of the effect.</description>

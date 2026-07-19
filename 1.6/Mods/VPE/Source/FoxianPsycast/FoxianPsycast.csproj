@@ -48,6 +48,7 @@
     <Compile Include="Abilities\FL_Ability_NatureBlessing.cs" />
     <Compile Include="Abilities\FL_Ability_PlantNaturaTree.cs" />
     <Compile Include="Abilities\FL_ability_PlantWoodMine.cs" />
+    <Compile Include="Abilities\FL_Ability_ThornExplosion.cs" />
     <Compile Include="InternalDefOf.cs" />
     <Compile Include="Jobs\JobDriver_SacrificialTreeRitual.cs" />
     <Compile Include="Jobs\JobGiver_SacrificialTreeRitual.cs" />
