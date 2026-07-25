@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>    
+    <FleshTypeDef>
+        <defName>FL_TreeFlesh</defName>
+        <corpseCategory>CorpsesMechanoid</corpseCategory>
+        <damageEffecter>Damage_HitMechanoid</damageEffecter>
+        <isOrganic>true</isOrganic>
+        <genericWounds>
+            <li>
+                <texture>Things/Pawns/Wounds/WoundTreeA</texture>
+            </li>
+            <li>
+                <texture>Things/Pawns/Wounds/WoundTreeB</texture>
+            </li>
+            <li>
+                <texture>Things/Pawns/Wounds/WoundTreeC</texture>
+            </li>
+        </genericWounds>
+    </FleshTypeDef>
+</Defs>

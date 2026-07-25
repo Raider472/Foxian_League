@@ -145,48 +145,48 @@
         <wildGroupSize>1~4</wildGroupSize>
         <lifeStages>
             <li>
-            <label>vulpano calf</label>
-            <labelPlural>vulpano calves</labelPlural>
-            <bodyGraphicData>
-                <texPath>Things/Pawns/Animal/Vulpano/FL_Vulpano</texPath>
-                <drawSize>1.5</drawSize>
-                <shadowData>
-                <volume>(0.4, 0.3, 0.3)</volume>
-                <offset>(0,0,-0.2)</offset>
-                </shadowData>
-            </bodyGraphicData>
-            <dessicatedBodyGraphicData>
-                <texPath>Things/Pawns/Animal/Vulpano/FL_Dessicated_Vulpano_east</texPath>
-                <drawSize>1.5</drawSize>
-            </dessicatedBodyGraphicData>
+                <label>vulpano calf</label>
+                <labelPlural>vulpano calves</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Things/Pawns/Animal/Vulpano/FL_Vulpano</texPath>
+                    <drawSize>1.5</drawSize>
+                    <shadowData>
+                    <volume>(0.4, 0.3, 0.3)</volume>
+                    <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawns/Animal/Vulpano/FL_Dessicated_Vulpano_east</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
             </li>
             <li>
-            <bodyGraphicData>
-                <texPath>Things/Pawns/Animal/Vulpano/FL_Vulpano</texPath>
-                <drawSize>2.25</drawSize>
-                <shadowData>
-                <volume>(0.6, 0.45, 0.45)</volume>
-                <offset>(0,0,-0.25)</offset>
-                </shadowData>
-            </bodyGraphicData>
-            <dessicatedBodyGraphicData>
-                <texPath>Things/Pawns/Animal/Vulpano/FL_Dessicated_Vulpano_east</texPath>
-                <drawSize>2.25</drawSize>
-            </dessicatedBodyGraphicData>
+                <bodyGraphicData>
+                    <texPath>Things/Pawns/Animal/Vulpano/FL_Vulpano</texPath>
+                    <drawSize>2.25</drawSize>
+                    <shadowData>
+                    <volume>(0.6, 0.45, 0.45)</volume>
+                    <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawns/Animal/Vulpano/FL_Dessicated_Vulpano_east</texPath>
+                    <drawSize>2.25</drawSize>
+                </dessicatedBodyGraphicData>
             </li>
             <li>
-            <bodyGraphicData>
-                <texPath>Things/Pawns/Animal/Vulpano/FL_Vulpano</texPath>
-                <drawSize>3</drawSize>
-                <shadowData>
-                    <volume>(0.8, 0.6, 0.6)</volume>
-                    <offset>(0,0,-0.3)</offset>
-                </shadowData>
-            </bodyGraphicData>
-            <dessicatedBodyGraphicData>
-                <texPath>Things/Pawns/Animal/Vulpano/FL_Dessicated_Vulpano_east</texPath>
-                <drawSize>3</drawSize>
-            </dessicatedBodyGraphicData>
+                <bodyGraphicData>
+                    <texPath>Things/Pawns/Animal/Vulpano/FL_Vulpano</texPath>
+                    <drawSize>3</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawns/Animal/Vulpano/FL_Dessicated_Vulpano_east</texPath>
+                    <drawSize>3</drawSize>
+                </dessicatedBodyGraphicData>
             </li>
         </lifeStages>
     </PawnKindDef>

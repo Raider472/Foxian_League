@@ -57,6 +57,7 @@
     <AbilityTargetMustBeHumanlike>Target must be humanlike.</AbilityTargetMustBeHumanlike>
     <AbilityTargetMustBeAlive>Target must be alive.</AbilityTargetMustBeAlive>
     <AbilityTargetMustBeDowned>Target must be downed.</AbilityTargetMustBeDowned>
+    <AbilityTargetMustTargetTree>Target must be a valid tree.</AbilityTargetMustTargetTree>
 
     <RitualTargetSacrificialTreeInfo>a sacrificial tree</RitualTargetSacrificialTreeInfo>
     <RitualTargetSacrificialTreeNotMature>The tree must be mature.</RitualTargetSacrificialTreeNotMature>

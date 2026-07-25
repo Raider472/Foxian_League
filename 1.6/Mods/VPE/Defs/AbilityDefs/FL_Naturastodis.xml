@@ -105,7 +105,7 @@
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>FL_VPE_ExplosionNeedle</defName>
         <label>thorn explosion</label>
-        <description>Condenses and targets psychic entropy into the soils and manipulates the nearby wood matter within to trigger an explosion of needles. Those needles are infused with psychic toxins that will weaken any hit enemies from the explosion.</description>
+        <description>Focuses and directs psychic entropy into the targeted soils to manipulate the nearby wood matter within, thereby triggering an explosion of needles. Any enemies hit by the explosion will be weakened by the psychic toxins infused into those needles.</description>
         <iconPath>UI/Psycast/Ability/FL_ExplosionNeedle</iconPath>
         <abilityClass>FoxianPsycast.FL_Ability_ThornExplosion</abilityClass>
         <castTime>120</castTime>
@@ -207,6 +207,39 @@
                 <prerequisites>
                     <li>FL_VPE_NaturaBloom</li>
                 </prerequisites>
+            </li>
+        </modExtensions>
+    </VEF.Abilities.AbilityDef>
+
+    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>FL_VPE_TreantGuardian</defName>
+        <label>nature's guardians</label>
+        <description>Psychically transmute a tree into a living being. The guardian treant is immediately loyal to the person who summoned it and will protect that person until death or expiration. The Guardian is slow and bulky, but it is capable of withstanding many damages and delivering heavy blows. It does not need to sleep or eat food, but they are not permanent and will disappear if they do not die in combat before. Its duration is dependent on the psycaster's psychic sensitivity. When it dies, it will vanish out of thin air.</description>
+        <iconPath>UI/Psycast/Ability/FL_TreantGuardian</iconPath>
+        <abilityClass>FoxianPsycast.FL_Ability_SpawnTreant</abilityClass>
+        <castFleck>PsycastAreaEffect</castFleck>
+        <targetMode>Location</targetMode>
+        <castTime>300</castTime>
+        <requireLineOfSight>false</requireLineOfSight>
+        <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+        <castSound>VPE_Speedboost_Cast</castSound>
+        <range>999999</range>
+        <cooldownTime>600000</cooldownTime>
+        <showUndrafted>true</showUndrafted>
+        <chance>0</chance>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>FL_VPE_Naturastodis</path>
+                <level>1</level>
+                <order>1</order>
+                <psyfocusCost>0.42</psyfocusCost>
+                <entropyGain>64</entropyGain>
+                <prerequisites>
+                    <li>FL_VPE_NatureHealing</li>
+                </prerequisites>
+            </li>
+            <li Class="FoxianPsycast.AbilityExtension_SpawnPawn">
+                <pawn>FL_GuardianTreant</pawn>
             </li>
         </modExtensions>
     </VEF.Abilities.AbilityDef>

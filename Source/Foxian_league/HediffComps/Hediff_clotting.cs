@@ -12,7 +12,7 @@ namespace Foxian_league {
 
         public override void PostTickInterval(int delta) {
             base.PostTickInterval(delta);
-            if(!pawn.IsHashIntervalTick(360, delta)) {
+            if(!pawn.IsHashIntervalTick(300, delta)) {
                 return;
             }
             List<Hediff> hediffs = pawn.health.hediffSet.hediffs;

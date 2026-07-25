@@ -48,11 +48,15 @@
     <Compile Include="Abilities\FL_Ability_NatureBlessing.cs" />
     <Compile Include="Abilities\FL_Ability_PlantNaturaTree.cs" />
     <Compile Include="Abilities\FL_ability_PlantWoodMine.cs" />
+    <Compile Include="Abilities\FL_Ability_SpawnTreant.cs" />
     <Compile Include="Abilities\FL_Ability_ThornExplosion.cs" />
+    <Compile Include="Hediff\HediffCompProperties_DieAfterExpiration.cs" />
+    <Compile Include="Hediff\HediffComp_DieAfterExpiration.cs" />
     <Compile Include="InternalDefOf.cs" />
     <Compile Include="Jobs\JobDriver_SacrificialTreeRitual.cs" />
     <Compile Include="Jobs\JobGiver_SacrificialTreeRitual.cs" />
     <Compile Include="ModExtension\AbilityExtension_ProjectileWithHediff.cs" />
+    <Compile Include="ModExtension\AbilityExtension_SpawnPawn.cs" />
     <Compile Include="Projectiles\FL_Ability_ProjectileWithHediff.cs" />
     <Compile Include="Abilities\FL_Nature_Healing.cs" />
     <Compile Include="Main.cs" />

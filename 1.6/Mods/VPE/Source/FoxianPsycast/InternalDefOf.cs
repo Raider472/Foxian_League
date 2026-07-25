@@ -25,5 +25,7 @@ namespace FoxianPsycast {
         public static HediffDef FL_CurseDrain;
 
         public static SoundDef AnimaTreeLink;
+
+        public static HediffDef FL_PsychicalBody;
     }
 }

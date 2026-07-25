@@ -8,7 +8,7 @@
         <scenarioCanAdd>false</scenarioCanAdd>
         <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
         <comps>
-              <li Class="HediffCompProperties_Disappears">
+            <li Class="HediffCompProperties_Disappears">
                 <showRemainingTime>True</showRemainingTime>
             </li>
             <li Class="HediffCompProperties_DisappearsOnDeath"/>
