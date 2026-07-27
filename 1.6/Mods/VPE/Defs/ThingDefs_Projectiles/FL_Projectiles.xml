@@ -14,7 +14,7 @@
             <shaderType>Transparent</shaderType>
         </graphicData>
         <projectile>
-            <damageDef>Cut</damageDef>
+            <damageDef>FL_LanceCut</damageDef>
             <damageAmountBase>9</damageAmountBase>
             <speed>90</speed>
         </projectile>

@@ -50,8 +50,11 @@
     <Compile Include="Abilities\FL_ability_PlantWoodMine.cs" />
     <Compile Include="Abilities\FL_Ability_SpawnTreant.cs" />
     <Compile Include="Abilities\FL_Ability_ThornExplosion.cs" />
+    <Compile Include="Abilities\FL_ApplyHediffsWithoutTimer.cs" />
     <Compile Include="Hediff\HediffCompProperties_DieAfterExpiration.cs" />
+    <Compile Include="Hediff\HediffCompProperties_IncreaseSeverityPerDamage.cs" />
     <Compile Include="Hediff\HediffComp_DieAfterExpiration.cs" />
+    <Compile Include="Hediff\HediffComp_IncreaseSeverityPerDamage.cs" />
     <Compile Include="InternalDefOf.cs" />
     <Compile Include="Jobs\JobDriver_SacrificialTreeRitual.cs" />
     <Compile Include="Jobs\JobGiver_SacrificialTreeRitual.cs" />

@@ -15,6 +15,14 @@ namespace FoxianPsycast {
             Pawn targetPawn = target.Pawn;
             if(modExtension == null || modExtension?.thing == null || targetPawn == null) return false;
 
+            TerrainDef terrain = target.Cell.GetTerrain(pawn.Map);
+
+            if(!terrain.IsSoil) {
+                if(showMessages) {
+                    Messages.Message("CannotPlantMissingTerrainTag".Translate(), target.ToTargetInfo(pawn.Map), MessageTypeDefOf.RejectInput, historical: false);
+                }
+                return false;
+            }
             if(!targetPawn.RaceProps.Humanlike) {
                 if(showMessages) {
                     Messages.Message("AbilityTargetMustBeHumanlike".Translate(), target.ToTargetInfo(pawn.Map), MessageTypeDefOf.RejectInput, historical: false);
@@ -45,7 +53,8 @@ namespace FoxianPsycast {
                 plant?.Kill();
                 if(target.Pawn != null) {
                     DamageInfo damage = new DamageInfo(DamageDefOf.Cut, 100, instigator: pawn, intendedTarget: target.Pawn);
-                    if (target.Pawn.Faction.PlayerRelationKind != FactionRelationKind.Hostile && !(target.Pawn.Faction.defeated)) {
+                    Faction faction = target.Pawn.Faction;
+                    if (faction != null && faction != Faction.OfPlayer && Faction.OfPlayer.RelationKindWith(faction) != FactionRelationKind.Hostile && !(faction.defeated)) {
                         Faction.OfPlayer.TryAffectGoodwillWith(target.Pawn.Faction, -25, canSendMessage: true, canSendHostilityLetter: true, HistoryEventDefOf.UsedHarmfulAbility);
                     }
                     target.Pawn.Kill(damage);

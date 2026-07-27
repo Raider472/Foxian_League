@@ -25,7 +25,7 @@
                 <path>FL_VPE_Naturastodis</path>
                 <level>1</level>
                 <order>2</order>
-                <psyfocusCost>0.09</psyfocusCost>
+                <psyfocusCost>0.08</psyfocusCost>
                 <entropyGain>14</entropyGain>
             </li>
             <li Class="VEF.Abilities.AbilityExtension_Projectile">
@@ -43,7 +43,7 @@
         <description>Condense the soil with psychic entropy and germinate a sapling of a Natura tree. The sapling can only be psychically rooted on a suitable terrain for a plant.</description>
         <iconPath>UI/Psycast/Ability/FL_PlantNaturaTree</iconPath>
         <abilityClass>FoxianPsycast.FL_Ability_PlantNaturaTree</abilityClass>
-        <castFleck>PsycastAreaEffect</castFleck>
+        <fleckOnTarget>VFEP_PsycastAreaEffectSlow</fleckOnTarget>
         <targetMode>Location</targetMode>
         <castTime>600</castTime>
         <requireLineOfSight>false</requireLineOfSight>
@@ -74,7 +74,7 @@
         <description>Permeate a soily surface with psychic entropy and morph the plant matter around into an artificial wooden landmine filled with explosive gas and thick wooden needles that will spew out everywhere upon detonation. Although the mine doesn't do as much damage as a normal IED trap, enemies that get hit by the needles will be physically weaker and less effective in close combat for a while.</description>
         <iconPath>UI/Psycast/Ability/FL_WoodTrap</iconPath>
         <abilityClass>FoxianPsycast.FL_ability_PlantWoodMine</abilityClass>
-        <castFleck>PsycastAreaEffect</castFleck>
+        <fleckOnTarget>VFEP_PsycastAreaEffectSlow</fleckOnTarget>
         <targetMode>Location</targetMode>
         <castTime>180</castTime>
         <requireLineOfSight>false</requireLineOfSight>
@@ -111,15 +111,16 @@
         <castTime>120</castTime>
         <range>22.9</range>
         <radius>8.9</radius>
-        <cooldownTime>600</cooldownTime>
+        <cooldownTime>2500</cooldownTime>
         <castSound>VPE_Flameball_Cast</castSound>
+        <fleckOnTarget>VFEP_PsycastAreaEffectSlow</fleckOnTarget>
         <targetMode>Location</targetMode>
         <modExtensions>
             <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
                 <path>FL_VPE_Naturastodis</path>
                 <level>3</level>
                 <order>2</order>
-                <psyfocusCost>0.17</psyfocusCost>
+                <psyfocusCost>0.27</psyfocusCost>
                 <entropyGain>38</entropyGain>
             </li>
             <li Class="VEF.Abilities.AbilityExtension_Explosion">
@@ -141,6 +142,7 @@
         <castTime>15</castTime>
         <durationTime>2000</durationTime>
         <castSound>VPE_ShieldAnimals_Cast</castSound>
+        <castFleck>PsycastAreaEffect</castFleck>
         <radius>10</radius>
         <hasAoE>true</hasAoE>
         <cooldownTime>25000</cooldownTime>
@@ -183,6 +185,7 @@
         <targetMode>Self</targetMode>
         <castTime>60</castTime>
         <castSound>VPE_ShieldAnimals_Cast</castSound>
+        <castFleck>PsycastPsychicEffect</castFleck>
         <radius>6</radius>
         <hasAoE>true</hasAoE>
         <cooldownTime>10000</cooldownTime>
@@ -217,7 +220,7 @@
         <description>Psychically transmute a tree into a living being. The guardian treant is immediately loyal to the person who summoned it and will protect that person until death or expiration. The Guardian is slow and bulky, but it is capable of withstanding many damages and delivering heavy blows. It does not need to sleep or eat food, but they are not permanent and will disappear if they do not die in combat before. Its duration is dependent on the psycaster's psychic sensitivity. When it dies, it will vanish out of thin air.</description>
         <iconPath>UI/Psycast/Ability/FL_TreantGuardian</iconPath>
         <abilityClass>FoxianPsycast.FL_Ability_SpawnTreant</abilityClass>
-        <castFleck>PsycastAreaEffect</castFleck>
+        <fleckOnTarget>VFEP_PsycastAreaEffectSlow</fleckOnTarget>
         <targetMode>Location</targetMode>
         <castTime>300</castTime>
         <requireLineOfSight>false</requireLineOfSight>
@@ -273,6 +276,43 @@
             </li>
             <li Class="VEF.Abilities.AbilityExtension_Spawn">
                 <thing>FL_Plant_SacrificialTree</thing>
+            </li>
+        </modExtensions>
+    </VEF.Abilities.AbilityDef>
+
+    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>FL_VPE_SporeInfection</defName>
+        <label>spore infection</label>
+        <description>Spread psychic spore-like particles that infect the nearby pawns within the area of effect. They will hinder anyone's ability to fight and think, and they will multiply within the subject's body for each hit from an offensive psycast coming from this path. The spores themselves are not lethal. The worst they can do is make someone unconscious. However, accidentally hitting an innocent bystander or an ally from another faction will be considered a hostile action and worsen diplomatic relations.</description>
+        <iconPath>UI/Psycast/Ability/FL_SporeInfection</iconPath>
+        <abilityClass>FoxianPsycast.FL_ApplyHediffsWithoutTimer</abilityClass>
+        <castTime>300</castTime>
+        <range>39.9</range>
+        <radius>13.9</radius>
+        <cooldownTime>180000</cooldownTime>
+        <castSound>VPE_Flameball_Cast</castSound>
+        <hasAoE>true</hasAoE>
+        <chance>0</chance>
+        <targetMode>Pawn</targetMode>
+        <targetingParametersForAoE>
+            <canTargetPawns>true</canTargetPawns>
+            <canTargetAnimals>true</canTargetAnimals>
+            <canTargetHumans>true</canTargetHumans>
+            <canTargetMechs>false</canTargetMechs>
+            <canTargetBuildings>false</canTargetBuildings>
+            <ignoreRangeAndSight>true</ignoreRangeAndSight>
+        </targetingParametersForAoE>
+        <fleckOnTarget>VFEP_PsycastAreaEffectSlow</fleckOnTarget>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>FL_VPE_Naturastodis</path>
+                <level>3</level>
+                <order>1</order>
+                <psyfocusCost>0.18</psyfocusCost>
+                <entropyGain>21</entropyGain>
+            </li>
+            <li Class="VEF.Abilities.AbilityExtension_Hediff">
+                <hediff>FL_SporeInfection</hediff>
             </li>
         </modExtensions>
     </VEF.Abilities.AbilityDef>
