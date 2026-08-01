@@ -34,6 +34,9 @@
                 <explosionForce>4</explosionForce>
                 <damageDef>FL_PsychicBomb</damageDef>
             </li>
+            <li Class="HediffCompProperties_Effecter">
+				<stateEffecter>FL_LastStand</stateEffecter>
+			</li>
         </comps>
     </HediffDef>
 </Defs>

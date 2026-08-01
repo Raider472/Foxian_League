@@ -10,7 +10,7 @@
         <castTime>15</castTime>
         <range>24.9</range>
         <cooldownTime>300</cooldownTime>
-        <castSound>VPE_IceSpike_Cast</castSound>
+        <castSound>VPE_IceCrystal_Cast</castSound>
         <targetingParameters>
             <canTargetPawns>true</canTargetPawns>
             <canTargetBuildings>true</canTargetBuildings>
@@ -43,12 +43,14 @@
         <description>Condense the soil with psychic entropy and germinate a sapling of a Natura tree. The sapling can only be psychically rooted on a suitable terrain for a plant.</description>
         <iconPath>UI/Psycast/Ability/FL_PlantNaturaTree</iconPath>
         <abilityClass>FoxianPsycast.FL_Ability_PlantNaturaTree</abilityClass>
-        <fleckOnTarget>VFEP_PsycastAreaEffectSlow</fleckOnTarget>
+        <needsTicking>true</needsTicking>
+        <fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
         <targetMode>Location</targetMode>
         <castTime>600</castTime>
+        <warmupMote>Mote_WarmupNeuroquake</warmupMote>
         <requireLineOfSight>false</requireLineOfSight>
         <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
-        <castSound>VPE_Speedboost_Cast</castSound>
+        <castSound>VPE_TreeSprout_Cast</castSound>
         <range>999999</range>
         <cooldownTime>2700000</cooldownTime>
         <showUndrafted>true</showUndrafted>
@@ -65,6 +67,10 @@
             <li Class="VEF.Abilities.AbilityExtension_Spawn">
                 <thing>FL_Plant_TreeNatura</thing>
             </li>
+            <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>FillingInCrater</effecterDef>
+                <maintainForTicks>240</maintainForTicks>
+            </li>
         </modExtensions>
     </VEF.Abilities.AbilityDef>
 
@@ -74,12 +80,13 @@
         <description>Permeate a soily surface with psychic entropy and morph the plant matter around into an artificial wooden landmine filled with explosive gas and thick wooden needles that will spew out everywhere upon detonation. Although the mine doesn't do as much damage as a normal IED trap, enemies that get hit by the needles will be physically weaker and less effective in close combat for a while.</description>
         <iconPath>UI/Psycast/Ability/FL_WoodTrap</iconPath>
         <abilityClass>FoxianPsycast.FL_ability_PlantWoodMine</abilityClass>
-        <fleckOnTarget>VFEP_PsycastAreaEffectSlow</fleckOnTarget>
+        <needsTicking>true</needsTicking>
+        <fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
         <targetMode>Location</targetMode>
         <castTime>180</castTime>
         <requireLineOfSight>false</requireLineOfSight>
         <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
-        <castSound>VPE_Speedboost_Cast</castSound>
+        <castSound>VPE_BrambleMaze_Cast</castSound>
         <range>999999</range>
         <cooldownTime>300000</cooldownTime>
         <showUndrafted>true</showUndrafted>
@@ -99,6 +106,10 @@
             <li Class="VEF.Abilities.AbilityExtension_Spawn">
                 <thing>FL_TrapIED_woodTrap</thing>
             </li>
+            <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>FillingInCrater</effecterDef>
+                <maintainForTicks>240</maintainForTicks>
+            </li>
         </modExtensions>
     </VEF.Abilities.AbilityDef>
 
@@ -113,7 +124,6 @@
         <radius>8.9</radius>
         <cooldownTime>2500</cooldownTime>
         <castSound>VPE_Flameball_Cast</castSound>
-        <fleckOnTarget>VFEP_PsycastAreaEffectSlow</fleckOnTarget>
         <targetMode>Location</targetMode>
         <modExtensions>
             <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
@@ -141,8 +151,9 @@
         <targetMode>Self</targetMode>
         <castTime>15</castTime>
         <durationTime>2000</durationTime>
-        <castSound>VPE_ShieldAnimals_Cast</castSound>
+        <castSound>VPE_SummonPack_Cast</castSound>
         <castFleck>PsycastAreaEffect</castFleck>
+        <fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
         <radius>10</radius>
         <hasAoE>true</hasAoE>
         <cooldownTime>25000</cooldownTime>
@@ -173,20 +184,25 @@
             <li Class="VEF.Abilities.AbilityExtension_Hediff">
                 <hediff>FL_AnimalOverclock</hediff>
             </li>
+            <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>FL_PsychicAnimalRoar</effecterDef>
+                <onCaster>True</onCaster>
+            </li>
         </modExtensions>
     </VEF.Abilities.AbilityDef>
 
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>FL_VPE_NatureHealing</defName>
         <label>nature's healing</label>
-        <description>Psychically heals the pawns around the psycaster. The user will immediately soothe some wounds of any allies and animals within their range. The strength of this psycast will scale with the user's psychic sensitivity.</description>
+        <description>Psychically heals the pawns around the psycaster. The user will instantly soothe random wounds of any allies and animals within their range. The strength of this psycast will scale with the user's psychic sensitivity.</description>
         <iconPath>UI/Psycast/Ability/FL_NatureHealing</iconPath>
         <abilityClass>FoxianPsycast.FL_Nature_Healing</abilityClass>
+        <needsTicking>true</needsTicking>
         <targetMode>Self</targetMode>
         <castTime>60</castTime>
-        <castSound>VPE_ShieldAnimals_Cast</castSound>
-        <castFleck>PsycastPsychicEffect</castFleck>
-        <radius>6</radius>
+        <castSound>VPE_RegrowLimbs_Cast</castSound>
+        <fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
+        <radius>5.9</radius>
         <hasAoE>true</hasAoE>
         <cooldownTime>10000</cooldownTime>
         <chance>0</chance>
@@ -211,6 +227,11 @@
                     <li>FL_VPE_NaturaBloom</li>
                 </prerequisites>
             </li>
+            <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>FL_HealAoe</effecterDef>
+                <onCaster>True</onCaster>
+                <maintainForTicks>200</maintainForTicks>
+            </li>
         </modExtensions>
     </VEF.Abilities.AbilityDef>
 
@@ -220,12 +241,12 @@
         <description>Psychically transmute a tree into a living being. The guardian treant is immediately loyal to the person who summoned it and will protect that person until death or expiration. The Guardian is slow and bulky, but it is capable of withstanding many damages and delivering heavy blows. It does not need to sleep or eat food, but they are not permanent and will disappear if they do not die in combat before. Its duration is dependent on the psycaster's psychic sensitivity. When it dies, it will vanish out of thin air.</description>
         <iconPath>UI/Psycast/Ability/FL_TreantGuardian</iconPath>
         <abilityClass>FoxianPsycast.FL_Ability_SpawnTreant</abilityClass>
-        <fleckOnTarget>VFEP_PsycastAreaEffectSlow</fleckOnTarget>
         <targetMode>Location</targetMode>
         <castTime>300</castTime>
         <requireLineOfSight>false</requireLineOfSight>
         <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
-        <castSound>VPE_Speedboost_Cast</castSound>
+        <castSound>VPE_ControlledFrenzy_Cast</castSound>
+        <fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
         <range>999999</range>
         <cooldownTime>600000</cooldownTime>
         <showUndrafted>true</showUndrafted>
@@ -244,6 +265,9 @@
             <li Class="FoxianPsycast.AbilityExtension_SpawnPawn">
                 <pawn>FL_GuardianTreant</pawn>
             </li>
+            <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>FL_PsychicBandShockwave</effecterDef>
+            </li>
         </modExtensions>
     </VEF.Abilities.AbilityDef>
 
@@ -258,7 +282,7 @@
         <castTime>300</castTime>
         <requireLineOfSight>false</requireLineOfSight>
         <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
-        <castSound>VPE_Speedboost_Cast</castSound>
+        <castSound>VPE_ConsumeBodies_Cast</castSound>
         <range>999999</range>
         <cooldownTime>600000</cooldownTime>
         <showUndrafted>true</showUndrafted>
@@ -277,6 +301,9 @@
             <li Class="VEF.Abilities.AbilityExtension_Spawn">
                 <thing>FL_Plant_SacrificialTree</thing>
             </li>
+            <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>FL_MeatExplosion</effecterDef>
+            </li>
         </modExtensions>
     </VEF.Abilities.AbilityDef>
 
@@ -290,7 +317,8 @@
         <range>39.9</range>
         <radius>13.9</radius>
         <cooldownTime>180000</cooldownTime>
-        <castSound>VPE_Flameball_Cast</castSound>
+        <needsTicking>true</needsTicking>
+        <castSound>VPE_Speedboost_Cast</castSound>
         <hasAoE>true</hasAoE>
         <chance>0</chance>
         <targetMode>Pawn</targetMode>
@@ -302,7 +330,6 @@
             <canTargetBuildings>false</canTargetBuildings>
             <ignoreRangeAndSight>true</ignoreRangeAndSight>
         </targetingParametersForAoE>
-        <fleckOnTarget>VFEP_PsycastAreaEffectSlow</fleckOnTarget>
         <modExtensions>
             <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
                 <path>FL_VPE_Naturastodis</path>
@@ -313,6 +340,10 @@
             </li>
             <li Class="VEF.Abilities.AbilityExtension_Hediff">
                 <hediff>FL_SporeInfection</hediff>
+            </li>
+            <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>FL_SporeSparks</effecterDef>
+                <maintainForTicks>300</maintainForTicks>
             </li>
         </modExtensions>
     </VEF.Abilities.AbilityDef>

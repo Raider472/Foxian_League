@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="MoteBase">
+		<defName>FL_VPE_SporeMote</defName>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<solidTime>0.1</solidTime>
+			<fadeOutTime>0.15</fadeOutTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Motes/FL_SparkSpore</texPath>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteCocoonBreakingBase">
+		<defName>FL_Mote_MeatExplosionMist</defName>
+		<mote>
+			<solidTime>0.35</solidTime>
+			<fadeOutTime>1.25</fadeOutTime>
+		</mote>
+		<graphicData>
+			<color>(171, 27, 17, 120)</color>
+			<shaderType>Transparent</shaderType>
+			<drawSize>(1.5, 1.5)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>FL_Mote_MeatExplosionFlyingSplatter</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.03</fadeInTime>
+			<fadeOutTime>0.2</fadeOutTime>
+			<solidTime>0.4</solidTime>
+			<growthRate>2</growthRate>
+			<archHeight>0.5</archHeight>
+			<archDuration>0.5</archDuration>
+			<speedPerTime>-3</speedPerTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Motes/Spatter</texPath>
+			<graphicClass>Graphic_MoteRandom</graphicClass>
+			<color>(171, 27, 17, 170)</color>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>FL_Mote_MeatExplosionFlyingPiece</defName>
+		<thingClass>MoteThrown</thingClass>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.03</fadeInTime>
+			<fadeOutTime>0.1</fadeOutTime>
+			<solidTime>0.8</solidTime>
+			<archHeight>0.5</archHeight>
+			<archDuration>0.5</archDuration>
+			<speedPerTime>-3</speedPerTime>
+		</mote>
+		<graphicData>
+			<texPath>Things/Motes/MeatPiece</texPath>
+			<graphicClass>Graphic_MoteRandom</graphicClass>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>FL_Mote_PsychicAnimalWarcallFlash</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>MoteOverheadLow</altitudeLayer>
+		<mote>
+			<fadeInTime>0.05</fadeInTime>
+			<fadeOutTime>0.3</fadeOutTime>
+			<solidTime>0.15</solidTime>
+			<growthRate>4</growthRate>
+		</mote>
+		<graphicData>
+			<texPath>Things/Mote/RadiationDistortion_A</texPath>
+			<graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+			<color>(0.48, 0.95, 0.81, 1)</color>
+			<shaderType>MoteMultiplyAddCircularGrayscale</shaderType>
+			<shaderParameters>
+				<_MultiplyTex>/Things/Mote/RadiationDistortion_B</_MultiplyTex>
+				<_texAScale>0.3</_texAScale>
+				<_texBScale>0.3</_texBScale>
+				<_texAScrollSpeed>0.8</_texAScrollSpeed>
+				<_texBScrollSpeed>-0.4</_texBScrollSpeed>
+				<_texAScaleDist>0.5</_texAScaleDist>
+				<_DistortionScale>0.6</_DistortionScale>
+				<_Intensity>10</_Intensity>
+			</shaderParameters>
+			<drawSize>(2.5, 2.5)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>FL_Mote_PsychicAnimalWarcallDistortion</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.1</fadeInTime>
+			<fadeOutTime>0.3</fadeOutTime>
+			<solidTime>0.3</solidTime>
+			<growthRate>12</growthRate>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+			<shaderType>MotePsychicWarmupNeuroquake</shaderType>
+			<texPath>Things/Mote/MoteHellfireCannon_HeatWaveDistortion</texPath>
+			<shaderParameters>
+				<_distortionIntensity>0.3</_distortionIntensity>
+				<_brightnessMultiplier>1.3</_brightnessMultiplier>
+				<_distortionTint>(0.48, 0.95, 0.81, 0)</_distortionTint>
+				<_pulseSpeed>1</_pulseSpeed>
+			</shaderParameters>
+			<drawSize>2</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="MoteGlowDistorted">
+		<defName>FL_Mote_HealArea</defName>
+		<thingClass>MoteAttached</thingClass>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.2</fadeInTime>
+			<fadeOutTime>0.3</fadeOutTime>
+			<solidTime>99999</solidTime>
+			<needsMaintenance>true</needsMaintenance>
+			<fadeOutUnmaintained>true</fadeOutUnmaintained>
+		</mote>
+		<graphicData>
+			<graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+			<shaderType>MoteApocritonPulse</shaderType>
+			<texPath>Things/Mote/PsychicDistortionApocriton</texPath>
+			<shaderParameters>
+				<_PulseTex>/Things/Mote/ApocritonWaves</_PulseTex>
+				<_distortionIntensity>0</_distortionIntensity>
+				<_ScrollSpeed>-0.9</_ScrollSpeed>
+				<_ScrollScale>0.22</_ScrollScale>
+				<_distortionTint>(0.48, 0.95, 0.81, 0)</_distortionTint>
+				<_pulseSpeed>4</_pulseSpeed>
+			</shaderParameters>
+			<drawSize>8</drawSize>
+		</graphicData>
+	</ThingDef>
+</Defs>

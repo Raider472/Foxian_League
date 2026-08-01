@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using VEF.Abilities;
 using Verse;
+using static UnityEngine.GraphicsBuffer;
 
 namespace FoxianPsycast {
     public class FL_Ability_NatureBlessing : VEF.Abilities.Ability_Spawn {
@@ -47,10 +48,13 @@ namespace FoxianPsycast {
         public override void Cast(params GlobalTargetInfo[] targets) {
             if(targets == null || targets.Length == 0) return;
             Log.Message($"Count: {targets.Length}");
+            Plant plant = targets.First().Cell.GetPlant(pawn.Map);
+            Log.Message($"Plant: {plant?.def?.defName}");
+            plant?.Kill();
+
             base.Cast(targets);
+
             foreach(GlobalTargetInfo target in targets) {
-                Plant plant = target.Cell.GetPlant(pawn.Map);
-                plant?.Kill();
                 if(target.Pawn != null) {
                     DamageInfo damage = new DamageInfo(DamageDefOf.Cut, 100, instigator: pawn, intendedTarget: target.Pawn);
                     Faction faction = target.Pawn.Faction;

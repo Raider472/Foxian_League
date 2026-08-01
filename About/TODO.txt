@@ -20,7 +20,10 @@ Priest
 
 Psychic skill tree
 -Bar skin or something similar: give a pawn a resistance hediff but slows them down, should use dynamic hediff and severity scale with caster psy-sensitivity
--Spikefield
+-Spore Infection might trigger an explosion if 100% ?
+-Root snare: restrain the movement of the target for a few seconds
+-Forest Step: Teleport to a tree, treant, wood trap, etc.
+-Spike Explosion should be targeted at a tree or bush and kill it
 -Creating a turret
 
 TODO

@@ -9,6 +9,7 @@
         <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
         <iconPath>UI/Icons/Ability/FL_Ability_Psy_Switch</iconPath>
         <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <showCastingProgressBar>True</showCastingProgressBar>
         <showWhenDrafted>False</showWhenDrafted>
         <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
         <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
@@ -16,6 +17,7 @@
         <statBases>
             <Ability_EffectRadius>0</Ability_EffectRadius>
         </statBases>
+        <warmupSound>PsycastCastLoop</warmupSound>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
             <warmupTime>2</warmupTime>
@@ -51,6 +53,7 @@
         <description>Give this person a special effect that will grant him huge bonus stats in combat, such as reducing incoming damage by half, increasing the melee damage factor, and increasing the pain shock threshold. While this effect is active, bleeding wounds close very quickly. This effect will last for 2 hours, and once it expires, this person will fall into a coma for 2 days. If this person dies during the initial effect, a small but deadly explosion will be triggered around this person's body. Additionally, if this person has a psyfocus need, using this ability will drain all of it.</description>
         <jobDef>CastAbilityOnThing</jobDef>
         <targetRequired>False</targetRequired>
+        <showCastingProgressBar>True</showCastingProgressBar>
         <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
         <iconPath>UI/Icons/Ability/FL_Ability_Last_Stand</iconPath>
         <cooldownTicksRange>420000</cooldownTicksRange><!-- 7 days -->
@@ -60,6 +63,7 @@
             <Ability_Duration>100</Ability_Duration> <!-- 2 hour -->
             <Ability_EffectRadius>0</Ability_EffectRadius>
         </statBases>
+        <warmupSound>PsycastCastLoop</warmupSound>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
             <warmupTime>0.5</warmupTime>

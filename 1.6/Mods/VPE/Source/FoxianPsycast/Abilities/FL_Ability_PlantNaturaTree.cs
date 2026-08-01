@@ -7,12 +7,14 @@ using System.Text;
 using System.Threading.Tasks;
 using VEF.Abilities;
 using Verse;
+using Verse.AI;
 using Verse.Noise;
 using static UnityEngine.GraphicsBuffer;
 
 namespace FoxianPsycast {
     public class FL_Ability_PlantNaturaTree : VEF.Abilities.Ability_Spawn {
         //Ability to spawn a Natura tree, there are many checks in the ValidateTarget method to replicate the behaviour of planting a Natura seed
+
         public override bool ValidateTarget(LocalTargetInfo target, bool showMessages = true) {
             AbilityExtension_Spawn modExtension = def.GetModExtension<AbilityExtension_Spawn>();
             if(modExtension == null || modExtension?.thing == null) return false;
