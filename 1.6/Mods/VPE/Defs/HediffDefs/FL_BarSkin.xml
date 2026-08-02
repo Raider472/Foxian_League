@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <HediffDef ParentName="PsycastHediffBase">
+        <defName>FL_BarSkin</defName>
+        <label>bar skin</label>
+        <description>This person has received a psychical blessing that temporarily hardens the external layer of their skin, making them more resistant to incoming damages at the cost of being slower and very vulnerable to fire.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <StaggerDurationFactor>-0.2</StaggerDurationFactor>
+                    <Flammability>0.5</Flammability>
+                    <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+                    <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+                </statOffsets>
+                <statFactors>
+                    <IncomingDamageFactor>0.75</IncomingDamageFactor>
+                    <MoveSpeed>0.8</MoveSpeed>
+                </statFactors>
+                <damageFactors>
+                    <Flame>1.5</Flame>
+                    <Burn>1.5</Burn>
+                </damageFactors>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_Effecter">
+				<stateEffecter>FL_BarSkin</stateEffecter>
+			</li>
+        </comps>
+    </HediffDef>
+</Defs>

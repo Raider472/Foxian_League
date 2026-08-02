@@ -144,4 +144,19 @@
 			<drawSize>8</drawSize>
 		</graphicData>
 	</ThingDef>
+
+	<ThingDef ParentName="MoteBase">
+		<defName>FL_Mote_WoodBubble</defName>
+		<graphicData>
+			<texPath>Things/Motes/FL_WoodBubble</texPath>
+		</graphicData>
+		<thingClass>MoteThrownAttached</thingClass>
+		<altitudeLayer>MetaOverlays</altitudeLayer>
+		<mote>
+			<fadeInTime>0.50</fadeInTime>
+			<solidTime>1.2</solidTime>
+			<fadeOutTime>1.75</fadeOutTime>
+			<attachedDrawOffset>(0.15, 0, 0.2)</attachedDrawOffset>
+		</mote>
+	</ThingDef>
 </Defs>

@@ -92,7 +92,7 @@
                     </li>
                     <li>
                         <capacity>Moving</capacity>
-                        <offset>-0.25</offset>
+                        <offset>-0.2</offset>
                     </li>
                 </capMods>
                 <statFactors>
@@ -110,7 +110,7 @@
                     </li>
                     <li>
                         <capacity>Moving</capacity>
-                        <offset>-0.35</offset>
+                        <offset>-0.2</offset>
                     </li>
                 </capMods>
                 <statFactors>
@@ -128,7 +128,7 @@
                     </li>
                     <li>
                         <capacity>Moving</capacity>
-                        <offset>-0.4</offset>
+                        <offset>-0.2</offset>
                     </li>
                 </capMods>
                 <statFactors>

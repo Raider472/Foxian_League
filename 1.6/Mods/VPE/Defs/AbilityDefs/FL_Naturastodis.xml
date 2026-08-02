@@ -24,7 +24,7 @@
             <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
                 <path>FL_VPE_Naturastodis</path>
                 <level>1</level>
-                <order>2</order>
+                <order>1</order>
                 <psyfocusCost>0.08</psyfocusCost>
                 <entropyGain>14</entropyGain>
             </li>
@@ -33,111 +33,6 @@
                 <accuracyStatFactors>
                     <PsychicSensitivity>1</PsychicSensitivity>
                 </accuracyStatFactors>
-            </li>
-        </modExtensions>
-    </VEF.Abilities.AbilityDef>
-
-    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-        <defName>FL_VPE_NaturaBloom</defName>
-        <label>natura bloom</label>
-        <description>Condense the soil with psychic entropy and germinate a sapling of a Natura tree. The sapling can only be psychically rooted on a suitable terrain for a plant.</description>
-        <iconPath>UI/Psycast/Ability/FL_PlantNaturaTree</iconPath>
-        <abilityClass>FoxianPsycast.FL_Ability_PlantNaturaTree</abilityClass>
-        <needsTicking>true</needsTicking>
-        <fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
-        <targetMode>Location</targetMode>
-        <castTime>600</castTime>
-        <warmupMote>Mote_WarmupNeuroquake</warmupMote>
-        <requireLineOfSight>false</requireLineOfSight>
-        <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
-        <castSound>VPE_TreeSprout_Cast</castSound>
-        <range>999999</range>
-        <cooldownTime>2700000</cooldownTime>
-        <showUndrafted>true</showUndrafted>
-        <chance>0</chance>
-        <modExtensions>
-            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-                <path>FL_VPE_Naturastodis</path>
-                <level>1</level>
-                <order>1</order>
-                <psyfocusCost>0.85</psyfocusCost>
-                <entropyGain>20</entropyGain>
-                <psychic>true</psychic>
-            </li>
-            <li Class="VEF.Abilities.AbilityExtension_Spawn">
-                <thing>FL_Plant_TreeNatura</thing>
-            </li>
-            <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
-                <effecterDef>FillingInCrater</effecterDef>
-                <maintainForTicks>240</maintainForTicks>
-            </li>
-        </modExtensions>
-    </VEF.Abilities.AbilityDef>
-
-    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-        <defName>FL_VPE_TrapIED_WoodTrap</defName>
-        <label>wood trap</label>
-        <description>Permeate a soily surface with psychic entropy and morph the plant matter around into an artificial wooden landmine filled with explosive gas and thick wooden needles that will spew out everywhere upon detonation. Although the mine doesn't do as much damage as a normal IED trap, enemies that get hit by the needles will be physically weaker and less effective in close combat for a while.</description>
-        <iconPath>UI/Psycast/Ability/FL_WoodTrap</iconPath>
-        <abilityClass>FoxianPsycast.FL_ability_PlantWoodMine</abilityClass>
-        <needsTicking>true</needsTicking>
-        <fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
-        <targetMode>Location</targetMode>
-        <castTime>180</castTime>
-        <requireLineOfSight>false</requireLineOfSight>
-        <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
-        <castSound>VPE_BrambleMaze_Cast</castSound>
-        <range>999999</range>
-        <cooldownTime>300000</cooldownTime>
-        <showUndrafted>true</showUndrafted>
-        <chance>0</chance>
-        <modExtensions>
-            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-                <path>FL_VPE_Naturastodis</path>
-                <level>2</level>
-                <order>3</order>
-                <psyfocusCost>0.25</psyfocusCost>
-                <entropyGain>30</entropyGain>
-                <prerequisites>
-                    <li>FL_VPE_NaturaBloom</li>
-                </prerequisites>
-                <psychic>true</psychic>
-            </li>
-            <li Class="VEF.Abilities.AbilityExtension_Spawn">
-                <thing>FL_TrapIED_woodTrap</thing>
-            </li>
-            <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
-                <effecterDef>FillingInCrater</effecterDef>
-                <maintainForTicks>240</maintainForTicks>
-            </li>
-        </modExtensions>
-    </VEF.Abilities.AbilityDef>
-
-    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-        <defName>FL_VPE_ExplosionNeedle</defName>
-        <label>thorn explosion</label>
-        <description>Focuses and directs psychic entropy into the targeted soils to manipulate the nearby wood matter within, thereby triggering an explosion of needles. Any enemies hit by the explosion will be weakened by the psychic toxins infused into those needles.</description>
-        <iconPath>UI/Psycast/Ability/FL_ExplosionNeedle</iconPath>
-        <abilityClass>FoxianPsycast.FL_Ability_ThornExplosion</abilityClass>
-        <castTime>120</castTime>
-        <range>22.9</range>
-        <radius>8.9</radius>
-        <cooldownTime>2500</cooldownTime>
-        <castSound>VPE_Flameball_Cast</castSound>
-        <targetMode>Location</targetMode>
-        <modExtensions>
-            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-                <path>FL_VPE_Naturastodis</path>
-                <level>3</level>
-                <order>2</order>
-                <psyfocusCost>0.27</psyfocusCost>
-                <entropyGain>38</entropyGain>
-            </li>
-            <li Class="VEF.Abilities.AbilityExtension_Explosion">
-                <explosionRadius>8.9</explosionRadius>
-                <explosionDamageDef>FL_NeedleBomb</explosionDamageDef>
-                <casterImmune>false</casterImmune>
-                <onCaster>false</onCaster>
             </li>
         </modExtensions>
     </VEF.Abilities.AbilityDef>
@@ -174,11 +69,11 @@
             <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
                 <path>FL_VPE_Naturastodis</path>
                 <level>2</level>
-                <order>2</order>
+                <order>1</order>
                 <psyfocusCost>0.2</psyfocusCost>
-                <entropyGain>36</entropyGain>
+                <entropyGain>29</entropyGain>
                 <prerequisites>
-                    <li>FL_VPE_NaturaBloom</li>
+                    <li>FL_VPE_WoodLance</li>
                 </prerequisites>
             </li>
             <li Class="VEF.Abilities.AbilityExtension_Hediff">
@@ -188,6 +83,79 @@
                 <effecterDef>FL_PsychicAnimalRoar</effecterDef>
                 <onCaster>True</onCaster>
             </li>
+        </modExtensions>
+    </VEF.Abilities.AbilityDef>
+
+    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>FL_VPE_ExplosionNeedle</defName>
+        <label>thorn explosion</label>
+        <description>Focuses and directs psychic entropy into the targeted soils to manipulate the nearby wood matter within, thereby triggering an explosion of needles. Any enemies hit by the explosion will be weakened by the psychic toxins infused into those needles.</description>
+        <iconPath>UI/Psycast/Ability/FL_ExplosionNeedle</iconPath>
+        <abilityClass>FoxianPsycast.FL_Ability_ThornExplosion</abilityClass>
+        <castTime>120</castTime>
+        <range>22.9</range>
+        <radius>8.9</radius>
+        <cooldownTime>2500</cooldownTime>
+        <castSound>VPE_Flameball_Cast</castSound>
+        <targetMode>Location</targetMode>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>FL_VPE_Naturastodis</path>
+                <level>2</level>
+                <order>2</order>
+                <psyfocusCost>0.27</psyfocusCost>
+                <entropyGain>49</entropyGain>
+                <prerequisites>
+                    <li>FL_VPE_WoodLance</li>
+                </prerequisites>
+            </li>
+            <li Class="VEF.Abilities.AbilityExtension_Explosion">
+                <explosionRadius>8.9</explosionRadius>
+                <explosionDamageDef>FL_NeedleBomb</explosionDamageDef>
+                <casterImmune>false</casterImmune>
+                <onCaster>false</onCaster>
+            </li>
+        </modExtensions>
+    </VEF.Abilities.AbilityDef>
+
+    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>FL_VPE_BarSkin</defName>
+        <label>bar skin</label>
+        <description>Psychically enhance the target's flesh, turning it into living wood. The effect is temporary, and the duration scales with the psy-sensitivity of the psycaster. The living bark allows the chosen target to become more resistant to incoming hits and damage at the cost of being slower and very vulnerable to fire.</description>
+        <iconPath>UI/Psycast/Ability/FL_BarSkin</iconPath>
+        <abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
+        <targetMode>Pawn</targetMode>
+        <castTime>90</castTime>
+        <range>999999</range>
+        <durationTime>2500</durationTime>
+        <requireLineOfSight>false</requireLineOfSight>
+        <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+        <castSound>VPE_WordOfHealing_Cast</castSound>
+        <fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
+        <cooldownTime>25000</cooldownTime>
+        <showUndrafted>true</showUndrafted>
+        <chance>0</chance>
+        <durationTimeStatFactors>
+            <PsychicSensitivity>1.5</PsychicSensitivity>
+        </durationTimeStatFactors>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>FL_VPE_Naturastodis</path>
+                <level>2</level>
+                <order>3</order>
+                <psyfocusCost>0.29</psyfocusCost>
+                <entropyGain>38</entropyGain>
+                <prerequisites>
+                    <li>FL_VPE_WoodLance</li>
+                </prerequisites>
+            </li>
+            <li Class="VEF.Abilities.AbilityExtension_Hediff">
+                <hediff>FL_BarSkin</hediff>
+            </li>
+            <!-- <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>FL_PsychicAnimalRoar</effecterDef>
+                <onCaster>True</onCaster>
+            </li> -->
         </modExtensions>
     </VEF.Abilities.AbilityDef>
 
@@ -205,6 +173,7 @@
         <radius>5.9</radius>
         <hasAoE>true</hasAoE>
         <cooldownTime>10000</cooldownTime>
+        <showUndrafted>true</showUndrafted>
         <chance>0</chance>
         <targetingParametersForAoE>
             <canTargetSelf>True</canTargetSelf>
@@ -220,89 +189,17 @@
             <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
                 <path>FL_VPE_Naturastodis</path>
                 <level>3</level>
-                <order>3</order>
-                <psyfocusCost>0.3</psyfocusCost>
-                <entropyGain>48</entropyGain>
+                <order>1</order>
+                <psyfocusCost>0.32</psyfocusCost>
+                <entropyGain>57</entropyGain>
                 <prerequisites>
-                    <li>FL_VPE_NaturaBloom</li>
+                    <li>FL_VPE_NatureFinest</li>
                 </prerequisites>
             </li>
             <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
                 <effecterDef>FL_HealAoe</effecterDef>
                 <onCaster>True</onCaster>
                 <maintainForTicks>200</maintainForTicks>
-            </li>
-        </modExtensions>
-    </VEF.Abilities.AbilityDef>
-
-    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-        <defName>FL_VPE_TreantGuardian</defName>
-        <label>nature's guardians</label>
-        <description>Psychically transmute a tree into a living being. The guardian treant is immediately loyal to the person who summoned it and will protect that person until death or expiration. The Guardian is slow and bulky, but it is capable of withstanding many damages and delivering heavy blows. It does not need to sleep or eat food, but they are not permanent and will disappear if they do not die in combat before. Its duration is dependent on the psycaster's psychic sensitivity. When it dies, it will vanish out of thin air.</description>
-        <iconPath>UI/Psycast/Ability/FL_TreantGuardian</iconPath>
-        <abilityClass>FoxianPsycast.FL_Ability_SpawnTreant</abilityClass>
-        <targetMode>Location</targetMode>
-        <castTime>300</castTime>
-        <requireLineOfSight>false</requireLineOfSight>
-        <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
-        <castSound>VPE_ControlledFrenzy_Cast</castSound>
-        <fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
-        <range>999999</range>
-        <cooldownTime>600000</cooldownTime>
-        <showUndrafted>true</showUndrafted>
-        <chance>0</chance>
-        <modExtensions>
-            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-                <path>FL_VPE_Naturastodis</path>
-                <level>1</level>
-                <order>1</order>
-                <psyfocusCost>0.42</psyfocusCost>
-                <entropyGain>64</entropyGain>
-                <prerequisites>
-                    <li>FL_VPE_NatureHealing</li>
-                </prerequisites>
-            </li>
-            <li Class="FoxianPsycast.AbilityExtension_SpawnPawn">
-                <pawn>FL_GuardianTreant</pawn>
-            </li>
-            <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
-                <effecterDef>FL_PsychicBandShockwave</effecterDef>
-            </li>
-        </modExtensions>
-    </VEF.Abilities.AbilityDef>
-
-    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-        <defName>FL_VPE_NatureBlessing</defName>
-        <label>nature's blessing</label>
-        <description>Transform a downed pawn into a sacrificial tree. Allowing you to offer it as a sacrifice and perform a sacrificial ritual with the god in exchange for a temporary bonus. The bonus received depends on the psychic sensitivity of the pawn organizing the ritual. In case the ritual fails, the ritualist will suffer a debuff.</description>
-        <iconPath>UI/Psycast/Ability/FL_NatureCurse</iconPath>
-        <abilityClass>FoxianPsycast.FL_Ability_NatureBlessing</abilityClass>
-        <targetMode>Pawn</targetMode>
-        <castFleck>PsycastAreaEffect</castFleck>
-        <castTime>300</castTime>
-        <requireLineOfSight>false</requireLineOfSight>
-        <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
-        <castSound>VPE_ConsumeBodies_Cast</castSound>
-        <range>999999</range>
-        <cooldownTime>600000</cooldownTime>
-        <showUndrafted>true</showUndrafted>
-        <chance>0</chance>
-        <modExtensions>
-            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-                <path>FL_VPE_Naturastodis</path>
-                <level>4</level>
-                <order>1</order>
-                <psyfocusCost>0.25</psyfocusCost>
-                <entropyGain>60</entropyGain>
-                <prerequisites>
-                    <li>FL_VPE_NatureHealing</li>
-                </prerequisites>
-            </li>
-            <li Class="VEF.Abilities.AbilityExtension_Spawn">
-                <thing>FL_Plant_SacrificialTree</thing>
-            </li>
-            <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
-                <effecterDef>FL_MeatExplosion</effecterDef>
             </li>
         </modExtensions>
     </VEF.Abilities.AbilityDef>
@@ -334,9 +231,12 @@
             <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
                 <path>FL_VPE_Naturastodis</path>
                 <level>3</level>
-                <order>1</order>
+                <order>2</order>
                 <psyfocusCost>0.18</psyfocusCost>
-                <entropyGain>21</entropyGain>
+                <entropyGain>17</entropyGain>
+                <prerequisites>
+                    <li>FL_VPE_ExplosionNeedle</li>
+                </prerequisites>
             </li>
             <li Class="VEF.Abilities.AbilityExtension_Hediff">
                 <hediff>FL_SporeInfection</hediff>
@@ -344,6 +244,159 @@
             <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
                 <effecterDef>FL_SporeSparks</effecterDef>
                 <maintainForTicks>300</maintainForTicks>
+            </li>
+        </modExtensions>
+    </VEF.Abilities.AbilityDef>
+
+    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>FL_VPE_TrapIED_WoodTrap</defName>
+        <label>wood trap</label>
+        <description>Permeate a soily surface with psychic entropy and morph the plant matter around into an artificial wooden landmine filled with explosive gas and thick wooden needles that will spew out everywhere upon detonation. Although the mine doesn't do as much damage as a normal IED trap, enemies that get hit by the needles will be physically weaker and less effective in close combat for a while.</description>
+        <iconPath>UI/Psycast/Ability/FL_WoodTrap</iconPath>
+        <abilityClass>FoxianPsycast.FL_ability_PlantWoodMine</abilityClass>
+        <needsTicking>true</needsTicking>
+        <fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
+        <targetMode>Location</targetMode>
+        <castTime>180</castTime>
+        <requireLineOfSight>false</requireLineOfSight>
+        <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+        <castSound>VPE_BrambleMaze_Cast</castSound>
+        <range>999999</range>
+        <cooldownTime>300000</cooldownTime>
+        <showUndrafted>true</showUndrafted>
+        <chance>0</chance>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>FL_VPE_Naturastodis</path>
+                <level>3</level>
+                <order>3</order>
+                <psyfocusCost>0.24</psyfocusCost>
+                <entropyGain>37</entropyGain>
+                <prerequisites>
+                    <li>FL_VPE_BarSkin</li>
+                </prerequisites>
+                <psychic>true</psychic>
+            </li>
+            <li Class="VEF.Abilities.AbilityExtension_Spawn">
+                <thing>FL_TrapIED_woodTrap</thing>
+            </li>
+            <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>FillingInCrater</effecterDef>
+                <maintainForTicks>240</maintainForTicks>
+            </li>
+        </modExtensions>
+    </VEF.Abilities.AbilityDef>
+
+    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>FL_VPE_TreantGuardian</defName>
+        <label>nature's guardians</label>
+        <description>Psychically transmute a tree into a living being. The guardian treant is immediately loyal to the person who summoned it and will protect that person until death or expiration. The Guardian is slow and bulky, but it is capable of withstanding many damages and delivering heavy blows. It does not need to sleep or eat food, but they are not permanent and will disappear if they do not die in combat before. Its duration is dependent on the psycaster's psychic sensitivity. When it dies, it will vanish out of thin air.</description>
+        <iconPath>UI/Psycast/Ability/FL_TreantGuardian</iconPath>
+        <abilityClass>FoxianPsycast.FL_Ability_SpawnTreant</abilityClass>
+        <targetMode>Location</targetMode>
+        <castTime>300</castTime>
+        <requireLineOfSight>false</requireLineOfSight>
+        <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+        <castSound>VPE_ControlledFrenzy_Cast</castSound>
+        <fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
+        <range>999999</range>
+        <cooldownTime>600000</cooldownTime>
+        <showUndrafted>true</showUndrafted>
+        <chance>0</chance>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>FL_VPE_Naturastodis</path>
+                <level>4</level>
+                <order>1</order>
+                <psyfocusCost>0.41</psyfocusCost>
+                <entropyGain>64</entropyGain>
+                <prerequisites>
+                    <li>FL_VPE_NatureHealing</li>
+                    <li>FL_VPE_SporeInfection</li>
+                    <li>FL_VPE_TrapIED_WoodTrap</li>
+                </prerequisites>
+            </li>
+            <li Class="FoxianPsycast.AbilityExtension_SpawnPawn">
+                <pawn>FL_GuardianTreant</pawn>
+            </li>
+            <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>FL_PsychicBandShockwave</effecterDef>
+            </li>
+        </modExtensions>
+    </VEF.Abilities.AbilityDef>
+
+    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>FL_VPE_NaturaBloom</defName>
+        <label>natura bloom</label>
+        <description>Condense the soil with psychic entropy and germinate a sapling of a Natura tree. The sapling can only be psychically rooted on a suitable terrain for a plant.</description>
+        <iconPath>UI/Psycast/Ability/FL_PlantNaturaTree</iconPath>
+        <abilityClass>FoxianPsycast.FL_Ability_PlantNaturaTree</abilityClass>
+        <needsTicking>true</needsTicking>
+        <fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
+        <targetMode>Location</targetMode>
+        <castTime>600</castTime>
+        <warmupMote>Mote_WarmupNeuroquake</warmupMote>
+        <requireLineOfSight>false</requireLineOfSight>
+        <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+        <castSound>VPE_TreeSprout_Cast</castSound>
+        <range>999999</range>
+        <cooldownTime>2700000</cooldownTime>
+        <showUndrafted>true</showUndrafted>
+        <chance>0</chance>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>FL_VPE_Naturastodis</path>
+                <level>5</level>
+                <order>1</order>
+                <psyfocusCost>0.85</psyfocusCost>
+                <entropyGain>80</entropyGain>
+                <prerequisites>
+                    <li>FL_VPE_TreantGuardian</li>
+                </prerequisites>
+                <psychic>true</psychic>
+            </li>
+            <li Class="VEF.Abilities.AbilityExtension_Spawn">
+                <thing>FL_Plant_TreeNatura</thing>
+            </li>
+            <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>FillingInCrater</effecterDef>
+                <maintainForTicks>240</maintainForTicks>
+            </li>
+        </modExtensions>
+    </VEF.Abilities.AbilityDef>
+
+    <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>FL_VPE_NatureBlessing</defName>
+        <label>nature's blessing</label>
+        <description>Transform a downed pawn into a sacrificial tree. Allowing you to offer it as a sacrifice and perform a sacrificial ritual with the god in exchange for a temporary bonus. The bonus received depends on the psychic sensitivity of the pawn organizing the ritual. In case the ritual fails, the ritualist will suffer a debuff.</description>
+        <iconPath>UI/Psycast/Ability/FL_NatureCurse</iconPath>
+        <abilityClass>FoxianPsycast.FL_Ability_NatureBlessing</abilityClass>
+        <targetMode>Pawn</targetMode>
+        <castFleck>PsycastAreaEffect</castFleck>
+        <castTime>300</castTime>
+        <requireLineOfSight>false</requireLineOfSight>
+        <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
+        <castSound>VPE_ConsumeBodies_Cast</castSound>
+        <range>999999</range>
+        <cooldownTime>600000</cooldownTime>
+        <showUndrafted>true</showUndrafted>
+        <chance>0</chance>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>FL_VPE_Naturastodis</path>
+                <level>5</level>
+                <order>2</order>
+                <psyfocusCost>0.25</psyfocusCost>
+                <entropyGain>53</entropyGain>
+                <prerequisites>
+                    <li>FL_VPE_TreantGuardian</li>
+                </prerequisites>
+            </li>
+            <li Class="VEF.Abilities.AbilityExtension_Spawn">
+                <thing>FL_Plant_SacrificialTree</thing>
+            </li>
+            <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>FL_MeatExplosion</effecterDef>
             </li>
         </modExtensions>
     </VEF.Abilities.AbilityDef>

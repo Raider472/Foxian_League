@@ -21,7 +21,7 @@ namespace Foxian_league {
 
         public override void TickInterval(int delta) {
             base.TickInterval(delta);
-            if(pawn.IsHashIntervalTick(180, delta) && pawn.GetStatValue(def.GetModExtension<HediffExtension_ScalableSeverityStat>().scalingStat) != lastSavedStat) {
+            if(pawn.IsHashIntervalTick(240, delta) && pawn.GetStatValue(def.GetModExtension<HediffExtension_ScalableSeverityStat>().scalingStat) != lastSavedStat) {
                 UpdateSeverity();
             }
         }

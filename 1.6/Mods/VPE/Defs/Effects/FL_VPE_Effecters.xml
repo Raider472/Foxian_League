@@ -150,4 +150,19 @@
 			</li>
 		</children>
 	</EffecterDef>
+
+	<EffecterDef>
+		<defName>FL_BarSkin</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+				<scale>0.5~0.9</scale>
+				<chancePerTick>0.04</chancePerTick>
+				<positionRadius>0.35</positionRadius>
+				<moteDef>FL_Mote_WoodBubble</moteDef>
+				<speed>0.18~0.27</speed>
+				<angle>-30~80</angle>
+			</li>
+		</children>
+	</EffecterDef>
 </Defs>

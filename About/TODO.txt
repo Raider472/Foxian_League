@@ -1,7 +1,5 @@
 Basic stuff
 
-Use of gizmos might make the mod not compatible for multiplayer
-
 maybe option to allow girl only ? + chance for gender on non-foxian
     -Most mods use the PawnGenerator.GeneratePawn method
     -I'm patching the pregnUtility applybirthoutcome to save the mother and make a letter when a foxian is born
@@ -12,19 +10,11 @@ Fox cat
 
 -Items
 Priest hood/robe
+-Staff that is weak and grows in power with each kills ?
 
 -Pawns
 Special force
 Priest
-
-
-Psychic skill tree
--Bar skin or something similar: give a pawn a resistance hediff but slows them down, should use dynamic hediff and severity scale with caster psy-sensitivity
--Spore Infection might trigger an explosion if 100% ?
--Root snare: restrain the movement of the target for a few seconds
--Forest Step: Teleport to a tree, treant, wood trap, etc.
--Spike Explosion should be targeted at a tree or bush and kill it
--Creating a turret
 
 TODO
 
