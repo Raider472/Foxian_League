@@ -9,22 +9,29 @@ Check if genetic purity can be changed/refractor (removing mother field and etc.
 Fox cat
 
 -Items
-Priest hood/robe
--Staff that is weak and grows in power with each kills ?
+-Add upper head to robe ?
+Outfit for bloodrain elite members
+
+-implants
+Blood Rain Implant that turns them into crazed killer machine, minus int
+Blood rain implants that are fake ears drilled into the brain for slaves
 
 -Pawns
 Special force
-Priest
+Local bloodrain chief
+Slaves blood rain
+Add nail and implant to blood rain
+
+-Special
+Scenario where you can befriend BloodRain (No, add the foxian settlement to the excewption List)
 
 TODO
 
 Wood Trap must check if an explosive is within range
-Blood Rain Implant that turns them into crazed killer machine, minus int
 Fox tiger should inflict a hediff upon hitting a target
 Replace psychic  proc and manip with the dynamic hediff
 Replace psychic blessing from special tree to dynamic hediff ?
 Add Blue new story
-Last stand should have visual effect
 Patch for for medieval tags ???
 Mod option for tails age
 Mod option to remove the Bi trait

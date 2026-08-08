@@ -89,9 +89,11 @@
     <Compile Include="Reserved\Patch_MemoryThoughtHandler_TryGainMemory.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="WeaponComps\CompProperties_PoisonousDagger.cs" />
+    <Compile Include="WeaponComps\CompProperties_RestorePsyfocusOnKill.cs" />
     <Compile Include="WeaponComps\ComProperties_CursedSwordBehaviour.cs" />
     <Compile Include="WeaponComps\Comp_CursedSwordBehaviour.cs" />
     <Compile Include="WeaponComps\Comp_PoisonousDagger.cs" />
+    <Compile Include="WeaponComps\Comp_RestorePsyfocusOnKill.cs" />
     <Compile Include="WeaponComps\Patch_FloatMenuOptionProvider_Equip_GetSingleOptionFor.cs" />
   </ItemGroup>
   <ItemGroup>

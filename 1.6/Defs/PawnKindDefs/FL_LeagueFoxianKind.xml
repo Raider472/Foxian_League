@@ -538,6 +538,38 @@
         </skills>
     </PawnKindDef>
 
+    <PawnKindDef ParentName="LeagueFoxianBase_combat">
+        <defName>FL_Foxian_Oracle</defName>
+        <label>foxian oracle</label>
+        <combatPower>75</combatPower>
+        <gearHealthRange>1~2</gearHealthRange>
+        <combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+        <weaponMoney>950~1500</weaponMoney>
+        <apparelMoney>1000~2000</apparelMoney>
+        <weaponTags>
+            <li>FoxianLeagueOracleMelee</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>Apparel_ShieldBelt</li>
+            <li>FL_FoxianOracleRobe</li>
+        </apparelRequired>
+        <techHediffsMoney>500~1000</techHediffsMoney>
+        <initialWillRange>18~32</initialWillRange>
+        <initialResistanceRange>19~32</initialResistanceRange>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FL_Greater_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.4</FL_Greater_Foxian>
+                <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.6</FL_Foxian>
+            </xenotypeChances>
+        </xenotypeSet>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>8~16</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
     <!-- Leader -->
     <PawnKindDef ParentName="LeagueFoxianBase_combat">
         <defName>FL_Foxian_League_counselor</defName>

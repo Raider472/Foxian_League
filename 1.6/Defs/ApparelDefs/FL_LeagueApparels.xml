@@ -61,6 +61,67 @@
         </apparel>
     </ThingDef>
 
+    <ThingDef ParentName="FoxianClothing">
+        <defName>FL_FoxianOracleRobe</defName>
+        <label>foxian oracle robe</label>
+        <description>A prestigious ceremonial robe with patterns made of hyperweave and Eltex that is awarded only to the most accomplished Foxian psycasters. Not only is this robe a status of power for any acolyte within the church, but it also strengthens the wielder's psychic ability. For one to become an oracle, they must dedicate their entire life or a good chunk of their life communing with their chosen gods in hope of receiving their most divine benediction. Once blessed, they have to prove their worth by accomplishing various tasks related to their chosen god to finally get the approval of becoming an oracle.</description>
+        <graphicData>
+            <texPath>Things/Pawns/Apparels/Kimono/Kimono</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costStuffCount>120</costStuffCount>
+        <costList>
+            <Hyperweave>15</Hyperweave>
+            <Plasteel>15</Plasteel>
+        </costList>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>12000</WorkToMake>
+            <Mass>2.7</Mass>
+            <ArmorRating_Sharp>0.11</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.07</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.15</ArmorRating_Heat>
+            <Insulation_Cold>15</Insulation_Cold>
+            <Insulation_Heat>5</Insulation_Heat>
+            <EquipDelay>1.8</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
+            <PsychicSensitivityOffset>0.3</PsychicSensitivityOffset>
+            <PsychicEntropyRecoveryRate>0.35</PsychicEntropyRecoveryRate>
+            <SocialImpact>0.25</SocialImpact>
+            <MeditationFocusGain>0.2</MeditationFocusGain>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawns/Apparels/Kimono/Kimono</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>FoxianOracleRobe</li>
+                <li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+                <li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier2</li>
+                <li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier3</li>
+                <li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier4</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
     <ThingDef ParentName="FoxianArmor">
         <defName>FL_NobleFoxianArmor</defName>
         <label>noble foxian armor</label>

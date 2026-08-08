@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Defs>
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>FL_PainNail</defName>
+        <label>pain nail</label>
+        <labelNoun>a pain nail</labelNoun>
+        <description>An installed pain nail. It will inflict pain on the user in exchange for strength and speed. The wearer will be in constant pain and become more vulnerable to damages, and any extra pain will feel more intense. They will be unable to focus when learning new skills.</description>
+        <descriptionHyperlinks>
+            <ThingDef>FL_PainNail</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>FL_PainNail</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <painOffset>0.2</painOffset>
+                <statFactors>
+                    <MoveSpeed>1.5</MoveSpeed>
+                    <PainShockThreshold>0.75</PainShockThreshold>
+                    <MeleeDamageFactor>2</MeleeDamageFactor>
+                    <GlobalLearningFactor>0.5</GlobalLearningFactor>
+                    <IncomingDamageFactor>1.15</IncomingDamageFactor>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.95</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="FL_BodyPartImplantBase">
+        <defName>FL_PainNail</defName>
+        <label>pain nail</label>
+        <description>A nail-looking implant that is directly installed straight into the user's spine. The process is excruciating, and the user will endure continuous torture in exchange for increased strength and speed after the installation. However, the user will become more vulnerable to damage, receiving pain that will feel more intense than usual, and they will learn slower due to being unfocused due to the agonizing pain.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>FL_InstallPainNail</RecipeDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>45</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <Mass>2.5</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
+        <defName>FL_InstallPainNail</defName>
+        <label>install pain nail</label>
+        <description>Install a pain nail.</description>
+        <descriptionHyperlinks>
+            <ThingDef>FL_PainNail</ThingDef>
+            <HediffDef>FL_PainNail</HediffDef>
+        </descriptionHyperlinks>
+        <skillRequirements>
+            <Medicine>10</Medicine>
+        </skillRequirements>
+        <jobString>Installing a pain nail.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>FL_PainNail</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>FL_PainNail</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Spine</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>FL_PainNail</addsHediff>
+    </RecipeDef>
+</Defs>

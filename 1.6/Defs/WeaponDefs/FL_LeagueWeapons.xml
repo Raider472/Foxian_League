@@ -5,7 +5,10 @@
         <label>katana</label>
         <techLevel>Medieval</techLevel>
         <relicChance>1</relicChance>
-        <description>A curved single-edged sword embedded with eltex, this weapon is mostly used by Foxian officers from the league as a symbol of status and to enhance their psychic sensitivity. Despite its noble appearance, the weapon is weaker than a longsword but still deadly.</description>
+        <description>A curved single-edged sword embedded with eltex, this weapon is mostly used by
+            Foxian officers from the league as a symbol of status and to enhance their psychic
+            sensitivity. Despite its noble appearance, the weapon is weaker than a longsword but
+            still deadly.</description>
         <graphicData>
             <texPath>Things/Weapons/Katana</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -77,7 +80,11 @@
     <ThingDef ParentName="FoxianRareMeleeWeapon">
         <defName>FL_Weapoon_Naginata_Craftable</defName>
         <label>naginata</label>
-        <description>A polearm with a blade at its tip and embedded with eltex, the Foxian nobles are fond of this weapon due to its ability to enhance one's own psy-sensitivity. This weapon can be used for stabbing or slashing an opponent at a greater distance than a sword. It even has armor penetration.\nThis particular weapon was recently produced, and thus, it has not yet been blessed with a spirit.</description>
+        <description>A polearm with a blade at its tip and embedded with eltex, the Foxian nobles
+            are fond of this weapon due to its ability to enhance one's own psy-sensitivity. This
+            weapon can be used for stabbing or slashing an opponent at a greater distance than a
+            sword. It even has armor penetration.\nThis particular weapon was recently produced, and
+            thus, it has not yet been blessed with a spirit.</description>
         <graphicData>
             <texPath>Things/Weapons/Naginata</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -157,10 +164,94 @@
         </modExtensions>
     </ThingDef>
 
+    <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="FoxianRareMeleeWeapon">
+        <defName>FL_Weapoon_Oracle_Staff</defName>
+        <label>oracle staff</label>
+        <description>A wooden staff with a piece of Eltex fixed on its tip. The staff in itself is not a dangerous weapon, but it is used by Foxian psycasters to enhance and support their psycasting abilities. This kind of staff is generally awarded to Foxian psycasters who managed to prove themselves by reaching the rank of Oracle within their local church. Reaching that rank is no easy feat, as someone would need to potentially dedicate their entire life communing with their gods in hope of receiving their approvals. The staff is capable of absorbing the life essence of enemies it has killed in battle and turning that essence into psyfocus for the wielder.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Naginata</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <weaponTags>
+            <li>FoxianLeagueOracleMelee</li>
+        </weaponTags>
+        <costStuffCount>180</costStuffCount>
+        <costList>
+            <Plasteel>40</Plasteel>
+        </costList>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <statBases>
+            <WorkToMake>16000</WorkToMake>
+            <Mass>1.75</Mass>
+        </statBases>
+        <equippedAngleOffset>-25</equippedAngleOffset>
+        <burnableByRecipe>false</burnableByRecipe>
+        <equippedStatOffsets>
+            <PsychicSensitivityOffset>0.25</PsychicSensitivityOffset>
+            <PsychicEntropyRecoveryRate>0.25</PsychicEntropyRecoveryRate>
+            <MeditationFocusGain>0.10</MeditationFocusGain>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>head</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <comps>
+            <li Class="Foxian_league.CompProperties_RestorePsyfocusOnKill">
+                <psyfocusRestoreRange>0.09~0.26</psyfocusRestoreRange>
+            </li>
+        </comps>
+        <!-- <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.19, 0, 0.15)</drawOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.03, 0, 0.1)</drawOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(0.19, 0, 0.15)</drawOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.03, 0, 0.1)</drawOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions> -->
+    </ThingDef>
+
     <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="FoxianLegendaryBladeLinkMeleeWeapon">
         <defName>FL_Weapoon_Naginata_BladeLink</defName>
         <label>blessed naginata</label>
-        <description>A polearm with a blade at its tip, embedded with eltex and blessed with a persona that can bond with only one person, the Foxian nobles are fond of this weapon due to its ability to enhance one's own psy-sensitivity. This weapon can be used for stabbing or slashing an opponent at a greater distance than a sword. It even has armor penetration.</description>
+        <description>A polearm with a blade at its tip, embedded with eltex and blessed with a
+            persona that can bond with only one person, the Foxian nobles are fond of this weapon
+            due to its ability to enhance one's own psy-sensitivity. This weapon can be used for
+            stabbing or slashing an opponent at a greater distance than a sword. It even has armor
+            penetration.</description>
         <graphicData>
             <texPath>Things/Weapons/Naginata_Blessed</texPath>
             <graphicClass>Graphic_Single</graphicClass>

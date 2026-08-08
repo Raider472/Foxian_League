@@ -37,6 +37,13 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="FL_FoxianOracleRobe"]/costList/Plasteel</xpath>
+        <value>
+            <VPE_Eltex>1</VPE_Eltex>
+        </value>
+    </Operation>
+
     <!-- Weapon -->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="FL_Weapon_OfficerKatana"]/costList</xpath>
@@ -49,6 +56,13 @@
         <xpath>Defs/ThingDef[defName="FL_Weapoon_Naginata_Craftable"]/costList</xpath>
         <value>
             <VPE_Eltex>4</VPE_Eltex>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="FL_Weapoon_Oracle_Staff"]/costList</xpath>
+        <value>
+            <VPE_Eltex>2</VPE_Eltex>
         </value>
     </Operation>
 </Patch>
