@@ -28,7 +28,6 @@
             <leatherDef>Leather_Panthera</leatherDef>
             <nameOnTameChance>1</nameOnTameChance>
             <trainability>Advanced</trainability>
-            <gestationPeriodDays>0</gestationPeriodDays>
             <lifeExpectancy>20</lifeExpectancy>
             <manhunterOnTameFailChance>0.4</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.9</manhunterOnDamageChance>

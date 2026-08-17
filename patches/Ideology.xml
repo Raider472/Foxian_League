@@ -64,4 +64,29 @@
             </value>
         </nomatch>
     </Operation>
+
+    <!--Replace the crafting recipe of the blood rain skull armor-->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <nomatch Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="FL_SkullHelmet"]/costList/Skull</xpath>
+                <value>
+                    <Heart>1</Heart>
+                </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <nomatch Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="FL_SkullArmor"]/costList/Skull</xpath>
+                <value>
+                    <Heart>2</Heart>
+                </value>
+        </nomatch>
+    </Operation>
 </Patch>

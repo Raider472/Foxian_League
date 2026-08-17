@@ -3,6 +3,6 @@
     <HediffDef ParentName="BlessingAbs">
         <defName>FL_DummyHediffWarior</defName>
         <label>Dummy Hediff</label>
-        <description>You shouldn't be able to see/get this.</description>
+        <description>You shouldn't be able to see or get this.</description>
     </HediffDef>
 </Defs>

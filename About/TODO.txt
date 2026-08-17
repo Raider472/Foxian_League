@@ -6,27 +6,26 @@ maybe option to allow girl only ? + chance for gender on non-foxian
 Check if genetic purity can be changed/refractor (removing mother field and etc.)
 
 -Animals
-Fox cat
+Fox cat (With ability to trigger a random event,but more targeted than truly random)
 
 -Items
--Add upper head to robe ?
+-Add upper head to robe psychi ?
 Outfit for bloodrain elite members
-
--implants
-Blood Rain Implant that turns them into crazed killer machine, minus int
-Blood rain implants that are fake ears drilled into the brain for slaves
-
--Pawns
-Special force
-Local bloodrain chief
-Slaves blood rain
-Add nail and implant to blood rain
+ -Something inspired by mongolians with a skull (mongolian Deel outfit for local chief) CHECK
+ -military outfit for special bloodrain soldiers khorne related ?
+ -Skull Headeset ?
+Outfit for Fops (Grant Dodge and higher resistance to slash but none to blunt)
+ -Beret
+ -Probably something related to modern special force (might be too much) (Check rainbow 6 siege)
 
 -Special
-Scenario where you can befriend BloodRain (No, add the foxian settlement to the excewption List)
+Scenario where you can befriend BloodRain (You are actually aligned with the blood rain and are enemy with the foxian League)
 
 TODO
 
+remove test dynamic hediff
+Rework loot pool of excelent scrificial tree ?
+Add Compat to new staff when texture is done for melee animation
 Wood Trap must check if an explosive is within range
 Fox tiger should inflict a hediff upon hitting a target
 Replace psychic  proc and manip with the dynamic hediff

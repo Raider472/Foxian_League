@@ -378,6 +378,11 @@
         <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
         <weaponMoney>200~500</weaponMoney>
         <techHediffsChance>0.04</techHediffsChance>
+        <techHediffsTags>
+            <li>Poor</li>
+            <li>Simple</li>
+            <li>DrillArm</li>
+        </techHediffsTags>
         <weaponTags>
             <li>MedievalMeleeDecent</li>
             <li>MedievalMeleeAdvanced</li>
@@ -426,9 +431,10 @@
     </PawnKindDef>
 
     <PawnKindDef ParentName="LeagueFoxianBase_combat">
-        <defName>FL_Foxian_Elite_Soldier</defName>
-        <label>foxian elite soldier</label>
-        <combatPower>140</combatPower>
+        <defName>FL_Foxian_Heavy_Soldier</defName>
+        <label>foxian Heavy soldier</label>
+        <labelPlural>foxian Heavy soldiers</labelPlural>
+        <combatPower>100</combatPower>
         <canBeSapper>true</canBeSapper>
         <gearHealthRange>0.8~3.2</gearHealthRange>
         <apparelTags>
@@ -436,16 +442,19 @@
             <li>SpacerMilitary</li>
         </apparelTags>
         <combatEnhancingDrugsChance>0.2</combatEnhancingDrugsChance>
-        <apparelMoney>1400~2400</apparelMoney>
-        <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
-        <weaponMoney>800~2200</weaponMoney>
+        <apparelMoney>1000~2000</apparelMoney>
+        <weaponMoney>800~1800</weaponMoney>
         <techHediffsChance>0.4</techHediffsChance>
-        <techHediffsMoney>700~1200</techHediffsMoney>
+        <techHediffsMaxAmount>1</techHediffsMaxAmount>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <techHediffsMoney>700~1000</techHediffsMoney>
         <biocodeWeaponChance>0.25</biocodeWeaponChance>
         <weaponTags>
             <li>IndustrialGunAdvanced</li>
             <li>AssaultRifle</li>
-            <li>SpacerGun</li>
         </weaponTags>
         <disallowedTraits>
             <li>Brawler</li>
@@ -464,9 +473,149 @@
         </skills>
     </PawnKindDef>
 
+    <!--FOPS Operatives-->
     <PawnKindDef ParentName="LeagueFoxianBase_combat">
-        <defName>FL_Foxian_Elite_Melee_Infantry</defName>
-        <label>foxian elite melee infantry</label>
+        <defName>FL_Foxian_Elite_Soldier</defName>
+        <label>F.O.P.S operative</label>
+        <labelPlural>F.O.P.S operatives</labelPlural>
+        <combatPower>160</combatPower>
+        <canBeSapper>true</canBeSapper>
+        <gearHealthRange>1~4</gearHealthRange>
+        <apparelTags>
+            <li>IndustrialMilitaryAdvanced</li>
+            <li>SpacerMilitary</li>
+        </apparelTags>
+        <combatEnhancingDrugsChance>0.3</combatEnhancingDrugsChance>
+        <apparelMoney>1200~2600</apparelMoney>
+        <apparelRequired>
+            <li>FL_FOPSBeret</li>
+            <li>FL_FOPSVest</li>
+        </apparelRequired>
+        <weaponMoney>1200~2800</weaponMoney>
+        <techHediffsChance>0.4</techHediffsChance>
+        <techHediffsMaxAmount>2</techHediffsMaxAmount>
+        <techHediffsMoney>1200~1800</techHediffsMoney>
+        <techHediffsTags>
+            <li>ImplantEmpireCommon</li>
+            <li>ImplantEmpireRoyal</li>
+            <li>Advanced</li>
+            <li>AdvancedWeapon</li>
+        </techHediffsTags>
+        <biocodeWeaponChance>0.25</biocodeWeaponChance>
+        <weaponTags>
+            <li>AssaultRifle</li>
+            <li>SpacerGun</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <initialResistanceRange>25~32</initialResistanceRange>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">999</FL_Foxian>
+            </xenotypeChances>
+        </xenotypeSet>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>8~20</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="LeagueFoxianBase_combat">
+        <defName>FL_Foxian_Elite_Melee_Soldier</defName>
+        <label>F.O.P.S melee operative</label>
+        <labelPlural>F.O.P.S operatives</labelPlural>
+        <combatPower>170</combatPower>
+        <canBeSapper>true</canBeSapper>
+        <gearHealthRange>1~4</gearHealthRange>
+        <apparelTags>
+            <li>Apparel_ShieldBelt</li>
+            <li>IndustrialMilitaryAdvanced</li>
+            <li>SpacerMilitary</li>
+        </apparelTags>
+        <combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
+        <apparelMoney>1600~2600</apparelMoney>
+        <apparelRequired>
+            <li>FL_FOPSBeret</li>
+            <li>FL_FOPSVest</li>
+        </apparelRequired>
+        <weaponMoney>1200~2800</weaponMoney>
+        <techHediffsChance>0.4</techHediffsChance>
+        <techHediffsMaxAmount>3</techHediffsMaxAmount>
+        <techHediffsMoney>1200~1800</techHediffsMoney>
+        <techHediffsTags>
+            <li>ImplantEmpireCommon</li>
+            <li>ImplantEmpireRoyal</li>
+            <li>Advanced</li>
+            <li>AdvancedWeapon</li>
+        </techHediffsTags>
+        <biocodeWeaponChance>0.25</biocodeWeaponChance>
+        <weaponTags>
+            <li>MedievalMeleeAdvanced</li>
+            <li>FoxianLeagueNobleMelee</li>
+            <li>FoxianLeagueNobleMeleeBladelink</li>
+        </weaponTags>
+        <initialResistanceRange>25~32</initialResistanceRange>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FL_Greater_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.35</FL_Greater_Foxian>
+                <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.65</FL_Foxian>
+            </xenotypeChances>
+        </xenotypeSet>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>8~20</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <!--Special Characters-->
+    <PawnKindDef ParentName="LeagueFoxianBase_combat">
+        <defName>FL_Foxian_Officer</defName>
+        <label>foxian officer</label>
+        <labelPlural>foxian officers</labelPlural>
+        <combatPower>100</combatPower>
+        <gearHealthRange>1~2</gearHealthRange>
+        <combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
+        <weaponMoney>735~785</weaponMoney>
+        <apparelMoney>1000~1400</apparelMoney>
+        <weaponTags>
+            <li>FoxianLeagueOfficerlMelee</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>Apparel_ShieldBelt</li>
+            <li>FL_OfficerFoxianArmor</li>
+            <li>FL_OfficerFoxianCap</li>
+        </apparelRequired>
+        <techHediffsMoney>500~1000</techHediffsMoney>
+        <techHediffsTags>
+            <li>ImplantEmpireCommon</li>
+            <li>Advanced</li>
+            <li>AdvancedWeapon</li>
+        </techHediffsTags>
+        <initialWillRange>10~18</initialWillRange>
+        <initialResistanceRange>15~24</initialResistanceRange>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FL_Greater_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.7</FL_Greater_Foxian>
+                <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.3</FL_Foxian>
+            </xenotypeChances>
+        </xenotypeSet>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>6~14</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="LeagueFoxianBase_combat">
+        <defName>FL_Foxian_Royal_Melee_Infantry</defName>
+        <label>foxian royal soldier</label>
+        <labelPlural>foxian royal soldiers</labelPlural>
         <combatPower>180</combatPower>
         <canBeSapper>true</canBeSapper>
         <gearHealthRange>1~3.5</gearHealthRange>
@@ -484,6 +633,12 @@
         <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
         <weaponMoney>2000~3500</weaponMoney>
         <techHediffsChance>0.25</techHediffsChance>
+        <techHediffsTags>
+            <li>ImplantEmpireCommon</li>
+            <li>ImplantEmpireRoyal</li>
+            <li>Advanced</li>
+            <li>AdvancedWeapon</li>
+        </techHediffsTags>
         <weaponTags>
             <li>FoxianLegendaryMelee</li>
             <li>FoxianLeagueNobleMelee</li>
@@ -501,39 +656,6 @@
             <li>
                 <skill>Melee</skill>
                 <range>6~16</range>
-            </li>
-        </skills>
-    </PawnKindDef>
-
-    <PawnKindDef ParentName="LeagueFoxianBase_combat">
-        <defName>FL_Foxian_Officer</defName>
-        <label>foxian officer</label>
-        <combatPower>100</combatPower>
-        <gearHealthRange>1~2</gearHealthRange>
-        <combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
-        <weaponMoney>735~785</weaponMoney>
-        <apparelMoney>1000~1400</apparelMoney>
-        <weaponTags>
-            <li>FoxianLeagueOfficerlMelee</li>
-        </weaponTags>
-        <apparelRequired>
-            <li>Apparel_ShieldBelt</li>
-            <li>FL_OfficerFoxianArmor</li>
-            <li>FL_OfficerFoxianCap</li>
-        </apparelRequired>
-        <techHediffsMoney>500~1000</techHediffsMoney>
-        <initialWillRange>10~18</initialWillRange>
-        <initialResistanceRange>15~24</initialResistanceRange>
-        <xenotypeSet>
-            <xenotypeChances>
-                <FL_Greater_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.7</FL_Greater_Foxian>
-                <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.3</FL_Foxian>
-            </xenotypeChances>
-        </xenotypeSet>
-        <skills>
-            <li>
-                <skill>Melee</skill>
-                <range>6~14</range>
             </li>
         </skills>
     </PawnKindDef>

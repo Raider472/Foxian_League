@@ -39,12 +39,14 @@
         <costList>
             <Steel>45</Steel>
             <ComponentIndustrial>4</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
         </costList>
         <statBases>
             <Mass>2.5</Mass>
         </statBases>
         <techHediffsTags>
             <li>Advanced</li>
+            <li>FoxianRaiderImplant</li>
         </techHediffsTags>
     </ThingDef>
 

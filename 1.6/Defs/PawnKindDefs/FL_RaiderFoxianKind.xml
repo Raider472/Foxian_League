@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+    <PawnKindDef Name="RaiderFoxianBase_civilian" Abstract="True">
+        <race>Human</race>
+        <defaultFactionDef>Foxian_BloodRain</defaultFactionDef>
+        <isFighter>false</isFighter>
+        <chemicalAddictionChance>0.15</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0.01</backstoryCryptosleepCommonality>
+        <invNutrition>2.55</invNutrition>
+        <biocodeWeaponChance>0</biocodeWeaponChance>
+        <initialWillRange>4~8</initialWillRange>
+        <initialResistanceRange>8~12</initialResistanceRange>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+        </apparelTags>
+        <apparelAllowHeadgearChance>0.25</apparelAllowHeadgearChance>
+        <techHediffsChance>0.15</techHediffsChance>
+        <inventoryOptions>
+            <skipChance>0.90</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>35</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>35~250</countRange>
+                </li>
+                <li>
+                    <choiceChance>45</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>1</countRange>
+                </li>
+                <li>
+                    <choiceChance>20</choiceChance>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <countRange>1~3</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
     <PawnKindDef Name="RaiderFoxianBase_low_tier" Abstract="True">
         <race>Human</race>
         <defaultFactionDef>Foxian_BloodRain</defaultFactionDef>
@@ -15,6 +53,33 @@
             <li>IndustrialBasic</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FL_Foxian>1</FL_Foxian>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef Name="RaiderFoxianSlave" Abstract="True">
+        <race>Human</race>
+        <defaultFactionDef>Foxian_BloodRain</defaultFactionDef>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <chemicalAddictionChance>0.25</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0.02</backstoryCryptosleepCommonality>
+        <invNutrition>2.55</invNutrition>
+        <biocodeWeaponChance>0</biocodeWeaponChance>
+        <initialWillRange>2~6</initialWillRange>
+        <initialResistanceRange>7~12</initialResistanceRange>
+        <maxGenerationAge>35</maxGenerationAge>
+        <apparelTags>
+            <li>Neolithic</li>
+        </apparelTags>
+        <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner>1</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
     </PawnKindDef>
 
     <PawnKindDef Name="RaiderFoxianBase_medium_tier" Abstract="True">
@@ -40,8 +105,14 @@
             <li>IndustrialBasic</li>
             <li>IndustrialAdvanced</li>
             <li>IndustrialMilitaryBasic</li>
+            <li>Bloodrain</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FL_Foxian>1</FL_Foxian>
+            </xenotypeChances>
+        </xenotypeSet>
     </PawnKindDef>
 
     <PawnKindDef Name="RaiderFoxianBase_high_tier" Abstract="True">
@@ -57,20 +128,28 @@
         <maxGenerationAge>40</maxGenerationAge>
         <combatEnhancingDrugsChance>0.3</combatEnhancingDrugsChance>
         <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
-        <techHediffsChance>0.2</techHediffsChance>
-        <techHediffsMoney>200~1000</techHediffsMoney>
+        <techHediffsChance>0.25</techHediffsChance>
+        <techHediffsMaxAmount>2</techHediffsMaxAmount>
+        <techHediffsMoney>500~1000</techHediffsMoney>
         <techHediffsTags>
             <li>Simple</li>
             <li>ImplantEmpireCommon</li>
             <li>Advanced</li>
+            <li>FoxianRaiderImplant</li>
         </techHediffsTags>
         <apparelTags>
             <li>IndustrialBasic</li>
             <li>IndustrialAdvanced</li>
             <li>IndustrialMilitaryBasic</li>
             <li>IndustrialMilitaryAdvanced</li>
+            <li>BloodrainVeteran</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FL_Foxian>1</FL_Foxian>
+            </xenotypeChances>
+        </xenotypeSet>
     </PawnKindDef>
 
     <PawnKindDef Name="RaiderFoxianBase_elite_tier" Abstract="True">
@@ -82,15 +161,19 @@
         <gearHealthRange>0.8~3.5</gearHealthRange>
         <biocodeWeaponChance>0.3</biocodeWeaponChance>
         <initialWillRange>9~15</initialWillRange>
-        <initialResistanceRange>14~25</initialResistanceRange>
+        <initialResistanceRange>14~28</initialResistanceRange>
         <maxGenerationAge>40</maxGenerationAge>
         <combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
         <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
-        <techHediffsChance>0.25</techHediffsChance>
-        <techHediffsMoney>400~1300</techHediffsMoney>
+        <techHediffsChance>0.35</techHediffsChance>
+        <techHediffsMaxAmount>3</techHediffsMaxAmount>
+        <techHediffsMoney>750~1500</techHediffsMoney>
         <techHediffsTags>
             <li>ImplantEmpireCommon</li>
+            <li>ImplantEmpireRoyal</li>
             <li>Advanced</li>
+            <li>AdvancedWeapon</li>
+            <li>FoxianRaiderImplant</li>
         </techHediffsTags>
         <apparelTags>
             <li>IndustrialBasic</li>
@@ -98,11 +181,91 @@
             <li>IndustrialMilitaryBasic</li>
             <li>IndustrialMilitaryAdvanced</li>
             <li>SpacerMilitary</li>
+            <li>BloodrainVeteran</li>
+            <li>BloodrainElite</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FL_Foxian>1</FL_Foxian>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!--Civilian Raider-->
+
+    <PawnKindDef ParentName="RaiderFoxianBase_civilian">
+        <defName>FL_RaiderFoxian_Trader</defName>
+        <label>blood rain trader</label>
+        <trader>true</trader>
+        <combatPower>45</combatPower>
+        <gearHealthRange>1~1</gearHealthRange>
+        <itemQuality>Normal</itemQuality>
+        <weaponTags>
+            <li>Gun</li>
+        </weaponTags>
+        <weaponMoney>200~200</weaponMoney>
+        <apparelMoney>400~600</apparelMoney>
+        <apparelTags>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <techHediffsMoney>500~1000</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <initialResistanceRange>12~20</initialResistanceRange>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">1</FL_Foxian>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="RaiderFoxianBase_civilian">
+        <defName>FL_Foxian_Raider_Villager</defName>
+        <label>blood rain villager</label>
+        <combatPower>45</combatPower>
+        <itemQuality>Poor</itemQuality>
+        <gearHealthRange>0.2~0.8</gearHealthRange>
+        <weaponMoney>150~450</weaponMoney>
+        <apparelMoney>400~600</apparelMoney>
+        <weaponTags>
+            <li>Gun</li>
+            <li>MedievalMeleeBasic</li>
+        </weaponTags>
+        <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+        <techHediffsChance>0.06</techHediffsChance>
+        <techHediffsMoney>50~600</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <initialResistanceRange>10~17</initialResistanceRange>
     </PawnKindDef>
 
     <!-- Low tier - Foxian Raider -->
+
+    <PawnKindDef ParentName="RaiderFoxianSlave">
+        <defName>FL_Foxian_Raider_Human_Slave</defName>
+        <label>foxian slave</label>
+        <combatPower>35</combatPower>
+        <invNutrition>0</invNutrition>
+        <gearHealthRange>0.3~0.4</gearHealthRange>
+        <itemQuality>Poor</itemQuality>
+        <apparelMoney>100~300</apparelMoney>
+        <weaponMoney>100~380</weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeBasic</li>
+            <li>NeolithicMeleeBasic</li>
+        </weaponTags>
+        <techHediffsRequired>
+            <li>FL_FoxianFakeEars</li>
+        </techHediffsRequired>
+        <techHediffsChance>0</techHediffsChance>
+    </PawnKindDef>
 
     <PawnKindDef ParentName="RaiderFoxianBase_low_tier">
         <defName>FL_Foxian_Raider_Trash</defName>
@@ -593,7 +756,7 @@
             <li>Nudist</li>
         </disallowedTraits>
         <techHediffsChance>0.15</techHediffsChance>
-        <techHediffsMoney>400~1000</techHediffsMoney>
+        <techHediffsMoney>500~1000</techHediffsMoney>
         <biocodeWeaponChance>0.5</biocodeWeaponChance>
         <forcedTraits>
             <li>Psychopath</li>
@@ -622,6 +785,58 @@
     </PawnKindDef>
 
     <PawnKindDef ParentName="RaiderFoxianBase_elite_tier">
+        <defName>FL_Foxian_Raider_Local_Commander</defName>
+        <label>local bloodrain commander</label>
+        <combatPower>180</combatPower>
+        <apparelMoney>2000~3500</apparelMoney>
+        <weaponMoney>1000~1500</weaponMoney>
+        <weaponTags>
+            <li>SniperRifle</li>
+            <li>AssaultRifle</li>
+            <li>SpacerGun</li>
+            <li>GunHeavy</li>
+            <li>FoxianRaiderLegendaryMelee</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>FL_BloodRainDeel</li>
+        </apparelRequired>
+        <disallowedTraits>
+            <li>Nudist</li>
+        </disallowedTraits>
+        <techHediffsChance>0.25</techHediffsChance> 
+        <techHediffsMoney>1500~3000</techHediffsMoney>
+        <biocodeWeaponChance>0.5</biocodeWeaponChance>
+        <forcedTraits>
+            <li>Psychopath</li>
+        </forcedTraits>
+        <inventoryOptions>
+            <skipChance>0.3</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>45</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>100~500</countRange>
+                </li>
+                <li>
+                    <choiceChance>30</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>6~18</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>6~18</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="RaiderFoxianBase_elite_tier">
         <defName>FL_Foxian_Raider_Shredder</defName>
         <label>shredder of the empress</label>
         <labelPlural>shredders of the empress</labelPlural>
@@ -636,9 +851,11 @@
         </disallowedTraits>
         <apparelRequired>
             <li>Apparel_ShieldBelt</li>
+            <li>FL_SkullHelmet</li>
+            <li>FL_SkullArmor</li>
         </apparelRequired>
-        <techHediffsChance>0.15</techHediffsChance>
-        <techHediffsMoney>400~1000</techHediffsMoney>
+        <techHediffsChance>0.2</techHediffsChance>
+        <techHediffsMoney>1000~1750</techHediffsMoney>
         <biocodeWeaponChance>0.5</biocodeWeaponChance>
         <forcedTraits>
             <li>Psychopath</li>

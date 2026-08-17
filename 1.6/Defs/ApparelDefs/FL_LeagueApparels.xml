@@ -309,6 +309,64 @@
         </apparel>
     </ThingDef>
 
+    <ThingDef ParentName="FoxianArmorNoPsychic">
+        <defName>FL_FOPSVest</defName>
+        <label>F.O.P.S bullet proof vest</label>
+        <description>A complete bulletproof vest used by F.O.P.S operators. The Federal Operations &amp; Protection Service is a special unit comprising the best soldiers of the league. They are given the most difficult tasks that the league's army can't accomplish without significant sacrifices. Their second mission is protecting important assets of the league, whether they are important people or items. The vest is lightweight and includes ammunition pockets, which allow the wearer to shoot more rapidly and with greater precision while granting them improved mobility.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/Pawns/Apparels/OfficerArmor/OfficerArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <Cloth>50</Cloth>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <Steel>75</Steel>
+        </costList>
+        <generateCommonality>2</generateCommonality>
+        <statBases>
+            <WorkToMake>16500</WorkToMake>
+            <MaxHitPoints>260</MaxHitPoints>
+            <Mass>7</Mass>
+            <Flammability>0.5</Flammability>
+            <ArmorRating_Sharp>0.77</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.21</ArmorRating_Heat>
+            <Insulation_Cold>13</Insulation_Cold>
+            <Insulation_Heat>7</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <RangedCooldownFactor>-0.15</RangedCooldownFactor>
+            <MoveSpeed>0.2</MoveSpeed>
+            <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawns/Apparels/OfficerArmor/OfficerArmor</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+                <li>Spacefarer</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
     <ThingDef ParentName="FoxianHead">
         <defName>FL_OfficerFoxianCap</defName>
         <label>foxian officer cap</label>
@@ -344,6 +402,57 @@
             <PsychicSensitivityOffset>0.1</PsychicSensitivityOffset>
             <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
             <SocialImpact>0.05</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawns/Apparels/OfficerArmor/OfficerCap</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+                <li>Spacefarer</li>
+            </defaultOutfitTags>
+        </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="FoxianHeadNonPsychicCloth">
+        <defName>FL_FOPSBeret</defName>
+        <label>F.O.P.S beret</label>
+        <description>A beret belonging to the F.O.P.S special services. While not offering much protection compared to a helmet. It allows the wearer to be lighter and more confident in the handling of their ranged weapon.</description>
+        <graphicData>
+            <texPath>Things/Pawns/Apparels/OfficerArmor/OfficerCap</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <Steel>15</Steel>
+            <Gold>10</Gold>
+            <Cloth>25</Cloth>
+        </costList>
+        <statBases>
+            <WorkToMake>1750</WorkToMake>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.5</Flammability>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>0.05</MoveSpeed>
+            <ArrestSuccessChance>0.25</ArrestSuccessChance>
+            <RangedCooldownFactor>-0.05</RangedCooldownFactor>
         </equippedStatOffsets>
         <apparel>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>

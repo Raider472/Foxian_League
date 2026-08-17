@@ -54,9 +54,9 @@
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<xenotypeSet>
 			<xenotypeChances>
-				<FL_Foxian>0.75</FL_Foxian>
-				<FL_Greater_Foxian>0.20</FL_Greater_Foxian>
-				<Baseliner>0.05</Baseliner>
+				<FL_Foxian>0.71</FL_Foxian>
+				<FL_Greater_Foxian>0.21</FL_Greater_Foxian>
+				<Baseliner>0.8</Baseliner>
 			</xenotypeChances>
 		</xenotypeSet>
 		<backstoryFilters>
@@ -116,8 +116,10 @@
 					<FL_Foxian_Melee_Infantry>6</FL_Foxian_Melee_Infantry>
 					<FL_Foxian_League_Soldier>10</FL_Foxian_League_Soldier>
 					<FL_Foxian_League_Sniper>5</FL_Foxian_League_Sniper>
-					<FL_Foxian_Elite_Soldier>10</FL_Foxian_Elite_Soldier>
-					<FL_Foxian_Elite_Melee_Infantry>10</FL_Foxian_Elite_Melee_Infantry>
+					<FL_Foxian_Elite_Soldier>6</FL_Foxian_Elite_Soldier>
+					<FL_Foxian_Elite_Melee_Soldier>4</FL_Foxian_Elite_Melee_Soldier>
+					<FL_Foxian_Officer>4</FL_Foxian_Officer>
+					<FL_Foxian_Royal_Melee_Infantry>8</FL_Foxian_Royal_Melee_Infantry>
 				</options>
 			</li>
 			<li>
@@ -152,8 +154,10 @@
 					<FL_Foxian_Melee_Infantry>10</FL_Foxian_Melee_Infantry>
 					<FL_Foxian_League_Soldier>10</FL_Foxian_League_Soldier>
 					<FL_Foxian_League_Sniper>8</FL_Foxian_League_Sniper>
-					<FL_Foxian_Elite_Soldier>10</FL_Foxian_Elite_Soldier>
-					<FL_Foxian_Elite_Melee_Infantry>8</FL_Foxian_Elite_Melee_Infantry>
+					<FL_Foxian_Officer>3</FL_Foxian_Officer>
+					<FL_Foxian_Elite_Soldier>5</FL_Foxian_Elite_Soldier>
+					<FL_Foxian_Elite_Melee_Soldier>4</FL_Foxian_Elite_Melee_Soldier>
+					<FL_Foxian_Royal_Melee_Infantry>8</FL_Foxian_Royal_Melee_Infantry>
 				</guards>
 			</li>
 			<li>
@@ -170,8 +174,10 @@
 					<FL_Foxian_Melee_Infantry>7</FL_Foxian_Melee_Infantry>
 					<FL_Foxian_League_Soldier>10</FL_Foxian_League_Soldier>
 					<FL_Foxian_League_Sniper>8</FL_Foxian_League_Sniper>
-					<FL_Foxian_Elite_Soldier>10</FL_Foxian_Elite_Soldier>
-					<FL_Foxian_Elite_Melee_Infantry>10</FL_Foxian_Elite_Melee_Infantry>
+					<FL_Foxian_Elite_Soldier>6</FL_Foxian_Elite_Soldier>
+					<FL_Foxian_Elite_Melee_Soldier>4</FL_Foxian_Elite_Melee_Soldier>
+					<FL_Foxian_Officer>3</FL_Foxian_Officer>
+					<FL_Foxian_Royal_Melee_Infantry>8</FL_Foxian_Royal_Melee_Infantry>
 					<FL_Vulpano>0.5</FL_Vulpano>
 				</options>
 			</li>
@@ -276,6 +282,19 @@
 				</categories>
 			</li>
 		</backstoryFilters>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+			<li>Caravan_Outlander_PirateMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
     	</requiredMemes>
@@ -323,6 +342,7 @@
 				<kindDef>Combat</kindDef>
 				<commonality>100</commonality>
 				<options>
+					<FL_Foxian_Raider_Human_Slave>3.5</FL_Foxian_Raider_Human_Slave>
 					<FL_Foxian_Raider_Trash>7</FL_Foxian_Raider_Trash>
 					<FL_Foxian_Raider_Scavenger_Melee>6</FL_Foxian_Raider_Scavenger_Melee>
 					<FL_Foxian_Raider_Scavenger_Gun>10</FL_Foxian_Raider_Scavenger_Gun>
@@ -351,6 +371,7 @@
 					<li>Siege</li>
 				</disallowedStrategies>
 				<options>
+					<FL_Foxian_Raider_Human_Slave>1.75</FL_Foxian_Raider_Human_Slave>
 					<FL_Foxian_Raider_Trash>5</FL_Foxian_Raider_Trash>
 					<FL_Foxian_Raider_Scavenger_Melee>5</FL_Foxian_Raider_Scavenger_Melee>
 					<FL_Foxian_Raider_Scavenger_Gun>7</FL_Foxian_Raider_Scavenger_Gun>
@@ -379,6 +400,7 @@
 					<li>Siege</li>
 				</disallowedStrategies>
 				<options>
+					<FL_Foxian_Raider_Human_Slave>6.5</FL_Foxian_Raider_Human_Slave>
 					<FL_Foxian_Raider_Trash>10</FL_Foxian_Raider_Trash>
 					<FL_Foxian_Raider_Scavenger_Melee>8</FL_Foxian_Raider_Scavenger_Melee>
 					<FL_Foxian_Raider_kidnapper>5</FL_Foxian_Raider_kidnapper>
@@ -395,6 +417,7 @@
 				<kindDef>Combat</kindDef>
 				<commonality>35</commonality>
 				<options>
+					<FL_Foxian_Raider_Human_Slave>1.5</FL_Foxian_Raider_Human_Slave>
 					<FL_Foxian_Raider_Scavenger_Gun>10</FL_Foxian_Raider_Scavenger_Gun>
 					<FL_Foxian_Raider_Despoiler>10</FL_Foxian_Raider_Despoiler>
 					<FL_Foxian_Raider_Grenadier_EMP>0.25</FL_Foxian_Raider_Grenadier_EMP>
@@ -438,14 +461,43 @@
 				<commonality>2</commonality>
 				<maxTotalPoints>1600</maxTotalPoints>
 				<options>
+					<FL_Foxian_Raider_Human_Slave>5</FL_Foxian_Raider_Human_Slave>
 					<FL_Foxian_Raider_Trash>10</FL_Foxian_Raider_Trash>
 					<FL_Vulyakko>4</FL_Vulyakko>
 				</options>
 			</li>
 			<li>
+				<!--Trader-->
+				<kindDef>Trader</kindDef>
+				<traders>
+					<FL_RaiderFoxian_Trader>1</FL_RaiderFoxian_Trader>
+				</traders>
+				<carriers>
+					<FL_Vulpano>8</FL_Vulpano>
+					<Muffalo>2</Muffalo>
+					<Dromedary>1</Dromedary>
+					<Alpaca>1</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<FL_Foxian_Raider_Villager>3</FL_Foxian_Raider_Villager>
+					<FL_Foxian_Raider_Despoiler>7</FL_Foxian_Raider_Despoiler>
+					<FL_Foxian_Raider_Human_Slave>1.5</FL_Foxian_Raider_Human_Slave>
+					<FL_Foxian_Raider_Looter>10</FL_Foxian_Raider_Looter>
+					<FL_Raider_Foxian_Trooper>10</FL_Raider_Foxian_Trooper>
+					<FL_Foxian_Raider_Elite_Sniper>6</FL_Foxian_Raider_Elite_Sniper>
+					<FL_Foxian_Raider_Shredder>4</FL_Foxian_Raider_Shredder>
+					<FL_Foxian_Raider_Local_Commander>1</FL_Foxian_Raider_Local_Commander>
+					<FL_Foxian_Raider_Soldier>10</FL_Foxian_Raider_Soldier>
+					<FL_Foxian_Raider_Scavenger_Gun>6</FL_Foxian_Raider_Scavenger_Gun>
+					<FL_Foxian_Raider_Scavenger_Melee>6</FL_Foxian_Raider_Scavenger_Melee>
+				</guards>
+			</li>
+			<li>
 				<!-- Base defense, mainly ranged with melee mix-ins -->
 				<kindDef>Settlement</kindDef>
 				<options>
+					<FL_Foxian_Raider_Human_Slave>0.5</FL_Foxian_Raider_Human_Slave>
 					<FL_Foxian_Raider_Trash>3</FL_Foxian_Raider_Trash>
 					<FL_Foxian_Raider_Scavenger_Melee>5</FL_Foxian_Raider_Scavenger_Melee>
 					<FL_Foxian_Raider_Scavenger_Gun>10</FL_Foxian_Raider_Scavenger_Gun>
@@ -458,7 +510,36 @@
 					<FL_Raider_Foxian_Trooper>10</FL_Raider_Foxian_Trooper>
 					<FL_Foxian_Raider_Soldier>10</FL_Foxian_Raider_Soldier>
 					<FL_Foxian_Raider_Shredder>10</FL_Foxian_Raider_Shredder>
+					<FL_Foxian_Raider_Local_Commander>1</FL_Foxian_Raider_Local_Commander>
 					<FL_Vulyakko>1</FL_Vulyakko>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Miner>1</Miner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Hunter>1</Hunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Logger>1</Logger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Farmer>1</Farmer>
 				</options>
 			</li>
 		</pawnGroupMakers>
