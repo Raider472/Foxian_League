@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="ResourceVerbBase">
+        <defName>FL_HulkarashTusk</defName>
+        <label>hulkarash tusk</label>
+        <description>.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Things/Item/Special/MastodonTusk</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <statBases>
+            <MarketValue>250</MarketValue>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Mass>3</Mass>
+            <Flammability>0.9</Flammability>
+            <DeteriorationRate>0.5</DeteriorationRate>
+        </statBases>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>10</stackLimit>
+        <relicChance>1</relicChance>
+        <comps>
+            <li Class="CompProperties_Styleable" />
+        </comps>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleePiercer</li>
+        </weaponClasses>
+        <tools>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Scratch</li>
+                    <li>Stab</li>
+                </capacities>
+                <power>26</power>
+                <cooldownTime>3</cooldownTime>
+            </li>
+            <li>
+                <label>base</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2.2</cooldownTime>
+                <chanceFactor>0.5</chanceFactor>
+            </li>
+        </tools>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+            <li>AnimalPart</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>AnimalPart</li>
+        </thingSetMakerTags>
+    </ThingDef>
+</Defs>

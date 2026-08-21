@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <AbilityDef>
+        <defName>Fl_FateManipulation</defName>
+        <label>fate manipulation</label>
+        <description>Psychically focus to bend the odds and forcefully create an incident. The incident will be random. There is also a rare possibility for nothing to happen. An excellent outcome is guaranteed to occur after a specific number of uses.</description>
+        <iconPath>UI/Icons/Ability/FL_Ability_Psy_Switch</iconPath>
+        <cooldownTicksRange>600000</cooldownTicksRange> <!-- 10 days -->
+        <stunTargetWhileCasting>true</stunTargetWhileCasting>
+        <showCastingProgressBar>True</showCastingProgressBar>
+        <targetRequired>false</targetRequired>
+        <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <statBases>
+            <Ability_EffectRadius>0</Ability_EffectRadius>
+        </statBases>
+        <warmupSound>PsycastCastLoop</warmupSound>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>9999</range>
+            <warmupTime>3</warmupTime>
+            <requireLineOfSight>false</requireLineOfSight>
+            <soundCast>PsychicShockLanceCast</soundCast>
+            <targetParams>
+                <canTargetSelf>True</canTargetSelf>
+                <canTargetPawns>False</canTargetPawns>
+                <canTargetAnimals>False</canTargetAnimals>
+                <canTargetHumans>False</canTargetHumans>
+                <canTargetMechs>False</canTargetMechs>
+                <canTargetEntities>False</canTargetEntities>
+                <canTargetSubhumans>False</canTargetSubhumans>
+                <canTargetBuildings>false</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityRequiresTrainable">
+                <trainableDef>Fl_FateManipulation</trainableDef>
+            </li>
+            <li Class="CompProperties_AbilityEffecterOnCaster">
+                <effecterDef>FL_BendTheOdds</effecterDef>
+                <maintainTicks>40</maintainTicks>
+            </li>
+            <li Class="Foxian_league.CompProperties_AbilityEffectFateManipulation"/>
+        </comps>
+    </AbilityDef>
+
+    <!-- Copy of the Biotech one to allow a certain animal to use it -->
+    <AbilityDef>
+        <defName>FL_FireSpew</defName>
+        <label>fire spew</label>
+        <description>Spit a stream of sticky, flammable bile from the mouth. The bile can ignite anything or anyone it hits, and also form flaming pools on the ground.\n\nThe bile is generated and stored by an organ in the neck, along with a separate pouch of hypergolic reactant for ignition.</description>
+        <iconPath>UI/Abilities/FireSpew</iconPath>
+        <cooldownTicksRange>3000000</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <ai_IsIncendiary>true</ai_IsIncendiary>
+        <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+        <warmupStartSound>FireSpew_Warmup</warmupStartSound>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>14.9</range>
+            <warmupTime>2</warmupTime>
+            <soundCast>FireSpew_Resolve</soundCast>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityFireSpew">
+                <range>14.9</range>
+                <lineWidthEnd>3</lineWidthEnd>
+                <filthDef>Filth_FlammableBile</filthDef>
+                <effecterDef>Fire_Spew</effecterDef>
+                <canHitFilledCells>true</canHitFilledCells>
+            </li>
+            <li Class="CompProperties_AbilityRequiresTrainable">
+                <trainableDef>FL_FireSpew</trainableDef>
+            </li>
+        </comps>
+  </AbilityDef>
+</Defs>

@@ -21,7 +21,7 @@
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
             <warmupTime>2</warmupTime>
-            <range>-1</range>
+            <range>9999</range>
             <drawAimPie>False</drawAimPie>
             <requireLineOfSight>False</requireLineOfSight>
             <targetParams>
@@ -67,7 +67,7 @@
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
             <warmupTime>0.5</warmupTime>
-            <range>-1</range>
+            <range>9999</range>
             <drawAimPie>False</drawAimPie>
             <requireLineOfSight>False</requireLineOfSight>
             <targetParams>

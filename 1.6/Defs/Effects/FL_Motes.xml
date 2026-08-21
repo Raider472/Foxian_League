@@ -13,5 +13,82 @@
             <fadeOutTime>2.25</fadeOutTime>
             <attachedDrawOffset>(0, 0, 0.65)</attachedDrawOffset>
         </mote>
-  </ThingDef>
+    </ThingDef>
+
+    <ThingDef ParentName="MoteBase">
+        <defName>Mote_FateManipulationDistortion</defName>
+        <thingClass>MoteAttached</thingClass>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <mote>
+            <fadeInTime>0.15</fadeInTime>
+            <fadeOutTime>0.25</fadeOutTime>
+            <solidTime>0.4</solidTime>
+            <growthRate>20</growthRate>
+        </mote>
+        <graphicData>
+            <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+            <shaderType>MotePsychicWarmupNeuroquake</shaderType>
+            <texPath>Things/Mote/MoteHellfireCannon_HeatWaveDistortion</texPath>
+            <shaderParameters>
+                <_distortionIntensity>0.6</_distortionIntensity>
+                <_brightnessMultiplier>1.5</_brightnessMultiplier>
+                <_distortionTint>(0.34, 0.87, 0.86, 0)</_distortionTint>
+                <_pulseSpeed>2</_pulseSpeed>
+            </shaderParameters>
+            <drawSize>2</drawSize>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="MoteBase">
+        <defName>Mote_FateManipulationFlash</defName>
+        <thingClass>MoteAttached</thingClass>
+        <altitudeLayer>MoteOverheadLow</altitudeLayer>
+        <mote>
+            <fadeInTime>0.1</fadeInTime>
+            <fadeOutTime>0.2</fadeOutTime>
+            <solidTime>0.4</solidTime>
+            <growthRate>5</growthRate>
+        </mote>
+        <graphicData>
+            <texPath>Things/Mote/RadiationDistortion_A</texPath>
+            <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+            <color>(0.33, 0.81, 0.74, 0.5)</color>
+            <shaderType>MoteMultiplyCircularGrayscale</shaderType>
+            <shaderParameters>
+                <_MultiplyTex>/Things/Mote/RadiationDistortion_B</_MultiplyTex>
+                <_texAScale>0.3</_texAScale>
+                <_texBScale>0.3</_texBScale>
+                <_texAScrollSpeed>0.8</_texAScrollSpeed>
+                <_texBScrollSpeed>-0.4</_texBScrollSpeed>
+                <_texAScaleDist>0.5</_texAScaleDist>
+                <_DistortionScale>0.6</_DistortionScale>
+                <_Intensity>8</_Intensity>
+            </shaderParameters>
+            <drawSize>(2, 2)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="MoteBase">
+        <defName>Mote_FateManipulationDistortionDistortion</defName>
+        <thingClass>MoteAttached</thingClass>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <mote>
+            <fadeInTime>0.1</fadeInTime>
+            <fadeOutTime>0.3</fadeOutTime>
+            <solidTime>0.45</solidTime>
+            <growthRate>10</growthRate>
+        </mote>
+        <graphicData>
+            <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+            <shaderType>MotePsychicWarmupNeuroquake</shaderType>
+            <texPath>Things/Mote/MoteHellfireCannon_HeatWaveDistortion</texPath>
+            <shaderParameters>
+                <_distortionIntensity>0.4</_distortionIntensity>
+                <_brightnessMultiplier>0.25</_brightnessMultiplier>
+                <_distortionTint>(0.17, 0.95, 0.54, 0.1)</_distortionTint>
+                <_pulseSpeed>1</_pulseSpeed>
+            </shaderParameters>
+            <drawSize>2</drawSize>
+        </graphicData>
+    </ThingDef>
 </Defs>

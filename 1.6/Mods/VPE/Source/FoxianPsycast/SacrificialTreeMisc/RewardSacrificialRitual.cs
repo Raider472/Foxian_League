@@ -35,6 +35,7 @@ namespace FoxianPsycast {
             ThingDef.Named("FL_Weapoon_Naginata_BladeLink"),
             ThingDef.Named("FL_Weapon_CleansedSword"),
             ThingDef.Named("FL_Weapon_CursedSword"),
+            ThingDef.Named("FL_Weapoon_Oracle_Staff"),
             ThingDef.Named("MechSerumHealer"), 
             ThingDef.Named("PsychicSensitizer"),
             ThingDef.Named("OrbitalTargeterPowerBeam"),

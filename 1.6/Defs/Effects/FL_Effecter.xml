@@ -14,4 +14,29 @@
             </li>
         </children>
   </EffecterDef>
+
+  <EffecterDef>
+    <defName>FL_BendTheOdds</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>Mote_FateManipulationDistortion</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+        <moteDef>Mote_FateManipulationFlash</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <initialDelayTicks>10</initialDelayTicks>
+        <destroyMoteOnCleanup>false</destroyMoteOnCleanup>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+        <moteDef>Mote_FateManipulationDistortionDistortion</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <initialDelayTicks>10</initialDelayTicks>
+        <destroyMoteOnCleanup>false</destroyMoteOnCleanup>
+      </li>
+    </children>
+  </EffecterDef>
 </Defs>

@@ -361,6 +361,7 @@
 					<FL_Foxian_Raider_Shredder>7</FL_Foxian_Raider_Shredder>
 					<FL_Foxian_Raider_Children_Of_Blood>5</FL_Foxian_Raider_Children_Of_Blood>
 					<FL_Vulyakko>3.5</FL_Vulyakko>
+					<FL_Hulkarash>1</FL_Hulkarash>
 				</options>
 			</li>
 			<li>
@@ -390,6 +391,7 @@
 					<FL_Foxian_Raider_Shredder>5</FL_Foxian_Raider_Shredder>
 					<FL_Foxian_Raider_Children_Of_Blood>3</FL_Foxian_Raider_Children_Of_Blood>
 					<FL_Vulyakko>9</FL_Vulyakko>
+					<FL_Hulkarash>2</FL_Hulkarash>
 				</options>
 			</li>
 			<li>
@@ -410,6 +412,7 @@
 					<FL_Foxian_Raider_Shredder>10</FL_Foxian_Raider_Shredder>
 					<FL_Foxian_Raider_Children_Of_Blood>5</FL_Foxian_Raider_Children_Of_Blood>
 					<FL_Vulyakko>6.5</FL_Vulyakko>
+					<FL_Hulkarash>1.5</FL_Hulkarash>
 				</options>
 			</li>
 			<li>
@@ -428,6 +431,7 @@
 					<FL_Foxian_Raider_Elite_Sniper>4</FL_Foxian_Raider_Elite_Sniper>
 					<FL_Foxian_Raider_Soldier>10</FL_Foxian_Raider_Soldier>
 					<FL_Vulyakko>2</FL_Vulyakko>
+					<FL_Hulkarash>1</FL_Hulkarash>
 				</options>
 			</li>
 			<li>
@@ -464,6 +468,7 @@
 					<FL_Foxian_Raider_Human_Slave>5</FL_Foxian_Raider_Human_Slave>
 					<FL_Foxian_Raider_Trash>10</FL_Foxian_Raider_Trash>
 					<FL_Vulyakko>4</FL_Vulyakko>
+					<FL_Hulkarash>1</FL_Hulkarash>
 				</options>
 			</li>
 			<li>
@@ -512,6 +517,7 @@
 					<FL_Foxian_Raider_Shredder>10</FL_Foxian_Raider_Shredder>
 					<FL_Foxian_Raider_Local_Commander>1</FL_Foxian_Raider_Local_Commander>
 					<FL_Vulyakko>1</FL_Vulyakko>
+					<FL_Hulkarash>1</FL_Hulkarash>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">

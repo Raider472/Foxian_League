@@ -8,6 +8,9 @@ Check if genetic purity can be changed/refractor (removing mother field and etc.
 -Animals
 Fox cat (With ability to trigger a random event,but more targeted than truly random)
 
+bloodrain
+fox spider and elephant
+
 -Items
 -Add upper head to robe psychi ?
 Outfit for bloodrain elite members

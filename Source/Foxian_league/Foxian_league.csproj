@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbilityComps\CompAbilityEffect_FateManipulation.cs" />
+    <Compile Include="AbilityComps\CompProperties_AbilityEffectFateManipulation.cs" />
     <Compile Include="AnimalComps\CompProperties_vulyakkoResilience.cs" />
     <Compile Include="AnimalComps\Comp_vulyakkoResilience.cs" />
     <Compile Include="AnimalConnection\Patch_PawnUtility_GetManhunterOnTameFailChance.cs" />

@@ -6,7 +6,7 @@
         <devNote>FLCatFox</devNote>
         <description>A hybrid cat-fox-like creature commonly seen in foxian settlements, they are pretty much the equivalent of normal cats except for their innate talents at reading the future and bending the odds. Their nickname comes from the fact that they love being mischievous and their theorized association with the sacred beast related to trickery and knowledge. Despite their mischievousness, they can show affection to their owners if they are not busy trying to curse your colony with mild inconvenience.</description>
         <statBases>
-            <MoveSpeed>4.6</MoveSpeed>
+            <MoveSpeed>4.8</MoveSpeed>
             <MarketValue>750</MarketValue>
             <ComfyTemperatureMin>-25</ComfyTemperatureMin>
             <Wildness>0</Wildness>
@@ -21,9 +21,10 @@
             <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
             <leatherDef>Leather_Light</leatherDef>
             <petness>1</petness>
-            <trainability>Intermediate</trainability>
+            <trainability>Advanced</trainability>
             <specialTrainables>
                 <li MayRequire="Ludeon.RimWorld.Odyssey">Comfort</li>
+                <li MayRequire="Ludeon.RimWorld.Odyssey">Fl_FateManipulation</li>
             </specialTrainables>
             <nuzzleMtbHours>12</nuzzleMtbHours>
             <gestationPeriodDays>15</gestationPeriodDays>
@@ -145,6 +146,9 @@
         <race>FL_TricksterFoxCat</race>
         <combatPower>45</combatPower>
         <ecoSystemWeight>1.75</ecoSystemWeight>
+        <abilities>
+            <li>Fl_FateManipulation</li>
+        </abilities>
         <lifeStages>
             <li>
                 <label>fox kitten</label>
