@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <DamageDef>
+        <defName>FL_HarpoonProjectile</defName>
+        <label>harpoon</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <deathMessage>{0} has been shot to death by a harpoon.</deathMessage>
+        <hediff>FL_HarpoonWound</hediff>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <impactSoundType>Bullet</impactSoundType>
+        <armorCategory>Sharp</armorCategory>
+        <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+        <isRanged>true</isRanged>
+        <makesAnimalsFlee>true</makesAnimalsFlee>
+    </DamageDef>
+
+    <HediffDef ParentName="InjuryBase">
+        <defName>FL_HarpoonWound</defName>
+        <label>harpoon wound</label>
+        <labelNoun>a harpoon wound</labelNoun>
+        <description>A harpoon wound.</description>
+        <comps>
+            <li Class="HediffCompProperties_TendDuration">
+                <labelTendedWell>bandaged</labelTendedWell>
+                <labelTendedWellInner>sutured</labelTendedWellInner>
+                <labelSolidTendedWell>set</labelSolidTendedWell>
+            </li>
+            <li Class="HediffCompProperties_Infecter">
+                <infectionChance>0.15</infectionChance>
+            </li>
+            <li Class="HediffCompProperties_GetsPermanent">
+                <permanentLabel>old harpoon wound</permanentLabel>
+                <instantlyPermanentLabel>permanent harpoon injury</instantlyPermanentLabel>
+            </li>
+        </comps>
+        <injuryProps>
+            <painPerSeverity>0.0125</painPerSeverity>
+            <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+            <bleedRate>0.06</bleedRate>
+            <canMerge>false</canMerge>
+            <destroyedLabel>Shot off</destroyedLabel>
+            <destroyedOutLabel>Shot out</destroyedOutLabel>
+        </injuryProps>
+    </HediffDef>
+</Defs>

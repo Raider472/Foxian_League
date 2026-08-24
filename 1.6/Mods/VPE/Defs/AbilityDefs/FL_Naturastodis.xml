@@ -297,7 +297,7 @@
         <castTime>300</castTime>
         <requireLineOfSight>false</requireLineOfSight>
         <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
-        <castSound>VPE_ControlledFrenzy_Cast</castSound>
+        <castSound>FL_Psycast_TreantSpawn</castSound>
         <fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
         <range>999999</range>
         <cooldownTime>600000</cooldownTime>
@@ -338,7 +338,7 @@
         <warmupMote>Mote_WarmupNeuroquake</warmupMote>
         <requireLineOfSight>false</requireLineOfSight>
         <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
-        <castSound>VPE_TreeSprout_Cast</castSound>
+        <castSound>FL_Psycast_NaturaBloom</castSound>
         <range>999999</range>
         <cooldownTime>2700000</cooldownTime>
         <showUndrafted>true</showUndrafted>

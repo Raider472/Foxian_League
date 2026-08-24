@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <SoundDef>
+        <defName>FL_Psycast_NaturaBloom</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Ability/NaturaBloom</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>42</volumeRange>
+                <distRange>20~50</distRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>FL_Psycast_TreantSpawn</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Ability/TreantSpawn</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>42</volumeRange>
+                <distRange>20~50</distRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+</Defs>

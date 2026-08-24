@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>FL_Gun_FOPSAssaultRifle</defName>
+        <label>F.O.P.S service rifle</label>
+        <description>A suppressed assault rifle designed for covert operations used by F.O.P.S. operators when stealth is an option. It fires two poisonous rounds per burst, has good range, and has an accuracy ideal for long-range targets.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/AssaultRifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <recipeMaker>
+            <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <displayPriority>421</displayPriority>
+        </recipeMaker>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>40000</WorkToMake>
+            <Mass>2.5</Mass>
+            <AccuracyTouch>0.5</AccuracyTouch>
+            <AccuracyShort>0.6</AccuracyShort>
+            <AccuracyMedium>0.7</AccuracyMedium>
+            <AccuracyLong>0.75</AccuracyLong>
+            <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>75</Steel>
+            <ComponentIndustrial>6</ComponentIndustrial>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>FL_Bullet_FOPSRifle</defaultProjectile>
+                <warmupTime>1.25</warmupTime>
+                <range>31.9</range>
+                <burstShotCount>2</burstShotCount>
+                <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+                <soundCast>FL_Shot_FOPSServiceRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>5</muzzleFlashScale>
+            </li>
+        </verbs>
+        <weaponTags>
+            <li>FOPSRifle</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>FL_Bullet_FOPSRifle</defName>
+        <label>F.O.P.S service rifle bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>BulletToxic</damageDef>
+            <stoppingPower>0.75</stoppingPower>
+            <damageAmountBase>13</damageAmountBase>
+            <armorPenetrationBase>0.2</armorPenetrationBase>
+            <speed>75</speed>
+        </projectile>
+    </ThingDef>
+</Defs>

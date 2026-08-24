@@ -491,7 +491,7 @@
             <li>FL_FOPSBeret</li>
             <li>FL_FOPSVest</li>
         </apparelRequired>
-        <weaponMoney>1200~2800</weaponMoney>
+        <weaponMoney>800~2600</weaponMoney>
         <techHediffsChance>0.4</techHediffsChance>
         <techHediffsMaxAmount>2</techHediffsMaxAmount>
         <techHediffsMoney>1200~1800</techHediffsMoney>
@@ -505,6 +505,7 @@
         <weaponTags>
             <li>AssaultRifle</li>
             <li>SpacerGun</li>
+            <li>FOPSRifle</li>
         </weaponTags>
         <disallowedTraits>
             <li>Brawler</li>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <SoundDef>
+        <defName>FL_Shot_HarpoonBlaster</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapon/HarpoonShot</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>70~70</volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>FL_Shot_FOPSServiceRifle</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapon/FOPSRifleShot</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>70~70</volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+</Defs>

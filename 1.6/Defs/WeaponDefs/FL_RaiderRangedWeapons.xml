@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>FL_Gun_HarpoonGun</defName>
+        <label>harpoon blaster</label>
+        <description>A makeshift harpoon launcher used by the bloodrain to deal with armored targets. It has medium range with good accuracy against medium and long-range targets. At close range, its awkward design makes it difficult to aim. The harpoons hit hard and have high armor penetration. However, due to the clunky design of the weapon, reloading and aiming it takes quite a long time.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/SniperRifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>LongShots</li>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <recipeMaker>
+            <researchPrerequisite>Gunsmithing</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <displayPriority>428</displayPriority>
+        </recipeMaker>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>37500</WorkToMake>
+            <Mass>6</Mass>
+            <AccuracyTouch>0.40</AccuracyTouch>
+            <AccuracyShort>0.60</AccuracyShort>
+            <AccuracyMedium>0.95</AccuracyMedium>
+            <AccuracyLong>0.80</AccuracyLong>
+            <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>95</Steel>
+            <ComponentIndustrial>6</ComponentIndustrial>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>FL_HarpoonBullet</defaultProjectile>
+                <warmupTime>2.25</warmupTime>
+                <range>27.9</range>
+                <soundCast>FL_Shot_HarpoonBlaster</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <weaponTags Inherit="False">
+            <li>MakeShiftGun</li>
+        </weaponTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>FL_HarpoonBullet</defName>
+        <label>harpoon</label>
+        <graphicData>
+            <texPath>Things/Projectiles/FL_HarpoonProjectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>FL_HarpoonProjectile</damageDef>
+            <damageAmountBase>32</damageAmountBase>
+            <stoppingPower>2.5</stoppingPower>
+            <speed>80</speed>
+            <armorPenetrationBase>0.55</armorPenetrationBase>
+        </projectile>
+    </ThingDef>
+</Defs>

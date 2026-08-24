@@ -447,6 +447,7 @@
         <weaponMoney>355~550</weaponMoney>
         <weaponTags>
             <li>IndustrialGunAdvanced</li>
+            <li>MakeShiftGun</li>
         </weaponTags>
         <techHediffsMoney>100~700</techHediffsMoney>
         <inventoryOptions>
@@ -574,6 +575,7 @@
         <weaponMoney>530~600</weaponMoney>
         <weaponTags>
             <li>SniperRifle</li>
+            <li>MakeShiftGun</li>
         </weaponTags>
         <disallowedTraits>
             <li>Brawler</li>
@@ -686,6 +688,7 @@
         <weaponTags>
             <li>IndustrialGunAdvanced</li>
             <li>AssaultRifle</li>
+            <li>MakeShiftGun</li>
         </weaponTags>
         <inventoryOptions>
             <skipChance>0.4</skipChance>
