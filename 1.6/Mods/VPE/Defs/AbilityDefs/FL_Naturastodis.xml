@@ -367,7 +367,7 @@
 
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>FL_VPE_NatureBlessing</defName>
-        <label>nature's blessing</label>
+        <label>nature's sacrifice</label>
         <description>Transform a downed pawn into a sacrificial tree. Allowing you to offer it as a sacrifice and perform a sacrificial ritual with the god in exchange for a temporary bonus. The bonus received depends on the psychic sensitivity of the pawn organizing the ritual. In case the ritual fails, the ritualist will suffer a debuff.</description>
         <iconPath>UI/Psycast/Ability/FL_NatureCurse</iconPath>
         <abilityClass>FoxianPsycast.FL_Ability_NatureBlessing</abilityClass>

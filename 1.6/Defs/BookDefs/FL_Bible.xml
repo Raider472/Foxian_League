@@ -30,6 +30,9 @@
                 </verticalGraphic>
                 <doers>
                     <li Class="BookOutcomeProperties_JoyFactorModifier" />
+                    <li Class="BookOutcomeProperties_GiveQuest">
+                        <questChance>0.1</questChance>
+                    </li>
                 </doers>
             </li>
         </comps>

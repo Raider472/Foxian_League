@@ -29,20 +29,17 @@ Scenario where you can befriend BloodRain (You are actually aligned with the blo
 TODO
 
 Scenario where you can befriend BloodRain (You are actually aligned with the blood rain and are enemy with the foxian League)
-remove test dynamic hediff
 Rework loot pool of excelent scrificial tree ? (Yeah, don't forget to add the other future cool weapons)
+Rework animal connection so it scales with psychic senstivity instead of a flat bonus
 Add Compat to new staff when texture is done for melee animation
 Wood Trap must check if an explosive is within range
 Fox tiger should inflict a hediff upon hitting a target
-Replace psychic  proc and manip with the dynamic hediff
 Replace psychic blessing from special tree to dynamic hediff ?
-Add Blue new story
 Patch for for medieval tags ???
+See if books can be merged together and check if commonality tag exists
 Mod option for tails age
 Mod option to remove the Bi trait
 Sounds and fleck designs for psychic power
-Placement and order of the psychic powers
-description for the natura tree and all the defs inside the VPE folders
 Finetune mine (Color of explosion and how much poison it apply)
 
 Misc

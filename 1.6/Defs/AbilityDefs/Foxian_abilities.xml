@@ -37,9 +37,9 @@
         </verbProperties>
         <comps>
             <li Class="Foxian_league.CompProperties_PsychicProtection">
-                <defaultHediff>FL_PsychichProtectionTank0</defaultHediff>
-                <alternatetHediff>FL_PsychichProtectionDodge0</alternatetHediff>
-                <hediffDef>FL_PsychichProtectionTank0</hediffDef>
+                <defaultHediff>FL_PsychichProtectionTank</defaultHediff>
+                <alternatetHediff>FL_PsychichProtectionDodge</alternatetHediff>
+                <hediffDef>FL_PsychichProtectionTank</hediffDef>
                 <onlyBrain>False</onlyBrain>
                 <onlyApplyToSelf>True</onlyApplyToSelf>
                 <replaceExisting>true</replaceExisting>

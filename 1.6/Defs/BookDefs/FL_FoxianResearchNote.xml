@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef ParentName="BookBase">
         <defName>FL_FoxianResearchNote</defName>
@@ -30,8 +30,19 @@
                 </verticalGraphic>
                 <doers>
                     <li Class="BookOutcomeProperties_JoyFactorModifier" />
-                    <li Class="BookOutcomeProperties_GiveQuest">
-                        <questChance>0.05</questChance>
+                    <li Class="BookOutcomeProperties_GainResearch">
+                        <tabs>
+                            <Main />
+                        </tabs>
+                        <exclude>
+                            <BasicGravtech MayRequire="Ludeon.RimWorld.Odyssey" />
+                            <StandardGravtech MayRequire="Ludeon.RimWorld.Odyssey" />
+                            <AdvancedGravtech MayRequire="Ludeon.RimWorld.Odyssey" />
+                            <BasicMechtech MayRequire="Ludeon.RimWorld.Biotech" />
+                            <StandardMechtech MayRequire="Ludeon.RimWorld.Biotech" />
+                            <HighMechtech MayRequire="Ludeon.RimWorld.Biotech" />
+                            <UltraMechtech MayRequire="Ludeon.RimWorld.Biotech" />
+                        </exclude>
                     </li>
                 </doers>
             </li>

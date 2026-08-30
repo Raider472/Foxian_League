@@ -14,28 +14,26 @@ namespace Foxian_league {
         public CompProperties_PsychicProtection ProtectionProps => (CompProperties_PsychicProtection)props;
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest) {
-            Gene_PsychicProtection gene = getPsychicProtectionGene();
+            Gene_PsychicProtectionDynamic gene = getPsychicProtectionGene();
             string hediffName;
             if (isAlternateMode) {
                 ProtectionProps.hediffDef = ProtectionProps.defaultHediff;
-                hediffName = "FL_PsychichProtectionDodge";
+                hediffName = ProtectionProps.alternatetHediff.defName;
             }
             else {
                 ProtectionProps.hediffDef = ProtectionProps.alternatetHediff;
-                hediffName = "FL_PsychichProtectionTank";
+                hediffName = ProtectionProps.defaultHediff.defName;
             }
             isAlternateMode = !isAlternateMode;
             if (gene != null) {
                 gene.isAlternateMode = isAlternateMode;
                 HediffUtils.RemoveHediffWithString(hediffName, parent.pawn);
-                gene.psychicSensitivityRecent = 0f;
-                gene.channelingStageRecent = 0;
             }
             base.Apply(target, dest);
         }
 
-        private Gene_PsychicProtection getPsychicProtectionGene() {
-            Gene_PsychicProtection psychicProc = parent.pawn.genes.GetGene(InternalDefOf.FL_PsychicProtection) as Gene_PsychicProtection;
+        private Gene_PsychicProtectionDynamic getPsychicProtectionGene() {
+            Gene_PsychicProtectionDynamic psychicProc = parent.pawn.genes.GetGene(InternalDefOf.FL_PsychicProtection) as Gene_PsychicProtectionDynamic;
             if (psychicProc != null) {
                 return psychicProc;
             }

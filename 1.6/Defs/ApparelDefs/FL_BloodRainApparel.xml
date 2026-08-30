@@ -22,7 +22,7 @@
         </costList>
         <generateCommonality>2</generateCommonality>
         <statBases>
-            <WorkToMake>10000</WorkToMake>
+            <WorkToMake>17500</WorkToMake>
             <MaxHitPoints>280</MaxHitPoints>
             <Mass>2</Mass>
             <Flammability>0.8</Flammability>
@@ -83,11 +83,10 @@
         <costList>
             <ComponentIndustrial>2</ComponentIndustrial>
             <Skull>3</Skull>
-            <Plasteel>15</Plasteel>
         </costList>
         <generateCommonality>2</generateCommonality>
         <statBases>
-            <WorkToMake>15000</WorkToMake>
+            <WorkToMake>31500</WorkToMake>
             <MaxHitPoints>320</MaxHitPoints>
             <Mass>8</Mass>
             <Flammability>0.5</Flammability>
@@ -144,10 +143,9 @@
         <costStuffCount>25</costStuffCount>
         <costList>
             <Skull>1</Skull>
-            <Plasteel>10</Plasteel>
         </costList>
         <statBases>
-            <WorkToMake>1050</WorkToMake>
+            <WorkToMake>8000</WorkToMake>
             <MaxHitPoints>150</MaxHitPoints>
             <Mass>2.5</Mass>
             <Flammability>0.75</Flammability>

@@ -8,6 +8,7 @@ using RimWorld;
 
 namespace Foxian_league {
     //Gene class to dynamically change the stage of the hediff for a pawn with the gene
+    //DEPRECATED: No longer used since the hediffs are now dynamic, only kept for legacy 
     public class Gene_PsychicChanneling : Gene_PsychicStage {
 
         private const string hediffName = "FL_PsychichChanneling";

@@ -13,8 +13,8 @@ namespace Foxian_league {
         public HediffDef defaultHediff;
         public HediffDef alternatetHediff;
 
-        public string defaultNameHediff = "FL_PsychichProtectionTank0";
-        public string AlternateNameHediff = "FL_PsychichProtectionDodge0";
+        public string defaultNameHediff = "FL_PsychichProtectionTank";
+        public string AlternateNameHediff = "FL_PsychichProtectionDodge";
 
         public CompProperties_PsychicProtection() {
             compClass = typeof(Comp_PsychicProtection);

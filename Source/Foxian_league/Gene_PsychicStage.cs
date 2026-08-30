@@ -7,6 +7,7 @@ using Verse;
 
 namespace Foxian_league {
     //Abstract class so I can avoid creating the same fields
+    //DEPRECATED: No longer used since the hediffs are now dynamic, only kept for legacy
     public abstract class Gene_PsychicStage : Gene {
         public float psychicSensitivityRecent;
         public int channelingStageRecent = 0;

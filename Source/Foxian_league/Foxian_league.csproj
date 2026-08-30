@@ -82,12 +82,14 @@
     <Compile Include="PlantComps\Patch_JobDriverMeditate_MeditationTick.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PsychicChanneling\Gene_PsychicChanneling.cs" />
+    <Compile Include="PsychicChanneling\Gene_PsychicChannelingDynamic.cs" />
     <Compile Include="PsychicManipulation\Gene_PshychicManipulation.cs" />
     <Compile Include="PsychicManipulation\Patch_SkillRecord_Aptitude.cs" />
     <Compile Include="PsychicManipulation\Patch_SkillUI_GetSkillDescription.cs" />
     <Compile Include="PsychicProtection\CompProperties_PsychicProtection.cs" />
     <Compile Include="PsychicProtection\Comp_PsychicProtection.cs" />
     <Compile Include="PsychicProtection\Gene_PsychicProtection.cs" />
+    <Compile Include="PsychicProtection\Gene_PsychicProtectionDynamic.cs" />
     <Compile Include="Reserved\Patch_MemoryThoughtHandler_TryGainMemory.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="WeaponComps\CompProperties_PoisonousDagger.cs" />

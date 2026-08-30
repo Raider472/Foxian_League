@@ -214,10 +214,9 @@
         <description>Carriers of this gene can channel their psychic sensitivity into their melee weapon or fists to gain the upper hand against their enemies in melee combat. The higher the psychic sensitivity of the carrier is, the stronger they are.</description>
         <iconPath>UI/Icons/Genes/FL_Psy_Channeling</iconPath>
         <minAgeActive>3</minAgeActive>
-        <geneClass>Foxian_league.Gene_PsychicChanneling</geneClass>
+        <geneClass>Foxian_league.Gene_PsychicChannelingDynamic</geneClass>
         <customEffectDescriptions>
             <li>Grants a permanent effect that scales with the carrier's psychic sensitivity</li>
-            <li>5 different stages (125%, 150%, 175%, 200%, 250%)</li>
             <li>Maximum Melee Damage Factor +50%</li>
             <li>Maximum Melee Cooldown -25%</li>
             <li>Maximum Melee Hit Chance +7.5</li>
@@ -238,12 +237,11 @@
         <abilities>
             <li>FL_PsychicProtectionSwitch</li>
         </abilities>
-        <geneClass>Foxian_league.Gene_PsychicProtection</geneClass>
+        <geneClass>Foxian_league.Gene_PsychicProtectionDynamic</geneClass>
         <customEffectDescriptions>
             <li>Grants an ability to switch between two modes. This gene grants a permanent effect that scales with the carrier's psychic sensitivity</li>
-            <li>6 different stages (125%, 150%, 175%, 200%, 250%, 300%)</li>
-            <li>(Default mode) Tank mode:\nMaximum Armor Blunt Protection +50%\nMaximum Armor Sharp Protection +40%\nMaximum Armor Heat Protection +70%\nMaximum Stagger Time Multiplier -50%\nMaximum Move Speed -0.22\nMaximum Flammability -50%\nMaximum Pain Shock Threshold x150%\nMaximum Incoming Damage Multiplier x75%</li>
-            <li>(Alternative mode) Dodge mode:\nMaximum Ranged Dodge Chance +55%\nMaximum Melee Dodge Chance +20.0\nMaximum Stagger Time Multiplier -25%\nMaximum Move Speed Bonus 0.30\nMaximum Pain Shock Threshold x125%\nMaximum Incoming Damage Multiplier x85%</li>
+            <li>(Default mode) Defense mode:\nMaximum Armor Blunt Protection +50%\nMaximum Armor Sharp Protection +40%\nMaximum Armor Heat Protection +70%\nMaximum Stagger Time Multiplier -50%\nMaximum Move Speed -0.22\nMaximum Flammability -50%\nMaximum Pain Shock Threshold x150%\nMaximum Incoming Damage Multiplier x75%</li>
+            <li>(Alternative mode) Dodge mode:\nMaximum Ranged Dodge Chance +50%\nMaximum Melee Dodge Chance +20.0\nMaximum Stagger Time Multiplier -25%\nMaximum Move Speed Bonus 0.30\nMaximum Pain Shock Threshold x125%\nMaximum Incoming Damage Multiplier x85%</li>
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>105</displayOrderInCategory>

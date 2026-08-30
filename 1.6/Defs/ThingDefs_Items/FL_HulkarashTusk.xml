@@ -3,7 +3,7 @@
     <ThingDef ParentName="ResourceVerbBase">
         <defName>FL_HulkarashTusk</defName>
         <label>hulkarash tusk</label>
-        <description>.</description>
+        <description>A hulkarash's tusk. Traders pay handsomely for samples like this. While somewhat unwieldy as a melee weapon, it still hits quite hard.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <texPath>Things/Item/Special/MastodonTusk</texPath>
