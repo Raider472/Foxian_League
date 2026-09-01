@@ -20,17 +20,10 @@ Outfit for Fops (Grant Dodge and higher resistance to slash but none to blunt)
  -Beret
  -Probably something related to modern special force (might be too much) (Check rainbow 6 siege)
 
- weapons
-Beeg snioper nail/harpoon gun: high piercing but not as much damage as a sniper or very slow reloading
-
--Special
-Scenario where you can befriend BloodRain (You are actually aligned with the blood rain and are enemy with the foxian League)
-
 TODO
-
-Scenario where you can befriend BloodRain (You are actually aligned with the blood rain and are enemy with the foxian League)
 Rework loot pool of excelent scrificial tree ? (Yeah, don't forget to add the other future cool weapons)
 Rework animal connection so it scales with psychic senstivity instead of a flat bonus
+Rework psychic manipulation ?
 Add Compat to new staff when texture is done for melee animation
 Wood Trap must check if an explosive is within range
 Fox tiger should inflict a hediff upon hitting a target
@@ -44,4 +37,3 @@ Finetune mine (Color of explosion and how much poison it apply)
 
 Misc
 -Reduce frequency of modded books or make them more interesting to read
--Work on removing VEF as dependency (I don't know if it's possible)

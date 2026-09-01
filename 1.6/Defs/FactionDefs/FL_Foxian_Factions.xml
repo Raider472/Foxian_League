@@ -275,6 +275,9 @@
 				<FL_Foxian>1</FL_Foxian>
 			</xenotypeChances>
 		</xenotypeSet>
+		<permanentEnemyToEveryoneExcept>
+			<li>FoxianBloodRainPlayerColony</li>
+		</permanentEnemyToEveryoneExcept>
 		<backstoryFilters>
 			<li>
 				<categories>
@@ -478,11 +481,7 @@
 					<FL_RaiderFoxian_Trader>1</FL_RaiderFoxian_Trader>
 				</traders>
 				<carriers>
-					<FL_Vulpano>8</FL_Vulpano>
-					<Muffalo>2</Muffalo>
-					<Dromedary>1</Dromedary>
-					<Alpaca>1</Alpaca>
-					<Elephant>1</Elephant>
+					<FL_Hulkarash>8</FL_Hulkarash>
 				</carriers>
 				<guards>
 					<FL_Foxian_Raider_Villager>3</FL_Foxian_Raider_Villager>

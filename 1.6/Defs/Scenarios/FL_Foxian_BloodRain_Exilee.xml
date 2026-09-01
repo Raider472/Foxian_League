@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ScenarioDef ParentName="ScenarioBase"> 
-        <defName>FL_Foxian_Scenario_Refugees</defName>
-        <label>Foxian Refugees</label>
-        <description>One night, your settlement was abruptly destroyed by an unknown force. That settlement was home to about fifty people. You and your two companions are the only ones who made it out alive.\nYour group managed to pack a few supplies and wandered the rimworld for a few quadrums, trying to lose your assailants and settle on a peaceful land before your supplies run out completely.</description>
+        <defName>FL_Foxian_BloodRain_Scenario_Refugees</defName>
+        <label>Blood Rain in Exiles</label>
+        <description>After a heated argument with your former local commander. You and your friends decided that you had enough of her incompetence and planned to leave in blood rain style.\nAfter successfully stealing some supplies from your former comrades, you and your group finally settle somewhere far from your former base before your supplies run out completely.</description>
         <scenario>
-            <summary>Three foxians Refugees attempt to create a new settlement after losing everything.</summary>
+            <summary>Three Foxian blood rain exiles attempting to create a new settlement after an argument with their former local boss.</summary>
             <playerFaction>
-                <factionDef>FoxianPlayerColony</factionDef>
+                <factionDef>FoxianBloodRainPlayerColony</factionDef>
             </playerFaction>
             <parts>
                 <!-- Config pages -->
@@ -17,14 +17,8 @@
                     <xenotypeCounts>
                         <li>
                             <xenotype>FL_Foxian</xenotype>
-                            <count>2</count>
+                            <count>3</count>
                             <description>Foxians</description>
-                            <requiredAtStart>true</requiredAtStart>
-                        </li>
-                        <li>
-                            <xenotype>FL_Greater_Foxian</xenotype>
-                            <count>1</count>
-                            <description>Greater Foxian</description>
                             <requiredAtStart>true</requiredAtStart>
                         </li>
                     </xenotypeCounts>
@@ -39,7 +33,7 @@
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>Silver</thingDef>
-                <count>500</count>
+                <count>1750</count>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
@@ -49,7 +43,7 @@
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>MedicineIndustrial</thingDef>
-                    <count>30</count>
+                    <count>25</count>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
@@ -58,16 +52,21 @@
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
-                    <thingDef>Apparel_AdvancedHelmet</thingDef>
-                    <stuff>Plasteel</stuff>
+                    <thingDef>FL_SkullArmor</thingDef>
+                    <stuff>Steel</stuff>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
-                    <thingDef>Gun_BoltActionRifle</thingDef>
+                    <thingDef>FL_SkullHelmet</thingDef>
+                    <stuff>Steel</stuff>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>FL_Gun_HarpoonGun</thingDef>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                 <def>StartingThing_Defined</def>
-                    <thingDef>MeleeWeapon_LongSword</thingDef>
+                    <thingDef>FL_Weapon_ParalysingDagger</thingDef>
                     <quality>Good</quality>
                     <stuff>Steel</stuff>
                 </li>
@@ -90,14 +89,20 @@
                 <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
                     <factionDef>Foxian_League</factionDef>
                     <affectHiddenFactions>False</affectHiddenFactions>
+                    <alwaysHostile>True</alwaysHostile>
+                    <def>VFEC_ForcedFactionGoodwill</def>
+                </li>
+                <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+                    <factionDef>Foxian_BloodRain</factionDef>
+                    <affectHiddenFactions>False</affectHiddenFactions>
                     <affectStartingGoodwill>True</affectStartingGoodwill>
-                    <startingGoodwillRange>25~75</startingGoodwillRange>
+                    <startingGoodwillRange>-50~0</startingGoodwillRange>
                     <def>VFEC_ForcedFactionGoodwill</def>
                 </li>
                 <!-- Game start dialog -->
                 <li Class="ScenPart_GameStartDialog">
                     <def>GameStartDialog</def>
-                    <text>Despite that traumatic event being over. You can still vividly remember the screams and cries for help from your friends and family. Every night, this tragedy always comes back to haunt your dreams.\nNow that your group has settled somewhere peaceful and far away from your homeland, you hope to forever forget this terrible night.</text>
+                    <text>After losing track of the pursuing soldiers from your ex-commander. You and your group have finally found a place to settle before the supplies were running thin.\nAfter the tiring journey, now only freedom awaits you.\nYou're current relation with the Blood Rain as a consequence of your outrageous heist, but it can still be mended with some concessions from your part. However, in the eyes of the Foxian League, you and your friends are still considered as dangerous outlaws.</text>
                     <closeSound>GameStartSting</closeSound>
                 </li>
             </parts>

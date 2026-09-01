@@ -11,7 +11,7 @@
         </graphicData>
         <uiIconPath>Things/Item/Book/Novel/Novel</uiIconPath>
         <statBases>
-            <MarketValue>100</MarketValue>
+            <MarketValue>250</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Book">
@@ -31,7 +31,7 @@
                 <doers>
                     <li Class="BookOutcomeProperties_JoyFactorModifier" />
                     <li Class="BookOutcomeProperties_GiveQuest">
-                        <questChance>0.1</questChance>
+                        <questChance>0.15</questChance>
                     </li>
                 </doers>
             </li>

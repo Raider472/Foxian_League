@@ -62,42 +62,6 @@
     </RulePackDef>
 
     <RulePackDef>
-        <defName>FL_Namer_MysteriousNote</defName>
-        <rulePack>
-            <rulesStrings>
-                <li>title->[prefixNote] [sufixNote]</li>
-
-                <li>prefixNote->Mysterious</li>
-                <li>prefixNote->Unsettling</li>
-                <li>prefixNote->Bloodied</li>
-                <li>prefixNote->Aged</li>
-
-                <li>sufixNote->Note</li>
-                <li>sufixNote->Piece of Paper</li>
-                <li>sufixNote->Parchment</li>
-            </rulesStrings>
-        </rulePack>
-    </RulePackDef>
-
-    <RulePackDef>
-        <defName>FL_Description_MysteriousNote</defName>
-        <rulePack>
-            <rulesStrings>
-                <li>desc->[content]</li>
-
-                <li>content->I once saw a man with no eyes.\nHis mouth was made of stitches.\nWhen he noticed me, he smiled and blinked at me.\nAnd then he was gone.</li>
-                <li>content->https://www.youtube.com/watch?v=dQw4w9WgXcQ</li>
-                <li>content->My shadow has grown eyes today.</li>
-                <li>content->I write to you to ask for help.\nMy daughter is acting incredibly strange.\nShe stays in a corner of her room, staring at the wall and talking by herself.\nI could make out only a few words of what she said, and it incredibly worries me.\nI don't feel safe around her, but what am I supposed to do? Tell the police?\nShe's 10 years old. They are just going to laugh at me.\nSo please, come live here for a while.\nBut by chance, do you know what a Forest of Meat is?</li>
-                <li>content->I put my ear against the floor.\nAnd I could hear it.\nThe heart of the planet.\nBeating.</li>
-                <li>content->No matter how you look at it, this page is completely empty.\nAnd yet, you can't help but feel like there is something written in it.\nPerhaps, the emptiness itself has a meaning.</li>
-                <li>conten->I Cannot Believe Im Gonna Say This, But Have You Found The Secret Yet?\nWhen You Have A Wall In Front Of You, You Might Think "I Found It!"\nBut The Secret Is Behind The Wall\nIf You See A Plant, Your First Instinct Is Not To Uproot It.\nWhen You Take A Dive In The Pool, Your First Instinct Is To Swim, Not To Dive Deeper.\nAnd When You Get A Game, You Play It, Ignoring Whats Beneath.</li>
-                <li>content->Its a drawing of a hanged man\nThe hanged man waves his hand to you, as a way of saying goodbye\nAnd then its gone.\nIts just a blank paper</li>
-            </rulesStrings>
-        </rulePack>
-    </RulePackDef>
-
-    <RulePackDef>
         <defName>FL_Namer_MiscellaneousNote</defName>
         <rulePack>
             <rulesStrings>
@@ -106,6 +70,10 @@
                 <li>prefixNote->Old</li>
                 <li>prefixNote->Aged</li>
                 <li>prefixNote->Torned</li>
+                <li>prefixNote->Mysterious</li>
+                <li>prefixNote->Unsettling</li>
+                <li>prefixNote->Bloodied</li>
+                <li>prefixNote->Aged</li>
 
                 <li>sufixNote->File</li>
                 <li>sufixNote->Note</li>
@@ -135,6 +103,14 @@
                 <li>content->Notice of the blood cult\nSo, as everyone is aware, we need to change our name. And also the god we worship.\nAs everyone knows, the sacrifice of yesterday started to ask questions.\nAnd everyone in the chamber sort of found out that theres already a cultish group of foxes called Revians that worship a blood god.\nNow, I do quite believe we should be a bit more original and stands out from those weirdos that we heard about only yesterday. No clue who they are, and they probably have no clue who we are, but still! We need to stand out.\nSo from now on, we shall be known as the MOTHS! AND I AS THE MOTHS QUEEN!</li>
                 <li>content->Notice of the Moths\nThe moths are already taken. Moth queen too.\nAgain, don't know who they are. Don't even know if they know who we are.\nBut they are taken.\nI'm disappointed in myself and my creativity, cult is disbanded, go home.</li>
                 <li>content->Tip from Uncle Trustworthy\nHello, living in the rimworld must be hard.\nDo not worry, for I'm here to help.\nYou must have heard about those Axolotl genes right?\nWell, here's how to produce them:\nStep 1: Get 20 Scarless genes\nStep 2: Get a newborn Foxian baby\nStep 3: Inject the Scarless genes in rapid succession in the baby\nStep 4: Wait three days\nStep 5: Kill the baby\nCongratulation, your baby will get 1 Axolotl gene\nAnother method to do this is to inject the 20 Scarless genes into a pregnant foxian woman and then remove the baby from her womb.\nYou know, in a way the womb could be called a cage.</li>
+                <li>content->I once saw a man with no eyes.\nHis mouth was made of stitches.\nWhen he noticed me, he smiled and blinked at me.\nAnd then he was gone.</li>
+                <li>content->https://www.youtube.com/watch?v=dQw4w9WgXcQ</li>
+                <li>content->My shadow has grown eyes today.</li>
+                <li>content->I write to you to ask for help.\nMy daughter is acting incredibly strange.\nShe stays in a corner of her room, staring at the wall and talking by herself.\nI could make out only a few words of what she said, and it incredibly worries me.\nI don't feel safe around her, but what am I supposed to do? Tell the police?\nShe's 10 years old. They are just going to laugh at me.\nSo please, come live here for a while.\nBut by chance, do you know what a Forest of Meat is?</li>
+                <li>content->I put my ear against the floor.\nAnd I could hear it.\nThe heart of the planet.\nBeating.</li>
+                <li>content->No matter how you look at it, this page is completely empty.\nAnd yet, you can't help but feel like there is something written in it.\nPerhaps, the emptiness itself has a meaning.</li>
+                <li>conten->I Cannot Believe Im Gonna Say This, But Have You Found The Secret Yet?\nWhen You Have A Wall In Front Of You, You Might Think "I Found It!"\nBut The Secret Is Behind The Wall\nIf You See A Plant, Your First Instinct Is Not To Uproot It.\nWhen You Take A Dive In The Pool, Your First Instinct Is To Swim, Not To Dive Deeper.\nAnd When You Get A Game, You Play It, Ignoring Whats Beneath.</li>
+                <li>content->Its a drawing of a hanged man\nThe hanged man waves his hand to you, as a way of saying goodbye\nAnd then its gone.\nIts just a blank paper</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
@@ -179,6 +155,13 @@
                 <li>factionName->Nation</li>
                 <li>factionName->Nexus</li>
 
+                <li>entry->Research notes of a scientist - Part 1\nFoxians.\nThey are a mystery without a doubt.\nEven to me, that I am one of them.\nTheir abilities includes psychic manipulation, a sensitivity to the nature, a connection with animals, genetic purities, slow aging and a vulnerability to toxins. And then we have a mutation, the so-called Greater Foxians, with psychic channeling, psychic protection, and the it's last stand ability.\nBut what I'm more curious about is their origin.\nFoxians are without a doubt more recent than humans.\nSo what I'm asking, I'm wondering is...\nFrom where do they come from?\nWhy do they have those abilities?\nI'll find out.</li>
+                <li>entry->Research notes of a scientist - part 2\nWhen a Foxian and a human mate and reproduce, the result will always be a female Foxian.\nIn rare cases, a greater Foxian can spawn that can be either male or female.\nBecause of this, the mother's genes have a dominance over human ones.\nThey are much stronger.\nBut, isn't that weird? This is like the chicken and the egg.\nDue to old manuscripts, we know that foxians didn't exist in ancient times, there was simply no mentions of them.\nAnd then one day, they simply... were there.\nIs this gene a result of of human evolution?\nJust as fish walked on land, turned into monkeys and then monkeys into humans...\nAre Human evolving into foxians? But why specifically foxes?\nThe answer evades me.</li>
+                <li>entry->Research notes of a scientist - part 3\nEvery myth has a small part of truth.\nSo, perhaps, I have overlooked that detail.\nLast time I mentioned that there was no mention of foxians in ancient times.\nBut, if I have to consider myths as partially true, then I should also consider the religious text of the foxians as such.\nAnd now I have to distinguish between the fiction and the non-fiction of the text.\nThe queen with the womb stuck in time, for example? Time stopping is simply not a capability for Foxians and greater Foxians. Thus it is fiction.\nThe 1000 wives and 10.000 children? Although Foxians are known for having a high breeding rate, such a high number simply isn't feasible due to their low fertility. Thus it's fiction.\nAnd then there is the being from the star. What if. What if that's the true part of the story?\nIf the act of feasting on the being is what caused the birth of the Foxians... Then...\nAre the Foxians, alien in origin?\nWas the act of feasting what caused the birth of their genes?</li>
+                <li>entry->Research notes of a scientist - part 4\nEvery living being has an instinct of survival.\nSo two questions come to my mind.\nWhy did the being give up on their own life so easily, and what could have fatally wounded something like it?\nFor the second one, I don't think I will ever find an answer.\nBut for the first one, I have a hypothesis.\nThe request of feasting, was a way for it to survive.\nSomehow, in some way, the genes themselves are part of that alien being.\nIt still lives, inside all of us.\nThe thought terrifies me.</li>
+                <li>entry->Research notes of a scientist - part 5\nGreater Foxians are much stronger than regular ones, but a very few number of them seem to have mental issues.\nThis can include hearing voices, egomania, narcissism, hallucinations, and god complex.\nMaybe.\nJust maybe.\nThose greater Foxians are much more susceptible from the presence of their own cells.\nBut, in particular, I'm curious about one specific shared hallucination.\nThe one of a forest of meat.\nMaybe, the memories of the ancestral fox survive in the genes.</li>
+                <li>entry->Research notes of a scientist - part 6\nI made a mistake.\nI didn't consider that the foxian genes are all part of a unique being.\nThus, even if in different beings, even if not in greater foxians, they communicate, they share memories, knowledge, and thoughts.\nJust as humans have their own collective subconscious, we have our own.\nThe blood raiders are at my door, and I have no other explanation for how they found me.\nMy own ego as a scientist refuses to destroy my research. Thus, I will lock it in a small box and flush it down the toilet.\nThose notes are a Info hazard, if someone is reading them, then I'm sorry, but you have put a target on your head.\nSo, let me tell you about one last thing.\nI believe, that there is a rank higher than a greater foxian.\nAn ancestral Foxian, a being of the stars.\nA god.\nAnd that a small percentage of greater Foxians that hear those voices, is nothing more than a pupa for this creature.\nIt will emerge in one of them, gain back it's form and leave this wasteland.\nBut, what I'm truly worried about... is what kind of heart it will have.\nAnd so, with gun in hand, my last prayers go to a kind hearted Foxian and not to the empress.</li>
+
                 <li>entry->Letter of a child to the empress part 1\nHello miss empress, is that your name? My name is Nagel. Im a five year old foxian of the foxian league. I write to you cuz mama told me that when two peoples are fighting, they should make up, cuz otherwise they will end up forgetting why they started fighting and keep going. Mom this morning was crying and when i asked her why she was crying she said that the blood rain peoples took daddy while he was out. Could you please give my daddy back? If you do, please come to my house i will prepare some tea and cookies for you.</li>
                 <li>entry->Letter of a child to the empress part 2\nIts a photo of a carcass, behind it you can see that someone has written "Are you sure you want it back?"</li>
                 <li>entry->Letter of an officer to the empress part\nDear shitty Empress\nDo you remember me? I'm that child that sent you a letter. I have grown a lot since then. I also realized that what mother said were the words of a fool that never went to war. In all those years, all those years that we breathed the same air, I fought battles, killed peoples, trampled over their dead bodies, took blood rain civilian prisoners, even tortured out of one of them so hard, that she started to follow me around like a puppy. But you know what, Empress █ █ █ █ █ █ ? Yes, I know your fucking name, what are you gonna do about it? Come and kill me? Well guess what you fucking bitch. You dont even have to take a single step, do you know why? Cuz my lifespan is limited compared to yours. That means I have a time limit to do the things I wanna do in life. And right now? I want you dead. I Nagel, officer of the foxian league, will come for you Empress!\n\n\nLooking closely, the letter seems to be written in blood.</li>
@@ -189,32 +172,6 @@
 
                 <li>entry->Diary of a angry foxian 1\nOK SO WHAT THE ACTUAL FUCK\nI WANT TO KNOW WHO KEEPS LEAVING THOSE SHITTY DIARY PAGES EVERYWHERE????!!!\nI WAS READING ONE AND KAREN GOT ME JUST AS I WAS ABOUT TO START READING IT AND NOW SHE THINKS IM A WEIRDO!!\nYOU KNOW WHO IS A WEIRDO?!?!?! \nTHE HORNY FOXIAN THAT WANTED TO GET CHOCKED BY THE EMPRESS AND HAVE HER HEAD CRUSHED!!!\nWHY ARE ALL OF THOSE PAGES BY HORNY FOXIANS?????? \nWHAT IS WRONG WITH THEM??????!!!!!\nARE THOSE THE PEOPLES WE HAVE BEEN FIGHTING SO FAR?!?!?!?</li>
                 <li>entry->Diary of a angry foxian 2\nEHY YOU! YES YOU, ASSHOLE!\nYOU THAT ARE READING THIS PAGE! I WROTE THE FIRST PAGE, THEN WENT OUT TO TAKE A STROLL AND WHEN I GOT BACK???? IT WAS GONE!\nI DIDNT KNOW WHERE IT WENT, BUT A MONTH LATER KAREN SHOWED UP HOLDING THAT PAGE, SAYING SHE BOUGHT IT FROM A MERCHANT AND LOOKING AT ME AGAIN LIKE A WEIRDO.\nIM NOT A WEIRDO!!!!! IM NOT A WEIRDO!!!!! I DONT EVEN KNOW HOW THAT PAGE ENDED UP THERE!!!!! BUT IF THIS ONE ENDS UP IN THE WILD, GO FUCK YOURSELF, I BET YOU FUCK THOSE MOUSE GIRLS!!!!</li>
-            </rulesStrings>
-        </rulePack>
-    </RulePackDef>
-
-    <RulePackDef>
-        <defName>FL_Namer_ResearchFoxian</defName>
-        <rulePack>
-            <rulesStrings>
-                <li>title->Research notes of a scientist on the foxian race</li>
-
-            </rulesStrings>
-        </rulePack>
-    </RulePackDef>
-
-    <RulePackDef>
-        <defName>FL_Description_ResearchFoxian</defName>
-        <rulePack>
-            <rulesStrings>
-                <li>desc->[content]</li>
-
-                <li>content->Research notes of a scientist - Part 1\nFoxians.\nThey are a mystery without a doubt.\nEven to me, that I am one of them.\nTheir abilities includes psychic manipulation, a sensitivity to the nature, a connection with animals, genetic purities, slow aging and a vulnerability to toxins. And then we have a mutation, the so-called Greater Foxians, with psychic channeling, psychic protection, and the it's last stand ability.\nBut what I'm more curious about is their origin.\nFoxians are without a doubt more recent than humans.\nSo what I'm asking, I'm wondering is...\nFrom where do they come from?\nWhy do they have those abilities?\nI'll find out.</li>
-                <li>content->Research notes of a scientist - part 2\nWhen a Foxian and a human mate and reproduce, the result will always be a female Foxian.\nIn rare cases, a greater Foxian can spawn that can be either male or female.\nBecause of this, the mother's genes have a dominance over human ones.\nThey are much stronger.\nBut, isn't that weird? This is like the chicken and the egg.\nDue to old manuscripts, we know that foxians didn't exist in ancient times, there was simply no mentions of them.\nAnd then one day, they simply... were there.\nIs this gene a result of of human evolution?\nJust as fish walked on land, turned into monkeys and then monkeys into humans...\nAre Human evolving into foxians? But why specifically foxes?\nThe answer evades me.</li>
-                <li>content->Research notes of a scientist - part 3\nEvery myth has a small part of truth.\nSo, perhaps, I have overlooked that detail.\nLast time I mentioned that there was no mention of foxians in ancient times.\nBut, if I have to consider myths as partially true, then I should also consider the religious text of the foxians as such.\nAnd now I have to distinguish between the fiction and the non-fiction of the text.\nThe queen with the womb stuck in time, for example? Time stopping is simply not a capability for Foxians and greater Foxians. Thus it is fiction.\nThe 1000 wives and 10.000 children? Although Foxians are known for having a high breeding rate, such a high number simply isn't feasible due to their low fertility. Thus it's fiction.\nAnd then there is the being from the star. What if. What if that's the true part of the story?\nIf the act of feasting on the being is what caused the birth of the Foxians... Then...\nAre the Foxians, alien in origin?\nWas the act of feasting what caused the birth of their genes?</li>
-                <li>content->Research notes of a scientist - part 4\nEvery living being has an instinct of survival.\nSo two questions come to my mind.\nWhy did the being give up on their own life so easily, and what could have fatally wounded something like it?\nFor the second one, I don't think I will ever find an answer.\nBut for the first one, I have a hypothesis.\nThe request of feasting, was a way for it to survive.\nSomehow, in some way, the genes themselves are part of that alien being.\nIt still lives, inside all of us.\nThe thought terrifies me.</li>
-                <li>content->Research notes of a scientist - part 5\nGreater Foxians are much stronger than regular ones, but a very few number of them seem to have mental issues.\nThis can include hearing voices, egomania, narcissism, hallucinations, and god complex.\nMaybe.\nJust maybe.\nThose greater Foxians are much more susceptible from the presence of their own cells.\nBut, in particular, I'm curious about one specific shared hallucination.\nThe one of a forest of meat.\nMaybe, the memories of the ancestral fox survive in the genes.</li>
-                <li>content->Research notes of a scientist - part 6\nI made a mistake.\nI didn't consider that the foxian genes are all part of a unique being.\nThus, even if in different beings, even if not in greater foxians, they communicate, they share memories, knowledge, and thoughts.\nJust as humans have their own collective subconscious, we have our own.\nThe blood raiders are at my door, and I have no other explanation for how they found me.\nMy own ego as a scientist refuses to destroy my research. Thus, I will lock it in a small box and flush it down the toilet.\nThose notes are a Info hazard, if someone is reading them, then I'm sorry, but you have put a target on your head.\nSo, let me tell you about one last thing.\nI believe, that there is a rank higher than a greater foxian.\nAn ancestral Foxian, a being of the stars.\nA god.\nAnd that a small percentage of greater Foxians that hear those voices, is nothing more than a pupa for this creature.\nIt will emerge in one of them, gain back it's form and leave this wasteland.\nBut, what I'm truly worried about... is what kind of heart it will have.\nAnd so, with gun in hand, my last prayers go to a kind hearted Foxian and not to the empress.</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>

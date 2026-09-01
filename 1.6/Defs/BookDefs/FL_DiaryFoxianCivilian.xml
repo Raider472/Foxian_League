@@ -11,7 +11,7 @@
         </graphicData>
         <uiIconPath>Things/Item/Book/Novel/Novel</uiIconPath>
         <statBases>
-            <MarketValue>100</MarketValue>
+            <MarketValue>200</MarketValue>
         </statBases>
         <comps>
             <li Class="CompProperties_Book">

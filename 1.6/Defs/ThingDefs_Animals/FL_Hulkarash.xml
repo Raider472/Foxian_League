@@ -8,8 +8,9 @@
         <statBases>
             <MoveSpeed>5.2</MoveSpeed>
             <MarketValue>1000</MarketValue>
-            <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+            <ComfyTemperatureMin>-40</ComfyTemperatureMin>
             <ComfyTemperatureMax>50</ComfyTemperatureMax>
+            <CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
             <FilthRate>24</FilthRate>
             <CaravanRidingSpeedFactor>1.5</CaravanRidingSpeedFactor>
             <Wildness>0.75</Wildness>
@@ -59,6 +60,7 @@
         </tools>
         <race>
             <herdAnimal>false</herdAnimal>
+            <packAnimal>true</packAnimal>
             <body>QuadrupedAnimalWithHoovesTusksAndTrunk</body>
             <baseHungerRate>1.8</baseHungerRate>
             <baseBodySize>4.2</baseBodySize>

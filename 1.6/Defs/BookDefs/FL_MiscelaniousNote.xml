@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef ParentName="BookBase">
         <defName>FL_MiscellaneousNote</defName>
@@ -30,6 +30,16 @@
                 </verticalGraphic>
                 <doers>
                     <li Class="BookOutcomeProperties_JoyFactorModifier" />
+                    <li MayRequire="Ludeon.RimWorld.Anomaly" Class="BookOutcomeProperties_GainAnomalyResearch">
+                        <tabs>
+                            <Anomaly />
+                        </tabs>
+                        <ignoreZeroBaseCost>false</ignoreZeroBaseCost>
+                        <usesHiddenProjects>true</usesHiddenProjects>
+                    </li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly" Class="BookOutcomeProperties_MentalBreak">
+                        <chancePerHourRange>0.01~0.04</chancePerHourRange>
+                    </li>
                 </doers>
             </li>
         </comps>

@@ -1,32 +1,43 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<PawnKindDef ParentName="BasePlayerPawnKind">
-    <defName>FL_Foxian_Colonist</defName>
-    <label>foxian colonist</label>
-    <defaultFactionDef>FoxianPlayerColony</defaultFactionDef>
-    <chemicalAddictionChance>0.03</chemicalAddictionChance>
-    <apparelTags>
-        <li>IndustrialBasic</li>
-    </apparelTags>
-    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-    <apparelMoney>350~600</apparelMoney>
-    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-    <techHediffsChance>0.03</techHediffsChance>
-    <techHediffsMoney>50~600</techHediffsMoney>
-    <techHediffsTags>
-        <li>Poor</li>
-        <li>Simple</li>
-        <li>ImplantEmpireCommon</li>
-    </techHediffsTags>
-    <techHediffsDisallowTags>
-        <li>PainCauser</li>
-    </techHediffsDisallowTags>
-    <initialResistanceRange>13~21</initialResistanceRange>
-    <xenotypeSet>
-        <xenotypeChances>
-            <FL_Foxian>0.85</FL_Foxian>
-            <FL_Greater_Foxian>0.15</FL_Greater_Foxian>
-        </xenotypeChances>
-    </xenotypeSet>
-</PawnKindDef>
+    <PawnKindDef ParentName="BasePlayerPawnKind" Name="FoxianColonist">
+        <defName>FL_Foxian_Colonist</defName>
+        <label>foxian colonist</label>
+        <defaultFactionDef>FoxianPlayerColony</defaultFactionDef>
+        <chemicalAddictionChance>0.03</chemicalAddictionChance>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelMoney>350~600</apparelMoney>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <techHediffsChance>0.03</techHediffsChance>
+        <techHediffsMoney>50~600</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+            <li>Simple</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <techHediffsDisallowTags>
+            <li>PainCauser</li>
+        </techHediffsDisallowTags>
+        <initialResistanceRange>13~21</initialResistanceRange>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FL_Foxian>0.85</FL_Foxian>
+                <FL_Greater_Foxian>0.15</FL_Greater_Foxian>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="FoxianColonist">
+        <defName>FL_Foxian_Blood_Rain_Colonist</defName>
+        <defaultFactionDef>FoxianBloodRainPlayerColony</defaultFactionDef>
+        <xenotypeSet>
+                    <xenotypeChances>
+                        <FL_Foxian>0.99</FL_Foxian>
+                        <FL_Greater_Foxian>0.01</FL_Greater_Foxian>
+                    </xenotypeChances>
+                </xenotypeSet>
+    </PawnKindDef>
 </Defs>

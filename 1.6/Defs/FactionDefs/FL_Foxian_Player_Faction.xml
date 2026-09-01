@@ -35,4 +35,40 @@
             </thingDefs>
         </apparelStuffFilter>
     </factionDef>
+
+    <factionDef ParentName="PlayerFactionBase">
+        <defName>FoxianBloodRainPlayerColony</defName>
+        <label>Foxian Blood Rain Exilee</label>
+        <description>A group of Foxian Exilee belonging to the Blood Rain who managed to survive the harsh world of the rim after an argument with their old boss.</description>
+        <isPlayer>true</isPlayer>
+        <basicMemberKind>FL_Foxian_Blood_Rain_Colonist</basicMemberKind>
+        <pawnSingular>foxian</pawnSingular>
+        <pawnsPlural>foxians</pawnsPlural>
+        <techLevel>Industrial</techLevel>
+        <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+        <settlementNameMaker>NamerSettlementFoxianRaider</settlementNameMaker>
+        <allowedCultures>
+            <li>FL_FoxianRaiderCulture</li>
+        </allowedCultures>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Outlander</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+        <startingResearchTags>
+            <li>ClassicStart</li>
+        </startingResearchTags>
+        <startingTechprintsResearchTags>
+            <li>ClassicStart</li>
+            <li>ClassicStartTechprints</li>
+        </startingTechprintsResearchTags>
+        <apparelStuffFilter>
+            <thingDefs>
+                <li>Cloth</li>
+            </thingDefs>
+        </apparelStuffFilter>
+    </factionDef>
 </Defs>

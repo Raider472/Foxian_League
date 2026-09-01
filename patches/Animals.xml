@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-<!--Add Vulpanos as universal allowed pack animal-->
+    <!--Add Vulpanos as universal allowed pack animal-->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/BiomeDef[defName="TemperateForest"]/allowedPackAnimals</xpath>
         <value>
             <li>FL_Vulpano</li>
+            <li>FL_Hulkarash</li>
         </value>
     </Operation>
 
@@ -12,6 +13,7 @@
         <xpath>Defs/BiomeDef[defName="TemperateSwamp"]/allowedPackAnimals</xpath>
         <value>
             <li>FL_Vulpano</li>
+            <li>FL_Hulkarash</li>
         </value>
     </Operation>
 
@@ -19,6 +21,7 @@
         <xpath>Defs/BiomeDef[defName="BorealForest"]/allowedPackAnimals</xpath>
         <value>
             <li>FL_Vulpano</li>
+            <li>FL_Hulkarash</li>
         </value>
     </Operation>
 
@@ -26,6 +29,7 @@
         <xpath>Defs/BiomeDef[defName="Tundra"]/allowedPackAnimals</xpath>
         <value>
             <li>FL_Vulpano</li>
+            <li>FL_Hulkarash</li>
         </value>
     </Operation>
 
@@ -33,6 +37,7 @@
         <xpath>Defs/BiomeDef[defName="ColdBog"]/allowedPackAnimals</xpath>
         <value>
             <li>FL_Vulpano</li>
+            <li>FL_Hulkarash</li>
         </value>
     </Operation>
 
@@ -40,6 +45,7 @@
         <xpath>Defs/BiomeDef[defName="IceSheet"]/allowedPackAnimals</xpath>
         <value>
             <li>FL_Vulpano</li>
+            <li>FL_Hulkarash</li>
         </value>
     </Operation>
 
@@ -47,6 +53,7 @@
         <xpath>Defs/BiomeDef[defName="SeaIce"]/allowedPackAnimals</xpath>
         <value>
             <li>FL_Vulpano</li>
+            <li>FL_Hulkarash</li>
         </value>
     </Operation>
 
@@ -54,6 +61,7 @@
         <xpath>Defs/BiomeDef[defName="TropicalRainforest"]/allowedPackAnimals</xpath>
         <value>
             <li>FL_Vulpano</li>
+            <li>FL_Hulkarash</li>
         </value>
     </Operation>
 
@@ -61,6 +69,7 @@
         <xpath>Defs/BiomeDef[defName="TropicalSwamp"]/allowedPackAnimals</xpath>
         <value>
             <li>FL_Vulpano</li>
+            <li>FL_Hulkarash</li>
         </value>
     </Operation>
 
@@ -68,6 +77,7 @@
         <xpath>Defs/BiomeDef[defName="AridShrubland"]/allowedPackAnimals</xpath>
         <value>
             <li>FL_Vulpano</li>
+            <li>FL_Hulkarash</li>
         </value>
     </Operation>
 
@@ -75,6 +85,7 @@
         <xpath>Defs/BiomeDef[defName="Desert"]/allowedPackAnimals</xpath>
         <value>
             <li>FL_Vulpano</li>
+            <li>FL_Hulkarash</li>
         </value>
     </Operation>
 
@@ -82,6 +93,7 @@
         <xpath>Defs/BiomeDef[defName="ExtremeDesert"]/allowedPackAnimals</xpath>
         <value>
             <li>FL_Vulpano</li>
+            <li>FL_Hulkarash</li>
         </value>
     </Operation>
 
@@ -91,6 +103,7 @@
         <value>
             <FL_Vulpano>0.07</FL_Vulpano>
             <FL_Vulyakko>0.04</FL_Vulyakko>
+            <FL_Hulkarash>0.03</FL_Hulkarash>
         </value>
     </Operation>
 
@@ -99,6 +112,7 @@
         <value>
             <FL_Vulpano>0.03</FL_Vulpano>
             <FL_Vulyakko>0.03</FL_Vulyakko>
+            <FL_Hulkarash>0.03</FL_Hulkarash>
         </value>
     </Operation>
 
@@ -107,6 +121,7 @@
         <value>
             <FL_Vulpano>0.03</FL_Vulpano>
             <FL_Vulyakko>0.04</FL_Vulyakko>
+            <FL_Hulkarash>0.03</FL_Hulkarash>
         </value>
     </Operation>
 
@@ -115,6 +130,7 @@
         <value>
             <FL_Vulpano>0.1</FL_Vulpano>
             <FL_Vulyakko>0.03</FL_Vulyakko>
+            <FL_Hulkarash>0.01</FL_Hulkarash>
         </value>
     </Operation>
 
@@ -123,6 +139,7 @@
         <value>
             <FL_Vulpano>0.06</FL_Vulpano>
             <FL_Vulyakko>0.08</FL_Vulyakko>
+            <FL_Hulkarash>0.01</FL_Hulkarash>
         </value>
     </Operation>
 
@@ -150,8 +167,8 @@
         </value>
     </Operation>
 
-<!--For Oddysey Biomes-->
-    <!--Vulpanos universal pack animals-->
+    <!--For Oddysey Biomes-->
+    <!--Vulpanos and Hulkarash universal pack animals-->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Odyssey</li>
@@ -160,6 +177,7 @@
             <xpath>Defs/BiomeDef[defName="GlacialPlain"]/allowedPackAnimals</xpath>
             <value>
                 <li>FL_Vulpano</li>
+                <li>FL_Hulkarash</li>
             </value>
         </match>
     </Operation>
@@ -172,6 +190,7 @@
             <xpath>Defs/BiomeDef[defName="Glowforest"]/allowedPackAnimals</xpath>
             <value>
                 <li>FL_Vulpano</li>
+                <li>FL_Hulkarash</li>
             </value>
         </match>
     </Operation>
@@ -184,6 +203,7 @@
             <xpath>Defs/BiomeDef[defName="Grasslands"]/allowedPackAnimals</xpath>
             <value>
                 <li>FL_Vulpano</li>
+                <li>FL_Hulkarash</li>
             </value>
         </match>
     </Operation>
@@ -196,6 +216,7 @@
             <xpath>Defs/BiomeDef[defName="LavaField"]/allowedPackAnimals</xpath>
             <value>
                 <li>FL_Vulpano</li>
+                <li>FL_Hulkarash</li>
             </value>
         </match>
     </Operation>
@@ -208,9 +229,11 @@
             <xpath>Defs/BiomeDef[defName="Scarlands"]/allowedPackAnimals</xpath>
             <value>
                 <li>FL_Vulpano</li>
+                <li>FL_Hulkarash</li>
             </value>
         </match>
     </Operation>
+
     <!--normalize wild animals spawn-->
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -234,6 +257,18 @@
             <value>
                 <FL_Vulpano>0.09</FL_Vulpano>
                 <FL_Vulyakko>0.06</FL_Vulyakko>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Odyssey</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/BiomeDef[defName="GlacialPlain"]/wildAnimals</xpath>
+            <value>
+                <FL_Hulkarash>0.06</FL_Hulkarash>
             </value>
         </match>
     </Operation>
