@@ -74,6 +74,7 @@
     <Compile Include="ModSettings\EnumSkills.cs" />
     <Compile Include="ModSettings\Foxian_ModSettings.cs" />
     <Compile Include="ModSettings\Foxian_Settings.cs" />
+    <Compile Include="ModSettings\OnDefsLoaded.cs" />
     <Compile Include="NaturalPsySensitive\Patch_MediationUtility_PsyfocusGainPerTick.cs" />
     <Compile Include="PatchMods\BGI_ApplyBirthOutcome.cs" />
     <Compile Include="PlantComps\ChoiceLetter_BlessingReceived.cs" />

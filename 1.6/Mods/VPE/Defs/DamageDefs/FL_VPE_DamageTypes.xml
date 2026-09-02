@@ -7,7 +7,7 @@
         <additionalHediffs>
             <li>
                 <hediff>FL_Poisonous_Paralysis</hediff>
-                <severityPerDamageDealt>0.008</severityPerDamageDealt>
+                <severityPerDamageDealt>0.007</severityPerDamageDealt>
                 <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
                 <inverseStatScaling>true</inverseStatScaling>
                 <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>

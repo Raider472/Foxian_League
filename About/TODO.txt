@@ -25,15 +25,7 @@ Rework loot pool of excelent scrificial tree ? (Yeah, don't forget to add the ot
 Rework animal connection so it scales with psychic senstivity instead of a flat bonus
 Rework psychic manipulation ?
 Add Compat to new staff when texture is done for melee animation
-Wood Trap must check if an explosive is within range
-Fox tiger should inflict a hediff upon hitting a target
 Replace psychic blessing from special tree to dynamic hediff ?
 Patch for for medieval tags ???
-See if books can be merged together and check if commonality tag exists
 Mod option for tails age
-Mod option to remove the Bi trait
 Sounds and fleck designs for psychic power
-Finetune mine (Color of explosion and how much poison it apply)
-
-Misc
--Reduce frequency of modded books or make them more interesting to read

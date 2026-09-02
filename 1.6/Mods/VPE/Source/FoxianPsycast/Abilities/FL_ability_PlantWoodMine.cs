@@ -51,6 +51,17 @@ namespace FoxianPsycast {
                     return false;
                 }
             }
+            for(int i = 0; i < 8; i++) {
+                IntVec3 c2 = target.Cell + GenAdj.AdjacentCells[i];
+                if(c2.InBounds(pawn.Map)) {
+                    Thing trap = c2.GetFirstThing<Thing>(pawn.Map);
+                    Log.Message("Checking adjacent cell: " + c2 + " for traps. Found: " + (trap != null ? trap.Label : "none"));
+                    if(trap != null && trap.def.building != null && trap.def.building.isTrap) {
+                        if(showMessages) Messages.Message("CannotPlaceAdjacentTrap".Translate(), target.ToTargetInfo(pawn.Map), MessageTypeDefOf.RejectInput, historical: false);
+                        return false;
+                    }
+                }
+            }
             return base.ValidateTarget(target, showMessages);
         }
 

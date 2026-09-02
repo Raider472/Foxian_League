@@ -24,6 +24,7 @@ namespace Foxian_league {
         public static float xenotypeMaleChance;
         public static float xenotypeFemaleChanceAlt;
         public static float maxProgressMultiplier;
+        public static bool IsFoxianBi;
 
         public Foxian_Settings() {
             SetDefaultValue(); 
@@ -40,6 +41,7 @@ namespace Foxian_league {
             xenotypeMaleChance = 0.7f;
             xenotypeFemaleChanceAlt = 0.8f;
             maxProgressMultiplier = 1f;
+            IsFoxianBi = true;
         }
 
         public override void ExposeData() {
@@ -54,6 +56,7 @@ namespace Foxian_league {
             Scribe_Values.Look(ref xenotypeMaleChance, "FLGeneticPurityXenotypeAMaleChance", 0.7f);
             Scribe_Values.Look(ref xenotypeFemaleChanceAlt, "FLGeneticPurityXenotypeFemaleChanceAlt", 0.8f);
             Scribe_Values.Look(ref maxProgressMultiplier, "FLmaxProgressMultiplier", 1f);
+            Scribe_Values.Look(ref IsFoxianBi, "FLIsFoxianBi", true);
         }
 
         internal static void WindowContents(Rect inRect) {
@@ -118,10 +121,12 @@ namespace Foxian_league {
             listing_Standard.Gap(5f);
             listing_Standard.Label(string.Concat("GeneticPurityXenotypeFemaleChanceSliderAlt".Translate() + ": ", (xenotypeFemaleChanceAlt * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "GeneticPurityXenotypeFemaleChanceSliderAltDesc".Translate());
             xenotypeFemaleChanceAlt = (float)Math.Round(listing_Standard.Slider(xenotypeFemaleChanceAlt, 0f, 1f), 2);
-            listing_Standard.Gap(10f);
+            listing_Standard.Gap(5f);
             listing_Standard.Label(string.Concat("maxProgressTreeMultiplierSlider".Translate() + ": ", (maxProgressMultiplier * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "maxProgressTreeMultiplierSliderDesc".Translate());
             maxProgressMultiplier = (float)Math.Round(listing_Standard.Slider(maxProgressMultiplier, 0.1f, 2f), 2);
-            listing_Standard.Gap(10f);
+            listing_Standard.Gap(5f);
+            listing_Standard.CheckboxLabeled("IsFoxianBi".Translate(), ref IsFoxianBi, tooltip: "IsFoxianBiDesc".Translate());
+            listing_Standard.Gap(5f);
             if (listing_Standard.ButtonText("ResetButton".Translate())) {
                 SetDefaultValue();
             }
