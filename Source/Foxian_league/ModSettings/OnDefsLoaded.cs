@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using Verse;
 
 namespace Foxian_league {
+    // This static constructor will be called when the game loads the defs and will apply the settings to the defs.
     [StaticConstructorOnStartup]
     public class OnDefsLoaded {
         static OnDefsLoaded() {
-            // This static constructor will be called when the game loads the defs and will apply the settings to the defs.
             ApplySettingsToDefs();
         }
 

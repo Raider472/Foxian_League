@@ -30,15 +30,16 @@ namespace FoxianPsycast {
             IncidentDef.Named("Eclipse"),
         };
 
-        //TODO Add new items just in case
         public static List<ThingDef> RareItems = new List<ThingDef> {
             ThingDef.Named("FL_Weapoon_Naginata_BladeLink"),
             ThingDef.Named("FL_Weapon_CleansedSword"),
             ThingDef.Named("FL_Weapon_CursedSword"),
             ThingDef.Named("FL_Weapoon_Oracle_Staff"),
-            ThingDef.Named("MechSerumHealer"), 
+            ThingDef.Named("MechSerumHealer"),
+            ThingDef.Named("MechSerumResurrector"),
             ThingDef.Named("PsychicSensitizer"),
             ThingDef.Named("OrbitalTargeterPowerBeam"),
+            ThingDef.Named("Gun_BeamGraser"),
         };
     }
 }

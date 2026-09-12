@@ -15,8 +15,6 @@ namespace Foxian_league {
 
         public static EnumSkills skillEnum;
 
-        public static float animalConnectionFactorTrigger;
-
         public static bool isPawnFoxianTrigger;
         public static string xenotypeA;
         public static string xenotypeB;
@@ -33,7 +31,6 @@ namespace Foxian_league {
         private static void SetDefaultValue() {
             psychicManipulationFactor = 0.25f;
             skillEnum = EnumSkills.Social;
-            animalConnectionFactorTrigger = 1.5f;
             isPawnFoxianTrigger = true;
             xenotypeA = "FL_Foxian";
             xenotypeB = "FL_Greater_Foxian";
@@ -48,7 +45,6 @@ namespace Foxian_league {
             base.ExposeData();
             Scribe_Values.Look(ref psychicManipulationFactor, "FLPsychicManipulationFactor", 0.25f);
             Scribe_Values.Look(ref skillEnum, "FLPsychicManipulationSkill", EnumSkills.Social);
-            Scribe_Values.Look(ref animalConnectionFactorTrigger, "FLAnimalConnectionFactorTrigger", 1.5f);
             Scribe_Values.Look(ref isPawnFoxianTrigger, "FLGeneticPurityTrigger", true);
             Scribe_Values.Look(ref xenotypeA, "xenotypeA", "FL_Foxian");
             Scribe_Values.Look(ref xenotypeB, "xenotypeB", "FL_Greater_Foxian");
@@ -84,9 +80,6 @@ namespace Foxian_league {
             }
             listing_Standard.Label(string.Concat("PsychicManipulationSettings".Translate() + ": ", (psychicManipulationFactor * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "PsychicManipulationSettingsDesc".Translate());
             psychicManipulationFactor = (float)Math.Round(listing_Standard.Slider(psychicManipulationFactor, 0.01f, 1f), 2);
-            listing_Standard.Gap(20f);
-            listing_Standard.Label(string.Concat("AnimalConnectionSettings".Translate() + ": ", (animalConnectionFactorTrigger * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "AnimalConnectionSettingsDesc".Translate());
-            animalConnectionFactorTrigger = (float)Math.Round(listing_Standard.Slider(animalConnectionFactorTrigger, 0f, 2f), 2);
             listing_Standard.Gap(20f);
             listing_Standard.CheckboxLabeled("GeneticPurityFoxianTrigger".Translate(), ref isPawnFoxianTrigger, tooltip: "GeneticPurityFoxianTriggerDesc".Translate());
             if (listing_Standard.ButtonTextLabeled("GeneticPuritySettingXenotypeA".Translate(), DefDatabase<XenotypeDef>.GetNamed(xenotypeA).label, tooltip: "GeneticPuritySettingXenotypeADesc".Translate())) {

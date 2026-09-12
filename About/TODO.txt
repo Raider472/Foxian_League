@@ -6,26 +6,19 @@ maybe option to allow girl only ? + chance for gender on non-foxian
 Check if genetic purity can be changed/refractor (removing mother field and etc.)
 
 -Animals
-
 bloodrain
 fox spider and elephant
 
--Items
--Add upper head to robe psychi ?
-Outfit for bloodrain elite members
- -Something inspired by mongolians with a skull (mongolian Deel outfit for local chief) CHECK
- -military outfit for special bloodrain soldiers khorne related ?
- -Skull Headeset ?
-Outfit for Fops (Grant Dodge and higher resistance to slash but none to blunt)
- -Beret
- -Probably something related to modern special force (might be too much) (Check rainbow 6 siege)
-
 TODO
-Rework loot pool of excelent scrificial tree ? (Yeah, don't forget to add the other future cool weapons)
-Rework animal connection so it scales with psychic senstivity instead of a flat bonus
-Rework psychic manipulation ?
+Window Popping up when loading a game (Check how Achtung does it: ModFeatures Class)
 Add Compat to new staff when texture is done for melee animation
 Replace psychic blessing from special tree to dynamic hediff ?
 Patch for for medieval tags ???
 Mod option for tails age
 Sounds and fleck designs for psychic power
+    -Wood Lance
+    -Bar Skin ?
+    -Nature's Finest ?
+    -Spore Infection
+    -Wood Trap
+    -Nature's Sacrifice ?

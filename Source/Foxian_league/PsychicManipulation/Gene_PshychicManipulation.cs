@@ -11,6 +11,8 @@ namespace Foxian_league {
     public class Gene_PsychicManipulation : Gene {
 
         public int skillModifier;
+        public float negotiationAbility;
+        public float tradePriceImprovement;
         public float psychicSensitivityRecent;
 
         public float delimiter = Foxian_Settings.psychicManipulationFactor;
@@ -20,6 +22,7 @@ namespace Foxian_league {
             if (!pawn.IsHashIntervalTick(200)) {
                 return;
             }
+            //Log.Message($"[Foxian League] TickInterval called for {pawn.Name} with TradeNegotiation and TradePriceImprovement: {pawn.GetStatValue(StatDefOf.NegotiationAbility)}, {pawn.GetStatValue(StatDefOf.TradePriceImprovement)}");
             float PsychichSensiPawn = pawn.GetStatValue(StatDefOf.PsychicSensitivity);
             if (PsychichSensiPawn == psychicSensitivityRecent) return;
             psychicSensitivityRecent = PsychichSensiPawn;
@@ -35,6 +38,8 @@ namespace Foxian_league {
                 float skillModifierFloat = currentPawnPsySensitivity / delimiter;
                 decimal roundedSkillModifier= Math.Round((decimal)skillModifierFloat, 1);
                 skillModifier = Math.Clamp((int)roundedSkillModifier, 0, 20);
+                negotiationAbility = skillModifier * 0.05f;
+                tradePriceImprovement = skillModifier * 0.01f;
             }
         }
 
@@ -42,6 +47,8 @@ namespace Foxian_league {
             base.ExposeData();
             Scribe_Values.Look(ref skillModifier, "skillModifier", defaultValue: 0);
             Scribe_Values.Look(ref psychicSensitivityRecent, "psychicSensitivityRecent", defaultValue: 0);
+            Scribe_Values.Look(ref negotiationAbility, "negotiationAbility", defaultValue: 0);
+            Scribe_Values.Look(ref tradePriceImprovement, "tradePriceImprovement", defaultValue: 0);
         }
     }
 }

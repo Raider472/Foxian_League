@@ -49,6 +49,7 @@
     <Compile Include="AbilityComps\CompProperties_AbilityEffectFateManipulation.cs" />
     <Compile Include="AnimalComps\CompProperties_vulyakkoResilience.cs" />
     <Compile Include="AnimalComps\Comp_vulyakkoResilience.cs" />
+    <Compile Include="AnimalConnection\Patch_InteractionWorker_RecruitAttempt.cs" />
     <Compile Include="AnimalConnection\Patch_PawnUtility_GetManhunterOnTameFailChance.cs" />
     <Compile Include="AnimalConnection\Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.cs" />
     <Compile Include="Composed\Patch_NegativeInteractionUtility_NegativeInteractionChanceFactor.cs" />
@@ -87,6 +88,8 @@
     <Compile Include="PsychicManipulation\Gene_PshychicManipulation.cs" />
     <Compile Include="PsychicManipulation\Patch_SkillRecord_Aptitude.cs" />
     <Compile Include="PsychicManipulation\Patch_SkillUI_GetSkillDescription.cs" />
+    <Compile Include="PsychicManipulation\Patch_StatWorker_GetOffsetsAndFactorsExplanation.cs" />
+    <Compile Include="PsychicManipulation\Patch_StatWorker_GetValueUnfinalized.cs" />
     <Compile Include="PsychicProtection\CompProperties_PsychicProtection.cs" />
     <Compile Include="PsychicProtection\Comp_PsychicProtection.cs" />
     <Compile Include="PsychicProtection\Gene_PsychicProtection.cs" />

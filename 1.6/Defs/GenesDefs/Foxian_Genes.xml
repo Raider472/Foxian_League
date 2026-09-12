@@ -179,6 +179,7 @@
         <geneClass>Foxian_league.Gene_PsychicManipulation</geneClass>
         <customEffectDescriptions>
             <li>Each 25% psychic sensitivity beyond 100% will add a bonus aptitude point to this pawn's social aptitude</li>
+            <li>Each 25% psychic sensitivity beyond 100% increases this pawn's negotiation ability by +5% and trade price improvement by +1%</li>
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>105</displayOrderInCategory>
@@ -200,7 +201,8 @@
             <TrainAnimalChance>1.25</TrainAnimalChance>
         </statFactors>
         <customEffectDescriptions>
-            <li>Reduce the chance for an animal to enter a manhunter state after a failed taming attempt if the carrier has more than 150% psychic sensitivity</li>
+            <li>Reduces the chances for an animal to enter a manhunter state after a failed taming attempt, depending on the carrier's psychic sensitivity</li>
+            <li>Increases the chances to tame an animal based on the carrier's psychic sensitivity</li>
         </customEffectDescriptions>
         <displayCategory>FL_foxian_genes_set</displayCategory>
         <displayOrderInCategory>105</displayOrderInCategory>

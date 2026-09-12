@@ -41,7 +41,6 @@ namespace Foxian_league {
         };
 
         public List<IncidentDef> VeryBadIncidents => new List<IncidentDef> {
-            IncidentDef.Named("Infestation"),
             IncidentDef.Named("HeatWave"),
             IncidentDef.Named("ColdSnap"),
             IncidentDef.Named("PsychicDrone"),

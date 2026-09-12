@@ -55,8 +55,8 @@
 
     <ThingDef ParentName="StumpChoppedBase">
         <defName>FL_ChoppedStump_SacrificialTree</defName>
-        <label>chopped HumanoidTreeSomething stump</label>
-        <description>A stump left behind after a HumanoidTreeSomething tree has been felled. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
+        <label>chopped sacrificial tree stump</label>
+        <description>A stump left behind after a sacrificial tree has been felled. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
         <graphicData>
             <texPath>Things/Plants/Stumps/Chopped/FL_NaturaChopped</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -65,8 +65,8 @@
 
     <ThingDef ParentName="StumpSmashedBase">
         <defName>FL_SmashedStump_SacrificialTree</defName>
-        <label>smashed HumanoidTreeSomething stump</label>
-        <description>The remnants of a HumanoidTreeSomething tree destroyed by damage. It's ugly. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
+        <label>smashed sacrificial tree stump</label>
+        <description>The remnants of a sacrificial tree destroyed by damage. It's ugly. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
         <graphicData>
             <texPath>Things/Plants/Stumps/Smashed/FL_NaturaSmashed</texPath>
             <graphicClass>Graphic_Single</graphicClass>
