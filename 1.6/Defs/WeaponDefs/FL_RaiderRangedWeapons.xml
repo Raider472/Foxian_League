@@ -35,7 +35,7 @@
         </statBases>
         <costList>
             <Steel>95</Steel>
-            <ComponentIndustrial>6</ComponentIndustrial>
+            <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <verbs>
             <li>

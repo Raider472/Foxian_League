@@ -15,7 +15,7 @@
         </graphicData>
         <projectile>
             <damageDef>FL_LanceCut</damageDef>
-            <damageAmountBase>9</damageAmountBase>
+            <damageAmountBase>11</damageAmountBase>
             <speed>90</speed>
         </projectile>
         <comps>
@@ -25,11 +25,11 @@
                 <scale>1.5</scale>
             </li>
         </comps>
-        <modExtensions>
+        <!--<modExtensions>
             <li Class="FoxianPsycast.AbilityExtension_ProjectileWithHediff">
                 <hediffOnHit>FL_Venom_Wood_Lance</hediffOnHit>
                 <severityRange>0.05~0.09</severityRange>
             </li>
-        </modExtensions>
+        </modExtensions>-->
     </ThingDef>
 </Defs>

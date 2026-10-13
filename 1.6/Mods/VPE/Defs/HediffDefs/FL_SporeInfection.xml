@@ -7,6 +7,7 @@
         <hediffClass>Foxian_league.Hediff_ShowSeverity</hediffClass>
         <defaultLabelColor>(0.84, 0.39, 0.07)</defaultLabelColor>
         <initialSeverity>0.05</initialSeverity>
+        <maxSeverity>1</maxSeverity>
         <stages>
             <li>
                 <label>minor</label>
@@ -23,11 +24,19 @@
                         <capacity>Moving</capacity>
                         <setMax>0.95</setMax>
                     </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.1</offset>
+                    </li>
                 </capMods>
                 <statOffsets>
                     <AimingDelayFactor>0.03</AimingDelayFactor>
                     <MeleeCooldownFactor>0.03</MeleeCooldownFactor>
                 </statOffsets>
+                <statFactors>
+                    <MeleeDamageFactor>0.9</MeleeDamageFactor>
+                    <MeleeHitChance>0.9</MeleeHitChance>
+                </statFactors>
             </li>
             <li>
                 <minSeverity>0.15</minSeverity>
@@ -45,11 +54,19 @@
                         <capacity>Moving</capacity>
                         <setMax>0.95</setMax>
                     </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.1</offset>
+                    </li>
                 </capMods>
                 <statOffsets>
                     <AimingDelayFactor>0.09</AimingDelayFactor>
                     <MeleeCooldownFactor>0.09</MeleeCooldownFactor>
                 </statOffsets>
+                <statFactors>
+                    <MeleeDamageFactor>0.9</MeleeDamageFactor>
+                    <MeleeHitChance>0.9</MeleeHitChance>
+                </statFactors>
             </li>
             <li>
                 <minSeverity>0.25</minSeverity>
@@ -67,11 +84,19 @@
                         <capacity>Moving</capacity>
                         <setMax>0.9</setMax>
                     </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.2</offset>
+                    </li>
                 </capMods>
                 <statOffsets>
                     <AimingDelayFactor>0.15</AimingDelayFactor>
                     <MeleeCooldownFactor>0.15</MeleeCooldownFactor>
                 </statOffsets>
+                <statFactors>
+                    <MeleeDamageFactor>0.8</MeleeDamageFactor>
+                    <MeleeHitChance>0.75</MeleeHitChance>
+                </statFactors>
             </li>
             <li>
                 <minSeverity>0.35</minSeverity>
@@ -89,11 +114,19 @@
                         <capacity>Moving</capacity>
                         <setMax>0.85</setMax>
                     </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.25</offset>
+                    </li>
                 </capMods>
                 <statOffsets>
                     <AimingDelayFactor>0.2</AimingDelayFactor>
                     <MeleeCooldownFactor>0.2</MeleeCooldownFactor>
                 </statOffsets>
+                <statFactors>
+                    <MeleeDamageFactor>0.75</MeleeDamageFactor>
+                    <MeleeHitChance>0.75</MeleeHitChance>
+                </statFactors>
             </li>
             <li>
                 <minSeverity>0.5</minSeverity>
@@ -111,11 +144,19 @@
                         <capacity>Moving</capacity>
                         <setMax>0.8</setMax>
                     </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.25</offset>
+                    </li>
                 </capMods>
                 <statOffsets>
                     <AimingDelayFactor>0.25</AimingDelayFactor>
                     <MeleeCooldownFactor>0.25</MeleeCooldownFactor>
                 </statOffsets>
+                <statFactors>
+                    <MeleeDamageFactor>0.75</MeleeDamageFactor>
+                    <MeleeHitChance>0.7</MeleeHitChance>
+                </statFactors>
             </li>
             <li>
                 <minSeverity>0.6</minSeverity>
@@ -133,11 +174,19 @@
                         <capacity>Moving</capacity>
                         <setMax>0.75</setMax>
                     </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.3</offset>
+                    </li>
                 </capMods>
                 <statOffsets>
                     <AimingDelayFactor>0.28</AimingDelayFactor>
                     <MeleeCooldownFactor>0.28</MeleeCooldownFactor>
                 </statOffsets>
+                <statFactors>
+                    <MeleeDamageFactor>0.7</MeleeDamageFactor>
+                    <MeleeHitChance>0.65</MeleeHitChance>
+                </statFactors>
             </li>
             <li>
                 <minSeverity>0.75</minSeverity>
@@ -155,11 +204,19 @@
                         <capacity>Moving</capacity>
                         <setMax>0.70</setMax>
                     </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.4</offset>
+                    </li>
                 </capMods>
                 <statOffsets>
                     <AimingDelayFactor>0.3</AimingDelayFactor>
                     <MeleeCooldownFactor>0.3</MeleeCooldownFactor>
                 </statOffsets>
+                <statFactors>
+                    <MeleeDamageFactor>0.6</MeleeDamageFactor>
+                    <MeleeHitChance>0.6</MeleeHitChance>
+                </statFactors>
             </li>
             <li>
                 <minSeverity>0.85</minSeverity>
@@ -177,11 +234,19 @@
                         <capacity>Moving</capacity>
                         <setMax>0.65</setMax>
                     </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.45</offset>
+                    </li>
                 </capMods>
                 <statOffsets>
                     <AimingDelayFactor>0.33</AimingDelayFactor>
                     <MeleeCooldownFactor>0.33</MeleeCooldownFactor>
                 </statOffsets>
+                <statFactors>
+                    <MeleeDamageFactor>0.55</MeleeDamageFactor>
+                    <MeleeHitChance>0.55</MeleeHitChance>
+                </statFactors>
             </li>
             <li>
                 <minSeverity>0.95</minSeverity>
@@ -189,7 +254,7 @@
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
-                        <setMax>0.25</setMax>
+                        <setMax>0.35</setMax>
                     </li>
                     <li>
                         <capacity>Sight</capacity>
@@ -199,11 +264,19 @@
                         <capacity>Moving</capacity>
                         <setMax>0.6</setMax>
                     </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.5</offset>
+                    </li>
                 </capMods>
                 <statOffsets>
                     <AimingDelayFactor>0.5</AimingDelayFactor>
                     <MeleeCooldownFactor>0.5</MeleeCooldownFactor>
                 </statOffsets>
+                <statFactors>
+                    <MeleeDamageFactor>0.5</MeleeDamageFactor>
+                    <MeleeHitChance>0.5</MeleeHitChance>
+                </statFactors>
             </li>
         </stages>
         <comps>

@@ -4,13 +4,13 @@
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>FL_VPE_WoodLance</defName>
         <label>wood lance</label>
-        <description>Condenses and converts psychic entropy into artificial wood and sends a wood lance to an enemy. The wood is infused with psychic toxins to destabilize the target. The more damage they receive, the greater the effects are.</description>
+        <description>Condenses and converts psychic entropy into artificial wood and sends a wood lance to the targeted enemy.</description>
         <iconPath>UI/Psycast/Ability/FL_WoodLance</iconPath>
         <abilityClass>VEF.Abilities.Ability_ShootProjectile</abilityClass>
         <castTime>15</castTime>
         <range>24.9</range>
         <cooldownTime>300</cooldownTime>
-        <castSound>VPE_IceCrystal_Cast</castSound>
+        <castSound>FL_Psycast_WoodLanceSound</castSound>
         <targetingParameters>
             <canTargetPawns>true</canTargetPawns>
             <canTargetBuildings>true</canTargetBuildings>
@@ -130,7 +130,7 @@
         <durationTime>2500</durationTime>
         <requireLineOfSight>false</requireLineOfSight>
         <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
-        <castSound>VPE_WordOfHealing_Cast</castSound>
+        <castSound>FL_Psycast_BarSkinSound</castSound>
         <fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
         <cooldownTime>25000</cooldownTime>
         <showUndrafted>true</showUndrafted>
@@ -168,7 +168,7 @@
         <needsTicking>true</needsTicking>
         <targetMode>Self</targetMode>
         <castTime>60</castTime>
-        <castSound>VPE_RegrowLimbs_Cast</castSound>
+        <castSound>VPE_WordOfHealing_Cast</castSound>
         <fleckOnTarget>PsycastAreaEffect</fleckOnTarget>
         <radius>5.9</radius>
         <hasAoE>true</hasAoE>
@@ -215,7 +215,7 @@
         <radius>13.9</radius>
         <cooldownTime>180000</cooldownTime>
         <needsTicking>true</needsTicking>
-        <castSound>VPE_Speedboost_Cast</castSound>
+        <castSound>FL_Psycast_SporeInfectionSound</castSound>
         <hasAoE>true</hasAoE>
         <chance>0</chance>
         <targetMode>Pawn</targetMode>
@@ -260,7 +260,7 @@
         <castTime>180</castTime>
         <requireLineOfSight>false</requireLineOfSight>
         <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
-        <castSound>VPE_BrambleMaze_Cast</castSound>
+        <castSound>FL_Psycast_WoodMine</castSound>
         <range>999999</range>
         <cooldownTime>300000</cooldownTime>
         <showUndrafted>true</showUndrafted>
@@ -282,7 +282,7 @@
             </li>
             <li Class="VEF.Abilities.AbilityExtension_EffecterOnTarget">
                 <effecterDef>FillingInCrater</effecterDef>
-                <maintainForTicks>240</maintainForTicks>
+                <maintainForTicks>90</maintainForTicks>
             </li>
         </modExtensions>
     </VEF.Abilities.AbilityDef>
@@ -376,7 +376,7 @@
         <castTime>300</castTime>
         <requireLineOfSight>false</requireLineOfSight>
         <jobDef>VFEA_GotoTargetAndUseAbility</jobDef>
-        <castSound>VPE_ConsumeBodies_Cast</castSound>
+        <castSound>FL_Psycast_NatureSacrficeSound</castSound>
         <range>999999</range>
         <cooldownTime>600000</cooldownTime>
         <showUndrafted>true</showUndrafted>

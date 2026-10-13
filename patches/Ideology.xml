@@ -89,4 +89,29 @@
                 </value>
         </nomatch>
     </Operation>
+
+    <!--If the dlc is not active, add arrest success chance to compensate the missing suppression power-->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="FL_BloodRainDeel"]/equippedStatOffsets</xpath>
+            <value>
+                <ArrestSuccessChance>0.25</ArrestSuccessChance>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="FL_SkullHelmet"]/equippedStatOffsets</xpath>
+            <value>
+                <ArrestSuccessChance>0.25</ArrestSuccessChance>
+            </value>
+        </nomatch>
+    </Operation>
 </Patch>

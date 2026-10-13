@@ -12,13 +12,5 @@ fox spider and elephant
 TODO
 Window Popping up when loading a game (Check how Achtung does it: ModFeatures Class)
 Add Compat to new staff when texture is done for melee animation
-Replace psychic blessing from special tree to dynamic hediff ?
 Patch for for medieval tags ???
 Mod option for tails age
-Sounds and fleck designs for psychic power
-    -Wood Lance
-    -Bar Skin ?
-    -Nature's Finest ?
-    -Spore Infection
-    -Wood Trap
-    -Nature's Sacrifice ?

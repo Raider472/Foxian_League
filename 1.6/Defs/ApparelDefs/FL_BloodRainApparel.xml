@@ -35,7 +35,7 @@
         </statBases>
         <equippedStatOffsets>
             <SocialImpact>0.2</SocialImpact>
-            <SuppressionPower>0.25</SuppressionPower>
+            <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.25</SuppressionPower>
             <MoveSpeed>0.2</MoveSpeed>
             <MeleeDamageFactor>0.15</MeleeDamageFactor>
         </equippedStatOffsets>
@@ -157,7 +157,7 @@
             <EquipDelay>1.5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <SuppressionPower>0.25</SuppressionPower>
+            <SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">0.25</SuppressionPower>
         </equippedStatOffsets>
         <apparel>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>

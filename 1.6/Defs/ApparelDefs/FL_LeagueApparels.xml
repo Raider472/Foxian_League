@@ -85,7 +85,7 @@
         <statBases>
             <MaxHitPoints>200</MaxHitPoints>
             <WorkToMake>12000</WorkToMake>
-            <Mass>2.7</Mass>
+            <Mass>1</Mass>
             <ArmorRating_Sharp>0.11</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.07</ArmorRating_Blunt>
             <ArmorRating_Heat>0.15</ArmorRating_Heat>
@@ -312,7 +312,7 @@
     <ThingDef ParentName="FoxianArmorNoPsychic">
         <defName>FL_FOPSVest</defName>
         <label>F.O.P.S bulletproof vest</label>
-        <description>A complete bulletproof vest used by F.O.P.S operators. The Federal Operations &amp; Protection Service is a special unit comprising the best soldiers of the league. They are given the most difficult tasks that the league's army can't accomplish without significant sacrifices. Their second mission is protecting important assets of the league, whether they are important people or items. The vest is lightweight and includes ammunition pockets, which allow the wearer to shoot more rapidly and with greater precision while granting them improved mobility.</description>
+        <description>A complete bulletproof vest used by F.O.P.S operators. The Federal Operations &amp; Protection Service is a special unit comprising the best soldiers of the league. They are given the most difficult tasks that the league's army can't accomplish without significant sacrifices. Their second mission is protecting important assets of the league, whether they are important people or items. The vest is lightweight and includes ammunition pockets, which allow the wearer to shoot faster and with greater precision while granting them improved mobility.</description>
         <techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Things/Pawns/Apparels/OfficerArmor/OfficerArmor</texPath>

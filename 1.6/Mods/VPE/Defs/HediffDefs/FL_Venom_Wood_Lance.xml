@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+    <!--Not used anymore, stay here as legacy-->
     <HediffDef>
         <defName>FL_Venom_Wood_Lance</defName>
         <label>nature's venom</label>

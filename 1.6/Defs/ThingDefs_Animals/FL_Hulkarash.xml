@@ -7,7 +7,7 @@
         <description>A fox-like beast that resembles like a massive mammoth and that has 7 tusks. Hulkarash are an offspring of one of the sacred beasts related to subjugation and domination who sided with the Blood Rain when the first Foxian civilization collapsed. They are used as war beasts when sieging down settlements due to their sheer strength and their ability to spew liquid fire from their mouths. They are considered as the ultimate weapon of mass destruction by the bloodrain and finding one of them that is non-hostile in the wild is a rare sight.</description>
         <statBases>
             <MoveSpeed>5.2</MoveSpeed>
-            <MarketValue>1000</MarketValue>
+            <MarketValue>1200</MarketValue>
             <ComfyTemperatureMin>-40</ComfyTemperatureMin>
             <ComfyTemperatureMax>50</ComfyTemperatureMax>
             <CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
