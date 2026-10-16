@@ -47,6 +47,22 @@
     <IsFoxianBi>Does the Lustful gene forces the Bisexual trait ?</IsFoxianBi>
     <IsFoxianBiDesc>The title is very explicit. Simply remove/add the forced trait to the gene (A restart is required).</IsFoxianBiDesc>
     <ResetButton>Default Values</ResetButton>
+    <FoxianPsychicManipGeneTitle>Psychic Manipulation</FoxianPsychicManipGeneTitle>
+    <FoxianGeneticPurityTitle>Genetic Purity</FoxianGeneticPurityTitle>
+    <FoxianNaturaTreeTitle>Natura Tree</FoxianNaturaTreeTitle>
+    <FoxianLustfulGeneTitle>Lustful Gene</FoxianLustfulGeneTitle>
+    <FoxianNineTailAgeTitle>Nine Tail Age Settings</FoxianNineTailAgeTitle>
+    <FoxianTailAgeInfo>Please be cautious when changing the values below.\nThe values must follow an ascending order as seen below.\nA restart is required.</FoxianTailAgeInfo>
+    <FoxianOneTailAge>One Tail</FoxianOneTailAge>
+    <FoxianOneTailAgeDesc>Set the age at which the pawn gets one tail (recommended: 0).</FoxianOneTailAgeDesc>
+    <FoxianThreeTailAge>Three Tail</FoxianThreeTailAge>
+    <FoxianThreeTailAgeDesc>Set the age at which the pawn gets three tail (recommended: 3).</FoxianThreeTailAgeDesc>
+    <FoxianFiveTailAge>Five Tail</FoxianFiveTailAge>
+    <FoxianFiveTailAgeDesc>Set the age at which the pawn gets five tail.</FoxianFiveTailAgeDesc>
+    <FoxianSevenTailAge>Seven Tail</FoxianSevenTailAge>
+    <FoxianSevenTailAgeDesc>Set the age at which the pawn gets seven tail.</FoxianSevenTailAgeDesc>
+    <FoxianNineTailAge>Nine Tail</FoxianNineTailAge>
+    <FoxianNineTailAgeDesc>Set the age at which the pawn gets nine tail.</FoxianNineTailAgeDesc>
     
     <ProgressUntilNextBlessing>Progress until the next blessing: {0}</ProgressUntilNextBlessing>
     <TotalMeditationTree>Total amount of meditation today: {0}h</TotalMeditationTree>

@@ -14,6 +14,7 @@ namespace Foxian_league {
 
         public static GeneDef FL_FoxEar;
         public static GeneDef FL_FoxTail;
+        public static GeneDef FL_NineFoxTail;
         public static GeneDef FL_Reserved;
         public static GeneDef FL_PsychicManipulation;
         public static GeneDef FL_NaturalPsySensitive;
