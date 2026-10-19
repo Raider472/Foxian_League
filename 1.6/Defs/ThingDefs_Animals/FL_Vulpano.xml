@@ -22,7 +22,7 @@
             <baseHealthScale>2</baseHealthScale>
             <baseHungerRate>0.75</baseHungerRate>
             <foodType>VegetarianRoughAnimal</foodType>
-            <leatherDef>Leather_Fox</leatherDef>
+            <leatherDef>FL_LeatherVulpano</leatherDef>
             <nameOnTameChance>1</nameOnTameChance>
             <trainability>Advanced</trainability>
             <gestationPeriodDays>10</gestationPeriodDays>
@@ -133,6 +133,16 @@
                 <chanceFactor>0.2</chanceFactor>
             </li>
         </tools>
+        <comps>
+            <li Class="CompProperties_Shearable">
+                <woolDef>FL_WoolVulpano</woolDef>
+                <shearIntervalDays>25</shearIntervalDays>
+                <woolAmount>270</woolAmount>
+            </li>
+            <li Class="Foxian_league.CompProperties_LoseFactionOnDown">
+                <factionToLose>Foxian_BloodRain</factionToLose>
+            </li>
+        </comps>
     </ThingDef>
 
     <PawnKindDef ParentName="AnimalKindBase">

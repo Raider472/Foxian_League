@@ -25,7 +25,7 @@
             <baseHealthScale>1.5</baseHealthScale>
             <baseHungerRate>0.1</baseHungerRate>
             <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-            <leatherDef>Leather_Panthera</leatherDef>
+            <leatherDef>FL_LeatherVulyakko</leatherDef>
             <nameOnTameChance>1</nameOnTameChance>
             <trainability>Advanced</trainability>
             <lifeExpectancy>20</lifeExpectancy>
@@ -130,6 +130,9 @@
                 <chanceToProc>0.61</chanceToProc>
                 <minPercentageReduction>0.15</minPercentageReduction>
                 <maxPercentageReduction>0.85</maxPercentageReduction>
+            </li>
+            <li Class="Foxian_league.CompProperties_LoseFactionOnDown">
+                <factionToLose>Foxian_BloodRain</factionToLose>
             </li>
         </comps>
     </ThingDef>

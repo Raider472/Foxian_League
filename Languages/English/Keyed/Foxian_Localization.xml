@@ -63,6 +63,11 @@
     <FoxianSevenTailAgeDesc>Set the age at which the pawn gets seven tail.</FoxianSevenTailAgeDesc>
     <FoxianNineTailAge>Nine Tail</FoxianNineTailAge>
     <FoxianNineTailAgeDesc>Set the age at which the pawn gets nine tail.</FoxianNineTailAgeDesc>
+    <FoxianModWarningTitle>Foxian League Warning</FoxianModWarningTitle>
+    <FoxianModWarningText>This warning will only appear once.\nIf you just started a new save, you can disregard this warning.\n\nThe mod has recently received a big update. Many new features have been added along with the rework of older ones.\nAs a result, some things from older save files might not work correctly any more. The likely culprit will be the psychic channelling and protection genes.\n\nHowever, this does not mean you will need to restart a new save. In the workshop page of the mod, you can find a link with a downloadable archive of the old version to continue playing with your current save file without any issues. Alternatively, you can copy the same link to the clipboard with the button below.\nOnce on the GitHub page, you must click on the "Code" button and then on "Download as a ZIP file". Finally, install the old version manually as a separate mod.</FoxianModWarningText>
+    <FoxianModWarningAccept>I've read the warning and am aware of the potential repercussions if I don't take the necessary precautions</FoxianModWarningAccept>
+    <FoxianCopyLinkToClipboard>Copy archive link to clipboard</FoxianCopyLinkToClipboard>
+    <FoxianLinkCopied>Link copied to the clipboard!</FoxianLinkCopied>
     
     <ProgressUntilNextBlessing>Progress until the next blessing: {0}</ProgressUntilNextBlessing>
     <TotalMeditationTree>Total amount of meditation today: {0}h</TotalMeditationTree>

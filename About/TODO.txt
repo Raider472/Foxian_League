@@ -13,3 +13,5 @@ TODO
 Window Popping up when loading a game (Check how Achtung does it: ModFeatures Class, Or Heyra mod when they announced an update)
 Add Compat to new staff when texture is done for melee animation
 Patch for for medieval tags ???
+Check if possible to add a link to warning window
+Check if old def are still present in the save file

@@ -8,8 +8,9 @@ using Verse;
 
 namespace Foxian_league {
     public class Foxian_ModSettings: Mod {
+        internal static Foxian_Settings Settings;
         public Foxian_ModSettings(ModContentPack content) : base(content) {
-            GetSettings<Foxian_Settings>();
+            Settings = GetSettings<Foxian_Settings>();
         }
 
         public override string SettingsCategory() {

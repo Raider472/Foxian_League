@@ -8,8 +8,8 @@ using UnityEngine;
 using Verse;
 
 namespace Foxian_league {
-    //This whole mod settings was quite tricky to understand, so I checked how other mods did and thus got "inspired" by them
-    //Inspiration: Nudist Evasion / Uncompromising Fire / Revia Race / Kijin Race
+    //This whole mod settings was quite tricky to understand, so I checked how other mods did and thus got inspired by them
+    //Inspiration: Nudist Evasion / Uncompromising Fire / Revia Race / Kijin Race / NL Facial animation
     internal class Foxian_Settings : ModSettings {
 
         private static Vector2 scrollPosition = Vector2.zero;
@@ -42,6 +42,8 @@ namespace Foxian_league {
         private static string nineTailAgeValueString;
 
         private static readonly List<float> TailAgeValuesReference = new List<float> { 0f, 15f, 18f, 21f, 28f };
+
+        public static bool hasWarningBeenShown;
 
         public Foxian_Settings() {
             SetDefaultValue();
@@ -90,6 +92,7 @@ namespace Foxian_league {
             Scribe_Values.Look(ref fiveTailAgeValue, "FLFiveTailAgeValue", 18f);
             Scribe_Values.Look(ref sevenTailAgeValue, "FLSevenTailAgeValue", 21f);
             Scribe_Values.Look(ref nineTailAgeValue, "FLNineTailAgeValue", 28f);
+            Scribe_Values.Look(ref hasWarningBeenShown, "FLHasWarningBeenShown", false);
 
             if(Scribe.mode == LoadSaveMode.LoadingVars) {
                 UpdateTailAgeValueStrings();

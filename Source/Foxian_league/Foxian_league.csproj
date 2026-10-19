@@ -47,7 +47,9 @@
   <ItemGroup>
     <Compile Include="AbilityComps\CompAbilityEffect_FateManipulation.cs" />
     <Compile Include="AbilityComps\CompProperties_AbilityEffectFateManipulation.cs" />
+    <Compile Include="AnimalComps\CompProperties_LoseFactionOnDown.cs" />
     <Compile Include="AnimalComps\CompProperties_vulyakkoResilience.cs" />
+    <Compile Include="AnimalComps\Comp_LoseFactionOnDown.cs" />
     <Compile Include="AnimalComps\Comp_vulyakkoResilience.cs" />
     <Compile Include="AnimalConnection\Patch_InteractionWorker_RecruitAttempt.cs" />
     <Compile Include="AnimalConnection\Patch_PawnUtility_GetManhunterOnTameFailChance.cs" />
@@ -76,6 +78,9 @@
     <Compile Include="ModSettings\Foxian_ModSettings.cs" />
     <Compile Include="ModSettings\Foxian_Settings.cs" />
     <Compile Include="ModSettings\OnDefsLoaded.cs" />
+    <Compile Include="ModSettings\WarningWindow\Patch_Game_FinalizeInit.cs" />
+    <Compile Include="ModSettings\WarningWindow\Patch_Root_Update.cs" />
+    <Compile Include="ModSettings\WarningWindow\Warning_Window.cs" />
     <Compile Include="NaturalPsySensitive\Patch_MediationUtility_PsyfocusGainPerTick.cs" />
     <Compile Include="PatchMods\BGI_ApplyBirthOutcome.cs" />
     <Compile Include="PlantComps\ChoiceLetter_BlessingReceived.cs" />
@@ -115,5 +120,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
