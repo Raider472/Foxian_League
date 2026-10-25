@@ -792,7 +792,7 @@
         <label>local bloodrain commander</label>
         <combatPower>180</combatPower>
         <apparelMoney>2000~3500</apparelMoney>
-        <weaponMoney>1000~1500</weaponMoney>
+        <weaponMoney>1000~2500</weaponMoney>
         <weaponTags>
             <li>SniperRifle</li>
             <li>AssaultRifle</li>

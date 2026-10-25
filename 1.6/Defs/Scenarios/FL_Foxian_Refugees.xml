@@ -61,7 +61,7 @@
                     <thingDef>Apparel_AdvancedHelmet</thingDef>
                     <stuff>Plasteel</stuff>
                 </li>
-                <li Class="ScenPart_StartingThing_Defined">
+                <li Class="Foxian_league.ScenPart_StartingThing_Defined_FoxianExtended">
                     <def>StartingThing_Defined</def>
                     <thingDef>Gun_BoltActionRifle</thingDef>
                 </li>
@@ -71,7 +71,7 @@
                     <quality>Good</quality>
                     <stuff>Steel</stuff>
                 </li>
-                <li Class="ScenPart_StartingThing_Defined">
+                <li Class="Foxian_league.ScenPart_StartingThing_Defined_FoxianExtended">
                 <def>StartingThing_Defined</def>
                     <thingDef>Gun_Autopistol</thingDef>
                 </li>

@@ -40,6 +40,7 @@ namespace Foxian_league {
 
         public static float nineTailAgeValue;
         private static string nineTailAgeValueString;
+        public static bool medievalMode;
 
         private static readonly List<float> TailAgeValuesReference = new List<float> { 0f, 15f, 18f, 21f, 28f };
 
@@ -70,6 +71,7 @@ namespace Foxian_league {
             sevenTailAgeValueString = sevenTailAgeValue.ToString();
             nineTailAgeValue = 28f;
             nineTailAgeValueString = nineTailAgeValue.ToString();
+            medievalMode = false;
         }
 
         public override void ExposeData() {
@@ -93,6 +95,7 @@ namespace Foxian_league {
             Scribe_Values.Look(ref sevenTailAgeValue, "FLSevenTailAgeValue", 21f);
             Scribe_Values.Look(ref nineTailAgeValue, "FLNineTailAgeValue", 28f);
             Scribe_Values.Look(ref hasWarningBeenShown, "FLHasWarningBeenShown", false);
+            Scribe_Values.Look(ref medievalMode, "FLMedievalMode", false);
 
             if(Scribe.mode == LoadSaveMode.LoadingVars) {
                 UpdateTailAgeValueStrings();
@@ -111,7 +114,7 @@ namespace Foxian_league {
                 0f,
                 0f,
                 inRect.width - 20f,
-                1300f
+                1330f
             );
 
             Widgets.BeginScrollView(inRect, ref scrollPosition, viewRect);
@@ -123,13 +126,20 @@ namespace Foxian_league {
             listing_Standard.Label("FoxianInformation".Translate(), tooltip: "FoxianInformationDesc".Translate());
             listing_Standard.Gap(30f);
 
-            listing_Standard.Label("FoxianLustfulGeneTitle".Translate());
+            listing_Standard.Label("FoxianMiscTitle".Translate());
             listing_Standard.Gap(-4f);
             listing_Standard.GapLine();
             listing_Standard.Gap(5f);
 
+            listing_Standard.CheckboxLabeled("FoxianMedievalMode".Translate(), ref medievalMode, tooltip: "FoxianMedievalModeDesc".Translate());
+            listing_Standard.Gap(20f);
+
             listing_Standard.CheckboxLabeled("IsFoxianBi".Translate(), ref IsFoxianBi, tooltip: "IsFoxianBiDesc".Translate());
-            listing_Standard.Gap(25f);
+            listing_Standard.Gap(20f);
+
+            listing_Standard.Label(string.Concat("maxProgressTreeMultiplierSlider".Translate() + ": ", (maxProgressMultiplier * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "maxProgressTreeMultiplierSliderDesc".Translate());
+            maxProgressMultiplier = (float)Math.Round(listing_Standard.Slider(maxProgressMultiplier, 0.1f, 2f), 2);
+            listing_Standard.Gap(30f);
 
             listing_Standard.Label("FoxianPsychicManipGeneTitle".Translate());
             listing_Standard.Gap(-4f);
@@ -147,11 +157,11 @@ namespace Foxian_league {
                 }
                 Find.WindowStack.Add(new FloatMenu(dropdownList));
             }
-            listing_Standard.Gap(15f);
+            listing_Standard.Gap(20f);
 
             listing_Standard.Label(string.Concat("PsychicManipulationSettings".Translate() + ": ", (psychicManipulationFactor * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "PsychicManipulationSettingsDesc".Translate());
             psychicManipulationFactor = (float)Math.Round(listing_Standard.Slider(psychicManipulationFactor, 0.01f, 1f), 2);
-            listing_Standard.Gap(25f);
+            listing_Standard.Gap(30f);
 
             listing_Standard.Label("FoxianGeneticPurityTitle".Translate());
             listing_Standard.Gap(-4f);
@@ -159,7 +169,7 @@ namespace Foxian_league {
             listing_Standard.Gap(5f);
 
             listing_Standard.CheckboxLabeled("GeneticPurityFoxianTrigger".Translate(), ref isPawnFoxianTrigger, tooltip: "GeneticPurityFoxianTriggerDesc".Translate());
-            listing_Standard.Gap(15f);
+            listing_Standard.Gap(20f);
             if(listing_Standard.ButtonTextLabeled("GeneticPuritySettingXenotypeA".Translate(), DefDatabase<XenotypeDef>.GetNamed(xenotypeA).label, tooltip: "GeneticPuritySettingXenotypeADesc".Translate())) {
                 List<FloatMenuOption> dropdownList = new List<FloatMenuOption>();
                 foreach(XenotypeDef chosenXenoOption in allXenotype) {
@@ -184,28 +194,19 @@ namespace Foxian_league {
                 }
                 Find.WindowStack.Add(new FloatMenu(dropdownList));
             }
-            listing_Standard.Gap(15f);
+            listing_Standard.Gap(20f);
 
             listing_Standard.Label(string.Concat("GeneticPurityXenotypeAChanceSlider".Translate() + ": ", (xenotypeAChance * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "GeneticPurityXenotypeAChanceSliderDesc".Translate());
             xenotypeAChance = (float)Math.Round(listing_Standard.Slider(xenotypeAChance, 0f, 1f), 2);
-            listing_Standard.Gap(15f);
+            listing_Standard.Gap(20f);
 
             listing_Standard.Label(string.Concat("GeneticPurityXenotypeMaleChanceSlider".Translate() + ": ", (xenotypeMaleChance * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "GeneticPurityXenotypeMaleChanceSliderDesc".Translate());
             xenotypeMaleChance = (float)Math.Round(listing_Standard.Slider(xenotypeMaleChance, 0f, 1f), 2);
-            listing_Standard.Gap(15f);
+            listing_Standard.Gap(20f);
 
             listing_Standard.Label(string.Concat("GeneticPurityXenotypeFemaleChanceSliderAlt".Translate() + ": ", (xenotypeFemaleChanceAlt * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "GeneticPurityXenotypeFemaleChanceSliderAltDesc".Translate());
             xenotypeFemaleChanceAlt = (float)Math.Round(listing_Standard.Slider(xenotypeFemaleChanceAlt, 0f, 1f), 2);
-            listing_Standard.Gap(25f);
-
-            listing_Standard.Label("FoxianNaturaTreeTitle".Translate());
-            listing_Standard.Gap(-4f);
-            listing_Standard.GapLine();
-            listing_Standard.Gap(5f);
-
-            listing_Standard.Label(string.Concat("maxProgressTreeMultiplierSlider".Translate() + ": ", (maxProgressMultiplier * 100f).ToString(), "% ", "HoverForInfo".Translate()), tooltip: "maxProgressTreeMultiplierSliderDesc".Translate());
-            maxProgressMultiplier = (float)Math.Round(listing_Standard.Slider(maxProgressMultiplier, 0.1f, 2f), 2);
-            listing_Standard.Gap(25f);
+            listing_Standard.Gap(30f);
 
             listing_Standard.Label("FoxianNineTailAgeTitle".Translate());
             listing_Standard.Gap(-4f);
@@ -233,7 +234,7 @@ namespace Foxian_league {
 
             listing_Standard.Label("FoxianNineTailAge".Translate(), tooltip: "FoxianNineTailAgeDesc".Translate());
             listing_Standard.TextFieldNumeric(ref nineTailAgeValue, ref nineTailAgeValueString, 0f, 100f);
-            listing_Standard.Gap(25f);
+            listing_Standard.Gap(30f);
 
             if(listing_Standard.ButtonText("ResetButton".Translate())) {
                 SetDefaultValue();

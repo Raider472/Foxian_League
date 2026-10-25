@@ -731,4 +731,6 @@
         <initialWillRange>30~45</initialWillRange>
         <initialResistanceRange>30~45</initialResistanceRange>
     </PawnKindDef>
+
+    
 </Defs>

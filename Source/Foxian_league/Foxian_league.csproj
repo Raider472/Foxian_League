@@ -77,6 +77,7 @@
     <Compile Include="ModSettings\EnumSkills.cs" />
     <Compile Include="ModSettings\Foxian_ModSettings.cs" />
     <Compile Include="ModSettings\Foxian_Settings.cs" />
+    <Compile Include="ModSettings\ListPawnKindDefs.cs" />
     <Compile Include="ModSettings\OnDefsLoaded.cs" />
     <Compile Include="ModSettings\WarningWindow\Patch_Game_FinalizeInit.cs" />
     <Compile Include="ModSettings\WarningWindow\Patch_Root_Update.cs" />
@@ -100,6 +101,7 @@
     <Compile Include="PsychicProtection\Gene_PsychicProtection.cs" />
     <Compile Include="PsychicProtection\Gene_PsychicProtectionDynamic.cs" />
     <Compile Include="Reserved\Patch_MemoryThoughtHandler_TryGainMemory.cs" />
+    <Compile Include="ScenPart\ScenPart_StartingThing_Defined_FoxianExtended.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="WeaponComps\CompProperties_PoisonousDagger.cs" />
     <Compile Include="WeaponComps\CompProperties_RestorePsyfocusOnKill.cs" />

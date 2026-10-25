@@ -60,7 +60,7 @@
                     <thingDef>FL_SkullHelmet</thingDef>
                     <stuff>Steel</stuff>
                 </li>
-                <li Class="ScenPart_StartingThing_Defined">
+                <li Class="Foxian_league.ScenPart_StartingThing_Defined_FoxianExtended">
                     <def>StartingThing_Defined</def>
                     <thingDef>FL_Gun_HarpoonGun</thingDef>
                 </li>
@@ -70,7 +70,7 @@
                     <quality>Good</quality>
                     <stuff>Steel</stuff>
                 </li>
-                <li Class="ScenPart_StartingThing_Defined">
+                <li Class="Foxian_league.ScenPart_StartingThing_Defined_FoxianExtended">
                 <def>StartingThing_Defined</def>
                     <thingDef>Gun_Autopistol</thingDef>
                 </li>
@@ -102,7 +102,7 @@
                 <!-- Game start dialog -->
                 <li Class="ScenPart_GameStartDialog">
                     <def>GameStartDialog</def>
-                    <text>After losing track of the pursuing soldiers from your ex-commander. You and your group have finally found a place to settle before the supplies were running thin.\nAfter the tiring journey, now only freedom awaits you.\nYou're current relation with the Blood Rain as a consequence of your outrageous heist, but it can still be mended with some concessions from your part. However, in the eyes of the Foxian League, you and your friends are still considered as dangerous outlaws.</text>
+                    <text>After losing track of the pursuing soldiers from your ex-commander. You and your group have finally found a place to settle before the supplies were running thin.\nAfter the tiring journey, now only freedom awaits you.\nYou're current relation with the Blood Rain has deterioted as a consequence of your outrageous heist, but it can still be mended with some concessions from your part. However, in the eyes of the Foxian League, you and your friends are still considered as dangerous outlaws.</text>
                     <closeSound>GameStartSting</closeSound>
                 </li>
             </parts>
