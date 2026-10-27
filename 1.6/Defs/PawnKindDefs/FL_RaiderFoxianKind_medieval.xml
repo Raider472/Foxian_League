@@ -14,8 +14,15 @@
         <apparelTags>
             <li>IndustrialBasic</li>
         </apparelTags>
-        <apparelAllowHeadgearChance>0.25</apparelAllowHeadgearChance>
-        <techHediffsChance>0.15</techHediffsChance>
+        <apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+        <techHediffsChance>0.05</techHediffsChance>
+        <techHediffsMoney>
+            <min>50</min>
+            <max>50</max>
+        </techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
         <inventoryOptions>
             <skipChance>0.90</skipChance>
             <subOptionsChooseOne>
@@ -23,11 +30,6 @@
                     <choiceChance>35</choiceChance>
                     <thingDef>Silver</thingDef>
                     <countRange>35~250</countRange>
-                </li>
-                <li>
-                    <choiceChance>45</choiceChance>
-                    <thingDef>MedicineIndustrial</thingDef>
-                    <countRange>1</countRange>
                 </li>
                 <li>
                     <choiceChance>20</choiceChance>
@@ -48,10 +50,18 @@
         <initialWillRange>2~6</initialWillRange>
         <initialResistanceRange>7~12</initialResistanceRange>
         <maxGenerationAge>35</maxGenerationAge>
+        <techHediffsChance>0.1</techHediffsChance>
+        <techHediffsMoney>
+            <min>50</min>
+            <max>50</max>
+        </techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
         <apparelTags>
             <li>IndustrialBasic</li>
         </apparelTags>
-        <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+        <apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
         <xenotypeSet>
             <xenotypeChances>
                 <FL_Foxian>1</FL_Foxian>
@@ -66,24 +76,25 @@
         <backstoryCryptosleepCommonality>0.02</backstoryCryptosleepCommonality>
         <invNutrition>2.55</invNutrition>
         <gearHealthRange>0.6~1.5</gearHealthRange>
-        <biocodeWeaponChance>0.05</biocodeWeaponChance>
         <initialWillRange>4~7</initialWillRange>
         <initialResistanceRange>8~14</initialResistanceRange>
         <maxGenerationAge>40</maxGenerationAge>
         <combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
         <combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
-        <techHediffsChance>0.1</techHediffsChance>
+        <techHediffsChance>0.07</techHediffsChance>
+        <techHediffsMoney>
+            <min>50</min>
+            <max>50</max>
+        </techHediffsMoney>
         <techHediffsTags>
             <li>Poor</li>
-            <li>Simple</li>
-            <li>ImplantEmpireCommon</li>
         </techHediffsTags>
         <apparelTags>
             <li>IndustrialBasic</li>
             <li>IndustrialAdvanced</li>
             <li>Bloodrain</li>
         </apparelTags>
-        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <apparelAllowHeadgearChance>0.85</apparelAllowHeadgearChance>
         <xenotypeSet>
             <xenotypeChances>
                 <FL_Foxian>1</FL_Foxian>
@@ -98,19 +109,18 @@
         <backstoryCryptosleepCommonality>0.02</backstoryCryptosleepCommonality>
         <invNutrition>2.55</invNutrition>
         <gearHealthRange>0.8~2.8</gearHealthRange>
-        <biocodeWeaponChance>0.15</biocodeWeaponChance>
         <initialWillRange>6~10</initialWillRange>
         <initialResistanceRange>9~17</initialResistanceRange>
         <maxGenerationAge>40</maxGenerationAge>
         <combatEnhancingDrugsChance>0.3</combatEnhancingDrugsChance>
         <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
-        <techHediffsChance>0.25</techHediffsChance>
-        <techHediffsMaxAmount>2</techHediffsMaxAmount>
-        <techHediffsMoney>500~1000</techHediffsMoney>
+        <techHediffsChance>0.09</techHediffsChance>
+        <techHediffsMoney>
+            <min>50</min>
+            <max>50</max>
+        </techHediffsMoney>
         <techHediffsTags>
-            <li>Simple</li>
-            <li>ImplantEmpireCommon</li>
-            <li>FoxianRaiderImplant</li>
+            <li>Poor</li>
         </techHediffsTags>
         <apparelTags>
             <li>IndustrialBasic</li>
@@ -118,7 +128,7 @@
             <li>MedievalMilitary</li>
             <li>BloodrainVeteran</li>
         </apparelTags>
-        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+        <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
         <xenotypeSet>
             <xenotypeChances>
                 <FL_Foxian>1</FL_Foxian>
@@ -133,19 +143,18 @@
         <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
         <invNutrition>2.55</invNutrition>
         <gearHealthRange>0.8~3.5</gearHealthRange>
-        <biocodeWeaponChance>0.3</biocodeWeaponChance>
         <initialWillRange>9~15</initialWillRange>
         <initialResistanceRange>14~28</initialResistanceRange>
         <maxGenerationAge>40</maxGenerationAge>
         <combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
         <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
-        <techHediffsChance>0.35</techHediffsChance>
-        <techHediffsMaxAmount>3</techHediffsMaxAmount>
-        <techHediffsMoney>750~1500</techHediffsMoney>
+        <techHediffsChance>0.05</techHediffsChance>
+        <techHediffsMoney>
+            <min>50</min>
+            <max>50</max>
+        </techHediffsMoney>
         <techHediffsTags>
-            <li>ImplantEmpireCommon</li>
-            <li>ImplantEmpireRoyal</li>
-            <li>FoxianRaiderImplant</li>
+            <li>Poor</li>
         </techHediffsTags>
         <apparelTags>
             <li>IndustrialBasic</li>
@@ -154,7 +163,7 @@
             <li>BloodrainVeteran</li>
             <li>BloodrainElite</li>
         </apparelTags>
-        <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+        <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
         <xenotypeSet>
             <xenotypeChances>
                 <FL_Foxian>1</FL_Foxian>
@@ -180,11 +189,6 @@
         <apparelTags>
             <li>IndustrialAdvanced</li>
         </apparelTags>
-        <techHediffsMoney>500~1000</techHediffsMoney>
-        <techHediffsTags>
-            <li>Simple</li>
-            <li>ImplantEmpireCommon</li>
-        </techHediffsTags>
         <initialResistanceRange>12~20</initialResistanceRange>
         <xenotypeSet>
             <xenotypeChances>
@@ -204,12 +208,6 @@
         <weaponTags>
             <li>MedievalMeleeBasic</li>
         </weaponTags>
-        <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
-        <techHediffsChance>0.06</techHediffsChance>
-        <techHediffsMoney>50~600</techHediffsMoney>
-        <techHediffsTags>
-            <li>Poor</li>
-        </techHediffsTags>
         <initialResistanceRange>10~17</initialResistanceRange>
     </PawnKindDef>
 
@@ -247,7 +245,6 @@
             <li>MedievalMeleeBasic</li>
             <li>NeolithicMeleeBasic</li>
         </weaponTags>
-        <techHediffsChance>0</techHediffsChance>
         <inventoryOptions>
             <skipChance>0.8</skipChance>
             <subOptionsChooseOne>
@@ -268,7 +265,7 @@
     <PawnKindDef ParentName="RaiderFoxian_Scavenger">
         <defName>FL_Foxian_Raider_Scavenger_Melee_Medieval</defName>
         <label>foxian scavenger</label>
-        <apparelMoney>300~800</apparelMoney>
+        <apparelMoney>200~500</apparelMoney>
         <weaponMoney>200~400</weaponMoney>
         <weaponTags Inherit="false">
             <li>NeolithicMeleeBasic</li>
@@ -282,12 +279,11 @@
         <defName>FL_Foxian_Raider_kidnapper_Medieval</defName>
         <label>foxian kidnapper</label>
         <labelPlural>foxian kidnappers</labelPlural>
-        <combatPower>30</combatPower>
+        <combatPower>45</combatPower>
         <gearHealthRange>0.3~0.8</gearHealthRange>
         <itemQuality>Poor</itemQuality>
-        <apparelMoney>50~350</apparelMoney>
+        <apparelMoney>50~550</apparelMoney>
         <weaponMoney>150~300</weaponMoney>
-        <apparelAllowHeadgearChance>0.15</apparelAllowHeadgearChance>
         <apparelTags>
             <li>IndustrialBasic</li>
             <li>IndustrialAdvanced</li>
@@ -295,7 +291,6 @@
         <weaponTags>
             <li>FoxianRaiderKidnapper</li>
         </weaponTags>
-        <techHediffsChance>0</techHediffsChance>
         <inventoryOptions>
             <skipChance>0.64</skipChance>
             <subOptionsChooseOne>
@@ -320,9 +315,8 @@
         <label>foxian pyromaniac</label>
         <combatPower>70</combatPower>
         <gearHealthRange>0.3~0.8</gearHealthRange>
-        <apparelMoney>300~800</apparelMoney>
-        <weaponMoney>205~400</weaponMoney>
-        <apparelAllowHeadgearChance>0.15</apparelAllowHeadgearChance>
+        <apparelMoney>300~750</apparelMoney>
+        <weaponMoney>205~500</weaponMoney>
         <apparelTags Inherit="false">
             <li>IndustrialBasic</li>
             <li>IndustrialAdvanced</li>
@@ -330,7 +324,6 @@
         <weaponTags>
             <li>FoxianRaiderPyromaniac</li>
         </weaponTags>
-        <techHediffsChance>0</techHediffsChance>
         <forcedTraits>
             <li>Pyromaniac</li>
         </forcedTraits>
@@ -362,14 +355,13 @@
         <label>foxian looter</label>
         <labelPlural>foxian looters</labelPlural>
         <combatPower>70</combatPower>
-        <apparelMoney>320~1000</apparelMoney>
-        <weaponMoney>350~1250</weaponMoney>
+        <apparelMoney>300~750</apparelMoney>
+        <weaponMoney>300~900</weaponMoney>
         <weaponTags>
             <li>MedievalMeleeDecent</li>
             <li>MedievalMeleeAdvanced</li>
         </weaponTags>
         <canBeSapper>true</canBeSapper>
-        <techHediffsMoney>100~600</techHediffsMoney>
         <inventoryOptions>
             <skipChance>0.48</skipChance>
             <subOptionsChooseOne>
@@ -394,11 +386,9 @@
     </PawnKindDef>
 
     <PawnKindDef ParentName="RaiderFoxianBase_medium_tier_medieval" Name="FoxianGrenadierBaseMedieval" Abstract="True">
-        <apparelMoney>300~800</apparelMoney>
+        <apparelMoney>200~600</apparelMoney>
         <weaponMoney>400~500</weaponMoney>
         <canBeSapper>true</canBeSapper>
-        <techHediffsChance>0.05</techHediffsChance>
-        <techHediffsMoney>100~600</techHediffsMoney>
         <inventoryOptions>
             <skipChance>0.54</skipChance>
             <subOptionsChooseOne>
@@ -434,8 +424,8 @@
         <label>foxian tracker</label>
         <labelPlural>foxian trackers</labelPlural>
         <combatPower>90</combatPower>
-        <apparelMoney>400~1200</apparelMoney>
-        <weaponMoney>530~900</weaponMoney>
+        <apparelMoney>250~700</apparelMoney>
+        <weaponMoney>130~700</weaponMoney>
         <weaponTags>
             <li>NeolithicRangedDecent</li>
             <li>NeolithicRangedChief</li>
@@ -443,8 +433,6 @@
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>
-        <techHediffsChance>0.25</techHediffsChance>
-        <techHediffsMoney>100~900</techHediffsMoney>
         <inventoryOptions>
             <skipChance>0.44</skipChance>
             <subOptionsChooseOne>
@@ -468,8 +456,8 @@
         <label>foxian breacher</label>
         <labelPlural>foxian breachers</labelPlural>
         <combatPower>80</combatPower>
-        <apparelMoney>700~1200</apparelMoney>
-        <weaponMoney>400~900</weaponMoney>
+        <apparelMoney>300~700</apparelMoney>
+        <weaponMoney>400~700</weaponMoney>
         <canBeSapper>true</canBeSapper>
         <isGoodBreacher>true</isGoodBreacher>
         <weaponTags>
@@ -497,9 +485,9 @@
         <defName>FL_Raider_Foxian_Despoiler_Medieval</defName>
         <label>foxian despoiler</label>
         <labelPlural>foxian despoilers</labelPlural>
-        <combatPower>100</combatPower>
-        <apparelMoney>800~1500</apparelMoney>
-        <weaponMoney>800~1400</weaponMoney>
+        <combatPower>110</combatPower>
+        <apparelMoney>600~1300</apparelMoney>
+        <weaponMoney>600~1200</weaponMoney>
         <gearHealthRange>0.7~3.2</gearHealthRange>
         <weaponTags>
             <li>MedievalMeleeDecent</li>
@@ -530,7 +518,7 @@
         <defName>FL_Foxian_Raider_Local_Commander_Medieval</defName>
         <label>local bloodrain commander</label>
         <combatPower>160</combatPower>
-        <apparelMoney>2000~3500</apparelMoney>
+        <apparelMoney>600~1200</apparelMoney>
         <weaponMoney>2000~2500</weaponMoney>
         <weaponTags>
             <li>FoxianRaiderLegendaryMelee</li>
@@ -541,9 +529,6 @@
         <disallowedTraits>
             <li>Nudist</li>
         </disallowedTraits>
-        <techHediffsChance>0.25</techHediffsChance> 
-        <techHediffsMoney>1500~3000</techHediffsMoney>
-        <biocodeWeaponChance>0.5</biocodeWeaponChance>
         <forcedTraits>
             <li>Psychopath</li>
         </forcedTraits>
@@ -586,9 +571,6 @@
             <li>FL_SkullHelmet</li>
             <li>FL_SkullArmor</li>
         </apparelRequired>
-        <techHediffsChance>0.2</techHediffsChance>
-        <techHediffsMoney>1000~1750</techHediffsMoney>
-        <biocodeWeaponChance>0.5</biocodeWeaponChance>
         <forcedTraits>
             <li>Psychopath</li>
         </forcedTraits>
@@ -626,9 +608,6 @@
         <disallowedTraits>
             <li>Nudist</li>
         </disallowedTraits>
-        <techHediffsChance>0.5</techHediffsChance>
-        <techHediffsMoney>3000~4000</techHediffsMoney>
-        <biocodeWeaponChance>1</biocodeWeaponChance>
         <itemQuality>Excellent</itemQuality>
         <forcedTraits>
             <li>Psychopath</li>

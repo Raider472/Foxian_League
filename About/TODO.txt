@@ -11,4 +11,3 @@ fox spider and elephant
 
 TODO
 Add Compat to new staff when texture is done for melee animation
-Check if patch to MDO is possible

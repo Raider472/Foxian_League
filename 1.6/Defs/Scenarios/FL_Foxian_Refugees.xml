@@ -66,13 +66,13 @@
                     <thingDef>Gun_BoltActionRifle</thingDef>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
-                <def>StartingThing_Defined</def>
+                    <def>StartingThing_Defined</def>
                     <thingDef>MeleeWeapon_LongSword</thingDef>
                     <quality>Good</quality>
                     <stuff>Steel</stuff>
                 </li>
                 <li Class="Foxian_league.ScenPart_StartingThing_Defined_FoxianExtended">
-                <def>StartingThing_Defined</def>
+                    <def>StartingThing_Defined</def>
                     <thingDef>Gun_Autopistol</thingDef>
                 </li>
 

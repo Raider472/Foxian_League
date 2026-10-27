@@ -5,7 +5,8 @@
         <defaultFactionDef>Foxian_League</defaultFactionDef>
         <isFighter>false</isFighter>
         <chemicalAddictionChance>0.05</chemicalAddictionChance>
-        <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <apparelIgnorePollution>true</apparelIgnorePollution>
         <invNutrition>2.55</invNutrition>
         <biocodeWeaponChance>0</biocodeWeaponChance>
         <initialWillRange>2~6</initialWillRange>
@@ -13,8 +14,15 @@
         <apparelTags>
             <li>IndustrialBasic</li>
         </apparelTags>
-        <apparelAllowHeadgearChance>0.25</apparelAllowHeadgearChance>
-        <techHediffsChance>0.15</techHediffsChance>
+        <apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+        <techHediffsMoney>
+            <min>50</min>
+            <max>50</max>
+        </techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.05</techHediffsChance>
         <inventoryOptions>
             <skipChance>0.90</skipChance>
             <subOptionsChooseOne>
@@ -41,10 +49,10 @@
         <race>Human</race>
         <defaultFactionDef>Foxian_League</defaultFactionDef>
         <chemicalAddictionChance>0.05</chemicalAddictionChance>
-        <backstoryCryptosleepCommonality>0.04</backstoryCryptosleepCommonality>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <apparelIgnorePollution>true</apparelIgnorePollution>
         <gearHealthRange>0.6~1</gearHealthRange>
         <invNutrition>2.55</invNutrition>
-        <biocodeWeaponChance>0.1</biocodeWeaponChance>
         <combatEnhancingDrugsChance>0.25</combatEnhancingDrugsChance>
         <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
         <initialWillRange>5~15</initialWillRange>
@@ -57,13 +65,15 @@
             <li>IndustrialBasic</li>
             <li>IndustrialAdvanced</li>
         </apparelTags>
-        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-        <techHediffsChance>0.2</techHediffsChance>
+        <apparelAllowHeadgearChance>0.85</apparelAllowHeadgearChance>
+        <techHediffsMoney>
+            <min>50</min>
+            <max>50</max>
+        </techHediffsMoney>
         <techHediffsTags>
-            <li>Simple</li>
-            <li>Advanced</li>
-            <li>ImplantEmpireCommon</li>
+            <li>Poor</li>
         </techHediffsTags>
+        <techHediffsChance>0.1</techHediffsChance>
         <inventoryOptions>
             <skipChance>0.74</skipChance>
             <subOptionsChooseOne>
@@ -99,14 +109,7 @@
             <li>MedievalMeleeBasic</li>
             <li>MedievalMeleeAdvanced</li>
         </weaponTags>
-        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
-        <techHediffsChance>0.06</techHediffsChance>
-        <techHediffsMoney>50~600</techHediffsMoney>
-        <techHediffsTags>
-            <li>Poor</li>
-            <li>Simple</li>
-            <li>ImplantEmpireCommon</li>
-        </techHediffsTags>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
         <initialResistanceRange>10~17</initialResistanceRange>
     </PawnKindDef>
 
@@ -117,7 +120,7 @@
         <combatPower>45</combatPower>
         <gearHealthRange>1~1</gearHealthRange>
         <itemQuality>Normal</itemQuality>
-        <weaponMoney>200~200</weaponMoney>
+        <weaponMoney>200~300</weaponMoney>
         <apparelMoney>400~600</apparelMoney>
         <apparelTags>
             <li>MedievalMilitary</li>
@@ -128,12 +131,6 @@
         <apparelRequired>
             <li>FL_MerchantAmulet</li>
         </apparelRequired>
-        <techHediffsMoney>600~1200</techHediffsMoney>
-        <techHediffsTags>
-            <li>Simple</li>
-            <li>Advanced</li>
-            <li>ImplantEmpireCommon</li>
-        </techHediffsTags>
         <initialResistanceRange>12~20</initialResistanceRange>
         <xenotypeSet>
             <xenotypeChances>
@@ -164,12 +161,6 @@
         <apparelRequired>
             <li>FL_DiplomatAmulet</li>
         </apparelRequired>
-        <techHediffsMoney>600~1200</techHediffsMoney>
-        <techHediffsTags>
-            <li>Simple</li>
-            <li>Advanced</li>
-            <li>ImplantEmpireCommon</li>
-        </techHediffsTags>
         <initialResistanceRange>12~20</initialResistanceRange>
         <xenotypeSet>
             <xenotypeChances>
@@ -189,7 +180,7 @@
         <gearHealthRange>1~1</gearHealthRange>
         <itemQuality>Good</itemQuality>
         <weaponMoney>200~200</weaponMoney>
-        <apparelMoney>700~1200</apparelMoney>
+        <apparelMoney>400~1000</apparelMoney>
         <apparelTags>
             <li>MedievalMilitary</li>
         </apparelTags>
@@ -200,12 +191,6 @@
         <apparelRequired>
             <li>FL_PsychicAmulet</li>
         </apparelRequired>
-        <techHediffsMoney>600~1200</techHediffsMoney>
-        <techHediffsTags>
-            <li>Simple</li>
-            <li>Advanced</li>
-            <li>ImplantEmpireCommon</li>
-        </techHediffsTags>
         <initialResistanceRange>14~22</initialResistanceRange>
     </PawnKindDef>
 
@@ -216,7 +201,6 @@
         <combatPower>80</combatPower>
         <gearHealthRange>1~1</gearHealthRange>
         <itemQuality>Good</itemQuality>
-        <biocodeWeaponChance>0.5</biocodeWeaponChance>
         <weaponMoney>1555~1855</weaponMoney>
         <apparelMoney>1800~2200</apparelMoney>
         <weaponTags>
@@ -228,13 +212,6 @@
         <apparelRequired>
             <li>FL_NobleFoxianApparel</li>
         </apparelRequired>
-        <techHediffsMoney>900~1400</techHediffsMoney>
-        <techHediffsChance>0.35</techHediffsChance>
-        <techHediffsTags>
-            <li>Advanced</li>
-            <li>ImplantEmpireCommon</li>
-            <li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireRoyal</li>
-        </techHediffsTags>
         <initialResistanceRange>20~35</initialResistanceRange>
         <xenotypeSet>
             <xenotypeChances>
@@ -251,20 +228,13 @@
         <labelPlural>foxian town guards</labelPlural>
         <combatPower>60</combatPower>
         <gearHealthRange>0.6~2</gearHealthRange>
-        <weaponMoney>250~400</weaponMoney>
-        <apparelMoney>400~600</apparelMoney>
+        <weaponMoney>100~400</weaponMoney>
+        <apparelMoney>300~600</apparelMoney>
         <weaponTags>
             <li>MedievalMeleeBasic</li>
             <li>MedievalMeleeAdvanced</li>
         </weaponTags>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
-        <techHediffsChance>0.04</techHediffsChance>
-        <techHediffsMoney>200~700</techHediffsMoney>
-        <techHediffsTags>
-            <li>Poor</li>
-            <li>Simple</li>
-            <li>ImplantEmpireCommon</li>
-        </techHediffsTags>
         <xenotypeSet>
             <xenotypeChances>
                 <FL_Greater_Foxian MayRequire="Ludeon.RimWorld.Biotech">0.1</FL_Greater_Foxian>
@@ -279,21 +249,14 @@
         <labelPlural>foxian infantrymen</labelPlural>
         <combatPower>55</combatPower>
         <gearHealthRange>0.7~3.2</gearHealthRange>
-        <weaponMoney>250~400</weaponMoney>
-        <apparelMoney>950~1450</apparelMoney>
+        <weaponMoney>150~400</weaponMoney>
+        <apparelMoney>600~1000</apparelMoney>
         <weaponTags>
             <li>MedievalMeleeBasic</li>
             <li>MedievalMeleeAdvanced</li>
         </weaponTags>
         <combatEnhancingDrugsChance>0.05</combatEnhancingDrugsChance>
         <combatEnhancingDrugsCount>0~1</combatEnhancingDrugsCount>
-        <techHediffsChance>0.04</techHediffsChance>
-        <techHediffsMoney>200~700</techHediffsMoney>
-        <techHediffsTags>
-            <li>Poor</li>
-            <li>Simple</li>
-            <li>ImplantEmpireCommon</li>
-        </techHediffsTags>
         <xenotypeSet>
             <xenotypeChances>
                 <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">999</FL_Foxian>
@@ -312,8 +275,8 @@
         <label>foxian scout</label>
         <labelPlural>foxian scouts</labelPlural>
         <combatPower>60</combatPower>
-        <weaponMoney>250~500</weaponMoney>
-        <apparelMoney>450~750</apparelMoney>
+        <weaponMoney>150~300</weaponMoney>
+        <apparelMoney>450~850</apparelMoney>
         <gearHealthRange>0.7~1.5</gearHealthRange>
         <weaponTags>
             <li>NeolithicRangedBasic</li>
@@ -322,8 +285,6 @@
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>
-        <techHediffsChance>0.3</techHediffsChance>
-        <techHediffsMoney>100~900</techHediffsMoney>
         <xenotypeSet>
             <xenotypeChances>
                 <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">999</FL_Foxian>
@@ -342,8 +303,8 @@
         <label>foxian archer</label>
         <labelPlural>foxian archers</labelPlural>
         <combatPower>80</combatPower>
-        <weaponMoney>250~500</weaponMoney>
-        <apparelMoney>750~1150</apparelMoney>
+        <weaponMoney>250~350</weaponMoney>
+        <apparelMoney>650~1050</apparelMoney>
         <gearHealthRange>0.7~1.5</gearHealthRange>
         <weaponTags>
             <li>NeolithicRangedBasic</li>
@@ -352,8 +313,6 @@
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>
-        <techHediffsChance>0.3</techHediffsChance>
-        <techHediffsMoney>100~900</techHediffsMoney>
         <xenotypeSet>
             <xenotypeChances>
                 <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">999</FL_Foxian>
@@ -369,11 +328,9 @@
 
     <PawnKindDef ParentName="LeagueFoxianBase_combat_medieval" Name="FoxianGrenadierLeagueBaseMedieval" Abstract="True">
         <apparelMoney>350~850</apparelMoney>
-        <weaponMoney>400~500</weaponMoney>
+        <weaponMoney>400~600</weaponMoney>
         <canBeSapper>true</canBeSapper>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
-        <techHediffsChance>0.1</techHediffsChance>
-        <techHediffsMoney>100~700</techHediffsMoney>
         <initialResistanceRange>10~16</initialResistanceRange>
         <xenotypeSet>
             <xenotypeChances>
@@ -400,14 +357,7 @@
         <canBeSapper>true</canBeSapper>
         <gearHealthRange>0.7~2.5</gearHealthRange>
         <apparelMoney>500~1000</apparelMoney>
-        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-        <weaponMoney>200~900</weaponMoney>
-        <techHediffsChance>0.04</techHediffsChance>
-        <techHediffsTags>
-            <li>Poor</li>
-            <li>Simple</li>
-            <li>DrillArm</li>
-        </techHediffsTags>
+        <weaponMoney>200~500</weaponMoney>
         <weaponTags>
             <li>MedievalMeleeDecent</li>
             <li>MedievalMeleeAdvanced</li>
@@ -437,8 +387,8 @@
         <label>foxian hunter</label>
         <labelPlural>foxian hunters</labelPlural>
         <combatPower>95</combatPower>
-        <apparelMoney>1000~1500</apparelMoney>
-        <weaponMoney>530~1000</weaponMoney>
+        <apparelMoney>1000~1000</apparelMoney>
+        <weaponMoney>530~7000</weaponMoney>
         <gearHealthRange>0.7~2</gearHealthRange>
         <initialResistanceRange>14~21</initialResistanceRange>
         <weaponTags>
@@ -448,8 +398,6 @@
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>
-        <techHediffsChance>0.3</techHediffsChance>
-        <techHediffsMoney>100~900</techHediffsMoney>
         <xenotypeSet>
             <xenotypeChances>
                 <FL_Foxian MayRequire="Ludeon.RimWorld.Biotech">999</FL_Foxian>
@@ -473,16 +421,8 @@
             <li>MedievalMilitary</li>
         </apparelTags>
         <combatEnhancingDrugsChance>0.2</combatEnhancingDrugsChance>
-        <apparelMoney>1000~2000</apparelMoney>
-        <weaponMoney>800~1800</weaponMoney>
-        <techHediffsChance>0.4</techHediffsChance>
-        <techHediffsMaxAmount>1</techHediffsMaxAmount>
-        <techHediffsTags>
-            <li>Simple</li>
-            <li>ImplantEmpireCommon</li>
-        </techHediffsTags>
-        <techHediffsMoney>700~1000</techHediffsMoney>
-        <biocodeWeaponChance>0.25</biocodeWeaponChance>
+        <apparelMoney>1000~1600</apparelMoney>
+        <weaponMoney>300~750</weaponMoney>
         <weaponTags>
             <li>MedievalMeleeAdvanced</li>
             <li>FoxianLeagueOfficerlMelee</li>
@@ -509,8 +449,8 @@
         <combatPower>100</combatPower>
         <gearHealthRange>1~2</gearHealthRange>
         <combatEnhancingDrugsChance>0.5</combatEnhancingDrugsChance>
-        <weaponMoney>735~785</weaponMoney>
-        <apparelMoney>1000~1400</apparelMoney>
+        <weaponMoney>720~1085</weaponMoney>
+        <apparelMoney>1000~1600</apparelMoney>
         <weaponTags>
             <li>FoxianLeagueOfficerlMelee</li>
         </weaponTags>
@@ -518,11 +458,6 @@
             <li>FL_OfficerFoxianArmor</li>
             <li>FL_OfficerFoxianCap</li>
         </apparelRequired>
-        <techHediffsMoney>500~1000</techHediffsMoney>
-        <techHediffsTags>
-            <li>ImplantEmpireCommon</li>
-            <li>Advanced</li>
-        </techHediffsTags>
         <initialWillRange>10~18</initialWillRange>
         <initialResistanceRange>15~24</initialResistanceRange>
         <xenotypeSet>
@@ -552,13 +487,7 @@
             <li>FL_NobleFoxianHelmet</li>
         </apparelRequired>
         <apparelMoney>1500~2200</apparelMoney>
-        <apparelAllowHeadgearChance>0.2</apparelAllowHeadgearChance>
         <weaponMoney>2000~3500</weaponMoney>
-        <techHediffsChance>0.25</techHediffsChance>
-        <techHediffsTags>
-            <li>ImplantEmpireCommon</li>
-            <li>ImplantEmpireRoyal</li>
-        </techHediffsTags>
         <weaponTags>
             <li>FoxianLegendaryMelee</li>
             <li>FoxianLeagueNobleMelee</li>
@@ -594,7 +523,6 @@
         <apparelRequired>
             <li>FL_FoxianOracleRobe</li>
         </apparelRequired>
-        <techHediffsMoney>500~1000</techHediffsMoney>
         <initialWillRange>18~32</initialWillRange>
         <initialResistanceRange>19~32</initialResistanceRange>
         <xenotypeSet>
@@ -627,9 +555,6 @@
         <apparelRequired>
             <li>FL_NobleFoxianArmor</li>
         </apparelRequired>
-        <techHediffsChance>0.35</techHediffsChance>
-        <techHediffsMoney>3000~4000</techHediffsMoney>
-        <biocodeWeaponChance>1</biocodeWeaponChance>
         <xenotypeSet>
             <xenotypeChances>
                 <FL_Greater_Foxian MayRequire="Ludeon.RimWorld.Biotech">999</FL_Greater_Foxian>
@@ -644,6 +569,4 @@
         <initialWillRange>30~45</initialWillRange>
         <initialResistanceRange>30~45</initialResistanceRange>
     </PawnKindDef>
-
-    
 </Defs>

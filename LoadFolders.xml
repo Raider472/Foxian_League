@@ -11,5 +11,6 @@
         <li IfModActive="DimonSever000.FactionLanguages">1.6/Mods/RimLanguages</li>
         <li IfModActive="rim.job.world">1.6/Mods/ForbiddenMod</li>
         <li IfModActive="VanillaExpanded.BaseGeneration">1.6/Mods/VanillaExpandedBase</li>
+        <li IfModActive="DankPyon.Medieval.Overhaul">1.6/Mods/MedievalOverhaul</li>
     </v1.6>
 </loadFolders>

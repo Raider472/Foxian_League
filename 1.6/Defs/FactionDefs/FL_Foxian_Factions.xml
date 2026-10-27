@@ -166,7 +166,7 @@
 				<options>
 					<FL_Foxian_Villager>10</FL_Foxian_Villager>
 					<FL_Foxian_Diplomat>4</FL_Foxian_Diplomat>
-					<FL_Foxian_Villager_Child>2</FL_Foxian_Villager_Child>
+					<FL_Foxian_Villager_Child MayRequire="Ludeon.RimWorld.Biotech">2</FL_Foxian_Villager_Child>
 					<FL_Foxian_Noble>4</FL_Foxian_Noble>
 					<FL_Foxian_Politician>8</FL_Foxian_Politician>
 					<FL_Foxian_Town_Guard>10</FL_Foxian_Town_Guard>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <!--Replace
+                and add misc-->
+            <li Class="PatchOperationReplace">
+                <xpath>
+                    Defs/FactionDef[defName="FoxianPlayerColony" or
+                    defName="FoxianBloodRainPlayerColony"]/techLevel</xpath>
+                <value>
+                    <techLevel>Medieval</techLevel>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>
+                    Defs/FactionDef[defName="FoxianPlayerColony" or
+                    defName="FoxianBloodRainPlayerColony"]/backstoryFilters</xpath>
+                <value>
+                    <backstoryFilters>
+                        <li>
+                            <categories>
+                                <li>Tribal</li>
+                            </categories>
+                        </li>
+                    </backstoryFilters>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FactionDef[defName="FoxianPlayerColony"]/settlementNameMaker</xpath>
+                <value>
+                    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FactionDef[defName="FoxianPlayerColony" or
+                    defName="FoxianBloodRainPlayerColony"]/factionNameMaker</xpath>
+                <value>
+                    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FactionDef[defName="FoxianPlayerColony" or
+                    defName="FoxianBloodRainPlayerColony"]/apparelStuffFilter</xpath>
+                <value>
+                    <apparelStuffFilter>
+                        <thingDefs>
+                            <li>Cloth</li>
+                            <li>DankPyon_IronIngot</li>
+                        </thingDefs>
+                    </apparelStuffFilter>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FactionDef[defName="FoxianPlayerColony" or
+                    defName="FoxianBloodRainPlayerColony"]/startingResearchTags</xpath>
+                <value>
+                    <startingResearchTags>
+                        <li>DankPyon_MedievalStart</li>
+                        <li>TribalStart</li>
+                        <li>DankPyon_TavernOwner</li>
+                    </startingResearchTags>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FactionDef[defName="FoxianPlayerColony" or
+                    defName="FoxianBloodRainPlayerColony"]/startingTechprintsResearchTags</xpath>
+                <value>
+                    <startingTechprintsResearchTags>
+                        <li>DankPyon_MedievalStart</li>
+                        <li>TribalStart</li>
+                        <li>TribalStartTechprints</li>
+                    </startingTechprintsResearchTags>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/FactionDef[defName="FoxianPlayerColony" or
+                    defName="FoxianBloodRainPlayerColony"]</xpath>
+                <value>
+                    <forageabilityFactor>1.7</forageabilityFactor>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/FactionDef[defName="FoxianPlayerColony" or
+                    defName="FoxianBloodRainPlayerColony"]</xpath>
+                <value>
+                    <recipePrerequisiteTags>
+                        <li>Tribal</li>
+                    </recipePrerequisiteTags>
+                </value>
+            </li>
+            <!--Replace
+                members-->
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FactionDef[defName="FoxianPlayerColony"]/basicMemberKind</xpath>
+                <value>
+                    <basicMemberKind>FL_Foxian_Colonist_Medieval</basicMemberKind>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/FactionDef[defName="FoxianBloodRainPlayerColony"]/basicMemberKind</xpath>
+                <value>
+                    <basicMemberKind>FL_Foxian_Blood_Rain_Colonist_Medieval</basicMemberKind>
+                </value>
+            </li>
+            <!--Change
+                ranged weapons and apparels in the scenarios-->
+            <!--Foxian
+                Refugees-->
+            <li Class="PatchOperationReplace">
+                <xpath>
+                    Defs/ScenarioDef[defName="FL_Foxian_Scenario_Refugees"]/scenario/parts/li[thingDef="Gun_Autopistol"]
+                </xpath>
+                <value>
+                    <li Class="ScenPart_StartingThing_Defined">
+                        <def>StartingThing_Defined</def>
+                        <thingDef>MeleeWeapon_Mace</thingDef>
+                        <quality>Normal</quality>
+                        <stuff>Steel</stuff>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>
+                    Defs/ScenarioDef[defName="FL_Foxian_Scenario_Refugees"]/scenario/parts/li[thingDef="Gun_BoltActionRifle"]
+                </xpath>
+                <value>
+                    <li Class="ScenPart_StartingThing_Defined">
+                        <def>StartingThing_Defined</def>
+                        <thingDef>DankPyon_Crossbow</thingDef>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>
+                    Defs/ScenarioDef[defName="FL_Foxian_Scenario_Refugees"]/scenario/parts/li[thingDef="Apparel_AdvancedHelmet"]
+                </xpath>
+                <value>
+                    <li Class="ScenPart_StartingThing_Defined">
+                        <def>StartingThing_Defined</def>
+                        <thingDef>DankPyon_Headgear_PaddedNasalHelmet</thingDef>
+                        <stuff>Steel</stuff>
+                    </li>
+                </value>
+            </li>
+            <!--Blood
+            Rain Exilee-->
+            <li Class="PatchOperationReplace">
+                <xpath>
+                    Defs/ScenarioDef[defName="FL_Foxian_BloodRain_Scenario_Refugees"]/scenario/parts/li[thingDef="FL_Gun_HarpoonGun"]
+                </xpath>
+                <value>
+                    <li Class="ScenPart_StartingThing_Defined">
+                        <def>StartingThing_Defined</def>
+                        <thingDef>DankPyon_Crossbow</thingDef>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>
+                    Defs/ScenarioDef[defName="FL_Foxian_BloodRain_Scenario_Refugees"]/scenario/parts/li[thingDef="Gun_Autopistol"]
+                </xpath>
+                <value>
+                    <li Class="ScenPart_StartingThing_Defined">
+                        <def>StartingThing_Defined</def>
+                        <thingDef>MeleeWeapon_Mace</thingDef>
+                        <quality>Normal</quality>
+                        <stuff>Steel</stuff>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>
+                    Defs/ScenarioDef[defName="FL_Foxian_Scenario_Refugees" or
+                    defName="FL_Foxian_BloodRain_Scenario_Refugees"]/scenario/parts/li[thingDef="MedicineIndustrial"]/thingDef
+                </xpath>
+                <value>
+                    <thingDef>MedicineHerbal</thingDef>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

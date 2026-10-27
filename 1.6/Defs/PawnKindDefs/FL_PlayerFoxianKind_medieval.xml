@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <PawnKindDef ParentName="BasePlayerPawnKind" Name="FoxianColonistMedieval">
+        <defName>FL_Foxian_Colonist_Medieval</defName>
+        <label>foxian colonist</label>
+        <defaultFactionDef>FoxianPlayerColony</defaultFactionDef>
+        <chemicalAddictionChance>0.03</chemicalAddictionChance>
+        <apparelTags>
+            <li>MedievalBasic</li>
+            <li>MedievalMilitaryBasic</li>
+            <li>MedievalMilitaryDecent</li>
+            <li>DankPyon_PeasantHelmet</li>
+            <li>DankPyon_BillmanHelmet</li>
+            <li>DankPyon_FootmanHelmet</li>
+        </apparelTags>
+        <apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+        <apparelMoney>400~600</apparelMoney>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <techHediffsChance>0.03</techHediffsChance>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <initialResistanceRange>13~21</initialResistanceRange>
+        <xenotypeSet>
+            <xenotypeChances>
+                <FL_Foxian>0.85</FL_Foxian>
+                <FL_Greater_Foxian>0.15</FL_Greater_Foxian>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="FoxianColonistMedieval">
+        <defName>FL_Foxian_Blood_Rain_Colonist_Medieval</defName>
+        <defaultFactionDef>FoxianBloodRainPlayerColony</defaultFactionDef>
+        <apparelTags>
+            <li>DankPyon_BrigandThug</li>
+            <li>DankPyon_BrigandRaider</li>
+        </apparelTags>
+        <xenotypeSet>
+                    <xenotypeChances>
+                        <FL_Foxian>0.99</FL_Foxian>
+                        <FL_Greater_Foxian>0.01</FL_Greater_Foxian>
+                    </xenotypeChances>
+                </xenotypeSet>
+    </PawnKindDef>
+</Defs>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <factionDef ParentName="PlayerFactionBase">
+    <FactionDef ParentName="PlayerFactionBase">
         <defName>FoxianPlayerColony</defName>
         <label>Foxian Refugees</label>
         <description>A group of Foxian refugees who managed to survive the harsh world of the rim after the destruction of their settlement.</description>
@@ -34,9 +34,9 @@
                 <li>Cloth</li>
             </thingDefs>
         </apparelStuffFilter>
-    </factionDef>
+    </FactionDef>
 
-    <factionDef ParentName="PlayerFactionBase">
+    <FactionDef ParentName="PlayerFactionBase">
         <defName>FoxianBloodRainPlayerColony</defName>
         <label>Foxian Blood Rain Exilee</label>
         <description>A group of Foxian Exilee belonging to the Blood Rain who managed to survive the harsh world of the rim after an argument with their old boss.</description>
@@ -70,5 +70,5 @@
                 <li>Cloth</li>
             </thingDefs>
         </apparelStuffFilter>
-    </factionDef>
+    </FactionDef>
 </Defs>

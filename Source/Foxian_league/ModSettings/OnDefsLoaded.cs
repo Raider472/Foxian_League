@@ -49,7 +49,7 @@ namespace Foxian_league {
         }
 
         //Medieval Mode Only
-        //Method to Prepare the pawnKindDefs List and etc. for medieval mode
+        //Method to Prepare the pawnKindDefs List and etc. for medieval mode (Not a patch to medieval overhaul)
         private static void prepareMedievalMode() {
             Log.Message("Preparing medieval mode settings...");
             FactionDef foxianLeagueDef = DefDatabase<FactionDef>.GetNamed("Foxian_League");
