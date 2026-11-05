@@ -14,14 +14,15 @@ namespace FoxianPsycast{
     public class FL_Ability_SpawnTreant : VEF.Abilities.Ability {
 
         public static readonly SimpleCurve DurationFromPsychicSentivity = new SimpleCurve {
-            new CurvePoint(0.5f, 60000f),
-            new CurvePoint(1f, 150000f),
-            new CurvePoint(1.5f, 270000f),
-            new CurvePoint(2f, 360000f),
-            new CurvePoint(2.5f, 480000f),
-            new CurvePoint(3f, 600000f),
-            new CurvePoint(4f, 900000f),
-            new CurvePoint(5f, 1000000f)
+            new CurvePoint(0.5f, 90000f),
+            new CurvePoint(1f, 200000f),
+            new CurvePoint(1.5f, 300000f),
+            new CurvePoint(2f, 450000f),
+            new CurvePoint(2.5f, 600000f),
+            new CurvePoint(3f, 900000f),
+            new CurvePoint(4f, 1800000f),
+            new CurvePoint(5f, 2700000f),
+            new CurvePoint(10f, 6000000f)
         };
         public override bool CanAutoCast => false;
 

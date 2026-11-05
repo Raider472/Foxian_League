@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Localization>
+    <NaturastodisPath>
+        <Title>Naturastodis</Title>
+        <Description>Naturastodis is a path only available to pawns with the natural meditation.
+            They
+            are capable of harnessing the power of nature to hinder their enemies or to enhance your
+            pawns or animals.</Description>
+        <Tooltip>Naturastodis psycasters are mostly foxians or non-foxians living among them.
+            Capable of
+            exploiting nature itself for their own goal. They are generally seen as support
+            psycasters,
+            as they are capable of helping their allies by healing them, strengthening tamed
+            animals, or
+            by granting them blessings from sacrifice rituals. Additionally, they can also weaken
+            their
+            enemies with a variety of offensive psycasts, such as launching wood lances or placing
+            artificial wood mines.
+        </Tooltip>
+    </NaturastodisPath>
+
+    <Abilities>
+        <WoodLance>
+            <Title>wood lance</Title>
+            <Description>Condenses and converts psychic entropy into artificial wood and sends a
+                wood lance to the targeted enemy.</Description>
+        </WoodLance>
+
+        <NatureFinest>
+            <Title>nature's finest</Title>
+            <Description>Psychically enhance the tamed animals around the psycasters. The affected
+                animals will become more agile, improve their melee proficiency, and all bleeding
+                wounds will almost instantly seal themselves for the duration of the effect.</Description>
+        </NatureFinest>
+
+        <ThornExplosion>
+            <Title>thorn explosion</Title>
+            <Description>Focuses and directs psychic entropy into the targeted soils to manipulate
+                the nearby wood matter within, thereby triggering an explosion of needles. Any
+                enemies hit by the explosion will be weakened by the psychic toxins infused into
+                those needles.</Description>
+        </ThornExplosion>
+
+        <BarSkin>
+            <Title>bar skin</Title>
+            <Description>Psychically enhance the target's flesh, turning it into living wood. The
+                effect is temporary, and the duration scales with the psy-sensitivity of the
+                psycaster. The living bark allows the chosen target to become more resistant to
+                incoming hits and damage at the cost of being slower and very vulnerable to fire.</Description>
+        </BarSkin>
+
+        <NatureHealing>
+            <Title>nature's healing</Title>
+            <Description>Psychically heals the pawns around the psycaster. The user will instantly
+                soothe random wounds of any allies and animals within their range. The strength of
+                this psycast will scale with the user's psychic sensitivity.</Description>
+        </NatureHealing>
+
+        <SporeInfection>
+            <Title>spore infection</Title>
+            <Description>Spread psychic spore-like particles that infect the nearby pawns within the
+                area of effect. They will hinder anyone's ability to fight and think, and they will
+                multiply within the subject's body for each hit from an offensive psycast coming
+                from this path. The spores themselves are not lethal. The worst they can do is make
+                someone unconscious. However, accidentally hitting an innocent bystander or an ally
+                from another faction will be considered a hostile action and worsen diplomatic
+                relations.</Description>
+        </SporeInfection>
+
+        <WoodTrap>
+            <Title>wood trap</Title>
+            <Description>Permeate a soily surface with psychic entropy and morph the plant matter
+                around into an artificial wooden landmine filled with explosive gas and thick wooden
+                needles that will spew out everywhere upon detonation. Although the mine doesn't do
+                as much damage as a normal IED trap, enemies that get hit by the needles will be
+                physically weaker and less effective in close combat for a while.</Description>
+        </WoodTrap>
+
+        <NatureGuardian>
+            <Title>nature's guardians</Title>
+            <Description>Psychically transmute a tree into a living being. The guardian treant is
+                immediately loyal to the person who summoned it and will protect that person until
+                death or expiration. The Guardian is slow and bulky, but it is capable of
+                withstanding many damages and delivering heavy blows. It does not need to sleep or
+                eat food, but they are not permanent and will disappear if they do not die in combat
+                before. Its duration is dependent on the psycaster's psychic sensitivity. When it
+                dies, it will vanish out of thin air.</Description>
+        </NatureGuardian>
+
+        <NaturaBloom>
+            <Title>natura bloom</Title>
+            <Description>Condense the soil with psychic entropy and germinate a sapling of a Natura
+                tree. The sapling can only be psychically rooted on a suitable terrain for a plant.
+            </Description>
+        </NaturaBloom>
+
+        <NatureSacrifice>
+            <Title>nature's sacrifice</Title>
+            <Description>Transform a downed pawn into a sacrificial tree. Allowing you to offer it
+                as a sacrifice and perform a sacrificial ritual with the god in exchange for a
+                temporary bonus. The bonus received depends on the psychic sensitivity of the pawn
+                organizing the ritual. In case the ritual fails, the ritualist will suffer a debuff.</Description>
+        </NatureSacrifice>
+
+        <FateManipulation>
+            <Title>fate manipulation</Title>
+            <Description>Psychically focus to bend the odds and forcefully create an incident. The
+                incident will be random. There is also a rare possibility for nothing to happen. An
+                excellent outcome is guaranteed to occur after a specific number of uses.</Description>
+        </FateManipulation>
+    </Abilities>
+
+    <Apparels>
+        <BloodRainDeel>
+            <Title>blood deel</Title>
+            <Description>A traditional outfit from the blood rain reinforced with steel plates. It
+                is used to convey their importance within the organization. Despite the outfit not
+                being as protective compared to conventional armor, it is light to guarantee that
+                the wearer can move without hindrance and embedded with blood rain runes to
+                physically enhance the wearer. It is rumored that the empress gave these outfits to
+                those who she trusts the most to carry out her more deranged orders.</Description>
+        </BloodRainDeel>
+
+        <BloodRainSkullArmor>
+            <Title>bloodrain skull armor</Title>
+            <Description>An armor made from metallic materials and bones that is typically worn by
+                veteran and even elite members of the blood rain. The armor features skulls as
+                shoulder pads and is carved with basic runes, enhancing the physical prowess of the
+                wearer. The human skulls are generally from unfortunate victims who met their demise
+                in a blood rain raid or from a deceased blood rain member relative.</Description>
+        </BloodRainSkullArmor>
+
+        <BloodRainSkullHelmet>
+            <Title>bloodrain skull helmet</Title>
+            <Description>A helmet made from a human skull and reinforced with metallic material. It
+                is commonly used by veteran and elite members of the blood rain.</Description>
+        </BloodRainSkullHelmet>
+
+        <FOPSVest>
+            <Title>F.O.P.S bulletproof vest</Title>
+            <Description>A complete bulletproof vest used by F.O.P.S operators. The Federal
+                Operations &amp; Protection Service is a special unit comprising the best soldiers
+                of the league. They are given the most difficult tasks that the league's army can't
+                accomplish without significant sacrifices. Their second mission is protecting
+                important assets of the league, whether they are important people or items. The vest
+                is lightweight and includes ammunition pockets, which allow the wearer to shoot
+                faster and with greater precision while granting them improved mobility.</Description>
+        </FOPSVest>
+
+        <FOPSBeret>
+            <Title>F.O.P.S beret</Title>
+            <Description>A beret belonging to the F.O.P.S special services. While not offering much
+                protection compared to a helmet. It allows the wearer to be lighter and more
+                confident in the handling of their ranged weapon.</Description>
+        </FOPSBeret>
+
+        <OracleRobe>
+            <Title>foxian oracle robe</Title>
+            <Description>A prestigious ceremonial robe with patterns made of hyperweave and Eltex
+                that is awarded only to the most accomplished Foxian psycasters. Not only is this
+                robe a status of power for any acolyte within the church, but it also strengthens
+                the wielder's psychic ability. For one to become an oracle, they must dedicate their
+                entire life or a good chunk of their life communing with their chosen gods in hope
+                of receiving their most divine benediction. Once blessed, they have to prove their
+                worth by accomplishing various tasks related to their chosen god to finally get the
+                approval of becoming an oracle.</Description>
+        </OracleRobe>
+    </Apparels>
+
+    <Weapons>
+        <FOPSRiffle>
+            <Title>F.O.P.S service rifle</Title>
+            <Description>A suppressed assault rifle designed for covert operations used by F.O.P.S.
+                operators when stealth is an option. It fires two poisonous rounds per burst, has
+                good range, and has an accuracy ideal for long-range targets.</Description>
+        </FOPSRiffle>
+
+        <HarpoonGun>
+            <Title>harpoon blaster</Title>
+            <Description>A makeshift harpoon launcher used by the bloodrain to deal with armored
+                targets. It has medium range with good accuracy against medium and long-range
+                targets. At close range, its awkward design makes it difficult to aim. The harpoons
+                hit hard and have high armor penetration. However, due to the clunky design of the
+                weapon, reloading and aiming it takes quite a long time.</Description>
+        </HarpoonGun>
+
+        <OracleStaff>
+            <Title>oracle staff</Title>
+            <Description>A wooden staff with a piece of Eltex fixed on its tip. The staff in itself
+                is not a dangerous weapon, but it is used by Foxian psycasters to enhance and
+                support their psycasting abilities. This kind of staff is generally awarded to
+                Foxian psycasters who managed to prove themselves by reaching the rank of Oracle
+                within their local church. Reaching that rank is no easy feat, as someone would need
+                to potentially dedicate their entire life communing with their gods in hope of
+                receiving their approvals. The staff is capable of absorbing the life essence of
+                enemies it has killed in battle and turning that essence into psyfocus for the
+                wielder.</Description>
+        </OracleStaff>
+    </Weapons>
+
+    <Effects>
+        <NaturaTreeConnection>
+            <Title>natural connection</Title>
+            <Description>This devotee has received the blessing of a Natura tree for its devotion.
+                The blessings permanently increase the psychic sensitivity of the chosen individual.
+                The bonus will get bigger as more blessings are earned.</Description>
+            <stages>
+                <li>novice</li>
+                <li>acolyte</li>
+                <li>devotee</li>
+                <li>disciple</li>
+                <li>adept</li>
+                <li>venerated</li>
+                <li>enlighten</li>
+                <li>enlighten</li>
+                <li>exalted</li>
+                <li>revered</li>
+                <li>chosen</li>
+            </stages>
+        </NaturaTreeConnection>
+
+        <RottenResilience>
+            <Title>Rotten resilience</Title>
+            <Description>This creature exhibits unholy resistance as a consequence of its rotten
+                body. When hit by an attack, there is a possibility that the damage received will be
+                reduced by a percentage.</Description>
+        </RottenResilience>
+
+        <SporeInfectionEffect>
+            <Title>spore infection</Title>
+            <Description>This person has been temporarily psychically infected by a spore-like
+                particle, hindering his physical and mental capabilities.</Description>
+        </SporeInfectionEffect>
+
+        <TreantSpecialBodyEffect>
+            <Title>psychical body</Title>
+            <Description>This creature's body is not entirely physical but rather psychical, and
+                this being will disappear after a certain amount of time. It cannot bleed and
+                doesn't need to eat anything. If the creature dies, it will vanish instead of
+                leaving a body.</Description>
+        </TreantSpecialBodyEffect>
+
+        <BarSkinEffect>
+            <Title>bar skin</Title>
+            <Description>This person has received a psychical blessing that temporarily hardens the
+                external layer of their skin, making them more resistant to incoming damages at the
+                cost of being slower and very vulnerable to fire.</Description>
+        </BarSkinEffect>
+
+        <NatureFinestEffect>
+            <Title>animal overclock</Title>
+            <Description>This animal has been temporarily psychically altered by a psycaster. Their
+                instincts, speed, and strength have been enhanced. Their bleeding wounds will also
+                close instantaneously.</Description>
+        </NatureFinestEffect>
+
+        <BlessingCunning>
+            <Title>blessing of the cunning</Title>
+            <Description>This person has been blessed by one of the foxian sacred beast representing
+                the aspect of trickery and knowledge. For some ungodly reason, it decided to bless
+                this person by giving them dexterous hands and increased sights to strengthen their
+                shooting ability. For what purpose ? We will never know, unless there was none to
+                begin with.</Description>
+        </BlessingCunning>
+
+        <BlessingFortitude>
+            <Title>blessing of fortitude</Title>
+            <Description>This person has been blessed by one of the foxian sacred beasts
+                representing the aspect of the foxian will and tenacity to live. This person will
+                temporarily be able to work faster and for a longer period of time without the need
+                for sleeping.</Description>
+        </BlessingFortitude>
+
+        <BlessingHarmony>
+            <Title>blessing of harmony</Title>
+            <Description>his person has been blessed by the sacred beast Vulpas. Granting him a
+                fragment of his power for a limited time.</Description>
+        </BlessingHarmony>
+
+        <BlessingPower>
+            <Title>Blessing of Power</Title>
+            <Description>This person has been blessed by one of the foxian sacred beasts
+                representing the aspect of duty and bravery. This person will receive divine
+                strength to act upon the will of the beast to physically protect its allies or to
+                end as many threats as possible.</Description>
+        </BlessingPower>
+
+        <CursesDrain>
+            <Title>curses of drain</Title>
+            <Description>This person has been cursed by an entity seeking to drain its psychic
+                sensitivity. For a limited time, this individual will have its physical capacity
+                reduced.</Description>
+        </CursesDrain>
+
+        <CurseRot>
+            <Title>curses of decay</Title>
+            <Description>This person has been cursed by one of the foxian sacred beasts representing
+                the aspect of decay and decadence. They will become temporarily sick until the
+                disease goes away on its own. The disease can worsen the condition of the living
+                subject and can even outright kill him if untreated.</Description>
+        </CurseRot>
+
+        <CursesSubmission>
+            <Title>curses of compliance</Title>
+            <Description>This person has been cursed by one of the foxian sacred beasts representing
+                the aspect of subjugation and domination. They are constantly fighting the urge to
+                give up their struggle for survival and to submit to the enemies. While this effect
+                is active, they will be less effective in combat and be gullible to foreign
+                ideologies.</Description>
+        </CursesSubmission>
+
+        <CursesNightmare>
+            <Title>curses of nightmares</Title>
+            <Description>This person has been cursed by one of the foxian sacred beasts representing
+                the aspect of terror and inevitable dread. They will experience terrible nightmares,
+                preventing them from sleeping and working efficiently for the duration of the curse.</Description>
+        </CursesNightmare>
+    </Effects>
+
+    <Implants>
+        <FakeEars>
+            <Title>foxian fake ears</Title>
+            <Description>An installed pair of Foxian fake ears. They inflict continuous pain on the
+                user and make them more prone to obey their masters.</Description>
+        </FakeEars>
+
+        <PainNail>
+            <Title>pain nail</Title>
+            <Description>An installed pain nail. It will inflict pain on the user in exchange for
+                strength and speed. The wearer will be in constant pain and become more vulnerable
+                to damages, and any extra pain will feel more intense. They will be unable to focus
+                when learning new skills.</Description>
+        </PainNail>
+    </Implants>
+
+    <Events>
+        <NaturaFlowerSprout>
+            <Label>Natura flower sprout</Label>
+            <Description>A Natura flower has sprouted nearby!\n\nHarvest it to collect a Natura
+                seed. This special seed can be used to plant a sublime Natura tree.\n\nAny colonists
+                with the natural meditation focus type can meditate near the tree and might receive
+                its blessing by dedicating their meditating time near it. Being blessed by a Natura
+                tree will permanently enhance the psychic sensitivity of the favored colonist.</Description>
+        </NaturaFlowerSprout>
+    </Events>
+
+    <Scenarios>
+        <Title>Blood Rain in Exiles</Title>
+        <Description>After a heated argument with your former local commander. You and your friends
+            decided that you had enough of her incompetence and planned to leave in blood rain
+            style.\nAfter successfully stealing some supplies from your former comrades, you and
+            your group finally settle somewhere far from your former base before your supplies run
+            out completely.</Description>
+        <Summary>Three Foxian blood rain exiles attempting to create a new settlement after an
+            argument with their former local boss.</Summary>
+        <MessageBox>After losing track of the pursuing soldiers from your ex-commander. You and your
+            group have finally found a place to settle before the supplies were running thin.\nAfter
+            the tiring journey, now only freedom awaits you.\nYou're current relation with the Blood
+            Rain has deterioted as a consequence of your outrageous heist, but it can still be
+            mended with some concessions from your part. However, in the eyes of the Foxian League,
+            you and your friends are still considered as dangerous outlaws.</MessageBox>
+    </Scenarios>
+
+    <Animals>
+        <Hulkarash>
+            <Description>A fox-like beast that resembles like a massive mammoth and that has 7
+                tusks. Hulkarash are an offspring of one of the sacred beasts related to subjugation
+                and domination who sided with the Blood Rain when the first Foxian civilization
+                collapsed. They are used as war beasts when sieging down settlements due to their
+                sheer strength and their ability to spew liquid fire from their mouths. They are
+                considered as the ultimate weapon of mass destruction by the bloodrain and finding
+                one of them that is non-hostile in the wild is a rare sight.</Description>
+        </Hulkarash>
+
+        <TricksterCat>
+            <Description>A hybrid cat-fox-like creature commonly seen in foxian settlements, they
+                are pretty much the equivalent of normal cats except for their innate talents at
+                reading the future and bending the odds. Their nickname comes from the fact that
+                they love being mischievous and their theorized association with the sacred beast
+                related to trickery and knowledge. Despite their mischievousness, they can show
+                affection to their owners if they are not busy trying to curse your colony with mild
+                inconvenience.</Description>
+        </TricksterCat>
+
+        <Vulpano>
+            <Description>A large fox-like herbivore similar to a muffalo. Vulpanos are quite docile,
+                but when enraged they can be deadly. Tamed Vulpanos can be trained and used as pack
+                animals.\nThe Foxian League relies heavily on these hardy beasts, using them almost
+                exclusively as pack animals for trade caravans and long-distance transport.
+                Encountering one of those outside of Foxian settlements is a rare sight. Despite
+                bearing some physical similarities and even sharing some DNA with muffalos. There
+                are currently no scientific explanations yet to define a hypothesis as to how it
+                could have happened.</Description>
+        </Vulpano>
+
+        <Vulyakko>
+            <Description>A fox-like tiger hybrid that is half living and half rotting. Vulyakkos are
+                an offspring of one of the sacred beasts related to decay and decadence who sided
+                with the Blood Rain when the first foxian civilization collapsed. Vulyakkos are used
+                as cannon fodder or hunting beasts by raiders from the Blood Rain. Due to their
+                rotting condition, Vulyakkos can't naturally reproduce and can survive days without
+                eating. Nobody currently knows what happened to the sacred beasts bearing those
+                hideous offspring.</Description>
+        </Vulyakko>
+
+        <GuardianTreant>
+            <Title>guardian treant</Title>
+            <Description>A sacred guardian of nature made alive thanks to the psychic entropy of a
+                Naturastodis. This creature might be slow, but it's capable of withstanding heavy
+                damage and can deliver some as well. Unfortunately for the Naturastodis, this
+                creature is not permanent and will vanish at some point if it does not die in a
+                fight before that. During its duty, this creature will not sleep or eat anything.</Description>
+        </GuardianTreant>
+    </Animals>
+
+    <Plants>
+        <NaturaTree>
+            <Title>Natura tree</Title>
+            <Description>An unknown tree that is exclusively found on this rimworld, it's typically
+                seen inside settlements belonging to the Foxian League. Nevertheless, some
+                outlanders have claimed to have witnessed some of these trees outside the sphere of
+                influence of the Foxian League. Foxians and naturalist psycasters believe that they
+                can receive blessings when meditating next to it. They only grow from seeds
+                extracted from Natura flowers or planted by a psycaster with the hidden coveted
+                knowledge.</Description>
+        </NaturaTree>
+
+        <SacrificialTree>
+            <Title>sacrificial tree</Title>
+            <Description>An artificial morbid tree with a humanoid silhouette visible on its bark.
+                Its name comes from its association with the sacrificial ritual that Naturastodis
+                psycasters perform in hopes of receiving blessings from their gods. It is unknown
+                why this tree has this specific humanoid form from most people, except for the
+                Naturastodis psycasters keeping this information secret. But it's heavily believed
+                amongst non-psycaster foxians that a human body was used in the making of this tree.</Description>
+        </SacrificialTree>
+    </Plants>
+
+    <Trainables>
+        <FateManipulation>
+            <Title>fate manipulation</Title>
+            <Description>Command the animal to manipulate fates and forcefully trigger an incident
+                that might be positive or negative.</Description>
+        </FateManipulation>
+
+        <FireSpew>
+            <Title>fire spew</Title>
+            <Description>Command the animal to spit a stream of sticky, flammable bile from its
+                mouth that ignites anything in contact with it.</Description>
+        </FireSpew>
+    </Trainables>
+
+    <Buildings>
+        <WoodMine>
+            <Title>Explosive wooden trap</Title>
+            <Description>An artificial trap made by a Naturastodis psycaster, it is composed of wood
+                and sensible gas inside. It detonates upon someone stepping on it or a bullet
+                impact. Since it is made of wood, it blends easily in any terrain making it near
+                impossible to spot it aside from calm animals. It cannot be placed near adjacent
+                traps. When the trap explodes, it propels hundreds of toxic wooden needles into its
+                surrounding area. Anyone struck by them will experience numbness depending on how
+                much damage they've been inflicted with.</Description>
+        </WoodMine>
+    </Buildings>
+
+    <Ritual>
+        <SacrificialTreeRitual>
+            <Title>sacrificial tree ritual</Title>
+            <Description>One person will perform the ritual sacrifice with the chosen tree. Others
+                might gather around the ritualist to strengthen the ritual. If everything goes well,
+                the chances for the ritualist to receive a benediction will increase. Otherwise, he
+                might receive a curse. The outcome of the ritual depends on the ritualist's psychic
+                sensitivity and the number of participants.</Description>
+        </SacrificialTreeRitual>
+    </Ritual>
+
+    <KeyLocalization>
+        <FoxianModName>Foxian Race</FoxianModName>
+        <FoxianModSettingsWarning>Changing any values might require a restart or reloading a save !</FoxianModSettingsWarning>
+        <FoxianInformation>You can get more information on each setting by hovering your mouse on the labels.</FoxianInformation>
+        <FoxianInformationDesc>Yes, even this one...</FoxianInformationDesc>
+        <HoverForInfo>(Hover for more informations)</HoverForInfo>
+        <PsychicManipulationSettings>Psychic Manipulation Threshold</PsychicManipulationSettings>
+        <PsychicManipulationSettingsDesc>This number means you gain a bonus social skill point for every x% psychic sensitivity beyond 100%. Each pawn has a basic value of 100% psychic sensitivity (unless they have traits or genes that change the default value).\nBy default, the value of the threshold is 25%, so a pawn with 150% psychic sensitivity will gain 2 bonus social skills points.</PsychicManipulationSettingsDesc>
+        <PsychicManipulationSettingSkillsDropDown>Psychic manipulation affects this skill: </PsychicManipulationSettingSkillsDropDown>
+        <PsychicManipulationSettingSkillsDropDownDesc>The skill shown in the button will be the one to receive the bonus skill points for the gene.</PsychicManipulationSettingSkillsDropDownDesc>
+        <PsychicManipConstruction>Construction</PsychicManipConstruction>
+        <PsychicManipPlants>Plants</PsychicManipPlants>
+        <PsychicManipIntellectual>Intellectual</PsychicManipIntellectual>
+        <PsychicManipMining>Mining</PsychicManipMining>
+        <PsychicManipShooting>Shooting</PsychicManipShooting>
+        <PsychicManipMelee>Melee</PsychicManipMelee>
+        <PsychicManipSocial>Social</PsychicManipSocial>
+        <PsychicManipAnimals>Animals</PsychicManipAnimals>
+        <PsychicManipCooking>Cooking</PsychicManipCooking>
+        <PsychicManipMedicine>Medicine</PsychicManipMedicine>
+        <PsychicManipArtistic>Artistic</PsychicManipArtistic>
+        <PsychicManipCrafting>Crafting</PsychicManipCrafting>
+        <AnimalConnectionSettings>Animal Connection Trigger Threshold</AnimalConnectionSettings>
+        <AnimalConnectionSettingsDesc>This threshold represents how much psychic sensitivity a pawn needs to trigger the effect of "Animal Connection". By default, the value is set to 150%. Setting that value to 0% will disable the trigger.</AnimalConnectionSettingsDesc>
+        <GeneticPurityFoxianTrigger>Should a person be a Foxian to trigger the first behaviour of genetic purity gene ?</GeneticPurityFoxianTrigger>
+        <GeneticPurityFoxianTriggerDesc>By default, only a Foxian or a person considered "Foxian enough" can birth an offspring with xenotype A or B. Otherwise, they will transmit all their genes to the offspring. By disabling this condition, anyone with this gene would be able to birth Xenotype A or B, whetever they are Foxian or not.</GeneticPurityFoxianTriggerDesc>
+        <GeneticPuritySettingXenotypeA>Choose xenotype A: </GeneticPuritySettingXenotypeA>
+        <GeneticPuritySettingXenotypeADesc>The xenotype shown in the button will be the one used for creating an offspring with xenotype A. By default, xenotype A is set to the Foxian xenotype.</GeneticPuritySettingXenotypeADesc>
+        <GeneticPuritySettingXenotypeB>Choose xenotype B: </GeneticPuritySettingXenotypeB>
+        <GeneticPuritySettingXenotypeBDesc>The xenotype shown in the button will be the one used for creating an offspring with xenotype B. By default, xenotype B is set to the Greater Foxian xenotype.</GeneticPuritySettingXenotypeBDesc>
+        <GeneticPurityXenotypeAChanceSlider>Chance for offspring to be xenotype A</GeneticPurityXenotypeAChanceSlider>
+        <GeneticPurityXenotypeAChanceSliderDesc>By default, the offspring has a 70% chance to be born as xenotype A. If the value is set to 0%, the offspring will always be born as xenotype B. If set at 100%, the offspring will always be born as xenotype A.</GeneticPurityXenotypeAChanceSliderDesc>
+        <GeneticPurityXenotypeMaleChanceSlider>Chance for an offspring to be a male (xenotype B)</GeneticPurityXenotypeMaleChanceSlider>
+        <GeneticPurityXenotypeMaleChanceSliderDesc>By default, when the offspring is born with xenotype B, it has a 70% chance to be born as a male. If this value is set at 0%, the offspring will always be a female. If set at 100%, the offspring will always be a male when born with xenotype B.</GeneticPurityXenotypeMaleChanceSliderDesc>
+        <GeneticPurityXenotypeFemaleChanceSliderAlt>Chance for an offspring to be a female (when mother is not a Foxian)</GeneticPurityXenotypeFemaleChanceSliderAlt>
+        <GeneticPurityXenotypeFemaleChanceSliderAltDesc>By default, when the mother is not a Foxian, the offspring has a 80% chance to be born as a female. If this value is set at 0%, the offspring will always be a male. If set at 100%, the offspring will always be a female.\nPlease, note that this modifier will not do anything if the "Should a person be a Foxian to trigger the first behaviour of genetic purity gene ?" option has been disabled.</GeneticPurityXenotypeFemaleChanceSliderAltDesc>
+        <maxProgressTreeMultiplierSlider>Multiplier for the amount of meditation to trigger a blessing</maxProgressTreeMultiplierSlider>
+        <maxProgressTreeMultiplierSliderDesc>Changes how long you need to meditate to trigger a blessing. Lower values shorten the time needed, while higher ones make it longer.</maxProgressTreeMultiplierSliderDesc>
+        <IsFoxianBi>Does the Lustful gene forces the Bisexual trait ?</IsFoxianBi>
+        <IsFoxianBiDesc>The title is very explicit. Simply remove/add the forced trait to the gene (A restart is required).</IsFoxianBiDesc>
+        <ResetButton>Default Values</ResetButton>
+        <FoxianPsychicManipGeneTitle>Psychic Manipulation</FoxianPsychicManipGeneTitle>
+        <FoxianGeneticPurityTitle>Genetic Purity</FoxianGeneticPurityTitle>
+        <FoxianNineTailAgeTitle>Nine Tail Age Settings</FoxianNineTailAgeTitle>
+        <FoxianTailAgeInfo>Please be cautious when changing the values below.\nThe values must follow an ascending order as seen below.\nA restart is required.</FoxianTailAgeInfo>
+        <FoxianOneTailAge>One Tail</FoxianOneTailAge>
+        <FoxianOneTailAgeDesc>Set the age at which the pawn gets one tail (recommended: 0).</FoxianOneTailAgeDesc>
+        <FoxianThreeTailAge>Three Tail</FoxianThreeTailAge>
+        <FoxianThreeTailAgeDesc>Set the age at which the pawn gets three tail (recommended: 3).</FoxianThreeTailAgeDesc>
+        <FoxianFiveTailAge>Five Tail</FoxianFiveTailAge>
+        <FoxianFiveTailAgeDesc>Set the age at which the pawn gets five tail.</FoxianFiveTailAgeDesc>
+        <FoxianSevenTailAge>Seven Tail</FoxianSevenTailAge>
+        <FoxianSevenTailAgeDesc>Set the age at which the pawn gets seven tail.</FoxianSevenTailAgeDesc>
+        <FoxianNineTailAge>Nine Tail</FoxianNineTailAge>
+        <FoxianNineTailAgeDesc>Set the age at which the pawn gets nine tail.</FoxianNineTailAgeDesc>
+        <FoxianMiscTitle>Misc.</FoxianMiscTitle>
+        <FoxianMedievalMode>Medieval Mode</FoxianMedievalMode>
+        <FoxianMedievalModeDesc>This option will transform the two Foxian factions into medieval factions centered around melee. This is not a patch for the Medieval Overhaul mod since one is already included automatically. It is simply an option for players seeking a vanilla medieval run. \nA restart is required.</FoxianMedievalModeDesc>
+        <FoxianModWarningTitle>Foxian League Warning</FoxianModWarningTitle>
+        <FoxianModWarningText>This warning will only appear once.\nIf you just started a new save, you can disregard this warning.\n\nThe mod has recently received a big update. Many new features have been added along with the rework of older ones.\nAs a result, some things from older save files might not work correctly any more. The likely culprit will be the psychic channelling and protection genes.\n\nHowever, this does not mean you will need to restart a new save. In the workshop page of the mod, you can find a link with a downloadable archive of the old version to continue playing with your current save file without any issues. Alternatively, you can copy the same link to the clipboard with the button below.\nOnce on the GitHub page, you must click on the "Code" button and then on "Download as a ZIP file". Finally, install the old version manually as a separate mod.</FoxianModWarningText>
+        <FoxianModWarningAccept>I've read the warning and am aware of the potential repercussions if I don't take the necessary precautions</FoxianModWarningAccept>
+        <FoxianCopyLinkToClipboard>Copy archive link to clipboard</FoxianCopyLinkToClipboard>
+        <FoxianLinkCopied>Link copied to the clipboard!</FoxianLinkCopied>
+        
+        <ProgressUntilNextBlessing>Progress until the next blessing: {0}</ProgressUntilNextBlessing>
+        <TotalMeditationTree>Total amount of meditation today: {0}h</TotalMeditationTree>
+        <ProgressMultiplierLoc>(Progress: {0})</ProgressMultiplierLoc>
+        <NotProgressMultiplierLoc>No progress until the tree reaches full maturity</NotProgressMultiplierLoc>
+        <BlessingReceivedTitle>{0_nameDef} received a blessing</BlessingReceivedTitle>
+        <BlessingReceivedTitleLoc>{0_nameDef}'s prayers have finally been answered. {0_pronoun} received a blessing from the Natura tree itself!\nAs a result, {0_nameDef}'s psychic sensitivity has been permanently increased.</BlessingReceivedTitleLoc>
+
+        <MessageMinFertilityRequired>Required minimum fertility: {0}.</MessageMinFertilityRequired>
+        <InvalidLocationPlant>Invalid location</InvalidLocationPlant>
+        <CannotPlantInsideOtherPlant>Cannot be planted inside {0}.</CannotPlantInsideOtherPlant>
+        <AbilityTargetMustBeHumanlike>Target must be humanlike.</AbilityTargetMustBeHumanlike>
+        <AbilityTargetMustBeAlive>Target must be alive.</AbilityTargetMustBeAlive>
+        <AbilityTargetMustBeDowned>Target must be downed.</AbilityTargetMustBeDowned>
+        <AbilityTargetMustTargetTree>Target must be a valid tree.</AbilityTargetMustTargetTree>
+
+        <RitualTargetSacrificialTreeInfo>a sacrificial tree</RitualTargetSacrificialTreeInfo>
+        <RitualTargetSacrificialTreeNotMature>The tree must be mature.</RitualTargetSacrificialTreeNotMature>
+        <LetterLabelSacrificialRitualSatisfyingCompleted>Satisfying Sacrificial ritual successfully completed</LetterLabelSacrificialRitualSatisfyingCompleted>
+        <LetterTextSacrificialRitualSatisfyingCompleted>{0_labelShort} has successfuly completed the sacrifial ritual and managed to satisfy the bloodlust of the gods.\n\n{0_pronoun} received a rare artifact from the gods.</LetterTextSacrificialRitualSatisfyingCompleted>
+        <LetterLabelSacrificialRitualSuccessCompleted>Sacrificial ritual completed</LetterLabelSacrificialRitualSuccessCompleted>
+        <LetterTextSacrificialRitualSuccessCompleted>{0_labelShort} has successfuly completed the sacrifial ritual.\n\n{0_pronoun} received a blessing from the gods as a reward of her faithfulness.</LetterTextSacrificialRitualSuccessCompleted>
+        <LetterLabelSacrificialRitualOffensiveCompleted>Offensive Sacrificial ritual completed</LetterLabelSacrificialRitualOffensiveCompleted>
+        <LetterTextSacrificialRitualOffensiveCompleted>{0_labelShort} has fumbled the sacrifial ritual and offended the gods.\n\n{0_pronoun} received a curse from the gods for {0_possessive} mistake.</LetterTextSacrificialRitualOffensiveCompleted>
+        <SacrificialRitualExplanationBase>The sacrificial tree ceremony is more powerful with more participants and with a high psy-sensitive ritualist. The more people participate, the less time the ceremony takes, and the higher the chance of receiving a benediction instead of a curse.\n\nWith our current configuration, we will have {0} to receive a positive reward and {1} for an excelent outcome.</SacrificialRitualExplanationBase>
+        <RitualTargetSacrificialTreeMustBeCapableOfNature>Must be a colonist with the natural meditation focus type</RitualTargetSacrificialTreeMustBeCapableOfNature>
+        <PawnCannotReceiveSacrificialBlessings>This pawn cannot receives anymore blessings for the time being.</PawnCannotReceiveSacrificialBlessings>
+        <SacrificialRitualReceiveBlessing>{0_labelShort} has received the following benediction: {1_label}</SacrificialRitualReceiveBlessing>
+        <SacrificialRitualReceiveCurse>{0_labelShort} has received the following malediction: {1_label}</SacrificialRitualReceiveCurse>
+        <SacrificialRitualCauseIncident>{0_labelShort} has caused the following event: {1_label}</SacrificialRitualCauseIncident>
+        <SacrificialRitualReceiveRareItem>{0_labelShort} has been favored with the following item: {1_label}</SacrificialRitualReceiveRareItem>
+    </KeyLocalization>
+</Localization>

@@ -1,0 +1,34 @@
+Naturastodis Path:
+    -Naturastodis is a path only available to pawns with the natural meditation. They are capable of harnessing the power of nature to hinder their enemies or to enhance your pawns or animals.
+    -Naturastodis psycasters are mostly foxians or non-foxians living among them. Capable of exploiting nature itself for their own goal. They are generally seen as support psycasters, as they are capable of helping their allies by healing them, strengthening tamed animals, or by granting them blessings from sacrifice rituals. Additionally, they can also weaken their enemies with a variety of offensive psycasts, such as launching wood lances or placing artificial wood mines.
+
+Abilities:
+    -wood lance:
+        -Condenses and converts psychic entropy into artificial wood and sends a wood lance to the targeted enemy.
+
+    -nature's finest:
+        -Psychically enhance the tamed animals around the psycasters. The affected animals will become more agile, improve their melee proficiency, and all bleeding wounds will almost instantly seal themselves for the duration of the effect.
+    
+    -thorn explosion:
+        -Focuses and directs psychic entropy into the targeted soils to manipulate the nearby wood matter within, thereby triggering an explosion of needles. Any enemies hit by the explosion will be weakened by the psychic toxins infused into those needles.
+
+    -bar skin
+        -Psychically enhance the target's flesh, turning it into living wood. The effect is temporary, and the duration scales with the psy-sensitivity of the psycaster. The living bark allows the chosen target to become more resistant to incoming hits and damage at the cost of being slower and very vulnerable to fire.
+
+    -nature's healing
+        -Psychically heals the pawns around the psycaster. The user will instantly soothe random wounds of any allies and animals within their range. The strength of this psycast will scale with the user's psychic sensitivity.
+
+    -spore infection
+        -Spread psychic spore-like particles that infect the nearby pawns within the area of effect. They will hinder anyone's ability to fight and think, and they will multiply within the subject's body for each hit from an offensive psycast coming from this path. The spores themselves are not lethal. The worst they can do is make someone unconscious. However, accidentally hitting an innocent bystander or an ally from another faction will be considered a hostile action and worsen diplomatic relations.
+
+    -wood trap
+        -Permeate a soily surface with psychic entropy and morph the plant matter around into an artificial wooden landmine filled with explosive gas and thick wooden needles that will spew out everywhere upon detonation. Although the mine doesn't do as much damage as a normal IED trap, enemies that get hit by the needles will be physically weaker and less effective in close combat for a while.
+
+    -nature's guardians
+        -Psychically transmute a tree into a living being. The guardian treant is immediately loyal to the person who summoned it and will protect that person until death or expiration. The Guardian is slow and bulky, but it is capable of withstanding many damages and delivering heavy blows. It does not need to sleep or eat food, but they are not permanent and will disappear if they do not die in combat before. Its duration is dependent on the psycaster's psychic sensitivity. When it dies, it will vanish out of thin air.
+
+    -natura bloom
+        -Condense the soil with psychic entropy and germinate a sapling of a Natura tree. The sapling can only be psychically rooted on a suitable terrain for a plant.
+
+    -nature's sacrifice
+        -Transform a downed pawn into a sacrificial tree. Allowing you to offer it as a sacrifice and perform a sacrificial ritual with the god in exchange for a temporary bonus. The bonus received depends on the psychic sensitivity of the pawn organizing the ritual. In case the ritual fails, the ritualist will suffer a debuff.

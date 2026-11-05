@@ -8,6 +8,7 @@
             <li>
                 <statOffsets>
                     <PsychicSensitivity>1.5</PsychicSensitivity>
+                    <MeditationFocusGain>0.25</MeditationFocusGain>
                 </statOffsets>
             </li>
         </stages>

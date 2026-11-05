@@ -64,6 +64,7 @@
     <Compile Include="HediffComps\Hediff_clotting.cs" />
     <Compile Include="HediffComps\Hediff_ShowSeverity.cs" />
     <Compile Include="HediffUtils.cs" />
+    <Compile Include="ModSettings\MedievalMode.cs" />
     <Compile Include="ModExtension\HediffExtension_ScalableSeverityStat.cs" />
     <Compile Include="HediffComps\HediffSeverityScalingStat.cs" />
     <Compile Include="IncidentWorker\IncidentWorker_NaturaPodSpawn.cs" />
