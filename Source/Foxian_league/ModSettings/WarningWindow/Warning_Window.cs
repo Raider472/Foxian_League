@@ -41,7 +41,6 @@ namespace Foxian_league {
             if(Widgets.ButtonText(new Rect(startX, buttonY, closetWidth, buttonHeight), "FoxianModWarningAccept".Translate())) {
                 Foxian_Settings.hasWarningBeenShown = true;
                 Foxian_ModSettings.Settings.Write();
-                Log.Message("[Foxian League]: Warning window closed, setting hasWarningBeenShown to true.");
                 Close();
             }
             if(Widgets.ButtonText(new Rect(startX + closetWidth + spacing, buttonY, copyWidth, buttonHeight), "FoxianCopyLinkToClipboard".Translate())) {

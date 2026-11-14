@@ -221,7 +221,7 @@
         </tools>
         <comps>
             <li Class="Foxian_league.CompProperties_RestorePsyfocusOnKill">
-                <psyfocusRestoreRange>0.09~0.26</psyfocusRestoreRange>
+                <psyfocusRestoreRange>0.09~0.24</psyfocusRestoreRange>
             </li>
         </comps>
         <!-- <modExtensions>

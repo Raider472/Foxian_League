@@ -9,15 +9,13 @@ using VEF.Abilities;
 using Verse;
 
 namespace FoxianPsycast {
+    //Title is misleading, this class does not apply an hediff but ensure that relations take a hit when a neutral pawn is hit by the spore infection ability
     public class FL_ApplyHediffsWithoutTimer : VEF.Abilities.Ability {
         public override void Cast(params GlobalTargetInfo[] targets) {
             //AbilityExtension_Hediff modExtension = def.GetModExtension<AbilityExtension_Hediff>();
             foreach(GlobalTargetInfo target in targets) {
-                Log.Message($"Applying hediffs to {target.Thing.Label} and modExtension.hediff.label");
                 if(target.Thing is Pawn) {
-                    Log.Message("Check passed");
                     Pawn pawn = (Pawn)target.Thing;
-                    Log.Message($"Pawn: {pawn}, Brain: {pawn.health.hediffSet.GetBrain()}");
 
                     /*Hediff hediff = HediffMaker.MakeHediff(modExtension.hediff, pawn, pawn.health.hediffSet.GetBrain());
                     Log.Message($"Hediff: {hediff}");

@@ -239,7 +239,7 @@ namespace Foxian_league {
             if(listing_Standard.ButtonText("ResetButton".Translate())) {
                 SetDefaultValue();
             }
-            Log.Message($"[FoxianMod] Settings content height: {listing_Standard.CurHeight}");
+            //Log.Message($"[FoxianMod] Settings content height: {listing_Standard.CurHeight}");
             listing_Standard.End();
 
             Widgets.EndScrollView();

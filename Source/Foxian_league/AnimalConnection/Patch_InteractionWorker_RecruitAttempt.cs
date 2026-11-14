@@ -43,11 +43,9 @@ namespace Foxian_league {
 
         private static void InjectTamingIncrease(Pawn tamer, ref float num2) {
             if(Utils.HasActiveGene(tamer, InternalDefOf.FL_AnimalConnection)) {
-                Log.Message($"Debug Injecting taming increase for {tamer.Name}, Psychic Sensitivity: {tamer.GetStatValue(StatDefOf.PsychicSensitivity)}, Taming Increase: {tamingIncreaseCurve.Evaluate(tamer.GetStatValue(StatDefOf.PsychicSensitivity))}, num2: {num2}");
                 num2 += tamingIncreaseCurve.Evaluate(
                     tamer.GetStatValue(StatDefOf.PsychicSensitivity)
                 );
-                Log.Message($"AFTER: {num2}");
             }
         }
 
@@ -88,6 +86,7 @@ namespace Foxian_league {
         }*/
 
         //Before Wildness Modifier
+        //Basically boost the initial taming value before getting nerfed by the wildness of the animal
         [HarmonyTranspiler]
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions) {
             CodeMatcher codeMatcher = new CodeMatcher(instructions);
@@ -118,7 +117,7 @@ namespace Foxian_league {
             }*/
 
             int injectionPosition = codeMatcher.Pos;
-            Log.Message($"Injection position: {injectionPosition}");
+            //Log.Message($"Injection position: {injectionPosition}");
 
             return codeMatcher.Instructions();
         }

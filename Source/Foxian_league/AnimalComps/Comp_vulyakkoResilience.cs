@@ -15,19 +15,16 @@ namespace Foxian_league {
             base.PostPreApplyDamage(ref dinfo, out absorbed);
             if(Rand.Chance(Props.chanceToProc)) {
                 float randomValue = (Rand.Value * (Props.maxPercentageReduction - Props.minPercentageReduction) + Props.minPercentageReduction);
-                Log.Message($"Ability has proced with damage = {dinfo.Amount} and was it absorbed ? {absorbed}");
                 int valueToReduce = Mathf.RoundToInt(dinfo.Amount * randomValue);
                 dinfo.SetAmount(dinfo.Amount - valueToReduce);
-                Log.Message($"New value set is: {dinfo.Amount} and reductin value was: {randomValue}");
             }
             else {
-                Log.Message($"damage postPreApply = {dinfo} and is absorbed ? {absorbed}");
             }
         }
 
+        //I think I used this override to log the damage reduction but I am not sure anymore ?
         public override void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt) {
             base.PostPostApplyDamage(dinfo, totalDamageDealt);
-            Log.Message($"damage postPostApply = {dinfo} and total damage = {totalDamageDealt}");
         }
     }
 }

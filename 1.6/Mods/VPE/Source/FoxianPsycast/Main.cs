@@ -10,7 +10,7 @@ namespace FoxianPsycast {
     [StaticConstructorOnStartup]
     public class Main {
         static Main() {
-            Log.Message("FoxianPsycastIsPresent");
+            
         }
     }
 }

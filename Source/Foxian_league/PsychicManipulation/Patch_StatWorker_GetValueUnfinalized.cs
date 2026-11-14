@@ -17,16 +17,10 @@ namespace Foxian_league {
                 if(Utils.HasActiveGene(pawn, InternalDefOf.FL_PsychicManipulation)) {
                     Gene_PsychicManipulation psychicManip = pawn.genes.GetGene(InternalDefOf.FL_PsychicManipulation) as Gene_PsychicManipulation;
                     if(stat == StatDefOf.NegotiationAbility && stat != null) {
-                        Log.Message($"[Foxian League] Postfix called for {pawn.Name} with stat {stat.defName}");
-                        Log.Message($"[Foxian League] NegotiationAbility before modification: {__result}, modification: {psychicManip.negotiationAbility}");
                         __result += psychicManip.negotiationAbility;
-                        Log.Message($"[Foxian League] Postfix result for {pawn.Name} with stat {stat.defName} is {__result}");
                     }
                     else if(stat == StatDefOf.TradePriceImprovement && stat != null) {
-                        Log.Message($"[Foxian League] Postfix called for {pawn.Name} with stat {stat.defName}");
-                        Log.Message($"[Foxian League] TradePriceImprovement before modification: {__result}, modification: {psychicManip.tradePriceImprovement}");
                         __result += psychicManip.tradePriceImprovement;
-                        Log.Message($"[Foxian League] Postfix result for {pawn.Name} with stat {stat.defName} is {__result}");
                     }
                 }
             }

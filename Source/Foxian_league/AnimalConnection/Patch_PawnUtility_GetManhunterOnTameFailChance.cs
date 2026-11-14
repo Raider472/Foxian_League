@@ -26,10 +26,7 @@ namespace Foxian_league {
             if (__result == 0) return;
             if (pawn == Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.actualAnimal) {
                 float reductionCurve = GetManhunterReductionBasedOnTamerPsychic(Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.actualTamer);
-                Log.Message($"Tamer: {Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.actualTamer.Name}, psychic sensitivity: {Patch_Pawn_MindState_CheckStartMentalStateBecauseRecruitAttempted.actualTamer.GetStatValue(StatDefOf.PsychicSensitivity)}");
-                Log.Message($"[Animal Connection] ManhunterOnTameFailChance for {pawn.Name} reduced by {1f - reductionCurve * 100}% due to tamer's psychic sensitivity, value of result before calculation: {__result}");
                 __result *= reductionCurve;
-                Log.Message($"[Animal Connection] ManhunterOnTameFailChance for {pawn.Name} after calculation: {__result}");
             }
             return;
         }

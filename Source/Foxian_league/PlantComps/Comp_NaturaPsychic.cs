@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using UnityEngine.Analytics;
 using Verse;
 
@@ -130,7 +131,7 @@ namespace Foxian_league{
 
             float randArray = (Rand.Value * ((totalPawns) - 1f) + 1f);
             decimal roundedRandArray = Math.Round((decimal)randArray);
-            int selectArray = Math.Clamp((int)roundedRandArray, 0, totalPawns) - 1;
+            int selectArray = Mathf.Clamp((int)roundedRandArray, 0, totalPawns) - 1;
             return pawns[selectArray];
         }
 

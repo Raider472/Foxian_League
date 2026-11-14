@@ -36,18 +36,14 @@ namespace FoxianPsycast {
         public override void Cast(params GlobalTargetInfo[] targets) {
             base.Cast(targets);
             float psychicSensitivityMin = getPsychicSensitivityMin();
-            Log.Message($"Psychic Sensitivity Min: {psychicSensitivityMin}");
             if(targets.Length == 0 || targets == null) return;
             for(int i = 0; i < targets.Length; i++) {
-                Log.Message($"{targets[i].Pawn}");
                 List<Hediff_Injury> injuriesList = targets[i].Pawn.health.hediffSet.hediffs.OfType<Hediff_Injury>().Where(injury => !injury.IsPermanent()).ToList();
-                Log.Message($"Injuries found: {injuriesList.Count}");
                 if(injuriesList.Any()) {
                     HealInjuries(injuriesList, psychicSensitivityMin);
                     Messages.Message("NatureHealingMessage".Translate(injuriesList.Count.ToString(), targets[i].Pawn), ((LocalTargetInfo)targets[i]).ToTargetInfo(targets[i].Pawn.Map), MessageTypeDefOf.PositiveEvent, historical: false);
                 }
                 else {
-                    Log.Message("No injuries to heal");
                     continue;
                 }
             }
@@ -60,24 +56,17 @@ namespace FoxianPsycast {
                 if(chanceOfSkip == 0f) chanceOfSkip = Rand.Value;
                 else chanceOfSkip += 0.15f;
 
-                Log.Message($"Chance of skip: {chanceOfSkip}");
                 if(chanceOfSkip > 0.65f && injuriesCount != 0) {
-                    Log.Message($"Skipping healing for {injury.Label} with severity {injury.Severity}");
                     chanceOfSkip = 0f;
                     continue;
                 }
-                Log.Message($"{injury.Label} and severity {injury.Severity}");
                 float randomHealValue = (Rand.Value * (injury.Severity - psychicSensitivityMin) + psychicSensitivityMin);
                 float randTendQuality = Rand.Range(getTendQualityMin(), getTendQualityMax());
-                Log.Message($"min: {getTendQualityMin()}, max: {getTendQualityMax()}");
-                Log.Message($"Random heal value: {randomHealValue}, Tend quality: {randTendQuality}");
 
                 injury.Heal(randomHealValue);
                 if(!injury.IsTended()) {
-                    Log.Message($"Injury {injury.Label} is not tended.");
                     injury.Tended(randTendQuality, getTendQualityMax());
                 }
-                Log.Message($"Healed {randomHealValue} point of {injury.Label}, new severity: {injury.Severity}");
                 injuriesCount++;
             }
         }

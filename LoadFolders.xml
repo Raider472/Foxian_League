@@ -13,4 +13,17 @@
         <li IfModActive="VanillaExpanded.BaseGeneration">1.6/Mods/VanillaExpandedBase</li>
         <li IfModActive="DankPyon.Medieval.Overhaul">1.6/Mods/MedievalOverhaul</li>
     </v1.6>
+    <v1.7>
+        <li>/</li>
+        <li>1.7</li>
+        <li IfModActive="RedMattis.BigSmall.Core">1.7/Mods/BigAndSmall</li>
+        <li IfModActive="sarg.alphagenes">1.7/Mods/AlphaGenes</li>
+        <li IfModActive="VanillaExpanded.VPsycastsE">1.7/Mods/VPE</li>
+        <li IfModActive="vanillaracesexpanded.highmate">1.7/Mods/VREHighmate</li>
+        <li IfModActive="vanillaracesexpanded.hussar">1.7/Mods/VREHussar</li>
+        <li IfModActive="DimonSever000.FactionLanguages">1.7/Mods/RimLanguages</li>
+        <li IfModActive="rim.job.world">1.7/Mods/ForbiddenMod</li>
+        <li IfModActive="VanillaExpanded.BaseGeneration">1.7/Mods/VanillaExpandedBase</li>
+        <li IfModActive="DankPyon.Medieval.Overhaul">1.7/Mods/MedievalOverhaul</li>
+    </v1.7>
 </loadFolders>

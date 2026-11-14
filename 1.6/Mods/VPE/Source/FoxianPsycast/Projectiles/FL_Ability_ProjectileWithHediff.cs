@@ -9,6 +9,8 @@ using VEF.Abilities;
 using Verse;
 
 namespace FoxianPsycast {
+    //Class not used anymore since it was deemed too powerful on a spamable ability
+    //Here just in case
     public class FL_Ability_ProjectileWithHediff : VEF.Abilities.AbilityProjectile {
         protected override void Impact(Thing hitThing, bool blockedByShield = false) {
             base.Impact(hitThing);
@@ -17,7 +19,6 @@ namespace FoxianPsycast {
             Pawn target = hitThing as Pawn;
             if(target.IsShambler || target.RaceProps.IsMechanoid || target.Dead) return;
             Hediff hediffToChange;
-            Log.Message($"Here is max and min {modExtension.severityRange.max} - {modExtension.severityRange.min}");
             float randomValue = (Rand.Value * (modExtension.severityRange.max - modExtension.severityRange.min) + modExtension.severityRange.min);
             if(target.kindDef == PawnKindDefOf.Thrumbo || target.kindDef == PawnKindDefOf.AlphaThrumbo) randomValue /= 10f;
             if(target.health.hediffSet.TryGetHediff(modExtension.hediffOnHit, out hediffToChange)) {

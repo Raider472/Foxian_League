@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using Verse;
 
 namespace Foxian_league {
@@ -22,7 +23,6 @@ namespace Foxian_league {
             if (!pawn.IsHashIntervalTick(200)) {
                 return;
             }
-            //Log.Message($"[Foxian League] TickInterval called for {pawn.Name} with TradeNegotiation and TradePriceImprovement: {pawn.GetStatValue(StatDefOf.NegotiationAbility)}, {pawn.GetStatValue(StatDefOf.TradePriceImprovement)}");
             float PsychichSensiPawn = pawn.GetStatValue(StatDefOf.PsychicSensitivity);
             if (PsychichSensiPawn == psychicSensitivityRecent) return;
             psychicSensitivityRecent = PsychichSensiPawn;
@@ -37,7 +37,7 @@ namespace Foxian_league {
                 currentPawnPsySensitivity -= 1f;
                 float skillModifierFloat = currentPawnPsySensitivity / delimiter;
                 decimal roundedSkillModifier= Math.Round((decimal)skillModifierFloat, 1);
-                skillModifier = Math.Clamp((int)roundedSkillModifier, 0, 20);
+                skillModifier = Mathf.Clamp((int)roundedSkillModifier, 0, 20);
                 negotiationAbility = skillModifier * 0.05f;
                 tradePriceImprovement = skillModifier * 0.01f;
             }

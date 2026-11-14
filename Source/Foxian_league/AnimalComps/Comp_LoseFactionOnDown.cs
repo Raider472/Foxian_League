@@ -7,7 +7,7 @@ using Verse;
 
 namespace Foxian_league {
     public class Comp_LoseFactionOnDown: ThingComp {
-        //Comp to make the animal lose its specific faction when it become downed in Raids
+        //Comp to make the animal lose its specific faction when it become downed in Raids (Used mostly for blood rain raid)
         public CompProperties_LoseFactionOnDown Props => (CompProperties_LoseFactionOnDown)props;
 
         public override void Notify_Downed() {

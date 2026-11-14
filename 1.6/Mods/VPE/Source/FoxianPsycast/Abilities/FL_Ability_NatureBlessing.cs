@@ -47,9 +47,7 @@ namespace FoxianPsycast {
 
         public override void Cast(params GlobalTargetInfo[] targets) {
             if(targets == null || targets.Length == 0) return;
-            Log.Message($"Count: {targets.Length}");
             Plant plant = targets.First().Cell.GetPlant(pawn.Map);
-            Log.Message($"Plant: {plant?.def?.defName}");
             plant?.Kill();
 
             base.Cast(targets);
@@ -63,7 +61,6 @@ namespace FoxianPsycast {
                     }
                     target.Pawn.Kill(damage);
                     target.Pawn.Corpse.Destroy();
-                    Log.Message($"Target cell and map: {target.Cell}, {target.Map}");
                 } 
             }
         }

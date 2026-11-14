@@ -10,4 +10,7 @@ bloodrain
 fox spider and elephant
 
 TODO
-Add Compat to new staff when texture is done for melee animation
+Add Compat to new staff when texture is done for melee animation + VEF angle
+
+Test if cat is compatible in multiplayer
+Weapon Comps

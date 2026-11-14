@@ -35,6 +35,7 @@ namespace Foxian_league {
 
         //Yes, this is stupid. But I don't want to touch the transpiler patching ever again in my godamn life
         private static bool IsThingEquippable(Thing clickedThing, FloatMenuContext context) {
+            if(context?.FirstSelectedPawn == null) return false;
             if(context.FirstSelectedPawn.WorkTagIsDisabled(WorkTags.Violent)) return false;
             if(!context.FirstSelectedPawn.CanReach(clickedThing, PathEndMode.ClosestTouch, Danger.Deadly)) return false;
             if(!context.FirstSelectedPawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation)) return false;

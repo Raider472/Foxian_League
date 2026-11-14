@@ -9,7 +9,7 @@ namespace Foxian_league {
     public static class HediffUtils {
         //A bunch of utility methods use to avoid repetition for the genes using hediff to work
 
-        //DEPRCATED
+        //NOT USED ANYMORE
         static public void SetHediffStage(string hediffName, int stage, Pawn pawn) {
             if (pawn != null) {
                 HediffDef hediffDef = HediffDef.Named($"{hediffName}{stage}");
@@ -19,7 +19,7 @@ namespace Foxian_league {
             return;
         }
 
-        //DEPRCATED
+        //NOT USED ANYMORE
         static public void RemoveHediffStage(string hediffName, int stage, Pawn pawn) {
             if (pawn != null) {
                 Hediff hediffToRemove = pawn.health.hediffSet.hediffs.Find(x => x.def.defName == $"{hediffName}{stage}");

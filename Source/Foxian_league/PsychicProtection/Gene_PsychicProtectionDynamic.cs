@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Verse;
 
 namespace Foxian_league{
+    //Current Gene class used to dynamically calculate the bonus based on psychic sensitivity of the pawn with an alt bool
     public class Gene_PsychicProtectionDynamic: Gene {
         public bool isAlternateMode = false;
 

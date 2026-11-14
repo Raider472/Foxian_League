@@ -56,6 +56,7 @@ namespace Foxian_league {
                     else {
                         Hediff comaHediff = HediffMaker.MakeHediff(InternalDefOf.FL_PsychicComaRandom, pawn, null);
                         pawn.health.AddHediff(comaHediff);
+                        pawn.needs.mood.thoughts.memories.TryGainMemoryFast(InternalDefOf.FL_CursedSwordRemoved, 1);
                     }
                 }
             }
@@ -69,7 +70,7 @@ namespace Foxian_league {
 
         public override void Notify_KilledPawn(Pawn pawn) {
             //Pawn is the pawn who killed
-            if (pawn.GetType() != typeof(Pawn)) return;
+            if (pawn == null) return;
             base.Notify_KilledPawn(pawn);
             LocalTargetInfo latestTarget = pawn.LastAttackedTarget;
             float severityToApply = CalculateSeverity(latestTarget);
@@ -80,9 +81,12 @@ namespace Foxian_league {
         }
 
         public float CalculateSeverity(LocalTargetInfo latestTarget) {
-            if (latestTarget == null) return 0f;
+            if (!latestTarget.IsValid || !latestTarget.HasThing) return 0f;
 
-            string pawnCategory = GetPawnCategory(latestTarget.Pawn);
+            Pawn target = latestTarget.Pawn;
+            if(target == null) return 0f;
+
+            string pawnCategory = GetPawnCategory(target);
             if (pawnCategory == null) return 0f;
 
             float minimum = severityDict.GetValueOrDefault("min" + pawnCategory, 0f);
@@ -91,10 +95,12 @@ namespace Foxian_league {
         }
 
         private string GetPawnCategory(Pawn pawn) {
+            if(pawn == null) return null;
             if (pawn.IsShambler) return "Shambler";
             if (pawn.IsEntity) return "Entity";
             if (pawn.RaceProps?.Humanlike == true) return "Human";
             if (pawn.IsAnimal) return "Animal";
+
             return null;
         }
     }

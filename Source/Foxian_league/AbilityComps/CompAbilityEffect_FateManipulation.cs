@@ -5,10 +5,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using Verse;
 
 namespace Foxian_league {
+
     public class CompAbilityEffect_FateManipulation: CompAbilityEffect {
+        //Comp that hold every incident and the logic for the fate manipulation ability.
+        //It has an in built "pity" system to guarantee at least a good incident after a few trys
         public new CompProperties_AbilityEffectFateManipulation Props => (CompProperties_AbilityEffectFateManipulation)props;
         private float chanceForExcelentEvent = 0f;
 
@@ -51,14 +55,10 @@ namespace Foxian_league {
         };
 
         public override void PostApplied(List<LocalTargetInfo> targets, Map map) {
-            Log.Message($"Fate Manipulation effect applied to targets: {string.Join(", ", targets.Select(t => t.Thing?.Label ?? "unknown target"))}");
             base.PostApplied(targets, map);
             float backupChance = chanceForExcelentEvent;
             IncidentDef incident = GetIncidentListBasedOnChance().RandomElement();
-            Log.Message($"Selected incident: {incident.defName}");
-            Log.Message($"Current chance for excellent event: {chanceForExcelentEvent}");
             IncreaseChanceBasedOnIncident(incident);
-            Log.Message($"Chance for excellent event after increase: {chanceForExcelentEvent}");
             TryIncidentRecursive(incident, map, backupChance);
         }
 
@@ -68,10 +68,8 @@ namespace Foxian_league {
             incidentList.AddRange(ExcellentIncidents);
             incidentList.AddRange(GoodIncidents);
             incidentList.AddRange(NeutralOrBadIncidents);
-            Log.Message($"Chance for excellent event is {chanceForExcelentEvent}, so ExcellentIncidents, GoodIncidents, and NeutralOrBadIncidents are included in the incident list.");
             if(chanceForExcelentEvent <= 0.8f) {
                 incidentList.AddRange(VeryBadIncidents);
-                Log.Message($"Chance for excellent event is {chanceForExcelentEvent}, so VeryBadIncidents are included in the incident list.");
             }
             return incidentList;
         }
@@ -89,7 +87,7 @@ namespace Foxian_league {
             else if(VeryBadIncidents.Contains(incident)) {
                 chanceForExcelentEvent += Rand.Range(0.4f, 0.7f);
             }
-            chanceForExcelentEvent = Math.Clamp(chanceForExcelentEvent, 0f, 1f);
+            chanceForExcelentEvent = Mathf.Clamp(chanceForExcelentEvent, 0f, 1f);
         }
 
         private void TryIncidentRecursive(IncidentDef incident, Map map, float backupChance, int recursiveLoop = 10) {
@@ -98,12 +96,9 @@ namespace Foxian_league {
                 return;
             }
             if(!incident.Worker.TryExecute(StorytellerUtility.DefaultParmsNow(incident.category, map))) {
-                Log.Message($"Chance for excellent event: {chanceForExcelentEvent} and chance for fallback: {backupChance} before fallback, and recursive attempts left: {recursiveLoop}");
                 chanceForExcelentEvent = backupChance; // Revert chance if fallback incident is executed
                 IncidentDef fallbackIncident = GetIncidentListBasedOnChance().RandomElement();
-                Log.Message($"Selected fallback incident: {fallbackIncident.defName}");
                 IncreaseChanceBasedOnIncident(fallbackIncident);
-                Log.Message($"Chance for excellent event after new increase: {chanceForExcelentEvent}");
                 TryIncidentRecursive(fallbackIncident, map, backupChance, recursiveLoop - 1);
             }
         }

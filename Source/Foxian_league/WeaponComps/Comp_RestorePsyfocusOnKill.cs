@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using Verse;
 
 namespace Foxian_league {
@@ -10,24 +11,25 @@ namespace Foxian_league {
         public CompProperties_RestorePsyfocusOnKill Props => (CompProperties_RestorePsyfocusOnKill)props;
 
         public override void Notify_KilledPawn(Pawn pawn) {
-            if (pawn == null || !pawn.psychicEntropy.NeedsPsyfocus) return;
+            if (pawn == null || pawn.psychicEntropy == null || !pawn.psychicEntropy.NeedsPsyfocus) return;
+
             LocalTargetInfo latestTarget = pawn.LastAttackedTarget;
-            if (latestTarget == null) return;
+            if(!latestTarget.IsValid || !latestTarget.HasThing) return;
+            Log.Message($"Comp_RestorePsyfocusOnKill: Notify_KilledPawn called for {pawn.Name} with target {latestTarget.Thing?.Label ?? "null"}, hp scale: {latestTarget.Pawn.RaceProps.baseHealthScale}");
+
             base.Notify_KilledPawn(pawn);
 
             if(latestTarget.Pawn.RaceProps.IsMechanoid && !Props.restoreOnNonFleshKill) {
-                Log.Message($"Not restoring psyfocus to {pawn.Name} for killing {latestTarget.Thing?.Label ?? "unknown target"} because it is a mechanoid and restoreOnNonFleshKill is false.");
                 return;
             }
-            float psyFocusToRestore = CalculatePsyFocus(Props.psyfocusRestoreRange);
-            Log.Message($"Psyfocus Before: {pawn.psychicEntropy.CurrentPsyfocus}");
+            float psyFocusToRestore = CalculatePsyFocus(Props.psyfocusRestoreRange, latestTarget.Pawn.RaceProps.baseHealthScale);
+            Log.Message($"Comp_RestorePsyfocusOnKill: Restoring {psyFocusToRestore} psyfocus to {pawn.Name} with target {latestTarget.Thing?.Label ?? "null"}, minRange: {Props.psyfocusRestoreRange.min * latestTarget.Pawn.RaceProps.baseHealthScale}, maxRange: {Props.psyfocusRestoreRange.max * latestTarget.Pawn.RaceProps.baseHealthScale}");
             pawn.psychicEntropy.OffsetPsyfocusDirectly(psyFocusToRestore);
-            Log.Message($"Restoring {psyFocusToRestore} psyfocus to {pawn.Name} for killing {latestTarget.Thing?.Label ?? "unknown target"}. and final psyfocus: {pawn.psychicEntropy.CurrentPsyfocus}");
 
         }
 
-        private float CalculatePsyFocus(FloatRange psyfocusRestoreRange) {
-            return psyfocusRestoreRange.RandomInRange;
+        private float CalculatePsyFocus(FloatRange psyfocusRestoreRange, float healthScale) {
+            return Mathf.Clamp(psyfocusRestoreRange.RandomInRange * healthScale, 0f, 1f);
         }
     }
 }

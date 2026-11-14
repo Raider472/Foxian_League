@@ -11,7 +11,6 @@ namespace Foxian_league {
         //Medieval Mode Only
         //Method to Prepare the pawnKindDefs List and etc. for medieval mode (Not a patch to medieval overhaul)
         public static void prepareMedievalMode() {
-            Log.Message("Preparing medieval mode settings...");
             FactionDef foxianLeagueDef = DefDatabase<FactionDef>.GetNamed("Foxian_League");
             CreateFoxianLeagueList(foxianLeagueDef);
             foxianLeagueDef.techLevel = TechLevel.Medieval;
@@ -50,7 +49,6 @@ namespace Foxian_league {
             pawnGroupMakers.Add(CreatePawnGroupMaker(ListPawnKindDefs.FarmersSettlement, "Farmers", 1));
             factionDef.pawnGroupMakers.Clear();
             factionDef.pawnGroupMakers.AddRange(pawnGroupMakers);
-            Log.Message($"Created Foxian League pawn group makers for faction {factionDef.defName} with {pawnGroupMakers.Count} group makers.");
         }
 
         private static void CreateBloodRainList(FactionDef factionDef) {
@@ -66,7 +64,6 @@ namespace Foxian_league {
             pawnGroupMakers.Add(CreatePawnGroupMaker(ListPawnKindDefs.FarmersSettlement, "Farmers", 1));
             factionDef.pawnGroupMakers.Clear();
             factionDef.pawnGroupMakers.AddRange(pawnGroupMakers);
-            Log.Message($"Created Blood Rain pawn group makers for faction {factionDef.defName} with {pawnGroupMakers.Count} group makers.");
         }
 
         private static PawnGroupMaker CreatePawnGroupMaker(Dictionary<string, float> pawnKindOption, string kindDefName, float commonality = 100f) {
@@ -75,7 +72,6 @@ namespace Foxian_league {
                 kindDef = DefDatabase<PawnGroupKindDef>.GetNamed(kindDefName),
                 options = CreatePawnGenOptionList(pawnKindOption)
             };
-            Log.Message($"Created PawnGroupMaker for {kindDefName} with {pawnGroupMaker.options.Count} options and commonality {commonality}.");
             return pawnGroupMaker;
         }
 
@@ -86,7 +82,6 @@ namespace Foxian_league {
                 carriers = CreatePawnGenOptionList(pawnKindOption["carriers"]),
                 guards = CreatePawnGenOptionList(pawnKindOption["guards"])
             };
-            Log.Message($"Created PawnGroupMaker for Trader with {pawnGroupMaker.traders.Count} traders, {pawnGroupMaker.carriers.Count} carriers, and {pawnGroupMaker.guards.Count} guards.");
             return pawnGroupMaker;
         }
 
@@ -100,7 +95,6 @@ namespace Foxian_league {
                 };
                 pawnGenOptions.Add(pawnGenOptionCreate);
             }
-            Log.Message($"Created {pawnGenOptions.Count} PawnGenOptions for {pawnKindOptionDict.Keys.FirstOrDefault()}");
             return pawnGenOptions;
         }
 
@@ -138,16 +132,13 @@ namespace Foxian_league {
         private static void ChangeScenPartWeapons(ScenarioDef scenarioDef, string firstWeaponName, string secondWeaponName, string firstWeaponReplacement = "MeleeWeapon_Spear", string secondWeaponReplacement = "MeleeWeapon_Mace", string stuff = "Steel") {
             if(scenarioDef != null) {
                 foreach(ScenPart part in scenarioDef.scenario.AllParts) {
-                    Log.Message($"Scenario part: {part.GetType().Name}");
                     if(part is ScenPart_StartingThing_Defined_FoxianExtended startingThing && startingThing.ThingDef == DefDatabase<ThingDef>.GetNamedSilentFail(firstWeaponName)) {
                         startingThing.SetThingDef(DefDatabase<ThingDef>.GetNamedSilentFail(firstWeaponReplacement));
                         startingThing.setStuffDef(DefDatabase<ThingDef>.GetNamedSilentFail(stuff));
-                        Log.Message($"Replaced {firstWeaponName} with {firstWeaponReplacement} in FL_Foxian_Scenario_Refugees scenario.");
                     }
                     if(part is ScenPart_StartingThing_Defined_FoxianExtended startingThing2 && startingThing2.ThingDef == DefDatabase<ThingDef>.GetNamedSilentFail(secondWeaponName)) {
                         startingThing2.SetThingDef(DefDatabase<ThingDef>.GetNamedSilentFail(secondWeaponReplacement));
                         startingThing2.setStuffDef(DefDatabase<ThingDef>.GetNamedSilentFail(stuff));
-                        Log.Message($"Replaced {secondWeaponName} with {secondWeaponReplacement} in FL_Foxian_Scenario_Refugees scenario.");
                     }
                 }
             }
