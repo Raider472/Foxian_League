@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef Abstract="True" Name="PsychicAbs">
+        <hediffClass>HediffWithComps</hediffClass>
+        <everCurableByItem>false</everCurableByItem>
+        <isBad>false</isBad>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+        <comps>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+    </HediffDef>
+
+    <HediffDef Abstract="True" ParentName="PsychicAbs" Name="PsychiChannelingAbs">
+        <defaultLabelColor>(0.7, 0.2, 0.9)</defaultLabelColor>
+        <description>Psychic energy emanates from the weapon of this person.</description>
+    </HediffDef>
+
+    <HediffDef Abstract="True" ParentName="PsychicAbs" Name="PsychiProtectionTankAbs">
+        <defaultLabelColor>(0.45, 0.45, 0.9)</defaultLabelColor>
+        <description>Psychic energy emanates from this person. That energy acts like a psychic shield and allows it to take more hits than the average person.</description>
+    </HediffDef>
+
+    <HediffDef Abstract="True" ParentName="PsychiProtectionTankAbs" Name="PsychiProtectionDodgeAbs">
+        <description>Psychic energy emanates from this person. That person can use this energy as a way to deflect incoming bullets or some sort of prescience power.</description>
+    </HediffDef>
+</Defs>

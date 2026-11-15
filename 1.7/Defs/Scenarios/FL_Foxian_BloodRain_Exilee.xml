@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ScenarioDef ParentName="ScenarioBase"> 
+        <defName>FL_Foxian_BloodRain_Scenario_Refugees</defName>
+        <label>Blood Rain in Exiles</label>
+        <description>After a heated argument with your former local commander. You and your friends decided that you had enough of her incompetence and planned to leave in blood rain style.\nAfter successfully stealing some supplies from your former comrades, you and your group finally settle somewhere far from your former base before your supplies run out completely.</description>
+        <scenario>
+            <summary>Three Foxian blood rain exiles attempting to create a new settlement after an argument with their former local boss.</summary>
+            <playerFaction>
+                <factionDef>FoxianBloodRainPlayerColony</factionDef>
+            </playerFaction>
+            <parts>
+                <!-- Config pages -->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnChoiceCount>6</pawnChoiceCount>
+                    <xenotypeCounts>
+                        <li>
+                            <xenotype>FL_Foxian</xenotype>
+                            <count>3</count>
+                            <description>Foxians</description>
+                            <requiredAtStart>true</requiredAtStart>
+                        </li>
+                    </xenotypeCounts>
+                </li>
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>Standing</method>
+                    <visible>false</visible>
+                </li>
+
+                <!-- Player starting things -->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                <count>1750</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>50</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <count>25</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentIndustrial</thingDef>
+                    <count>30</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>FL_SkullArmor</thingDef>
+                    <stuff>Steel</stuff>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>FL_SkullHelmet</thingDef>
+                    <stuff>Steel</stuff>
+                </li>
+                <li Class="Foxian_league.ScenPart_StartingThing_Defined_FoxianExtended">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>FL_Gun_HarpoonGun</thingDef>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                <def>StartingThing_Defined</def>
+                    <thingDef>FL_Weapon_ParalysingDagger</thingDef>
+                    <quality>Good</quality>
+                    <stuff>Steel</stuff>
+                </li>
+                <li Class="Foxian_league.ScenPart_StartingThing_Defined_FoxianExtended">
+                <def>StartingThing_Defined</def>
+                    <thingDef>Gun_Autopistol</thingDef>
+                </li>
+
+                <!-- Scatter some things near player start -->
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>Steel</thingDef>
+                    <count>400</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>300</count>
+                </li>   
+                <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+                    <factionDef>Foxian_League</factionDef>
+                    <affectHiddenFactions>False</affectHiddenFactions>
+                    <alwaysHostile>True</alwaysHostile>
+                    <def>VFEC_ForcedFactionGoodwill</def>
+                </li>
+                <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+                    <factionDef>Foxian_BloodRain</factionDef>
+                    <affectHiddenFactions>False</affectHiddenFactions>
+                    <affectStartingGoodwill>True</affectStartingGoodwill>
+                    <startingGoodwillRange>-50~0</startingGoodwillRange>
+                    <def>VFEC_ForcedFactionGoodwill</def>
+                </li>
+                <!-- Game start dialog -->
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>After losing track of the pursuing soldiers from your ex-commander. You and your group have finally found a place to settle before the supplies were running thin.\nAfter the tiring journey, now only freedom awaits you.\nYou're current relation with the Blood Rain has deterioted as a consequence of your outrageous heist, but it can still be mended with some concessions from your part. However, in the eyes of the Foxian League, you and your friends are still considered as dangerous outlaws.</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+</Defs>

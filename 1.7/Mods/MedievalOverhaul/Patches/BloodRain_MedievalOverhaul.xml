@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <!-- and techLevel="Medieval -->
+        <xpath>Defs/FactionDef[defName="Foxian_BloodRain"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!--Add
+                Ranged Weapons to Blood Rain-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/PawnKindDef[defName="FL_RaiderFoxian_Trader_Medieval" or
+                        defName="FL_Foxian_Raider_Tracker_Medieval"]/weaponTags</xpath>
+                    <value>
+                        <li>DankPyon_Arbelest</li>
+                        <li>DankPyon_Crossbow</li>
+                        <li>DankPyon_Handgonne</li>
+                        <li>DankPyon_BrigandMarksman</li>
+                        <li>DankPyon_HuntingBow</li>
+                        <li>DankPyon_Warbow</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/PawnKindDef[defName="FL_Foxian_Raider_Grenadier_Medieval"]/weaponTags/li[text()="GrenadeFlame"]</xpath>
+                    <value>
+                        <li>DankPyon_Grenade_PotFire</li>
+                    </value>
+                </li>
+                <!--Replace
+                Apparels-->
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/PawnKindDef[@Name="RaiderFoxianBase_civilian_medieval" or
+                        @Name="RaiderFoxianBase_low_tier_medieval" or
+                        @Name="RaiderFoxianBase_medium_tier_medieval" or
+                        @Name="RaiderFoxianBase_high_tier_medieval" or
+                        @Name="RaiderFoxianBase_elite_tier_medieval"]/apparelTags/li[text()="IndustrialBasic"]</xpath>
+                    <value>
+                        <li>MedievalBasic</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/PawnKindDef[@Name="RaiderFoxianBase_medium_tier_medieval" or
+                        @Name="RaiderFoxianBase_high_tier_medieval" or
+                        @Name="RaiderFoxianBase_elite_tier_medieval"]/apparelTags/li[text()="IndustrialAdvanced"]</xpath>
+                    <value>
+                        <li>MedievalMilitaryBasic</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>
+                        Defs/PawnKindDef[defName="FL_RaiderFoxian_Trader_Medieval" or
+                        defName="FL_Foxian_Raider_kidnapper_Medieval"or
+                        defName="FL_Foxian_Raider_Pyromaniac_Medieval"]/apparelTags/li[text()="IndustrialAdvanced"]
+                    </xpath>
+                </li>
+                <!--Add
+                Apparels-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/PawnKindDef[defName="FL_RaiderFoxian_Trader_Medieval" or
+                        defName="FL_Foxian_Raider_kidnapper_Medieval"or
+                        defName="FL_Foxian_Raider_Pyromaniac_Medieval"]/apparelTags</xpath>
+                    <value>
+                        <li>MedievalMilitaryDecent</li>
+                        <li>MedievalMilitaryAdvanced</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/PawnKindDef[@Name="RaiderFoxianBase_civilian_medieval" or
+                        @Name="RaiderFoxianBase_low_tier_medieval"]/apparelTags</xpath>
+                    <value>
+                        <li>MedievalMilitaryBasic</li>
+                        <li>DankPyon_PeasantHelmet</li>
+                        <li>DankPyon_BillmanHelmet</li>
+                        <li>DankPyon_BrigandThug</li>
+                    </value>
+                </li>
+                 <li Class="PatchOperationAdd">
+                    <xpath>Defs/PawnKindDef[@Name="RaiderFoxianBase_medium_tier_medieval"]/apparelTags</xpath>
+                    <value>
+                        <li>MedievalMilitaryBasic</li>
+                        <li>MedievalMilitaryDecent</li>
+                        <li>DankPyon_BrigandThug</li>
+                        <li>DankPyon_BrigandRaider</li>
+                        <li>DankPyon_MercenaryHeavy</li>
+                        <li>DankPyon_FootmanHelmet</li>
+                        <li>DankPyon_MercenaryHelmet</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/PawnKindDef[@Name="RaiderFoxianBase_high_tier_medieval"]/apparelTags</xpath>
+                    <value>
+                        <li>MedievalMilitaryBasic</li>
+                        <li>MedievalMilitaryDecent</li>
+                        <li>MedievalMilitaryAdvanced</li>
+                        <li>DankPyon_BrigandThug</li>
+                        <li>DankPyon_BrigandRaider</li>
+                        <li>DankPyon_KnightHelmet</li>
+                        <li>DankPyon_ZweihanderHelmHesse</li>
+                        <li>DankPyon_MercenaryHeavy</li>
+                        <li>DankPyon_MercenaryHelmet</li>
+                        <li>DankPyon_ArbalesterHelmet</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/PawnKindDef[@Name="RaiderFoxianBase_elite_tier_medieval"]/apparelTags</xpath>
+                    <value>
+                        <li>MedievalMilitaryBasic</li>
+                        <li>MedievalMilitaryDecent</li>
+                        <li>MedievalMilitaryAdvanced</li>
+                        <li>DankPyon_BrigandRaider</li>
+                        <li>DankPyon_BrigandLeader</li>
+                        <li>DankPyon_KnightHelmet</li>
+                        <li>DankPyon_ZweihanderHelmHesse</li>
+                        <li>DankPyon_MercenaryHeavy</li>
+                        <li>DankPyon_MercenaryHelmet</li>
+                        <li>DankPyon_ArmetNamed</li>
+                        <li>DankPyon_LindwurmHelmet</li>
+                        <li>DankPyon_HeraldicHelmHesse</li>
+                        <li>DankPyon_HeraldicHelmOswin</li>
+                        <li>DankPyon_HeraldicHelmSoren</li>
+                        <li>DankPyon_HeraldicHelmAmboise</li>
+                    </value>
+                </li>
+                <!--Replace
+                Trader Kinds-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/FactionDef[defName="Foxian_BloodRain"]/caravanTraderKinds</xpath>
+                    <value>
+                        <caravanTraderKinds>
+                            <li>DankPyon_Caravan_Medieval_BulkGoodsMerchant</li>
+                            <li>DankPyon_Caravan_Medieval_ArtPatron</li>
+                            <li>DankPyon_Caravan_Medieval_Armorsmith</li>
+                            <li>DankPyon_Caravan_Medieval_Weaponsmith</li>
+                            <li>DankPyon_Caravan_Medieval_RuinsMerchant</li>
+                            <li>DankPyon_Caravan_Medieval_Scholar</li>
+                            <li>DankPyon_Caravan_Medieval_Alchemist</li>
+                        </caravanTraderKinds>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/FactionDef[defName="Foxian_BloodRain"]/visitorTraderKinds</xpath>
+                    <value>
+                        <visitorTraderKinds>
+                            <li>DankPyon_Visitor_Medieval_Standard</li>
+                        </visitorTraderKinds>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/FactionDef[defName="Foxian_BloodRain"]/baseTraderKinds</xpath>
+                    <value>
+                        <baseTraderKinds>
+                            <li>DankPyon_Base_Medieval_Standard</li>
+                        </baseTraderKinds>
+                    </value>
+                </li>
+                <!--Replace
+                and add misc-->
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/FactionDef[defName="Foxian_BloodRain"]/techLevel</xpath>
+                    <value>
+                        <techLevel>Medieval</techLevel>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/FactionDef[defName="Foxian_BloodRain"]/backstoryFilters</xpath>
+                    <value>
+                        <backstoryFilters>
+                            <li>
+                                <categories>
+                                    <li>Tribal</li>
+                                </categories>
+                            </li>
+                        </backstoryFilters>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/FactionDef[defName="Foxian_BloodRain"]/canSiege</xpath>
+                    <value>
+                        <canSiege>false</canSiege>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/FactionDef[defName="Foxian_BloodRain"]/raidLootMaker</xpath>
+                    <value>
+                        <raidLootMaker>DankPyon_MedievalRaidLootMaker</raidLootMaker>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/FactionDef[defName="Foxian_BloodRain"]</xpath>
+                    <value>
+                        <modExtensions>
+                            <li Class="MedievalOverhaul.FactionSiegeExtension">
+                                <medievalSiege>true</medievalSiege>
+                            </li>
+                        </modExtensions>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Ideology">
+                    <xpath>Defs/FactionDef[defName="Foxian_BloodRain"]/disallowedMemes</xpath>
+                    <value>
+                        <li>Transhumanist</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/FactionDef[defName="Foxian_BloodRain"]</xpath>
+                    <value>
+                        <apparelStuffFilter>
+                            <thingDefs>
+                                <li>DankPyon_IronIngot</li>
+                                <li>Steel</li>
+                                <li>DankPyon_Linen</li>
+                                <li>Leather_Plain</li>
+                            </thingDefs>
+                        </apparelStuffFilter>
+                    </value>
+                </li>
+                <!--Replace
+                PawnGroupMakers-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/FactionDef[defName="Foxian_BloodRain"]/pawnGroupMakers</xpath>
+                    <value>
+                        <pawnGroupMakers>
+                            <li>
+                                <!-- Normal fights, ranged and melee -->
+                                <kindDef>Combat</kindDef>
+                                <commonality>100</commonality>
+                                <options>
+                                    <FL_Foxian_Raider_Human_Slave_Medieval>3.5</FL_Foxian_Raider_Human_Slave_Medieval>
+                                    <FL_Foxian_Raider_Trash_Medieval>7</FL_Foxian_Raider_Trash_Medieval>
+                                    <FL_Foxian_Raider_Scavenger_Melee_Medieval>9</FL_Foxian_Raider_Scavenger_Melee_Medieval>
+                                    <FL_Foxian_Raider_kidnapper_Medieval>2.5</FL_Foxian_Raider_kidnapper_Medieval>
+                                    <FL_Foxian_Raider_Pyromaniac_Medieval>4.5</FL_Foxian_Raider_Pyromaniac_Medieval>
+                                    <FL_Foxian_Raider_Looter_Medieval>8</FL_Foxian_Raider_Looter_Medieval>
+                                    <FL_Foxian_Raider_Grenadier_Medieval>2.5</FL_Foxian_Raider_Grenadier_Medieval>
+                                    <FL_Foxian_Raider_Tracker_Medieval>6.5</FL_Foxian_Raider_Tracker_Medieval>
+                                    <FL_Foxian_Raider_Breacher_Medieval>3</FL_Foxian_Raider_Breacher_Medieval>
+                                    <FL_Raider_Foxian_Despoiler_Medieval>7</FL_Raider_Foxian_Despoiler_Medieval>
+                                    <FL_Foxian_Raider_Local_Commander_Medieval>1</FL_Foxian_Raider_Local_Commander_Medieval>
+                                    <FL_Foxian_Raider_Shredder_Medieval>5</FL_Foxian_Raider_Shredder_Medieval>
+                                    <FL_Foxian_Raider_Children_Of_Blood_Medieval>4</FL_Foxian_Raider_Children_Of_Blood_Medieval>
+                                    <FL_Vulyakko>4</FL_Vulyakko>
+                                    <FL_Hulkarash>1</FL_Hulkarash>
+                                </options>
+                            </li>
+                            <li>
+                                <!-- Normal fights, Emphasis on animals -->
+                                <kindDef>Combat</kindDef>
+                                <commonality>30</commonality>
+                                <options>
+                                    <FL_Foxian_Raider_Human_Slave_Medieval>3.5</FL_Foxian_Raider_Human_Slave_Medieval>
+                                    <FL_Foxian_Raider_Trash_Medieval>8</FL_Foxian_Raider_Trash_Medieval>
+                                    <FL_Foxian_Raider_Scavenger_Melee_Medieval>9</FL_Foxian_Raider_Scavenger_Melee_Medieval>
+                                    <FL_Foxian_Raider_kidnapper_Medieval>2</FL_Foxian_Raider_kidnapper_Medieval>
+                                    <FL_Foxian_Raider_Pyromaniac_Medieval>3.5</FL_Foxian_Raider_Pyromaniac_Medieval>
+                                    <FL_Foxian_Raider_Looter_Medieval>8</FL_Foxian_Raider_Looter_Medieval>
+                                    <FL_Foxian_Raider_Grenadier_Medieval>2.5</FL_Foxian_Raider_Grenadier_Medieval>
+                                    <FL_Foxian_Raider_Tracker_Medieval>6.5</FL_Foxian_Raider_Tracker_Medieval>
+                                    <FL_Foxian_Raider_Breacher_Medieval>3</FL_Foxian_Raider_Breacher_Medieval>
+                                    <FL_Raider_Foxian_Despoiler_Medieval>7</FL_Raider_Foxian_Despoiler_Medieval>
+                                    <FL_Foxian_Raider_Local_Commander_Medieval>1</FL_Foxian_Raider_Local_Commander_Medieval>
+                                    <FL_Foxian_Raider_Shredder_Medieval>5</FL_Foxian_Raider_Shredder_Medieval>
+                                    <FL_Foxian_Raider_Children_Of_Blood_Medieval>4</FL_Foxian_Raider_Children_Of_Blood_Medieval>
+                                    <FL_Vulyakko>6</FL_Vulyakko>
+                                    <FL_Hulkarash>3</FL_Hulkarash>
+                                </options>
+                            </li>
+                            <li>
+                                <!-- Normal fights, Foxian wave of trash (obviously rare) -->
+                                <kindDef>Combat</kindDef>
+                                <commonality>2</commonality>
+                                <maxTotalPoints>1600</maxTotalPoints>
+                                <options>
+                                    <FL_Foxian_Raider_Human_Slave_Medieval>5</FL_Foxian_Raider_Human_Slave_Medieval>
+                                    <FL_Foxian_Raider_Trash_Medieval>10</FL_Foxian_Raider_Trash_Medieval>
+                                    <FL_Foxian_Raider_Scavenger_Melee_Medieval>3</FL_Foxian_Raider_Scavenger_Melee_Medieval>
+                                    <FL_Vulyakko>5</FL_Vulyakko>
+                                    <FL_Hulkarash>1</FL_Hulkarash>
+                                </options>
+                            </li>
+                            <li>
+                                <!--Trader-->
+                                <kindDef>Trader</kindDef>
+                                <traders>
+                                    <FL_RaiderFoxian_Trader_Medieval>1</FL_RaiderFoxian_Trader_Medieval>
+                                </traders>
+                                <carriers>
+                                    <FL_Hulkarash>8</FL_Hulkarash>
+                                </carriers>
+                                <guards>
+                                    <FL_Foxian_Raider_Villager_Medieval>3</FL_Foxian_Raider_Villager_Medieval>
+                                    <FL_Foxian_Raider_Scavenger_Melee_Medieval>7</FL_Foxian_Raider_Scavenger_Melee_Medieval>
+                                    <FL_Foxian_Raider_Human_Slave_Medieval>1.5</FL_Foxian_Raider_Human_Slave_Medieval>
+                                    <FL_Foxian_Raider_Looter_Medieval>10</FL_Foxian_Raider_Looter_Medieval>
+                                    <FL_Foxian_Raider_Tracker_Medieval>8</FL_Foxian_Raider_Tracker_Medieval>
+                                    <FL_Raider_Foxian_Despoiler_Medieval>8</FL_Raider_Foxian_Despoiler_Medieval>
+                                    <FL_Foxian_Raider_Local_Commander_Medieval>1</FL_Foxian_Raider_Local_Commander_Medieval>
+                                    <FL_Foxian_Raider_Shredder_Medieval>6</FL_Foxian_Raider_Shredder_Medieval>
+                                </guards>
+                            </li>
+                            <li>
+                                <!-- Base defense, mainly ranged with melee mix-ins -->
+                                <kindDef>Settlement</kindDef>
+                                <options>
+                                    <FL_Foxian_Raider_Human_Slave_Medieval>0.5</FL_Foxian_Raider_Human_Slave_Medieval>
+                                    <FL_Foxian_Raider_Trash_Medieval>4</FL_Foxian_Raider_Trash_Medieval>
+                                    <FL_Foxian_Raider_Scavenger_Melee_Medieval>8</FL_Foxian_Raider_Scavenger_Melee_Medieval>
+                                    <FL_Foxian_Raider_Pyromaniac_Medieval>3</FL_Foxian_Raider_Pyromaniac_Medieval>
+                                    <FL_Foxian_Raider_Looter_Medieval>6</FL_Foxian_Raider_Looter_Medieval>
+                                    <FL_Foxian_Raider_Grenadier_Medieval>2.5</FL_Foxian_Raider_Grenadier_Medieval>
+                                    <FL_Foxian_Raider_Tracker_Medieval>8.5</FL_Foxian_Raider_Tracker_Medieval>
+                                    <FL_Raider_Foxian_Despoiler_Medieval>8</FL_Raider_Foxian_Despoiler_Medieval>
+                                    <FL_Foxian_Raider_Local_Commander_Medieval>1</FL_Foxian_Raider_Local_Commander_Medieval>
+                                    <FL_Foxian_Raider_Shredder_Medieval>10</FL_Foxian_Raider_Shredder_Medieval>
+                                    <FL_Foxian_Raider_Children_Of_Blood_Medieval>2</FL_Foxian_Raider_Children_Of_Blood_Medieval>
+                                    <FL_Vulyakko>2</FL_Vulyakko>
+                                    <FL_Hulkarash>1</FL_Hulkarash>
+                                </options>
+                            </li>
+                            <li MayRequire="Ludeon.RimWorld.Ideology">
+                                <kindDef>Miners</kindDef>
+                                <commonality>1</commonality>
+                                <options>
+                                    <Miner>1</Miner>
+                                </options>
+                            </li>
+                            <li MayRequire="Ludeon.RimWorld.Ideology">
+                                <kindDef>Hunters</kindDef>
+                                <commonality>1</commonality>
+                                <options>
+                                    <Hunter>1</Hunter>
+                                </options>
+                            </li>
+                            <li MayRequire="Ludeon.RimWorld.Ideology">
+                                <kindDef>Loggers</kindDef>
+                                <commonality>1</commonality>
+                                <options>
+                                    <Logger>1</Logger>
+                                </options>
+                            </li>
+                            <li MayRequire="Ludeon.RimWorld.Ideology">
+                                <kindDef>Farmers</kindDef>
+                                <commonality>1</commonality>
+                                <options>
+                                    <Farmer>1</Farmer>
+                                </options>
+                            </li>
+                        </pawnGroupMakers>
+                    </value>
+                </li>
+                <!--Replace
+                Fixed Leader Kind-->
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/FactionDef[defName="Foxian_BloodRain"]/fixedLeaderKinds</xpath>
+                    <value>
+                        <fixedLeaderKinds>
+                            <li>FL_Foxian_Raider_Children_Of_Blood_Medieval</li>
+                        </fixedLeaderKinds>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

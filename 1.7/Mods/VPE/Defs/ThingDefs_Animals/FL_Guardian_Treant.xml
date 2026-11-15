@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>FL_GuardianTreant</defName>
+        <label>guardian treant</label>
+        <devNote>FLGuardianTrean</devNote>
+        <description>A sacred guardian of nature made alive thanks to the psychic entropy of a Naturastodis. This creature might be slow, but it's capable of withstanding heavy damage and can deliver some as well. Unfortunately for the Naturastodis, this creature is not permanent and will vanish at some point if it does not die in a fight before that. During its duty, this creature will not sleep or eat anything.</description>
+        <statBases>
+            <MoveSpeed>4.4</MoveSpeed>
+            <ComfyTemperatureMin>-12</ComfyTemperatureMin>
+            <ComfyTemperatureMax>40</ComfyTemperatureMax>
+            <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <FilthRate>1</FilthRate>
+            <PainShockThreshold>0.85</PainShockThreshold>
+            <IncomingDamageFactor>0.95</IncomingDamageFactor>
+        </statBases>
+        <tools>
+            <li>
+                <label>left fist</label>
+                <labelNoLocation>fist</labelNoLocation>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>1.5</cooldownTime>
+                <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>10</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>right fist</label>
+                <labelNoLocation>fist</labelNoLocation>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>1.5</cooldownTime>
+                <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>10</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>1.8</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.7</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <tradeability>None</tradeability>
+        <race>
+            <body>Human</body>
+            <fleshType>FL_TreeFlesh</fleshType>
+            <herdAnimal>false</herdAnimal>
+            <predator>false</predator>
+            <needsRest>false</needsRest>
+            <hasGenders>false</hasGenders>
+            <nameGenerator>NamerTreant</nameGenerator>
+            <nameOnTameChance>1</nameOnTameChance>
+            <bloodDef>Filth_Trash</bloodDef>
+            <bloodSmearDef>Filth_RubbleRock</bloodSmearDef>
+            <baseBodySize>1.5</baseBodySize>
+            <baseHealthScale>3.5</baseHealthScale>
+            <baseHungerRate>0</baseHungerRate>
+            <foodType>None</foodType>
+            <hasCorpse>false</hasCorpse>
+            <trainability>Advanced</trainability>
+            <lifeExpectancy>1000</lifeExpectancy>
+            <specialTrainables>
+                <li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+            </specialTrainables>
+            <lifeStageAges>
+                <li>
+                    <def>EntityFullyFormed</def>
+                    <soundCall>Pawn_Revenant_Call</soundCall>
+                    <soundWounded>Pawn_Revenant_Wounded</soundWounded>
+                    <soundDeath>Pawn_Revenant_Death</soundDeath>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+    </ThingDef>
+
+    <PawnKindDef>
+        <defName>FL_GuardianTreant</defName>
+        <label>guardian treant</label>
+        <race>FL_GuardianTreant</race>
+        <overrideDeathOnDownedChance>1</overrideDeathOnDownedChance>
+        <forceDeathOnDowned>true</forceDeathOnDowned>
+        <immuneToTraps>true</immuneToTraps>
+        <collidesWithPawns>false</collidesWithPawns>
+        <canOpenAnyDoor>true</canOpenAnyDoor>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawns/Animal/GuardianTreant/FL_GuardianTreant</texPath>
+                    <drawSize>2</drawSize>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <!-- <startingHediffs>
+            <li>
+                <def>HoraxianInvisibility</def>
+            </li>
+        </startingHediffs> -->
+        <combatPower>250</combatPower>
+    </PawnKindDef>
+</Defs>

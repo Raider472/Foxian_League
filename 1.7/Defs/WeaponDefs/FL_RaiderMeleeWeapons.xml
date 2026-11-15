@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="FoxianBaseMeleeWeapon">
+        <defName>FL_Weapon_ParalysingDagger</defName>
+        <label>paralysing dagger</label>
+        <techLevel>Medieval</techLevel>
+        <relicChance>0.5</relicChance>
+        <description>A poorly forged dagger coated in a potent poison that will make someone numb and number for each consecutive hit. This weapon was created for the sole purpose of incapacitating someone.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Poison_Dagger</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.9</drawSize>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <weaponTags>
+            <li>FoxianRaiderNormalMelee</li>
+            <li>FoxianRaiderKidnapper</li>
+        </weaponTags>
+        <costStuffCount>30</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <statBases>
+            <WorkToMake>1400</WorkToMake>
+            <Mass>0.4</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <burnableByRecipe>false</burnableByRecipe>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>1.75</cooldownTime>
+            </li>
+            <li>
+                <label>blade</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+        </tools>
+        <comps>
+            <li Class="Foxian_league.CompProperties_PoisonousDagger">
+                <hediffOnHit>FL_Poisonous_Paralysis</hediffOnHit>
+                <minValue>0.06</minValue>
+                <maxValue>0.13</maxValue>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="FoxianBaseMeleeWeapon">
+        <defName>FL_Weapon_FlamingTorch</defName>
+        <label>flaming torch</label>
+        <techLevel>Medieval</techLevel>
+        <relicChance>0.8</relicChance>
+        <description>A makeshift two-handed heavy weapon made to set the enemies on fire. The torch is hard to handle and slow to hit due to its odd design. This weapon was created by the Blood Rain to fight off Foxians from the League. It is well known to foxians that their tails are easily flammable and can spread to the whole body as a consequence.\n This weapon is effective against unprotected foxians, but outside of that. Its cumbersome design makes it impractical against anything else that is not a Foxian.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Heavy_Torch</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <uiIconScale>0.8</uiIconScale>
+        <weaponTags>
+            <li>FoxianRaiderNormalMelee</li>
+            <li>FoxianRaiderPyromaniac</li>
+        </weaponTags>
+        <costStuffCount>45</costStuffCount>
+        <costList>
+            <Steel>30</Steel>
+            <Chemfuel>40</Chemfuel>
+        </costList>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <statBases>
+            <WorkToMake>1300</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <equippedAngleOffset>-25</equippedAngleOffset>
+        <burnableByRecipe>false</burnableByRecipe>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Flame</def>
+                        <amount>8</amount>
+                        <chance>0.2</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>11</power>
+                <cooldownTime>2</cooldownTime>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Flame</def>
+                        <amount>8</amount>
+                        <chance>0.2</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+        </tools>
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.3, 0, 0.1)</drawOffset>
+                    </north>
+                    <south>
+                        <drawOffset>(0.3, 0, 0.1)</drawOffset>
+                    </south>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="FoxianLegendaryMeleeWeapon">
+        <defName>FL_Weapon_CursedSword</defName>
+        <label>cursed sword</label>
+        <description>A cursed sword that drains the lives of all those killed by it. No one knows how it was fabricated or what materials it is composed of. This sword has an insatiable hunger and will even kill its owner if it has not been nourished for a while. This blade is also known to make it hard for its owner to separate from him.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Cursed_Katana</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <uiIconScale>0.9</uiIconScale>
+        <equippedAngleOffset>-25</equippedAngleOffset>
+        <weaponTags Inherit="False">
+            <li>FoxianRaiderLegendaryMelee</li>
+        </weaponTags>
+        <statBases>
+            <Mass>2.5</Mass>
+        </statBases>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>1.8</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>28</power>
+                <cooldownTime>2.2</cooldownTime>
+                <armorPenetration>0.61</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>28</power>
+                <cooldownTime>2.2</cooldownTime>
+                <armorPenetration>0.61</armorPenetration>
+            </li>
+        </tools>
+        <comps>
+            <li Class="Foxian_league.ComProperties_CursedSwordBehaviour">
+                <hediffOnEquip>FL_Insatiable_Hunger</hediffOnEquip>
+                <hediffOnEquipAlt>FL_Insatiable_Hunger_Leader_Alt</hediffOnEquipAlt>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.2, 0, 0.05)</drawOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.1, 0, 0.03)</drawOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(0.2, 0, 0.05)</drawOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.1, 0, 0.03)</drawOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="FoxianLegendaryBladeLinkMeleeWeapon">
+        <defName>FL_Weapon_CleansedSword</defName>
+        <label>cleansed sword</label>
+        <description>A once cursed sword that has been cleansed. The mad spirit inside it has been calmed and has been converted into a persona that can bond with a single person. Once bonded, it will refuse to be wielded by anyone else.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Blessed_Katana</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <uiIconScale>0.9</uiIconScale>
+        <equippedAngleOffset>-25</equippedAngleOffset>
+        <weaponTags>
+            <li>FoxianLegendaryMelee</li>
+        </weaponTags>
+        <statBases>
+            <Mass>2.5</Mass>
+        </statBases>
+        <equippedStatOffsets>
+            <PsychicSensitivityOffset>0.17</PsychicSensitivityOffset>
+        </equippedStatOffsets>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>11</power>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>23</power>
+                <cooldownTime>2.2</cooldownTime>
+                <armorPenetration>0.43</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>23</power>
+                <cooldownTime>2.2</cooldownTime>
+                <armorPenetration>0.43</armorPenetration>
+            </li>
+        </tools>
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.2, 0, 0.05)</drawOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.1, 0, 0.03)</drawOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(0.2, 0, 0.05)</drawOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.1, 0, 0.03)</drawOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
+    </ThingDef>
+</Defs>

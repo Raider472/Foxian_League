@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RitualPatternDef>
+        <defName>FL_SacrificialTreeLinking_RitualPattern</defName>
+        <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
+        <ritualBehavior>FL_SacrificalTree_SacrificeRitual</ritualBehavior>
+        <ritualTargetFilter>SelectedThing</ritualTargetFilter>
+        <ritualObligationTargetFilter>SacrificialTree_TargetFilter</ritualObligationTargetFilter>
+        <ritualOutcomeEffect>FL_SacrificialTree_RitualOutcome</ritualOutcomeEffect>
+        <playsIdeoMusic>false</playsIdeoMusic>
+        <alwaysStartAnytime>true</alwaysStartAnytime>
+    </RitualPatternDef>
+</Defs>

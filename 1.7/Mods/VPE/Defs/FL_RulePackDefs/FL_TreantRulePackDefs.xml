@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RulePackDef>
+        <defName>NamerTreant</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[NameTreant]</li>
+
+                <li>NameTreant->Aelthorn</li>
+                <li>NameTreant->Brambleoak</li>
+                <li>NameTreant->Caelroot</li>
+                <li>NameTreant->Druvenbark</li>
+                <li>NameTreant->Elarwood</li>
+                <li>NameTreant->Faelgrove</li>
+                <li>NameTreant->Galenbranch</li>
+                <li>NameTreant->Ilyndor</li>
+                <li>NameTreant->Letharion</li>
+                <li>NameTreant->Mosshollow</li>
+                <li>NameTreant->Oakfather</li>
+                <li>NameTreant->Sylvaran</li>
+                <li>NameTreant->Sylvana</li>
+                <li>NameTreant->Rootwarden</li>
+                <li>NameTreant->Thalor</li>
+                <li>NameTreant->Vaelbark</li>
+                <li>NameTreant->Ysildor</li>
+                <li>NameTreant->Greenbough</li>
+                <li>NameTreant->Rootbinder</li>
+                <li>NameTreant->Rootcaller</li>
+                <li>NameTreant->Sapkeeper</li>
+                <li>NameTreant->Stormroot</li>
+                <li>NameTreant->Thornbough</li>
+                <li>NameTreant->Wildroot</li>
+                <li>NameTreant->Willowshade</li>
+                <li>NameTreant->Woodkeeper</li>
+                <li>NameTreant->Wyrmwood</li>
+                <li>NameTreant->Eldranor</li>
+                <li>NameTreant->Faelor</li>
+                <li>NameTreant->Lorathen</li>
+                <li>NameTreant->Nymbriel</li>
+                <li>NameTreant->Orenwood</li>
+                <li>NameTreant->Sylthar</li>
+                <li>NameTreant->Thornor</li>
+                <li>NameTreant->Aerandor</li>
+                <li>NameTreant->Arvandor</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

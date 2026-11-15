@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Defs>
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>FL_FoxianFakeEars</defName>
+        <label>foxian fake ears</label>
+        <labelNoun>a pair of foxian fake ears</labelNoun>
+        <description>An installed pair of Foxian fake ears. They inflict continuous pain on the user and make them more prone to obey their masters.</description>
+        <descriptionHyperlinks>
+            <ThingDef>FL_FoxianFakeEars</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>FL_FoxianFakeEars</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <painOffset>0.1</painOffset>
+                <statOffsets>
+                    <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.25</SlaveSuppressionOffset>
+                    <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+                </statOffsets>
+                <statFactors>
+                    <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.9</CertaintyLossFactor>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.95</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawns/FakeFoxianEars/FL_FakeFoxianEars</texPath>
+                <shaderTypeDef>CutoutComplex</shaderTypeDef>
+                <colorType>Hair</colorType>
+                <parentTagDef>Head</parentTagDef>
+                <useSkinShader>false</useSkinShader>
+                <useRottenColor>true</useRottenColor>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <defaultData>
+                        <layer>72</layer>
+                    </defaultData>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </HediffDef>
+
+    <ThingDef ParentName="FL_BodyPartImplantBase">
+        <defName>FL_FoxianFakeEars</defName>
+        <label>foxian fake ears</label>
+        <description>A pair of fake foxian ears used by the blood rain to turn their slaves more obedient. They are directly installed into the brains of the users on top of their heads. The constant pain will teach the slaves that work is the only way to alleviate the pain.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>FL_InstallFoxianFakeEars</RecipeDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Steel>15</Steel>
+            <Cloth>25</Cloth>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <Mass>1</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
+        <defName>FL_InstallFoxianFakeEars</defName>
+        <label>install fake foxian ears</label>
+        <description>Install a pair of fake foxian ears.</description>
+        <descriptionHyperlinks>
+            <ThingDef>FL_FoxianFakeEars</ThingDef>
+            <HediffDef>FL_FoxianFakeEars</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing a pair of fake foxian ears.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>FL_FoxianFakeEars</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>FL_FoxianFakeEars</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>FL_FoxianFakeEars</addsHediff>
+    </RecipeDef>
+</Defs>

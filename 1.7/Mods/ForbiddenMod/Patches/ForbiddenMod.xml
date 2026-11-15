@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!--add some stats offset to the lustful gene-->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="FL_Lustful"]/statOffsets</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="FL_Lustful"]/statOffsets</xpath>
+            <value>
+                <SexFrequency>0.2</SexFrequency>
+                <Vulnerability>-0.05</Vulnerability>
+                <SexSatisfaction>0.1</SexSatisfaction>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="FL_Lustful"]</xpath>
+            <value>
+                <statOffsets>
+                    <SexFrequency>0.2</SexFrequency>
+                    <Vulnerability>-0.05</Vulnerability>
+                    <SexSatisfaction>0.1</SexSatisfaction>
+                </statOffsets>
+            </value>
+        </nomatch>
+    </Operation>
+</Patch>

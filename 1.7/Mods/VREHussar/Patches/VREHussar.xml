@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<!--Add exclusion tag if HRE Hussar is active-->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="VREH_Arrogant"]/exclusionTags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="VREH_Arrogant"]/exclusionTags</xpath>
+            <value>
+                <li>FL_ComposedExclusion</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="VREH_Arrogant"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>FL_ComposedExclusion</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+    </Operation>
+</Patch>

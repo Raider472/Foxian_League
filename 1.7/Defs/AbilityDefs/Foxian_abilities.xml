@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AbilityDef>
+        <defName>FL_PsychicProtectionSwitch</defName>
+        <label>psychic protection switch mode</label>
+        <description>Allows switching the effect between the tank and dodge mode for this person.</description>
+        <jobDef>CastAbilityOnThing</jobDef>
+        <targetRequired>False</targetRequired>
+        <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+        <iconPath>UI/Icons/Ability/FL_Ability_Psy_Switch</iconPath>
+        <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <showCastingProgressBar>True</showCastingProgressBar>
+        <showWhenDrafted>False</showWhenDrafted>
+        <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <statBases>
+            <Ability_EffectRadius>0</Ability_EffectRadius>
+        </statBases>
+        <warmupSound>PsycastCastLoop</warmupSound>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>2</warmupTime>
+            <range>9999</range>
+            <drawAimPie>False</drawAimPie>
+            <requireLineOfSight>False</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetHumans>false</canTargetHumans>
+                <canTargetMechs>false</canTargetMechs>
+                <canTargetSubhumans>false</canTargetSubhumans>
+                <canTargetEntities>false</canTargetEntities>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="Foxian_league.CompProperties_PsychicProtection">
+                <defaultHediff>FL_PsychichProtectionTank</defaultHediff>
+                <alternatetHediff>FL_PsychichProtectionDodge</alternatetHediff>
+                <hediffDef>FL_PsychichProtectionTank</hediffDef>
+                <onlyBrain>False</onlyBrain>
+                <onlyApplyToSelf>True</onlyApplyToSelf>
+                <replaceExisting>true</replaceExisting>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef>
+        <defName>FL_LastStand_Ability</defName>
+        <label>last stand</label>
+        <description>Give this person a special effect that will grant him huge bonus stats in combat, such as reducing incoming damage by half, increasing the melee damage factor, and increasing the pain shock threshold. While this effect is active, bleeding wounds close very quickly. This effect will last for 2 hours, and once it expires, this person will fall into a coma for 2 days. If this person dies during the initial effect, a small but deadly explosion will be triggered around this person's body. Additionally, if this person has a psyfocus need, using this ability will drain all of it.</description>
+        <jobDef>CastAbilityOnThing</jobDef>
+        <targetRequired>False</targetRequired>
+        <showCastingProgressBar>True</showCastingProgressBar>
+        <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+        <iconPath>UI/Icons/Ability/FL_Ability_Last_Stand</iconPath>
+        <cooldownTicksRange>420000</cooldownTicksRange><!-- 7 days -->
+        <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <casterMustBeCapableOfViolence>True</casterMustBeCapableOfViolence>
+        <statBases>
+            <Ability_Duration>100</Ability_Duration> <!-- 2 hour -->
+            <Ability_EffectRadius>0</Ability_EffectRadius>
+        </statBases>
+        <warmupSound>PsycastCastLoop</warmupSound>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>0.5</warmupTime>
+            <range>9999</range>
+            <drawAimPie>False</drawAimPie>
+            <requireLineOfSight>False</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetHumans>false</canTargetHumans>
+                <canTargetMechs>false</canTargetMechs>
+                <canTargetSubhumans>false</canTargetSubhumans>
+                <canTargetEntities>false</canTargetEntities>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>Foxian_league.Comp_AddHediffLastStand</compClass>
+                <hediffDef>FL_LastStand_Hediff</hediffDef>
+                <onlyBrain>True</onlyBrain>
+                <onlyApplyToSelf>True</onlyApplyToSelf>
+                <replaceExisting>true</replaceExisting>
+            </li>
+        </comps>
+    </AbilityDef>
+</Defs>

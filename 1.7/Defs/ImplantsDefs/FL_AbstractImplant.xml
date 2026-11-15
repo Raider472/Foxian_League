@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef Name="FL_BodyPartImplantBase" ParentName="BodyPartBase" Abstract="True">
+        <techLevel>Industrial</techLevel>
+        <thingCategories>
+            <li>BodyPartsProsthetic</li>
+        </thingCategories>
+        <graphicData>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+            <color>(47,194,155)</color>
+        </graphicData>
+        <thingSetMakerTags>
+            <li>RewardStandardLowFreq</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>14000</WorkToMake>
+        </statBases>
+        <recipeMaker>
+            <displayPriority>600</displayPriority>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+            <researchPrerequisite>Prosthetics</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+</Defs>

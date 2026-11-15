@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef>
+        <defName>FL_LastStand_Hediff</defName>
+        <label>Last stand</label>
+        <defaultLabelColor>(0.2, 1, 0.35)</defaultLabelColor>
+        <description>This person is condensing all of its psychic power in an attempt for a last stand. They will be much harder to kill it, and an explosion will occur if they are killed in that state. Once this effect expires, this person will enter a coma for a few days.</description>
+        <hediffClass>Foxian_league.Hediff_Clotting</hediffClass>
+        <everCurableByItem>false</everCurableByItem>
+        <isBad>false</isBad>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+        <stages>
+            <li>
+                <statFactors>
+                    <IncomingDamageFactor>0.5</IncomingDamageFactor>
+                    <MeleeDamageFactor>1.5</MeleeDamageFactor>
+                    <PainShockThreshold>1.5</PainShockThreshold>
+                </statFactors>
+                <statOffsets>
+                    <PsychicSensitivity>-5</PsychicSensitivity>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="Foxian_league.HediffCompProperties_AddHediffAfterExpiration">
+                <hediffToGive>FL_PsychicComa</hediffToGive>
+            </li>
+            <li Class="VEF.AnimalBehaviours.HediffCompProperties_Exploder">
+                <explosionForce>4</explosionForce>
+                <damageDef>FL_PsychicBomb</damageDef>
+            </li>
+            <li Class="HediffCompProperties_Effecter">
+				<stateEffecter>FL_LastStand</stateEffecter>
+			</li>
+        </comps>
+    </HediffDef>
+</Defs>

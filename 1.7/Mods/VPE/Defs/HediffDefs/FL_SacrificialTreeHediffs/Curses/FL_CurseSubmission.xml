@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef ParentName="CurseAbs">
+        <defName>FL_CurseSubmission</defName>
+        <label>curses of compliance</label>
+        <description>This person has been cursed by one of the foxian sacred beasts representing the aspect of subjugation and domination. They are constantly fighting the urge to give up their struggle for survival and to submit to the enemies. While this effect is active, they will be less effective in combat and be gullible to foreign ideologies.</description>
+        <makesSickThought>true</makesSickThought>
+        <stages>
+            <li>
+                <statOffsets>
+                    <AimingDelayFactor>0.4</AimingDelayFactor>
+                    <RangedCooldownFactor>0.5</RangedCooldownFactor>
+                    <SocialImpact>-0.5</SocialImpact>
+                </statOffsets>
+                <statFactors>
+                    <MeleeDamageFactor>0.5</MeleeDamageFactor>
+                    <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">1.75</CertaintyLossFactor>
+                    <ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.5</ConversionPower>
+                    <StaggerDurationFactor>1.5</StaggerDurationFactor>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

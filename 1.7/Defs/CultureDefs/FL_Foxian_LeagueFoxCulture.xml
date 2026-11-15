@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <CultureDef>
+        <defName>FL_FoxianLeagueCulture</defName>
+        <label>foxian federation</label>
+        <description>A federation of independent Foxian settlements that have united together in order to survive the harshness of the rimworld.</description>
+        <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">FoxianLeagueIdeoNamer</ideoNameMaker>
+        <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">FoxianLeagueNamerDeity</deityNameMaker>
+        <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">FoxianLeagueNamerDeityType</deityTypeMaker>
+        <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">FoxianLeagueNamerLeader</leaderTitleMaker>
+        <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalRustican</festivalNameMaker>
+        <allowedPlaceTags>
+            <li>OriginSpacer</li>
+        </allowedPlaceTags>
+        <iconPath>UI/Icons/Culture/FL_Foxian_Culture</iconPath>
+        <thingStyleCategories>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <category>Animalist</category>
+                <priority>2</priority>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <category>Techist</category>
+                <priority>2</priority>
+            </li>
+        </thingStyleCategories>
+        <styleItemTags>
+            <li>
+                <tag>Shaved</tag>
+                <baseWeight>0.1</baseWeight>
+                <weightFactor>0.1</weightFactor>
+            </li>
+            <li>
+                <tag>NoBeard</tag>
+                <baseWeight>6</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoTattoo</tag>
+                <baseWeight>10</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>Rural</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>Urban</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+        </styleItemTags>
+    </CultureDef>
+</Defs>

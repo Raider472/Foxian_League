@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RulePackDef>
+        <defName>FL_FoxianDialect_NameMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[languages]</li>
+
+                <li>languages->Foxian</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

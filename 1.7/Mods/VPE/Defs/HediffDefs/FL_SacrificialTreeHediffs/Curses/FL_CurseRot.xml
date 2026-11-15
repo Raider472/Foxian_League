@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef ParentName="CurseAbs">
+        <defName>FL_CurseRot</defName>
+        <label>curses of decay</label>
+        <description>This person has been cursed by one of the foxian sacred beasts representing the aspect of decay and decadence. They will become temporarily sick until the disease goes away on its own. The disease can worsen the condition of the living subject and can even outright kill him if untreated.</description>
+        <lethalSeverity>1</lethalSeverity>
+        <makesSickThought>true</makesSickThought>
+        <minSeverity>0.001</minSeverity>
+        <initialSeverity>0.001</initialSeverity>
+        <stages>
+            <li>
+                <vomitMtbDays>1.5</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <setMax>0.9</setMax>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Talking</capacity>
+                        <offset>-0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.85</minSeverity>
+                <label>extreme</label>
+                <lifeThreatening>true</lifeThreatening>
+                <vomitMtbDays>0.75</vomitMtbDays>
+                <painOffset>0.05</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>-0.25</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>-0.25</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <setMax>0.8</setMax>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Talking</capacity>
+                        <offset>-0.4</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.5</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <tendable>true</tendable>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.8</severityPerDay>
+            </li>
+            <li Class="HediffCompProperties_TendDuration">
+                <severityPerDayTended>-1</severityPerDayTended>
+                <baseTendDurationHours>72</baseTendDurationHours>
+            </li>
+        </comps>
+    </HediffDef>
+</Defs>

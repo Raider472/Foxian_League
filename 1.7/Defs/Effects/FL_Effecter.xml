@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <EffecterDef>
+        <defName>FL_LastStand</defName>
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+                <scale>0.4~0.7</scale>
+                <chancePerTick>0.05</chancePerTick>
+                <positionRadius>0.25</positionRadius>
+                <moteDef>FL_Mote_LastStand</moteDef>
+                <speed>0.18~0.23</speed>
+                <angle>-80~80</angle>
+            </li>
+        </children>
+  </EffecterDef>
+
+  <EffecterDef>
+    <defName>FL_BendTheOdds</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>Mote_FateManipulationDistortion</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+        <moteDef>Mote_FateManipulationFlash</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <initialDelayTicks>10</initialDelayTicks>
+        <destroyMoteOnCleanup>false</destroyMoteOnCleanup>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+        <moteDef>Mote_FateManipulationDistortionDistortion</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <initialDelayTicks>10</initialDelayTicks>
+        <destroyMoteOnCleanup>false</destroyMoteOnCleanup>
+      </li>
+    </children>
+  </EffecterDef>
+</Defs>

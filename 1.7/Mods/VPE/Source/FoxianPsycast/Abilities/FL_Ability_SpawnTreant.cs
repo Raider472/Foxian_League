@@ -1,0 +1,89 @@
+﻿using RimWorld;
+using RimWorld.Planet;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using VEF.Abilities;
+using VEF.Weapons;
+using Verse;
+
+namespace FoxianPsycast{
+    //Similar to VEF Ability Spawn, Did this because Spawn did not work with PawnKindDef
+    public class FL_Ability_SpawnTreant : VEF.Abilities.Ability {
+
+        public static readonly SimpleCurve DurationFromPsychicSentivity = new SimpleCurve {
+            new CurvePoint(0.5f, 90000f),
+            new CurvePoint(1f, 200000f),
+            new CurvePoint(1.5f, 300000f),
+            new CurvePoint(2f, 450000f),
+            new CurvePoint(2.5f, 600000f),
+            new CurvePoint(3f, 900000f),
+            new CurvePoint(4f, 1800000f),
+            new CurvePoint(5f, 2700000f),
+            new CurvePoint(10f, 6000000f)
+        };
+        public override bool CanAutoCast => false;
+
+        public override void Cast(params GlobalTargetInfo[] targets) {
+            base.Cast(targets);
+            AbilityExtension_SpawnPawn modExtension = def.GetModExtension<AbilityExtension_SpawnPawn>();
+
+            if(modExtension?.pawn != null) {
+                for(int i = 0; i < targets.Length; i++) {
+                    Spawn(targets[i], modExtension.pawn, this);
+                }
+            }
+        }
+
+        public override bool ValidateTarget(LocalTargetInfo target, bool showMessages = true) {
+            AbilityExtension_SpawnPawn modExtension = def.GetModExtension<AbilityExtension_SpawnPawn>();
+
+            if(modExtension == null || modExtension?.pawn == null) return false;
+
+            Thing treePlant = target.Cell.GetPlant(pawn.Map);
+
+            if(treePlant == null || treePlant.def.plant.wildOrder < 3) {
+                if(showMessages) {
+                    Messages.Message("AbilityTargetMustTargetTree".Translate(), target.ToTargetInfo(pawn.Map), MessageTypeDefOf.RejectInput, historical: false);
+                }
+                return false;
+            }
+
+            return base.ValidateTarget(target, showMessages);
+        }
+
+        public void Spawn(GlobalTargetInfo target, PawnKindDef pawnKind, VEF.Abilities.Ability ability) {
+            Plant treePlant = target.Cell.GetPlant(ability.pawn.Map);
+            treePlant.Kill();
+
+            Pawn pawn = PawnGenerator.GeneratePawn(pawnKind);
+            Thing thing = GenSpawn.Spawn(pawn, target.Cell, target.Map);
+            string generated = NameGenerator.GenerateName(pawn.RaceProps.GetNameGenerator(pawn.gender));
+            pawn.Name = new NameSingle(generated); ;
+
+
+            thing.SetFaction(ability.pawn.Faction);
+            //InteractionWorker_RecruitAttempt.DoRecruit(ability.pawn, pawn);
+
+            //pawn.training.SetWantedRecursive(TrainableDefOf.Tameness, false);
+            foreach(TrainableDef allDef in DefDatabase<TrainableDef>.AllDefs) {
+                if(pawn.training.CanAssignToTrain(allDef).Accepted) {
+                    pawn.training.Train(allDef, null, complete: true);
+                }
+            }
+            pawn.playerSettings.Master = ability.pawn;
+            pawn.playerSettings.followDrafted = true;
+            pawn.playerSettings.followFieldwork = true;
+
+            pawn.health.hediffSet.hediffs.Clear();
+
+            int durationFromPsychicSensitivity = (int)DurationFromPsychicSentivity.Evaluate(ability.pawn.psychicEntropy.PsychicSensitivity);
+            Hediff hediff = HediffMaker.MakeHediff(InternalDefOf.FL_PsychicalBody, pawn, pawn.health.hediffSet.GetBrain());
+            HediffComp_Disappears hediffCompDisapear = hediff.TryGetComp<HediffComp_Disappears>();
+            if(hediffCompDisapear != null) hediffCompDisapear.ticksToDisappear = durationFromPsychicSensitivity;
+            pawn.health.AddHediff(hediff);
+        }
+    }
+}

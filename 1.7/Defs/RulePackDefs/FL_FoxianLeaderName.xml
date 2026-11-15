@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+        <defName>FoxianRaiderNamerLeader</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_leaderTitle->Children of Blood</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+        <defName>FoxianLeagueNamerLeader</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_leaderTitle->The Great Counselor</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

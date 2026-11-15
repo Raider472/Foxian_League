@@ -6,6 +6,7 @@
 	<modIconPath IgnoreIfNoMatchingField="True">UI/Icons/Xenotype/FL_FoxianXenotypeIcon</modIconPath>
     <supportedVersions>
 		<li>1.6</li>
+		<li>1.7</li>
     </supportedVersions>
     <modDependencies>
         <li>

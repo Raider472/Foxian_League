@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef ParentName="BlessingAbs">
+        <defName>FL_BlessingFortitude</defName>
+        <label>blessing of fortitude</label>
+        <description>This person has been blessed by one of the foxian sacred beasts representing the aspect of the foxian will and tenacity to live. This person will temporarily be able to work faster and for a longer period of time without the need for sleeping.</description>
+        <stages>
+            <li>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+                    <MoveSpeed>0.25</MoveSpeed>
+                    <RestRateMultiplier>0.15</RestRateMultiplier>
+                    <GlobalLearningFactor>0.1</GlobalLearningFactor>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

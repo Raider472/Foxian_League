@@ -4,3 +4,9 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Foxian_League\Source
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Foxian_League\1.6\Assemblies\Foxian_league.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Foxian_League\Source\Foxian_league\obj\Debug\Foxian_l.20D43C20.Up2Date
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Foxian_League\Source\Foxian_league\obj\Debug\Foxian_league.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Foxian_League\1.7\Assemblies\Foxian_league.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Foxian_League\Source\Foxian_league\obj\Debug\Foxian_league.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Foxian_League\Source\Foxian_league\obj\Debug\Foxian_league.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Foxian_League\Source\Foxian_league\obj\Debug\Foxian_league.AssemblyInfo.cs
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Foxian_League\Source\Foxian_league\obj\Debug\refint\Foxian_league.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Foxian_League\Source\Foxian_league\obj\Debug\ref\Foxian_league.dll

@@ -15,7 +15,6 @@ namespace Foxian_league {
 
             LocalTargetInfo latestTarget = pawn.LastAttackedTarget;
             if(!latestTarget.IsValid || !latestTarget.HasThing) return;
-            Log.Message($"Comp_RestorePsyfocusOnKill: Notify_KilledPawn called for {pawn.Name} with target {latestTarget.Thing?.Label ?? "null"}, hp scale: {latestTarget.Pawn.RaceProps.baseHealthScale}");
 
             base.Notify_KilledPawn(pawn);
 
@@ -23,7 +22,6 @@ namespace Foxian_league {
                 return;
             }
             float psyFocusToRestore = CalculatePsyFocus(Props.psyfocusRestoreRange, latestTarget.Pawn.RaceProps.baseHealthScale);
-            Log.Message($"Comp_RestorePsyfocusOnKill: Restoring {psyFocusToRestore} psyfocus to {pawn.Name} with target {latestTarget.Thing?.Label ?? "null"}, minRange: {Props.psyfocusRestoreRange.min * latestTarget.Pawn.RaceProps.baseHealthScale}, maxRange: {Props.psyfocusRestoreRange.max * latestTarget.Pawn.RaceProps.baseHealthScale}");
             pawn.psychicEntropy.OffsetPsyfocusDirectly(psyFocusToRestore);
 
         }

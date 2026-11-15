@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RitualObligationTargetFilterDef>
+        <defName>SacrificialTree_TargetFilter</defName>
+        <workerClass>FoxianPsycast.RitualObligationTargetWorker_SacrificialTree</workerClass>
+    </RitualObligationTargetFilterDef>
+</Defs>

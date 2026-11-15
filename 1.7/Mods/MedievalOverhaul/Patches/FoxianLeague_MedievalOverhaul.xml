@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <!-- and techLevel="Medieval -->
+        <xpath>Defs/FactionDef[defName="Foxian_League"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!--Add
+                Ranged Weapons to Foxian League-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/PawnKindDef[defName="FL_Foxian_Trader_Medieval" or
+                        defName="FL_Foxian_Diplomat_Medieval" or
+                        defName="FL_Foxian_Politician_Medieval" or
+                        defName="FL_Foxian_League_Scout_Medieval" or
+                        defName="FL_Foxian_League_Archer_Medieval" or
+                        defName="FL_Foxian_League_Hunter_Medieval"]/weaponTags</xpath>
+                    <value>
+                        <li>DankPyon_Arbelest</li>
+                        <li>DankPyon_Crossbow</li>
+                        <li>DankPyon_Handgonne</li>
+                        <li>DankPyon_BrigandMarksman</li>
+                        <li>DankPyon_HuntingBow</li>
+                        <li>DankPyon_Warbow</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/PawnKindDef[defName="FL_Foxian_League_Grenadier_Flame_Medieval"]/weaponTags/li[text()="GrenadeFlame"]</xpath>
+                    <value>
+                        <li>DankPyon_Grenade_PotFire</li>
+                    </value>
+                </li>
+                <!--Replace
+                Apparels-->
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/PawnKindDef[@Name="LeagueFoxianBase_civilian_medieval" or
+                        @Name="LeagueFoxianBase_combat_medieval"]/apparelTags/li[text()="IndustrialBasic"]</xpath>
+                    <value>
+                        <li>MedievalBasic</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/PawnKindDef[@Name="LeagueFoxianBase_combat_medieval"]/apparelTags/li[text()="IndustrialAdvanced"]</xpath>
+                    <value>
+                        <li>MedievalMilitaryBasic</li>
+                    </value>
+                </li>
+                <!--Add
+                Apparels-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/PawnKindDef[@Name="LeagueFoxianBase_civilian_medieval"]/apparelTags</xpath>
+                    <value>
+                        <li>MedievalMilitaryBasic</li>
+                        <li>DankPyon_PeasantHelmet</li>
+                        <li>DankPyon_BillmanHelmet</li>
+                        <li>DankPyon_HedgeKnightHelmet</li>
+                        <li>DankPyon_LordHelmet</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/PawnKindDef[@Name="LeagueFoxianBase_combat_medieval"]/apparelTags</xpath>
+                    <value>
+                        <li>MedievalMilitaryBasic</li>
+                        <li>MedievalMilitaryDecent</li>
+                        <li>MedievalMilitaryAdvanced</li>
+                        <li>DankPyon_KnightHelmet</li>
+                        <li>DankPyon_ZweihanderHelmHesse</li>
+                        <li>DankPyon_MercenaryHeavy</li>
+                        <li>DankPyon_FootmanHelmet</li>
+                        <li>DankPyon_MercenaryHelmet</li>
+                        <li>DankPyon_ArbalesterHelmet</li>
+                        <li>DankPyon_HedgeKnightHelmet</li>
+                        <li>DankPyon_Billman</li>
+                        <li>DankPyon_ArmetNamed</li>
+                        <li>DankPyon_LindwurmHelmet</li>
+                        <li>DankPyon_LordHelmet</li>
+                        <li>DankPyon_Champion</li>
+                        <li>DankPyon_HeraldicHelmHesse</li>
+                        <li>DankPyon_HeraldicHelmOswin</li>
+                        <li>DankPyon_HeraldicHelmSoren</li>
+                        <li>DankPyon_HeraldicHelmAmboise</li>
+                    </value>
+                </li>
+                <!--Replace
+                Trader Kinds-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/FactionDef[defName="Foxian_League"]/caravanTraderKinds</xpath>
+                    <value>
+                        <caravanTraderKinds>
+                            <li>DankPyon_Caravan_Medieval_BulkGoodsMerchant</li>
+                            <li>DankPyon_Caravan_Medieval_ArtPatron</li>
+                            <li>DankPyon_Caravan_Medieval_Armorsmith</li>
+                            <li>DankPyon_Caravan_Medieval_Weaponsmith</li>
+                            <li>DankPyon_Caravan_Medieval_RuinsMerchant</li>
+                            <li>DankPyon_Caravan_Medieval_Scholar</li>
+                            <li>DankPyon_Caravan_Medieval_Alchemist</li>
+                        </caravanTraderKinds>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/FactionDef[defName="Foxian_League"]/visitorTraderKinds</xpath>
+                    <value>
+                        <visitorTraderKinds>
+                            <li>DankPyon_Visitor_Medieval_Standard</li>
+                        </visitorTraderKinds>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/FactionDef[defName="Foxian_League"]/baseTraderKinds</xpath>
+                    <value>
+                        <baseTraderKinds>
+                            <li>DankPyon_Base_Medieval_Standard</li>
+                        </baseTraderKinds>
+                    </value>
+                </li>
+                <!--Replace
+                and add misc-->
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/FactionDef[defName="Foxian_League"]/techLevel</xpath>
+                    <value>
+                        <techLevel>Medieval</techLevel>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/FactionDef[defName="Foxian_League"]/backstoryFilters</xpath>
+                    <value>
+                        <backstoryFilters>
+                            <li>
+                                <categories>
+                                    <li>Tribal</li>
+                                </categories>
+                            </li>
+                        </backstoryFilters>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/FactionDef[defName="Foxian_League"]/canSiege</xpath>
+                    <value>
+                        <canSiege>false</canSiege>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/FactionDef[defName="Foxian_League"]/raidLootMaker</xpath>
+                    <value>
+                        <raidLootMaker>DankPyon_MedievalRaidLootMaker</raidLootMaker>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/FactionDef[defName="Foxian_League"]/settlementNameMaker</xpath>
+                    <value>
+                        <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/FactionDef[defName="Foxian_League"]</xpath>
+                    <value>
+                        <modExtensions>
+                            <li Class="MedievalOverhaul.FactionSiegeExtension">
+                                <medievalSiege>true</medievalSiege>
+                            </li>
+                        </modExtensions>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Ideology">
+                    <xpath>Defs/FactionDef[defName="Foxian_League"]/disallowedMemes</xpath>
+                    <value>
+                        <li>Transhumanist</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/FactionDef[defName="Foxian_League"]</xpath>
+                    <value>
+                        <apparelStuffFilter>
+                            <thingDefs>
+                                <li>DankPyon_IronIngot</li>
+                                <li>Steel</li>
+                                <li>DankPyon_Linen</li>
+                                <li>Leather_Plain</li>
+                            </thingDefs>
+                        </apparelStuffFilter>
+                    </value>
+                </li>
+                <!--Replace
+                PawnGroupMakers-->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/FactionDef[defName="Foxian_League"]/pawnGroupMakers</xpath>
+                    <value>
+                        <pawnGroupMakers>
+                            <li>
+                                <!-- Normal fights, standard mix -->
+                                <kindDef>Combat</kindDef>
+                                <options>
+                                    <FL_Foxian_Villager_Medieval>2</FL_Foxian_Villager_Medieval>
+                                    <FL_Foxian_Town_Guard_Medieval>10</FL_Foxian_Town_Guard_Medieval>
+                                    <FL_Foxian_League_Grenadier_Flame_Medieval>2.5</FL_Foxian_League_Grenadier_Flame_Medieval>
+                                    <FL_Foxian_League_Scout_Medieval>6</FL_Foxian_League_Scout_Medieval>
+                                    <FL_Foxian_League_Infantryman_Medieval>10</FL_Foxian_League_Infantryman_Medieval>
+                                    <FL_Foxian_League_Archer_Medieval>5</FL_Foxian_League_Archer_Medieval>
+                                    <FL_Foxian_Man_At_Arms_Medieval>6</FL_Foxian_Man_At_Arms_Medieval>
+                                    <FL_Foxian_League_Hunter_Medieval>4</FL_Foxian_League_Hunter_Medieval>
+                                    <FL_Foxian_Veteran_Medieval>5</FL_Foxian_Veteran_Medieval>
+                                    <FL_Foxian_Officer_Medieval>3</FL_Foxian_Officer_Medieval>
+                                    <FL_Foxian_Royal_Melee_Infantry_Medieval>8</FL_Foxian_Royal_Melee_Infantry_Medieval>
+                                    <FL_Foxian_Oracle_Medieval>3</FL_Foxian_Oracle_Medieval>
+                                </options>
+                            </li>
+                            <li>
+                                <kindDef>Peaceful</kindDef>
+                                <options>
+                                    <FL_Foxian_Villager_Medieval>20</FL_Foxian_Villager_Medieval>
+                                    <FL_Foxian_Villager_Child MayRequire="Ludeon.RimWorld.Biotech">2</FL_Foxian_Villager_Child>
+                                    <FL_Foxian_Town_Guard_Medieval>10</FL_Foxian_Town_Guard_Medieval>
+                                    <FL_Foxian_Politician_Medieval>10</FL_Foxian_Politician_Medieval>
+                                    <FL_Foxian_Noble_Medieval>2</FL_Foxian_Noble_Medieval>
+                                    <FL_Foxian_Diplomat_Medieval>4</FL_Foxian_Diplomat_Medieval>
+                                </options>
+                            </li>
+                            <li>
+                                <kindDef>Trader</kindDef>
+                                <traders>
+                                    <FL_Foxian_Trader_Medieval>1</FL_Foxian_Trader_Medieval>
+                                </traders>
+                                <carriers>
+                                    <FL_Vulpano>8</FL_Vulpano>
+                                    <Muffalo>2</Muffalo>
+                                    <Dromedary>1</Dromedary>
+                                    <Alpaca>1</Alpaca>
+                                    <Elephant>1</Elephant>
+                                </carriers>
+                                <guards>
+                                    <FL_Foxian_Diplomat_Medieval>2</FL_Foxian_Diplomat_Medieval>
+                                    <FL_Foxian_Noble_Medieval>2</FL_Foxian_Noble_Medieval>
+                                    <FL_Foxian_Villager_Medieval>3</FL_Foxian_Villager_Medieval>
+                                    <FL_Foxian_Town_Guard_Medieval>10</FL_Foxian_Town_Guard_Medieval>
+                                    <FL_Foxian_League_Grenadier_Flame_Medieval>1.5</FL_Foxian_League_Grenadier_Flame_Medieval>
+                                    <FL_Foxian_League_Infantryman_Medieval>10</FL_Foxian_League_Infantryman_Medieval>
+                                    <FL_Foxian_League_Archer_Medieval>10</FL_Foxian_League_Archer_Medieval>
+                                    <FL_Foxian_League_Hunter_Medieval>6</FL_Foxian_League_Hunter_Medieval>
+                                    <FL_Foxian_Officer_Medieval>3</FL_Foxian_Officer_Medieval>
+                                    <FL_Foxian_Man_At_Arms_Medieval>5</FL_Foxian_Man_At_Arms_Medieval>
+                                    <FL_Foxian_Veteran_Medieval>4</FL_Foxian_Veteran_Medieval>
+                                    <FL_Foxian_Royal_Melee_Infantry_Medieval>8</FL_Foxian_Royal_Melee_Infantry_Medieval>
+                                </guards>
+                            </li>
+                            <li>
+                                <kindDef>Settlement</kindDef>
+                                <options>
+                                    <FL_Foxian_Villager_Medieval>10</FL_Foxian_Villager_Medieval>
+                                    <FL_Foxian_Diplomat_Medieval>4</FL_Foxian_Diplomat_Medieval>
+                                    <FL_Foxian_Villager_Child MayRequire="Ludeon.RimWorld.Biotech">2</FL_Foxian_Villager_Child>
+                                    <FL_Foxian_Noble_Medieval>4</FL_Foxian_Noble_Medieval>
+                                    <FL_Foxian_Politician_Medieval>8</FL_Foxian_Politician_Medieval>
+                                    <FL_Foxian_Town_Guard_Medieval>10</FL_Foxian_Town_Guard_Medieval>
+                                    <FL_Foxian_League_Grenadier_Flame_Medieval>2</FL_Foxian_League_Grenadier_Flame_Medieval>
+                                    <FL_Foxian_League_Infantryman_Medieval>10</FL_Foxian_League_Infantryman_Medieval>
+                                    <FL_Foxian_League_Scout_Medieval>5</FL_Foxian_League_Scout_Medieval>
+                                    <FL_Foxian_League_Archer_Medieval>7</FL_Foxian_League_Archer_Medieval>
+                                    <FL_Foxian_League_Hunter_Medieval>8</FL_Foxian_League_Hunter_Medieval>
+                                    <FL_Foxian_Veteran_Medieval>6</FL_Foxian_Veteran_Medieval>
+                                    <FL_Foxian_Officer_Medieval>3</FL_Foxian_Officer_Medieval>
+                                    <FL_Foxian_Royal_Melee_Infantry_Medieval>8</FL_Foxian_Royal_Melee_Infantry_Medieval>
+                                    <FL_Vulpano>0.5</FL_Vulpano>
+                                </options>
+                            </li>
+                            <li MayRequire="Ludeon.RimWorld.Ideology">
+                                <kindDef>Miners</kindDef>
+                                <commonality>1</commonality>
+                                <options>
+                                    <Miner>1</Miner>
+                                </options>
+                            </li>
+                            <li MayRequire="Ludeon.RimWorld.Ideology">
+                                <kindDef>Hunters</kindDef>
+                                <commonality>1</commonality>
+                                <options>
+                                    <Hunter>1</Hunter>
+                                </options>
+                            </li>
+                            <li MayRequire="Ludeon.RimWorld.Ideology">
+                                <kindDef>Loggers</kindDef>
+                                <commonality>1</commonality>
+                                <options>
+                                    <Logger>1</Logger>
+                                </options>
+                            </li>
+                            <li MayRequire="Ludeon.RimWorld.Ideology">
+                                <kindDef>Farmers</kindDef>
+                                <commonality>1</commonality>
+                                <options>
+                                    <Farmer>1</Farmer>
+                                </options>
+                            </li>
+                        </pawnGroupMakers>
+                    </value>
+                </li>
+                <!--Replace
+                Fixed Leader Kind-->
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/FactionDef[defName="Foxian_League"]/fixedLeaderKinds</xpath>
+                    <value>
+                        <fixedLeaderKinds>
+                            <li>FL_Foxian_League_counselor_Medieval</li>
+                        </fixedLeaderKinds>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

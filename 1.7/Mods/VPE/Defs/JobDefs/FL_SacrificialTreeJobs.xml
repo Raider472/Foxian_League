@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <JobDef>
+        <defName>FL_RitualSacrificialTree</defName>
+        <driverClass>FoxianPsycast.JobDriver_SacrificialTreeRitual</driverClass>
+        <reportString>ritual at TargetA</reportString>
+        <neverShowWeapon>true</neverShowWeapon>
+    </JobDef>
+</Defs>

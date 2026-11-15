@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+        <defName>FoxianRaiderIdeoNamer</defName>
+        <rulePack>
+            <rulesStrings>
+            <li>r_ideoName->Dakinesim</li>
+            
+            <li>r_ideoAdjective->Dakinesian</li>
+
+            <li>r_memberName->Dakineist</li>
+
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+        <defName>FoxianLeagueIdeoNamer</defName>
+        <rulePack>
+            <rulesStrings>
+            <li>r_ideoName->Naturalism</li>
+            
+            <li>r_ideoAdjective->Naturalisian</li>
+
+            <li>r_memberName->Naturalist</li>
+
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>
