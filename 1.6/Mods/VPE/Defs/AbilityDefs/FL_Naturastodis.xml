@@ -4,7 +4,7 @@
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>FL_VPE_WoodLance</defName>
         <label>wood lance</label>
-        <description>Condenses and converts psychic entropy into artificial wood and sends a wood lance to the targeted enemy.</description>
+        <description>Condenses and converts psychic entropy into artificial wood and sends a wood lance at the targeted enemy.</description>
         <iconPath>UI/Psycast/Ability/FL_WoodLance</iconPath>
         <abilityClass>VEF.Abilities.Ability_ShootProjectile</abilityClass>
         <castTime>15</castTime>
@@ -40,7 +40,7 @@
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>FL_VPE_NatureFinest</defName>
         <label>nature's finest</label>
-        <description>Psychically enhance the tamed animals around the psycasters. The affected animals will become more agile, improve their melee proficiency, and all bleeding wounds will almost instantly seal themselves for the duration of the effect.</description>
+        <description>Psychically enhance the tamed animals around the psycaster. The affected animals will become more agile and better at melee, and all their bleeding wounds will almost instantly seal themselves for the duration of the effect.</description>
         <iconPath>UI/Psycast/Ability/FL_AnimalOverclock</iconPath>
         <abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
         <targetMode>Self</targetMode>
@@ -89,7 +89,7 @@
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>FL_VPE_ExplosionNeedle</defName>
         <label>thorn explosion</label>
-        <description>Focuses and directs psychic entropy into the targeted soils to manipulate the nearby wood matter within, thereby triggering an explosion of needles. Any enemies hit by the explosion will be weakened by the psychic toxins infused into those needles.</description>
+        <description>Focuses and directs psychic entropy into the targeted soil to manipulate the wood matter within, triggering an explosion of needles. Any enemies hit by the explosion will be weakened by the psychic toxins infused into those needles.</description>
         <iconPath>UI/Psycast/Ability/FL_ExplosionNeedle</iconPath>
         <abilityClass>FoxianPsycast.FL_Ability_ThornExplosion</abilityClass>
         <castTime>120</castTime>
@@ -120,8 +120,8 @@
 
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>FL_VPE_BarSkin</defName>
-        <label>bar skin</label>
-        <description>Psychically enhance the target's flesh, turning it into living wood. The effect is temporary, and the duration scales with the psy-sensitivity of the psycaster. The living bark allows the chosen target to become more resistant to incoming hits and damage at the cost of being slower and very vulnerable to fire.</description>
+        <label>bark skin</label>
+        <description>Psychically enhance the target's flesh, turning it into living wood. The effect is temporary, and its duration scales with the psychic sensitivity of the psycaster. The living bark makes the chosen target more resistant to incoming hits and damage, at the cost of being slower and very vulnerable to fire.</description>
         <iconPath>UI/Psycast/Ability/FL_BarSkin</iconPath>
         <abilityClass>VEF.Abilities.Ability_Blank</abilityClass>
         <targetMode>Pawn</targetMode>
@@ -162,7 +162,7 @@
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>FL_VPE_NatureHealing</defName>
         <label>nature's healing</label>
-        <description>Psychically heals the pawns around the psycaster. The user will instantly soothe random wounds of any allies and animals within their range. The strength of this psycast will scale with the user's psychic sensitivity.</description>
+        <description>Psychically heals the pawns around the psycaster. The user will instantly soothe random wounds of all allies and animals within their range. The strength of this psycast scales with the user's psychic sensitivity.</description>
         <iconPath>UI/Psycast/Ability/FL_NatureHealing</iconPath>
         <abilityClass>FoxianPsycast.FL_Nature_Healing</abilityClass>
         <needsTicking>true</needsTicking>
@@ -207,7 +207,7 @@
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>FL_VPE_SporeInfection</defName>
         <label>spore infection</label>
-        <description>Spread psychic spore-like particles that infect the nearby pawns within the area of effect. They will hinder anyone's ability to fight and think, and they will multiply within the subject's body for each hit from an offensive psycast coming from this path. The spores themselves are not lethal. The worst they can do is make someone unconscious. However, accidentally hitting an innocent bystander or an ally from another faction will be considered a hostile action and worsen diplomatic relations.</description>
+        <description>Spread psychic spore-like particles that infect the nearby pawns within the area of effect. They will hinder anyone's ability to fight and think, and they will multiply within the subject's body with each hit from an offensive psycast of this path. The spores themselves are not lethal. The worst they can do is knock someone unconscious. However, accidentally hitting an innocent bystander or an ally from another faction will be considered a hostile action and will worsen diplomatic relations.</description>
         <iconPath>UI/Psycast/Ability/FL_SporeInfection</iconPath>
         <abilityClass>FoxianPsycast.FL_ApplyHediffsWithoutTimer</abilityClass>
         <castTime>300</castTime>
@@ -251,7 +251,7 @@
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>FL_VPE_TrapIED_WoodTrap</defName>
         <label>wood trap</label>
-        <description>Permeate a soily surface with psychic entropy and morph the plant matter around into an artificial wooden landmine filled with explosive gas and thick wooden needles that will spew out everywhere upon detonation. Although the mine doesn't do as much damage as a normal IED trap, enemies that get hit by the needles will be physically weaker and less effective in close combat for a while.</description>
+        <description>Permeate a soil surface with psychic entropy and morph the plant matter around it into an artificial wooden landmine filled with explosive gas and thick wooden needles that will spew out everywhere upon detonation. Although the mine doesn't do as much damage as a normal IED trap, enemies that are hit by the needles will be physically weaker and less effective in close combat for a while.</description>
         <iconPath>UI/Psycast/Ability/FL_WoodTrap</iconPath>
         <abilityClass>FoxianPsycast.FL_ability_PlantWoodMine</abilityClass>
         <needsTicking>true</needsTicking>
@@ -290,7 +290,7 @@
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>FL_VPE_TreantGuardian</defName>
         <label>nature's guardians</label>
-        <description>Psychically transmute a tree into a living being. The guardian treant is immediately loyal to the person who summoned it and will protect that person until death or expiration. The Guardian is slow and bulky, but it is capable of withstanding many damages and delivering heavy blows. It does not need to sleep or eat food, but they are not permanent and will disappear if they do not die in combat before. Its duration is dependent on the psycaster's psychic sensitivity. When it dies, it will vanish out of thin air.</description>
+        <description>Psychically transmute a tree into a living being. The guardian treant is immediately loyal to the person who summoned it and will protect that person until death or expiration. The guardian is slow and bulky, but it is capable of withstanding a lot of damage and delivering heavy blows. It does not need to sleep or eat, but it is not permanent and will disappear if it does not die in combat first. Its duration depends on the psycaster's psychic sensitivity. When it dies, it will vanish into thin air.</description>
         <iconPath>UI/Psycast/Ability/FL_TreantGuardian</iconPath>
         <abilityClass>FoxianPsycast.FL_Ability_SpawnTreant</abilityClass>
         <targetMode>Location</targetMode>
@@ -328,7 +328,7 @@
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>FL_VPE_NaturaBloom</defName>
         <label>natura bloom</label>
-        <description>Condense the soil with psychic entropy and germinate a sapling of a Natura tree. The sapling can only be psychically rooted on a suitable terrain for a plant.</description>
+        <description>Condense the soil with psychic entropy and germinate a sapling of a Natura tree. The sapling can only be psychically rooted on terrain suitable for plants.</description>
         <iconPath>UI/Psycast/Ability/FL_PlantNaturaTree</iconPath>
         <abilityClass>FoxianPsycast.FL_Ability_PlantNaturaTree</abilityClass>
         <needsTicking>true</needsTicking>
@@ -368,7 +368,7 @@
     <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>FL_VPE_NatureBlessing</defName>
         <label>nature's sacrifice</label>
-        <description>Transform a downed pawn into a sacrificial tree. Allowing you to offer it as a sacrifice and perform a sacrificial ritual with the god in exchange for a temporary bonus. The bonus received depends on the psychic sensitivity of the pawn organizing the ritual. In case the ritual fails, the ritualist will suffer a debuff.</description>
+        <description>Transform a downed pawn into a sacrificial tree, allowing you to offer it as a sacrifice and perform a sacrificial ritual for the gods in exchange for a temporary bonus. The bonus received depends on the psychic sensitivity of the pawn leading the ritual. If the ritual fails, the ritualist will suffer a debuff.</description>
         <iconPath>UI/Psycast/Ability/FL_NatureCurse</iconPath>
         <abilityClass>FoxianPsycast.FL_Ability_NatureBlessing</abilityClass>
         <targetMode>Pawn</targetMode>

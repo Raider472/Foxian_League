@@ -3,9 +3,9 @@
     <ScenarioDef ParentName="ScenarioBase"> 
         <defName>FL_Foxian_BloodRain_Scenario_Refugees</defName>
         <label>Blood Rain in Exiles</label>
-        <description>After a heated argument with your former local commander. You and your friends decided that you had enough of her incompetence and planned to leave in blood rain style.\nAfter successfully stealing some supplies from your former comrades, you and your group finally settle somewhere far from your former base before your supplies run out completely.</description>
+        <description>After a heated argument with your former local commander, you and your friends decided that you had had enough of her incompetence and planned to leave, Blood Rain style.\nAfter successfully stealing some supplies from your former comrades, you and your group finally settled somewhere far from your former base before your supplies ran out completely.</description>
         <scenario>
-            <summary>Three Foxian blood rain exiles attempting to create a new settlement after an argument with their former local boss.</summary>
+            <summary>Three Foxian Blood Rain exiles attempt to create a new settlement after an argument with their former local boss.</summary>
             <playerFaction>
                 <factionDef>FoxianBloodRainPlayerColony</factionDef>
             </playerFaction>
@@ -102,7 +102,7 @@
                 <!-- Game start dialog -->
                 <li Class="ScenPart_GameStartDialog">
                     <def>GameStartDialog</def>
-                    <text>After losing track of the pursuing soldiers from your ex-commander. You and your group have finally found a place to settle before the supplies were running thin.\nAfter the tiring journey, now only freedom awaits you.\nYou're current relation with the Blood Rain has deterioted as a consequence of your outrageous heist, but it can still be mended with some concessions from your part. However, in the eyes of the Foxian League, you and your friends are still considered as dangerous outlaws.</text>
+                    <text>After losing the soldiers sent by your ex-commander, you and your group have finally found a place to settle, just as your supplies were running thin.\nAfter the tiring journey, only freedom awaits you now.\nYour relationship with the Blood Rain has deteriorated because of your outrageous heist, but it can still be mended with some concessions on your part. However, in the eyes of the Foxian League, you and your friends are still considered dangerous outlaws.</text>
                     <closeSound>GameStartSting</closeSound>
                 </li>
             </parts>

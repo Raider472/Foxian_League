@@ -3,8 +3,8 @@
 <!--This hediff is purely cosmetic, check CompProperties_vulyakkoResilience instead-->
     <HediffDef>
         <defName>FL_RottenResilience</defName>
-        <label>Rotten resilience</label>
-        <description>This creature exhibits unholy resistance as a consequence of its rotten body. When hit by an attack, there is a possibility that the damage received will be reduced by a percentage.</description>
+        <label>rotten resilience</label>
+        <description>This creature exhibits unholy resistance because of its rotten body. When it is hit by an attack, there is a chance that the damage received will be reduced by a percentage.</description>
         <defaultLabelColor>(0.51, 0.74, 0.13)</defaultLabelColor>
         <hediffClass>HediffWithComps</hediffClass>
         <everCurableByItem>false</everCurableByItem>

@@ -3,13 +3,13 @@
     <ThingDef ParentName="TreeBase" MayRequire="Ludeon.RimWorld.Royalty">
         <defName>FL_Plant_TreeNatura</defName>
         <label>Natura tree</label>
-        <description>An unknown tree that is exclusively found on this rimworld, it's typically seen inside settlements belonging to the Foxian League. Nevertheless, some outlanders have claimed to have witnessed some of these trees outside the sphere of influence of the Foxian League. Foxians and naturalist psycasters believe that they can receive blessings when meditating next to it. They only grow from seeds extracted from Natura flowers or planted by a psycaster with the hidden coveted knowledge.</description>
+        <description>An unknown tree found exclusively on this rimworld. It is typically seen inside settlements belonging to the Foxian League. Nevertheless, some outlanders claim to have seen these trees outside the sphere of influence of the Foxian League. Foxians and naturalist psycasters believe that they can receive blessings when meditating next to one. They only grow from seeds extracted from Natura flowers, or when planted by a psycaster with the coveted hidden knowledge.</description>
         <graphicData>
             <texPath>Things/Plants/Natura</texPath>
             <graphicClass>Graphic_Random</graphicClass>
             <shadowData>
-            <volume>(0.35, 0.3, 0.35)</volume>
-            <offset>(0,0,0.05)</offset>
+                <volume>(0.25, 0.6, 0.15)</volume>
+                <offset>(0,0,-0.2)</offset>
             </shadowData>
         </graphicData>
         <minifiedDef IsNull="True" />
@@ -117,7 +117,7 @@
             <MaxHitPoints>100</MaxHitPoints>
         </statBases>
         <graphicData>
-            <texPath>Things/Plant/GauranlenPod</texPath>
+            <texPath>Things/Plants/NaturaPods</texPath>
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
         <descriptionHyperlinks>

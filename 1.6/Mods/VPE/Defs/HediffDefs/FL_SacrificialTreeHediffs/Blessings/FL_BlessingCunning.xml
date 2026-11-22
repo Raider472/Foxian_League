@@ -3,7 +3,7 @@
     <HediffDef ParentName="BlessingAbs">
         <defName>FL_BlessingCunning</defName>
         <label>blessing of the cunning</label>
-        <description>This person has been blessed by one of the foxian sacred beast representing the aspect of trickery and knowledge. For some ungodly reason, it decided to bless this person by giving them dexterous hands and increased sights to strengthen their shooting ability. For what purpose ? We will never know, unless there was none to begin with.</description>
+        <description>This person has been blessed by one of the Foxian sacred beasts, representing the aspect of trickery and knowledge. For some ungodly reason, it decided to bless this person with dexterous hands and sharper eyesight to strengthen their shooting ability. For what purpose? We will never know, unless there was none to begin with.</description>
         <stages>
             <li>
                 <statOffsets>

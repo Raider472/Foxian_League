@@ -8,14 +8,14 @@
     <CursedSwordBerseker>The sword cursed its wearer into a temporary state of rage-inducing delirium.</CursedSwordBerseker>
     
     <FoxianModName>Foxian Race</FoxianModName>
-    <FoxianModSettingsWarning>Changing any values might require a restart or reloading a save !</FoxianModSettingsWarning>
-    <FoxianInformation>You can get more information on each setting by hovering your mouse on the labels.</FoxianInformation>
+    <FoxianModSettingsWarning>Changing any value might require a restart or reloading a save!</FoxianModSettingsWarning>
+    <FoxianInformation>You can get more information about each setting by hovering your mouse over the labels.</FoxianInformation>
     <FoxianInformationDesc>Yes, even this one...</FoxianInformationDesc>
-    <HoverForInfo>(Hover for more informations)</HoverForInfo>
+    <HoverForInfo>(Hover for more information)</HoverForInfo>
     <PsychicManipulationSettings>Psychic Manipulation Threshold</PsychicManipulationSettings>
-    <PsychicManipulationSettingsDesc>This number means you gain a bonus social skill point for every x% psychic sensitivity beyond 100%. Each pawn has a basic value of 100% psychic sensitivity (unless they have traits or genes that change the default value).\nBy default, the value of the threshold is 25%, so a pawn with 150% psychic sensitivity will gain 2 bonus social skills points.</PsychicManipulationSettingsDesc>
+    <PsychicManipulationSettingsDesc>This number means you gain a bonus skill point for every x% of psychic sensitivity beyond 100%. Each pawn has a base psychic sensitivity of 100% (unless they have traits or genes that change the default value).\nBy default, the threshold is 25%, so a pawn with 150% psychic sensitivity will gain 2 bonus social skill points.</PsychicManipulationSettingsDesc>
     <PsychicManipulationSettingSkillsDropDown>Psychic manipulation affects this skill: </PsychicManipulationSettingSkillsDropDown>
-    <PsychicManipulationSettingSkillsDropDownDesc>The skill shown in the button will be the one to receive the bonus skill points for the gene.</PsychicManipulationSettingSkillsDropDownDesc>
+    <PsychicManipulationSettingSkillsDropDownDesc>The skill shown on the button will receive the bonus skill points from the gene.</PsychicManipulationSettingSkillsDropDownDesc>
     <PsychicManipConstruction>Construction</PsychicManipConstruction>
     <PsychicManipPlants>Plants</PsychicManipPlants>
     <PsychicManipIntellectual>Intellectual</PsychicManipIntellectual>
@@ -29,49 +29,49 @@
     <PsychicManipArtistic>Artistic</PsychicManipArtistic>
     <PsychicManipCrafting>Crafting</PsychicManipCrafting>
     <AnimalConnectionSettings>Animal Connection Trigger Threshold</AnimalConnectionSettings>
-    <AnimalConnectionSettingsDesc>This threshold represents how much psychic sensitivity a pawn needs to trigger the effect of "Animal Connection". By default, the value is set to 150%. Setting that value to 0% will disable the trigger.</AnimalConnectionSettingsDesc>
-    <GeneticPurityFoxianTrigger>Should a person be a Foxian to trigger the first behaviour of genetic purity gene ?</GeneticPurityFoxianTrigger>
-    <GeneticPurityFoxianTriggerDesc>By default, only a Foxian or a person considered "Foxian enough" can birth an offspring with xenotype A or B. Otherwise, they will transmit all their genes to the offspring. By disabling this condition, anyone with this gene would be able to birth Xenotype A or B, whetever they are Foxian or not.</GeneticPurityFoxianTriggerDesc>
+    <AnimalConnectionSettingsDesc>This threshold represents how much psychic sensitivity a pawn needs to trigger the "Animal Connection" effect. By default, the value is set to 150%. Setting the value to 0% will disable the trigger.</AnimalConnectionSettingsDesc>
+    <GeneticPurityFoxianTrigger>Must a person be a Foxian to trigger the first behavior of the genetic purity gene?</GeneticPurityFoxianTrigger>
+    <GeneticPurityFoxianTriggerDesc>By default, only a Foxian or a person considered "Foxian enough" can give birth to an offspring with xenotype A or B. Otherwise, they will pass all their genes on to the offspring. If you disable this condition, anyone with this gene will be able to give birth to xenotype A or B, whether they are Foxian or not.</GeneticPurityFoxianTriggerDesc>
     <GeneticPuritySettingXenotypeA>Choose xenotype A: </GeneticPuritySettingXenotypeA>
-    <GeneticPuritySettingXenotypeADesc>The xenotype shown in the button will be the one used for creating an offspring with xenotype A. By default, xenotype A is set to the Foxian xenotype.</GeneticPuritySettingXenotypeADesc>
+    <GeneticPuritySettingXenotypeADesc>The xenotype shown on the button will be used for offspring with xenotype A. By default, xenotype A is set to the Foxian xenotype.</GeneticPuritySettingXenotypeADesc>
     <GeneticPuritySettingXenotypeB>Choose xenotype B: </GeneticPuritySettingXenotypeB>
-    <GeneticPuritySettingXenotypeBDesc>The xenotype shown in the button will be the one used for creating an offspring with xenotype B. By default, xenotype B is set to the Greater Foxian xenotype.</GeneticPuritySettingXenotypeBDesc>
+    <GeneticPuritySettingXenotypeBDesc>The xenotype shown on the button will be used for offspring with xenotype B. By default, xenotype B is set to the Greater Foxian xenotype.</GeneticPuritySettingXenotypeBDesc>
     <GeneticPurityXenotypeAChanceSlider>Chance for offspring to be xenotype A</GeneticPurityXenotypeAChanceSlider>
-    <GeneticPurityXenotypeAChanceSliderDesc>By default, the offspring has a 70% chance to be born as xenotype A. If the value is set to 0%, the offspring will always be born as xenotype B. If set at 100%, the offspring will always be born as xenotype A.</GeneticPurityXenotypeAChanceSliderDesc>
-    <GeneticPurityXenotypeMaleChanceSlider>Chance for an offspring to be a male (xenotype B)</GeneticPurityXenotypeMaleChanceSlider>
-    <GeneticPurityXenotypeMaleChanceSliderDesc>By default, when the offspring is born with xenotype B, it has a 70% chance to be born as a male. If this value is set at 0%, the offspring will always be a female. If set at 100%, the offspring will always be a male when born with xenotype B.</GeneticPurityXenotypeMaleChanceSliderDesc>
-    <GeneticPurityXenotypeFemaleChanceSliderAlt>Chance for an offspring to be a female (when mother is not a Foxian)</GeneticPurityXenotypeFemaleChanceSliderAlt>
-    <GeneticPurityXenotypeFemaleChanceSliderAltDesc>By default, when the mother is not a Foxian, the offspring has a 80% chance to be born as a female. If this value is set at 0%, the offspring will always be a male. If set at 100%, the offspring will always be a female.\nPlease, note that this modifier will not do anything if the "Should a person be a Foxian to trigger the first behaviour of genetic purity gene ?" option has been disabled.</GeneticPurityXenotypeFemaleChanceSliderAltDesc>
-    <maxProgressTreeMultiplierSlider>Multiplier for the amount of meditation to trigger a blessing</maxProgressTreeMultiplierSlider>
-    <maxProgressTreeMultiplierSliderDesc>Changes how long you need to meditate to trigger a blessing. Lower values shorten the time needed, while higher ones make it longer.</maxProgressTreeMultiplierSliderDesc>
-    <IsFoxianBi>Does the Lustful gene forces the Bisexual trait ?</IsFoxianBi>
-    <IsFoxianBiDesc>The title is very explicit. Simply remove/add the forced trait to the gene (A restart is required).</IsFoxianBiDesc>
+    <GeneticPurityXenotypeAChanceSliderDesc>By default, the offspring has a 70% chance of being born as xenotype A. If the value is set to 0%, the offspring will always be born as xenotype B. If set to 100%, the offspring will always be born as xenotype A.</GeneticPurityXenotypeAChanceSliderDesc>
+    <GeneticPurityXenotypeMaleChanceSlider>Chance for an offspring to be male (xenotype B)</GeneticPurityXenotypeMaleChanceSlider>
+    <GeneticPurityXenotypeMaleChanceSliderDesc>By default, when the offspring is born with xenotype B, it has a 70% chance of being male. If this value is set to 0%, the offspring will always be female. If set to 100%, the offspring will always be male when born with xenotype B.</GeneticPurityXenotypeMaleChanceSliderDesc>
+    <GeneticPurityXenotypeFemaleChanceSliderAlt>Chance for an offspring to be female (when the mother is not a Foxian)</GeneticPurityXenotypeFemaleChanceSliderAlt>
+    <GeneticPurityXenotypeFemaleChanceSliderAltDesc>By default, when the mother is not a Foxian, the offspring has an 80% chance of being female. If this value is set to 0%, the offspring will always be male. If set to 100%, the offspring will always be female.\nPlease note that this modifier does nothing if the "Must a person be a Foxian to trigger the first behavior of the genetic purity gene?" option has been disabled.</GeneticPurityXenotypeFemaleChanceSliderAltDesc>
+    <maxProgressTreeMultiplierSlider>Multiplier for the amount of meditation needed to trigger a blessing</maxProgressTreeMultiplierSlider>
+    <maxProgressTreeMultiplierSliderDesc>Changes how long you need to meditate to trigger a blessing. Lower values shorten the time needed, while higher values lengthen it.</maxProgressTreeMultiplierSliderDesc>
+    <IsFoxianBi>Does the Lustful gene force the Bisexual trait?</IsFoxianBi>
+    <IsFoxianBiDesc>The title is self-explanatory. Simply removes/adds the forced trait to the gene (a restart is required).</IsFoxianBiDesc>
     <ResetButton>Default Values</ResetButton>
     <FoxianPsychicManipGeneTitle>Psychic Manipulation</FoxianPsychicManipGeneTitle>
     <FoxianGeneticPurityTitle>Genetic Purity</FoxianGeneticPurityTitle>
     <FoxianNineTailAgeTitle>Nine Tail Age Settings</FoxianNineTailAgeTitle>
-    <FoxianTailAgeInfo>Please be cautious when changing the values below.\nThe values must follow an ascending order as seen below.\nA restart is required.</FoxianTailAgeInfo>
+    <FoxianTailAgeInfo>Please be cautious when changing the values below.\nThe values must be in ascending order, as shown below.\nA restart is required.</FoxianTailAgeInfo>
     <FoxianOneTailAge>One Tail</FoxianOneTailAge>
     <FoxianOneTailAgeDesc>Set the age at which the pawn gets one tail (recommended: 0).</FoxianOneTailAgeDesc>
-    <FoxianThreeTailAge>Three Tail</FoxianThreeTailAge>
-    <FoxianThreeTailAgeDesc>Set the age at which the pawn gets three tail (recommended: 3).</FoxianThreeTailAgeDesc>
-    <FoxianFiveTailAge>Five Tail</FoxianFiveTailAge>
-    <FoxianFiveTailAgeDesc>Set the age at which the pawn gets five tail.</FoxianFiveTailAgeDesc>
-    <FoxianSevenTailAge>Seven Tail</FoxianSevenTailAge>
-    <FoxianSevenTailAgeDesc>Set the age at which the pawn gets seven tail.</FoxianSevenTailAgeDesc>
-    <FoxianNineTailAge>Nine Tail</FoxianNineTailAge>
-    <FoxianNineTailAgeDesc>Set the age at which the pawn gets nine tail.</FoxianNineTailAgeDesc>
+    <FoxianThreeTailAge>Three Tails</FoxianThreeTailAge>
+    <FoxianThreeTailAgeDesc>Set the age at which the pawn gets three tails (recommended: 3).</FoxianThreeTailAgeDesc>
+    <FoxianFiveTailAge>Five Tails</FoxianFiveTailAge>
+    <FoxianFiveTailAgeDesc>Set the age at which the pawn gets five tails.</FoxianFiveTailAgeDesc>
+    <FoxianSevenTailAge>Seven Tails</FoxianSevenTailAge>
+    <FoxianSevenTailAgeDesc>Set the age at which the pawn gets seven tails.</FoxianSevenTailAgeDesc>
+    <FoxianNineTailAge>Nine Tails</FoxianNineTailAge>
+    <FoxianNineTailAgeDesc>Set the age at which the pawn gets nine tails.</FoxianNineTailAgeDesc>
     <FoxianMiscTitle>Misc.</FoxianMiscTitle>
     <FoxianMedievalMode>Medieval Mode</FoxianMedievalMode>
-    <FoxianMedievalModeDesc>This option will transform the two Foxian factions into medieval factions centered around melee. This is not a patch for the Medieval Overhaul mod since one is already included automatically. It is simply an option for players seeking a vanilla medieval run. \nA restart is required.</FoxianMedievalModeDesc>
+    <FoxianMedievalModeDesc>This option transforms the two Foxian factions into medieval factions centered around melee. This is not a patch for the Medieval Overhaul mod, since one is already included automatically. It is simply an option for players seeking a vanilla medieval run.\nA restart is required.</FoxianMedievalModeDesc>
     <FoxianModWarningTitle>Foxian League Warning</FoxianModWarningTitle>
-    <FoxianModWarningText>This warning will only appear once.\nIf you just started a new save, you can disregard this warning.\n\nThe mod has recently received a big update. Many new features have been added along with the rework of older ones.\nAs a result, some things from older save files might not work correctly any more. The likely culprit will be the psychic channelling and protection genes.\n\nHowever, this does not mean you will need to restart a new save. In the workshop page of the mod, you can find a link with a downloadable archive of the old version to continue playing with your current save file without any issues. Alternatively, you can copy the same link to the clipboard with the button below.\nOnce on the GitHub page, you must click on the "Code" button and then on "Download as a ZIP file". Finally, install the old version manually as a separate mod.</FoxianModWarningText>
+    <FoxianModWarningText>This warning will only appear once.\nIf you just started a new save, you can disregard this warning.\n\nThe mod has recently received a big update. Many new features have been added, and older ones have been reworked.\nAs a result, some things from older save files might not work correctly anymore. The most likely culprits are the psychic channeling and protection genes.\n\nHowever, this does not mean you need to start a new save. On the mod's Workshop page, you can find a link to a downloadable archive of the old version, so you can continue playing your current save without any issues. Alternatively, you can copy the same link to the clipboard with the button below.\nOnce on the GitHub page, click the "Code" button and then "Download ZIP". Finally, install the old version manually as a separate mod.</FoxianModWarningText>
     <FoxianModWarningAccept>I've read the warning and am aware of the potential repercussions if I don't take the necessary precautions</FoxianModWarningAccept>
     <FoxianCopyLinkToClipboard>Copy archive link to clipboard</FoxianCopyLinkToClipboard>
     <FoxianLinkCopied>Link copied to the clipboard!</FoxianLinkCopied>
-    
+
     <ProgressUntilNextBlessing>Progress until the next blessing: {0}</ProgressUntilNextBlessing>
-    <TotalMeditationTree>Total amount of meditation today: {0}h</TotalMeditationTree>
+    <TotalMeditationTree>Total meditation today: {0}h</TotalMeditationTree>
     <ProgressMultiplierLoc>(Progress: {0})</ProgressMultiplierLoc>
     <NotProgressMultiplierLoc>No progress until the tree reaches full maturity</NotProgressMultiplierLoc>
     <BlessingReceivedTitle>{0_nameDef} received a blessing</BlessingReceivedTitle>
@@ -87,15 +87,15 @@
 
     <RitualTargetSacrificialTreeInfo>a sacrificial tree</RitualTargetSacrificialTreeInfo>
     <RitualTargetSacrificialTreeNotMature>The tree must be mature.</RitualTargetSacrificialTreeNotMature>
-    <LetterLabelSacrificialRitualSatisfyingCompleted>Satisfying Sacrificial ritual successfully completed</LetterLabelSacrificialRitualSatisfyingCompleted>
-    <LetterTextSacrificialRitualSatisfyingCompleted>{0_labelShort} has successfuly completed the sacrifial ritual and managed to satisfy the bloodlust of the gods.\n\n{0_pronoun} received a rare artifact from the gods.</LetterTextSacrificialRitualSatisfyingCompleted>
+    <LetterLabelSacrificialRitualSatisfyingCompleted>Satisfying sacrificial ritual successfully completed</LetterLabelSacrificialRitualSatisfyingCompleted>
+    <LetterTextSacrificialRitualSatisfyingCompleted>{0_labelShort} has successfully completed the sacrificial ritual and managed to satisfy the bloodlust of the gods.\n\n{0_pronoun} received a rare artifact from the gods.</LetterTextSacrificialRitualSatisfyingCompleted>
     <LetterLabelSacrificialRitualSuccessCompleted>Sacrificial ritual completed</LetterLabelSacrificialRitualSuccessCompleted>
-    <LetterTextSacrificialRitualSuccessCompleted>{0_labelShort} has successfuly completed the sacrifial ritual.\n\n{0_pronoun} received a blessing from the gods as a reward of her faithfulness.</LetterTextSacrificialRitualSuccessCompleted>
-    <LetterLabelSacrificialRitualOffensiveCompleted>Offensive Sacrificial ritual completed</LetterLabelSacrificialRitualOffensiveCompleted>
-    <LetterTextSacrificialRitualOffensiveCompleted>{0_labelShort} has fumbled the sacrifial ritual and offended the gods.\n\n{0_pronoun} received a curse from the gods for {0_possessive} mistake.</LetterTextSacrificialRitualOffensiveCompleted>
-    <SacrificialRitualExplanationBase>The sacrificial tree ceremony is more powerful with more participants and with a high psy-sensitive ritualist. The more people participate, the less time the ceremony takes, and the higher the chance of receiving a benediction instead of a curse.\n\nWith our current configuration, we will have {0} to receive a positive reward and {1} for an excelent outcome.</SacrificialRitualExplanationBase>
+    <LetterTextSacrificialRitualSuccessCompleted>{0_labelShort} has successfully completed the sacrificial ritual.\n\n{0_pronoun} received a blessing from the gods as a reward for {0_possessive} faithfulness.</LetterTextSacrificialRitualSuccessCompleted>
+    <LetterLabelSacrificialRitualOffensiveCompleted>Offensive sacrificial ritual completed</LetterLabelSacrificialRitualOffensiveCompleted>
+    <LetterTextSacrificialRitualOffensiveCompleted>{0_labelShort} has fumbled the sacrificial ritual and offended the gods.\n\n{0_pronoun} received a curse from the gods for {0_possessive} mistake.</LetterTextSacrificialRitualOffensiveCompleted>
+    <SacrificialRitualExplanationBase>The sacrificial tree ceremony is more powerful with more participants and with a highly psy-sensitive ritualist. The more people participate, the less time the ceremony takes, and the higher the chance of receiving a benediction instead of a curse.\n\nWith our current configuration, we will have {0} to receive a positive reward and {1} for an excellent outcome.</SacrificialRitualExplanationBase>
     <RitualTargetSacrificialTreeMustBeCapableOfNature>Must be a colonist with the natural meditation focus type</RitualTargetSacrificialTreeMustBeCapableOfNature>
-    <PawnCannotReceiveSacrificialBlessings>This pawn cannot receives anymore blessings for the time being.</PawnCannotReceiveSacrificialBlessings>
+    <PawnCannotReceiveSacrificialBlessings>This pawn cannot receive any more blessings for the time being.</PawnCannotReceiveSacrificialBlessings>
     <SacrificialRitualReceiveBlessing>{0_labelShort} has received the following benediction: {1_label}</SacrificialRitualReceiveBlessing>
     <SacrificialRitualReceiveCurse>{0_labelShort} has received the following malediction: {1_label}</SacrificialRitualReceiveCurse>
     <SacrificialRitualCauseIncident>{0_labelShort} has caused the following event: {1_label}</SacrificialRitualCauseIncident>

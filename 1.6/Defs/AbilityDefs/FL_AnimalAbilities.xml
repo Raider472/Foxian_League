@@ -3,7 +3,7 @@
     <AbilityDef>
         <defName>Fl_FateManipulation</defName>
         <label>fate manipulation</label>
-        <description>Psychically focus to bend the odds and forcefully create an incident. The incident will be random. There is also a rare possibility for nothing to happen. An excellent outcome is guaranteed to occur after a specific number of uses.</description>
+        <description>Psychically focus to bend the odds and forcefully trigger an incident. The incident will be random. There is also a rare chance that nothing happens. An excellent outcome is guaranteed after a specific number of uses.</description>
         <iconPath>UI/Icons/Ability/FL_Fate_Manipulation</iconPath>
         <cooldownTicksRange>600000</cooldownTicksRange> <!-- 10 days -->
         <stunTargetWhileCasting>true</stunTargetWhileCasting>

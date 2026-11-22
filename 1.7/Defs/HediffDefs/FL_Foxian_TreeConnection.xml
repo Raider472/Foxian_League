@@ -3,7 +3,7 @@
     <HediffDef>
         <defName>FL_Tree_Connection</defName>
         <label>natural connection</label>
-        <description>This devotee has received the blessing of a Natura tree for its devotion. The blessings permanently increase the psychic sensitivity of the chosen individual. The bonus will get bigger as more blessings are earned.</description>
+        <description>This devotee has received the blessing of a Natura tree for their devotion. The blessings permanently increase the psychic sensitivity of the chosen individual. The bonus grows as more blessings are earned.</description>
         <defaultLabelColor>(0.41, 0.91, 0.72)</defaultLabelColor>
         <everCurableByItem>false</everCurableByItem>
         <isBad>false</isBad>
@@ -53,7 +53,7 @@
             </li>
             <li>
                 <minSeverity>0.7</minSeverity>
-                <label>enlighten</label>
+                <label>enlightened</label>
                 <statOffsets>
                     <PsychicSensitivity>0.7</PsychicSensitivity>
                 </statOffsets>

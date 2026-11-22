@@ -2,8 +2,9 @@
 <Defs>
     <HediffDef ParentName="CurseAbs">
         <defName>FL_CurseSubmission</defName>
-        <label>curses of compliance</label>
-        <description>This person has been cursed by one of the foxian sacred beasts representing the aspect of subjugation and domination. They are constantly fighting the urge to give up their struggle for survival and to submit to the enemies. While this effect is active, they will be less effective in combat and be gullible to foreign ideologies.</description>
+        <label>curse of compliance</label>
+        <description>This person has been cursed by one of the Foxian sacred beasts, representing the aspect of subjugation and domination. They constantly fight the urge to give up their struggle for survival and submit to their enemies. While this effect is active, they will be less effective in combat and more susceptible to foreign
+                ideologies.</description>
         <makesSickThought>true</makesSickThought>
         <stages>
             <li>

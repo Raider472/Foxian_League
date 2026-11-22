@@ -4,7 +4,7 @@
         <defName>FL_Hulkarash</defName>
         <label>hulkarash</label>
         <devNote>FoxianMammoth</devNote>
-        <description>A fox-like beast that resembles like a massive mammoth and that has 7 tusks. Hulkarash are an offspring of one of the sacred beasts related to subjugation and domination who sided with the Blood Rain when the first Foxian civilization collapsed. They are used as war beasts when sieging down settlements due to their sheer strength and their ability to spew liquid fire from their mouths. They are considered as the ultimate weapon of mass destruction by the bloodrain and finding one of them that is non-hostile in the wild is a rare sight.</description>
+        <description>A fox-like beast that resembles a massive mammoth and has seven tusks. Hulkarash are the offspring of one of the sacred beasts of subjugation and domination that sided with the Blood Rain when the first Foxian civilization collapsed. They are used as war beasts when besieging settlements, due to their sheer strength and their ability to spew liquid fire from their mouths. The Blood Rain considers them the ultimate weapon of mass destruction, and finding a non-hostile one in the wild is a rare sight.</description>
         <statBases>
             <MoveSpeed>5.2</MoveSpeed>
             <MarketValue>1200</MarketValue>
@@ -134,46 +134,43 @@
             <li>
                 <label>hulkarash calf</label>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Elephant/Elephant</texPath>
-                    <color>(130,126,119)</color>
+                    <texPath>Things/Pawns/Animal/Hulkarash/FL_Hulkarash</texPath>
                     <drawSize>1.8</drawSize>
                     <shadowData>
                         <volume>(0.4, 0.3, 0.3)</volume>
-                        <offset>(0,0,-0.2)</offset>
+                        <offset>(0,0,-0.4)</offset>
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Elephant/Dessicated_Elephant</texPath>
+                    <texPath>Things/Pawns/Animal/Hulkarash/FL_Dessicated_Hulkarash</texPath>
                     <drawSize>2</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Elephant/Elephant</texPath>
-                    <color>(130,126,119)</color>
+                    <texPath>Things/Pawns/Animal/Hulkarash/FL_Hulkarash</texPath>
                     <drawSize>2.6</drawSize>
                     <shadowData>
-                        <volume>(0.6, 0.45, 0.45)</volume>
-                        <offset>(0,0,-0.25)</offset>
+                        <volume>(0.4, 0.25, 0.25)</volume>
+                        <offset>(0,0,-0.45)</offset>
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Elephant/Dessicated_Elephant</texPath>
+                    <texPath>Things/Pawns/Animal/Hulkarash/FL_Dessicated_Hulkarash</texPath>
                     <drawSize>2.8</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Elephant/Elephant</texPath>
-                    <color>(130,126,119)</color>
+                    <texPath>Things/Pawns/Animal/Hulkarash/FL_Hulkarash</texPath>
                     <drawSize>3.8</drawSize>
                     <shadowData>
                         <volume>(0.8, 0.6, 0.6)</volume>
-                        <offset>(0,0,-0.3)</offset>
+                        <offset>(0,0,-0.5)</offset>
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Elephant/Dessicated_Elephant</texPath>
+                    <texPath>Things/Pawns/Animal/Hulkarash/FL_Dessicated_Hulkarash</texPath>
                     <drawSize>4</drawSize>
                 </dessicatedBodyGraphicData>
                 <butcherBodyPart>

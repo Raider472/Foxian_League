@@ -3,7 +3,7 @@
     <PreceptDef>
     <defName>FL_SacrificialTreeRitualPre</defName>
         <label>sacrificial tree ritual</label>
-        <description>One person will perform the ritual sacrifice with the chosen tree. Others might gather around the ritualist to strengthen the ritual. If everything goes well, the chances for the ritualist to receive a benediction will increase. Otherwise, he might receive a curse. The outcome of the ritual depends on the ritualist's psychic sensitivity and the number of participants.</description>
+        <description>One person will perform the ritual sacrifice with the chosen tree. Others might gather around the ritualist to strengthen the ritual. If everything goes well,the ritualist's chances of receiving a benediction will increase. Otherwise, they might receive a curse. The outcome of the ritual depends on the ritualist's psychic sensitivity and the number of participants.</description>
         <issue>Ritual</issue>
         <preceptClass>Precept_Ritual</preceptClass>
         <visible>false</visible>
@@ -11,7 +11,7 @@
         <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
         <selectionWeight>1.0</selectionWeight>
         <ritualPatternBase>FL_SacrificialTreeLinking_RitualPattern</ritualPatternBase>
-        <iconPath>UI/Icons/Rituals/AnimaTreeLinking</iconPath>
+        <iconPath>UI/Icons/Precept/FL_SacrificialRitual</iconPath>
         <usesIdeoVisualEffects>false</usesIdeoVisualEffects>
         <mergeRitualGizmosFromAllIdeos>true</mergeRitualGizmosFromAllIdeos>
         <useRepeatPenalty>false</useRepeatPenalty>

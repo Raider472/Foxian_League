@@ -4,7 +4,7 @@
         <defName>FL_GuardianTreant</defName>
         <label>guardian treant</label>
         <devNote>FLGuardianTrean</devNote>
-        <description>A sacred guardian of nature made alive thanks to the psychic entropy of a Naturastodis. This creature might be slow, but it's capable of withstanding heavy damage and can deliver some as well. Unfortunately for the Naturastodis, this creature is not permanent and will vanish at some point if it does not die in a fight before that. During its duty, this creature will not sleep or eat anything.</description>
+        <description>A sacred guardian of nature, brought to life by the psychic entropy of a Naturastodis. This creature might be slow, but it can withstand heavy damage and deal some as well. Unfortunately for the Naturastodis, this creature is not permanent and will vanish at some point if it does not die in a fight first. During its duty, this creature will not sleep or eat anything.</description>
         <statBases>
             <MoveSpeed>4.4</MoveSpeed>
             <ComfyTemperatureMin>-12</ComfyTemperatureMin>
@@ -123,6 +123,10 @@
                 <bodyGraphicData>
                     <texPath>Things/Pawns/Animal/GuardianTreant/FL_GuardianTreant</texPath>
                     <drawSize>2</drawSize>
+                    <shadowData>
+                        <volume>(0.5, 0.5, 0.5)</volume>
+                        <offset>(0,0,-0.45)</offset>
+                    </shadowData>
                 </bodyGraphicData>
             </li>
         </lifeStages>

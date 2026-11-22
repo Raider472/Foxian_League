@@ -3,7 +3,7 @@
     <TrainableDef>
         <defName>Fl_FateManipulation</defName>
         <label>fate manipulation</label>
-        <description>Command the animal to manipulate fates and forcefully trigger an incident that might be positive or negative.</description>
+        <description>Command the animal to manipulate fate and forcefully trigger an incident that might be positive or negative.</description>
         <listPriority>10</listPriority>
         <difficulty>200</difficulty>
         <steps>2</steps>
@@ -14,7 +14,7 @@
     <TrainableDef>
         <defName>FL_FireSpew</defName>
         <label>fire spew</label>
-        <description>Command the animal to spit a stream of sticky, flammable bile from its mouth that ignites anything in contact with it.</description>
+        <description>Command the animal to spit a stream of sticky, flammable bile from its mouth that ignites anything it touches.</description>
         <listPriority>10</listPriority>
         <difficulty>200</difficulty>
         <steps>2</steps>

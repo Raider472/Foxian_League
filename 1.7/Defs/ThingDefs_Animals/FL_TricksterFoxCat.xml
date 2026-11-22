@@ -4,7 +4,7 @@
         <defName>FL_TricksterFoxCat</defName>
         <label>trickster cat</label>
         <devNote>FLCatFox</devNote>
-        <description>A hybrid cat-fox-like creature commonly seen in foxian settlements, they are pretty much the equivalent of normal cats except for their innate talents at reading the future and bending the odds. Their nickname comes from the fact that they love being mischievous and their theorized association with the sacred beast related to trickery and knowledge. Despite their mischievousness, they can show affection to their owners if they are not busy trying to curse your colony with mild inconvenience.</description>
+        <description>A hybrid cat-fox creature commonly seen in Foxian settlements. They are essentially normal cats, except for their innate talent for reading the future and bending the odds. Their nickname comes from their love of mischief and their theorized association with the sacred beast of trickery and knowledge. Despite their mischievousness, they can show affection to their owners when they are not busy trying to curse your colony with mild inconveniences.</description>
         <statBases>
             <MoveSpeed>4.8</MoveSpeed>
             <MarketValue>750</MarketValue>
@@ -153,38 +153,35 @@
             <li>
                 <label>fox kitten</label>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Cat/Cat</texPath>
+                    <texPath>Things/Pawns/Animal/TricksterCat/FL_TricksterCat</texPath>
                     <drawSize>0.6</drawSize>
-                    <color>(189,171,159)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+                    <texPath>Things/Pawns/Animal/TricksterCat/FL_Dessicated_TricksterCat</texPath>
                     <drawSize>0.6</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Cat/Cat</texPath>
+                    <texPath>Things/Pawns/Animal/TricksterCat/FL_TricksterCat</texPath>
                     <drawSize>0.8</drawSize>
-                    <color>(189,171,159)</color>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+                    <texPath>Things/Pawns/Animal/TricksterCat/FL_Dessicated_TricksterCat</texPath>
                     <drawSize>0.8</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Cat/Cat</texPath>
+                    <texPath>Things/Pawns/Animal/TricksterCat/FL_TricksterCat</texPath>
                     <drawSize>1.0</drawSize>
-                    <color>(189,171,159)</color>
                     <shadowData>
                         <volume>(0.25, 0.3, 0.25)</volume>
-                        <offset>(0,0,-0.15)</offset>
+                        <offset>(0,0,-0.2)</offset>
                     </shadowData>
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
-                    <texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+                    <texPath>Things/Pawns/Animal/TricksterCat/FL_Dessicated_TricksterCat</texPath>
                     <drawSize>1.0</drawSize>
                 </dessicatedBodyGraphicData>
             </li>

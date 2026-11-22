@@ -39,6 +39,7 @@
 				<texPaths>
 					<li>Things/Pawns/Ears/FoxianEars</li>
 					<li>Things/Pawns/Ears/FoxianLongEars</li>
+					<li>Things/Pawns/Ears/TornFoxianEar</li>
 				</texPaths>
 				<shaderTypeDef>CutoutComplex</shaderTypeDef>
 				<colorType>Hair</colorType>

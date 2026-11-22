@@ -167,7 +167,7 @@
     <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="FoxianRareMeleeWeapon">
         <defName>FL_Weapoon_Oracle_Staff</defName>
         <label>oracle staff</label>
-        <description>A wooden staff with a piece of Eltex fixed on its tip. The staff in itself is not a dangerous weapon, but it is used by Foxian psycasters to enhance and support their psycasting abilities. This kind of staff is generally awarded to Foxian psycasters who managed to prove themselves by reaching the rank of Oracle within their local church. Reaching that rank is no easy feat, as someone would need to potentially dedicate their entire life communing with their gods in hope of receiving their approvals. The staff is capable of absorbing the life essence of enemies it has killed in battle and turning that essence into psyfocus for the wielder.</description>
+        <description>A wooden staff with a piece of Eltex fixed on its tip. The staff itself is not a dangerous weapon, but Foxian psycasters use it to enhance and support their psycasting abilities. This kind of staff is generally awarded to Foxian psycasters who have proven themselves by reaching the rank of Oracle within their local church. Reaching that rank is no easy feat, as one may need to dedicate their entire life to communing with their gods in the hope of receiving their approval. The staff can absorb the life essence of enemies it has killed in battle and turn that essence into psyfocus for the wielder.</description>
         <graphicData>
             <texPath>Things/Weapons/Naginata</texPath>
             <graphicClass>Graphic_Single</graphicClass>

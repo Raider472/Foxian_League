@@ -3,7 +3,7 @@
     <HediffDef ParentName="BlessingAbs">
         <defName>FL_BlessingHarmony</defName>
         <label>blessing of harmony</label>
-        <description>This person has been blessed by the sacred beast Vulpas. Granting him a fragment of his power for a limited time.</description>
+        <description>This person has been blessed by the sacred beast Vulpas, who granted them a fragment of its power for a limited time.</description>
         <stages>
             <li>
                 <statOffsets>

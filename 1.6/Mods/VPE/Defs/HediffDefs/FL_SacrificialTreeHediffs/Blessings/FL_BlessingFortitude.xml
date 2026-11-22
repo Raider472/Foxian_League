@@ -3,7 +3,7 @@
     <HediffDef ParentName="BlessingAbs">
         <defName>FL_BlessingFortitude</defName>
         <label>blessing of fortitude</label>
-        <description>This person has been blessed by one of the foxian sacred beasts representing the aspect of the foxian will and tenacity to live. This person will temporarily be able to work faster and for a longer period of time without the need for sleeping.</description>
+        <description>This person has been blessed by one of the Foxian sacred beasts, representing the aspect of Foxian will and the tenacity to live. This person will temporarily be able to work faster and for longer without needing sleep.</description>
         <stages>
             <li>
                 <statOffsets>

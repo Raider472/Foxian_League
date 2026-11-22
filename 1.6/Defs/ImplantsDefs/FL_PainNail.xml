@@ -4,7 +4,7 @@
         <defName>FL_PainNail</defName>
         <label>pain nail</label>
         <labelNoun>a pain nail</labelNoun>
-        <description>An installed pain nail. It will inflict pain on the user in exchange for strength and speed. The wearer will be in constant pain and become more vulnerable to damages, and any extra pain will feel more intense. They will be unable to focus when learning new skills.</description>
+        <description>An installed pain nail. It inflicts pain on the user in exchange for strength and speed. The wearer will be in constant pain and more vulnerable to damage, and any extra pain will feel more intense. They will be unable to focus when learning new skills.</description>
         <descriptionHyperlinks>
             <ThingDef>FL_PainNail</ThingDef>
         </descriptionHyperlinks>

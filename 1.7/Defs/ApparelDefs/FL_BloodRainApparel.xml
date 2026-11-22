@@ -3,7 +3,7 @@
     <ThingDef ParentName="FoxianRaiderClothing">
         <defName>FL_BloodRainDeel</defName>
         <label>blood deel</label>
-        <description>A traditional outfit from the blood rain reinforced with steel plates. It is used to convey their importance within the organization. Despite the outfit not being as protective compared to conventional armor, it is light to guarantee that the wearer can move without hindrance and embedded with blood rain runes to physically enhance the wearer. It is rumored that the empress gave these outfits to those who she trusts the most to carry out her more deranged orders.</description>
+        <description>A traditional Blood Rain outfit reinforced with steel plates. It is used to convey the wearer's importance within the organization. Although the outfit is not as protective as conventional armor, it is light enough that the wearer can move without hindrance, and it is embedded with Blood Rain runes to physically enhance the wearer. It is rumored that the empress gave these outfits to those she trusts the most to carry out her more deranged orders.</description>
         <techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Things/Pawns/Apparels/OfficerArmor/OfficerArmor</texPath>
@@ -64,8 +64,8 @@
 
     <ThingDef ParentName="FoxianArmor">
         <defName>FL_SkullArmor</defName>
-        <label>bloodrain skull armor</label>
-        <description>An armor made from metallic materials and bones that is typically worn by veteran and even elite members of the blood rain. The armor features skulls as shoulder pads and is carved with basic runes, enhancing the physical prowess of the wearer. The human skulls are generally from unfortunate victims who met their demise in a blood rain raid or from a deceased blood rain member relative.</description>
+        <label>blood rain skull armor</label>
+        <description>An armor made from metal and bones that is typically worn by veteran and even elite members of the Blood Rain. The armor features skulls as shoulder pads and is carved with basic runes that enhance the physical prowess of the wearer. The human skulls generally come from unfortunate victims who met their demise in a Blood Rain raid, or from deceased relatives of Blood Rain members.</description>
         <graphicData>
             <texPath>Things/Pawns/Apparels/NobleArmor/NobleArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -125,8 +125,8 @@
 
     <ThingDef ParentName="FoxianHead">
         <defName>FL_SkullHelmet</defName>
-        <label>bloodrain skull helmet</label>
-        <description>A helmet made from a human skull and reinforced with metallic material. It is commonly used by veteran and elite members of the blood rain.</description>
+        <label>blood rain skull helmet</label>
+        <description>A helmet made from a human skull and reinforced with metal. It is commonly worn by veteran and elite members of the Blood Rain.</description>
         <graphicData>
             <texPath>Things/Pawns/Apparels/OfficerArmor/OfficerCap</texPath>
             <graphicClass>Graphic_Single</graphicClass>

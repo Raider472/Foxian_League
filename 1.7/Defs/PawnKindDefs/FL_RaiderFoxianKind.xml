@@ -789,7 +789,7 @@
 
     <PawnKindDef ParentName="RaiderFoxianBase_elite_tier">
         <defName>FL_Foxian_Raider_Local_Commander</defName>
-        <label>local bloodrain commander</label>
+        <label>local blood rain commander</label>
         <combatPower>180</combatPower>
         <apparelMoney>2000~3500</apparelMoney>
         <weaponMoney>1000~2500</weaponMoney>

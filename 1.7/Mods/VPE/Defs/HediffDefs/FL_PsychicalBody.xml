@@ -2,8 +2,8 @@
 <Defs>
     <HediffDef>
         <defName>FL_PsychicalBody</defName>
-        <label>psychical body</label>
-        <description>This creature's body is not entirely physical but rather psychical, and this being will disappear after a certain amount of time. It cannot bleed and doesn't need to eat anything. If the creature dies, it will vanish instead of leaving a body.</description>
+        <label>psychic body</label>
+        <description>This creature's body is not entirely physical but rather psychic, and this being will disappear after a certain amount of time. It cannot bleed and doesn't need to eat anything. If the creature dies, it will vanish instead of leaving a body.</description>
         <defaultLabelColor>(0.3, 0.80, 0.54)</defaultLabelColor>
         <hediffClass>Foxian_league.Hediff_Clotting</hediffClass>
         <everCurableByItem>false</everCurableByItem>

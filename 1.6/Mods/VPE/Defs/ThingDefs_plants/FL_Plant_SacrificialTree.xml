@@ -3,9 +3,9 @@
     <ThingDef ParentName="TreeBase">
         <defName>FL_Plant_SacrificialTree</defName>
         <label>sacrificial tree</label>
-        <description>An artificial morbid tree with a humanoid silhouette visible on its bark. Its name comes from its association with the sacrificial ritual that Naturastodis psycasters perform in hopes of receiving blessings from their gods. It is unknown why this tree has this specific humanoid form from most people, except for the Naturastodis psycasters keeping this information secret. But it's heavily believed amongst non-psycaster foxians that a human body was used in the making of this tree.</description>
+        <description>An artificial, morbid tree with a humanoid silhouette visible on its bark. Its name comes from its association with the sacrificial ritual that Naturastodis psycasters perform in the hope of receiving blessings from their gods. Most people do not know why this tree has this specific humanoid form, because the Naturastodis psycasters keep this information secret. However, many non-psycaster Foxians firmly believe that a human body was used to make this tree.</description>
         <graphicData>
-            <texPath>Things/Plants/Natura</texPath>
+            <texPath>Things/Plants/Sacrificial</texPath>
             <graphicClass>Graphic_Random</graphicClass>
             <shadowData>
             <volume>(0.35, 0.3, 0.35)</volume>
@@ -39,9 +39,7 @@
             <warnIfMarkedForCut>true</warnIfMarkedForCut>
             <choppedThingDef>FL_ChoppedStump_SacrificialTree</choppedThingDef>
             <smashedThingDef>FL_SmashedStump_SacrificialTree</smashedThingDef>
-            <immatureGraphicPath>Things/Plants/Natura</immatureGraphicPath>
-            <snowOverlayGraphicPath>Things/Plants/Natura_Snowy</snowOverlayGraphicPath>
-            <immatureSnowOverlayGraphicPath>Things/Plants/Natura_Snowy</immatureSnowOverlayGraphicPath>
+            <snowOverlayGraphicPath>Things/Plants/Sacrificial_Snowy</snowOverlayGraphicPath>
         </plant>
         <comps>
             <li Class="CompProperties_MeditationFocus">
@@ -58,7 +56,7 @@
         <label>chopped sacrificial tree stump</label>
         <description>A stump left behind after a sacrificial tree has been felled. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
         <graphicData>
-            <texPath>Things/Plants/Stumps/Chopped/FL_NaturaChopped</texPath>
+            <texPath>Things/Plants/Stumps/Chopped/FL_SacrificialTree_CutStump</texPath>
             <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     </ThingDef>
@@ -68,7 +66,7 @@
         <label>smashed sacrificial tree stump</label>
         <description>The remnants of a sacrificial tree destroyed by damage. It's ugly. The stump can be extracted but yields very little usable wood. Left outdoors, the stump will deteriorate in time.</description>
         <graphicData>
-            <texPath>Things/Plants/Stumps/Smashed/FL_NaturaSmashed</texPath>
+            <texPath>Things/Plants/Stumps/Smashed/FL_SacrificialTree_SmashedStump</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
     </ThingDef>

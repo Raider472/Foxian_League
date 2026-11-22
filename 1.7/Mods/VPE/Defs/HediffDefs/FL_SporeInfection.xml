@@ -3,7 +3,7 @@
     <HediffDef>
         <defName>FL_SporeInfection</defName>
         <label>spore infection</label>
-        <description>This person has been temporarily psychically infected by a spore-like particle, hindering his physical and mental capabilities.</description>
+        <description>This person has been temporarily psychically infected by spore-like particles, hindering their physical and mental capabilities.</description>
         <hediffClass>Foxian_league.Hediff_ShowSeverity</hediffClass>
         <defaultLabelColor>(0.84, 0.39, 0.07)</defaultLabelColor>
         <initialSeverity>0.05</initialSeverity>

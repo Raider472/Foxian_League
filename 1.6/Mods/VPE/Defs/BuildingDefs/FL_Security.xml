@@ -39,8 +39,8 @@
 
     <ThingDef ParentName="FL_TrapIEDBaseUncraftable">
         <defName>FL_TrapIED_woodTrap</defName>
-        <label>Explosive wooden trap</label>
-        <description>An artificial trap made by a Naturastodis psycaster, it is composed of wood and sensible gas inside. It detonates upon someone stepping on it or a bullet impact. Since it is made of wood, it blends easily in any terrain making it near impossible to spot it aside from calm animals. It cannot be placed near adjacent traps. When the trap explodes, it propels hundreds of toxic wooden needles into its surrounding area. Anyone struck by them will experience numbness depending on how much damage they've been inflicted with.</description>
+        <label>explosive wooden trap</label>
+        <description>An artificial trap made by a Naturastodis psycaster. It is made of wood with a volatile gas inside. It detonates when someone steps on it or when a bullet hits it. Since it is made of wood, it blends easily into any terrain, making it nearly impossible to spot. Animals can sense it when calm. Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps. When the trap explodes, it propels hundreds of toxic wooden needles into the surrounding area. Anyone struck by them will experience numbness depending on how much damage they have taken.</description>
         <graphicData>
             <texPath>Things/Buildings/Security/FL_WoodTrap</texPath>
         </graphicData>
